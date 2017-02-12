@@ -105,7 +105,7 @@
      ;; General
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
      `(warning ((,class (:foreground ,warning))))
-     `(region ((,class (:background ,bg3 :foreground ,fg1))))
+     `(region ((,class (:background ,bg3))))
      `(fringe ((,class (:background ,bg1 :foreground ,fg1))))
      `(cursor ((,class (:background ,gray))))
      `(isearch ((,class (:bold t :foreground ,bg3 :background ,hl))))
@@ -257,10 +257,11 @@
      ;; Helm
      `(helm-header ((,class (:foreground ,fg2 :background ,bg1 :underline nil :box nil))))
      `(helm-source-header ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
-     `(helm-selection ((,class (:background ,bg2 :underline nil))))
+     `(helm-match ((,class (:inherit default :bold t :foreground ,orange))))
+     `(helm-selection ((,class (:inherit hl-line))))
      `(helm-selection-line ((,class (:background ,bg2))))
      `(helm-visible-mark ((,class (:foreground ,bg1 :background ,bg3))))
-     `(helm-candidate-number ((,class (:foreground ,bg1 :background ,fg1))))
+     `(helm-candidate-number ((,class (:foreground ,light-yellow))))
      `(helm-separator ((,class (:foreground ,type :background ,bg1))))
      `(helm-time-zone-current ((,class (:foreground ,builtin :background ,bg1))))
      `(helm-time-zone-home ((,class (:foreground ,type :background ,bg1))))
@@ -321,9 +322,10 @@
 
      ;; Ivy & Swiper
      `(ivy-current-match ((,class (:foreground ,bg1 :background ,hl))))
+     ;; `(ivy-current-match ((,class (:inherit hl-line :foreground ,hl))))
      `(swiper-match-face-1 ((,class (:foreground ,fg1 :background ,bg3))))
-     `(swiper-match-face-2 ((,class (:foreground ,bg1 :background ,hl))))
-     `(swiper-match-face-3 ((,class (:foreground ,bg1 :background ,orange))))
+     `(swiper-match-face-2 ((,class (:foreground ,bg1 :background ,light-yellow))))
+     `(swiper-match-face-3 ((,class (:foreground ,bg1 :background ,blue))))
      `(swiper-match-face-4 ((,class (:foreground ,bg1 :background ,alt-purple))))
      `(swiper-line-face ((,class (:inherit hl-line)))))))
 
