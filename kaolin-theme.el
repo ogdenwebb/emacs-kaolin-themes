@@ -32,9 +32,11 @@
       (dark-gray    "#2a2a2a")
       (dim          "#353535")
       (gray         "#545c5e")
+      (light-gray   "#788486")
       (white        "#c5c8c6")
       (brown        "#7d6360")
       (red          "#d75f5f")
+      (alt-red      "#c93232")
       (orange       "#d2ab5d")
       (yellow       "#acb370")
       (light-yellow "#c1b175")
@@ -71,8 +73,10 @@
          (rb7 green)
          (rb8 red)
 
+         (cursor     light-gray)
          (keyword    green)
          (hl         cyan)
+         (hl-indent  gray)
          (builtin    teal)
          (const      deep-blue)
          (comment    gray)
@@ -107,7 +111,7 @@
      `(warning ((,class (:foreground ,warning))))
      `(region ((,class (:background ,bg3))))
      `(fringe ((,class (:background ,bg1 :foreground ,fg1))))
-     `(cursor ((,class (:background ,gray))))
+     `(cursor ((,class (:background ,cursor))))
      `(isearch ((,class (:bold t :foreground ,bg3 :background ,hl))))
      `(vertical-border ((,class (:foreground ,border))))
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
@@ -122,6 +126,11 @@
      `(highlight-numbers-number ((,class (:foreground ,num))))
      `(highlight-quoted-quote ((t (:foreground ,teal)))) ; Face to highlight Lisp quotes
      `(highlight-quoted-symbol ((t (:foreground ,green)))) ; Face to highlight quoted Lisp symbols
+
+     ;; Highlight indent guides
+     `(highlight-indent-guides-odd-face  ((t (:background ,hl-indent))))
+     `(highlight-indent-guides-even-face  ((t (:background ,hl-indent))))
+     `(highlight-indent-guides-character-face  ((t (:foreground ,hl-indent))))
 
      ;; Linum-mode & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray))))
@@ -319,6 +328,9 @@
      ;; `(haskell-operator-face ((,class (:foreground ,lime))))
      ;; `(haskell-type-face ((,class (:foreground ,light-yellow))))
      ;; `(haskell-constructor-face ((,class (:foreground ,orange))))
+
+     ;; Evil ex
+     `(evil-ex-info ((,class (:foreground ,light-yellow))))
 
      ;; Ivy & Swiper
      `(ivy-current-match ((,class (:foreground ,bg1 :background ,hl))))
