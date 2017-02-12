@@ -137,11 +137,16 @@
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
 
      ;; Modeline
-     `(mode-line ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
+     `(mode-line ((,class (:box (:line-width 1 :color ,bg3) :bold t :foreground ,fg4 :background ,bg2))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,functions :background nil))))
      `(mode-line-highlight ((,class (:foreground ,keyword :box nil :weight bold))))
-     `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,key3 :background ,bg1 :weight normal))))
+     ;; `(mode-line-inactive ((,class (:box (:line-width 1 :color ,bg2 :style pressed-button) :foreground ,light-gray :background ,bg2 :weight normal))))
+     `(mode-line-inactive ((,class (:box (:line-width 1 :color ,bg2) :foreground ,light-gray :background ,bg2 :weight normal))))
      `(mode-line-emphasis ((,class (:foreground ,fg1))))
+
+     ;; Telephone-line
+     `(telephone-line-accent-active ((t (:foreground ,bg2 :background ,cyan :inherit mode-line))))
+     `(telephone-line-accent-inactive ((t (:foreground ,bg2 :background ,gray :inherit mode-line))))
 
      ;; Org-mode
      `(org-level-1 ((,class (:bold t :foreground ,fg2 :height 1.1))))
@@ -329,8 +334,11 @@
      ;; `(haskell-type-face ((,class (:foreground ,light-yellow))))
      ;; `(haskell-constructor-face ((,class (:foreground ,orange))))
 
+     ;; Perl6
+     ;; `(perl6-identifier ((,class (:foreground ,cyan))))
+
      ;; Evil ex
-     `(evil-ex-info ((,class (:foreground ,light-yellow))))
+     `(evil-ex-info ((,class (:foreground ,orange))))
 
      ;; Ivy & Swiper
      `(ivy-current-match ((,class (:foreground ,bg1 :background ,hl))))
