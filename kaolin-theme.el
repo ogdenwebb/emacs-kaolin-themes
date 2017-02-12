@@ -151,11 +151,11 @@
 
      ;; Modeline
      ;; `(mode-line ((,class (:box (:line-width 1 :color ,line-border) :bold t :foreground ,line-fg :background ,line-bg))))
-     `(mode-line ((,class (:box (:line-width 2 :color ,line-bg) :bold t :foreground ,deep-blue :background ,line-bg))))
+     `(mode-line ((,class (:box (:line-width 2 :color ,dim) :bold t :foreground ,deep-blue :background ,line-bg))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,teal :background nil))))
      `(mode-line-highlight ((,class (:foreground ,keyword :box nil :weight bold))))
      ;; `(mode-line-inactive ((,class (:box (:line-width 1 :color ,bg2 :style pressed-button) :foreground ,light-gray :background ,bg2 :weight normal))))
-     `(mode-line-inactive ((,class (:box (:line-width 1 :color ,line-bg) :foreground ,light-gray :background ,line-bg :weight normal))))
+     `(mode-line-inactive ((,class (:box (:line-width 2 :color ,line-bg) :foreground ,light-gray :background ,line-bg :weight bold))))
      `(mode-line-emphasis ((,class (:foreground ,fg1))))
 
      ;; Telephone-line
