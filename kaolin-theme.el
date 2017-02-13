@@ -29,14 +29,18 @@
 ;; Kaolin color palette
 (let ((class '((class color) (min-colors 89)))
       (black        "#1b1b1b")
+      (alt-black    "#181818")
       (dark-gray    "#2a2a2a")
       (dim          "#353535")
       (gray         "#545c5e")
       (light-gray   "#788486")
       (white        "#c5c8c6")
       (brown        "#7d6360")
+      (alt-brown    "#604c4a")
+      (light-red    "#d66e75")
       (red          "#d75f5f")
       (alt-red      "#c93232")
+      (deep-pink    "#d75f91")
       (orange       "#d2ab5d")
       (yellow       "#acb370")
       (light-yellow "#c1b175")
@@ -63,15 +67,16 @@
          (bg4  "#4a4a4a")
          (key2 "#5f9298")
          (key3 "#43757c")
+         (dim-buffer alt-black)
 
          (rb1 blue)
-         (rb2 cyan)
+         (rb2 light-yellow)
          (rb3 lime)
-         (rb4 orange)
+         (rb4 light-red)
          (rb5 teal)
-         (rb6 white)
+         (rb6 fg3)
          (rb7 green)
-         (rb8 red)
+         (rb8 orange)
 
          (line-fg           fg4)
          (line-bg           bg2)
@@ -84,7 +89,7 @@
          (evil-replace      red)
          (evil-motion       yellow)
          (evil-operator     evil-normal)
-         (evil-emacs        purple)
+         (evil-emacs        light-yellow)
 
          (cursor     light-gray)
          (keyword    green)
@@ -117,7 +122,7 @@
      `(font-lock-negation-char-face ((,class (:foreground ,const))))
      `(font-lock-type-face ((,class (:foreground ,type))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
-     `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
+     `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg1))))
 
      ;; General
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
@@ -133,9 +138,9 @@
      `(success ((,class (:foreground ,yellow :background ,bg1))))
 
      ;; Highlight
-     `(highlight ((,class (:background ,bg2))))
+     `(highlight ((,class (:background ,bg2 :foreground ,hl))))
      `(lazy-highlight ((,class (:foreground ,fg2 :background ,bg3))))
-     `(hl-line ((,class (:inherit highlight))))
+     `(hl-line ((,class (:background ,bg2))))
      `(highlight-numbers-number ((,class (:foreground ,num))))
      `(highlight-quoted-quote ((t (:foreground ,teal)))) ; Face to highlight Lisp quotes
      `(highlight-quoted-symbol ((t (:foreground ,green)))) ; Face to highlight quoted Lisp symbols
@@ -144,6 +149,9 @@
      `(highlight-indent-guides-odd-face  ((t (:background ,hl-indent))))
      `(highlight-indent-guides-even-face  ((t (:background ,hl-indent))))
      `(highlight-indent-guides-character-face  ((t (:foreground ,hl-indent))))
+
+     ;; Auto-dim-other-buffers
+     `(auto-dim-other-buffers-face  ((t (:background ,dim-buffer))))
 
      ;; Linum-mode & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray))))
@@ -161,7 +169,7 @@
      ;; Telephone-line
      `(telephone-line-accent-active ((t (:foreground ,line-fg :background ,dim :inherit mode-line))))
      `(telephone-line-accent-inactive ((t (:foreground ,light-gray :background ,line-bg :inherit mode-line-inactive))))
-     `(telephone-line-evil ((t (:inherit modeline))))
+     `(telephone-line-evil ((t (:inherit mode-line))))
      `(telephone-line-evil-normal ((t (:foreground ,evil-normal :background ,dim :inherit telephone-line-evil))))
      `(telephone-line-evil-insert ((t (:foreground ,evil-insert :background ,dim :inherit telephone-line-evil))))
      `(telephone-line-evil-visual ((t (:foreground ,evil-visual :background ,dim :inherit telephone-line-evil))))
@@ -171,10 +179,12 @@
      `(telephone-line-evil-emacs ((t (:foreground ,evil-emacs :background ,dim :inherit telephone-line-evil))))
 
      ;; Org-mode
-     `(org-level-1 ((,class (:bold t :foreground ,fg2 :height 1.1))))
-     `(org-level-2 ((,class (:bold nil :foreground ,fg3))))
-     `(org-level-3 ((,class (:bold t :foreground ,fg4))))
-     `(org-level-4 ((,class (:bold nil :foreground ,bg4))))
+     `(org-level-1 ((,class (:bold t :foreground ,alt-purple :height 1.1))))
+     `(org-level-2 ((,class (:bold nil :foreground ,teal-blue))))
+     `(org-level-3 ((,class (:bold nil :foreground ,teal-blue))))
+     `(org-level-4 ((,class (:bold nil :foreground ,teal-blue))))
+     `(org-todo ((,class (:foreground ,orange :bold t))))
+     `(org-done ((,class (:foreground ,lime  :bold t))))
      `(org-code ((,class (:foreground ,fg2))))
      `(org-hide ((,class (:foreground ,fg4))))
      `(org-date ((,class (:underline t :foreground ,var))))
@@ -184,8 +194,6 @@
      `(org-block ((,class (:foreground ,fg3))))
      `(org-quote ((,class (:inherit org-block :slant italic))))
      `(org-verse ((,class (:inherit org-block :slant italic))))
-     `(org-todo ((,class (:box (:line-width 1 :color ,fg3) :foreground ,keyword :bold t))))
-     `(org-done ((,class (:box (:line-width 1 :color ,bg3) :bold t :foreground ,bg4))))
      `(org-warning ((,class (:underline t :foreground ,warning))))
      `(org-agenda-structure ((,class (:weight bold :foreground ,fg3 :box (:color ,fg4) :background ,bg3))))
      `(org-agenda-date ((,class (:foreground ,var :height 1.1))))
