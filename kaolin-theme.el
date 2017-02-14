@@ -6,7 +6,6 @@
 ;; URL:
 ;; Version: 0.1
 
-
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
@@ -16,9 +15,6 @@
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 ;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
@@ -40,7 +36,8 @@
       (light-red    "#d66e75")
       (red          "#d75f5f")
       (alt-red      "#c93232")
-      (deep-pink    "#d75f91")
+      ;; (deep-pink    "#d75f91")
+      (deep-pink    "#d24b83")
       (orange       "#d2ab5d")
       (yellow       "#acb370")
       (light-yellow "#c1b175")
@@ -124,6 +121,7 @@
      `(font-lock-type-face ((,class (:foreground ,type))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:background ,bg1 :foreground ,warning))))
+     `(font-lock-preprocessor-face ((,class (:foreground ,deep-pink :bold nil))))
 
      ;; General
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
@@ -161,7 +159,7 @@
 
      ;; Modeline
      ;; `(mode-line ((,class (:box (:line-width 1 :color ,line-border) :bold t :background ,line-bg :foreground ,line-fg))))
-     `(mode-line ((,class (:box (:line-width 2 :color ,dim) :bold t :background ,line-bg :foreground ,purple))))
+     `(mode-line ((,class (:box (:line-width 2 :color ,dim) :bold t :background ,line-bg :foreground ,deep-blue))))
      `(mode-line-buffer-id ((,class (:bold t :background nil :foreground ,teal))))
      `(mode-line-highlight ((,class (:foreground ,keyword :box nil :weight bold))))
      ;; `(mode-line-inactive ((,class (:box (:line-width 1 :color ,bg2 :style pressed-button) :background ,bg2 :foreground ,light-gray :weight normal))))
@@ -169,7 +167,7 @@
      `(mode-line-emphasis ((,class (:foreground ,fg1))))
 
      ;; Telephone-line
-     `(telephone-line-accent-active ((t (:background ,dim :foreground ,line-fg :inherit mode-line))))
+     `(telephone-line-accent-active ((t (:inherit mode-line :background ,dim :foreground ,line-fg))))
      `(telephone-line-accent-inactive ((t (:background ,line-bg :foreground ,light-gray :inherit mode-line-inactive))))
      `(telephone-line-evil ((t (:inherit mode-line))))
      `(telephone-line-evil-normal ((t (:background ,dim :foreground ,evil-normal :inherit telephone-line-evil))))
@@ -248,6 +246,7 @@
      `(js2-jsdoc-html-tag-name ((,class (:foreground ,key2))))
      `(js2-external-variable ((,class (:foreground ,type))))
      `(js2-function-param ((,class (:foreground ,const))))
+     `(js2-error ((,class (:underline (:color ,alt-red :style wave)))))
      `(js2-function-call ((,class (:foreground ,yellow))))
      `(js2-jsdoc-value ((,class (:foreground ,str))))
      `(js2-private-member ((,class (:foreground ,fg3))))
@@ -285,11 +284,11 @@
      `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
 
      ;; Magit
+     `(magit-section-highlight      ((,class (:background ,bg2))))
      `(magit-diff-file-header ((,class (:background ,bg3 :foreground ,fg2))))
      `(magit-item-highlight ((,class :background ,bg3)))
      `(magit-section-heading        ((,class (:foreground ,keyword :weight bold))))
      `(magit-hunk-heading           ((,class (:background ,bg3))))
-     `(magit-section-highlight      ((,class (:background ,bg2))))
      `(magit-hunk-heading-highlight ((,class (:background ,bg3))))
      `(magit-diff-context-highlight ((,class (:background ,bg3 :foreground ,fg3))))
      `(magit-diffstat-added   ((,class (:foreground ,type))))
@@ -387,7 +386,7 @@
      `(web-mode-string-face ((,class (:foreground ,str))))
      `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
 
-     ;; Haskell modej
+     ;; Haskell mode
      ;; `(haskell-operator-face ((,class (:foreground ,lime))))
      ;; `(haskell-type-face ((,class (:foreground ,light-yellow))))
      ;; `(haskell-constructor-face ((,class (:foreground ,orange))))
