@@ -29,7 +29,8 @@
       (dark-gray    "#2a2a2a")
       (dim          "#353535")
       (gray         "#545c5e")
-      (light-gray   "#788486")
+      ;; (light-gray   "#788486")
+      (light-gray   "#859092")
       (white        "#c5c8c6")
       (brown        "#7d6360")
       (alt-brown    "#604c4a")
@@ -120,7 +121,7 @@
      `(font-lock-negation-char-face ((,class (:foreground ,const))))
      `(font-lock-type-face ((,class (:foreground ,type))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
-     `(font-lock-warning-face ((,class (:background ,bg1 :foreground ,warning))))
+     `(font-lock-warning-face ((,class (:background nil :foreground ,warning))))
      `(font-lock-preprocessor-face ((,class (:foreground ,deep-pink :bold nil))))
 
      ;; General
@@ -135,9 +136,9 @@
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
      `(default-italic ((,class (:italic t))))
      `(link ((,class (:foreground ,const :underline t))))
-     `(success ((,class (:background ,bg1 :foreground ,yellow))))
+     `(success ((,class (:background ,nil :foreground ,yellow))))
 
-     ;; Highlight
+     ;; Additional highlighting
      `(highlight ((,class (:background ,bg2 :foreground ,hl))))
      `(lazy-highlight ((,class (:background ,bg3 :foreground ,fg2))))
      `(hl-line ((,class (:background ,bg2))))
@@ -177,6 +178,9 @@
      `(telephone-line-evil-motion ((t (:background ,dim :foreground ,evil-motion :inherit telephone-line-evil))))
      `(telephone-line-evil-operator ((t (:background ,dim :foreground ,evil-operator :inherit telephone-line-evil))))
      `(telephone-line-evil-emacs ((t (:background ,dim :foreground ,evil-emacs :inherit telephone-line-evil))))
+
+     ;; Flycheck
+     `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
      ;; Org-mode
      `(org-level-1 ((,class (:bold t :foreground ,purple :height 1.1))))
@@ -225,7 +229,7 @@
      `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
      `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
 
-     `(ido-only-match ((,class (:foreground ,warning))))
+     `(ido-only-match ((,class (:foreground ,hl))))
      `(ido-first-match ((,class (:foreground ,keyword :bold t))))
 
      `(gnus-header-content ((,class (:foreground ,keyword))))
@@ -272,7 +276,8 @@
      `(trailing-whitespace ((,class :background ,warning :foreground nil)))
 
      ;; Rainbow delimeters
-     `(show-paren-match-face ((,class (:background ,bg3 :foreground ,cyan))))
+     `(show-paren-match-face ((,class (:background ,green :foreground ,bg2))))
+     `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
      `(rainbow-delimiters-depth-1-face ((,class (:foreground ,rb1))))
      `(rainbow-delimiters-depth-2-face ((,class :foreground ,rb2)))
      `(rainbow-delimiters-depth-3-face ((,class :foreground ,rb3)))
@@ -281,7 +286,6 @@
      `(rainbow-delimiters-depth-6-face ((,class :foreground ,rb6)))
      `(rainbow-delimiters-depth-7-face ((,class :foreground ,rb7)))
      `(rainbow-delimiters-depth-8-face ((,class :foreground ,rb8)))
-     `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
 
      ;; Magit
      `(magit-section-highlight      ((,class (:background ,bg2))))
@@ -309,20 +313,6 @@
      `(term-color-magenta ((,t (:foreground ,purple))))
      `(term-color-cyan ((t (:foreground ,cyan))))
      `(term-color-white ((t (:foreground ,fg2))))
-
-     ;; Eshell
-     '(eshell-prompt-face ((t (:foreground "lemon chiffon"))))
-     '(eshell-ls-symlink-face ((t (:foreground "peach puff"))))
-     '(eshell-ls-directory-face ((t (:bold t :foreground "dark khaki"))))
-     '(eshell-ls-executable-face ((t (:foreground "Coral"))))
-     '(eshell-ls-archive-face ((t (:bold t :foreground "IndianRed"))))
-     '(eshell-ls-backup-face ((t (:foreground "Grey"))))
-     '(eshell-ls-clutter-face ((t (:foreground "DimGray"))))
-     '(eshell-ls-missing-face ((t (:foreground "black"))))
-     '(eshell-ls-product-face ((t (:foreground "dark sea green"))))
-     '(eshell-ls-special-face ((t (:foreground "gold"))))
-     '(eshell-ls-readonly-face ((t (:foreground "light steel blue"))))
-     '(eshell-ls-unreadable-face ((t (:foreground "DimGray"))))
 
      ;; Helm
      `(helm-header ((,class (:background ,bg1 :foreground ,fg2 :underline nil :box nil))))
@@ -359,7 +349,7 @@
      `(company-tooltip ((,class (:background ,bg1 :foreground ,fg2 :bold t))))
      `(company-tooltip-common ((,class ( :foreground ,fg3))))
      `(company-tooltip-common-selection ((,class (:foreground ,str))))
-     `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,hl))))
+     `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,teal))))
      `(company-tooltop-annotation ((,class (:foreground ,const))))
      `(company-scrollbar-bg ((,class (:background ,bg1))))
      `(company-scrollbar-fg ((,class (:foreground ,keyword))))
