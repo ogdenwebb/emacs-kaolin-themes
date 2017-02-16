@@ -318,6 +318,7 @@
      `(helm-header ((,class (:background ,bg1 :foreground ,fg2 :underline nil :box nil))))
      `(helm-source-header ((,class (:background ,bg1 :foreground ,keyword :underline nil :weight bold))))
      `(helm-match ((,class (:inherit default :bold t :foreground ,orange))))
+     `(helm-header-line-left-margin ((t (:background ,blue :foreground ,bg1))))
      `(helm-selection ((,class (:background ,bg2 :foreground ,orange :bold t))))
      `(helm-selection-line ((,class (:background ,bg2 :foreground ,orange :bold t))))
      `(helm-visible-mark ((,class (:background ,bg1 :foreground ,blue))))
@@ -390,6 +391,8 @@
 
      ;; Evil ex
      `(evil-ex-info ((,class (:foreground ,orange))))
+     `(evil-ex-substitute-matches ((,class (:background ,bg3 :underline t))))
+     `(evil-ex-substitute-replacement ((,class (:background ,bg1 :foreground ,red))))
 
      ;; Ivy & Swiper
      `(ivy-current-match ((,class (:background ,hl :foreground ,bg1 :bold nil))))
