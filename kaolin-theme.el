@@ -136,7 +136,11 @@
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
      `(default-italic ((,class (:italic t))))
      `(link ((,class (:foreground ,const :underline t))))
-     `(success ((,class (:background ,nil :foreground ,yellow))))
+     `(success ((,class (:background nil :foreground ,yellow))))
+
+     ;; Dashboard
+     `(widget-button ((,class (:background nil :foreground ,green :bold t))))
+
 
      ;; Additional highlighting
      `(highlight ((,class (:background ,bg2 :foreground ,hl))))
