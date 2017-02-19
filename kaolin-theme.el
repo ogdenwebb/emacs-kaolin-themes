@@ -158,7 +158,6 @@
      ;; Dashboard
      `(widget-button ((,class (:background nil :foreground ,green :bold ,bold))))
 
-
      ;; Additional highlighting
      `(highlight ((,class (:background ,bg2 :foreground ,hl))))
      `(lazy-highlight ((,class (:background ,bg3 :foreground ,fg2))))
@@ -172,8 +171,16 @@
      `(highlight-indent-guides-even-face  ((t (:background ,hl-indent))))
      `(highlight-indent-guides-character-face  ((t (:foreground ,hl-indent))))
 
+     ;; Linum-mode & nlinum
+     `(linum ((t (:background ,bg1 :foreground ,gray))))
+     `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
+
      ;; Auto-dim-other-buffers
      `(auto-dim-other-buffers-face  ((t (:background ,dim-buffer))))
+
+     ;; Fic-mode
+     `(fic-face  ((t (:background nil :foreground ,red :bold ,bold))))
+     `(fic-author-face  ((t (:background nil :foreground ,red :bold ,bold))))
 
      ;; Modeline
      ;; `(mode-line ((,class (:box (:line-width 1 :color ,line-border) :bold ,bold :background ,line-bg :foreground ,line-fg))))
@@ -319,6 +326,12 @@
      `(magit-branch ((,class (:foreground ,const :bold ,bold))))
      `(magit-log-author ((,class (:foreground ,fg3))))
      `(magit-hash ((,class (:foreground ,fg2))))
+
+     ;; Git gutter
+     `(git-gutter:unchanged ((,class (:background ,bg1 :foreground nil))))
+     `(git-gutter:added ((,class (:background ,light-green :foreground ,light-green :bold ,bold))))
+     `(git-gutter:modified ((,class (:background ,yellow :foreground ,yellow :bold ,bold))))
+     `(git-gutter:deleted ((,class (:background ,red :foreground ,red :bold ,bold))))
 
      ;; Terminal
      `(term ((t (:foreground ,fg1))))
