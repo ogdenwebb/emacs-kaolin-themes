@@ -412,7 +412,7 @@
      `(evil-ex-substitute-replacement ((,class (:background ,bg1 :foreground ,red))))
 
      ;; Ivy & Swiper
-     `(ivy-current-match ((,class (:background ,bg3 :foreground nil :bold nil))))
+     `(ivy-current-match ((,class (:background nil :foreground ,light-green :bold nil))))
      `(ivy-minibuffer-match-face-1 ((,class (:background ,bg3 :foreground ,fg1))))
      `(ivy-minibuffer-match-face-2 ((,class (:background ,dark-blue :foreground ,teal-blue :bold ,bold))))
      `(ivy-minibuffer-match-face-3 ((,class (:background ,dark-yellow :foreground ,light-orange :bold ,bold))))
