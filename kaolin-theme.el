@@ -67,6 +67,7 @@
       (deep-blue    "#857f96")
       (dark-purple  "#563d56")
       (purple       "#835d83")
+      (magenta      "#5454b6")
       ;; (light-purple "#9d769d")
       (light-purple "#cea2ca")
       (alt-purple   "#8c4a64")
@@ -175,7 +176,7 @@
      `(highlight-indent-guides-even-face  ((t (:background ,hl-indent))))
      `(highlight-indent-guides-character-face  ((t (:foreground ,hl-indent))))
 
-     ;; Linum-mode & nlinum
+     ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray))))
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
 
@@ -257,14 +258,17 @@
      `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
      `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
 
+     ;; Ido
      `(ido-only-match ((,class (:foreground ,hl))))
      `(ido-first-match ((,class (:foreground ,keyword :bold ,bold))))
 
+     ;; Gnus
      `(gnus-header-content ((,class (:foreground ,keyword))))
      `(gnus-header-from ((,class (:foreground ,var))))
      `(gnus-header-name ((,class (:foreground ,type))))
      `(gnus-header-subject ((,class (:foreground ,functions :bold ,bold))))
 
+     ;; Mu4e
      `(mu4e-header-marks-face ((,class (:foreground ,type))))
      `(mu4e-view-url-number-face ((,class (:foreground ,type))))
      `(mu4e-cited-1-face ((,class (:foreground ,fg2))))
@@ -300,11 +304,12 @@
      `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
      `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
 
+     ;; Slime
      `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
-     `(trailing-whitespace ((,class :background ,warning :foreground nil)))
 
      ;; Rainbow delimeters
      `(show-paren-match-face ((,class (:background ,green :foreground ,bg2))))
+     `(show-paren-mismatch-face ((,class (:background ,red :foreground ,bg2))))
      `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
      `(rainbow-delimiters-depth-1-face ((,class (:foreground ,rb1))))
      `(rainbow-delimiters-depth-2-face ((,class :foreground ,rb2)))
@@ -348,6 +353,29 @@
      `(term-color-cyan ((t (:foreground ,cyan))))
      `(term-color-white ((t (:foreground ,fg2))))
 
+     ;; EShell
+     `(eshell-prompt ((t (:foreground ,green :bold ,bold))))
+     `(eshell-ls-directory ((t (:foreground ,magenta :bold ,bold))))
+     `(eshell-ls-symlink ((t (:foreground ,blue :bold ,bold))))
+     `(eshell-ls-executable ((t (:foreground ,lime :bold ,bold))))
+     `(eshell-ls-archive ((t (:foreground ,red))))
+     `(eshell-ls-backup ((t (:foreground ,purple))))
+     `(eshell-ls-clutter ((t (:foreground ,deep-pink))))
+     `(eshell-ls-missing ((t (:background ,bg3 :foreground ,red))))
+     `(eshell-ls-product ((t (:foreground ,yellow))))
+     `(eshell-ls-readonly ((t (:foreground ,fg2))))
+     `(eshell-ls-special ((t (:foreground ,light-green))))
+     `(eshell-ls-unreadable ((t (:foreground ,deep-blue))))
+
+     ;; Whitespace
+     `(whitespace-empty            ((t (:foreground ,red))))
+     `(whitespace-line             ((t (:background ,bg2))))
+     `(whitespace-space            ((t (:background ,bg2))))
+     `(whitespace-tab              ((t (:foreground ,gray))))
+     `(whitespace-newline          ((t (:foreground ,gray))))
+     `(whitespace-hspace           ((t (:foreground ,orange))))
+     `(whitespace-trailing         ((t (:background ,bg1))))
+
      ;; Helm
      `(helm-header ((,class (:background ,bg1 :foreground ,fg2 :underline nil :box nil))))
      `(helm-source-header ((,class (:background ,bg1 :foreground ,keyword :underline nil :bold ,bold))))
@@ -389,7 +417,7 @@
      `(company-tooltip-common ((,class ( :foreground ,fg3))))
      `(company-tooltip-common-selection ((,class (:foreground ,str))))
      `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,teal))))
-     `(company-tooltop-annotation ((,class (:foreground ,const))))
+     `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-scrollbar-bg ((,class (:background ,bg1))))
      `(company-scrollbar-fg ((,class (:foreground ,keyword))))
      `(company-template-field ((,class (:inherit region))))
@@ -430,6 +458,7 @@
      `(evil-ex-info ((,class (:foreground ,orange))))
      `(evil-ex-substitute-matches ((,class (:background ,bg3 :underline t))))
      `(evil-ex-substitute-replacement ((,class (:background ,bg1 :foreground ,red))))
+     '(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
 
      ;; Ivy & Swiper
      `(ivy-current-match ((,class (:background nil :foreground ,light-green :bold nil))))
