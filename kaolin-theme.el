@@ -20,15 +20,16 @@
 
 ;;; Code:
 
-(deftheme kaolin "Kaolin color theme")
+(deftheme kaolin "A dark jade Emacs theme")
 
 (defgroup kaolin-theme nil
   "Kaolin theme properties"
+  :prefix "kaolin-"
   :group 'faces)
 
 (defcustom kaolin-bold t
   "If nil, disable bold style"
-  :group 'kaolin-vars)
+  :group 'kaolin-theme)
 
 ;; Kaolin color palette
 (let ((class '((class color) (min-colors 89)))
@@ -51,7 +52,8 @@
       (light-orange "#ddc085")
       (dark-yellow  "#555a2f")
       (yellow       "#acb370")
-      (light-yellow "#c1b175")
+      ;; (light-yellow "#c1b175")
+      (light-yellow "#c9bb87")
       ;; (deep-green   "#30555a")
       (deep-green   "#39656b")
       (green        "#4a858c")
@@ -122,7 +124,8 @@
          (type       orange)
          (var        deep-blue)
          (num        red)
-         (warning    red))
+         (warning    orange)
+         (err        red))
 
     (custom-theme-set-faces
      'kaolin
@@ -144,6 +147,7 @@
      ;; General
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
      `(warning ((,class (:foreground ,warning))))
+     `(error ((,class (:foreground ,err))))
      `(region ((,class (:background ,bg3))))
      `(secondary-selection ((,class (:background ,green :foreground ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,fg1))))
@@ -283,7 +287,7 @@
      `(js3-external-variable-face ((,class (:foreground ,var))))
      `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
      `(js3-warning-face ((,class (:underline ,keyword))))
-     `(js3-error-face ((,class (:underline ,warning))))
+     `(js3-error-face ((,class (:underline ,err))))
 
      `(ac-completion-face ((,class (:foreground ,keyword :underline t))))
      `(info-quoted-name ((,class (:foreground ,builtin))))
@@ -418,6 +422,9 @@
 
      ;; Perl6
      ;; `(perl6-identifier ((,class (:foreground ,cyan))))
+
+     ;; Shell
+     `(sh-quoted-exec ((,class (:foreground ,light-red))))
 
      ;; Evil ex
      `(evil-ex-info ((,class (:foreground ,orange))))
