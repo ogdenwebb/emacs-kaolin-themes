@@ -1,10 +1,10 @@
-;;; kaolin-theme.el --- A dark jade Emacs theme inspired by Sierra.vim
+;;; kaolin-theme.el --- A dark jade theme inspired by Sierra.vim
 
 ;; Copyright (C) 2017 0rdy
 
-;; Author: 0rdy <mail@mail>
-;; URL:
-;; Version: 0.1
+;; Author: 0rdy <mail@0rdy.com>
+;; URL: https://github.com/0rdy/kaolin-theme
+;; Version: 0.2.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Code:
 
-(deftheme kaolin "A dark jade Emacs theme")
+(deftheme kaolin "A dark jade theme")
 
 (defgroup kaolin-theme nil
   "Kaolin theme properties"
@@ -28,7 +28,7 @@
   :group 'faces)
 
 (defcustom kaolin-bold t
-  "If nil, disable bold style"
+  "If nil, disable bold style."
   :group 'kaolin-theme)
 
 ;; Kaolin color palette
@@ -36,7 +36,7 @@
       (black        "#1b1b1b")
       (alt-black    "#181818")
       (dark-gray    "#2a2a2a")
-      (dim          "#353535")
+      (dim-gray     "#353535")
       (gray         "#545c5e")
       ;; (light-gray   "#788486")
       (light-gray   "#859092")
@@ -189,7 +189,7 @@
 
      ;; Modeline
      ;; `(mode-line ((,class (:box (:line-width 1 :color ,line-border) :bold ,bold :background ,line-bg :foreground ,line-fg))))
-     `(mode-line ((,class (:box (:line-width 2 :color ,dim) :background ,line-bg :foreground ,deep-blue :bold ,bold))))
+     `(mode-line ((,class (:box (:line-width 2 :color ,dim-gray) :background ,line-bg :foreground ,deep-blue :bold ,bold))))
      `(mode-line-buffer-id ((,class (:background nil :foreground ,teal :bold ,bold))))
      `(mode-line-highlight ((,class (:foreground ,keyword :box nil :bold ,bold))))
      ;; `(mode-line-inactive ((,class (:box (:line-width 1 :color ,bg2 :style pressed-button) :background ,bg2 :foreground ,light-gray :weight normal))))
@@ -197,16 +197,16 @@
      `(mode-line-emphasis ((,class (:foreground ,fg1))))
 
      ;; Telephone-line
-     `(telephone-line-accent-active ((t (:inherit mode-line :background ,dim :foreground ,line-fg))))
+     `(telephone-line-accent-active ((t (:inherit mode-line :background ,dim-gray :foreground ,line-fg))))
      `(telephone-line-accent-inactive ((t (:background ,line-bg :foreground ,light-gray :inherit mode-line-inactive))))
      `(telephone-line-evil ((t (:inherit mode-line))))
-     `(telephone-line-evil-normal ((t (:background ,dim :foreground ,evil-normal :inherit telephone-line-evil))))
-     `(telephone-line-evil-insert ((t (:background ,dim :foreground ,evil-insert :inherit telephone-line-evil))))
-     `(telephone-line-evil-visual ((t (:background ,dim :foreground ,evil-visual :inherit telephone-line-evil))))
-     `(telephone-line-evil-replace ((t (:background ,dim :foreground ,evil-replace :inherit telephone-line-evil))))
-     `(telephone-line-evil-motion ((t (:background ,dim :foreground ,evil-motion :inherit telephone-line-evil))))
-     `(telephone-line-evil-operator ((t (:background ,dim :foreground ,evil-operator :inherit telephone-line-evil))))
-     `(telephone-line-evil-emacs ((t (:background ,dim :foreground ,evil-emacs :inherit telephone-line-evil))))
+     `(telephone-line-evil-normal ((t (:background ,dim-gray :foreground ,evil-normal :inherit telephone-line-evil))))
+     `(telephone-line-evil-insert ((t (:background ,dim-gray :foreground ,evil-insert :inherit telephone-line-evil))))
+     `(telephone-line-evil-visual ((t (:background ,dim-gray :foreground ,evil-visual :inherit telephone-line-evil))))
+     `(telephone-line-evil-replace ((t (:background ,dim-gray :foreground ,evil-replace :inherit telephone-line-evil))))
+     `(telephone-line-evil-motion ((t (:background ,dim-gray :foreground ,evil-motion :inherit telephone-line-evil))))
+     `(telephone-line-evil-operator ((t (:background ,dim-gray :foreground ,evil-operator :inherit telephone-line-evil))))
+     `(telephone-line-evil-emacs ((t (:background ,dim-gray :foreground ,evil-emacs :inherit telephone-line-evil))))
 
      ;; Flycheck
      `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
@@ -224,7 +224,7 @@
      `(org-checkbox-statistics-done ((,class (:foreground ,lime :bold ,bold))))
      `(org-code ((,class (:foreground ,green))))
      `(org-verbatim ((,class (:foreground ,light-yellow))))
-     `(org-hide ((,class (:foreground ,fg4))))
+     `(org-hide ((,class (:foreground ,bg2))))
      `(org-date ((,class (:foreground ,light-yellow :underline t))))
      `(org-document-title ((,class (:foreground ,teal :bold ,bold))))
      `(org-document-info-keyword ((,class (:foreground ,deep-green))))
@@ -338,9 +338,9 @@
 
      ;; Git gutter
      `(git-gutter:unchanged ((,class (:background ,bg1 :foreground nil))))
-     `(git-gutter:added ((,class (:background ,light-green :foreground ,light-green :bold ,bold))))
-     `(git-gutter:modified ((,class (:background ,yellow :foreground ,yellow :bold ,bold))))
-     `(git-gutter:deleted ((,class (:background ,red :foreground ,red :bold ,bold))))
+     `(git-gutter:added ((,class (:background ,bg1 :foreground ,light-green :bold ,bold))))
+     `(git-gutter:modified ((,class (:background ,bg1 :foreground ,yellow :bold ,bold))))
+     `(git-gutter:deleted ((,class (:background ,bg1 :foreground ,red :bold ,bold))))
 
      ;; Terminal
      `(term ((t (:foreground ,fg1))))
