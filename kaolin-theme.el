@@ -4,6 +4,7 @@
 
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
+;; Package-Requires: ((emacs "24"))
 ;; Version: 0.2.0
 
 ;; This program is free software: you can redistribute it and/or modify
