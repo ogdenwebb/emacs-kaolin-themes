@@ -90,6 +90,7 @@
          (key2 "#5f9298")
          (key3 "#41757b")
          (dim-buffer alt-black)
+         (hl-line bg2)
 
          (rb1 blue)
          (rb2 light-yellow)
@@ -327,7 +328,7 @@
      `(diff-header ((,class (:background ,bg2))))
      `(diff-file-header ((,class (:background ,bg2 :foreground ,green))))
      `(diff-added ((,class (:background ,dark-green :foreground ,fg1))))
-     `(diff-changed ((,class (:background ,orange :foreground ,fg1))))
+     `(diff-changed ((,class (:background ,dark-yellow :foreground ,fg1))))
      `(diff-removed ((,class (:background ,dark-red :foreground ,fg1))))
 
      ;; Magit
@@ -351,6 +352,10 @@
      `(git-gutter:added ((,class (:background ,bg1 :foreground ,light-green :bold ,bold))))
      `(git-gutter:modified ((,class (:background ,bg1 :foreground ,yellow :bold ,bold))))
      `(git-gutter:deleted ((,class (:background ,bg1 :foreground ,red :bold ,bold))))
+
+     ;; Popup
+     `(popup-face ((,class (:background ,bg1 :foreground ,fg1 :bold ,bold))))
+     `(popup-menu-selection-face ((,class (:background ,bg3 :foreground ,teal :bold ,bold))))
 
      ;; Terminal
      `(term ((t (:foreground ,fg1))))
