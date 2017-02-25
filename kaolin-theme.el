@@ -164,7 +164,7 @@
      `(secondary-selection ((,class (:background ,green :foreground ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,fg1))))
      `(cursor ((,class (:background ,cursor))))
-     `(isearch ((,class (:background ,bg2 :foreground ,light-green :bold ,bold))))
+     `(isearch ((,class (:background ,bg2 :foreground ,light-green :bold ,bold :underline t))))
      `(vertical-border ((,class (:foreground ,win-border))))
      `(minibuffer-prompt ((,class (:foreground ,keyword :bold ,bold))))
      `(default-italic ((,class (:italic t))))
@@ -435,7 +435,7 @@
      `(helm-bookmark-w3m ((,class (:foreground ,type))))
 
      ;; Company
-     `(company-tooltip ((,class (:background ,tooltip-bg :foreground ,light-gray :bold ,bold))))
+     `(company-tooltip ((,class (:background ,tooltip-bg :foreground ,fg3 :bold ,bold))))
      `(company-tooltip-common ((,class (:foreground ,light-green))))
      `(company-tooltip-common-selection ((,class (:foreground ,light-yellow))))
      `(company-tooltip-selection ((,class (:background ,tooltip-hl :foreground ,light-yellow))))
@@ -443,7 +443,7 @@
      `(company-scrollbar-bg ((,class (:background ,bg1))))
      `(company-scrollbar-fg ((,class (:foreground ,keyword))))
      `(company-template-field ((,class (:inherit region))))
-     `(company-echo-common ((,class (:background ,fg1 :foreground ,bg1))))
+     `(company-echo-common ((,class (:background ,bg1 :foreground ,light-yellow))))
      `(company-preview ((,class (:background ,bg1 :foreground ,key2))))
      `(company-preview-common ((,class (:foreground ,bg2 :foreground ,fg3))))
      `(company-preview-search ((,class (:background ,bg1 :foreground ,blue))))
@@ -478,8 +478,8 @@
 
      ;; Evil ex
      `(evil-ex-info ((,class (:foreground ,orange))))
-     `(evil-ex-substitute-matches ((,class (:background ,bg3 :underline t))))
-     `(evil-ex-substitute-replacement ((,class (:background ,bg1 :foreground ,red))))
+     `(evil-ex-substitute-matches ((,class (:background ,bg1 :foreground ,red :underline t))))
+     `(evil-ex-substitute-replacement ((,class (:background ,bg1 :foreground ,light-green))))
      '(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
 
      ;; Ivy & Swiper
