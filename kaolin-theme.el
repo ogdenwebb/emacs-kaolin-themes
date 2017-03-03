@@ -219,6 +219,27 @@
      `(telephone-line-evil-operator ((t (:background ,dim-gray :foreground ,evil-operator :inherit telephone-line-evil))))
      `(telephone-line-evil-emacs ((t (:background ,dim-gray :foreground ,evil-emacs :inherit telephone-line-evil))))
 
+     ;; Powerline
+     `(powerline-active1 ((,class (:inherit mode-line))))
+     `(powerline-active2 ((,class (:inherit mode-line))))
+     `(powerline-inactive1 ((,class (:inherit mode-line-inactive))))
+     `(powerline-inactive2 ((,class (:inherit mode-line-inactive))))
+
+     ;; Spaceline
+     `(spaceline-highlight-face ((,class (:foreground ,blue))))
+
+     ;; Smart-mode-line
+     `(sml/line-number ((t (:foreground ,lime))))
+     `(sml/modes ((t (:foreground ,purple))))
+     `(sml/global ((t (:foreground ,teal))))
+     `(sml/filename ((t (:foreground ,green))))
+     `(sml/charging ((t (:foreground ,green))))
+     `(sml/discharging ((t (:foreground ,red))))
+     `(sml/modified ((t (:foreground ,light-green :bold ,bold))))
+     `(sml/outside-modified ((t (:background ,alt-red :foreground ,fg1))))
+     `(sml/prefix ((t (:foreground ,line-fg))))
+     `(sml/read-only ((t (:foreground ,orange))))
+
      ;; Flycheck
      `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
