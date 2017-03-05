@@ -226,7 +226,7 @@
      `(powerline-inactive2 ((,class (:inherit mode-line-inactive))))
 
      ;; Spaceline
-     `(spaceline-highlight-face ((,class (:foreground ,blue))))
+     `(spaceline-highlight-face ((,class (:foreground ,teal))))
 
      ;; Smart-mode-line
      `(sml/line-number ((t (:foreground ,lime))))
@@ -397,6 +397,11 @@
      `(git-gutter:added ((,class (:background ,bg1 :foreground ,light-green :bold ,bold))))
      `(git-gutter:modified ((,class (:background ,bg1 :foreground ,yellow :bold ,bold))))
      `(git-gutter:deleted ((,class (:background ,bg1 :foreground ,red :bold ,bold))))
+
+     ;; Diff-hl
+     `(diff-hl-insert ((,class (:foreground ,light-green))))
+     `(diff-hl-change ((,class (:foreground ,yellow))))
+     `(diff-hl-delete ((,class (:foreground ,red))))
 
      ;; Popup
      `(popup-face ((,class (:background ,tooltip-bg :foreground ,tooltip-fg :bold ,bold))))
