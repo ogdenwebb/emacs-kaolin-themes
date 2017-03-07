@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.2.0
+;; Version: 0.3.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -441,6 +441,9 @@
      `(whitespace-hspace           ((t (:foreground ,orange))))
      `(whitespace-trailing         ((t (:background ,bg1))))
 
+     ;; Smartparens
+     `(sp-pair-overlay-face ((t (:foreground nil))))
+
      ;; Helm
      `(helm-header ((,class (:background ,bg1 :foreground ,fg2 :underline nil :box nil))))
      `(helm-source-header ((,class (:background ,bg1 :foreground ,keyword :underline nil :bold ,bold))))
@@ -518,6 +521,13 @@
 
      ;; Shell
      `(sh-quoted-exec ((,class (:foreground ,light-red))))
+
+     ;; OCaml
+     `(tuareg-font-lock-governing-face ((,class (:foreground ,green :bold ,bold))))
+     `(tuareg-font-double-colon-face ((,class (:foreground ,yellow))))
+     `(tuareg-font-lock-error-face ((,class (:foreground ,alt-red))))
+     ;; FIXME: find code with following face
+     ;; `(tuareg-font-lock-multistage-face ((,class (:foreground ,alt-red))))
 
      ;; Evil ex
      `(evil-ex-info ((,class (:foreground ,orange))))
