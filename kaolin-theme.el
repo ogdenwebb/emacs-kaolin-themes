@@ -241,7 +241,16 @@
      `(sml/read-only ((t (:foreground ,orange))))
 
      ;; Flycheck
+     `(flycheck-info ((,class (:underline (:style wave :color ,light-green)))))
      `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
+     `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
+
+     ;; Hydra
+     `(hydra-face-red ((,class (:foreground ,red))))
+     `(hydra-face-teal ((,class (:foreground ,teal))))
+     `(hydra-face-blue ((,class (:foreground ,blue))))
+     `(hydra-face-pink ((,class (:foreground ,deep-pink))))
+     `(hydra-face-amaranth ((,class (:foreground ,purple))))
 
      ;; Org-mode
      `(org-level-1 ((,class (:foreground ,purple :bold ,bold :height 1.1))))
