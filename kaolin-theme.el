@@ -58,7 +58,7 @@
       ;; (light-yellow "#c1b175")
       (light-yellow    "#c9bb87")
       ;; (deep-green   "#30555a")
-      ;; (midnight-green  "#1e3538")
+      (midnight-purple "#1a121a")
       (midnight-green  "#152628")
       (deep-green      "#39656b")
       (green           "#4a858c")
@@ -86,7 +86,7 @@
          (fg2  "#b8bcb9")
          (fg3  "#abafac")
          (fg4  "#9ea39f")
-         (bg1   black)
+         (bg1  black)
          (bg2  "#282828")
          (bg3  "#353535")
          (bg4  "#414141")
@@ -242,8 +242,8 @@
 
      ;; Flycheck
      `(flycheck-info ((,class (:underline (:style wave :color ,light-green)))))
-     `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
-     `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
+     `(flycheck-warning ((,class (:underline (:style wave :color ,warning)))))
+     `(flycheck-error ((,class (:underline (:style wave :color ,err)))))
 
      ;; Hydra
      `(hydra-face-red ((,class (:foreground ,red))))
