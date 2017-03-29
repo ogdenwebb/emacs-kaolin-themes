@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.3.0
+;; Version: 0.4.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -43,6 +43,7 @@
       (light-gray      "#859092")
       (white           "#c5c8c6")
       (brown           "#7d6360")
+      (light-brown     "#ae9895")
       ;; (alt-brown       "#604c4a")
       (alt-brown       "#52413f")
       (dark-red        "#832729")
@@ -61,6 +62,8 @@
       (light-yellow    "#c9bb87")
       ;; (deep-green   "#30555a")
       (midnight-purple "#1a121a")
+
+      (jade            "#597a6e")
       (midnight-green  "#152628")
       (deep-green      "#39656b")
       (green           "#4a858c")
@@ -69,7 +72,11 @@
       (lime            "#85b654")
       (teal            "#80b6bc")
       (teal-blue       "#91b9c7")
-      (teal-green      "#91c7ba")
+      ;; (teal-blue      "#91c7c7")
+      ;; (teal-green      "#91c7ba")
+      ;; (teal-green      "#91c7ad")
+      ;; (teal-green      "#80bea0")
+      (teal-green      "#6fb593")
       (wheat           "#b9c791")
       (dark-blue       "#2a4661")
       (blue            "#5485b6")
@@ -107,7 +114,7 @@
          (rb1 teal)
          (rb2 purple)
          (rb3 blue)
-         (rb4 yellow)
+         (rb4 light-orange)
          (rb5 green)
          (rb6 deep-blue)
          (rb7 alt-blue)
@@ -142,10 +149,15 @@
          (builtin    teal)
          (const      deep-blue)
          (comment    gray)
+         ;; Light
+         ;; (comment    "#869a90")
+         ;; (comment    "#8f9ca7")
          (win-border dark-gray)
          (functions  teal)
-         (str        wheat)
-         (str-alt    light-yellow)
+         (str        teal-green)
+         (str-alt    jade)
+         (str        teal-green)
+         (str-alt    jade)
          (doc        str-alt)
          (type       orange)
          (var        deep-blue)
@@ -506,7 +518,7 @@
      ;; Company
      `(company-tooltip ((,class (:background ,tooltip-bg :foreground ,fg3 :bold ,bold))))
      `(company-tooltip-common ((,class (:foreground ,light-green))))
-     `(company-tooltip-common-selection ((,class (:foreground ,light-yellow))))
+     `(company-tooltip-common-selection ((,class (:foreground ,light-orange))))
      `(company-tooltip-selection ((,class (:background ,tooltip-hl :foreground ,light-yellow))))
      `(company-tooltip-annotation ((,class (:foreground ,deep-blue))))
      `(company-scrollbar-bg ((,class (:background ,bg1))))
