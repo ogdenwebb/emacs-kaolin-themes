@@ -555,7 +555,7 @@
      ;; `(perl6-identifier ((,class (:foreground ,cyan))))
 
      ;; Shell
-     `(sh-quoted-exec ((,class (:foreground ,light-red))))
+     `(sh-quoted-exec ((,class (:foreground ,light-yellow))))
 
      ;; OCaml
      `(tuareg-font-lock-governing-face ((,class (:foreground ,green :bold ,bold))))
