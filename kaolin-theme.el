@@ -78,8 +78,10 @@
       ;; (teal-green      "#80bea0")
       (teal-green      "#6fb593")
       (wheat           "#b9c791")
+
       (dark-blue       "#2a4661")
-      (blue            "#5485b6")
+      ;; (blue            "#5485b6")
+      (blue            "#5077a5")
       (alt-blue        "#6666be")
       (cyan            "#54b6b6")
       (deep-blue       "#857f96")
