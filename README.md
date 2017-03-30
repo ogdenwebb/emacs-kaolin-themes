@@ -3,7 +3,9 @@
 # Kaolin theme
 A dark jade Emacs theme inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
 
-![kaolin-logo](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/kaolin-theme.png)
+# Screenshots
+![kaolin-theme](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/kaolin-theme.png)
+![kaolin-company](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/company.png)
 
 # Installation
 ## MELPA
@@ -14,3 +16,9 @@ Copy the `kaolin-theme.el` file to your `~/.emacs.d/themes` directory and add th
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'kaolin t)
 ```
+# Advanced highliginting
+
+* [highlight-numbers](https://github.com/Fanael/highlight-numbers) — Highlight numbers in source code.
+* [highlight-quoted](https://github.com/Fanael/highlight-quoted) — highlight Lisp quotes and quoted symbols
+* [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) — mode which highlights delimiters such as parentheses, brackets or braces according to their depth.
+* [highlight-defined](https://github.com/Fanael/highlight-defined) — highlight known Emacs Lisp symbols
