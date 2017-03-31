@@ -442,7 +442,7 @@
 
      ;; Popup
      `(popup-face ((,class (:background ,tooltip-bg :foreground ,tooltip-fg :bold ,bold))))
-     `(popup-menu-selection-face ((,class (:background ,tooltip-hl :foreground ,light-yellow :bold ,bold))))
+     `(popup-menu-selection-face ((,class (:background ,tooltip-hl :foreground ,light-orange :bold ,bold))))
 
      ;; Terminal
      `(term ((t (:foreground ,fg1))))
@@ -538,7 +538,7 @@
      `(web-mode-html-tag-face ((,class (:inherit font-lock-keyword-face))))
      `(web-mode-html-tag-bracket-face ((,class (:inherit web-mode-html-tag-face))))
      `(web-mode-html-attr-name-face ((,class (:inherit ,font-lock-function-name-face))))
-     `(web-mode-html-attr-value-face ((,class (:inherit ,font-lock-doc-face))))
+     `(web-mode-html-attr-value-face ((,class (:inherit ,font-lock-string-face))))
      `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
      `(web-mode-keyword-face ((,class (:foreground ,keyword))))
      `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
