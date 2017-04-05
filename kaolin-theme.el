@@ -99,6 +99,9 @@
       (light-purple    "#cea2ca")
       (alt-purple      "#8c4a64")
 
+      ;; (violet          "#b1a7c0")
+      (violet          "#b1a7c0")
+
       ;; Face options
       (bold         kaolin-bold))
 
@@ -120,11 +123,12 @@
          (tooltip-fg light-gray)
          (tooltip-hl alt-brown)
 
+         ;; TODO: change this part
          (rb1 teal)
          (rb2 purple)
          (rb3 blue)
          (rb4 green)
-         (rb5 light-orange)
+         (rb5 violet)
          (rb6 faded-blue)
          (rb7 alt-blue)
          (rb8 alt-yellow)
@@ -151,12 +155,13 @@
          (evil-operator     evil-normal)
          (evil-emacs        light-yellow)
 
+         ;; TODO: different colors for const and vars
          (cursor     light-gray)
          (keyword    green)
          (hl         cyan)
          (hl-indent  gray)
          (builtin    teal)
-         (const      faded-blue)
+         (const      violet)
          (comment    gray)
          ;; Light
          ;; (comment    "#869a90")
@@ -360,6 +365,7 @@
      `(js2-function-param ((,class (:foreground ,const))))
      `(js2-error ((,class (:underline (:color ,alt-red :style wave)))))
      `(js2-function-call ((,class (:foreground ,functions))))
+     `(js2-object-property ((,class (:foreground ,light-brown))))
      `(js2-jsdoc-value ((,class (:foreground ,str))))
      `(js2-private-member ((,class (:foreground ,fg3))))
      `(js3-function-param-face ((,class (:foreground ,key3))))
