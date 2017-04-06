@@ -4,8 +4,9 @@
 A dark jade Emacs theme inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
 
 # Screenshots
-![kaolin-theme](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/kaolin-theme.png)
-![kaolin-company](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/company.png)
+![kaolin-elisp](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/kaolin-elisp.png)
+![kaolin-modes](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/kaolin-modes.png)
+![kaolin-company](https://raw.githubusercontent.com/0rdy/kaolin-theme/master/screenshots/kaolin-company.png)
 
 # Installation
 ## MELPA
