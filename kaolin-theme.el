@@ -89,7 +89,8 @@
       (blue            "#5077a5")
       (alt-blue        "#6666be")
       (cyan            "#54b6b6")
-      (faded-blue      "#857f96")
+      ;; (faded-blue      "#857f96")
+      (faded-blue      "#817f96")
 
       (midnight-purple "#1a121a")
       (dark-purple     "#563d56")
@@ -100,7 +101,8 @@
       (alt-purple      "#8c4a64")
 
       ;; (violet          "#b1a7c0")
-      (violet          "#b1a7c0")
+      ;; (violet          "#a498b5")
+      (violet          "#ab98b5")
 
       ;; Face options
       (bold         kaolin-bold))
@@ -126,10 +128,10 @@
          ;; TODO: change this part
          (rb1 teal)
          (rb2 purple)
-         (rb3 blue)
-         (rb4 green)
-         (rb5 violet)
-         (rb6 faded-blue)
+         (rb3 jade)
+         (rb4 faded-blue)
+         (rb5 green)
+         (rb6 violet)
          (rb7 alt-blue)
          (rb8 alt-yellow)
 
@@ -155,7 +157,6 @@
          (evil-operator     evil-normal)
          (evil-emacs        light-yellow)
 
-         ;; TODO: different colors for const and vars
          (cursor     light-gray)
          (keyword    green)
          (hl         cyan)
@@ -293,7 +294,7 @@
      `(hydra-face-amaranth ((,class (:foreground ,purple))))
 
      ;; Org-mode
-     `(org-level-1 ((,class (:foreground ,purple :bold ,bold :height 1.1))))
+     `(org-level-1 ((,class (:foreground ,teal-green :bold ,bold :height 1.1))))
      `(org-level-2 ((,class (:foreground ,teal-blue :bold nil))))
      `(org-level-3 ((,class (:inherit org-level-2))))
      `(org-level-4 ((,class (:inherit org-level-2))))
@@ -571,6 +572,9 @@
 
      ;; Shell
      `(sh-quoted-exec ((,class (:foreground ,light-yellow))))
+
+     ;; Clojure
+     `(clojure-keyword-face ((,class (:inherit ,font-lock-variable-name-face))))
 
      ;; OCaml
      `(tuareg-font-lock-governing-face ((,class (:foreground ,green :bold ,bold))))
