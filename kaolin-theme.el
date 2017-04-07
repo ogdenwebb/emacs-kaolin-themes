@@ -562,6 +562,15 @@
      `(web-mode-string-face ((,class (:foreground ,str))))
      `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
 
+    ;; Speedbar
+     `(speedbar-separator-face ((,class (:background ,blue))))
+     `(speedbar-directory-face ((,class (:foreground ,teal))))
+     `(speedbar-file-face ((,class (:foreground ,green))))
+     `(speedbar-tag-face ((,class (:foreground ,faded-blue))))
+     `(speedbar-selected-face ((,class (:foreground ,teal-green))))
+     `(speedbar-highlight-face ((,class (:foreground ,hl))))
+     `(speedbar-button-face ((,class (:foreground ,jade))))
+
      ;; Haskell mode
      ;; `(haskell-operator-face ((,class (:foreground ,lime))))
      ;; `(haskell-type-face ((,class (:foreground ,light-yellow))))
