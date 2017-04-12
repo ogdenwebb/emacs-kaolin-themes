@@ -313,7 +313,7 @@
      `(org-meta-line ((,class (:inherit org-document-info-keyword))))
      `(org-document-info ((,class (:foreground ,teal))))
      `(org-footnote  ((,class (:foreground ,fg4 :underline t))))
-     `(org-link ((,class (:foreground ,blue :underline t))))
+     `(org-link ((,class (:foreground ,cyan :underline t))))
      `(org-special-keyword ((,class (:foreground ,functions))))
      `(org-block ((,class (:foreground ,fg3))))
      `(org-block-begin-line ((,class (:foreground ,deep-green))))
