@@ -32,6 +32,10 @@
   "If nil, disable bold style."
   :group 'kaolin-theme)
 
+(defface kaolin-boolean nil
+  "Face to highlight boolean type"
+  :group 'kaolin-theme)
+
 ;; Kaolin color palette
 (let ((class '((class color) (min-colors 89)))
       (black           "#1b1b1b")
@@ -58,6 +62,7 @@
       (deep-pink       "#d24b83")
 
       ;; (orange          "#d2ab5d")
+      (alt-orange      "#d9a76f")
       (orange          "#dbac66")
       (light-orange    "#ddc085")
       (dark-yellow     "#555a2f")
@@ -100,8 +105,6 @@
       (light-purple    "#cea2ca")
       (alt-purple      "#8c4a64")
 
-      ;; (violet          "#b1a7c0")
-      ;; (violet          "#a498b5")
       (violet          "#ab98b5")
 
       ;; Face options
@@ -135,15 +138,6 @@
          (rb7 alt-blue)
          (rb8 alt-yellow)
 
-         ;; (rb1 teal)
-         ;; (rb2 alt-purple)
-         ;; (rb3 green)
-         ;; (rb4 blue)
-         ;; (rb5 teal-blue)
-         ;; (rb6 faded-blue)
-         ;; (rb7 light-green)
-         ;; (rb8 alt-blue)
-
          (line-fg           fg4)
          (line-bg           bg2)
          (line-border       bg3)
@@ -173,10 +167,11 @@
          (str        teal-green)
          (str-alt    jade)
          (doc        str-alt)
-         (type       orange)
+         (type       alt-orange)
          (const      violet)
          (var        faded-blue)
          (num        faded-red)
+         (bool       faded-red)
          (warning    orange)
          (err        red))
 
@@ -196,6 +191,9 @@
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:background nil :foreground ,warning))))
      `(font-lock-preprocessor-face ((,class (:foreground ,deep-pink :bold nil))))
+
+     ;; Kaolin faces
+     `(kaolin-boolean ((,class (:foreground ,bool))))
 
      ;; General
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
