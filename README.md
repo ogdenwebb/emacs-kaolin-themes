@@ -1,6 +1,6 @@
+# Kaolin theme
 [![MELPA](https://melpa.org/packages/kaolin-theme-badge.svg)](https://melpa.org/#/kaolin-theme)
 
-# Kaolin theme
 A dark jade Emacs theme inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
 
 # Screenshots
