@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.5.0
+;; Version: 0.6.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -81,6 +81,7 @@
       (wheat           "#b9c791")
 
       (jade            "#597a6e")
+      (dark-jade       "#2e4039")
       (midnight-green  "#152628")
       ;; (deep-green   "#30555a")
       (deep-green      "#39656b")
@@ -133,7 +134,7 @@
          (key3 "#41757b")
 
          (dim-buffer alt-black)
-         (hl-line bg2)
+         (hl-line    bg2)
          (tooltip-bg bg2)
          (tooltip-fg light-gray)
          (tooltip-hl alt-brown)
@@ -237,7 +238,7 @@
      `(highlight-indent-guides-character-face  ((t (:foreground ,hl-indent))))
 
      ;; Linum & nlinum
-     `(linum ((t (:background ,bg1 :foreground ,gray))))
+     `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
 
      ;; Auto-dim-other-buffers
@@ -586,6 +587,8 @@
 
      ;; Perl6
      ;; `(perl6-identifier ((,class (:foreground ,cyan))))
+     `(perl6-phaser ((,class (:foreground ,cyan))))
+     `(perl6-type-constraint ((,class (:inherit font-lock-keyword-face))))
 
      ;; Shell
      `(sh-quoted-exec ((,class (:foreground ,light-yellow))))
