@@ -53,7 +53,8 @@
       (gray            "#545c5e")
       ;; (light-gray   "#788486")
       (light-gray      "#859092")
-      (white           "#c5c8c6")
+      ;; (white           "#c5c8c6")
+      (white           "#c8c8d0")
 
       (brown           "#7d6360")
       (light-brown     "#ae9895")
