@@ -1,5 +1,8 @@
 # Kaolin theme
 [![MELPA](https://melpa.org/packages/kaolin-theme-badge.svg)](https://melpa.org/#/kaolin-theme)
+[![Emacs](https://img.shields.io/badge/Emacs-24%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
 
 A dark jade Emacs theme inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
 
