@@ -132,6 +132,7 @@
          (bg2  "#282828")
          (bg3  "#353535")
          (bg4  "#414141")
+         ;; TODO: move this part
          (key2 "#5f9298")
          (key3 "#41757b")
 
@@ -607,6 +608,9 @@
      `(tuareg-font-lock-error-face ((,class (:foreground ,alt-red))))
      ;; FIXME: find code with following face
      ;; `(tuareg-font-lock-multistage-face ((,class (:foreground ,alt-red))))
+
+     ;; which-function-mode
+     `(which-func ((,class (:foreground ,orange))))
 
      ;; Evil ex
      `(evil-ex-info ((,class (:foreground ,orange))))
