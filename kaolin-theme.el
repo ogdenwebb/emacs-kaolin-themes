@@ -81,8 +81,9 @@
       (light-yellow    "#c9bb87")
       (wheat           "#b9c791")
 
-      (jade            "#597a6e")
       (dark-jade       "#2e4039")
+      (jade            "#597a6e")
+      (light-jade      "#709688")
       (midnight-green  "#152628")
       ;; (deep-green   "#30555a")
       (deep-green      "#39656b")
@@ -148,9 +149,19 @@
          (rb3 jade)
          (rb4 faded-blue)
          (rb5 green)
-         (rb6 violet)
-         (rb7 alt-blue)
-         (rb8 alt-yellow)
+         (rb6 wheat)
+         (rb7 light-green)
+         (rb8 light-yellow)
+
+         ;; (rb1 teal)
+         ;; (rb2 purple)
+         ;; (rb3 jade)
+         ;; (rb4 faded-blue)
+         ;; (rb5 green)
+         ;; (rb6 violet)
+         ;; (rb7 alt-blue)
+         ;; (rb8 alt-yellow)
+
 
          (line-fg           fg4)
          (line-bg           bg2)
@@ -222,9 +233,20 @@
      `(default-italic ((,class (:italic ,italic))))
      `(link ((,class (:foreground ,const :underline ,underline))))
      `(success ((,class (:background nil :foreground ,yellow))))
+     `(escape-glyph ((,class (:background nil :foreground ,cyan))))
 
-     ;; Dashboard
+     ;; Interface
+     `(custom-button ((,class (:background ,bg4 :foreground ,teal :box (:line-width 3 :color ,bg3 :style nil)))))
+     `(custom-button-mouse ((,class (:background ,bg3 :foreground ,cyan :box (:line-width 3 :color ,bg2 :style nil)))))
+     `(custom-button-pressed ((,class (:background ,bg3 :foreground ,cyan :box (:line-width 3 :color ,bg2 :style pressed-button)))))
+     `(custom-visibility ((,class (:background nil :foreground ,cyan :height 0.9 :underline ,underline))))
+     `(custom-state ((,class (:background nil :foreground ,light-green))))
+     `(custom-changed ((,class (:background nil :foreground ,orange))))
+     `(custom-invalid ((,class (:background nil :foreground ,red))))
+     `(custom-face-tag ((,class (:background nil :foreground ,purple :bold ,bold))))
      `(widget-button ((,class (:background nil :foreground ,green :bold ,bold))))
+     `(widget-field ((,class (:background ,bg3 :foreground ,fg1 :box (:line-width 1 :color ,bg2 :style nil)))))
+
 
      ;; Additional highlighting
      `(highlight ((,class (:background ,bg2 :foreground ,hl))))
@@ -573,7 +595,7 @@
      `(web-mode-string-face ((,class (:foreground ,str))))
      `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
 
-    ;; Speedbar
+     ;; Speedbar
      `(speedbar-separator-face ((,class (:background ,blue))))
      `(speedbar-directory-face ((,class (:foreground ,teal))))
      `(speedbar-file-face ((,class (:foreground ,green))))
