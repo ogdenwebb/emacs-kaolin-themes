@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.6.0
+;; Version: 0.6.1
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -18,7 +18,9 @@
 ;; GNU General Public License for more details.
 
 ;;; Commentary:
-
+;;
+;; Kaolin is a dark jade, eye pleasing theme for Emacs with support a large number of specific modes and external packages.
+;;
 ;;; Code:
 
 (deftheme kaolin "A dark jade theme")
@@ -126,9 +128,12 @@
 
   ;; Theme colors
   (let* ((fg1  white)
-         (fg2  "#b8bcb9")
-         (fg3  "#abafac")
-         (fg4  "#9ea39f")
+         ;; (fg2  "#b8bcb9")
+         ;; (fg3  "#abafac")
+         ;; (fg4  "#9ea39f")
+         (fg2  "#babac4")
+         (fg3  "#adadb9")
+         (fg4  "#9f9fad")
          (bg1  black)
          (bg2  "#282828")
          (bg3  "#353535")

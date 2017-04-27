@@ -27,3 +27,7 @@ Copy the `kaolin-theme.el` file to your `~/.emacs.d/themes` directory and add th
 * [highlight-quoted](https://github.com/Fanael/highlight-quoted) — highlight Lisp quotes and quoted symbols
 * [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) — mode which highlights delimiters such as parentheses, brackets or braces according to their depth.
 * [highlight-defined](https://github.com/Fanael/highlight-defined) — highlight known Emacs Lisp symbols
+
+# Modeline
+
+The mode-line config isn't a part of the Kaolin theme, you can find my telephone-line config [here](https://github.com/0rdy/emacs.d/blob/master/env/env-modeline.el).
