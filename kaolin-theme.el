@@ -210,6 +210,7 @@
      ;; Font-lock
      `(font-lock-builtin-face ((,class (:foreground ,builtin))))
      `(font-lock-comment-face ((,class (:foreground ,comment))))
+     `(font-lock-comment-delimiter-face ((,class (:foreground ,comment))))
      `(font-lock-constant-face ((,class (:foreground ,const))))
      `(font-lock-reference-face ((,class (:foreground ,const))))
      `(font-lock-string-face ((,class (:foreground ,str))))
@@ -221,6 +222,7 @@
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:background nil :foreground ,warning))))
      `(font-lock-preprocessor-face ((,class (:foreground ,prep :bold nil))))
+     `(font-lock-negation-char-face ((,class (:foreground ,cyan :bold nil))))
 
      ;; Kaolin faces
      `(kaolin-boolean ((,class (:foreground ,bool))))
