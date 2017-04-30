@@ -106,7 +106,8 @@
       ;; TODO: Change blue color
       ;; (blue            "#5485b6")
       (blue            "#5077a5")
-      (alt-blue        "#6666be")
+      ;; (alt-blue        "#6666be")
+      (alt-blue        "#267fb5")
       (cyan            "#54b6b6")
       ;; (faded-blue      "#857f96")
       (faded-blue      "#817f96")
@@ -343,6 +344,7 @@
      `(org-checkbox ((,class (:foreground ,faded-blue :bold ,bold))))
      `(org-todo ((,class (:foreground ,red :bold ,bold))))
      `(org-done ((,class (:foreground ,lime  :bold ,bold))))
+     `(org-headline-done ((,class (:foreground ,teal-blue  :bold nil))))
      `(org-checkbox-statistics-todo ((,class (:foreground ,faded-blue :bold ,bold))))
      `(org-checkbox-statistics-done ((,class (:foreground ,lime :bold ,bold))))
      `(org-code ((,class (:foreground ,green))))
