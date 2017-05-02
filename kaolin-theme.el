@@ -160,14 +160,9 @@
          (rb7 light-green)
          (rb8 light-yellow)
 
-         ;; (rb1 teal)
-         ;; (rb2 purple)
-         ;; (rb3 jade)
-         ;; (rb4 faded-blue)
-         ;; (rb5 green)
-         ;; (rb6 violet)
-         ;; (rb7 alt-blue)
-         ;; (rb8 alt-yellow)
+         (diff-add    light-green)
+         (diff-change violet)
+         (diff-del    red)
 
 
          (line-fg           fg4)
@@ -232,17 +227,25 @@
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
      `(warning ((,class (:foreground ,warning))))
      `(error ((,class (:foreground ,err))))
+     `(shadow ((,class (:foreground ,gray))))
      `(region ((,class (:background ,bg3))))
      `(secondary-selection ((,class (:background ,green :foreground ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,fg1))))
      `(cursor ((,class (:background ,cursor))))
-     `(isearch ((,class (:background nil :foreground ,light-green :bold ,bold :underline ,underline))))
      `(vertical-border ((,class (:foreground ,win-border))))
      `(minibuffer-prompt ((,class (:foreground ,keyword :bold ,bold))))
      `(default-italic ((,class (:italic ,italic))))
-     `(link ((,class (:foreground ,const :underline ,underline))))
-     `(success ((,class (:background nil :foreground ,yellow))))
+     `(link ((,class (:foreground ,cyan :underline ,underline))))
+     `(success ((,class (:background nil :foreground ,light-green))))
      `(escape-glyph ((,class (:background nil :foreground ,cyan))))
+
+     `(menu ((,class (:background ,bg2 :foreground ,fg2))))
+     `(header-line ((,class (:background ,bg4 :foreground ,teal))))
+     `(tooltip ((,class (:foreground ,tooltip-bg :foreground ,tooltip-fg))))
+
+     `(match ((,class (:background nil :foreground ,cyan))))
+     `(isearch ((,class (:background nil :foreground ,light-green :bold ,bold :underline ,underline))))
+     `(isearch-fail ((,class (:background nil :foreground ,red))))
 
      ;; Interface
      `(custom-button ((,class (:background ,bg4 :foreground ,teal :box (:line-width 3 :color ,bg3 :style nil)))))
@@ -264,6 +267,9 @@
      `(highlight-numbers-number ((,class (:foreground ,num))))
      `(highlight-quoted-quote ((t (:foreground ,teal)))) ; Face to highlight Lisp quotes
      `(highlight-quoted-symbol ((t (:foreground ,green)))) ; Face to highlight quoted Lisp symbols
+
+     ;; Eldoc
+     `(eldoc-highlight-function-argument ((t (:foreground ,violet :bold ,bold))))
 
      ;; Highlight indent guides
      `(highlight-indent-guides-odd-face  ((t (:background ,hl-indent))))
@@ -450,7 +456,7 @@
      `(diff-header ((,class (:background ,bg2))))
      `(diff-file-header ((,class (:background ,bg2 :foreground ,green))))
      `(diff-added ((,class (:background ,dark-green :foreground ,fg1))))
-     `(diff-changed ((,class (:background ,dark-yellow :foreground ,fg1))))
+     `(diff-changed ((,class (:background ,diff-change :foreground ,fg1))))
      `(diff-removed ((,class (:background ,dark-red :foreground ,fg1))))
 
      ;; Ediff
@@ -488,9 +494,9 @@
 
      ;; Git gutter
      `(git-gutter:unchanged ((,class (:background ,bg1 :foreground nil))))
-     `(git-gutter:added ((,class (:background ,bg1 :foreground ,light-green :bold ,bold))))
-     `(git-gutter:modified ((,class (:background ,bg1 :foreground ,yellow :bold ,bold))))
-     `(git-gutter:deleted ((,class (:background ,bg1 :foreground ,red :bold ,bold))))
+     `(git-gutter:added ((,class (:background ,bg1 :foreground ,diff-add :bold ,bold))))
+     `(git-gutter:modified ((,class (:background ,bg1 :foreground ,diff-change :bold ,bold))))
+     `(git-gutter:deleted ((,class (:background ,bg1 :foreground ,diff-del :bold ,bold))))
 
      ;; Diff-hl
      `(diff-hl-insert ((,class (:foreground ,light-green))))
