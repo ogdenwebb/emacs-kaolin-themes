@@ -54,8 +54,8 @@
       (dark-gray       "#2a2a2a")
       (dim-gray        "#353535")
       (gray            "#545c5e")
-      ;; (light-gray   "#788486")
-      (light-gray      "#859092")
+      ;; (light-gray      "#859092")
+      (light-gray      "#9191a2")
       ;; (white           "#c5c8c6")
       (white           "#c8c8d0")
 
@@ -73,10 +73,14 @@
       ;; (deep-pink    "#d75f91")
       (deep-pink       "#d24b83")
 
-      ;; (orange          "#d2ab5d")
       (alt-orange      "#d9a76f")
       (orange          "#dbac66")
       (light-orange    "#ddc085")
+      ;; (pure-orange     "#cc3700")
+      ;; (pure-orange     "#cc4800")
+      ;; (pure-orange     "#cc5900")
+      ;; (pure-orange     "#cc6a00")
+
       (dark-yellow     "#555a2f")
       (yellow          "#acb370")
       (alt-yellow      "#be9266")
@@ -178,7 +182,6 @@
          (evil-operator     evil-normal)
          (evil-emacs        light-yellow)
 
-         ;; TODO: Change
          (cursor     light-gray)
          (keyword    green)
          (hl         cyan)
@@ -228,6 +231,7 @@
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
      `(warning ((,class (:foreground ,warning))))
      `(error ((,class (:foreground ,err))))
+     ;; TODO: lighther shadow
      `(shadow ((,class (:foreground ,gray))))
      `(region ((,class (:background ,bg3))))
      `(secondary-selection ((,class (:background ,green :foreground ,bg1))))
@@ -652,6 +656,10 @@
      ;; Nim
      `(nim-font-lock-export-face ((,class (:inherit font-lock-function-name-face :italic nil))))
 
+     ;; Ace-window
+     `(aw-leading-char-face ((,class (:foreground ,deep-pink :bold ,bold))))
+     `(aw-background-face ((,class (:foreground ,bg4 :bold ,bold))))
+
      ;; Latex/Auctex
      ;; `(font-latex-bold-face ((,class (:inherit bold))))
      ;; `(font-latex-italic-face ((,class (:inherit italic))))
@@ -673,8 +681,8 @@
 
      ;; Evil ex
      `(evil-ex-info ((,class (:foreground ,orange))))
-     `(evil-ex-substitute-matches ((,class (:background ,bg1 :foreground ,red :underline ,underline))))
-     `(evil-ex-substitute-replacement ((,class (:background ,bg1 :foreground ,light-green))))
+     `(evil-ex-substitute-matches ((,class (:background nil :foreground ,red :underline ,underline))))
+     `(evil-ex-substitute-replacement ((,class (:background nil :foreground ,light-green))))
      '(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
 
      ;; Ivy & Swiper
