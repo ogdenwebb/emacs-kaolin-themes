@@ -282,6 +282,11 @@
      `(highlight-indent-guides-even-face  ((t (:background ,hl-indent))))
      `(highlight-indent-guides-character-face  ((t (:foreground ,hl-indent))))
 
+     ;; Highlighting indentation
+     `(highlight-indentation-face  ((t (:background ,bg2))))
+     `(highlight-indentation-current-column-face  ((t (:background ,bg2))))
+
+
      ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
