@@ -284,8 +284,7 @@
 
      ;; Highlighting indentation
      `(highlight-indentation-face  ((t (:background ,bg2))))
-     `(highlight-indentation-current-column-face  ((t (:background ,bg2))))
-
+     `(highlight-indentation-current-column-face  ((t (:background ,bg3))))
 
      ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
@@ -689,6 +688,12 @@
      `(evil-ex-substitute-matches ((,class (:background nil :foreground ,red :underline ,underline))))
      `(evil-ex-substitute-replacement ((,class (:background nil :foreground ,light-green))))
      '(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
+
+    ;; avy
+     `(avy-lead-face ((,class (:background ,dark-red :foreground ,white))))
+     `(avy-lead-face-0 ((,class (:background ,jade :foreground ,white))))
+     `(avy-lead-face-1 ((,class (:background ,dark-blue :foreground ,white))))
+     `(avy-lead-face-2 ((,class (:background ,dark-purple :foreground ,white))))
 
      ;; Ivy & Swiper
      `(ivy-current-match ((,class (:background nil :foreground ,light-green :bold nil))))
