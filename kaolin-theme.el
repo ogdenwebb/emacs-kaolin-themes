@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.7.1
+;; Version: 0.7.2
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
   :group 'kaolin-theme)
 
 (defface kaolin-boolean nil
-  "Face to highlight boolean type"
+  "Face to highlight boolean values"
   :group 'kaolin-theme)
 
 ;; Kaolin color palette
@@ -61,7 +61,6 @@
 
       (brown           "#7d6360")
       (light-brown     "#ae9895")
-      ;; (alt-brown       "#604c4a")
       (alt-brown       "#52413f")
 
       (dark-red        "#832729")
@@ -76,8 +75,6 @@
       (alt-orange      "#d9a76f")
       (orange          "#dbac66")
       (light-orange    "#ddc085")
-      ;; (pure-orange     "#cc3700")
-      ;; (pure-orange     "#cc4800")
       ;; (pure-orange     "#cc5900")
       ;; (pure-orange     "#cc6a00")
 
@@ -101,8 +98,6 @@
       (teal            "#80b6bc")
       (teal-blue       "#91b9c7")
       ;; (teal-blue      "#91c7c7")
-      ;; (teal-green      "#91c7ba")
-      ;; (teal-green      "#91c7ad")
       ;; (teal-green      "#80bea0")
       (teal-green      "#6fb593")
 
@@ -120,7 +115,6 @@
       (dark-purple     "#563d56")
       (purple          "#835d83")
       (magenta         "#5454b6")
-      ;; (light-purple "#9d769d")
       (light-purple    "#cea2ca")
       ;; (alt-purple      "#8c4a64")
       (alt-purple      "#915c83")
@@ -134,9 +128,6 @@
 
   ;; Theme colors
   (let* ((fg1  white)
-         ;; (fg2  "#b8bcb9")
-         ;; (fg3  "#abafac")
-         ;; (fg4  "#9ea39f")
          (fg2  "#babac4")
          (fg3  "#adadb9")
          (fg4  "#9f9fad")
@@ -154,20 +145,18 @@
          (tooltip-fg light-gray)
          (tooltip-hl alt-brown)
 
-         ;; TODO: change this part
          (rb1 teal)
-         (rb2 purple)
+         (rb2 violet)
          (rb3 jade)
          (rb4 faded-blue)
          (rb5 green)
-         (rb6 wheat)
+         (rb6 light-brown)
          (rb7 light-green)
-         (rb8 light-yellow)
+         (rb8 wheat)
 
          (diff-add    light-green)
          (diff-change violet)
          (diff-del    red)
-
 
          (line-fg           fg4)
          (line-bg           bg2)
@@ -231,7 +220,6 @@
      `(default ((,class (:background ,bg1 :foreground ,fg1))))
      `(warning ((,class (:foreground ,warning))))
      `(error ((,class (:foreground ,err))))
-     ;; TODO: lighther shadow
      `(shadow ((,class (:foreground ,gray))))
      `(region ((,class (:background ,bg3))))
      `(secondary-selection ((,class (:background ,green :foreground ,bg1))))
