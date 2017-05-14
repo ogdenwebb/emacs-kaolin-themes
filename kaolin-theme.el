@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.7.2
+;; Version: 0.7.3
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -77,7 +77,7 @@
       (orange          "#dbac66")
       (light-orange    "#ddc085")
       ;; (pure-orange     "#cc5900")
-      ;; (pure-orange     "#cc6a00")
+      (pure-orange     "#cc6a00")
 
       (dark-yellow     "#555a2f")
       (yellow          "#acb370")
@@ -189,6 +189,7 @@
          (type       alt-orange)
          (const      violet)
          (var        faded-blue)
+         ;; TODO: change number color
          (num        faded-red)
          (bool       faded-red)
          (prep       alt-purple)
@@ -278,6 +279,7 @@
      ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
+     `(linum-highlight-face ((t (:inherit linum))))
 
      ;; Auto-dim-other-buffers
      `(auto-dim-other-buffers-face  ((t (:background ,dim-buffer))))
@@ -678,7 +680,7 @@
      `(evil-ex-substitute-replacement ((,c (:background nil :foreground ,light-green))))
      '(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
 
-    ;; avy
+    ;; Avy
      `(avy-lead-face ((,c (:background ,dark-red :foreground ,white))))
      `(avy-lead-face-0 ((,c (:background ,jade :foreground ,white))))
      `(avy-lead-face-1 ((,c (:background ,dark-blue :foreground ,white))))
