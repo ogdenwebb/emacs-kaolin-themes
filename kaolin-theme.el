@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.7.3
+;; Version: 0.7.4
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -189,9 +189,9 @@
          (type       alt-orange)
          (const      violet)
          (var        faded-blue)
-         ;; TODO: change number color
+         ;; TODO: change number color ?? light-green
          (num        faded-red)
-         (bool       faded-red)
+         (bool       num)
          (prep       alt-purple)
          (warning    orange)
          (err        red))
@@ -223,6 +223,7 @@
      `(warning ((,c (:foreground ,warning))))
      `(error ((,c (:foreground ,err))))
      `(shadow ((,c (:foreground ,alt-gray))))
+     `(file-name-shadow ((,c (:inherit shadow))))
      `(region ((,c (:background ,bg3))))
      `(secondary-selection ((,c (:background ,green :foreground ,bg1))))
      `(fringe ((,c (:background ,bg1 :foreground ,fg1))))
@@ -279,6 +280,7 @@
      ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
+     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,green))))
      `(linum-highlight-face ((t (:inherit linum))))
 
      ;; Auto-dim-other-buffers
@@ -331,9 +333,12 @@
      `(sml/read-only ((t (:foreground ,orange))))
 
      ;; Flycheck
-     `(flycheck-info ((,c (:underline (:style wave :color ,light-green)))))
-     `(flycheck-warning ((,c (:underline (:style wave :color ,warning)))))
-     `(flycheck-error ((,c (:underline (:style wave :color ,err)))))
+     `(flycheck-info ((,c (:foreground ,teal-blue))))
+     `(flycheck-warning ((,c (:underline (:style line :color ,warning)))))
+     `(flycheck-error ((,c (:underline (:style line :color ,err)))))
+     `(flycheck-fringe-error ((,c (:foreground ,err))))
+     `(flycheck-fringe-warning ((,c (:foreground ,warning))))
+     `(flycheck-fringe-info ((,c (:foreground ,teal-blue))))
 
      ;; Hydra
      `(hydra-face-red ((,c (:foreground ,red))))
@@ -633,6 +638,9 @@
 
      ;; Shell
      `(sh-quoted-exec ((,c (:foreground ,light-yellow))))
+
+     ;; Flx
+     `(flx-highlight-face ((,c (:foreground ,light-green :underline ,underline))))
 
      ;; Emmet
      `(emmet-preview-input ((t (:foreground nil :background nil))))
