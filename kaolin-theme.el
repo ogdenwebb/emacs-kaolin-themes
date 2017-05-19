@@ -254,7 +254,9 @@
      `(custom-face-tag ((,c (:background nil :foreground ,purple :bold ,bold))))
      `(custom-link ((,c (:background nil :foreground ,teal :bold ,bold))))
      `(widget-button ((,c (:background nil :foreground ,green :bold ,bold))))
+     `(widget-button-pressed ((,c (:background nil :foreground ,faded-red))))
      `(widget-field ((,c (:background ,bg3 :foreground ,fg1 :box (:line-width 1 :color ,bg2 :style nil)))))
+     `(widget-documentation ((,c (:background nil :foreground ,faded-blue))))
 
 
      ;; Additional highlighting
@@ -339,6 +341,10 @@
      `(flycheck-fringe-error ((,c (:foreground ,err))))
      `(flycheck-fringe-warning ((,c (:foreground ,warning))))
      `(flycheck-fringe-info ((,c (:foreground ,teal-blue))))
+
+     ;; Flyspell
+     `(flyspell-duplicate ((,c (:underline (:style line :color ,warning)))))
+     `(flyspell-incorrect ((,c (:underline (:style line :color ,err)))))
 
      ;; Hydra
      `(hydra-face-red ((,c (:foreground ,red))))
@@ -679,8 +685,22 @@
      `(font-latex-sectioning-4-face ((,c (:inherit font-latex-sectioning-0-face))))
      `(font-latex-sectioning-5-face ((,c (:inherit font-latex-sectioning-0-face))))
 
-     ;; which-function-mode
+     ;; Pulse
+     `(pulse-highlight-start-face ((,c (:background ,dark-yellow))))
+
+     ;; Which-function-mode
      `(which-func ((,c (:foreground ,orange))))
+
+     ;; Ruler-mode
+     `(ruler-mode-default ((,c (:background ,bg2 :foreground ,gray))))
+     `(ruler-mode-column-number ((,c (:foreground ,faded-blue))))
+     `(ruler-mode-current-column ((,c (:foreground ,orange))))
+     `(ruler-mode-fill-column ((,c (:foreground ,deep-pink))))
+     `(ruler-mode-comment-column ((,c (:foreground ,teal-blue))))
+     `(ruler-mode-fringes ((,c (:foreground ,green))))
+     `(ruler-mode-pad ((,c (:foreground ,faded-blue))))
+     `(ruler-mode-tab-stop ((,c (:foreground ,violet))))
+     `(ruler-mode-goal-column ((,c (:foreground ,alt-red))))
 
      ;; Evil ex
      `(evil-ex-info ((,c (:foreground ,orange))))
