@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.7.4
+;; Version: 0.8.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -41,6 +41,10 @@
 
 (defcustom kaolin-underline t
   "If nil, disable the underline style."
+  :group 'kaolin-theme)
+
+(defcustom kaolin-wave nil
+  "When t, use the wave underline style instead of regular underline."
   :group 'kaolin-theme)
 
 (defface kaolin-boolean nil
@@ -123,9 +127,10 @@
       (violet          "#ab98b5")
 
       ;; Face options
-      (bold         kaolin-bold)
-      (italic       kaolin-italic)
-      (underline    kaolin-underline))
+      (bold            kaolin-bold)
+      (italic          kaolin-italic)
+      (underline       kaolin-underline)
+      (underline-style (if kaolin-wave 'wave 'line)))
 
   ;; Theme colors
   (let* ((fg1  white)
@@ -336,15 +341,15 @@
 
      ;; Flycheck
      `(flycheck-info ((,c (:foreground ,teal-blue))))
-     `(flycheck-warning ((,c (:underline (:style line :color ,warning)))))
-     `(flycheck-error ((,c (:underline (:style line :color ,err)))))
+     `(flycheck-warning ((,c (:underline (:style ,underline-style :color ,warning)))))
+     `(flycheck-error ((,c (:underline (:style ,underline-style :color ,err)))))
      `(flycheck-fringe-error ((,c (:foreground ,err))))
      `(flycheck-fringe-warning ((,c (:foreground ,warning))))
      `(flycheck-fringe-info ((,c (:foreground ,teal-blue))))
 
      ;; Flyspell
-     `(flyspell-duplicate ((,c (:underline (:style line :color ,warning)))))
-     `(flyspell-incorrect ((,c (:underline (:style line :color ,err)))))
+     `(flyspell-duplicate ((,c (:underline (:style ,underline-style :color ,warning)))))
+     `(flyspell-incorrect ((,c (:underline (:style ,underline-style :color ,err)))))
 
      ;; Hydra
      `(hydra-face-red ((,c (:foreground ,red))))
