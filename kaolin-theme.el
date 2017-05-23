@@ -191,10 +191,11 @@
          (str        teal-green)
          (str-alt    jade)
          (doc        str-alt)
+         ;; TODO: ?? deep-pink
          (type       alt-orange)
          (const      violet)
          (var        faded-blue)
-         ;; TODO: change number color ?? light-green
+         ;; TODO: change number color ?? light-green || deep-pink
          (num        faded-red)
          (bool       num)
          (prep       alt-purple)
@@ -695,6 +696,12 @@
 
      ;; Which-function-mode
      `(which-func ((,c (:foreground ,orange))))
+
+     ;; Which-key
+     `(which-key-key-face ((,c (:foreground ,purple :bold ,bold))))
+     `(which-key-group-description-face ((,c (:foreground ,light-purple))))
+     `(which-key-local-map-description-face ((,c (:foreground ,teal-green))))
+     `(which-key-command-description-face ((,c (:foreground ,teal))))
 
      ;; Ruler-mode
      `(ruler-mode-default ((,c (:background ,bg2 :foreground ,gray))))
