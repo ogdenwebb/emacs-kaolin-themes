@@ -106,6 +106,7 @@
       ;; (teal-green      "#80bea0")
       (teal-green      "#6fb593")
 
+      (midnight-blue   "#1e2528")
       (dark-blue       "#2a4661")
       ;; TODO: Change blue color
       ;; (blue            "#5485b6")
@@ -250,6 +251,7 @@
      `(isearch-fail ((,c (:background nil :foreground ,red))))
 
      ;; Interface
+     `(button ((,c (:background ,bg4 :foreground ,teal :box (:line-width 3 :color ,bg3 :style nil)))))
      `(custom-button ((,c (:background ,bg4 :foreground ,teal :box (:line-width 3 :color ,bg3 :style nil)))))
      `(custom-button-mouse ((,c (:background ,bg3 :foreground ,cyan :box (:line-width 3 :color ,bg2 :style nil)))))
      `(custom-button-pressed ((,c (:background ,bg3 :foreground ,cyan :box (:line-width 3 :color ,bg2 :style pressed-button)))))
@@ -264,6 +266,7 @@
      `(widget-field ((,c (:background ,bg3 :foreground ,fg1 :box (:line-width 1 :color ,bg2 :style nil)))))
      `(widget-documentation ((,c (:background nil :foreground ,faded-blue))))
 
+     `(package-name ((,c (:background nil :foreground ,cyan))))
 
      ;; Additional highlighting
      `(highlight ((,c (:background ,bg2 :foreground ,hl))))
@@ -690,6 +693,16 @@
      `(font-latex-sectioning-3-face ((,c (:inherit font-latex-sectioning-0-face))))
      `(font-latex-sectioning-4-face ((,c (:inherit font-latex-sectioning-0-face))))
      `(font-latex-sectioning-5-face ((,c (:inherit font-latex-sectioning-0-face))))
+
+     ;; Rst-mode
+     `(rst-adornment ((,c (:foreground ,jade))))
+     `(rst-block ((,c (:foreground ,teal))))
+     `(rst-level-1 ((,c (:foreground ,violet))))
+     `(rst-level-2 ((,c (:foreground ,green))))
+     `(rst-level-3 ((,c (:foreground ,teal-blue))))
+     `(rst-level-4 ((,c (:foreground ,violet))))
+     `(rst-level-5 ((,c (:foreground ,green))))
+     `(rst-level-6 ((,c (:foreground ,teal-blue))))
 
      ;; Pulse
      `(pulse-highlight-start-face ((,c (:background ,dark-yellow))))
