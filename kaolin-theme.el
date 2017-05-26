@@ -70,7 +70,6 @@
 
       (dark-red        "#832729")
       (red             "#d75f5f")
-      ;; (faded-red       "#ac4040")
       (faded-red       "#a94d53")
       (alt-red         "#c93232")
       (light-red       "#d66e75")
@@ -86,7 +85,6 @@
       (dark-yellow     "#555a2f")
       (yellow          "#acb370")
       (alt-yellow      "#be9266")
-      ;; (light-yellow "#c1b175")
       (light-yellow    "#c9bb87")
       (wheat           "#b9c791")
 
@@ -94,7 +92,6 @@
       (jade            "#597a6e")
       (light-jade      "#709688")
       (midnight-green  "#152628")
-      ;; (deep-green   "#30555a")
       (deep-green      "#39656b")
       (green           "#4a858c")
       (dark-green      "#39855f")
@@ -109,12 +106,9 @@
       (midnight-blue   "#1e2528")
       (dark-blue       "#2a4661")
       ;; TODO: Change blue color
-      ;; (blue            "#5485b6")
       (blue            "#5077a5")
-      ;; (alt-blue        "#6666be")
       (alt-blue        "#267fb5")
       (cyan            "#54b6b6")
-      ;; (faded-blue      "#857f96")
       (faded-blue      "#817f96")
 
       (midnight-purple "#1a121a")
@@ -122,7 +116,6 @@
       (purple          "#835d83")
       (magenta         "#5454b6")
       (light-purple    "#cea2ca")
-      ;; (alt-purple      "#8c4a64")
       (alt-purple      "#915c83")
 
       (violet          "#ab98b5")
@@ -142,9 +135,6 @@
          (bg2  "#282828")
          (bg3  "#353535")
          (bg4  "#414141")
-         ;; TODO: move this part
-         (key2 "#5f9298")
-         (key3 "#41757b")
 
          (dim-buffer alt-black)
          (hl-line    bg2)
@@ -180,6 +170,8 @@
 
          (cursor     light-gray)
          (keyword    green)
+         (key2       "#5f9298")
+         (key3       "#41757b")
          (hl         cyan)
          (hl-indent  gray)
          (builtin    teal)
