@@ -282,8 +282,9 @@
 
      ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
-     `(nlinum-current-line ((t (:background ,bg1 :foreground ,green))))
-     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,green))))
+     `(nlinum-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
+     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
+     `(nlinum-relative-current-face ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
      `(linum-highlight-face ((t (:inherit linum))))
 
      ;; Auto-dim-other-buffers
