@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.8.0
+;; Version: 0.8.1
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -64,18 +64,24 @@
       ;; (white           "#c5c8c6")
       (white           "#c8c8d0")
 
+      ;; (gray-brown     "#a5a19c")
       (brown           "#7d6360")
       (light-brown     "#ae9895")
       (alt-brown       "#52413f")
+      ;; (bazaar       "#98777b")
 
       (dark-red        "#832729")
-      (red             "#d75f5f")
+      ;; (red             "#d75f5f")
+      (red             "#cd5c5c")
       (faded-red       "#a94d53")
       (alt-red         "#c93232")
       (light-red       "#d66e75")
-      ;; (deep-pink    "#d75f91")
-      (deep-pink       "#d24b83")
+      ;; (pink            "#d75f91")
+      (pink            "#d24b83")
+      (light-pink      "#ef98aa")
+      (soft-pink       "#fbaed2")
 
+      (faded-orange    "#cd9575")
       (alt-orange      "#d9a76f")
       (orange          "#dbac66")
       (light-orange    "#ddc085")
@@ -87,9 +93,11 @@
       (alt-yellow      "#be9266")
       (light-yellow    "#c9bb87")
       (wheat           "#b9c791")
+      (alt-wheat       "#fdd5b1")
 
       (dark-jade       "#2e4039")
       (jade            "#597a6e")
+      (alt-jade        "#4d5d53")
       (light-jade      "#709688")
       (midnight-green  "#152628")
       (deep-green      "#39656b")
@@ -97,6 +105,7 @@
       (dark-green      "#39855f")
       (light-green     "#54b685")
       (lime            "#85b654")
+      (alt-lime        "#8fbc8f")
       (teal            "#80b6bc")
       (teal-blue       "#91b9c7")
       ;; (teal-blue      "#91c7c7")
@@ -104,10 +113,12 @@
       (teal-green      "#6fb593")
 
       (midnight-blue   "#1e2528")
+      (grayish-blue    "#36454f")
       (dark-blue       "#2a4661")
       ;; TODO: Change blue color
       (blue            "#5077a5")
       (alt-blue        "#267fb5")
+      (dark-cyan       "#008b8b")
       (cyan            "#54b6b6")
       (faded-blue      "#817f96")
 
@@ -115,9 +126,13 @@
       (dark-purple     "#563d56")
       (purple          "#835d83")
       (magenta         "#5454b6")
+      (grayish-magenta "#796878")
       (light-purple    "#cea2ca")
       (alt-purple      "#915c83")
+      (lavender        "#967bb6")
+      (alt-lavender    "#9d81ba")
 
+      (dark-violet     "#997a8d")
       (violet          "#ab98b5")
 
       ;; Face options
@@ -184,11 +199,11 @@
          (str        teal-green)
          (str-alt    jade)
          (doc        str-alt)
-         ;; TODO: ?? deep-pink
+         ;; TODO: ?? pink
          (type       alt-orange)
          (const      violet)
          (var        faded-blue)
-         ;; TODO: change number color ?? light-green || deep-pink
+         ;; TODO: change number color ?? light-green || pink
          (num        faded-red)
          (bool       num)
          (prep       alt-purple)
@@ -269,7 +284,7 @@
      `(highlight-quoted-symbol ((t (:foreground ,green)))) ; Face to highlight quoted Lisp symbols
 
      ;; Eldoc
-     `(eldoc-highlight-function-argument ((t (:foreground ,violet :bold ,bold))))
+     `(eldoc-highlight-function-argument ((t (:foreground ,violet))))
 
      ;; Highlight indent guides
      `(highlight-indent-guides-odd-face  ((t (:background ,hl-indent))))
@@ -352,7 +367,7 @@
      `(hydra-face-red ((,c (:foreground ,red))))
      `(hydra-face-teal ((,c (:foreground ,teal))))
      `(hydra-face-blue ((,c (:foreground ,blue))))
-     `(hydra-face-pink ((,c (:foreground ,deep-pink))))
+     `(hydra-face-pink ((,c (:foreground ,pink))))
      `(hydra-face-amaranth ((,c (:foreground ,purple))))
 
      ;; Org-mode
@@ -539,7 +554,7 @@
      `(eshell-ls-executable ((t (:foreground ,lime :bold ,bold))))
      `(eshell-ls-archive ((t (:foreground ,red))))
      `(eshell-ls-backup ((t (:foreground ,purple))))
-     `(eshell-ls-clutter ((t (:foreground ,deep-pink))))
+     `(eshell-ls-clutter ((t (:foreground ,pink))))
      `(eshell-ls-missing ((t (:background ,bg3 :foreground ,red))))
      `(eshell-ls-product ((t (:foreground ,yellow))))
      `(eshell-ls-readonly ((t (:foreground ,fg2))))
@@ -668,7 +683,7 @@
      `(nim-font-lock-export-face ((,c (:inherit font-lock-function-name-face :italic nil))))
 
      ;; Ace-window
-     `(aw-leading-char-face ((,c (:foreground ,deep-pink :bold ,bold))))
+     `(aw-leading-char-face ((,c (:foreground ,pink :bold ,bold))))
      `(aw-background-face ((,c (:foreground ,bg4 :bold ,bold))))
 
      ;; Latex/Auctex
@@ -713,7 +728,7 @@
      `(ruler-mode-default ((,c (:background ,bg2 :foreground ,gray))))
      `(ruler-mode-column-number ((,c (:foreground ,faded-blue))))
      `(ruler-mode-current-column ((,c (:foreground ,orange))))
-     `(ruler-mode-fill-column ((,c (:foreground ,deep-pink))))
+     `(ruler-mode-fill-column ((,c (:foreground ,pink))))
      `(ruler-mode-comment-column ((,c (:foreground ,teal-blue))))
      `(ruler-mode-fringes ((,c (:foreground ,green))))
      `(ruler-mode-pad ((,c (:foreground ,faded-blue))))
