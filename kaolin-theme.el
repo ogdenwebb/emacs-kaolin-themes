@@ -64,11 +64,11 @@
       ;; (white           "#c5c8c6")
       (white           "#c8c8d0")
 
-      ;; (gray-brown     "#a5a19c")
+      ;; TODO: (gray-brown     "#a5a19c")
       (brown           "#7d6360")
       (light-brown     "#ae9895")
       (alt-brown       "#52413f")
-      ;; (bazaar       "#98777b")
+      ;; TODO: (bazaar       "#98777b")
 
       (dark-red        "#832729")
       ;; (red             "#d75f5f")
@@ -258,6 +258,7 @@
      `(isearch-fail ((,c (:background nil :foreground ,red))))
 
      ;; Interface
+     ;; TODO: change button face
      `(button ((,c (:background ,bg4 :foreground ,teal :box (:line-width 3 :color ,bg3 :style nil)))))
      `(custom-button ((,c (:background ,bg4 :foreground ,teal :box (:line-width 3 :color ,bg3 :style nil)))))
      `(custom-button-mouse ((,c (:background ,bg3 :foreground ,cyan :box (:line-width 3 :color ,bg2 :style nil)))))
@@ -419,8 +420,10 @@
      `(font-latex-match-variable-keywords ((,c (:foreground ,var))))
 
      ;; Ido
+     `(ido-indicator ((,c (:foreground ,num))))
+     `(ido-first-match ((,c (:foreground ,light-green :bold ,bold))))
      `(ido-only-match ((,c (:foreground ,hl))))
-     `(ido-first-match ((,c (:foreground ,keyword :bold ,bold))))
+     `(ido-subdir ((,c (:foreground ,lavender))))
 
      ;; Gnus
      `(gnus-header-content ((,c (:foreground ,keyword))))
