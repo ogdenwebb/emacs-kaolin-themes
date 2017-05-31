@@ -245,7 +245,8 @@
      `(vertical-border ((,c (:foreground ,win-border))))
      `(minibuffer-prompt ((,c (:foreground ,keyword :bold ,bold))))
      `(default-italic ((,c (:italic ,italic))))
-     `(link ((,c (:foreground ,cyan :underline ,underline))))
+     `(link ((,c (:foreground ,lavender :underline ,underline))))
+     `(link-visited ((,c (:inherit link :underline ,nil))))
      `(success ((,c (:background nil :foreground ,light-green))))
      `(escape-glyph ((,c (:background nil :foreground ,cyan))))
 
@@ -392,7 +393,7 @@
      `(org-meta-line ((,c (:inherit org-document-info-keyword))))
      `(org-document-info ((,c (:foreground ,teal))))
      `(org-footnote  ((,c (:foreground ,fg4 :underline ,underline))))
-     `(org-link ((,c (:foreground ,cyan :underline ,underline))))
+     `(org-link ((,c (:inherit link))))
      `(org-special-keyword ((,c (:foreground ,functions))))
      `(org-block ((,c (:foreground ,fg3))))
      `(org-block-begin-line ((,c (:foreground ,deep-green))))
@@ -737,6 +738,19 @@
      `(ruler-mode-pad ((,c (:foreground ,faded-blue))))
      `(ruler-mode-tab-stop ((,c (:foreground ,violet))))
      `(ruler-mode-goal-column ((,c (:foreground ,alt-red))))
+
+     ;; Message
+     `(message-header-name ((,c (:foreground ,deep-green))))
+     `(message-header-subject ((,c (:foreground ,teal-green))))
+     `(message-header-to ((,c (:foreground ,teal-green))))
+     `(message-header-other ((,c (:foreground ,teal))))
+
+     ;; Elfeed
+     `(elfeed-search-tag-face ((,c (:foreground ,light-yellow))))
+     `(elfeed-search-feed-face ((,c (:foreground ,green))))
+     `(elfeed-search-date-face ((,c (:foreground ,faded-blue))))
+     `(elfeed-search-unread-title-face ((,c (:foreground ,fg1))))
+     `(elfeed-search-title-face ((,c (:foreground ,comment))))
 
      ;; Evil ex
      `(evil-ex-info ((,c (:foreground ,orange))))
