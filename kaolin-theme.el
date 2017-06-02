@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.8.1
+;; Version: 0.8.2
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -165,6 +165,7 @@
          (rb6 light-brown)
          (rb7 light-green)
          (rb8 wheat)
+         (rb9 lavender)
 
          (diff-add    light-green)
          (diff-change violet)
@@ -203,7 +204,7 @@
          (type       alt-orange)
          (const      violet)
          (var        faded-blue)
-         ;; TODO: change number color ?? light-green || pink
+         ;; TODO: change number color ??  pink
          (num        faded-red)
          (bool       num)
          (prep       alt-purple)
@@ -246,7 +247,7 @@
      `(minibuffer-prompt ((,c (:foreground ,keyword :bold ,bold))))
      `(default-italic ((,c (:italic ,italic))))
      `(link ((,c (:foreground ,lavender :underline ,underline))))
-     `(link-visited ((,c (:inherit link :underline ,nil))))
+     `(link-visited ((,c (:inherit link :underline nil))))
      `(success ((,c (:background nil :foreground ,light-green))))
      `(escape-glyph ((,c (:background nil :foreground ,cyan))))
 
@@ -464,7 +465,8 @@
      `(icompletep-determined ((,c :foreground ,builtin)))
 
      ;; Undo-tree
-     `(undo-tree-visualizer-current-face ((,c :foreground ,builtin)))
+     `(undo-tree-visualizer-active-branch-face ((,c :foreground ,fg1 :bold ,bold)))
+     `(undo-tree-visualizer-current-face ((,c :foreground ,cyan)))
      `(undo-tree-visualizer-default-face ((,c :foreground ,fg2)))
      `(undo-tree-visualizer-unmodified-face ((,c :foreground ,var)))
      `(undo-tree-visualizer-register-face ((,c :foreground ,type)))
@@ -484,6 +486,7 @@
      `(rainbow-delimiters-depth-6-face ((,c :foreground ,rb6)))
      `(rainbow-delimiters-depth-7-face ((,c :foreground ,rb7)))
      `(rainbow-delimiters-depth-8-face ((,c :foreground ,rb8)))
+     `(rainbow-delimiters-depth-9-face ((,c :foreground ,rb9)))
 
      ;; Diff
      `(diff-header ((,c (:background ,bg2))))
@@ -739,7 +742,7 @@
      `(ruler-mode-tab-stop ((,c (:foreground ,violet))))
      `(ruler-mode-goal-column ((,c (:foreground ,alt-red))))
 
-     ;; Message
+     ;; TODO: Message
      `(message-header-name ((,c (:foreground ,deep-green))))
      `(message-header-subject ((,c (:foreground ,teal-green))))
      `(message-header-to ((,c (:foreground ,teal-green))))
@@ -750,6 +753,7 @@
      `(elfeed-search-feed-face ((,c (:foreground ,green))))
      `(elfeed-search-date-face ((,c (:foreground ,faded-blue))))
      `(elfeed-search-unread-title-face ((,c (:foreground ,fg1))))
+     `(elfeed-search-unread-count-face ((,c (:foreground ,orange))))
      `(elfeed-search-title-face ((,c (:foreground ,comment))))
 
      ;; Evil ex
