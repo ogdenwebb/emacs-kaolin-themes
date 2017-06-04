@@ -624,6 +624,7 @@
      `(company-tooltip-annotation ((,c (:foreground ,faded-blue))))
      `(company-scrollbar-bg ((,c (:background ,bg1))))
      `(company-scrollbar-fg ((,c (:foreground ,keyword))))
+     ;; TODO:
      `(company-template-field ((,c (:inherit region))))
      `(company-echo-common ((,c (:background ,bg1 :foreground ,light-yellow))))
      `(company-preview ((,c (:background ,bg1 :foreground ,key2))))
@@ -773,9 +774,13 @@
      `(avy-lead-face-2 ((,c (:background ,dark-purple :foreground ,white))))
 
      ;; Ivy & Swiper
+     `(ivy-modified-buffer ((,c (:foreground ,light-yellow))))
+     `(ivy-subdir ((,c (:foreground ,green :bold ,bold))))
+     `(ivy-virtual ((,c (:foreground ,violet))))
+     `(ivy-remote ((,c (:foreground ,teal))))
      `(ivy-current-match ((,c (:background ,hl-line :foreground ,light-green :bold t))))
      `(ivy-match-required-face ((,c (:background nil :foreground ,alt-red :bold nil))))
-     `(ivy-confirm-face ((,c (:background nil :foreground ,teal-green))))
+     `(ivy-confirm-face ((,c (:background nil :foreground ,light-orange))))
      `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
      `(ivy-minibuffer-match-face-1 ((,c (:background ,bg3 :foreground ,fg1))))
      `(ivy-minibuffer-match-face-2 ((,c (:background ,dark-blue :foreground ,teal-blue :bold ,bold))))
