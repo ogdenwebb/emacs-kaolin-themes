@@ -202,10 +202,11 @@
          (doc        str-alt)
          ;; TODO: ?? pink
          (type       alt-orange)
+         ;; TODO: ?? light-yellow
          (const      violet)
          (var        faded-blue)
-         ;; TODO: change number color ??  pink
-         (num        faded-red)
+         ;; TODO: change number color ??  pink ?? light-yellow ?? alt-orange
+         (num        red)
          (bool       num)
          (prep       alt-purple)
          (warning    orange)
@@ -283,8 +284,8 @@
      `(lazy-highlight ((,c (:background ,bg3 :foreground ,fg2))))
      `(hl-line ((,c (:background ,bg2))))
      `(highlight-numbers-number ((,c (:foreground ,num))))
-     `(highlight-quoted-quote ((t (:foreground ,teal)))) ; Face to highlight Lisp quotes
-     `(highlight-quoted-symbol ((t (:foreground ,green)))) ; Face to highlight quoted Lisp symbols
+     `(highlight-quoted-quote ((t (:foreground ,teal))))
+     `(highlight-quoted-symbol ((t (:foreground ,green))))
 
      ;; Eldoc
      `(eldoc-highlight-function-argument ((t (:foreground ,violet))))
@@ -300,10 +301,11 @@
 
      ;; Linum & nlinum
      `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
-     `(nlinum-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
-     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
-     `(nlinum-relative-current-face ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
      `(linum-highlight-face ((t (:inherit linum))))
+     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
+     `(nlinum-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
+     `(nlinum-relative-current-face ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
+     `(nlinum-hl-face ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
 
      ;; Auto-dim-other-buffers
      `(auto-dim-other-buffers-face  ((t (:background ,dim-buffer))))
