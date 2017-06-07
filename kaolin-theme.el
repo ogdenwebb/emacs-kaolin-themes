@@ -184,7 +184,11 @@
          (evil-operator     evil-normal)
          (evil-emacs        light-yellow)
 
+         (win-border dark-gray)
+         (linum-fg   gray)
+         (linum-hl   light-gray)
          (cursor     light-gray)
+
          (keyword    green)
          (key2       "#5f9298")
          (key3       "#41757b")
@@ -195,7 +199,6 @@
          ;; Light
          ;; (comment    "#869a90")
          ;; (comment    "#8f9ca7")
-         (win-border dark-gray)
          (functions  teal)
          (str        teal-green)
          (str-alt    jade)
@@ -300,12 +303,12 @@
      `(highlight-indentation-current-column-face  ((t (:background ,bg3))))
 
      ;; Linum & nlinum
-     `(linum ((t (:background ,bg1 :foreground ,gray :bold nil))))
+     `(linum ((t (:background ,bg1 :foreground ,linum-fg :bold nil))))
      `(linum-highlight-face ((t (:inherit linum))))
-     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
-     `(nlinum-current-line ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
-     `(nlinum-relative-current-face ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
-     `(nlinum-hl-face ((t (:background ,bg1 :foreground ,light-gray :bold ,bold))))
+     `(linum-relative-current-line ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
+     `(nlinum-current-line ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
+     `(nlinum-relative-current-face ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
+     `(nlinum-hl-face ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
 
      ;; Auto-dim-other-buffers
      `(auto-dim-other-buffers-face  ((t (:background ,dim-buffer))))
