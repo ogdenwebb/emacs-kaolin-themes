@@ -5,7 +5,7 @@
 ;; Author: 0rdy <mail@0rdy.com>
 ;; URL: https://github.com/0rdy/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.8.2
+;; Version: 0.8.3
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -308,7 +308,6 @@
      `(linum-relative-current-line ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
      `(nlinum-current-line ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
      `(nlinum-relative-current-face ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
-     `(nlinum-hl-face ((t (:background ,bg1 :foreground ,linum-hl :bold ,bold))))
 
      ;; Auto-dim-other-buffers
      `(auto-dim-other-buffers-face  ((t (:background ,dim-buffer))))
