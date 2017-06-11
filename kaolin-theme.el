@@ -172,7 +172,8 @@
          (diff-del    red)
 
          (line-fg           fg4)
-         (line-bg           bg2)
+         (line-bg1          bg2)
+         (line-bg2          dim-gray)
          (line-border       bg3)
          (segment-active    gray)
          (segment-inactive  gray)
@@ -317,25 +318,25 @@
      `(fic-author-face  ((t (:background nil :foreground ,red :bold ,bold))))
 
      ;; Modeline
-     ;; `(mode-line ((,c (:box (:line-width 1 :color ,line-border) :bold ,bold :background ,line-bg :foreground ,line-fg))))
-     `(mode-line ((,c (:box (:line-width 2 :color ,dim-gray) :background ,line-bg :foreground ,faded-blue :bold ,bold))))
+     ;; `(mode-line ((,c (:box (:line-width 1 :color ,line-border) :bold ,bold :background ,line-bg1 :foreground ,line-fg))))
+     `(mode-line ((,c (:box (:line-width 2 :color ,line-bg2) :background ,line-bg1 :foreground ,faded-blue :bold ,bold))))
      `(mode-line-buffer-id ((,c (:background nil :foreground ,teal :bold ,bold))))
      `(mode-line-highlight ((,c (:foreground ,keyword :box nil :bold ,bold))))
      ;; `(mode-line-inactive ((,c (:box (:line-width 1 :color ,bg2 :style pressed-button) :background ,bg2 :foreground ,light-gray :weight normal))))
-     `(mode-line-inactive ((,c (:box (:line-width 2 :color ,line-bg) :background ,line-bg :foreground ,light-gray :bold ,bold))))
+     `(mode-line-inactive ((,c (:box (:line-width 2 :color ,line-bg1) :background ,line-bg1 :foreground ,light-gray :bold ,bold))))
      `(mode-line-emphasis ((,c (:foreground ,fg1))))
 
      ;; Telephone-line
-     `(telephone-line-accent-active ((t (:inherit mode-line :background ,dim-gray :foreground ,line-fg))))
-     `(telephone-line-accent-inactive ((t (:background ,line-bg :foreground ,light-gray :inherit mode-line-inactive))))
+     `(telephone-line-accent-active ((t (:inherit mode-line :background ,line-bg2 :foreground ,line-fg))))
+     `(telephone-line-accent-inactive ((t (:background ,line-bg1 :foreground ,light-gray :inherit mode-line-inactive))))
      `(telephone-line-evil ((t (:inherit mode-line))))
-     `(telephone-line-evil-normal ((t (:background ,dim-gray :foreground ,evil-normal :inherit telephone-line-evil))))
-     `(telephone-line-evil-insert ((t (:background ,dim-gray :foreground ,evil-insert :inherit telephone-line-evil))))
-     `(telephone-line-evil-visual ((t (:background ,dim-gray :foreground ,evil-visual :inherit telephone-line-evil))))
-     `(telephone-line-evil-replace ((t (:background ,dim-gray :foreground ,evil-replace :inherit telephone-line-evil))))
-     `(telephone-line-evil-motion ((t (:background ,dim-gray :foreground ,evil-motion :inherit telephone-line-evil))))
-     `(telephone-line-evil-operator ((t (:background ,dim-gray :foreground ,evil-operator :inherit telephone-line-evil))))
-     `(telephone-line-evil-emacs ((t (:background ,dim-gray :foreground ,evil-emacs :inherit telephone-line-evil))))
+     `(telephone-line-evil-normal ((t (:background ,line-bg2 :foreground ,evil-normal :inherit telephone-line-evil))))
+     `(telephone-line-evil-insert ((t (:background ,line-bg2 :foreground ,evil-insert :inherit telephone-line-evil))))
+     `(telephone-line-evil-visual ((t (:background ,line-bg2 :foreground ,evil-visual :inherit telephone-line-evil))))
+     `(telephone-line-evil-replace ((t (:background ,line-bg2 :foreground ,evil-replace :inherit telephone-line-evil))))
+     `(telephone-line-evil-motion ((t (:background ,line-bg2 :foreground ,evil-motion :inherit telephone-line-evil))))
+     `(telephone-line-evil-operator ((t (:background ,line-bg2 :foreground ,evil-operator :inherit telephone-line-evil))))
+     `(telephone-line-evil-emacs ((t (:background ,line-bg2 :foreground ,evil-emacs :inherit telephone-line-evil))))
 
      ;; Powerline
      `(powerline-active1 ((,c (:inherit mode-line))))
