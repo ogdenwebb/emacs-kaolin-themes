@@ -53,7 +53,10 @@
 
 ;; Kaolin color palette
 (let ((c '((class color) (min-colors 89)))
-      (black           "#1b1b1b")
+      (black1          "#1b1b1b")
+      (black2          "#282828")
+      (black3          "#353535")
+      (black4          "#414141")
       (alt-black       "#181818")
       (dark-gray       "#2a2a2a")
       (dim-gray        "#353535")
@@ -61,8 +64,12 @@
       (alt-gray        "#60696b")
       ;; (light-gray      "#859092")
       (light-gray      "#9191a2")
-      ;; (white           "#c5c8c6")
-      (white           "#c8c8d0")
+      ;; (white1           "#c5c8c6")
+      (white1           "#c8c8d0")
+      (white2          "#babac4")
+      (white3          "#adadb9")
+      (white4          "#9f9fad")
+
 
       ;; TODO: (gray-brown     "#a5a19c")
       (brown           "#7d6360")
@@ -142,14 +149,14 @@
       (underline-style (if kaolin-wave 'wave 'line)))
 
   ;; Theme colors
-  (let* ((fg1  white)
-         (fg2  "#babac4")
-         (fg3  "#adadb9")
-         (fg4  "#9f9fad")
-         (bg1  black)
-         (bg2  "#282828")
-         (bg3  "#353535")
-         (bg4  "#414141")
+  (let* ((fg1  white1)
+         (fg2  white2)
+         (fg3  white3)
+         (fg4  white4)
+         (bg1  black1)
+         (bg2  black2)
+         (bg3  black3)
+         (bg4  black4)
 
          (dim-buffer alt-black)
          (hl-line    bg2)
@@ -773,10 +780,10 @@
      `(vimish-fold-fringe ((,c (:background nil :foreground ,jade))))
 
     ;; Avy
-     `(avy-lead-face ((,c (:background ,dark-red :foreground ,white))))
-     `(avy-lead-face-0 ((,c (:background ,jade :foreground ,white))))
-     `(avy-lead-face-1 ((,c (:background ,dark-blue :foreground ,white))))
-     `(avy-lead-face-2 ((,c (:background ,dark-purple :foreground ,white))))
+     `(avy-lead-face ((,c (:background ,dark-red :foreground ,fg1))))
+     `(avy-lead-face-0 ((,c (:background ,jade :foreground ,fg1))))
+     `(avy-lead-face-1 ((,c (:background ,dark-blue :foreground ,fg1))))
+     `(avy-lead-face-2 ((,c (:background ,dark-purple :foreground ,fg1))))
 
      ;; Ivy & Swiper
      `(ivy-modified-buffer ((,c (:foreground ,light-yellow))))
