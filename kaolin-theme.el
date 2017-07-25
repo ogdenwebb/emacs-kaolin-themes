@@ -51,7 +51,7 @@
   "Face to highlight boolean values"
   :group 'kaolin-theme)
 
-;; TODO: move light-green to separated hl var and (??) chage to lavender
+;; TODO: move light-green to separated hl var and (??) change to lavender
 ;; Kaolin color palette
 (let ((c '((class color) (min-colors 89)))
       (black1          "#1b1b1b")
@@ -165,6 +165,7 @@
          (tooltip-fg light-gray)
          (tooltip-hl alt-brown)
 
+         ;; TODO: (??) repeat 1-4, 2-5... with +2
          (rb1 teal)
          (rb2 violet)
          (rb3 jade)
@@ -805,6 +806,11 @@
      `(swiper-match-face-2 ((,c (:background ,dark-blue :foreground ,teal-blue :bold ,bold))))
      `(swiper-match-face-3 ((,c (:background ,dark-yellow :foreground ,light-orange :bold ,bold))))
      `(swiper-match-face-4 ((,c (:background ,dark-purple :foreground ,light-purple :bold ,bold))))
+     ;; TODO:
+     ;; `(swiper-match-face-2 ((,c (:background ,bg3 :foreground ,light-green :bold ,bold))))
+     ;; `(swiper-match-face-3 ((,c (:background ,bg3 :foreground ,light-orange :bold ,bold))))
+     ;; `(swiper-match-face-4 ((,c (:background ,bg3 :foreground ,alt-lavender :bold ,bold))))
+
      `(swiper-line-face ((,c (:inherit hl-line)))))))
 
 ;;;###autoload
