@@ -171,10 +171,10 @@
          (rb3 jade)
          (rb4 faded-blue)
          (rb5 green)
-         (rb6 light-brown)
          ;; TODO: change
-         (rb7 light-green)
-         (rb8 wheat)
+         (rb6 alt-lavender)
+         (rb7 blue)
+         (rb8 grayish-magenta)
          (rb9 lavender)
 
          (diff-add    light-green)
@@ -802,6 +802,7 @@
      `(ivy-minibuffer-match-face-2 ((,c (:background ,bg3 :foreground ,light-green :bold ,bold))))
      `(ivy-minibuffer-match-face-3 ((,c (:background ,bg3 :foreground ,light-orange :bold ,bold))))
      `(ivy-minibuffer-match-face-4 ((,c (:background ,bg3 :foreground ,alt-lavender :bold ,bold))))
+     ;; TODO: fix override backgound in ivy minubuffer with current line
      ;; OLD
      ;; `(ivy-minibuffer-match-face-2 ((,c (:background ,dark-blue :foreground ,teal-blue :bold ,bold))))
      ;; `(ivy-minibuffer-match-face-3 ((,c (:background ,dark-yellow :foreground ,light-orange :bold ,bold))))
