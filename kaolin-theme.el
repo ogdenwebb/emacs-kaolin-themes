@@ -65,18 +65,18 @@
       (alt-gray        "#60696b")
       ;; (light-gray      "#859092")
       (light-gray      "#9191a2")
+      (lavender-gray   "#b6b5c5")
+      (grayish-orange  "#a5a19c")
       ;; (white1           "#c5c8c6")
       (white1          "#c8c8d0")
       (white2          "#babac4")
       (white3          "#adadb9")
       (white4          "#9f9fad")
 
-
-      ;; TODO: (gray-brown     "#a5a19c")
       (brown           "#7d6360")
       (light-brown     "#ae9895")
       (alt-brown       "#52413f")
-      ;; TODO: (bazaar       "#98777b")
+      (bazaar          "#98777b")
 
       (dark-red        "#832729")
       ;; (red             "#d75f5f")
@@ -171,9 +171,8 @@
          (rb3 jade)
          (rb4 faded-blue)
          (rb5 green)
-         ;; TODO: change
          (rb6 alt-lavender)
-         (rb7 blue)
+         (rb7 grayish-orange)
          (rb8 grayish-magenta)
          (rb9 lavender)
 
@@ -198,7 +197,8 @@
          (win-border dark-gray)
          (linum-fg   gray)
          (linum-hl   light-gray)
-         (cursor     light-gray)
+         ;; TODO: make more brighter
+         (cursor     lavender-gray)
 
          (keyword    green)
          (key2       "#5f9298")
@@ -639,7 +639,7 @@
      `(company-tooltip-annotation ((,c (:foreground ,faded-blue))))
      `(company-scrollbar-bg ((,c (:background ,bg1))))
      `(company-scrollbar-fg ((,c (:foreground ,keyword))))
-     ;; TODO:
+     ;; TODO: read about template
      `(company-template-field ((,c (:inherit region))))
      `(company-echo-common ((,c (:background ,bg1 :foreground ,light-yellow))))
      `(company-preview ((,c (:background ,bg1 :foreground ,key2))))
@@ -758,7 +758,7 @@
      `(ruler-mode-tab-stop ((,c (:foreground ,violet))))
      `(ruler-mode-goal-column ((,c (:foreground ,alt-red))))
 
-     ;; TODO: Message
+     ;; TODO: Message faces
      `(message-header-name ((,c (:foreground ,deep-green))))
      `(message-header-subject ((,c (:foreground ,teal-green))))
      `(message-header-to ((,c (:foreground ,teal-green))))
@@ -782,7 +782,7 @@
      `(vimish-fold-overlay ((,c (:background ,bg2 :foreground ,comment))))
      `(vimish-fold-fringe ((,c (:background nil :foreground ,jade))))
 
-    ;; Avy
+     ;; Avy
      `(avy-lead-face ((,c (:background ,dark-red :foreground ,fg1))))
      `(avy-lead-face-0 ((,c (:background ,jade :foreground ,fg1))))
      `(avy-lead-face-1 ((,c (:background ,dark-blue :foreground ,fg1))))
