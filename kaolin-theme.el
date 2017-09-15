@@ -72,6 +72,7 @@
       (white2          "#babac4")
       (white3          "#adadb9")
       (white4          "#9f9fad")
+      (alt-white       "#e7dfdf")
 
       (brown           "#7d6360")
       (light-brown     "#ae9895")
@@ -199,7 +200,7 @@
          (linum-hl   light-gray)
          ;; TODO: make more brighter
          ;; TODO: or change color
-         (cursor     lavender-gray)
+         (cursor     alt-white)
 
          (keyword    green)
          (key2       "#5f9298")
@@ -491,6 +492,7 @@
      `(slime-repl-inputed-output-face ((,c (:foreground ,type))))
 
      ;; Rainbow delimeters
+     ;; TODO: change color
      `(show-paren-match-face ((,c (:background ,jade :foreground ,bg2))))
      `(show-paren-mismatch-face ((,c (:background ,red :foreground ,bg2))))
      `(rainbow-delimiters-unmatched-face ((,c :foreground ,warning)))
