@@ -198,6 +198,7 @@
          (linum-fg   gray)
          (linum-hl   light-gray)
          ;; TODO: make more brighter
+         ;; TODO: or change color
          (cursor     lavender-gray)
 
          (keyword    green)
@@ -798,25 +799,15 @@
      `(ivy-confirm-face ((,c (:background nil :foreground ,light-orange))))
      `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
      ;; `(ivy-current-match ((,c (:inherit hl-line :foreground ,hl))))
-     `(ivy-minibuffer-match-face-1 ((,c (:background ,bg3 :foreground ,fg1))))
-     `(ivy-minibuffer-match-face-2 ((,c (:background ,bg3 :foreground ,light-green :bold ,bold))))
-     `(ivy-minibuffer-match-face-3 ((,c (:background ,bg3 :foreground ,light-orange :bold ,bold))))
-     `(ivy-minibuffer-match-face-4 ((,c (:background ,bg3 :foreground ,alt-lavender :bold ,bold))))
-     ;; TODO: fix override backgound in ivy minubuffer with current line
-     ;; OLD
-     ;; `(ivy-minibuffer-match-face-2 ((,c (:background ,dark-blue :foreground ,teal-blue :bold ,bold))))
-     ;; `(ivy-minibuffer-match-face-3 ((,c (:background ,dark-yellow :foreground ,light-orange :bold ,bold))))
-     ;; `(ivy-minibuffer-match-face-4 ((,c (:background ,dark-purple :foreground ,light-purple :bold ,bold))))
+     `(ivy-minibuffer-match-face-1 ((,c (:background nil :foreground ,fg1))))
+     `(ivy-minibuffer-match-face-2 ((,c (:background nil :foreground ,light-green :bold ,bold))))
+     `(ivy-minibuffer-match-face-3 ((,c (:background nil :foreground ,light-orange :bold ,bold))))
+     `(ivy-minibuffer-match-face-4 ((,c (:background nil :foreground ,alt-lavender :bold ,bold))))
 
      `(swiper-match-face-1 ((,c (:background ,bg3 :foreground ,fg1))))
      `(swiper-match-face-2 ((,c (:background ,bg3 :foreground ,light-green :bold ,bold))))
      `(swiper-match-face-3 ((,c (:background ,bg3 :foreground ,light-orange :bold ,bold))))
      `(swiper-match-face-4 ((,c (:background ,bg3 :foreground ,alt-lavender :bold ,bold))))
-     ;; OLD
-     ;; `(swiper-match-face-2 ((,c (:background ,dark-blue :foreground ,teal-blue :bold ,bold))))
-     ;; `(swiper-match-face-3 ((,c (:background ,dark-yellow :foreground ,light-orange :bold ,bold))))
-     ;; `(swiper-match-face-4 ((,c (:background ,dark-purple :foreground ,light-purple :bold ,bold))))
-
      `(swiper-line-face ((,c (:inherit hl-line)))))))
 
 ;;;###autoload
