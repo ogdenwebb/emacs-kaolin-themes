@@ -52,6 +52,7 @@
   :group 'kaolin-theme)
 
 ;; TODO: move light-green to separated hl var and (??) change to lavender
+;; TODO: (??) add base(terminal) colors
 ;; Kaolin color palette
 (let ((c '((class color) (min-colors 89)))
       (black1          "#1b1b1b")
@@ -493,7 +494,7 @@
 
      ;; Rainbow delimeters
      ;; TODO: change color
-     `(show-paren-match-face ((,c (:background ,jade :foreground ,bg2))))
+     `(show-paren-match-face ((,c (:background nil :foreground ,hl :bold ,bold))))
      `(show-paren-mismatch-face ((,c (:background ,red :foreground ,bg2))))
      `(rainbow-delimiters-unmatched-face ((,c :foreground ,warning)))
      `(rainbow-delimiters-depth-1-face ((,c (:foreground ,rb1))))
