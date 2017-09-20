@@ -673,7 +673,7 @@
      `(speedbar-file-face ((,c (:foreground ,green))))
      `(speedbar-tag-face ((,c (:foreground ,faded-blue))))
      `(speedbar-selected-face ((,c (:foreground ,teal-green))))
-     `(speedbar-highlight-face ((,c (:foreground cyan))))
+     `(speedbar-highlight-face ((,c (:foreground ,cyan))))
      `(speedbar-button-face ((,c (:foreground ,jade))))
 
      ;; Haskell mode
