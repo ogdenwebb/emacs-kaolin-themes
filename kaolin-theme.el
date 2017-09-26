@@ -654,6 +654,7 @@
 
      ;; Web
      `(css-selector ((,c (:foreground ,teal))))
+     `(web-mode-css-selector-face ((,c (:foreground ,teal))))
      `(web-mode-type-face ((,c (:inherit ,font-lock-type-face))))
      `(web-mode-html-tag-face ((,c (:inherit font-lock-keyword-face))))
      `(web-mode-html-tag-bracket-face ((,c (:inherit web-mode-html-tag-face))))
