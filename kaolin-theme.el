@@ -496,9 +496,10 @@
 
      ;; Rainbow delimeters
      ;; TODO: change color & rewrite
-     (if (eq show-paren-style 'expression)
-      `(show-paren-match-face ((,c (:background ,bg3 :foreground nil))))
-      `(show-paren-match-face ((,c (:background nil :foreground ,orange :bold ,bold)))))
+     `(show-paren-match-face ((,c (:background nil :foreground ,orange :bold ,bold))))
+     ;; (if (eq show-paren-style 'expression)
+     ;;  `(show-paren-match-face ((,c (:background ,bg3 :foreground nil))))
+     ;;  `(show-paren-match-face ((,c (:background nil :foreground ,orange :bold ,bold)))))
 
      `(show-paren-mismatch-face ((,c (:background ,red :foreground ,bg2))))
      `(rainbow-delimiters-unmatched-face ((,c :foreground ,warning)))
