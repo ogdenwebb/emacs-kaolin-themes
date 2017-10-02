@@ -88,6 +88,7 @@
       (alt-red         "#c93232")
       (light-red       "#d66e75")
       ;; (pink            "#d75f91")
+      (moderate-pink   "#a0586c")
       (pink            "#d24b83")
       (light-pink      "#ef98aa")
       (soft-pink       "#fbaed2")
@@ -123,12 +124,18 @@
       ;; (teal-green      "#80bea0")
       (teal-green      "#6fb593")
 
+
+      ;; TODO: #062732
       (midnight-blue   "#1e2528")
-      (grayish-blue    "#36454f")
+      ;; (grayish-blue    "#36454f")
+      (grayish-blue    "#687184")
       (dark-blue       "#2a4661")
       ;; (blue            "#5077a5")
       (blue            "#3B6FA3")
       (alt-blue        "#267fb5")
+      (moderate-blue   "#4e7f95")
+      ;; (soft-blue       "#4aa8ee")
+      (soft-blue       "#4CA6E8")
       (dark-cyan       "#008b8b")
       (cyan            "#54b6b6")
       (faded-blue      "#817f96")
@@ -145,6 +152,8 @@
 
       (dark-violet     "#997a8d")
       (violet          "#ab98b5")
+      (alt-violet      "#af94f5")
+      (light-violet    "#d1aef4")
 
       ;; Face options
       (bold            kaolin-bold)
@@ -163,6 +172,7 @@
          (bg4  black4)
 
          (dim-buffer alt-black)
+         ;; (hl         alt-lavender)
          (hl         light-green)
          (hl-line    bg2)
          (hl-indent  gray)
@@ -792,7 +802,7 @@
      ;; Evil ex
      `(evil-ex-info ((,c (:foreground ,orange))))
      `(evil-ex-substitute-matches ((,c (:background nil :foreground ,red :underline ,underline))))
-     `(evil-ex-substitute-replacement ((,c (:foreground ,light-green))))
+     `(evil-ex-substitute-replacement ((,c (:background nil :foreground ,light-green))))
      `(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
 
      ;; Vimish-fold
@@ -814,16 +824,16 @@
      `(ivy-match-required-face ((,c (:background nil :foreground ,alt-red :bold nil))))
      `(ivy-confirm-face ((,c (:background nil :foreground ,light-orange))))
      `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
-     ;; `(ivy-current-match ((,c (:inherit hl-line :foreground ,cyan)))
      `(ivy-minibuffer-match-face-1 ((,c (:background nil :foreground ,fg1))))
-     `(ivy-minibuffer-match-face-2 ((,c (:background nil :foreground ,light-green :bold ,bold))))
+     `(ivy-minibuffer-match-face-2 ((,c (:background nil :foreground ,soft-blue :bold ,bold))))
      `(ivy-minibuffer-match-face-3 ((,c (:background nil :foreground ,light-orange :bold ,bold))))
-     `(ivy-minibuffer-match-face-4 ((,c (:background nil :foreground ,alt-lavender :bold ,bold))))
+     `(ivy-minibuffer-match-face-4 ((,c (:background nil :foreground ,moderate-pink :bold ,bold))))
 
-     `(swiper-match-face-1 ((,c (:background ,bg3 :foreground ,fg1))))
-     `(swiper-match-face-2 ((,c (:background ,bg3 :foreground ,light-green :bold ,bold))))
-     `(swiper-match-face-3 ((,c (:background ,bg3 :foreground ,light-orange :bold ,bold))))
-     `(swiper-match-face-4 ((,c (:background ,bg3 :foreground ,alt-lavender :bold ,bold))))
+     ;; TODO: change face-1 or current-match; see: try to describe member func
+     `(swiper-match-face-1 ((,c (:background ,bg2 :foreground ,fg1))))
+     `(swiper-match-face-2 ((,c (:background ,bg2 :foreground ,soft-blue :bold ,bold))))
+     `(swiper-match-face-3 ((,c (:background ,bg2 :foreground ,light-orange :bold ,bold))))
+     `(swiper-match-face-4 ((,c (:background ,bg2 :foreground ,moderate-pink :bold ,bold))))
      `(swiper-line-face ((,c (:inherit hl-line)))))))
 
 ;;;###autoload
