@@ -52,7 +52,9 @@
   :group 'kaolin-theme)
 
 ;; TODO: move light-green to separated hl var and (??) change to lavender
+;; TODO: add evil-goggles support
 ;; TODO: (??) add base(terminal) colors
+;; TODO: (??) colorful comments
 
 ;; Kaolin color palette
 (let ((c '((class color) (min-colors 89)))
@@ -818,18 +820,18 @@
      ;; Ivy & Swiper
      `(ivy-modified-buffer ((,c (:foreground ,light-yellow))))
      `(ivy-subdir ((,c (:foreground ,green :bold ,bold))))
+     `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
      `(ivy-virtual ((,c (:foreground ,violet))))
      `(ivy-remote ((,c (:foreground ,teal))))
+     `(ivy-cursor ((,c (:background ,bg3 :foreground ,fg1))))
      `(ivy-current-match ((,c (:background ,hl-line :foreground ,hl :bold t))))
      `(ivy-match-required-face ((,c (:background nil :foreground ,alt-red :bold nil))))
      `(ivy-confirm-face ((,c (:background nil :foreground ,light-orange))))
-     `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
      `(ivy-minibuffer-match-face-1 ((,c (:background nil :foreground ,fg1))))
      `(ivy-minibuffer-match-face-2 ((,c (:background nil :foreground ,soft-blue :bold ,bold))))
      `(ivy-minibuffer-match-face-3 ((,c (:background nil :foreground ,light-orange :bold ,bold))))
      `(ivy-minibuffer-match-face-4 ((,c (:background nil :foreground ,moderate-pink :bold ,bold))))
 
-     ;; TODO: change face-1 or current-match; see: try to describe member func
      `(swiper-match-face-1 ((,c (:background ,bg2 :foreground ,fg1))))
      `(swiper-match-face-2 ((,c (:background ,bg2 :foreground ,soft-blue :bold ,bold))))
      `(swiper-match-face-3 ((,c (:background ,bg2 :foreground ,light-orange :bold ,bold))))
