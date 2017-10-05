@@ -55,6 +55,7 @@
 ;; TODO: add evil-goggles support
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
+;; TODO: treemacs
 
 ;; Kaolin color palette
 (let ((c '((class color) (min-colors 89)))
@@ -401,7 +402,7 @@
      ;; Hydra
      `(hydra-face-red ((,c (:foreground ,red))))
      `(hydra-face-teal ((,c (:foreground ,teal))))
-     `(hydra-face-blue ((,c (:foreground ,blue))))
+     `(hydra-face-blue ((,c (:foreground ,soft-blue))))
      `(hydra-face-pink ((,c (:foreground ,pink))))
      `(hydra-face-amaranth ((,c (:foreground ,purple))))
 
