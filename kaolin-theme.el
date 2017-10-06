@@ -407,6 +407,7 @@
      `(hydra-face-amaranth ((,c (:foreground ,purple))))
 
      ;; Org-mode
+     ;; Pay attention because org-level-4 uses to diplay names in ivy-switch-buffer
      ;; TODO
      ;; `(org-level-1 ((,c (:foreground ,green :bold ,bold :height 1.1))))
      ;; `(org-level-2 ((,c (:foreground ,teal-blue :bold nil))))
@@ -772,9 +773,9 @@
      `(which-func ((,c (:foreground ,orange))))
 
      ;; Which-key
-     `(which-key-key-face ((,c (:foreground ,purple :bold ,bold))))
-     `(which-key-group-description-face ((,c (:foreground ,light-purple))))
-     `(which-key-local-map-description-face ((,c (:foreground ,teal-green))))
+     `(which-key-key-face ((,c (:foreground ,light-green :bold ,bold))))
+     `(which-key-group-description-face ((,c (:foreground ,alt-lavender))))
+     `(which-key-local-map-description-face ((,c (:foreground ,soft-blue))))
      `(which-key-command-description-face ((,c (:foreground ,teal))))
 
      ;; Ruler-mode
@@ -819,11 +820,11 @@
      `(avy-lead-face-2 ((,c (:background ,dark-purple :foreground ,fg1))))
 
      ;; Ivy & Swiper
-     `(ivy-modified-buffer ((,c (:foreground ,light-yellow))))
+     `(ivy-modified-buffer ((,c (:foreground ,alt-lavender))))
      `(ivy-subdir ((,c (:foreground ,green :bold ,bold))))
      `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
-     `(ivy-virtual ((,c (:foreground ,violet))))
-     `(ivy-remote ((,c (:foreground ,teal))))
+     `(ivy-virtual ((,c (:foreground ,light-yellow))))
+     `(ivy-remote ((,c (:foreground ,red))))
      `(ivy-cursor ((,c (:background ,bg3 :foreground ,fg1))))
      `(ivy-current-match ((,c (:background ,hl-line :foreground ,hl :bold t))))
      `(ivy-match-required-face ((,c (:background nil :foreground ,alt-red :bold nil))))
