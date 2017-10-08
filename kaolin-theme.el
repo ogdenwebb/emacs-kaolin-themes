@@ -109,6 +109,9 @@
       (light-yellow    "#c9bb87")
       (wheat           "#b9c791")
       (alt-wheat       "#fdd5b1")
+      ;; (faded-wheat     "#eaddb7")
+      ;; (faded-wheat     "#f1dab5")
+      (faded-wheat     "#D9CA9B")
 
       (dark-jade       "#2e4039")
       (jade            "#597a6e")
@@ -277,7 +280,6 @@
      `(vertical-border ((,c (:foreground ,win-border))))
      `(minibuffer-prompt ((,c (:foreground ,keyword :bold ,bold))))
      `(default-italic ((,c (:italic ,italic))))
-     ;; TODO: (??) change to blue
      `(link ((,c (:foreground ,lavender :underline ,underline))))
      `(link-visited ((,c (:inherit link :underline nil))))
      `(success ((,c (:background nil :foreground ,light-green))))
@@ -407,19 +409,13 @@
      `(hydra-face-amaranth ((,c (:foreground ,purple))))
 
      ;; Org-mode
-     ;; Pay attention because org-level-4 uses to diplay names in ivy-switch-buffer
-     ;; TODO
-     ;; `(org-level-1 ((,c (:foreground ,green :bold ,bold :height 1.1))))
-     ;; `(org-level-2 ((,c (:foreground ,teal-blue :bold nil))))
-     ;; `(org-level-3 ((,c (:foreground ,light-jade :bold nil))))
-     ;; `(org-level-4 ((,c (:foreground ,lime :bold nil))))
-     ;; OLD
-     `(org-level-1 ((,c (:foreground ,teal-green :bold ,bold :height 1.1))))
+     ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
+     `(org-level-1 ((,c (:foreground ,green :bold ,bold :height 1.1))))
      `(org-level-2 ((,c (:foreground ,teal-blue :bold nil))))
-     `(org-level-3 ((,c (:inherit org-level-2))))
-     `(org-level-4 ((,c (:inherit org-level-2))))
+     `(org-level-3 ((,c (:foreground ,light-jade :bold nil))))
+     `(org-level-4 ((,c (:foreground ,faded-wheat :bold nil))))
      `(org-tag ((,c (:foreground ,orange :bold ,bold))))
-     `(org-checkbox ((,c (:foreground ,faded-blue :bold ,bold))))
+     `(org-checkbox ((,c (:foreground ,lavender :bold ,bold))))
      `(org-todo ((,c (:foreground ,red :bold ,bold))))
      `(org-done ((,c (:foreground ,lime  :bold ,bold))))
      `(org-headline-done ((,c (:foreground ,teal-blue  :bold nil))))
@@ -822,7 +818,7 @@
      ;; Ivy & Swiper
      `(ivy-modified-buffer ((,c (:foreground ,alt-lavender))))
      `(ivy-subdir ((,c (:foreground ,green :bold ,bold))))
-     `(ivy-action ((,c (:background nil :foreground ,teal-green :bold ,bold))))
+     `(ivy-action ((,c (:background nil :foreground ,light-green :bold ,bold))))
      `(ivy-virtual ((,c (:foreground ,light-yellow))))
      `(ivy-remote ((,c (:foreground ,red))))
      `(ivy-cursor ((,c (:background ,bg3 :foreground ,fg1))))
