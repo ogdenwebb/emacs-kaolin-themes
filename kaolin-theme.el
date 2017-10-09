@@ -51,7 +51,7 @@
   "Face to highlight boolean values"
   :group 'kaolin-theme)
 
-;; TODO: move light-green to separated hl var and (??) change to lavender
+;; TODO: (??) change hl to lavender
 ;; TODO: add evil-goggles support
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
@@ -410,9 +410,9 @@
 
      ;; Org-mode
      ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
-     `(org-level-1 ((,c (:foreground ,green :bold ,bold :height 1.1))))
+     `(org-level-1 ((,c (:foreground ,light-jade :bold ,bold :height 1.1))))
      `(org-level-2 ((,c (:foreground ,teal-blue :bold nil))))
-     `(org-level-3 ((,c (:foreground ,light-jade :bold nil))))
+     `(org-level-3 ((,c (:foreground ,green :bold nil))))
      `(org-level-4 ((,c (:foreground ,faded-wheat :bold nil))))
      `(org-tag ((,c (:foreground ,orange :bold ,bold))))
      `(org-checkbox ((,c (:foreground ,lavender :bold ,bold))))
