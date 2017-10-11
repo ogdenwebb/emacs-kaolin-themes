@@ -57,6 +57,7 @@
 ;; TODO: treemacs
 ;; TODO: custom-set face
 ;; TODO: check all faces with cyan
+;; TODO: (??) color cornflower blue
 
 ;; Kaolin color palette
 (let ((c '((class color) (min-colors 89)))
@@ -282,7 +283,7 @@
      `(vertical-border ((,c (:foreground ,win-border))))
      `(minibuffer-prompt ((,c (:foreground ,keyword :bold ,bold))))
      `(default-italic ((,c (:italic ,italic))))
-     `(link ((,c (:foreground ,lavender :underline ,underline))))
+     `(link ((,c (:foreground ,faded-orange :underline ,underline))))
      `(link-visited ((,c (:inherit link :underline nil))))
      `(success ((,c (:background nil :foreground ,light-green))))
      `(escape-glyph ((,c (:background nil :foreground ,cyan))))
@@ -296,7 +297,7 @@
      `(isearch-fail ((,c (:background nil :foreground ,red))))
 
      ;; Interface
-     `(button ((,c (:inherit link))))
+     `(button ((,c (:foreground ,lavender :underline ,underline))))
      `(custom-button ((,c (:background ,bg3 :foreground ,grayish-orange :box (:line-width 2 :color ,bg2 :style released-button)))))
      `(custom-button-mouse ((,c (:background ,bg4 :foreground ,light-orange :box (:line-width 2 :color ,bg2 :style released-button)))))
      `(custom-button-pressed ((,c (:background ,bg4 :foreground ,light-orange :box (:line-width 2 :color ,bg2 :style pressed-button)))))
@@ -412,19 +413,21 @@
 
      ;; Org-mode
      ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
-     `(org-level-1 ((,c (:foreground ,light-jade :bold ,bold :height 1.1))))
+     `(org-level-1 ((,c (:foreground ,green :bold ,bold :height 1.1))))
      `(org-level-2 ((,c (:foreground ,teal-blue :bold nil))))
      `(org-level-3 ((,c (:foreground ,green :bold nil))))
      `(org-level-4 ((,c (:foreground ,faded-wheat :bold nil))))
      `(org-tag ((,c (:foreground ,orange :bold ,bold))))
-     `(org-checkbox ((,c (:foreground ,lavender :bold ,bold))))
+     `(org-checkbox ((,c (:foreground ,green :bold ,bold))))
      `(org-todo ((,c (:foreground ,red :bold ,bold))))
      `(org-done ((,c (:foreground ,lime  :bold ,bold))))
+     `(org-list-dt ((,c (:inherit org-checkbox))))
      `(org-headline-done ((,c (:foreground ,teal-blue  :bold nil))))
      `(org-checkbox-statistics-todo ((,c (:foreground ,faded-blue :bold ,bold))))
      `(org-checkbox-statistics-done ((,c (:foreground ,lime :bold ,bold))))
      ;; TODO:
      `(org-code ((,c (:foreground ,green))))
+     ;; TODO:
      `(org-verbatim ((,c (:foreground ,light-yellow))))
      `(org-hide ((,c (:foreground ,bg2))))
      `(org-date ((,c (:foreground ,light-yellow :underline ,underline))))
