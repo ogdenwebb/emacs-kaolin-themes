@@ -30,4 +30,4 @@ Copy the `kaolin-theme.el` file to your `~/.emacs.d/themes` directory and add th
 
 # Modeline
 
-The mode-line config isn't a part of the Kaolin theme, you can find my telephone-line config [here](https://github.com/0rdy/emacs.d/blob/master/env/env-modeline.el).
+The mode-line config isn't a part of the Kaolin theme, you can find my telephone-line config [here](https://github.com/ogdenwebb/elmax/blob/master/env/env-modeline.el).
