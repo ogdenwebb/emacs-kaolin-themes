@@ -133,7 +133,6 @@
       (teal-green      "#6fb593")
 
 
-      ;; TODO: #062732
       (midnight-blue   "#1e2528")
       (alt-midnigh-blue "#062732")
       ;; (grayish-blue    "#36454f")
@@ -252,20 +251,19 @@
      'kaolin
      ;; Font-lock
      `(font-lock-builtin-face ((,c (:foreground ,builtin))))
-     `(font-lock-comment-face ((,c (:foreground ,comment))))
      `(font-lock-comment-delimiter-face ((,c (:foreground ,comment))))
+     `(font-lock-comment-face ((,c (:foreground ,comment))))
      `(font-lock-constant-face ((,c (:foreground ,const))))
-     `(font-lock-reference-face ((,c (:foreground ,const))))
-     `(font-lock-string-face ((,c (:foreground ,str))))
      `(font-lock-doc-face ((,c (:foreground ,doc))))
      `(font-lock-function-name-face ((,c (:foreground ,functions :bold ,bold))))
      `(font-lock-keyword-face ((,c (:foreground ,keyword :bold ,bold))))
-     `(font-lock-negation-char-face ((,c (:foreground ,const))))
+     `(font-lock-negation-char-face ((,c (:foreground ,red))))
+     `(font-lock-preprocessor-face ((,c (:foreground ,prep :bold nil))))
+     `(font-lock-reference-face ((,c (:foreground ,const))))
+     `(font-lock-string-face ((,c (:foreground ,str))))
      `(font-lock-type-face ((,c (:foreground ,type))))
      `(font-lock-variable-name-face ((,c (:foreground ,var))))
      `(font-lock-warning-face ((,c (:background nil :foreground ,warning))))
-     `(font-lock-preprocessor-face ((,c (:foreground ,prep :bold nil))))
-     `(font-lock-negation-char-face ((,c (:foreground ,cyan :bold nil))))
 
      ;; Kaolin faces
      `(kaolin-boolean ((,c (:foreground ,bool))))
@@ -289,15 +287,16 @@
      `(escape-glyph ((,c (:background nil :foreground ,cyan))))
 
      `(menu ((,c (:background ,bg2 :foreground ,fg2))))
-     `(header-line ((,c (:background ,bg2 :foreground ,jade))))
+     `(header-line ((,c (:background ,midnight-blue :foreground ,faded-blue))))
      `(tooltip ((,c (:foreground ,tooltip-bg :foreground ,tooltip-fg))))
 
-     `(match ((,c (:background nil :foreground ,cyan))))
+     `(match ((,c (:background nil :foreground ,hl))))
      `(isearch ((,c (:background nil :foreground ,hl :bold ,bold :underline ,underline))))
      `(isearch-fail ((,c (:background nil :foreground ,red))))
 
      ;; Interface
-     `(button ((,c (:foreground ,lavender :underline ,underline))))
+     ;; `(button ((,c (:foreground ,lavender :underline ,underline))))
+     `(button ((,c (:inherit link))))
      `(custom-button ((,c (:background ,bg3 :foreground ,grayish-orange :box (:line-width 2 :color ,bg2 :style released-button)))))
      `(custom-button-mouse ((,c (:background ,bg4 :foreground ,light-orange :box (:line-width 2 :color ,bg2 :style released-button)))))
      `(custom-button-pressed ((,c (:background ,bg4 :foreground ,light-orange :box (:line-width 2 :color ,bg2 :style pressed-button)))))
@@ -312,11 +311,11 @@
      `(widget-field ((,c (:background ,bg3 :foreground ,fg1 :box (:line-width 1 :color ,bg2 :style nil)))))
      `(widget-documentation ((,c (:background nil :foreground ,faded-blue))))
 
-     `(package-name ((,c (:background nil :foreground ,cyan))))
+     `(package-name ((,c (:inherit link :underline nil))))
 
      ;; Additional highlighting
      ;; TODO: Also uses to highlight buttons in describe
-     `(highlight ((,c (:background ,bg2 :foreground ,cyan))))
+     `(highlight ((,c (:background ,bg2 :foreground ,light-orange))))
      `(lazy-highlight ((,c (:background ,bg3 :foreground ,fg2))))
      `(hl-line ((,c (:background ,bg2))))
      `(highlight-numbers-number ((,c (:foreground ,num))))
