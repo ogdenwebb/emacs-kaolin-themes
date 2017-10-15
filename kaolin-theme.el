@@ -53,7 +53,6 @@
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
 ;; TODO: treemacs
-;; TODO: `custom-set` face
 ;; TODO: (??) color cornflower blue
 
 ;; Kaolin color palette
@@ -236,7 +235,7 @@
          (type       alt-orange)
          ;; TODO: ?? light-yellow
          (const      violet)
-         ;; TODO: more brighter or change
+         ;; TODO: make more brighter or change
          (var        faded-blue)
          ;; TODO: change number color ??  pink ?? light-yellow ?? alt-orange
          (num        red)
@@ -273,12 +272,12 @@
      `(shadow ((,c (:foreground ,alt-gray))))
      `(file-name-shadow ((,c (:inherit shadow))))
      `(region ((,c (:background ,bg3))))
-     ;; TODO: M-Drag-mouse-1
-     `(secondary-selection ((,c (:background ,green :foreground ,bg1))))
+     `(secondary-selection ((,c (:background ,dark-jade))))
      `(fringe ((,c (:background ,bg1 :foreground ,fg1))))
      `(cursor ((,c (:background ,cursor))))
      `(vertical-border ((,c (:foreground ,win-border))))
      `(minibuffer-prompt ((,c (:foreground ,keyword :bold ,bold))))
+     `(bold ((,c (:bold ,bold))))
      `(default-italic ((,c (:italic ,italic))))
      `(link ((,c (:foreground ,faded-orange :underline ,underline))))
      `(link-visited ((,c (:inherit link :underline nil))))
@@ -302,6 +301,7 @@
      `(custom-visibility ((,c (:background nil :foreground ,cyan :height 0.9 :underline ,underline))))
      `(custom-state ((,c (:background nil :foreground ,green))))
      `(custom-changed ((,c (:background nil :foreground ,orange))))
+     `(custom-set ((,c (:background nil :foreground ,teal-green))))
      `(custom-invalid ((,c (:background nil :foreground ,red))))
      `(custom-face-tag ((,c (:background nil :foreground ,purple :bold ,bold))))
      `(custom-link ((,c (:background nil :foreground ,teal :bold ,bold))))
@@ -313,7 +313,6 @@
      `(package-name ((,c (:inherit link :underline nil))))
 
      ;; Highlighting
-     ;; TODO: Also uses to highlight buttons in describe
      `(highlight ((,c (:background ,bg2 :foreground ,light-orange))))
      `(lazy-highlight ((,c (:background ,bg3 :foreground ,fg2))))
      `(hl-line ((,c (:background ,bg2))))
@@ -413,20 +412,18 @@
      ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
      `(org-level-1 ((,c (:foreground ,green :bold ,bold :height 1.1))))
      `(org-level-2 ((,c (:foreground ,teal-blue :bold nil))))
-     `(org-level-3 ((,c (:foreground ,green :bold nil))))
+     `(org-level-3 ((,c (:foreground ,faded-orange :bold nil))))
      `(org-level-4 ((,c (:foreground ,faded-wheat :bold nil))))
      `(org-tag ((,c (:foreground ,orange :bold ,bold))))
      `(org-checkbox ((,c (:foreground ,green :bold ,bold))))
      `(org-todo ((,c (:foreground ,red :bold ,bold))))
-     `(org-done ((,c (:foreground ,lime  :bold ,bold))))
+     `(org-done ((,c (:foreground ,teal-green  :bold ,bold))))
      `(org-list-dt ((,c (:inherit org-checkbox))))
      `(org-headline-done ((,c (:foreground ,teal-blue  :bold nil))))
      `(org-checkbox-statistics-todo ((,c (:foreground ,faded-blue :bold ,bold))))
-     `(org-checkbox-statistics-done ((,c (:foreground ,lime :bold ,bold))))
-     ;; TODO:
-     `(org-code ((,c (:foreground ,green))))
-     ;; TODO:
-     `(org-verbatim ((,c (:foreground ,light-yellow))))
+     `(org-checkbox-statistics-done ((,c (:foreground ,teal-green :bold ,bold))))
+     `(org-code ((,c (:foreground ,light-yellow))))
+     `(org-verbatim ((,c (:foreground ,soft-blue))))
      `(org-hide ((,c (:foreground ,bg2))))
      `(org-date ((,c (:foreground ,light-yellow :underline ,underline))))
      `(org-document-title ((,c (:foreground ,teal :bold ,bold))))
