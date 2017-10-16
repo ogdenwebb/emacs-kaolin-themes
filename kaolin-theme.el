@@ -46,6 +46,7 @@
   "When t, use the wave underline style instead of regular underline."
   :group 'kaolin-theme)
 
+;; TODO: add colored selection option
 (defcustom kaolin-hl-line-colored nil
   "When t, will display colored hl-line style instead dim gray"
   :group 'kaolin-theme)
@@ -518,12 +519,12 @@
 
      ;; Rainbow delimeters
      ;; TODO: change color & rewrite
-     `(show-paren-match-face ((,c (:background nil :foreground ,orange :bold ,bold))))
+     `(show-paren-match ((,c (:background nil :foreground ,orange :bold ,bold))))
      ;; (if (eq show-paren-style 'expression)
      ;;  `(show-paren-match-face ((,c (:background ,bg3 :foreground nil))))
      ;;  `(show-paren-match-face ((,c (:background nil :foreground ,orange :bold ,bold)))))
 
-     `(show-paren-mismatch-face ((,c (:background ,red :foreground ,bg2))))
+     `(show-paren-mismatch ((,c (:background ,red :foreground ,bg2))))
      `(rainbow-delimiters-unmatched-face ((,c :foreground ,warning)))
      `(rainbow-delimiters-depth-1-face ((,c (:foreground ,rb1))))
      `(rainbow-delimiters-depth-2-face ((,c :foreground ,rb2)))
@@ -582,9 +583,9 @@
      `(git-gutter:deleted ((,c (:background ,bg1 :foreground ,diff-del :bold ,bold))))
 
      ;; Diff-hl
-     `(diff-hl-insert ((,c (:foreground ,light-green))))
-     `(diff-hl-change ((,c (:foreground ,yellow))))
-     `(diff-hl-delete ((,c (:foreground ,red))))
+     `(diff-hl-insert ((,c (:background ,diff-add))))
+     `(diff-hl-change ((,c (:background ,diff-change))))
+     `(diff-hl-delete ((,c (:background ,diff-dell))))
 
      ;; Popup
      `(popup-face ((,c (:background ,tooltip-bg :foreground ,tooltip-fg :bold ,bold))))
