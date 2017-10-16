@@ -585,7 +585,7 @@
      ;; Diff-hl
      `(diff-hl-insert ((,c (:background ,diff-add))))
      `(diff-hl-change ((,c (:background ,diff-change))))
-     `(diff-hl-delete ((,c (:background ,diff-dell))))
+     `(diff-hl-delete ((,c (:background ,diff-del))))
 
      ;; Popup
      `(popup-face ((,c (:background ,tooltip-bg :foreground ,tooltip-fg :bold ,bold))))
