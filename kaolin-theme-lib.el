@@ -98,13 +98,13 @@
     (dark-violet     "#997a8d")
     (violet          "#ab98b5")
     (alt-violet      "#af94f5")
-    (light-violet    "#d1aef4")))
+    (light-violet    "#d1aef4")
 
-   ;; ;; Face options
-   ;; (bold            kaolin-bold)
-   ;; (italic          kaolin-italic)
-   ;; (underline       kaolin-underline)
-   ;; (underline-style (if kaolin-wave 'wave 'line)))
+    ;; Face options
+    (bold            kaolin-bold)
+    (italic          kaolin-italic)
+    (underline       kaolin-underline)
+    (underline-style (if kaolin-wave 'wave 'line))))
 
 (provide 'kaolin-theme-lib)
 

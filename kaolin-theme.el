@@ -1,4 +1,5 @@
 ;;; kaolin-theme.el --- A dark jade theme inspired by Sierra.vim
+;; TODO: fix title
 
 ;; Copyright (C) 2017 ogdenwebb
 
@@ -65,12 +66,25 @@
 ;; TODO: (??) add -pkg.el
 ;; TODO: Add theme based on nim aporia: 400 roses
 
+(defun kaolin-theme--make-name (sym)
+  "Format kaolin-<sym> from SYM."
+  (intern (format "kaolin-%s" (symbol-name sym))))
+
 ;;;###autoload
-(defmacro define-kaolin-theme (name doc palette &optional opt-faces opt-vars)
+(defmacro define-kaolin-theme (name doc &optional palette opt-faces opt-vars)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name)))
-    `(let ((defs)))))
-       ;; (autothemer-deftheme ,kaolin-theme-name))))
+    `(let ((defs))
+
+       (autothemer-deftheme ,kaolin-theme-name ,doc
+        ((((class color) (min-colors 32000)) ((class color) (min-colors 89)) t)
+         ;; TODO: modify pallete, i.e. remove dublicates and set from pallete var
+         ;; using setf and alist-get
+         ;; or add-to-list to avoid duplicates
+         ,@kaolin-palette)
+        ((default (:background midnight-purple :foreground yellow))
+         (button (:underline t :weight 'bold :foreground black1))
+         (error (:foreground red)))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
