@@ -3,10 +3,14 @@
 
 ;;; Code:
 (require 'kaolin-theme)
-;; TODO:
-(require 'kaolin-theme-lib)
 
-(define-kaolin-theme eclipse  "Dark purple Kaolin theme variant.")
+(define-kaolin-theme eclipse  "Dark purple Kaolin theme variant."
+  ;; Palette modification
+  ((yellow "purple")
+   (hl-line "dim gray")))
+  ;; Set custom faces
+  ;; (()))
+
 
 
 
