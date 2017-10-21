@@ -67,13 +67,24 @@
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
 ;; TODO: Add theme based on nim aporia: 400 roses
+;; TODO: make a simple text logo
+;; TODO: choose a response to use as slogan:
+;; That which is arises from that which is not.
+;; I am shaped to a higher order.
+;; For each tool, a purpose.
+;; Life's wheel goes round and round.
+;; The end of the path is the beginning.
+;; Like a beaten blade, I come back sharper.
 
 (defun kaolin-theme--make-name (sym)
   "Format kaolin-<sym> from SYM."
   (intern (format "kaolin-%s" (symbol-name sym))))
 
+;; Literally it's evil-add-to-alist.
 (defun kaolin-theme--add-to-alist (list-var key val &rest elements)
-  "Literally it's evil-add-to-alist."
+  "Add the assocation of KEY and VAL to the value of LIST-VAR.
+If the list already contains an entry for KEY, update that entry;
+otherwise add at the end of the list."
   (let ((tail (symbol-value list-var)))
     (while (and tail (not (equal (car-safe (car-safe tail)) key)))
       (setq tail (cdr tail)))
@@ -85,39 +96,30 @@
         (apply #'kaolin-theme--add-to-list list-var elements)
       (symbol-value list-var))))
 
-
-;; TODO: delete
-(setq test-palette
-  '((yellow "purple")
-    (hl-line "dim gray")))
-
-(let ((palette kaolin-palette))
-  (cl-loop for el in test-palette ;; change to real arg
-           do (kaolin-theme--add-to-alist 'palette (car el) (cdr el)))
-  (print palette))
+(defun kaolin-theme--merge-alist (base-alist add-alist)
+  "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
+  (let ((res base-alist))
+    (cl-loop for el in add-alist
+            do (kaolin-theme--add-to-alist 'res (car el) (cdr el))
+            return res)))
 
 ;;;###autoload
-(defmacro define-kaolin-theme (name doc &optional opt-colors opt-faces opt-vars)
+(defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces opt-vars)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name))
-         (kaolin-theme-palette kaolin-palette))
-
-    ;; Modify palette
-    (when opt-colors
-      (cl-loop for el in opt-colors ;; change to real arg
-              do (kaolin-theme--add-to-alist 'kaolin-theme-palette (car el) (cdr el))))
-
+         (kaolin-theme-palette (if opt-palette
+                                   (kaolin-theme--merge-alist kaolin-palette opt-palette)
+                                 kaolin-palette))
+         (kaolin-theme-faces (if opt-faces
+                                   (kaolin-theme--merge-alist kaolin-faces opt-faces)
+                               kaolin-faces)))
     `(autothemer-deftheme ,kaolin-theme-name ,doc
                           ;; TODO: choose classes what I need
                           ((((class color) (min-colors 32000)) ((class color) (min-colors 89)) t)
-                          ;; TODO: modify pallete, i.e. remove dublicates and set from pallete var
-                          ;; using setf and alist-get
-                          ;; or add-to-list to avoid duplicates
+
                            ,@kaolin-theme-palette)
 
-                          ((default (:background midnight-purple :foreground yellow))
-                           (button (:underline t :weight 'bold :foreground black1))
-                           (error (:foreground red))))))
+                          ,kaolin-theme-faces)))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)

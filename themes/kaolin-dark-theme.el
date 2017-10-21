@@ -4,6 +4,18 @@
 
 (deftheme kaolin-dark "A dark jade theme")
 
+;; base colors
+
+;; black 0
+;; red 1
+;; green 2
+;; yellow 3
+;; blue 4
+;; magenta/purple/violet 5
+;; cyan 6
+;; white 7
+;; britght colors +1 step 8-15
+
 ;; color palette
 (let ((c '((class color) (min-colors 89)))
       (black1          "#1b1b1b")
@@ -115,6 +127,15 @@
       (underline-style (if kaolin-wave 'wave 'line)))
 
   ;; Theme colors
+  ;; TODO: add following vars
+  ;; TODO: add default bold, italic and etc face to lib
+  ;; TODO: add prompt
+  ;; ivy/swiper color
+  ;; second-hl for indent and etc
+  ;; selection
+  ;; TODO: add the following faces to default
+  ;; (??) start fg and bg with 0
+  ;; (??) rename bg1-4 fg1-4 to one var var1-8
   (let* ((fg1  white1)
          (fg2  white2)
          (fg3  white3)
@@ -128,12 +149,13 @@
          ;; (hl         alt-lavender)
          (hl         light-green)
          ;; (hl-line    bg2)
-         ;; TODO: (??) change to midnight-green
+         ;; TODO: (??) change to (alt)-midnight-green
          (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
          (hl-indent  gray)
          (tooltip-bg bg2)
          (tooltip-fg light-gray)
-         (tooltip-hl alt-brown)
+         (tooltip-hl-bg alt-brown)
+         (tooltip-hl-fg light-orange)
 
          ;; TODO: (??) repeat 1-4, 2-5... with +2
          (rb1 teal)
@@ -148,6 +170,7 @@
 
          (diff-add    light-green)
          (diff-change violet)
+         ;; TODO: rename to removed?
          (diff-del    red)
 
          (line-fg           fg4)
@@ -170,6 +193,7 @@
          ;; TODO: (??) add alt color cursor
          (cursor     alt-white)
 
+         ;; TODO: delete these key2 and key3
          (keyword    green)
          (key2       "#5f9298")
          (key3       "#41757b")
@@ -342,6 +366,7 @@
      `(sml/read-only ((t (:foreground ,orange))))
 
      ;; Flycheck
+     ;; TODO: split
      `(flycheck-info ((,c (:foreground ,teal-blue))))
      `(flycheck-warning ((,c (:underline (:style ,underline-style :color ,warning)))))
      `(flycheck-error ((,c (:underline (:style ,underline-style :color ,err)))))
@@ -350,10 +375,12 @@
      `(flycheck-fringe-info ((,c (:foreground ,teal-blue))))
 
      ;; Flyspell
+     ;; TODO: split
      `(flyspell-duplicate ((,c (:underline (:style ,underline-style :color ,warning)))))
      `(flyspell-incorrect ((,c (:underline (:style ,underline-style :color ,err)))))
 
      ;; Hydra
+     ;; TODO: split
      `(hydra-face-red ((,c (:foreground ,red))))
      `(hydra-face-teal ((,c (:foreground ,teal))))
      `(hydra-face-blue ((,c (:foreground ,soft-blue))))
@@ -466,11 +493,13 @@
 
      ;; Rainbow delimeters
      ;; TODO: change color & rewrite
+     ;; TODO: split
      `(show-paren-match ((,c (:background nil :foreground ,orange :bold ,bold))))
      ;; (if (eq show-paren-style 'expression)
      ;;  `(show-paren-match-face ((,c (:background ,bg3 :foreground nil))))
      ;;  `(show-paren-match-face ((,c (:background nil :foreground ,orange :bold ,bold)))))
 
+     ;; TODO: split
      `(show-paren-mismatch ((,c (:background ,red :foreground ,bg2))))
      `(rainbow-delimiters-unmatched-face ((,c :foreground ,warning)))
      `(rainbow-delimiters-depth-1-face ((,c (:foreground ,rb1))))
@@ -524,21 +553,25 @@
      `(magit-hash ((,c (:foreground ,fg2))))
 
      ;; Git gutter
+     ;; TODO: split
      `(git-gutter:unchanged ((,c (:background ,bg1 :foreground nil))))
      `(git-gutter:added ((,c (:background ,bg1 :foreground ,diff-add :bold ,bold))))
      `(git-gutter:modified ((,c (:background ,bg1 :foreground ,diff-change :bold ,bold))))
      `(git-gutter:deleted ((,c (:background ,bg1 :foreground ,diff-del :bold ,bold))))
 
      ;; Diff-hl
+     ;; TODO: split
      `(diff-hl-insert ((,c (:background ,diff-add))))
      `(diff-hl-change ((,c (:background ,diff-change))))
      `(diff-hl-delete ((,c (:background ,diff-del))))
 
      ;; Popup
+     ;; TODO: split
      `(popup-face ((,c (:background ,tooltip-bg :foreground ,tooltip-fg :bold ,bold))))
-     `(popup-menu-selection-face ((,c (:background ,tooltip-hl :foreground ,light-orange :bold ,bold))))
+     `(popup-menu-selection-face ((,c (:background ,tooltip-hl-bg :foreground ,tooltip-hl-fg :bold ,bold))))
 
      ;; Terminal
+     ;; TODO: split
      `(term ((t (:foreground ,fg1))))
      `(term-color-black ((t (:foreground ,bg1))))
      `(term-color-blue ((t (:foreground ,blue))))
@@ -550,6 +583,7 @@
      `(term-color-white ((t (:foreground ,fg2))))
 
      ;; EShell
+     ;; TODO: split
      `(eshell-prompt ((t (:foreground ,green :bold ,bold))))
      `(eshell-ls-directory ((t (:foreground ,magenta :bold ,bold))))
      `(eshell-ls-symlink ((t (:foreground ,blue :bold ,bold))))
@@ -564,6 +598,7 @@
      `(eshell-ls-unreadable ((t (:foreground ,faded-blue))))
 
      ;; Whitespace
+     ;; TODO: split
      `(whitespace-empty            ((t (:foreground ,red))))
      `(whitespace-line             ((t (:background ,bg2))))
      `(whitespace-space            ((t (:background ,bg2))))
@@ -612,10 +647,11 @@
      `(helm-bookmark-w3m ((,c (:foreground ,type))))
 
      ;; Company
+     ;; TODO: split
      `(company-tooltip ((,c (:background ,tooltip-bg :foreground ,fg3 :bold ,bold))))
      `(company-tooltip-common ((,c (:foreground ,hl))))
      `(company-tooltip-common-selection ((,c (:foreground ,light-orange))))
-     `(company-tooltip-selection ((,c (:background ,tooltip-hl :foreground ,light-yellow))))
+     `(company-tooltip-selection ((,c (:background ,tooltip-hl-bg :foreground ,tooltip-hl-fg))))
      `(company-tooltip-annotation ((,c (:foreground ,faded-blue))))
      `(company-scrollbar-bg ((,c (:background ,bg1))))
      `(company-scrollbar-fg ((,c (:foreground ,keyword))))
@@ -628,20 +664,21 @@
      `(company-tooltip-mouse ((,c (:background ,bg3 :foreground ,fg3))))
 
      ;; Web
-     `(css-selector ((,c (:foreground ,teal))))
-     `(web-mode-css-selector-face ((,c (:foreground ,teal))))
+     ;; TODO: split
+     `(css-selector ((,c (:foreground ,font-lock-builtin-face))))
+     `(web-mode-css-selector-face ((,c (:foreground ,font-lock-builtin-face))))
      `(web-mode-type-face ((,c (:inherit ,font-lock-type-face))))
      `(web-mode-html-tag-face ((,c (:inherit font-lock-keyword-face))))
      `(web-mode-html-tag-bracket-face ((,c (:inherit web-mode-html-tag-face))))
      `(web-mode-html-attr-name-face ((,c (:inherit ,font-lock-function-name-face))))
      `(web-mode-html-attr-value-face ((,c (:inherit ,font-lock-string-face))))
      `(web-mode-builtin-face ((,c (:inherit ,font-lock-builtin-face))))
-     `(web-mode-keyword-face ((,c (:foreground ,keyword))))
+     `(web-mode-keyword-face ((,c (:inherit ,font-lock-builtin-face))))
      `(web-mode-constant-face ((,c (:inherit ,font-lock-constant-face))))
      `(web-mode-comment-face ((,c (:inherit ,font-lock-comment-face))))
      `(web-mode-doctype-face ((,c (:foreground ,purple :bold ,bold))))
      `(web-mode-function-name-face ((,c (:inherit ,font-lock-function-name-face))))
-     `(web-mode-string-face ((,c (:foreground ,str))))
+     `(web-mode-string-face ((,c (:inherit ,font-lock-string-face))))
      `(web-mode-warning-face ((,c (:inherit ,font-lock-warning-face))))
 
      ;; Speedbar
@@ -717,18 +754,23 @@
      `(rst-level-6 ((,c (:foreground ,teal-blue))))
 
      ;; Pulse
+     ;; TODO: split
+     ;; TODO: use it in evil-goggles
      `(pulse-highlight-start-face ((,c (:background ,dark-yellow))))
 
      ;; Which-function-mode
+     ;; TODO: split
      `(which-func ((,c (:foreground ,orange))))
 
      ;; Which-key
+     ;; TODO: split
      `(which-key-key-face ((,c (:foreground ,light-green :bold ,bold))))
      `(which-key-group-description-face ((,c (:foreground ,alt-lavender))))
      `(which-key-local-map-description-face ((,c (:foreground ,soft-blue))))
      `(which-key-command-description-face ((,c (:foreground ,teal))))
 
      ;; Ruler-mode
+     ;; TODO: split
      `(ruler-mode-default ((,c (:background ,bg2 :foreground ,gray))))
      `(ruler-mode-column-number ((,c (:foreground ,faded-blue))))
      `(ruler-mode-current-column ((,c (:foreground ,orange))))
@@ -746,6 +788,7 @@
      `(message-header-other ((,c (:foreground ,teal))))
 
      ;; Elfeed
+     ;; TODO: split
      `(elfeed-search-tag-face ((,c (:foreground ,light-yellow))))
      `(elfeed-search-feed-face ((,c (:foreground ,green))))
      `(elfeed-search-date-face ((,c (:foreground ,faded-blue))))
@@ -754,6 +797,7 @@
      `(elfeed-search-title-face ((,c (:foreground ,comment))))
 
      ;; Evil ex
+     ;; TODO: split
      `(evil-ex-info ((,c (:foreground ,orange))))
      `(evil-ex-substitute-matches ((,c (:background nil :foreground ,red :underline ,underline))))
      `(evil-ex-substitute-replacement ((,c (:background nil :foreground ,light-green))))
@@ -782,6 +826,7 @@
      `(ivy-current-match ((,c (:background ,hl-line :foreground ,hl :bold t))))
      `(ivy-match-required-face ((,c (:background nil :foreground ,alt-red :bold nil))))
      `(ivy-confirm-face ((,c (:background nil :foreground ,light-orange))))
+     ;; TODO: split
      `(ivy-minibuffer-match-face-1 ((,c (:background nil :foreground ,fg1))))
      `(ivy-minibuffer-match-face-2 ((,c (:background nil :foreground ,soft-blue :bold ,bold))))
      `(ivy-minibuffer-match-face-3 ((,c (:background nil :foreground ,light-orange :bold ,bold))))
