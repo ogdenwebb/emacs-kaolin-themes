@@ -76,6 +76,8 @@
 ;; Life's wheel goes round and round.
 ;; The end of the path is the beginning.
 ;; Like a beaten blade, I come back sharper.
+;; TODO: move theme do ~/.emacs.d/dev
+;; TODO: read kaolin.org
 
 (defun kaolin-theme--make-name (sym)
   "Format kaolin-<sym> from SYM."
