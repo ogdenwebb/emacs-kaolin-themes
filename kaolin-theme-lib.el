@@ -191,7 +191,6 @@
     (ivy3        light-orange)
     (ivy4        moderate-pink)))
 
-
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
   '(
@@ -559,15 +558,16 @@
     (evil-ex-lazy-highlight (:inherit 'lazy-highlight))
 
     ;; Ivy & swiper basic
-    (ivy-minibuffer-match-face-1 (:background nil :foreground fg1))
-    (ivy-minibuffer-match-face-2 (:background nil :foreground soft-blue :bold bold))
-    (ivy-minibuffer-match-face-3 (:background nil :foreground light-orange :bold bold))
-    (ivy-minibuffer-match-face-4 (:background nil :foreground moderate-pink :bold bold))
+    (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
+    (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
+    (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
+    (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
 
-    (swiper-match-face-1 (:background bg2 :foreground fg1))
-    (swiper-match-face-2 (:background bg2 :foreground soft-blue :bold bold))
-    (swiper-match-face-3 (:background bg2 :foreground light-orange :bold bold))
-    (swiper-match-face-4 (:background bg2 :foreground moderate-pink :bold bold))
+    (swiper-match-face-1 (:background bg2 :foreground ivy1))
+    (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
+    (swiper-match-face-3 (:background bg2 :foreground ivy3 :bold bold))
+    (swiper-match-face-4 (:background bg2 :foreground ivy4 :bold bold))
+    ;; (swiper-line-face    (:inherit 'font-lock-string-face))
     (swiper-line-face    (:inherit 'hl-line))))
 
 ;; Predefined Kaolin variables

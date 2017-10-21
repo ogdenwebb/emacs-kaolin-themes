@@ -3,9 +3,10 @@
 
 ;; Copyright (C) 2017 ogdenwebb
 
-;; Author: ogdenwebb <ogdenwebb@gmail.com>
+;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/kaolin-theme
 ;; Package-Requires: ((emacs "24") (autothemer "0.2.2"))
+;; TODO: (??) add cl-lib as deps
 ;; TODO: add release notes
 ;; Version: 1.0.0
 
@@ -61,7 +62,6 @@
   :group 'kaolin-theme)
 
 ;; TODO: message about kaolin -> kaolin-dark
-;; TODO: (!!) use var instead of hardcoded colors if possible
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
 ;; TODO: treemacs
@@ -102,11 +102,11 @@ otherwise add at the end of the list."
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
-            do (kaolin-theme--add-to-alist 'res (car el) (cdr el))
-            return res)))
+             do (progn
+                  (kaolin-theme--add-to-alist 'res (car el) (cdr el))))
+    res))
 
 ;;;###autoload
-;; TODO: try to fix color/face overwriting after load-theme
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name))
@@ -128,7 +128,6 @@ otherwise add at the end of the list."
                           ,kaolin-theme-faces
 
                           ;; Set vars or execute an arbitrary function body
-                          ;; TODO: add/test colors vars support
                            ,@body)))
 
 
