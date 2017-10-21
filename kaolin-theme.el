@@ -60,6 +60,7 @@
   "Face to highlight boolean values"
   :group 'kaolin-theme)
 
+;; TODO: message about kaolin -> kaolin-dark
 ;; TODO: (!!) use var instead of hardcoded colors if possible
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
@@ -104,7 +105,7 @@ otherwise add at the end of the list."
             return res)))
 
 ;;;###autoload
-(defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces opt-vars)
+(defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name))
          (kaolin-theme-palette (if opt-palette
@@ -113,13 +114,21 @@ otherwise add at the end of the list."
          (kaolin-theme-faces (if opt-faces
                                    (kaolin-theme--merge-alist kaolin-faces opt-faces)
                                kaolin-faces)))
+
     `(autothemer-deftheme ,kaolin-theme-name ,doc
                           ;; TODO: choose classes what I need
                           ((((class color) (min-colors 32000)) ((class color) (min-colors 89)) t)
 
+                           ;; Set palette
                            ,@kaolin-theme-palette)
 
-                          ,kaolin-theme-faces)))
+                          ;; Set faces
+                          ,kaolin-theme-faces
+
+                          ;; Set vars or execute an arbitrary function body
+                          ;; TODO: add/test colors vars support
+                           ,@body)))
+
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)

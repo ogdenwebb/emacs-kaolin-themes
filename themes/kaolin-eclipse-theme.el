@@ -6,12 +6,15 @@
 
 (define-kaolin-theme eclipse  "Dark purple Kaolin theme variant."
   ;; Palette modification
-  ((yellow  "purple")
-   (hl-line "dim gray")))
+  (
+   (yellow  "yellow"))
+   ;; (hl-line "dim gray"))
 
   ;; Set theme faces
-  ;; (
-  ;;  (font-lock-comment-face (:foreground red))))
+  ((default (:background midnight-purple :foreground yellow))))
 
+  ;; Set theme variables
+  ;; (custom-theme-set-variables 'kaolin-<name>
+  ;;   '(org-fontify-quote-and-verse-blocks t))
 
 ;;; kaolin-eclipse-theme.el ends here
