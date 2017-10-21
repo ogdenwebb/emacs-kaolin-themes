@@ -97,14 +97,16 @@ otherwise add at the end of the list."
         (apply #'kaolin-theme--add-to-list list-var elements)
       (symbol-value list-var))))
 
+;; TODO: read about lexical bindings
 (defun kaolin-theme--merge-alist (base-alist add-alist)
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
-  (let ((res base-alist))
+  (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
             do (kaolin-theme--add-to-alist 'res (car el) (cdr el))
             return res)))
 
 ;;;###autoload
+;; TODO: try to fix color/face overwriting after load-theme
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name))

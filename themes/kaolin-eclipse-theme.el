@@ -7,11 +7,11 @@
 (define-kaolin-theme eclipse  "Dark purple Kaolin theme variant."
   ;; Palette modification
   (
-   (yellow  "yellow"))
+   (bg1  "dark blue")))
    ;; (hl-line "dim gray"))
 
   ;; Set theme faces
-  ((default (:background midnight-purple :foreground yellow))))
+  ;; ((default (:background midnight-purple :foreground yellow))))
 
   ;; Set theme variables
   ;; (custom-theme-set-variables 'kaolin-<name>

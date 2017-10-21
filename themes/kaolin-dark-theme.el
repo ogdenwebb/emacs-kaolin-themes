@@ -15,10 +15,9 @@
 
 (define-kaolin-theme dark "A dark jade Kaolin theme inspired by Sierra.vim "
 
-  ()
+  ((some-var "test"))
 
-  ()
-
+  ((some-face :background bg1))
 
   (let ((c '((class color) (min-colors 89))))
     (custom-theme-set-faces
