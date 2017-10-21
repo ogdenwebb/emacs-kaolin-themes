@@ -159,8 +159,8 @@
     (evil-emacs        light-yellow)
 
     (win-border    dark-gray)
-    (line-num-fg   gray)
     (line-num-bg   bg1)
+    (line-num-fg   gray)
     (line-num-hl   light-gray)
     (cursor        alt-white)
 
@@ -544,7 +544,7 @@
     (web-mode-keyword-face          (:inherit 'font-lock-builtin-face))
     (web-mode-constant-face         (:inherit 'font-lock-constant-face))
     (web-mode-comment-face          (:inherit 'font-lock-comment-face))
-    (web-mode-doctype-face          (:foreground purple :bold bold))
+    (web-mode-doctype-face          (:inherit 'font-lock-preprocessor-face))
     (web-mode-function-name-face    (:inherit 'font-lock-function-name-face))
     (web-mode-string-face           (:inherit 'font-lock-string-face))
     (web-mode-warning-face          (:inherit 'font-lock-warning-face))

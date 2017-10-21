@@ -79,9 +79,10 @@
    (evil-emacs        light-yellow)
 
    (win-border    dark-gray)
-   (line-num-fg   gray)
    (line-num-bg   bg1)
-   (line-num-hl   light-gray)
+   (line-num-fg   dark-purple)
+   ;; TOOD: or hl
+   (line-num-hl   violet)
    (cursor        alt-white))
 
   ()
