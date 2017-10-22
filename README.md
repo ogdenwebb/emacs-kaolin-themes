@@ -20,7 +20,7 @@ Kaolin is a set of eye pleasing themes for GNU Emacs with support a large number
 # Installation
 ## MELPA
 To install the theme via package.el: `M-x package-install RET kaolin-theme RET`
-```
+
 # Advanced highliginting
 
 * [highlight-numbers](https://github.com/Fanael/highlight-numbers) — highlight numbers in source code.
