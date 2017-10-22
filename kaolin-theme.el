@@ -137,7 +137,8 @@ otherwise add at the end of the list."
   (let* ((base (file-name-directory load-file-name))
          (dir (expand-file-name "themes/" base)))
     (add-to-list 'custom-theme-load-path
-                 (dir))))
+                 (or (and (file-directory-p dir) dir)
+                     base))))
 
 (provide 'kaolin-theme)
 
