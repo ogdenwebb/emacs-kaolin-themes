@@ -2,7 +2,7 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'kaolin-theme)
+(require 'kaolin-themes)
 
 (define-kaolin-theme light  "Light Kaolin theme variant."
   ;; Palette modification

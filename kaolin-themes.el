@@ -93,7 +93,7 @@ otherwise add at the end of the list."
       (set list-var (append (symbol-value list-var)
                             (list (cons key val)))))
     (if elements
-        (apply #'kaolin-themes--add-to-list list-var elements)
+        (apply #'kaolin-themes--add-to-alist list-var elements)
       (symbol-value list-var))))
 
 (defun kaolin-themes--merge-alist (base-alist add-alist)
