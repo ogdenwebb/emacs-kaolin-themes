@@ -16,7 +16,8 @@
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 ;; GNU General Public License for more details.
-
+;;
+;; This file is not part of GNU Emacs.
 ;;; Commentary:
 ;;
 ;; Kaolin is a set of eye pleasing themes for GNU Emacs
@@ -35,8 +36,6 @@
 ;;  * kaolin-ocean - dark blue variant
 ;;
 ;;                       The end of the path is the beginning.
-;;
-;; This file is not part of GNU Emacs.
 ;;
 ;;; Code:
 
