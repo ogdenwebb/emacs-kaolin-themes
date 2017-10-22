@@ -3,6 +3,16 @@
 ;; Predefined Kaolin palette
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
+;; TODO: add suppport for flycheck-tip package
+
+;; TODO: add following vars
+;; add default bold, italic and etc face to lib
+;; add prompt
+;; second-hl for indent and etc
+;; selection
+;; TODO: add the following faces to default
+;; (??) start fg and bg with 0
+;; (??) rename bg1-4 fg1-4 to one var var1-8
 (defconst kaolin-palette
   '((black1          "#1b1b1b")
     (black2          "#282828")
@@ -32,7 +42,8 @@
     ;; TODO:
     (dark-red        "#832729")
     (red             "#cd5c5c")
-    (faded-red       "#a94d53")
+    ;; (faded-red       "#a94d53")
+    (faded-red       "#863d42")
     (alt-red         "#c93232")
     (light-red       "#d66e75")
     (moderate-pink   "#a0586c")
@@ -121,6 +132,9 @@
     ;; TODO: (??) change to (alt)-midnight-green
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray)
+
+    (todo red)
+    (done teal-green)
 
     (tooltip-bg bg2)
     (tooltip-fg light-gray)
@@ -361,6 +375,12 @@
     (fic-face         (:background nil :foreground red :bold bold))
     (fic-author-face  (:background nil :foreground red :bold bold))
 
+    ;; Additional completion
+    (ac-completion-face    (:foreground keyword :underline underline))
+    (info-quoted-name      (:foreground builtin))
+    (info-string           (:foreground str))
+    (icompletep-determined (:foreground builtin))
+
     ;; Company
     (company-tooltip                  (:background tooltip-bg :foreground fg3 :bold bold))
     (company-tooltip-common           (:foreground hl))
@@ -439,6 +459,26 @@
     (js3-warning-face             (:underline keyword))
     (js3-error-face               (:underline err))
 
+    ;; Latex
+    (font-latex-bold-face                (:foreground type))
+    (font-latex-italic-face              (:foreground keyword :italic italic))
+    (font-latex-string-face              (:foreground str))
+    (font-latex-match-reference-keywords (:foreground const))
+    (font-latex-match-variable-keywords  (:foreground var))
+
+    ;; Latex/Auctex
+    (font-latex-warning-face      (:inherit 'warning))
+    (font-latex-string-face       (:inherit 'font-lock-string-face))
+    (font-latex-math-face         (:foreground violet))
+    (font-latex-sedate-face       (:foreground teal-blue))
+    (font-latex-script-char-face  (:foreground violet))
+    (font-latex-sectioning-0-face (:foreground wheat :bold bold))
+    (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
+    (font-latex-sectioning-2-face (:inherit 'font-latex-sectioning-0-face))
+    (font-latex-sectioning-3-face (:inherit 'font-latex-sectioning-0-face))
+    (font-latex-sectioning-4-face (:inherit 'font-latex-sectioning-0-face))
+    (font-latex-sectioning-5-face (:inherit 'font-latex-sectioning-0-face))
+
     ;; Undo-tree
     (undo-tree-visualizer-active-branch-face (:foreground fg1 :bold bold))
     (undo-tree-visualizer-current-face       (:foreground cyan))
@@ -454,7 +494,9 @@
     ;;  (show-paren-match-face (:background bg3 :foreground nil))))
     ;;  (show-paren-match-face (:background nil :foreground orange :bold bold)))))
 
-    (show-paren-mismatch (:background red :foreground bg2))
+    ;; TODO: make red more contrast
+    ;; use ")))) to test
+    (show-paren-mismatch (:background faded-red :foreground bg2))
     (rainbow-delimiters-unmatched-face (:foreground warning))
     (rainbow-delimiters-base-face    (:foreground rb1))
     (rainbow-delimiters-depth-1-face (:foreground rb1))
@@ -525,9 +567,28 @@
     (whitespace-hspace           (:foreground orange))
     (whitespace-trailing         (:background bg1))
 
-    ;; TODO: add org-mode faces??
     ;; TODO: add custom-* and buttons
     ;; TODO: add magit faces
+
+    ;; Org-mode
+    (org-todo                      (:foreground todo :bold bold))
+    (org-done                      (:foreground done  :bold bold))
+    (org-ellipsis                  (:foreground builtin))
+    ;; (org-code                      (:foreground light-yellow))
+    ;; (org-verbatim                  (:foreground soft-blue))
+    (org-date                      (:foreground light-yellow :underline underline))
+    (org-document-info-keyword     (:foreground deep-green))
+    (org-meta-line                 (:inherit 'org-document-info-keyword))
+    (org-link                      (:inherit 'link))
+    (org-code                      (:foreground light-yellow))
+    (org-verbatim                  (:foreground soft-blue))
+
+    ;; Emmet
+    (emmet-preview-input   (:foreground nil :background nil))
+    (emmet-preview-output  (:foreground nil :background nil))
+
+    ;; Flx
+    (flx-highlight-face (:foreground hl :underline underline))
 
     ;; Smartparens
     (sp-pair-overlay-face (:foreground nil))
@@ -548,6 +609,9 @@
     (web-mode-function-name-face    (:inherit 'font-lock-function-name-face))
     (web-mode-string-face           (:inherit 'font-lock-string-face))
     (web-mode-warning-face          (:inherit 'font-lock-warning-face))
+
+    ;; Nim
+    (nim-font-lock-export-face (:inherit 'font-lock-function-name-face :italic nil))
 
     ;; Evil ex
     (evil-ex-info                   (:foreground orange))

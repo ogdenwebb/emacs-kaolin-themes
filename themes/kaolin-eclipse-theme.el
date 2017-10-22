@@ -8,11 +8,13 @@
   ;; Palette modification
   ((bg1  midnight-purple)
    ;; (bg2  "#291c29")
-   ;; (bg3  "#382738")
    ;; (bg4  "#473147")
-   (bg2  "#261a26")
-   (bg3  "#312231")
-   (bg4  "#3d2a3d")
+   (bg2    "#261a26")
+   (bg3    "#312231")
+   (bg4    "#3d2a3d")
+   (violet "#a78db5")
+
+   ;; TODO: make violet a bit more bright/contrast
 
    ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     alt-purple)
@@ -39,8 +41,10 @@
    ;; TODO: soft blue or wheat or light-orange
    (hl         light-orange)
    ;; TODO:
-   (hl-line    (if kaolin-hl-line-colored bg2 bg2))
+   (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  gray)
+
+   (todo pink)
 
    (tooltip-bg bg2)
    (tooltip-fg light-gray)
@@ -60,7 +64,7 @@
 
    (diff-add    green)
    (diff-change purple)
-   (diff-del    dark-red)
+   (diff-del    faded-red)
 
     ;; Mode-line
    (line-fg           fg4)
@@ -83,15 +87,18 @@
    (line-num-fg   dark-purple)
    ;; TOOD: or hl
    (line-num-hl   violet)
-   (cursor        alt-white))
+   (cursor        light-purple)
+   (cursor        "#e0c3c8"))
 
-  ()
+  ;; TODO: Add option
+  ((link                (:foreground soft-blue :underline underline))
+   (git-gutter:added    (:background diff-add :foreground diff-add))
+   (git-gutter:modified (:background diff-change :foreground diff-change))
+   (git-gutter:deleted  (:background diff-del :foreground diff-del)))
 
-  (custom-theme-set-faces
+  (custom-theme-set-variables
    'kaolin-eclipse
-   `(git-gutter:added    ((t (:background ,diff-add :foreground ,diff-add))))
-   `(git-gutter:modified ((t (:background ,diff-change :foreground ,diff-change))))
-   `(git-gutter:deleted  ((t (:background ,diff-del :foreground ,diff-del))))))
+   '(kaolin-hl-line-colored t)))
 
 
 ;;; kaolin-eclipse-theme.el ends here

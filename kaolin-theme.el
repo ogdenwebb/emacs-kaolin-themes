@@ -1,5 +1,4 @@
-;;; kaolin-theme.el --- A dark jade theme inspired by Sierra.vim
-;; TODO: fix title
+;;; kaolin-theme.el --- A set of eye pleasing Emacs themes
 
 ;; Copyright (C) 2017 ogdenwebb
 
@@ -22,11 +21,22 @@
 
 ;;; Commentary:
 ;;
-;; TODO: (REWRITE)
-;; Kaolin is a dark jade, eye pleasing theme for Emacs with support
-;; a large number of specific modes and external packages.
+;; Kaolin is a set of eye pleasing themes for GNU Emacs
+;; With support a large number of modes and external packages.
+;; Kaolin themes are based on the pallete that was originally
+;; inspired by Sierra.vim with adding some extra colors.
+;;
+;; Kaolin-theme package includes the following themes:
+;;
+;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim
+;;  * kaolin-eclipse - a dark purple variant
+;;  * kaolin-light - light variant of the original kaolin-dark
+;;
+;; This file is not part of GNU Emacs.
 ;;
 ;;; Code:
+(eval-when-compile
+  (require 'cl-lib))
 
 (require 'autothemer)
 
@@ -67,7 +77,6 @@
 ;; TODO: treemacs
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
-;; TODO: Add theme based on nim aporia: 400 roses
 ;; TODO: make a simple text logo
 ;; TODO: choose a response to use as slogan:
 ;; That which is arises from that which is not.
@@ -108,7 +117,6 @@ otherwise add at the end of the list."
                   (kaolin-theme--add-to-alist 'res (car el) (cdr el))))
     res))
 
-;;;###autoload
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name))
@@ -130,7 +138,11 @@ otherwise add at the end of the list."
                           ,kaolin-theme-faces
 
                           ;; Set vars or execute an arbitrary function body
-                           ,@body)))
+                           ,@body
+
+                           ;; Provide theme
+                           (provide-theme ',kaolin-theme-name))))
+
 
 
 ;;;###autoload
@@ -142,9 +154,5 @@ otherwise add at the end of the list."
                      base))))
 
 (provide 'kaolin-theme)
-
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
 
 ;;; kaolin-theme.el ends here

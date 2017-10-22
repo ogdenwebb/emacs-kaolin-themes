@@ -2,15 +2,6 @@
 
 (require 'kaolin-theme)
 
-;; TODO: add following vars
-;; add default bold, italic and etc face to lib
-;; add prompt
-;; second-hl for indent and etc
-;; selection
-;; TODO: add the following faces to default
-;; (??) start fg and bg with 0
-;; (??) rename bg1-4 fg1-4 to one var var1-8
-
 (define-kaolin-theme dark "A dark jade Kaolin theme inspired by Sierra.vim."
 
   ;; Theme colors
@@ -31,7 +22,7 @@
    (custom-face-tag       (:background nil :foreground purple :bold bold))
    (custom-link           (:background nil :foreground teal :bold bold))
    (widget-button         (:background nil :foreground green :bold bold))
-   (widget-button-pressed (:background nil :foreground faded-red))
+   (widget-button-pressed (:background nil :foreground jade))
    (widget-field          (:background bg3 :foreground fg1 :box            (:line-width 1 :color bg2 :style nil)))
    (widget-documentation  (:background nil :foreground faded-blue))
 
@@ -44,22 +35,14 @@
    (org-level-4                   (:foreground faded-wheat :bold nil))
    (org-tag                       (:foreground orange :bold bold))
    (org-checkbox                  (:foreground green :bold bold))
-   (org-todo                      (:foreground red :bold bold))
-   (org-done                      (:foreground teal-green  :bold bold))
    (org-list-dt                   (:inherit 'org-checkbox))
    (org-headline-done             (:foreground teal-blue  :bold nil))
    (org-checkbox-statistics-todo  (:foreground faded-blue :bold bold))
    (org-checkbox-statistics-done  (:foreground teal-green :bold bold))
-   (org-code                      (:foreground light-yellow))
-   (org-verbatim                  (:foreground soft-blue))
    (org-hide                      (:foreground bg2))
-   (org-date                      (:foreground light-yellow :underline underline))
    (org-document-title            (:foreground teal :bold bold))
-   (org-document-info-keyword     (:foreground deep-green))
-   (org-meta-line                 (:inherit 'org-document-info-keyword))
    (org-document-info             (:foreground teal))
    (org-footnote                  (:foreground fg4 :underline underline))
-   (org-link                      (:inherit 'link))
    (org-special-keyword           (:foreground functions))
    (org-block                     (:foreground fg3))
    (org-block-begin-line          (:foreground deep-green))
@@ -76,22 +59,7 @@
    (org-agenda-done               (:foreground bg4))
    (org-scheduled                 (:foreground type))
    (org-scheduled-today           (:foreground functions :height 1.2 :bold bold))
-   (org-ellipsis                  (:foreground builtin))
    (org-sexp-date                 (:foreground fg4))
-
-   ;; Latex
-   (font-latex-bold-face                (:foreground type))
-   (font-latex-italic-face              (:foreground keyword :italic italic))
-   (font-latex-string-face              (:foreground str))
-   (font-latex-match-reference-keywords (:foreground const))
-   (font-latex-match-variable-keywords  (:foreground var))
-
-
-   ;; Additional completion
-   (ac-completion-face    (:foreground keyword :underline underline))
-   (info-quoted-name      (:foreground builtin))
-   (info-string           (:foreground str))
-   (icompletep-determined (:foreground builtin))
 
    ;; Ediff
    (ediff-current-diff-A (:background dark-red :foreground red))
@@ -171,25 +139,12 @@
    (speedbar-highlight-face (:foreground cyan))
    (speedbar-button-face    (:foreground jade))
 
-   ;; Haskell mode
-   ;; (haskell-operator-face (:foreground lime))))
-   ;; (haskell-type-face (:foreground light-yellow))))
-   ;; (haskell-constructor-face (:foreground orange))))
-
    ;; Perl6
-   ;; (perl6-identifier (:foreground cyan))))
    (perl6-phaser          (:foreground cyan))
    (perl6-type-constraint (:inherit 'font-lock-keyword-face))
 
    ;; Shell
    (sh-quoted-exec (:foreground light-yellow))
-
-   ;; Flx
-   (flx-highlight-face (:foreground hl :underline underline))
-
-   ;; Emmet
-   (emmet-preview-input   (:foreground nil :background nil))
-   (emmet-preview-output  (:foreground nil :background nil))
 
    ;; Clojure
    (clojure-keyword-face (:inherit 'font-lock-variable-name-face))
@@ -198,28 +153,12 @@
    (tuareg-font-lock-governing-face (:foreground green :bold bold))
    (tuareg-font-double-colon-face   (:foreground yellow))
    (tuareg-font-lock-error-face     (:foreground alt-red))
-   ;; FIXME: find code with following face
+   ;; TODO: find code with following face
    ;; (tuareg-font-lock-multistage-face (:foreground alt-red))))
-
-   ;; Nim
-   (nim-font-lock-export-face (:inherit 'font-lock-function-name-face :italic nil))
 
    ;; Ace-window
    (aw-leading-char-face (:foreground pink :bold bold))
    (aw-background-face   (:foreground bg4 :bold bold))
-
-   ;; Latex/Auctex
-   (font-latex-warning-face      (:inherit 'warning))
-   (font-latex-string-face       (:inherit 'font-lock-string-face))
-   (font-latex-math-face         (:foreground violet))
-   (font-latex-sedate-face       (:foreground teal-blue))
-   (font-latex-script-char-face  (:foreground violet))
-   (font-latex-sectioning-0-face (:foreground wheat :bold bold))
-   (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
-   (font-latex-sectioning-2-face (:inherit 'font-latex-sectioning-0-face))
-   (font-latex-sectioning-3-face (:inherit 'font-latex-sectioning-0-face))
-   (font-latex-sectioning-4-face (:inherit 'font-latex-sectioning-0-face))
-   (font-latex-sectioning-5-face (:inherit 'font-latex-sectioning-0-face))
 
    ;; Rst-mode
    (rst-adornment (:foreground jade))
@@ -231,6 +170,7 @@
    (rst-level-5   (:foreground green))
    (rst-level-6   (:foreground teal-blue))
 
+   ;; TODO: split
    ;; Vimish-fold
    (vimish-fold-overlay (:background bg2 :foreground comment))
    (vimish-fold-fringe  (:background nil :foreground jade))
@@ -244,6 +184,7 @@
    (avy-lead-face-1 (:background dark-blue :foreground fg1))
    (avy-lead-face-2 (:background dark-purple :foreground fg1))
 
+   ;; TODO: split
    ;; Ivy & Swiper
    (ivy-modified-buffer     (:foreground alt-lavender))
    (ivy-subdir              (:foreground green :bold bold))
@@ -255,7 +196,5 @@
    (ivy-match-required-face (:background nil :foreground alt-red :bold nil))
    (ivy-confirm-face        (:background nil :foreground light-orange))))
 
-
-(provide-theme 'kaolin-dark)
 
 ;;; kaolin-dark-theme.el ends here
