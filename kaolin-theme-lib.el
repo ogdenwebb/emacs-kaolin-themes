@@ -19,6 +19,8 @@
 ;; TODO: add magit faces
 
 ;; TODO: add option/flat mode-line style
+;; TODO: add git-gutter style option(solid or symbol)
+
 (defconst kaolin-palette
   '((black1          "#1b1b1b")
     (black2          "#282828")
@@ -138,6 +140,7 @@
     ;; TODO: (??) change to (alt)-midnight-green
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray)
+    (selection bg3)
 
     (todo red)
     (done teal-green)
@@ -246,7 +249,7 @@
     (error               (:foreground err))
     (shadow              (:foreground alt-gray))
     (file-name-shadow    (:inherit 'shadow))
-    (region              (:background bg3))
+    (region              (:background selection))
     (secondary-selection (:background dark-jade))
     (fringe              (:background bg1 :foreground fg1))
     (cursor              (:background cursor))
@@ -381,8 +384,8 @@
 
     ;; TODO: maybe delete or change to other package
     ;; Fic-mode
-    (fic-face         (:background nil :foreground red :bold bold))
-    (fic-author-face  (:background nil :foreground red :bold bold))
+    (fic-face         (:background nil :foreground todo :bold bold))
+    (fic-author-face  (:background nil :foreground todo :bold bold))
 
     ;; Additional completion
     (ac-completion-face    (:foreground keyword :underline underline))
@@ -504,7 +507,6 @@
     ;;  (show-paren-match-face (:background nil :foreground orange :bold bold)))))
 
     ;; TODO: make red more contrast
-    ;; use ")))) to test
     (show-paren-mismatch (:background faded-red :foreground bg2))
     (rainbow-delimiters-unmatched-face (:foreground warning))
     (rainbow-delimiters-base-face    (:foreground rb1))
@@ -626,7 +628,7 @@
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
 
     ;; Ivy & swiper basic
-    (ivy-current-match       (:background hl-line :foreground hl :bold t))
+    (ivy-current-match           (:background hl-line :foreground hl :bold t))
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))

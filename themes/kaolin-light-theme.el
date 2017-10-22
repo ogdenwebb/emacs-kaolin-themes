@@ -8,6 +8,15 @@
   ;; Palette modification
   (
 
+   ;; (lime  "#85b654")
+   ;; (lime  "#759c79")
+   ;; (dark-cyan  "#6da198")
+   (dark-cyan  "#6CA1A6")
+   ;; (dark-cyan  "#79a3ae")
+   ;; (pink       "#d24b83")
+   (pink       "#cd3775")
+   (dark-jade  "#3e574d")
+
    ;; Color vars
    ;; grayish green
    (bg1 "#ccd0c8")
@@ -23,18 +32,10 @@
    ;; (bg4 white4)
    ;; TODO: a more brighter
    (fg1 dark-jade)
-   (fg2 black2)
-   (fg3 black3)
-   (fg4 black4)
+   (fg2 "#3e574d")
+   (fg3 "#476257")
+   (fg4 "#4f6e62")
    (green "#43797f")
-   ;; (lime  "#85b654")
-   ;; (lime  "#759c79")
-   ;; (dark-cyan  "#6da198")
-   (dark-cyan  "#6CA1A6")
-   ;; (dark-cyan  "#79a3ae")
-   ;; (pink       "#d24b83")
-   (pink       "#cd3775")
-
 
 
    (keyword     jade)
@@ -42,8 +43,9 @@
    (var         moderate-pink)
    (const       pink)
    (builtin     dark-cyan)
-   (comment     white3)
-
+   ;; TODO: or bg5
+   ;; a bit more constasrt
+   (comment     "#a4ac9d")
    (alt-comment alt-grayish-blue)
    (functions   dark-cyan)
    (str         light-jade)
@@ -63,12 +65,14 @@
    ;; TODO:
    (hl-line    (if kaolin-hl-line-colored bg2 white2))
    (hl-indent  gray)
+   ;; TODO:
+   (selection white2)
 
-   (todo red)
+   (todo dark-red)
 
    (tooltip-bg bg2)
    (tooltip-fg light-gray)
-   (tooltip-hl-bg alt-brown)
+   (tooltip-hl-bg light-brown)
    (tooltip-hl-fg light-orange)
 
     ;; TODO:
@@ -103,15 +107,13 @@
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
-   (win-border    dark-gray)
+   (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   alt-grayish-blue)
-   (line-num-hl   hl)
+   (line-num-hl   fg4)
 
    (cursor        gray))
 
-
-  ;; TODO: Add option
   ((link                (:foreground soft-blue :underline underline))
 
    (org-code            (:foreground green))

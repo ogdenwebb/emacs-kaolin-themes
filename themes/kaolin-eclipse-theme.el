@@ -45,9 +45,10 @@
 
    (todo pink)
 
-   (tooltip-bg bg2)
-   (tooltip-fg light-gray)
-   (tooltip-hl-bg alt-brown)
+   (tooltip-bg    bg2)
+   (tooltip-fg    light-gray)
+   ;; TODO:
+   (tooltip-hl-bg grayish-magenta)
    (tooltip-hl-fg light-orange)
 
    (ivy3 teal-green)

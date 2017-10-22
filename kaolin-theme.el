@@ -32,6 +32,12 @@
 ;;  * kaolin-eclipse - a dark purple variant
 ;;  * kaolin-light - light variant of the original kaolin-dark
 ;;
+;; Coming soon:
+;;
+;;  * kaolin-ocean - dark blue variant
+;;
+;;                       The end of the path is the beginning.
+;;
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; Code:
@@ -80,11 +86,9 @@
 ;; TODO: make a simple text logo
 ;; TODO: choose a response to use as slogan:
 ;; That which is arises from that which is not.
-;; I am shaped to a higher order.
 ;; For each tool, a purpose.
 ;; Life's wheel goes round and round.
 ;; The end of the path is the beginning.
-;; Like a beaten blade, I come back sharper.
 ;; TODO: move theme do ~/.emacs.d/dev
 ;; TODO: read kaolin.org
 
@@ -143,7 +147,6 @@ otherwise add at the end of the list."
 
                            ;; Provide theme
                            (provide-theme ',kaolin-theme-name))))
-
 
 
 ;;;###autoload
