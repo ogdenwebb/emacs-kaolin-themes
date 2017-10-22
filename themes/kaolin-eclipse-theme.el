@@ -4,7 +4,7 @@
 ;;; Code:
 (require 'kaolin-theme)
 
-(define-kaolin-theme eclipse  "Dark purple Kaolin theme variant."
+(define-kaolin-theme eclipse "Dark purple Kaolin theme variant."
   ;; Palette modification
   ((bg1  midnight-purple)
    ;; (bg2  "#291c29")
@@ -62,7 +62,7 @@
    (rb8 grayish-magenta)
    (rb9 lavender)
 
-   (diff-add    green)
+   (diff-add    light-jade)
    (diff-change purple)
    (diff-del    faded-red)
 
