@@ -117,6 +117,7 @@ otherwise add at the end of the list."
                   (kaolin-theme--add-to-alist 'res (car el) (cdr el))))
     res))
 
+;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-theme--make-name name))

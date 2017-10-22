@@ -4,6 +4,7 @@
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
 ;; TODO: add suppport for flycheck-tip package
+;; TODO: add beacon mode support
 
 ;; TODO: add following vars
 ;; add default bold, italic and etc face to lib
@@ -13,6 +14,11 @@
 ;; TODO: add the following faces to default
 ;; (??) start fg and bg with 0
 ;; (??) rename bg1-4 fg1-4 to one var var1-8
+
+;; TODO: add custom-* and buttons
+;; TODO: add magit faces
+
+;; TODO: add option/flat mode-line style
 (defconst kaolin-palette
   '((black1          "#1b1b1b")
     (black2          "#282828")
@@ -82,18 +88,18 @@
 
 
     (midnight-blue    "#1e2528")
-    (alt-midnigh-blue  "#062732")
-    (grayish-blue      "#687184")
-    (alt-grayish-blue  "#8f9ca7")
-    (dark-blue         "#2a4661")
+    (alt-midnigh-blue "#062732")
+    (grayish-blue     "#687184")
+    (alt-grayish-blue "#8f9ca7")
+    (dark-blue        "#2a4661")
     ;; TODO: swap blue and soft-blue with ranemd to dark-blue
-    (blue            "#3B6FA3")
-    (alt-blue        "#267fb5")
-    (moderate-blue   "#4e7f95")
-    (soft-blue       "#4CA6E8")
-    (dark-cyan       "#008b8b")
-    (cyan            "#54b6b6")
-    (faded-blue      "#817f96")
+    (blue             "#3B6FA3")
+    (alt-blue         "#267fb5")
+    (moderate-blue    "#4e7f95")
+    (soft-blue        "#4CA6E8")
+    (dark-cyan        "#008b8b")
+    (cyan             "#54b6b6")
+    (faded-blue       "#817f96")
 
     (midnight-purple "#1a121a")
     (dark-purple     "#563d56")
@@ -157,27 +163,6 @@
     ;; TODO: rename to removed?
     (diff-del    red)
 
-    ;; Mode-line
-    (line-fg           fg4)
-    (line-bg1          bg2)
-    (line-bg2          dim-gray)
-    (line-border       bg3)
-    (segment-active    gray)
-    (segment-inactive  gray)
-    (evil-normal       green)
-    (evil-insert       light-green)
-    (evil-visual       orange)
-    (evil-replace      red)
-    (evil-motion       yellow)
-    (evil-operator     evil-normal)
-    (evil-emacs        light-yellow)
-
-    (win-border    dark-gray)
-    (line-num-bg   bg1)
-    (line-num-fg   gray)
-    (line-num-hl   light-gray)
-    (cursor        alt-white)
-
     (keyword     green)
     (builtin     teal)
     (comment     gray)
@@ -199,6 +184,30 @@
     (prep        lavender)
     (warning     orange)
     (err         red)
+
+    ;; Mode-line
+    (line-fg           fg4)
+    (line-bg1          bg2)
+    (line-bg2          dim-gray)
+    (line-border       bg3)
+    (line-color1       keyword)
+    (line-color2       builtin)
+    (segment-active    gray)
+    (segment-inactive  gray)
+    (evil-normal       green)
+    (evil-insert       light-green)
+    (evil-visual       orange)
+    (evil-replace      red)
+    (evil-motion       yellow)
+    (evil-operator     evil-normal)
+    (evil-emacs        light-yellow)
+
+    (win-border    dark-gray)
+    (line-num-bg   bg1)
+    (line-num-fg   gray)
+    (line-num-hl   light-gray)
+    (cursor        alt-white)
+
 
     ;; TODO: add helm and ivy additional
 
@@ -331,8 +340,8 @@
 
     ;; Modeline
     (mode-line           (:box (:line-width 2 :color line-bg2) :background line-bg1 :foreground faded-blue :bold bold))
-    (mode-line-buffer-id (:background nil :foreground teal :bold bold))
-    (mode-line-highlight (:foreground keyword :box nil :bold bold))
+    (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
+    (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
     (mode-line-inactive  (:box (:line-width 2 :color line-bg1) :background line-bg1 :foreground light-gray :bold bold))
     (mode-line-emphasis  (:foreground fg1))
 
@@ -566,9 +575,6 @@
     (whitespace-newline          (:foreground gray))
     (whitespace-hspace           (:foreground orange))
     (whitespace-trailing         (:background bg1))
-
-    ;; TODO: add custom-* and buttons
-    ;; TODO: add magit faces
 
     ;; Org-mode
     (org-todo                      (:foreground todo :bold bold))

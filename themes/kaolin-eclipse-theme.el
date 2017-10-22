@@ -9,10 +9,11 @@
   ((bg1  midnight-purple)
    ;; (bg2  "#291c29")
    ;; (bg4  "#473147")
-   (bg2    "#261a26")
-   (bg3    "#312231")
-   (bg4    "#3d2a3d")
-   (violet "#a78db5")
+   (bg2       "#261a26")
+   (bg3       "#312231")
+   (bg4       "#3d2a3d")
+   (violet    "#a78db5")
+   (dark-blue "#325074")
 
    ;; TODO: make violet a bit more bright/contrast
 
@@ -21,11 +22,10 @@
    ;; TODO:
    (var         alt-orange)
    (const       lavender)
-   (builtin     violet)
-   (comment     gray)
-
-   (alt-comment alt-grayish-blue)
-   (functions   violet)
+   (builtin     light-purple)
+   (comment     black4)
+   (alt-comment "#4c344c")
+   (functions   builtin)
    (str         teal)
    (str-alt     faded-blue)
    (doc         str-alt)
@@ -39,8 +39,7 @@
 
    (dim-buffer alt-black)
    ;; TODO: soft blue or wheat or light-orange
-   (hl         light-orange)
-   ;; TODO:
+   (hl         pink)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  gray)
 
@@ -50,6 +49,9 @@
    (tooltip-fg light-gray)
    (tooltip-hl-bg alt-brown)
    (tooltip-hl-fg light-orange)
+
+   (ivy3 teal-green)
+   (ivy4 moderate-blue)
 
     ;; TODO:
    (rb1 teal)
@@ -87,15 +89,19 @@
    (line-num-fg   dark-purple)
    ;; TOOD: or hl
    (line-num-hl   violet)
-   (cursor        light-purple)
    (cursor        "#e0c3c8"))
 
-  ;; TODO: Add option
+  ;; Custom theme set faces
   ((link                (:foreground soft-blue :underline underline))
+
+   (org-code            (:foreground green))
+   (org-verbatim        (:foreground wheat))
+
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))
    (git-gutter:deleted  (:background diff-del :foreground diff-del)))
 
+  ;; Set custom vars
   (custom-theme-set-variables
    'kaolin-eclipse
    '(kaolin-hl-line-colored t)))
