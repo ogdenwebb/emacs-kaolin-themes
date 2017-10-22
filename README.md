@@ -5,12 +5,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 
-A dark jade Emacs theme inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
+![kaolin-logo](https://user-images.githubusercontent.com/9018005/31864175-b1c5149a-b761-11e7-8b86-e0e2b110d302.png)
 
-# Screenshots
-![kaolin-elisp](https://raw.githubusercontent.com/ogdenwebb/kaolin-theme/master/screenshots/kaolin-elisp.png)
-![kaolin-modes](https://raw.githubusercontent.com/ogdenwebb/kaolin-theme/master/screenshots/kaolin-modes.png)
-![kaolin-company](https://raw.githubusercontent.com/ogdenwebb/kaolin-theme/master/screenshots/kaolin-company.png)
+# Description
+
+Kaolin is a set of eye pleasing themes for GNU Emacs with support a large number of modes and external packages.
 
 # Installation
 ## MELPA
