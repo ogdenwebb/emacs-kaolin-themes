@@ -1,6 +1,6 @@
 ;;; kaolin-dark-theme.el --- A dark jade theme inspired by Sierra.vim
 
-(require 'kaolin-theme)
+(require 'kaolin-themes)
 
 (define-kaolin-theme dark "A dark jade Kaolin theme inspired by Sierra.vim."
 

@@ -1,9 +1,9 @@
-;;; kaolin-theme.el --- A set of eye pleasing Emacs themes
+;;; kaolin-themes.el --- A set of eye pleasing Emacs themes
 
 ;; Copyright (C) 2017 ogdenwebb
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
-;; URL: https://github.com/ogdenwebb/kaolin-theme
+;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "24") (autothemer "0.2.2"))
 ;; Version: 1.0.0
 
@@ -24,7 +24,7 @@
 ;; Kaolin themes are based on the pallete that was originally
 ;; inspired by Sierra.vim with adding some extra colors.
 ;;
-;; Kaolin-theme package includes the following themes:
+;; This package includes the following themes:
 ;;
 ;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim
 ;;  * kaolin-light - light variant of the original kaolin-dark
@@ -45,43 +45,43 @@
 
 (require 'autothemer)
 
-(require 'kaolin-theme-lib)
+(require 'kaolin-themes-lib)
 
-(defgroup kaolin-theme nil
+(defgroup kaolin-themes nil
   "Kaolin theme properties"
   :group 'faces)
 
 (defcustom kaolin-bold t
   "If nil, disable the bold style."
-  :group 'kaolin-theme)
+  :group 'kaolin-themes)
 
 (defcustom kaolin-italic t
   "If nil, disable the italic style."
-  :group 'kaolin-theme)
+  :group 'kaolin-themes)
 
 (defcustom kaolin-underline t
   "If nil, disable the underline style."
-  :group 'kaolin-theme)
+  :group 'kaolin-themes)
 
 (defcustom kaolin-wave nil
   "When t, use the wave underline style instead of regular underline."
-  :group 'kaolin-theme)
+  :group 'kaolin-themes)
 
 ;; TODO: add colored selection option
 (defcustom kaolin-hl-line-colored nil
   "When t, will display colored hl-line style instead dim gray"
-  :group 'kaolin-theme)
+  :group 'kaolin-themes)
 
 (defface kaolin-boolean nil
   "Face to highlight boolean values"
-  :group 'kaolin-theme)
+  :group 'kaolin-themes)
 
-(defun kaolin-theme--make-name (sym)
+(defun kaolin-themes--make-name (sym)
   "Format kaolin-<sym> from SYM."
   (intern (format "kaolin-%s" (symbol-name sym))))
 
 ;; Literally it's evil-add-to-alist.
-(defun kaolin-theme--add-to-alist (list-var key val &rest elements)
+(defun kaolin-themes--add-to-alist (list-var key val &rest elements)
   "Add the assocation of KEY and VAL to the value of LIST-VAR.
 If the list already contains an entry for KEY, update that entry;
 otherwise add at the end of the list."
@@ -93,26 +93,26 @@ otherwise add at the end of the list."
       (set list-var (append (symbol-value list-var)
                             (list (cons key val)))))
     (if elements
-        (apply #'kaolin-theme--add-to-list list-var elements)
+        (apply #'kaolin-themes--add-to-list list-var elements)
       (symbol-value list-var))))
 
-(defun kaolin-theme--merge-alist (base-alist add-alist)
+(defun kaolin-themes--merge-alist (base-alist add-alist)
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
-             do (kaolin-theme--add-to-alist 'res (car el) (cdr el)))
+             do (kaolin-themes--add-to-alist 'res (car el) (cdr el)))
     res))
 
 ;; TODO: (??) lexical bindings
 ;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
-  (let* ((kaolin-theme-name (kaolin-theme--make-name name))
+  (let* ((kaolin-theme-name (kaolin-themes--make-name name))
          (kaolin-theme-palette (if opt-palette
-                                   (kaolin-theme--merge-alist kaolin-palette opt-palette)
+                                   (kaolin-themes--merge-alist kaolin-palette opt-palette)
                                  kaolin-palette))
          (kaolin-theme-faces (if opt-faces
-                                   (kaolin-theme--merge-alist kaolin-faces opt-faces)
+                                   (kaolin-themes--merge-alist kaolin-faces opt-faces)
                                kaolin-faces)))
 
     `(autothemer-deftheme ,kaolin-theme-name ,doc
@@ -140,6 +140,6 @@ otherwise add at the end of the list."
                  (or (and (file-directory-p dir) dir)
                      base))))
 
-(provide 'kaolin-theme)
+(provide 'kaolin-themes)
 
-;;; kaolin-theme.el ends here
+;;; kaolin-themes.el ends here

@@ -1,4 +1,4 @@
-;;; kaolin-theme-lib.el --- Kaolin-theme library
+;;; kaolin-themes-lib.el --- Kaolin-themes library
 
 ;; TODO: add release notes
 ;; TODO: Add extra colors per class
@@ -654,9 +654,9 @@
 ;; Works
 ;; (let ((palette kaolin-palette))
 ;;   (cl-loop for el in test-palette
-;;            do (kaolin-theme--add-to-alist 'palette (car el) (cdr el)))
+;;            do (kaolin-themes--add-to-alist 'palette (car el) (cdr el)))
 ;;   (alist-get 'yellow palette))
 
-(provide 'kaolin-theme-lib)
+(provide 'kaolin-themes-lib)
 
-;;; kaolin-eclipse-theme.el ends here
+;;; kaolin-themes-lib.el ends here
