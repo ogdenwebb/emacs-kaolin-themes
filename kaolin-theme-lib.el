@@ -1,6 +1,6 @@
 ;;; kaolin-theme-lib.el --- Kaolin-theme library
 
-;; Predefined Kaolin palette
+;; TODO: add release notes
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
 ;; TODO: add suppport for flycheck-tip package
@@ -9,18 +9,24 @@
 ;; TODO: add following vars
 ;; add default bold, italic and etc face to lib
 ;; add prompt
-;; second-hl for indent and etc
-;; selection
-;; TODO: add the following faces to default
-;; (??) start fg and bg with 0
-;; (??) rename bg1-4 fg1-4 to one var var1-8
+;; add extra var second-hl(monochrome) for indent and etc
 
+;; TODO: add the following faces to default
 ;; TODO: add custom-* and buttons
 ;; TODO: add magit faces
 
 ;; TODO: add option/flat mode-line style
 ;; TODO: add git-gutter style option(solid or symbol)
 
+;; TODO: message about kaolin -> kaolin-dark
+;; TODO: (??) add base(terminal) colors
+;; TODO: (??) colorful comments
+;; TODO: treemacs
+;; TODO: (??) color cornflower blue
+;; TODO: (??) add -pkg.el
+;; TODO: read kaolin.org
+
+;; Predefined Kaolin palette
 (defconst kaolin-palette
   '((black1          "#1b1b1b")
     (black2          "#282828")

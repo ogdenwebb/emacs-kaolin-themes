@@ -62,7 +62,7 @@
    (dim-buffer alt-black)
    ;; TODO: soft blue or wheat or light-orange
    (hl         alt-purple)
-   ;; TODO:
+   ;; TODO: change bg2 to smth
    (hl-line    (if kaolin-hl-line-colored bg2 white2))
    (hl-indent  gray)
    ;; TODO:
@@ -72,8 +72,8 @@
 
    (tooltip-bg bg2)
    (tooltip-fg light-gray)
-   (tooltip-hl-bg light-brown)
-   (tooltip-hl-fg light-orange)
+   (tooltip-hl-bg bg3)
+   (tooltip-hl-fg hl)
 
     ;; TODO:
    (rb1 green)
@@ -112,7 +112,12 @@
    (line-num-fg   alt-grayish-blue)
    (line-num-hl   fg4)
 
-   (cursor        gray))
+   (cursor        gray)
+
+   (ivy1          bg2)
+   (ivy2          blue)
+   (ivy3          faded-orange)
+   (ivy4          faded-red))
 
   ((link                (:foreground soft-blue :underline underline))
 

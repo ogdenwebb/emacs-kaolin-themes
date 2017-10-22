@@ -5,8 +5,6 @@
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/kaolin-theme
 ;; Package-Requires: ((emacs "24") (autothemer "0.2.2"))
-;; TODO: (??) add cl-lib as deps
-;; TODO: add release notes
 ;; Version: 1.0.0
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -29,8 +27,8 @@
 ;; Kaolin-theme package includes the following themes:
 ;;
 ;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim
-;;  * kaolin-eclipse - a dark purple variant
 ;;  * kaolin-light - light variant of the original kaolin-dark
+;;  * kaolin-eclipse - a dark purple variant
 ;;
 ;; Coming soon:
 ;;
@@ -41,6 +39,7 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; Code:
+
 (eval-when-compile
   (require 'cl-lib))
 
@@ -77,21 +76,6 @@
   "Face to highlight boolean values"
   :group 'kaolin-theme)
 
-;; TODO: message about kaolin -> kaolin-dark
-;; TODO: (??) add base(terminal) colors
-;; TODO: (??) colorful comments
-;; TODO: treemacs
-;; TODO: (??) color cornflower blue
-;; TODO: (??) add -pkg.el
-;; TODO: make a simple text logo
-;; TODO: choose a response to use as slogan:
-;; That which is arises from that which is not.
-;; For each tool, a purpose.
-;; Life's wheel goes round and round.
-;; The end of the path is the beginning.
-;; TODO: move theme do ~/.emacs.d/dev
-;; TODO: read kaolin.org
-
 (defun kaolin-theme--make-name (sym)
   "Format kaolin-<sym> from SYM."
   (intern (format "kaolin-%s" (symbol-name sym))))
@@ -112,15 +96,14 @@ otherwise add at the end of the list."
         (apply #'kaolin-theme--add-to-list list-var elements)
       (symbol-value list-var))))
 
-;; TODO: read about lexical bindings
 (defun kaolin-theme--merge-alist (base-alist add-alist)
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
-             do (progn
-                  (kaolin-theme--add-to-alist 'res (car el) (cdr el))))
+             do (kaolin-theme--add-to-alist 'res (car el) (cdr el)))
     res))
 
+;; TODO: (??) lexical bindings
 ;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
