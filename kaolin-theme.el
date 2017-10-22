@@ -5,7 +5,7 @@
 ;; Author: ogdenwebb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/kaolin-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.9.1
+;; Version: 0.9.2
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
