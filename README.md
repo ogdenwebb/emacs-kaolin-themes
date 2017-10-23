@@ -1,6 +1,6 @@
 # Kaolin theme
-[![MELPA Stable](https://stable.melpa.org/packages/kaolin-theme-badge.svg)](https://stable.melpa.org/#/kaolin-theme)
-[![MELPA](https://melpa.org/packages/kaolin-theme-badge.svg)](https://melpa.org/#/kaolin-theme)
+[![MELPA Stable](https://stable.melpa.org/packages/kaolin-themes-badge.svg)](https://stable.melpa.org/#/kaolin-themes)
+[![MELPA](https://melpa.org/packages/kaolin-themes-badge.svg)](https://melpa.org/#/kaolin-themes)
 [![Emacs](https://img.shields.io/badge/Emacs-24%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
