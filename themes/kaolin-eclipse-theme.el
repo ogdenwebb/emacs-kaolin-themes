@@ -93,10 +93,17 @@
    (cursor        "#e0c3c8"))
 
   ;; Custom theme set faces
-  ((link                (:foreground soft-blue :underline underline))
+  (
+   ;; TODO: maybe change color
+   ;; (link                (:foreground soft-blue :underline underline))
+   (link                (:foreground light-jade :underline underline))
 
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
+   ;; TODO: delete
+   (org-block-begin-line          (:foreground dark-purple))
+   (org-block-end-line            (:inherit 'org-block-begin-line))
+   (org-quote                     (:foreground violet))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))

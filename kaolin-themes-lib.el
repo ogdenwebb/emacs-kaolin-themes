@@ -1,6 +1,7 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
-;; TODO: add release notes
+;; TODO: add org-key/org-keyword var for faces such as org-document-info-keyword
+
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
 ;; TODO: add suppport for flycheck-tip package
