@@ -8,9 +8,11 @@
 
 Kaolin is a set of eye pleasing themes for GNU Emacs with support a large number of modes and external packages.
 
-![kaolin-logo](https://user-images.githubusercontent.com/9018005/31864175-b1c5149a-b761-11e7-8b86-e0e2b110d302.png)
+![kaolin-logo](https://user-images.githubusercontent.com/9018005/31884317-5715a32c-b7f5-11e7-8dce-0416051f55ce.png)
 
 # Kaolin theme variants
+
+All screnshots are available in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki).
 
 * **kaolin-dark** - the original dark jade variant inspired by Sierra.vim.
 * **kaolin-light** - light variant of the original kaolin theme.
