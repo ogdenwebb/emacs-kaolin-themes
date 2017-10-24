@@ -18,6 +18,7 @@
 ;; GNU General Public License for more details.
 ;;
 ;; This file is not part of GNU Emacs.
+;;
 ;;; Commentary:
 ;;
 ;; Kaolin is a set of eye pleasing themes for GNU Emacs
@@ -25,7 +26,7 @@
 ;; Kaolin themes are based on the pallete that was originally
 ;; inspired by Sierra.vim with adding some extra colors.
 ;;
-;; This package includes the following themes:
+;; ====  This package includes the following themes  ====
 ;;
 ;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim
 ;;  * kaolin-light - light variant of the original kaolin-dark
@@ -35,7 +36,28 @@
 ;;
 ;;  * kaolin-ocean - dark blue variant
 ;;
-;;                       The end of the path is the beginning.
+;; ====  Configuration example  ====
+;;
+;; (require 'kaolin-themes)
+;;
+;; (load-theme 'kaolin-dark)
+;;
+;; ====  Custom theme settings  ====
+;;
+;; ;; The following set to t by default
+;; (setq kaolin-bold t       ; If nil, disable the bold style.
+;;       kaolin-italic t     ; If nil, disable the italic style.
+;;       kaolin-underline t) ; If nil, disable the underline style.
+;;
+;; ====  Some extra theme features, disabled by default  ====
+;;
+;; ;; If t, use the wave underline style instead of regular underline.
+;; (setq kaolin-wave t)
+;;
+;; ;; When t, will display colored hl-line style instead dim gray
+;; (setq kaolin-hl-line-colored t)
+;;
+;;                           The end of the path is the beginning.
 ;;
 ;;; Code:
 
