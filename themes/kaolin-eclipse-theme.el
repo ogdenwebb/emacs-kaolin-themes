@@ -43,6 +43,7 @@
    (hl         pink)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  gray)
+   (pulse      dark-purple)
 
    (todo pink)
 

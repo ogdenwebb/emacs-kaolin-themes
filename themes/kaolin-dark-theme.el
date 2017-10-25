@@ -170,9 +170,6 @@
    (vimish-fold-overlay (:background bg2 :foreground comment))
    (vimish-fold-fringe  (:background nil :foreground jade))
 
-   ;; TODO: Evil-goggles
-   (evil-goggles-default-face (:background dark-jade))
-
    ;; Avy
    (avy-lead-face   (:background dark-red :foreground fg1))
    (avy-lead-face-0 (:background jade :foreground fg1))
@@ -187,7 +184,6 @@
    (ivy-virtual             (:foreground light-yellow))
    (ivy-remote              (:foreground red))
    (ivy-cursor              (:background bg3 :foreground fg1))
-   (ivy-current-match       (:background hl-line :foreground hl :bold t))
    (ivy-match-required-face (:background nil :foreground alt-red :bold nil))
    (ivy-confirm-face        (:background nil :foreground light-orange))))
 

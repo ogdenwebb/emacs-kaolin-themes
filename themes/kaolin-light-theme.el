@@ -7,15 +7,10 @@
 (define-kaolin-theme light  "Light Kaolin theme variant."
   ;; Palette modification
   (
-
-   ;; (lime  "#85b654")
-   ;; (lime  "#759c79")
-   ;; (dark-cyan  "#6da198")
-   (dark-cyan  "#6CA1A6")
-   ;; (dark-cyan  "#79a3ae")
-   ;; (pink       "#d24b83")
-   (pink       "#cd3775")
-   (dark-jade  "#3e574d")
+   (blue        "#65a0a6")
+   (pink        "#ca4b7f")
+   (dark-jade   "#3e594e")
+   (pure-orange "#d1720a")
 
    ;; Color vars
    ;; grayish green
@@ -30,30 +25,29 @@
    ;; (bg2 white2)
    ;; (bg3 white3)
    ;; (bg4 white4)
-   ;; TODO: a more brighter
    (fg1 dark-jade)
    (fg2 "#3e574d")
    (fg3 "#476257")
    (fg4 "#4f6e62")
-   (green "#43797f")
+   ;; (green "#3f7d7f")
+   (green "#5e8475")
 
 
    (keyword     jade)
    ;; TODO:
    (var         moderate-pink)
    (const       pink)
-   (builtin     dark-cyan)
-   ;; TODO: or bg5
-   ;; a bit more constasrt
-   (comment     "#a4ac9d")
+   (builtin     blue)
+   ;; TODO:
+   (comment     "#9aa88c")
    (alt-comment alt-grayish-blue)
-   (functions   dark-cyan)
-   (str         light-jade)
+   (functions   builtin)
+   (str         lavender)
    (str-alt     faded-blue)
    (doc         str-alt)
    ;; TODO
    (type        light-jade)
-   (num         faded-red)
+   (num         pure-orange)
    (bool        num)
    (prep        faded-orange)
    (warning     orange)
@@ -67,6 +61,8 @@
    (hl-indent  gray)
    ;; TODO:
    (selection white2)
+   ;; TODO:
+   (pulse teal)
 
    (todo dark-red)
 
@@ -114,10 +110,10 @@
 
    (cursor        gray)
 
-   (ivy1          bg2)
-   (ivy2          blue)
-   (ivy3          faded-orange)
-   (ivy4          faded-red))
+   (ivy1          bg4)
+   (ivy2          alt-blue)
+   (ivy3          pure-orange)
+   (ivy4          red))
 
   ((link                (:foreground soft-blue :underline underline))
 

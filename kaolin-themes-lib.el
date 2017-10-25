@@ -148,6 +148,7 @@
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray)
     (selection bg3)
+    (pulse     dark-jade)
 
     (todo red)
     (done teal-green)
@@ -302,8 +303,7 @@
     (eldoc-highlight-function-argument  (:inherit 'font-lock-constant-face))
 
     ;; Pulse
-    ;; TODO: (??) use it in evil-goggles
-    (pulse-highlight-start-face (:background dark-jade))
+    (pulse-highlight-start-face (:background pulse))
 
     ;; Auto-dim-other-buffers
     (auto-dim-other-buffers-face  (:background dim-buffer))
@@ -587,6 +587,7 @@
     (whitespace-trailing         (:background bg1))
 
     ;; Org-mode
+    ;; TODO: org agenda faces
     (org-todo                      (:foreground todo :bold bold))
     (org-done                      (:foreground done  :bold bold))
     (org-ellipsis                  (:foreground builtin))
@@ -596,6 +597,7 @@
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground light-yellow))
     (org-verbatim                  (:foreground soft-blue))
+    (org-hide                      (:foreground bg1))
 
     (org-document-info-keyword     (:foreground second-key))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
@@ -641,12 +643,17 @@
     (evil-ex-substitute-replacement (:background nil :foreground light-green))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
 
+    ;; Evil-goggles
+    ;; TODO: add rest of evil goggles faces
+    (evil-goggles-default-face (:background pulse))
+
     ;; Ivy & swiper basic
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
+    (ivy-current-match       (:background hl-line :foreground hl :bold t))
 
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
