@@ -7,10 +7,13 @@
 (define-kaolin-theme light  "Light Kaolin theme variant."
   ;; Palette modification
   (
-   (blue        "#65a0a6")
-   (pink        "#ca4b7f")
-   (dark-jade   "#3e594e")
-   (pure-orange "#d1720a")
+   ;; TODO: lime color
+   (blue         "#65a0a6")
+   ;; (pink        "#ca4b7f")
+   (pink         "#d45589")
+   (dark-jade    "#3e594e")
+   (pure-orange  "#d18129")
+   (faded-orange "#c78e6d")
 
    ;; Color vars
    ;; grayish green
@@ -34,9 +37,10 @@
 
 
    (keyword     jade)
+   (second-key  light-jade)
    ;; TODO:
-   (var         moderate-pink)
-   (const       pink)
+   (var         pure-orange)
+   (const       faded-orange)
    (builtin     blue)
    ;; TODO:
    (comment     "#9aa88c")
@@ -46,10 +50,10 @@
    (str-alt     faded-blue)
    (doc         str-alt)
    ;; TODO
-   (type        light-jade)
-   (num         pure-orange)
+   (type        faded-orange)
+   (num         moderate-pink)
    (bool        num)
-   (prep        faded-orange)
+   (prep        pink)
    (warning     orange)
    (err         red)
 
@@ -64,7 +68,7 @@
    ;; TODO:
    (pulse teal)
 
-   (todo dark-red)
+   (todo moderate-pink)
 
    (tooltip-bg bg2)
    (tooltip-fg light-gray)
@@ -105,8 +109,8 @@
 
    (win-border    bg3)
    (line-num-bg   bg1)
-   (line-num-fg   alt-grayish-blue)
-   (line-num-hl   fg4)
+   (line-num-fg   grayish-green)
+   (line-num-hl   green)
 
    (cursor        gray)
 
@@ -117,13 +121,16 @@
 
   ((link                (:foreground soft-blue :underline underline))
 
+   (org-level-1         (:foreground green :bold bold :height 1.1))
+   (org-level-2         (:foreground faded-blue :bold nil))
+   (org-level-3         (:foreground faded-orange :bold nil))
+   (org-level-4         (:foreground faded-wheat :bold nil))
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))
    (git-gutter:deleted  (:background diff-del :foreground diff-del))))
-
 
 
 ;;; kaolin-light-theme.el ends here

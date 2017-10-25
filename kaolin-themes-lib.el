@@ -26,6 +26,7 @@
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
 ;; TODO: read kaolin.org
+;; TODO: try to change faded-blue to var here
 
 ;; Predefined Kaolin palette
 (defconst kaolin-palette
@@ -86,6 +87,7 @@
     (light-jade      "#709688")
     (midnight-green  "#152628")
     (deep-green      "#39656b")
+    (grayish-green   "#9ca78f")
     (green           "#4a858c")
     (dark-green      "#39855f")
     (light-green     "#54b685")
