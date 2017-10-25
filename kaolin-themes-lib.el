@@ -174,6 +174,7 @@
     (diff-del    red)
 
     (keyword     green)
+    (second-key  deep-green)
     (builtin     teal)
     (comment     gray)
     ;; TODO: add var/var with style(default, bright and colored)
@@ -592,11 +593,17 @@
     ;; (org-code                      (:foreground light-yellow))
     ;; (org-verbatim                  (:foreground soft-blue))
     (org-date                      (:foreground light-yellow :underline underline))
-    (org-document-info-keyword     (:foreground deep-green))
-    (org-meta-line                 (:inherit 'org-document-info-keyword))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground light-yellow))
     (org-verbatim                  (:foreground soft-blue))
+
+    (org-document-info-keyword     (:foreground second-key))
+    (org-meta-line                 (:inherit 'org-document-info-keyword))
+    (org-block-begin-line          (:foreground second-key))
+    (org-block-end-line            (:inherit 'org-block-begin-line))
+    (org-list-dt                   (:inherit 'org-checkbox))
+    (org-document-title            (:foreground builtin :bold bold))
+    (org-document-info             (:foreground builtin))
 
     ;; Emmet
     (emmet-preview-input   (:foreground nil :background nil))

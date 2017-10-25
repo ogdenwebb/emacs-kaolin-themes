@@ -19,6 +19,7 @@
 
    ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     alt-purple)
+   (second-key  dark-purple)
    ;; TODO:
    (var         alt-orange)
    (const       lavender)
@@ -94,16 +95,11 @@
 
   ;; Custom theme set faces
   (
-   ;; TODO: maybe change color
-   ;; (link                (:foreground soft-blue :underline underline))
    (link                (:foreground light-jade :underline underline))
 
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
-   ;; TODO: delete
-   (org-block-begin-line          (:foreground dark-purple))
-   (org-block-end-line            (:inherit 'org-block-begin-line))
-   (org-quote                     (:foreground violet))
+   (org-quote           (:foreground violet))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))
