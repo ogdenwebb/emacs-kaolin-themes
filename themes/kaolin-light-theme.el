@@ -127,6 +127,7 @@
    (org-level-4         (:foreground faded-wheat :bold nil))
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
+   (org-table           (:foreground moderate-blue :bold bold))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))

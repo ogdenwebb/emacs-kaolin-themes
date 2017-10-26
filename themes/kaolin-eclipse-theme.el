@@ -50,7 +50,7 @@
    (tooltip-bg    bg2)
    (tooltip-fg    light-gray)
    ;; TODO:
-   (tooltip-hl-bg grayish-magenta)
+   (tooltip-hl-bg dark-purple)
    (tooltip-hl-fg light-orange)
 
    (ivy3 teal-green)
