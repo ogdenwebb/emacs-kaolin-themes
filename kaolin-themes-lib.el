@@ -4,29 +4,21 @@
 
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
-;; TODO: add suppport for flycheck-tip package
-;; TODO: add beacon mode support
-
-;; TODO: add following vars
-;; add default bold, italic and etc face to lib
-;; add prompt
-;; add extra var second-hl(monochrome) for indent and etc
 
 ;; TODO: add the following faces to default
 ;; TODO: add custom-* and buttons
 ;; TODO: add magit faces
 
-;; TODO: add option/flat mode-line style
+;; TODO: add mode-line option/flat mode-line style
 ;; TODO: add git-gutter style option(solid or symbol)
 
-;; TODO: message about kaolin -> kaolin-dark
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
 ;; TODO: treemacs
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
-;; TODO: read kaolin.org
-;; TODO: try to change faded-blue to var here
+
+;; TODO: add colored selection option
 
 ;; Predefined Kaolin palette
 (defconst kaolin-palette
@@ -103,7 +95,7 @@
     (grayish-blue     "#687184")
     (alt-grayish-blue "#8f9ca7")
     (dark-blue        "#2a4661")
-    ;; TODO: swap blue and soft-blue with ranemd to dark-blue
+    ;; TODO: swap blue and soft-blue and rename to dark-blue
     (blue             "#3B6FA3")
     (alt-blue         "#267fb5")
     (moderate-blue    "#4e7f95")
@@ -133,7 +125,6 @@
     (underline       kaolin-underline)
     (underline-style (if kaolin-wave 'wave 'line))
 
-    ;; TODO: (??) reverse from fg1-4 to fg4-1
     (fg1  white1)
     (fg2  white2)
     (fg3  white3)
@@ -146,11 +137,12 @@
 
     (dim-buffer alt-black)
     (hl         light-green)
+    (hl-mono    alt-gray)
     ;; TODO: (??) change to (alt)-midnight-green
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray)
-    (selection bg3)
-    (pulse     dark-jade)
+    (selection  bg3)
+    (pulse      dark-jade)
 
     (todo red)
     (done teal-green)
@@ -186,13 +178,10 @@
     (str         teal-green)
     (str-alt     jade)
     (doc         str-alt)
-    ;; TODO: ?? pink
     (type        alt-orange)
-    ;; TODO: ?? light-yellow
     (const       violet)
-    ;; TODO: make more brighter or change
+    ;; TODO: make a bit more brighter or change
     (var         faded-blue)
-    ;; TODO: change number color ??  pink ?? light-yellow ?? alt-orange
     (num         red)
     (bool        num)
     (prep        lavender)
@@ -223,7 +212,7 @@
     (cursor        alt-white)
 
 
-    ;; TODO: add helm and ivy additional
+    ;; TODO: add helm and ivy additional faces
 
     (swiper-bg   bg2)
     (ivy-bg      nil)
@@ -268,14 +257,16 @@
     (window-divider      (:foreground win-border))
     (minibuffer-prompt   (:foreground keyword :bold bold))
     (bold                (:bold bold))
+    (italic              (:italic italic))
     (default-italic      (:italic italic))
+    (bold-italic         (:bold bold :italic italic))
     (link                (:foreground faded-orange :underline underline))
     (link-visited        (:inherit 'link :underline nil))
     (success             (:background nil :foreground light-green))
     (escape-glyph        (:background nil :foreground cyan))
 
     (menu        (:background bg2 :foreground fg2))
-    (header-line (:background midnight-blue :foreground faded-blue))
+    (header-line (:background midnight-blue :foreground var))
     (tooltip     (:foreground tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
@@ -328,12 +319,12 @@
 
     ;; Ruler-mode
     (ruler-mode-default        (:background bg2 :foreground gray))
-    (ruler-mode-column-number  (:foreground faded-blue))
+    (ruler-mode-column-number  (:foreground var))
     (ruler-mode-current-column (:foreground orange))
     (ruler-mode-fill-column    (:foreground pink))
     (ruler-mode-comment-column (:foreground teal-blue))
     (ruler-mode-fringes        (:foreground green))
-    (ruler-mode-pad            (:foreground faded-blue))
+    (ruler-mode-pad            (:foreground var))
     (ruler-mode-tab-stop       (:foreground violet))
     (ruler-mode-goal-column    (:foreground alt-red))
 
@@ -346,13 +337,13 @@
     ;; Elfeed
     (elfeed-search-tag-face          (:foreground light-yellow))
     (elfeed-search-feed-face         (:foreground green))
-    (elfeed-search-date-face         (:foreground faded-blue))
+    (elfeed-search-date-face         (:foreground var))
     (elfeed-search-unread-title-face (:foreground fg1))
     (elfeed-search-unread-count-face (:foreground orange))
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
-    (mode-line           (:box (:line-width 2 :color line-bg2) :background line-bg1 :foreground faded-blue :bold bold))
+    (mode-line           (:box (:line-width 2 :color line-bg2) :background line-bg1 :foreground var :bold bold))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
     (mode-line-inactive  (:box (:line-width 2 :color line-bg1) :background line-bg1 :foreground light-gray :bold bold))
@@ -408,7 +399,7 @@
     (company-tooltip-common           (:foreground hl))
     (company-tooltip-common-selection (:foreground light-orange))
     (company-tooltip-selection        (:background tooltip-hl-bg :foreground tooltip-hl-fg))
-    (company-tooltip-annotation       (:foreground faded-blue))
+    (company-tooltip-annotation       (:foreground var))
     (company-scrollbar-bg             (:background bg1))
     (company-scrollbar-fg             (:foreground keyword))
     ;; TODO: read about template
@@ -551,6 +542,7 @@
     ;; Popup
     (popup-face                (:background tooltip-bg :foreground tooltip-fg :bold bold))
     (popup-menu-selection-face (:background tooltip-hl-bg :foreground tooltip-hl-fg :bold bold))
+    (popup-tip-face            (:background tooltip-hl-bg :foreground builtin :bold bold))
 
     ;; Terminal
     (term               (:foreground fg1))
@@ -575,7 +567,7 @@
     (eshell-ls-product    (:foreground yellow))
     (eshell-ls-readonly   (:foreground fg2))
     (eshell-ls-special    (:foreground light-green))
-    (eshell-ls-unreadable (:foreground faded-blue))
+    (eshell-ls-unreadable (:foreground var))
 
     ;; Whitespace mode
     ;; TODO: read about this mode
@@ -600,6 +592,9 @@
     (org-code                      (:foreground light-yellow))
     (org-verbatim                  (:foreground soft-blue))
     (org-hide                      (:foreground bg1))
+    (org-special-keyword           (:foreground functions))
+    (org-table                     (:foreground var :bold bold))
+    (org-warning                   (:foreground warning :underline underline))
 
     (org-document-info-keyword     (:foreground second-key))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
@@ -608,6 +603,16 @@
     (org-list-dt                   (:inherit 'org-checkbox))
     (org-document-title            (:foreground builtin :bold bold))
     (org-document-info             (:foreground builtin))
+    (org-footnote                  (:foreground fg4 :underline underline))
+
+    (org-agenda-date-weekend       (:weight 'normal :foreground fg4))
+    (org-block                     (:foreground fg3))
+    (org-quote                     (:inherit 'org-block :slant 'italic))
+    (org-verse                     (:inherit 'org-block :slant 'italic))
+    (org-agenda-done               (:foreground bg4))
+    (org-scheduled                 (:foreground type))
+    (org-scheduled-today           (:foreground functions :height 1.2 :bold bold))
+    (org-sexp-date                 (:foreground fg4))
 
     ;; Emmet
     (emmet-preview-input   (:foreground nil :background nil))
@@ -647,7 +652,10 @@
 
     ;; Evil-goggles
     ;; TODO: add rest of evil goggles faces
-    (evil-goggles-default-face (:background pulse))
+    (evil-goggles-default-face  (:background pulse))
+
+    ;; Beacon-mode
+    (beacon-fallback-background (:background pulse))
 
     ;; Ivy & swiper basic
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
@@ -655,7 +663,7 @@
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
-    (ivy-current-match       (:background hl-line :foreground hl :bold t))
+    (ivy-current-match           (:background hl-line :foreground hl :bold t))
 
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))

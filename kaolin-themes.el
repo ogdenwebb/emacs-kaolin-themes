@@ -88,7 +88,6 @@
   "When t, use the wave underline style instead of regular underline."
   :group 'kaolin-themes)
 
-;; TODO: add colored selection option
 (defcustom kaolin-hl-line-colored nil
   "When t, will display colored hl-line style instead dim gray"
   :group 'kaolin-themes)
@@ -117,6 +116,7 @@ otherwise add at the end of the list."
         (apply #'kaolin-themes--add-to-alist list-var elements)
       (symbol-value list-var))))
 
+;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
 (defun kaolin-themes--merge-alist (base-alist add-alist)
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
@@ -124,8 +124,6 @@ otherwise add at the end of the list."
              do (kaolin-themes--add-to-alist 'res (car el) (cdr el)))
     res))
 
-;; TODO: (??) lexical bindings
-;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
@@ -137,8 +135,10 @@ otherwise add at the end of the list."
                                kaolin-faces)))
 
     `(autothemer-deftheme ,kaolin-theme-name ,doc
-                          ;; TODO: choose classes what I need
-                          ((((class color) (min-colors 32000)) ((class color) (min-colors 89)) t)
+
+                          ((((class color) (min-colors #xFFFFFF)) ; 24bit guit
+                            ((class color) (min-colors #xFF))     ; 256
+                            t)                                    ; tty
 
                            ;; Set palette
                            ,@kaolin-theme-palette)
