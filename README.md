@@ -20,7 +20,7 @@ All screnshots are available in the wiki on the following pages:
 
 # Installation
 ## MELPA
-To install the theme via package.el: `M-x package-install RET kaolin-theme RET`
+To install the theme via package.el: `M-x package-install RET kaolin-themes RET`
 
 # Configuration
 Information about configuration themes is availaible in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki).
