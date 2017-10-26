@@ -12,16 +12,18 @@ Kaolin is a set of eye pleasing themes for GNU Emacs with support a large number
 
 # Kaolin theme variants
 
-All screnshots are available in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki).
+All screnshots are available in the wiki on the following pages:
 
-* **kaolin-dark** - the original dark jade variant inspired by Sierra.vim.
-* **kaolin-light** - light variant of the original kaolin theme.
-* **kaolin-eclipse** - a dark purple variant.
-
+* [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - the original dark jade variant inspired by Sierra.vim.
+* [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin theme.
+* [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant.
 
 # Installation
 ## MELPA
 To install the theme via package.el: `M-x package-install RET kaolin-theme RET`
+
+# Configuration
+Information about configuration themes is availaible in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki).
 
 # Advanced highliginting
 
