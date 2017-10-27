@@ -42,7 +42,7 @@
    ;; TODO: soft blue or wheat or light-orange
    (hl         pink)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
-   (hl-indent  gray)
+   (hl-indent  bg4)
    (selection  bg4)
    (pulse      dark-purple)
 
@@ -57,7 +57,6 @@
    (ivy3 teal-green)
    (ivy4 moderate-blue)
 
-    ;; TODO:
    (rb1 moderate-pink)
    (rb2 lavender)
    (rb3 teal)
@@ -72,7 +71,7 @@
    (diff-change purple)
    (diff-del    faded-red)
 
-    ;; Mode-line
+   ;; Mode-line
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)

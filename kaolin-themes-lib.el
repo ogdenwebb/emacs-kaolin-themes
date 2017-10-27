@@ -286,6 +286,9 @@
     (highlight-indent-guides-even-face       (:background hl-indent))
     (highlight-indent-guides-character-face  (:foreground hl-indent))
 
+    ;; Indent-guide
+    (indent-guide-face (:foreground hl-indent))
+
     ;; Highlighting indentation
     (highlight-indentation-face                 (:background bg2))
     (highlight-indentation-current-column-face  (:background bg3))
