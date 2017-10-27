@@ -6,15 +6,15 @@
 
 **WARNING**: The original `kaolin` theme was renamed to `kaolin-dark`.
 
-Kaolin is a set of eye pleasing themes for GNU Emacs with support a large number of modes and external packages.
+Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large number of modes and external packages.
 
 ![kaolin-logo](https://user-images.githubusercontent.com/9018005/31884317-5715a32c-b7f5-11e7-8dce-0416051f55ce.png)
 
 # Kaolin theme variants
 
-All screnshots are available in the wiki on the following pages:
+All screenshots are available in the wiki on the following pages:
 
-* [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - the original dark jade variant inspired by Sierra.vim.
+* [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - the original dark jade variant inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra).
 * [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin theme.
 * [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant.
 
@@ -23,9 +23,9 @@ All screnshots are available in the wiki on the following pages:
 To install the theme via package.el: `M-x package-install RET kaolin-themes RET`
 
 # Configuration
-Information about configuration themes is availaible in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki).
+Information about configuring Kaolin theme is available in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki).
 
-# Advanced highliginting
+# Advanced highlighting
 
 * [highlight-numbers](https://github.com/Fanael/highlight-numbers) — highlight numbers in source code.
 * [highlight-quoted](https://github.com/Fanael/highlight-quoted) — highlight Lisp quotes and quoted symbols.
