@@ -58,15 +58,15 @@
    (ivy4 moderate-blue)
 
     ;; TODO:
-   (rb1 teal)
-   (rb2 violet)
-   (rb3 jade)
+   (rb1 moderate-pink)
+   (rb2 lavender)
+   (rb3 teal)
    (rb4 faded-blue)
-   (rb5 green)
+   (rb5 alt-lavender)
    (rb6 light-violet)
    (rb7 grayish-orange)
-   (rb8 grayish-magenta)
-   (rb9 lavender)
+   (rb8 dark-blue)
+   (rb9 soft-pink)
 
    (diff-add    light-jade)
    (diff-change purple)
