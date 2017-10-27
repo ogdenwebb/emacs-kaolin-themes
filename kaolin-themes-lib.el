@@ -15,6 +15,7 @@
 ;; TODO: treemacs
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
+;; TODO: (??) outline-* faces
 
 ;; TODO: add colored selection option
 
@@ -571,15 +572,18 @@
     (eshell-ls-unreadable (:foreground var))
 
     ;; Whitespace mode
-    ;; TODO: read about this mode
-    ;; TODO: add rest faces
-    (whitespace-empty            (:foreground red))
-    (whitespace-line             (:background bg2))
-    (whitespace-space            (:background bg2))
-    (whitespace-tab              (:foreground gray))
-    (whitespace-newline          (:foreground gray))
-    (whitespace-hspace           (:foreground orange))
-    (whitespace-trailing         (:background bg1))
+    ;; TODO: Add variant for light themes
+    (whitespace-empty            (:background dark-jade :foreground light-gray))
+    (whitespace-line             (:background bg3 :foreground warning))
+    (whitespace-newline          (:foreground teal))
+    (whitespace-indentation      (:background hl-indent))
+    (whitespace-tab              (:background light-jade))
+    (whitespace-space            (:background alt-gray :foreground dark-jade))
+    (whitespace-hspace           (:foreground cyan))
+    (whitespace-space-before-tab (:background alt-yellow :foreground bg2))
+    (whitespace-space-after-tab  (:background alt-yellow :foreground bg2))
+    (whitespace-trailing         (:foreground alt-red))
+    (whitespace-big-indent       (:background dark-red :foreground alt-red))
 
     ;; Org-mode
     ;; TODO: org agenda faces

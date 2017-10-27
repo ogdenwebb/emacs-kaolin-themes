@@ -17,6 +17,7 @@
 
    ;; Color vars
    ;; grayish green
+   ;; A bit more bright; see screenshots on github
    (bg1 "#ccd0c8")
    (bg2 "#c2c7bd")
    (bg3 "#b8beb3")
