@@ -207,9 +207,6 @@
     (line-num-hl   light-gray)
     (cursor        alt-white)
 
-
-    ;; TODO: add helm and ivy additional faces
-
     (swiper-bg   bg2)
     (ivy-bg      nil)
     (ivy1        fg1)
@@ -658,6 +655,43 @@
 
     ;; Beacon-mode
     (beacon-fallback-background (:background pulse))
+
+    ;; Helm
+    ;; TODO: update faces
+    (helm-header                              (:foreground fg2 :underline nil :box nil))
+    (helm-source-header                       (:foreground keyword :underline nil :bold bold))
+    (helm-match                               (:foreground orange :bold bold))
+    (helm-header-line-left-margin             (:background blue :foreground bg1))
+    (helm-selection                           (:background bg2 :foreground orange :bold bold))
+    (helm-selection-line                      (:background bg2 :foreground orange :bold bold))
+    (helm-visible-mark                        (:foreground blue))
+    (helm-candidate-number                    (:foreground hl))
+    (helm-separator                           (:foreground type))
+    (helm-time-zone-current                   (:foreground builtin))
+    (helm-time-zone-home                      (:foreground type))
+    (helm-buffer-not-saved                    (:foreground type))
+    (helm-buffer-process                      (:foreground builtin))
+    (helm-buffer-saved-out                    (:foreground fg1))
+    (helm-buffer-size                         (:foreground fg1))
+    (helm-ff-directory                        (:foreground functions :bold bold))
+    (helm-buffer-directory                    (:foreground purple))
+    (helm-ff-dotted-directory                 (:foreground functions :bold bold))
+    (helm-ff-dotted-symlink-directory         (:foreground blue :bold bold))
+    (helm-ff-file                             (:foreground fg1 :weight 'normal))
+    (helm-ff-executable                       (:foreground keyword :weight 'normal))
+    (helm-ff-invalid-symlink                  (:foreground warning :bold bold))
+    (helm-resume-need-update                  (:background alt-red :foreground nil))
+    (helm-ff-symlink                          (:foreground keyword :bold bold))
+    (helm-ff-prefix                           (:background keyword :foreground bg1 :weight 'normal))
+    (helm-grep-cmd-line                       (:foreground fg1))
+    (helm-grep-file                           (:foreground fg1))
+    (helm-grep-finish                         (:foreground fg2))
+    (helm-grep-lineno                         (:foreground fg1))
+    (helm-grep-match                          (:inherit 'helm-match :background nil :foreground nil))
+    (helm-grep-running                        (:foreground functions))
+    (helm-moccur-buffer                       (:foreground functions))
+    (helm-source-go-package-godoc-description (:foreground str))
+    (helm-bookmark-w3m                        (:foreground type))
 
     ;; Ivy & swiper basic
     (ivy-current-match           (:background hl-line :foreground hl :bold t))

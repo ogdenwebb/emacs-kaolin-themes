@@ -30,12 +30,11 @@
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
    (org-level-1                   (:foreground green :bold bold :height 1.1))
    (org-level-2                   (:foreground teal-blue :bold nil))
-   ;; TODO: change because faded-orange uses in links
-   (org-level-3                   (:foreground faded-orange :bold nil))
+   (org-level-3                   (:foreground light-jade :bold nil))
    (org-level-4                   (:foreground faded-wheat :bold nil))
    (org-tag                       (:foreground orange :bold bold))
    (org-checkbox                  (:foreground green :bold bold))
-   ;; TODO: huh?
+   ;; TODO: refact
    (org-headline-done             (:foreground teal-blue  :bold nil))
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
    (org-checkbox-statistics-done  (:foreground teal-green :bold bold))
@@ -46,6 +45,7 @@
    (org-agenda-date-today         (:foreground purple :height 1.2 :bold bold))
 
    ;; Ediff
+   ;; TODO: change
    (ediff-current-diff-A (:background dark-red :foreground red))
    (ediff-current-diff-B (:background dark-green :foreground light-green))
    (ediff-current-diff-C (:background dark-blue :foreground teal-blue))
@@ -77,42 +77,6 @@
    (magit-branch                 (:foreground const :bold bold))
    (magit-log-author             (:foreground fg3))
    (magit-hash                   (:foreground fg2))
-
-   ;; Helm
-   (helm-header                              (:background bg1 :foreground fg2 :underline nil :box nil))
-   (helm-source-header                       (:background bg1 :foreground keyword :underline nil :bold bold))
-   (helm-match                               (:inherit 'default :foreground orange :bold bold))
-   (helm-header-line-left-margin             (:background blue :foreground bg1))
-   (helm-selection                           (:background bg2 :foreground orange :bold bold))
-   (helm-selection-line                      (:background bg2 :foreground orange :bold bold))
-   (helm-visible-mark                        (:background bg1 :foreground blue))
-   (helm-candidate-number                    (:foreground lime))
-   (helm-separator                           (:background bg1 :foreground type))
-   (helm-time-zone-current                   (:background bg1 :foreground builtin))
-   (helm-time-zone-home                      (:background bg1 :foreground type))
-   (helm-buffer-not-saved                    (:background bg1 :foreground type))
-   (helm-buffer-process                      (:background bg1 :foreground builtin))
-   (helm-buffer-saved-out                    (:background bg1 :foreground fg1))
-   (helm-buffer-size                         (:background bg1 :foreground fg1))
-   (helm-ff-directory                        (:background bg1 :foreground functions :bold bold))
-   (helm-buffer-directory                    (:background bg1 :foreground purple))
-   (helm-ff-dotted-directory                 (:background bg1 :foreground functions :bold bold))
-   (helm-ff-dotted-symlink-directory         (:background bg1 :foreground blue :bold bold))
-   (helm-ff-file                             (:background bg1 :foreground fg1 :weight 'normal))
-   (helm-ff-executable                       (:background bg1 :foreground keyword :weight 'normal))
-   (helm-ff-invalid-symlink                  (:background bg1 :foreground warning :bold bold))
-   (helm-resume-need-update                  (:background alt-red :foreground nil))
-   (helm-ff-symlink                          (:background bg1 :foreground keyword :bold bold))
-   (helm-ff-prefix                           (:background keyword :foreground bg1 :weight 'normal))
-   (helm-grep-cmd-line                       (:background bg1 :foreground fg1))
-   (helm-grep-file                           (:background bg1 :foreground fg1))
-   (helm-grep-finish                         (:background bg1 :foreground fg2))
-   (helm-grep-lineno                         (:background bg1 :foreground fg1))
-   (helm-grep-match                          (:inherit 'helm-match :background nil :foreground nil))
-   (helm-grep-running                        (:background bg1 :foreground functions))
-   (helm-moccur-buffer                       (:background bg1 :foreground functions))
-   (helm-source-go-package-godoc-description (:foreground str))
-   (helm-bookmark-w3m                        (:foreground type))
 
    ;; Speedbar
    (speedbar-separator-face (:background blue))
