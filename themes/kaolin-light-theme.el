@@ -89,7 +89,7 @@
 
    (diff-add    light-jade)
    (diff-change faded-orange)
-   (diff-del    faded-red)
+   (diff-rem    faded-red)
 
     ;; Mode-line
    (line-fg           fg4)
@@ -132,7 +132,7 @@
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))
-   (git-gutter:deleted  (:background diff-del :foreground diff-del))))
+   (git-gutter:deleted  (:background diff-rem :foreground diff-rem))))
 
 
 ;;; kaolin-light-theme.el ends here

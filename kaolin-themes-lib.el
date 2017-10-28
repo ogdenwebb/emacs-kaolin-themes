@@ -94,7 +94,7 @@
     (grayish-blue     "#687184")
     (alt-grayish-blue "#8f9ca7")
     (dark-blue        "#2a4661")
-    ;; TODO: swap blue and soft-blue and rename to dark-blue
+    ;; TODO: (??) swap blue and soft-blue and rename to dark-blue
     (blue             "#3B6FA3")
     (alt-blue         "#267fb5")
     (moderate-blue    "#4e7f95")
@@ -137,7 +137,6 @@
     (dim-buffer alt-black)
     (hl         light-green)
     (hl-mono    alt-gray)
-    ;; TODO: (??) change to (alt)-midnight-green
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray)
     (selection  bg3)
@@ -151,7 +150,6 @@
     (tooltip-hl-bg alt-brown)
     (tooltip-hl-fg light-orange)
 
-    ;; TODO: (??) repeat 1-4, 2-5... with +2
     (rb1 teal)
     (rb2 violet)
     (rb3 jade)
@@ -164,8 +162,7 @@
 
     (diff-add    light-green)
     (diff-change violet)
-    ;; TODO: rename to removed?
-    (diff-del    red)
+    (diff-rem    red)
 
     (keyword     green)
     (second-key  deep-green)
@@ -534,12 +531,12 @@
     (git-gutter:unchanged (:background bg1 :foreground nil))
     (git-gutter:added     (:background bg1 :foreground diff-add :bold bold))
     (git-gutter:modified  (:background bg1 :foreground diff-change :bold bold))
-    (git-gutter:deleted   (:background bg1 :foreground diff-del :bold bold))
+    (git-gutter:deleted   (:background bg1 :foreground diff-rem :bold bold))
 
     ;; Diff-hl
     (diff-hl-insert (:background diff-add))
     (diff-hl-change (:background diff-change))
-    (diff-hl-delete (:background diff-del))
+    (diff-hl-delete (:background diff-rem))
 
     ;; Popup
     (popup-face                (:background tooltip-bg :foreground tooltip-fg :bold bold))

@@ -117,6 +117,7 @@ otherwise add at the end of the list."
       (symbol-value list-var))))
 
 ;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
+;; TODO: rewrite adding in pure style
 (defun kaolin-themes--merge-alist (base-alist add-alist)
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
