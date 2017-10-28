@@ -92,10 +92,12 @@
 
 
     (midnight-blue    "#1e2528")
-    (alt-midnigh-blue "#062732")
-    (grayish-blue     "#687184")
-    (alt-grayish-blue "#8f9ca7")
-    (dark-blue        "#2a4661")
+    ;; (alt-midnight-blue "#062732")
+    ;; (alt-midnight-blue "#12121a")
+    (alt-midnight-blue "#13131c")
+    (grayish-blue      "#687184")
+    (alt-grayish-blue  "#8f9ca7")
+    (dark-blue         "#2a4661")
     ;; TODO: (??) swap blue and soft-blue and rename to dark-blue
     (blue             "#3B6FA3")
     (alt-blue         "#267fb5")
@@ -172,14 +174,14 @@
     (comment     gray)
     ;; TODO: add var/var with style(default, bright and colored)
     (alt-comment alt-grayish-blue)
-    (functions   teal)
+    (functions   builtin)
     (str         teal-green)
     (str-alt     jade)
     (doc         str-alt)
     (type        alt-orange)
     (const       violet)
     ;; TODO: make a bit more brighter or change
-    (var         soft-pink)
+    (var         faded-blue)
     (num         red)
     (bool        num)
     (prep        lavender)
