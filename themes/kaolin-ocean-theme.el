@@ -1,72 +1,68 @@
-;;; kaolin-eclipse-theme.el --- Dark purple Kaolin theme variant
+;;; kaolin-ocean-theme.el --- Dark blue Kaolin theme
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme eclipse "Dark purple Kaolin theme variant."
+(define-kaolin-theme ocean "Dark blue Kaolin theme variant."
   ;; Palette modification
-  ((bg1  midnight-purple)
-   ;; (bg2  "#291c29")
-   ;; (bg4  "#473147")
-   (bg2       "#261a26")
-   (bg3       "#312231")
-   (bg4       "#3d2a3d")
+  ((bg1  alt-midnight-blue)
+   (bg2       "#1d1d2b")
+   (bg3       "#28283a")
+   (bg4       "#32324a")
+
    (violet    "#a78db5")
    (dark-blue "#325074")
 
-   ;; TODO: make violet a bit more bright/contrast
-
    ;; violet or lavender or purple, alt-purple, moderate-pink
-   (keyword     alt-purple)
-   (second-key  dark-purple)
-   (builtin     light-purple)
+   (keyword     moderate-blue)
+   ;; TODO: more bright
+   (second-key  bg4)
+   (builtin     teal-blue)
    (functions   builtin)
-   ;; TODO:
-   (var         alt-orange)
-   (const       lavender)
-   (type        light-jade)
-   (num         wheat)
+   (var         alt-lavender)
+   (const       alt-purple)
+   (type        cyan)
+   (num         pink)
    (bool        num)
-   (prep        moderate-blue)
+   (prep        magenta)
 
    (comment     black4)
-   (alt-comment "#4c344c")
-   (str         teal)
-   (str-alt     faded-blue)
+   (alt-comment "#34344c")
+   (str         wheat)
+   (str-alt     faded-orange)
    (doc         str-alt)
-   ;; TODO
    (warning     orange)
    (err         red)
 
    (dim-buffer alt-black)
    ;; TODO: soft blue or wheat or light-orange
-   (hl         pink)
+   (hl         dark-cyan)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
-   (pulse      dark-purple)
+   (pulse      bg4)
 
    (todo pink)
 
    (tooltip-bg    bg2)
    (tooltip-fg    light-gray)
-   ;; TODO:
-   (tooltip-hl-bg dark-purple)
-   (tooltip-hl-fg light-orange)
+   (tooltip-hl-bg bg4)
+   (tooltip-hl-fg lime)
 
-   (ivy3 teal-green)
-   (ivy4 moderate-blue)
+   (ivy2 pink)
+   (ivy3 light-orange)
+   (ivy4 light-green)
 
-   (rb1 moderate-pink)
+   (rb1 teal)
    (rb2 lavender)
    (rb3 teal)
    (rb4 faded-blue)
-   (rb5 alt-lavender)
-   (rb6 light-violet)
-   (rb7 grayish-orange)
+   (rb5 jade)
+   (rb6 teal-green)
+   (rb7 light-yellow)
    (rb8 dark-blue)
-   (rb9 soft-pink)
+   (rb9 soft-blue)
 
    (diff-add    light-jade)
    (diff-change purple)
@@ -90,18 +86,18 @@
 
    (win-border    dark-gray)
    (line-num-bg   bg1)
-   (line-num-fg   dark-purple)
-   ;; TOOD: or hl
-   (line-num-hl   violet)
-   (cursor        "#e0c3c8"))
+   (line-num-fg   bg4)
+   (line-num-hl   faded-blue)
+   (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
   (
-   (link                (:foreground light-jade :underline underline))
+   (company-tooltip-common-selection (:foreground lime))
+   (link                (:foreground cyan :underline underline))
 
    (org-code            (:foreground green))
-   (org-verbatim        (:foreground wheat))
-   (org-quote           (:foreground violet))
+   (org-verbatim        (:foreground light-green))
+   (org-quote           (:foreground faded-blue))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))
@@ -109,8 +105,8 @@
 
   ;; Set custom vars
   (custom-theme-set-variables
-   'kaolin-eclipse
+   'kaolin-ocean
    '(kaolin-hl-line-colored t)))
 
 
-;;; kaolin-eclipse-theme.el ends here
+;;; kaolin-ocean-theme.el ends here

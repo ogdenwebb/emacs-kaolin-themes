@@ -1,10 +1,12 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
 ;; TODO: delete screenshots folder
+;; TODO: org-headline-done, i.e. done org level
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
 ;; TODO: (??) add var to highlight 'keys'
 
+;; TODO: correct dim-buffer color
 ;; TODO: add the following faces to default
 ;; TODO: add custom-* and buttons
 ;; TODO: add magit faces
