@@ -31,10 +31,8 @@
 ;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim
 ;;  * kaolin-light - light variant of the original kaolin-dark
 ;;  * kaolin-eclipse - a dark purple variant
-;;
-;; Coming soon:
-;;
 ;;  * kaolin-ocean - dark blue variant
+;;
 ;;
 ;; ====  Configuration example  ====
 ;;

@@ -29,6 +29,7 @@
 
    (comment     black4)
    (alt-comment "#34344c")
+   ;; TODO: or maybe light-orange
    (str         wheat)
    (str-alt     faded-orange)
    (doc         str-alt)
@@ -84,7 +85,7 @@
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
-   (win-border    dark-gray)
+   (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   bg4)
    (line-num-hl   faded-blue)
