@@ -79,6 +79,7 @@
    (magit-hash                   (:foreground fg2))
 
    ;; Speedbar
+   ;; TODO:
    (speedbar-separator-face (:background blue))
    (speedbar-directory-face (:foreground teal))
    (speedbar-file-face      (:foreground green))

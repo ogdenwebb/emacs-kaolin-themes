@@ -1,7 +1,9 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
+;; TODO: delete screenshots folder
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
+;; TODO: (??) add var to highlight 'keys'
 
 ;; TODO: add the following faces to default
 ;; TODO: add custom-* and buttons
@@ -177,7 +179,7 @@
     (type        alt-orange)
     (const       violet)
     ;; TODO: make a bit more brighter or change
-    (var         faded-blue)
+    (var         soft-pink)
     (num         red)
     (bool        num)
     (prep        lavender)
@@ -657,15 +659,19 @@
     (beacon-fallback-background (:background pulse))
 
     ;; Helm
+    ;; TODO: (!!) find helm status line color that based on var face
     ;; TODO: update faces
+    ;; TODO: light theme: helm-find-files header
+    ;; TODO: add helm-locate-finish and helm-prefarg
+    ;; TODO: customize '[?]' write something like fsfasfsa in helm
     (helm-header                              (:foreground fg2 :underline nil :box nil))
     (helm-source-header                       (:foreground keyword :underline nil :bold bold))
-    (helm-match                               (:foreground orange :bold bold))
+    (helm-match                               (:foreground type :bold bold))
     (helm-header-line-left-margin             (:background blue :foreground bg1))
-    (helm-selection                           (:background bg2 :foreground orange :bold bold))
-    (helm-selection-line                      (:background bg2 :foreground orange :bold bold))
+    (helm-selection                           (:background bg2 :foreground type :bold bold))
+    (helm-selection-line                      (:background bg2 :foreground type :bold bold))
     (helm-visible-mark                        (:foreground blue))
-    (helm-candidate-number                    (:foreground hl))
+    (helm-candidate-number                    (:foreground light-jade))
     (helm-separator                           (:foreground type))
     (helm-time-zone-current                   (:foreground builtin))
     (helm-time-zone-home                      (:foreground type))
