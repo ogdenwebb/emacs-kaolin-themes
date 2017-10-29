@@ -5,6 +5,7 @@
 ;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
 ;; TODO: (??) add var to highlight 'keys'
+;; TODO: parens mismatch
 
 ;; TODO: correct dim-buffer color
 ;; TODO: add the following faces to default
