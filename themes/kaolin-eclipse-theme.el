@@ -15,15 +15,13 @@
    (violet    "#a78db5")
    (dark-blue "#325074")
 
-   ;; TODO: make violet a bit more bright/contrast
-
    ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     alt-purple)
    (second-key  dark-purple)
    (builtin     light-purple)
    (functions   builtin)
    ;; TODO:
-   (var         alt-orange)
+   (var         faded-orange)
    (const       lavender)
    (type        light-jade)
    (num         wheat)
@@ -35,12 +33,10 @@
    (str         teal)
    (str-alt     faded-blue)
    (doc         str-alt)
-   ;; TODO
-   (warning     orange)
+   (warning     alt-orange)
    (err         red)
 
    (dim-buffer alt-black)
-   ;; TODO: soft blue or wheat or light-orange
    (hl         pink)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
@@ -98,7 +94,9 @@
   ;; Custom theme set faces
   (
    (link                (:foreground light-jade :underline underline))
+   (show-paren-mismatch (:background bg2 :foreground alt-red))
 
+   ;; TODO: change
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
    (org-quote           (:foreground violet))

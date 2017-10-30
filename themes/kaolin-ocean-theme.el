@@ -14,9 +14,8 @@
    (violet    "#a78db5")
    (dark-blue "#325074")
 
-   ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     moderate-blue)
-   ;; TODO: more bright
+   ;; TODO: a bit more bright
    (second-key  bg4)
    (builtin     teal-blue)
    (functions   builtin)
@@ -29,7 +28,6 @@
 
    (comment     black4)
    (alt-comment "#34344c")
-   ;; TODO: or maybe light-orange
    (str         wheat)
    (str-alt     faded-orange)
    (doc         str-alt)
@@ -37,7 +35,6 @@
    (err         red)
 
    (dim-buffer alt-black)
-   ;; TODO: soft blue or wheat or light-orange
    (hl         dark-cyan)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
@@ -95,6 +92,7 @@
   (
    (company-tooltip-common-selection (:foreground lime))
    (link                (:foreground cyan :underline underline))
+   (show-paren-mismatch (:background bg2 :foreground alt-red))
 
    (org-code            (:foreground green))
    (org-verbatim        (:foreground light-green))

@@ -8,6 +8,7 @@
   ;; Palette modification
   (
    ;; TODO: lime color
+   ;; TODO: fix type/const faces; see 1.cpp file
    (blue         "#65a0a6")
    ;; (pink        "#ca4b7f")
    (pink         "#d45589")
