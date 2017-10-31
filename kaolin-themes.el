@@ -67,6 +67,7 @@
 
 (require 'kaolin-themes-lib)
 
+
 (defgroup kaolin-themes nil
   "Kaolin theme properties"
   :group 'faces)
@@ -88,7 +89,13 @@
   :group 'kaolin-themes)
 
 (defcustom kaolin-hl-line-colored nil
-  "When t, will display colored hl-line style instead dim gray"
+  "When t, will display colored hl-line style instead dim gray."
+  :group 'kaolin-themes)
+
+;; TODO:
+(defcustom kaolin-comment-style 'normal
+  "Sets the style of comments: normal, bright or colored."
+  :options '(bright normal color)
   :group 'kaolin-themes)
 
 (defface kaolin-boolean nil
@@ -136,7 +143,7 @@ otherwise add at the end of the list."
 
     `(autothemer-deftheme ,kaolin-theme-name ,doc
 
-                          ((((class color) (min-colors #xFFFFFF)) ; 24bit guit
+                          ((((class color) (min-colors #xFFFFFF)) ; 24bit gui
                             ((class color) (min-colors #xFF))     ; 256
                             t)                                    ; tty
 

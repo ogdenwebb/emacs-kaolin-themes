@@ -1,14 +1,13 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
+;; TODO: (!!) Add extra colors per class
 ;; TODO: delete screenshots folder
 ;; TODO: org-headline-done, i.e. done org level
-;; TODO: Add extra colors per class
 ;; TODO: add to all colors light and dark variant
-;; TODO: (??) add var to highlight 'keys'
-;; TODO: parens mismatch
+;; TODO: (??) add var to highlight key seq'
 
 ;; TODO: correct dim-buffer color
-;; TODO: add the following faces to default
+;; TODO: add the following faces to lib:
 ;; TODO: add custom-* and buttons
 ;; TODO: add magit faces
 
@@ -175,7 +174,6 @@
     (second-key  deep-green)
     (builtin     teal)
     (comment     gray)
-    ;; TODO: add var/var with style(default, bright and colored)
     (alt-comment alt-grayish-blue)
     (functions   builtin)
     (str         teal-green)
@@ -183,7 +181,6 @@
     (doc         str-alt)
     (type        alt-orange)
     (const       violet)
-    ;; TODO: make a bit more brighter or change
     (var         faded-blue)
     (num         red)
     (bool        num)
@@ -591,8 +588,6 @@
     (org-todo                      (:foreground todo :bold bold))
     (org-done                      (:foreground done  :bold bold))
     (org-ellipsis                  (:foreground builtin))
-    ;; (org-code                      (:foreground light-yellow))
-    ;; (org-verbatim                  (:foreground soft-blue))
     (org-date                      (:foreground light-yellow :underline underline))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground light-yellow))
