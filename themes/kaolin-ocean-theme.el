@@ -34,7 +34,7 @@
    (warning     orange)
    (err         red)
 
-   (dim-buffer alt-black)
+   (dim-buffer "#0F0F17")
    (hl         dark-cyan)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
