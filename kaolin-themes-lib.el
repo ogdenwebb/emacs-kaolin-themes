@@ -1,12 +1,10 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
 ;; TODO: (!!) Add extra colors per class
-;; TODO: delete screenshots folder
 ;; TODO: org-headline-done, i.e. done org level
 ;; TODO: add to all colors light and dark variant
 ;; TODO: (??) add var to highlight key seq'
 
-;; TODO: correct dim-buffer color
 ;; TODO: add the following faces to lib:
 ;; TODO: add custom-* and buttons
 ;; TODO: add magit faces
@@ -711,7 +709,6 @@
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
     (swiper-match-face-3 (:background bg2 :foreground ivy3 :bold bold))
     (swiper-match-face-4 (:background bg2 :foreground ivy4 :bold bold))
-    ;; (swiper-line-face    (:inherit 'font-lock-string-face))
     (swiper-line-face    (:inherit 'hl-line))))
 
 ;; Predefined Kaolin variables
