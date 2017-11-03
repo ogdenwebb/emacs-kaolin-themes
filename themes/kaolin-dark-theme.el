@@ -10,15 +10,12 @@
   ;; Theme faces
   (
    ;; Interface
-   (button                (:inherit 'link))
+   ;; TODO:
    (custom-button         (:background bg3 :foreground grayish-orange :box (:line-width 2 :color bg2 :style 'released-button)))
    (custom-button-mouse   (:background bg4 :foreground light-orange :box (:line-width 2 :color bg2 :style 'released-button)))
    (custom-button-pressed (:background bg4 :foreground light-orange :box (:line-width 2 :color bg2 :style 'pressed-button)))
    (custom-visibility     (:background nil :foreground cyan :height 0.9 :underline underline))
-   (custom-state          (:background nil :foreground green))
-   (custom-changed        (:background nil :foreground orange))
    (custom-set            (:background nil :foreground teal-green))
-   (custom-invalid        (:background nil :foreground red))
    (custom-face-tag       (:background nil :foreground purple :bold bold))
    (custom-link           (:background nil :foreground teal :bold bold))
    (widget-button         (:background nil :foreground green :bold bold))

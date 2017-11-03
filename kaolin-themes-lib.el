@@ -268,7 +268,16 @@
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
     (isearch-fail (:background nil :foreground red))
 
+
+    ;; Interface
     (package-name (:inherit 'link :underline nil))
+    (button                (:inherit 'link))
+    (custom-state          (:background nil :foreground green))
+    (custom-changed        (:background nil :foreground orange))
+    (custom-visibility     (:background nil :foreground cyan :height 0.9 :underline underline))
+    (custom-invalid        (:background nil :foreground red))
+    (custom-set            (:background nil :foreground light-jade))
+    (widget-documentation  (:background nil :foreground var))
 
     ;; Highlighting
     (highlight                (:background bg2 :foreground light-orange))
