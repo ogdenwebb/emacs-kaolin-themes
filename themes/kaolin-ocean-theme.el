@@ -105,7 +105,15 @@
   ;; Set custom vars
   (custom-theme-set-variables
    'kaolin-ocean
-   '(kaolin-hl-line-colored t)))
+   '(kaolin-hl-line-colored t)
+
+   (when kaolin-git-gutter-solid
+     (custom-theme-set-faces
+      'kaolin-ocean
+      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
+      `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem))))))))
+
 
 
 ;;; kaolin-ocean-theme.el ends here

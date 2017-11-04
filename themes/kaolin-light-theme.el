@@ -129,11 +129,14 @@
    (org-level-4         (:foreground faded-wheat :bold nil))
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
-   (org-table           (:foreground moderate-blue :bold bold))
+   (org-table           (:foreground moderate-blue :bold bold)))
 
-   (git-gutter:added    (:background diff-add :foreground diff-add))
-   (git-gutter:modified (:background diff-change :foreground diff-change))
-   (git-gutter:deleted  (:background diff-rem :foreground diff-rem))))
 
+  (when kaolin-git-gutter-solid
+    (custom-theme-set-faces
+     'kaolin-light
+     `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
+     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 ;;; kaolin-light-theme.el ends here

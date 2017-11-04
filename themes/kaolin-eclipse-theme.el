@@ -99,16 +99,19 @@
    ;; TODO: change
    (org-code            (:foreground green))
    (org-verbatim        (:foreground wheat))
-   (org-quote           (:foreground violet))
-
-   (git-gutter:added    (:background diff-add :foreground diff-add))
-   (git-gutter:modified (:background diff-change :foreground diff-change))
-   (git-gutter:deleted  (:background diff-rem :foreground diff-rem)))
+   (org-quote           (:foreground violet)))
 
   ;; Set custom vars
   (custom-theme-set-variables
    'kaolin-eclipse
-   '(kaolin-hl-line-colored t)))
+   '(kaolin-hl-line-colored t))
+
+  (when kaolin-git-gutter-solid
+    (custom-theme-set-faces
+     'kaolin-eclipse
+     `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
+     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
 ;;; kaolin-eclipse-theme.el ends here

@@ -136,7 +136,14 @@
    (ivy-remote              (:foreground red))
    (ivy-cursor              (:background bg3 :foreground fg1))
    (ivy-match-required-face (:background nil :foreground alt-red :bold nil))
-   (ivy-confirm-face        (:background nil :foreground light-orange))))
+   (ivy-confirm-face        (:background nil :foreground light-orange)))
+
+  (when kaolin-git-gutter-solid
+    (custom-theme-set-faces
+     'kaolin-dark
+     `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
+     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
 ;;; kaolin-dark-theme.el ends here

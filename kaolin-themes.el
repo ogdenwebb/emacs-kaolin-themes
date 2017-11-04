@@ -5,7 +5,7 @@
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "24.3") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.0.2
+;; Version: 1.0.3
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -96,6 +96,10 @@
 (defcustom kaolin-comment-style 'normal
   "Sets the style of comments: normal, bright or colored."
   :options '(bright normal color)
+  :group 'kaolin-themes)
+
+(defcustom kaolin-git-gutter-solid nil
+  "If t, display solid line to highlight git-gutter changes in fringe."
   :group 'kaolin-themes)
 
 (defface kaolin-boolean nil
