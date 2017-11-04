@@ -8,12 +8,12 @@
   ;; Palette modification
   (
    ;; TODO: lime color
-   ;; TODO: fix type/const faces; see 1.cpp file
-   (blue         "#65a0a6")
+   (blue         "#5c9499")
    ;; (pink        "#ca4b7f")
+   (dark-blue     "#445588")
    (pink         "#d45589")
    (dark-jade    "#3e594e")
-   (pure-orange  "#d18129")
+   (pure-orange  "#d1832e")
    (faded-orange "#c78e6d")
 
    ;; Color vars
@@ -40,31 +40,29 @@
 
    (keyword     jade)
    (second-key  light-jade)
-   ;; TODO:
-   (var         pure-orange)
-   (const       faded-orange)
+   (var         lavender)
+   (const       faded-blue)
    (builtin     blue)
    ;; TODO:
    (comment     "#9aa88c")
    (alt-comment alt-grayish-blue)
    (functions   builtin)
-   (str         lavender)
-   (str-alt     faded-blue)
+   (str         moderate-pink)
+   (str-alt     dark-violet)
    (doc         str-alt)
-   ;; TODO
-   (type        faded-orange)
-   (num         moderate-pink)
+   (type        dark-green)
+   (num         faded-orange)
    (bool        num)
-   (prep        pink)
+   (prep        dark-blue)
    (warning     orange)
    (err         red)
 
-   (dim-buffer alt-black)
+   (dim-buffer alt-white)
    ;; TODO: soft blue or wheat or light-orange
    (hl         alt-purple)
    ;; TODO: change bg2 to smth
    (hl-line    (if kaolin-hl-line-colored bg2 white2))
-   (hl-indent  gray)
+   (hl-indent  light-gray)
    ;; TODO:
    (selection white2)
    ;; TODO:
@@ -79,13 +77,13 @@
 
     ;; TODO:
    (rb1 green)
-   (rb2 violet)
-   (rb3 jade)
-   (rb4 faded-blue)
+   (rb2 dark-violet)
+   (rb3 moderate-blue)
+   (rb4 blue)
    (rb5 green)
-   (rb6 light-violet)
-   (rb7 grayish-orange)
-   (rb8 grayish-magenta)
+   (rb6 moderate-pink)
+   (rb7 faded-orange)
+   (rb8 jade)
    (rb9 lavender)
 
    (diff-add    light-jade)
@@ -121,15 +119,18 @@
    (ivy3          pure-orange)
    (ivy4          red))
 
-  ((link                (:foreground soft-blue :underline underline))
+  ((link                   (:foreground soft-blue :underline underline))
 
-   (org-level-1         (:foreground green :bold bold :height 1.1))
-   (org-level-2         (:foreground faded-blue :bold nil))
-   (org-level-3         (:foreground faded-orange :bold nil))
-   (org-level-4         (:foreground faded-wheat :bold nil))
-   (org-code            (:foreground green))
-   (org-verbatim        (:foreground wheat))
-   (org-table           (:foreground moderate-blue :bold bold)))
+   (org-level-1            (:foreground green :bold bold :height 1.1))
+   (org-level-2            (:foreground faded-blue :bold nil))
+   (org-level-3            (:foreground faded-orange :bold nil))
+   (org-level-4            (:foreground faded-wheat :bold nil))
+   (org-code               (:foreground green))
+   (org-verbatim           (:foreground wheat))
+   (org-table              (:foreground moderate-blue :bold bold))
+   (company-tooltip-common-selection (:foreground blue))
+
+   (js2-object-property          (:foreground brown)))
 
 
   (when kaolin-git-gutter-solid
