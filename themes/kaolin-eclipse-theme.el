@@ -26,7 +26,9 @@
    (type        light-jade)
    (num         wheat)
    (bool        num)
-   (prep        moderate-blue)
+   ;; (prep        moderate-blue "#8787f5")
+   ;; (prep        moderate-blue "#5f5faf")
+   (prep        moderate-blue "#5f87af")
 
    (comment     black4)
    (alt-comment "#4c344c")
@@ -86,9 +88,9 @@
 
    (win-border    dark-gray)
    (line-num-bg   bg1)
-   (line-num-fg   dark-purple)
+   (line-num-fg   dark-purple black4)
    ;; TOOD: or hl
-   (line-num-hl   violet)
+   (line-num-hl   violet light-gray)
    (cursor        "#e0c3c8"))
 
   ;; Custom theme set faces

@@ -19,6 +19,8 @@
 ;; TODO: (??) add -pkg.el
 ;; TODO: (??) outline-* faces
 
+;; TODO: line-num opt: hl or mono(gray)
+
 ;; TODO: add colored selection option
 
 ;; Predefined Kaolin palette
@@ -70,7 +72,7 @@
     (yellow          "#acb370")
     (alt-yellow      "#be9266")
     (light-yellow    "#c9bb87")
-    (wheat           "#b9c791")
+    (wheat           "#b9c791" "#ffd7a5")
     (alt-wheat       "#fdd5b1")
     (faded-wheat     "#D9CA9B")
 
@@ -92,10 +94,10 @@
     (teal-green         "#6fb593")
 
 
-    (midnight-blue    "#1e2528")
+    (midnight-blue    "#1e2528" black2)
     ;; (alt-midnight-blue "#062732")
     ;; (alt-midnight-blue "#12121a")
-    (alt-midnight-blue "#13131c")
+    (alt-midnight-blue "#13131c" black2)
     (grayish-blue      "#687184")
     (alt-grayish-blue  "#8f9ca7")
     (dark-blue         "#2a4661")

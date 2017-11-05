@@ -28,7 +28,7 @@
 
    (comment     black4)
    (alt-comment "#34344c")
-   (str         wheat)
+   (str         wheat "#ffd787")
    (str-alt     faded-orange)
    (doc         str-alt)
    (warning     orange)
@@ -85,7 +85,7 @@
    (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   bg4)
-   (line-num-hl   faded-blue)
+   (line-num-hl   faded-blue light-gray)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
