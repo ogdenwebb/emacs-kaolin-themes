@@ -114,7 +114,7 @@
 
    (cursor        gray)
 
-   (ivy1          bg4)
+   (ivy1          light-gray)
    (ivy2          alt-blue)
    (ivy3          pure-orange)
    (ivy4          red))

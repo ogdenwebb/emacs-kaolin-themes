@@ -6,10 +6,10 @@
 
 (define-kaolin-theme ocean "Dark blue Kaolin theme variant."
   ;; Palette modification
-  ((bg1  alt-midnight-blue)
-   (bg2       "#1d1d2b")
-   (bg3       "#28283a")
-   (bg4       "#32324a")
+  ((bg1 alt-midnight-blue black1)
+   (bg2 "#1d1d2b" black2)
+   (bg3 "#28283a" black3)
+   (bg4 "#32324a" black4)
 
    (violet    "#a78db5")
    (dark-blue "#325074")
@@ -105,14 +105,14 @@
   ;; Set custom vars
   (custom-theme-set-variables
    'kaolin-ocean
-   '(kaolin-hl-line-colored t)
+   '(kaolin-hl-line-colored t))
 
-   (when kaolin-git-gutter-solid
-     (custom-theme-set-faces
-      'kaolin-ocean
-      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
-      `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
-      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem))))))))
+  (when kaolin-git-gutter-solid
+    (custom-theme-set-faces
+     'kaolin-ocean
+     `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
+     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
 
