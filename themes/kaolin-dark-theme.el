@@ -11,9 +11,6 @@
   (
    ;; Interface
    ;; TODO:
-   (custom-button         (:background bg3 :foreground grayish-orange :box (:line-width 2 :color bg2 :style 'released-button)))
-   (custom-button-mouse   (:background bg4 :foreground light-orange :box (:line-width 2 :color bg2 :style 'released-button)))
-   (custom-button-pressed (:background bg4 :foreground light-orange :box (:line-width 2 :color bg2 :style 'pressed-button)))
    (custom-visibility     (:background nil :foreground cyan :height 0.9 :underline underline))
    (custom-set            (:background nil :foreground teal-green))
    (custom-face-tag       (:background nil :foreground purple :bold bold))
