@@ -22,6 +22,7 @@
 ;; TODO: line-num opt: hl or mono(gray)
 
 ;; TODO: add colored selection option
+;; TODO: distant foregound
 
 ;; Predefined Kaolin palette
 (defconst kaolin-palette
@@ -62,7 +63,7 @@
     (light-pink      "#ef98aa")
     (soft-pink       "#fbaed2")
 
-    (faded-orange    "#cd9575")
+    (faded-orange    "#cd9575" "#d7af87")
     (alt-orange      "#d9a76f")
     (orange          "#dbac66")
     (light-orange    "#ddc085")
