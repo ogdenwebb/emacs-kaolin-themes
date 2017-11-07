@@ -9,7 +9,7 @@
   (
    ;; TODO: lime color
    (blue         "#5c9499")
-   ;; (pink        "#ca4b7f")
+   ;; (jade         "#597a6e")
    (dark-blue     "#445588")
    (pink         "#d45589")
    (dark-jade    "#3e594e")
@@ -18,11 +18,10 @@
 
    ;; Color vars
    ;; grayish green
-   ;; A bit more bright; see screenshots on github
-   (bg1 "#ccd0c8")
-   (bg2 "#c2c7bd")
-   (bg3 "#b8beb3")
-   (bg4 "#afb5a8")
+   (bg1 "#cfd2cb")
+   (bg2 "#c5c9c0")
+   (bg3 "#bcc0b6")
+   (bg4 "#b2b7ab")
    ;; grayish blue
    ;; (bg1 "#c8ccd0")
    ;; origin
