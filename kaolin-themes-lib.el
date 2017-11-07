@@ -23,6 +23,8 @@
 
 ;; TODO: add colored selection option
 ;; TODO: distant foregound
+;; TODO: move git-gutter faces from a theme file to lib,
+;; i.e. avoid duplication
 
 ;; Predefined Kaolin palette
 (defconst kaolin-palette
@@ -36,6 +38,7 @@
     (dim-gray        "#353535")
     (gray            "#545c5e")
     (alt-gray        "#60696b")
+    (bright-gray     "#7b878a")
     (light-gray      "#9191a2")
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
@@ -85,7 +88,8 @@
     (alt-midnight-green "#0F1E1D")
     (deep-green         "#39656b")
     (grayish-green      "#9ca78f")
-    (green              "#4a858c")
+    ;; (green              "#4a858c")
+    (green              "#4d8d93")
     (dark-green         "#39855f")
     (light-green        "#54b685")
     (lime               "#85b654")
@@ -105,7 +109,8 @@
     ;; TODO: (??) swap blue and soft-blue and rename to dark-blue
     (blue             "#3B6FA3")
     (alt-blue         "#267fb5")
-    (moderate-blue    "#4e7f95")
+    ;; (moderate-blue    "#4e7f95")
+    (moderate-blue    "#53859d")
     (soft-blue        "#4CA6E8")
     (dark-cyan        "#008b8b")
     (cyan             "#54b6b6")
