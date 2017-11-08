@@ -83,6 +83,7 @@
    (speedbar-button-face    (:foreground jade))
 
    ;; Perl6
+   ;; TODO:
    (perl6-phaser          (:foreground cyan))
    (perl6-type-constraint (:inherit 'font-lock-keyword-face))
 

@@ -18,10 +18,10 @@
 
    ;; Color vars
    ;; grayish green
-   (bg1 "#cfd2cb")
-   (bg2 "#c5c9c0")
-   (bg3 "#bcc0b6")
-   (bg4 "#b2b7ab")
+   (bg1 "#dcded9")
+   (bg2 "#cfd2cb")
+   (bg3 "#c5c9c0")
+   (bg4 "#bcc0b6")
    ;; grayish blue
    ;; (bg1 "#c8ccd0")
    ;; origin
