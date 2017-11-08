@@ -17,7 +17,7 @@
 
    ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     alt-purple)
-   (second-key  dark-purple)
+   (second-key  dark-purple alt-purple)
    (builtin     light-purple)
    (functions   builtin)
    ;; TODO:

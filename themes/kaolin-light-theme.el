@@ -38,7 +38,7 @@
 
 
    (keyword     jade)
-   (second-key  light-jade)
+   (second-key  jade)
    (var         lavender)
    (const       faded-blue)
    (builtin     blue)
@@ -59,8 +59,8 @@
    (dim-buffer alt-white)
    ;; TODO: soft blue or wheat or light-orange
    (hl         alt-purple)
-   ;; TODO: change bg2 to smth
-   (hl-line    (if kaolin-hl-line-colored bg2 white2))
+   ;; TODO: add colored
+   (hl-line    (if kaolin-hl-line-colored bg2 bg2))
    (hl-indent  light-gray)
    ;; TODO:
    (selection white2)
@@ -125,7 +125,7 @@
    (org-level-3            (:foreground faded-orange :bold nil))
    (org-level-4            (:foreground faded-wheat :bold nil))
    (org-code               (:foreground green))
-   (org-verbatim           (:foreground wheat))
+   (org-verbatim           (:foreground alt-yellow))
    (org-table              (:foreground moderate-blue :bold bold))
    (company-tooltip-common-selection (:foreground blue))
 

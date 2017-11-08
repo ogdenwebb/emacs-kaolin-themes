@@ -16,7 +16,7 @@
 
    (keyword     moderate-blue)
    ;; TODO: a bit more bright
-   (second-key  bg4)
+   (second-key  bg4 alt-purple)
    (builtin     teal-blue)
    (functions   builtin)
    (var         alt-lavender)
