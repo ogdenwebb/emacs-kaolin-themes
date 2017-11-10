@@ -18,6 +18,8 @@ All screenshots are available in the wiki on the following pages:
 * [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light version of the original Kaolin theme.
 * [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant.
 * [kaolin-ocean](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-ocean-theme) - a dark blue variant.
+* [kaolin-tribal](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-tribal-theme) - theme based on Tribal color scheme by Dayle Rees.
+
 
 # Installation
 ## MELPA
