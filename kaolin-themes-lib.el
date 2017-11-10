@@ -572,15 +572,15 @@
     (popup-tip-face            (:background tooltip-hl-bg :foreground builtin :bold bold))
 
     ;; Terminal
-    (term               (:foreground fg1))
-    (term-color-black   (:foreground bg1))
+    (term               (:background bg1 :foreground fg1))
+    (term-color-black   (:foreground black1))
     (term-color-blue    (:foreground blue))
     (term-color-red     (:foreground red))
     (term-color-green   (:foreground green))
     (term-color-yellow  (:foreground yellow))
     (term-color-magenta (:foreground purple))
     (term-color-cyan    (:foreground cyan))
-    (term-color-white   (:foreground fg2))
+    (term-color-white   (:foreground white2))
 
     ;; EShell
     (eshell-prompt        (:foreground green :bold bold))
