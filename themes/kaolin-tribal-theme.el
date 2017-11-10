@@ -39,7 +39,7 @@
    (err         red)
 
    (dim-buffer "#140E14")
-   (hl         pink)
+   (hl         soft-blue)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
@@ -51,11 +51,12 @@
    (tooltip-bg    bg2)
    (tooltip-fg    light-gray)
    ;; TODO:
-   (tooltip-hl-bg dark-purple)
-   (tooltip-hl-fg light-orange)
+   (tooltip-hl-bg bg4)
+   (tooltip-hl-fg light-violet)
 
-   (ivy3 teal-green)
-   (ivy4 moderate-blue)
+   (ivy2 jade)
+   (ivy3 faded-orange)
+   (ivy4 alt-blue)
 
    (rb1 moderate-pink)
    (rb2 lavender)
@@ -93,7 +94,7 @@
    (line-num-fg   bg4 black4)
    ;; TOOD: or hl
    (line-num-hl   faded-blue light-gray)
-   (cursor        "#e0c3c8"))
+   (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
   (
