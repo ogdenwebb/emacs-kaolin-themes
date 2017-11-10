@@ -26,6 +26,8 @@
 ;; TODO: move git-gutter faces from a theme file to lib,
 ;; i.e. avoid duplication
 
+;; TODO: Rename gray colors to  gray1, gray2, etc
+
 ;; Predefined Kaolin palette
 (defconst kaolin-palette
   '((black1          "#1b1b1b")
@@ -57,7 +59,6 @@
     ;; TODO:
     (dark-red        "#832729")
     (red             "#cd5c5c")
-    ;; (faded-red       "#a94d53")
     (faded-red       "#863d42")
     (alt-red         "#c93232")
     (light-red       "#d66e75")
@@ -617,6 +618,7 @@
     (org-hide                      (:foreground bg1))
     (org-special-keyword           (:foreground functions))
     (org-table                     (:foreground var :bold bold))
+    (org-formula                   (:foreground type))
     (org-warning                   (:foreground warning :underline underline))
 
     (org-document-info-keyword     (:foreground second-key))

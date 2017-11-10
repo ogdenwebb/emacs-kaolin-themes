@@ -14,12 +14,11 @@
    (bg4       "#34343d" black4)
    (violet    "#a78db5")
    (dark-blue "#325074")
-   (faded-red "#8e363c")
    (faded-red "#9c3b42")
 
    ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     faded-red)
-   (second-key  dark-purple alt-purple)
+   (second-key  "#642628" alt-purple)
    (builtin     grayish-blue)
    (functions   builtin)
    ;; TODO:
@@ -30,6 +29,7 @@
    (bool        num)
    (prep        moderate-blue "#5f87af")
 
+   ;; TODO:
    (comment     bg4)
    (alt-comment "#4c344c")
    (str         cyan)
@@ -45,7 +45,8 @@
    (selection  bg4)
    (pulse      dark-blue)
 
-   (todo pink)
+   (todo faded-red)
+   (done light-green)
 
    (tooltip-bg    bg2)
    (tooltip-fg    light-gray)
@@ -60,11 +61,11 @@
    (rb2 lavender)
    (rb3 teal)
    (rb4 faded-blue)
-   (rb5 alt-lavender)
-   (rb6 light-violet)
+   (rb5 lavender)
+   (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 dark-blue)
-   (rb9 soft-pink)
+   (rb8 dark-cyan)
+   (rb9 faded-red)
 
    (diff-add    light-jade)
    (diff-change purple)
@@ -74,6 +75,7 @@
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
+   (line-color2       lavender)
    (line-border       bg3)
 
    (segment-active    gray)
@@ -95,13 +97,15 @@
 
   ;; Custom theme set faces
   (
-   (link                (:foreground light-jade :underline underline))
+   (link                (:foreground dark-cyan :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 
-   ;; TODO: change
-   (org-code            (:foreground green))
-   (org-verbatim        (:foreground wheat))
-   (org-quote           (:foreground violet)))
+   (org-document-title  (:foreground moderate-pink :bold bold))
+   (org-document-info   (:foreground moderate-pink))
+   (org-date            (:foreground teal-green :underline underline))
+   (org-code            (:foreground faded-orange))
+   (org-verbatim        (:foreground orange))
+   (org-quote           (:foreground faded-blue)))
 
   ;; Set custom vars
   (custom-theme-set-variables

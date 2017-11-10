@@ -33,7 +33,6 @@
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
    (org-checkbox-statistics-done  (:foreground teal-green :bold bold))
    (org-hide                      (:foreground bg2))
-   (org-formula                   (:foreground orange))
    (org-agenda-structure          (:background bg3 :foreground fg3 :bold bold))
    (org-agenda-date               (:foreground light-yellow :height 1.1))
    (org-agenda-date-today         (:foreground purple :height 1.2 :bold bold))
