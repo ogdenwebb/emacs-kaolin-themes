@@ -371,9 +371,9 @@
 
     ;; Modeline
     (mode-line           (:box (:line-width 2 :color line-bg2) :background line-bg1 :foreground var :bold bold))
+    (mode-line-inactive  (:box (:line-width 2 :color line-bg1) :background line-bg1 :foreground light-gray :bold bold))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
-    (mode-line-inactive  (:box (:line-width 2 :color line-bg1) :background line-bg1 :foreground light-gray :bold bold))
     (mode-line-emphasis  (:foreground fg1))
 
     ;; Telephone-line

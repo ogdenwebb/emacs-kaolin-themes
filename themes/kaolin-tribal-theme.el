@@ -46,7 +46,7 @@
    (selection  bg4)
    (pulse      dark-blue)
 
-   (todo faded-red)
+   (todo pink)
    (done light-green)
 
    (tooltip-bg    bg2)
@@ -55,18 +55,18 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg light-violet)
 
-   (ivy2 light-jade)
+   (ivy2 dark-green)
    (ivy3 faded-orange)
    (ivy4 alt-blue)
 
    (rb1 moderate-pink)
    (rb2 lavender)
-   (rb3 teal)
+   (rb3 light-brown)
    (rb4 faded-blue)
-   (rb5 lavender)
+   (rb5 brown)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 dark-cyan)
+   (rb8 purple)
    (rb9 faded-red)
 
    (diff-add    light-jade)
