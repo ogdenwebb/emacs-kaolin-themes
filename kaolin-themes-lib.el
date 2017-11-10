@@ -288,6 +288,8 @@
     (custom-button         (:background bg3 :foreground button :box (:line-width 2 :color bg2 :style 'released-button)))
     (custom-button-mouse   (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'released-button)))
     (custom-button-pressed (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'pressed-button)))
+    (custom-button-unraised (:inherit 'custom-button))
+    (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
     (custom-state          (:background nil :foreground green))
     (custom-changed        (:background nil :foreground orange))
     (custom-visibility     (:background nil :foreground cyan :height 0.9 :underline underline))

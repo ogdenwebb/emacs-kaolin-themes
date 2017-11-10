@@ -39,6 +39,7 @@
    (err         red)
 
    (dim-buffer "#140E14")
+   ;; TODO: or soft/light-pink
    (hl         soft-blue)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
@@ -54,7 +55,7 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg light-violet)
 
-   (ivy2 jade)
+   (ivy2 light-jade)
    (ivy3 faded-orange)
    (ivy4 alt-blue)
 
