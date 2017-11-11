@@ -68,9 +68,9 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan)
 
-   (ivy2 dark-green)
+   (ivy2 cyan)
    (ivy3 faded-orange)
-   (ivy4 alt-blue)
+   (ivy4 faded-red)
 
    (rb1 moderate-pink)
    (rb2 lavender)
