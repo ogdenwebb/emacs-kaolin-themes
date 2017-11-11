@@ -27,6 +27,7 @@
 ;; i.e. avoid duplication
 
 ;; TODO: Rename gray colors to  gray1, gray2, etc
+;; TODO: add company-tooltip-common-selection to new themes
 
 ;; Predefined Kaolin palette
 (defconst kaolin-palette

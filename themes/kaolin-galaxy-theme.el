@@ -30,7 +30,6 @@
    (lime         "#73c66c")
    (light-green  "#6dd797")
 
-   ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     light-violet)
    (second-key  "#642628" alt-purple)
    (builtin     violet)
@@ -41,24 +40,21 @@
    (const       wheat)
    (type        green)
    ;; TODO adjust light-jade color(more bright)
-   (num         light-jade)
+   (num         red)
    (bool        num)
    (prep        pink "#5f87af")
 
+   (comment     gray)
    ;; TODO:
-   (comment     bg4)
    (alt-comment "#4c344c")
-   ;; TODO: pink & dark-pink
    (str         teal-blue)
-   ;; TOOD: faded/dark-pink
    (str-alt     grayish-blue)
    (doc         str-alt)
    (warning     alt-orange)
    (err         red)
 
    (dim-buffer "#140E14")
-   ;; TODO: or soft/light-pink
-   (hl         soft-blue)
+   (hl         light-green)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
@@ -69,9 +65,8 @@
 
    (tooltip-bg    bg2)
    (tooltip-fg    light-gray)
-   ;; TODO:
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg light-violet)
+   (tooltip-hl-fg cyan)
 
    (ivy2 dark-green)
    (ivy3 faded-orange)
@@ -117,6 +112,7 @@
 
   ;; Custom theme set faces
   (
+   (company-tooltip-common-selection (:foreground light-green))
    (link                (:foreground dark-cyan :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 
