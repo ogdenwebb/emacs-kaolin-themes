@@ -31,7 +31,7 @@
    (light-green  "#6dd797")
 
    (keyword     light-violet)
-   (second-key  "#642628" alt-purple)
+   (second-key  purple alt-purple)
    (builtin     violet)
    (functions   builtin)
    ;; (var         lime)
@@ -113,11 +113,12 @@
   ;; Custom theme set faces
   (
    (company-tooltip-common-selection (:foreground light-green))
-   (link                (:foreground dark-cyan :underline underline))
+   ;; TODO: cyan, soft-blue, pink
+   (link                (:foreground pink :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 
-   (org-document-title  (:foreground moderate-pink :bold bold))
-   (org-document-info   (:foreground moderate-pink))
+   (org-document-title  (:foreground grayish-blue :bold bold))
+   (org-document-info   (:foreground grayish-blue))
    (org-date            (:foreground teal-green :underline underline))
    (org-code            (:foreground faded-orange))
    (org-verbatim        (:foreground orange))
