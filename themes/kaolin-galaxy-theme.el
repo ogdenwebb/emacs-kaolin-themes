@@ -7,13 +7,18 @@
 (define-kaolin-theme galaxy "Bright theme based on"
   ;; Palette modification
   (
-   ;; (bg1  "#18171c" black1)
-   (bg1  "#1d1c21" black1)
-   ;; (bg2  "#291c29")
-   ;; (bg4  "#473147")
-   (bg2          "#26252c" black2)
-   (bg3          "#302e36" black3)
-   (bg4          "#393741" black4)
+   ;; TODO: adjust color to steam, i.e. +1 or +2 step
+   ;; dark
+   ;; (bg1  "#1d1c21" black1)
+   ;; (bg2          "#26252c" black2)
+   ;; (bg3          "#302e36" black3)
+   ;; (bg4          "#393741" black4)
+
+   ;; Brigth
+   (bg1          "#212026" black1)
+   (bg2          "#2a2931" black2)
+   (bg3          "#33323b" black3)
+   (bg4          "#3d3b46" black4)
 
    (violet       "#9f84ae")
    (yellow       "#b9b963")
@@ -127,7 +132,7 @@
    (link                (:foreground pink :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground teal-blue))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground light-gray))
 
    (org-document-title  (:foreground grayish-blue :bold bold))

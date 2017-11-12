@@ -1,6 +1,6 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
-;; TODO: (!!) Add extra colors per class
+;; TODO: bright background option
 ;; TODO: org-headline-done, i.e. done org level
 ;; TODO: add to all colors light and dark variant
 ;; TODO: (??) add var to highlight key seq'
@@ -555,6 +555,12 @@
     (diff-added       (:background dark-green :foreground fg1))
     (diff-changed     (:background diff-change :foreground fg1))
     (diff-removed     (:background dark-red :foreground fg1))
+
+    ;; Imenu list
+    ;; TODO:
+    (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
+    (imenu-list-entry-face-1 (:foreground tooltip-fg))
+    (imenu-list-entry-face-0 (:inherit 'font-lock-type-face))
 
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))
