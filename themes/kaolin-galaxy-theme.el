@@ -32,6 +32,7 @@
 
    (keyword     light-violet)
    (second-key  purple alt-purple)
+   ;; TODO: adjust contrast with keyword
    (builtin     violet)
    (functions   builtin)
    ;; (var         lime)
@@ -44,6 +45,7 @@
    (bool        num)
    (prep        pink "#5f87af")
 
+   ;; TODO: a bit more blue
    (comment     gray)
    ;; TODO:
    (alt-comment "#4c344c")
@@ -82,9 +84,9 @@
    (rb8 purple)
    (rb9 faded-red)
 
-   (diff-add    light-jade)
-   (diff-change purple)
-   (diff-rem    faded-red)
+   (diff-add    light-green)
+   (diff-change light-violet)
+   (diff-rem    red)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -106,6 +108,8 @@
    (win-border    dark-gray)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
+
+   (evil-normal teal-blue)
    ;; TOOD: or hl
    (line-num-hl   grayish-blue light-gray)
    (cursor        "#c3c8e0"))
@@ -116,6 +120,9 @@
    ;; TODO: cyan, soft-blue, pink
    (link                (:foreground pink :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
+
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground teal-blue))
+   (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground light-gray))
 
    (org-document-title  (:foreground grayish-blue :bold bold))
    (org-document-info   (:foreground grayish-blue))
