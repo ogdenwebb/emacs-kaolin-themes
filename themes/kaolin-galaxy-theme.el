@@ -14,8 +14,8 @@
    (bg2          "#26252c" black2)
    (bg3          "#302e36" black3)
    (bg4          "#393741" black4)
+
    (violet       "#a78db5")
-   (pink         "#e55c7a")
    (yellow       "#b9b963")
    (light-yellow "#eae46a")
    ;; (dark-blue "#223344")
@@ -24,8 +24,10 @@
    (cyan         "#22aabb")
    (blue         "#2a57cc")
    ;; (blue      "#335599")
-   (alt-orange  "#ab6448")
+   (alt-orange   "#ab6448")
    (faded-red    "#9c3b42")
+   (light-red    "#e84c58")
+   (pink         "#e55c7a")
    (light-pink   "#cc7799")
    (lime         "#73c66c")
    (light-green  "#6dd797")
@@ -41,7 +43,7 @@
    (const       wheat)
    (type        green)
    ;; TODO adjust light-jade color(more bright)
-   (num         red)
+   (num         light-red)
    (bool        num)
    (prep        pink "#5f87af")
 
@@ -86,7 +88,7 @@
 
    (diff-add    light-green)
    (diff-change light-violet)
-   (diff-rem    red)
+   (diff-rem    light-red)
 
    ;; Mode-line
    (line-fg           fg4)
