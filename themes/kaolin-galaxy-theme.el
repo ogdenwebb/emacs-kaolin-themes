@@ -42,8 +42,7 @@
    (var         light-orange)
    (const       wheat)
    (type        green)
-   ;; TODO adjust light-jade color(more bright)
-   (num         light-red)
+   (num         teal)
    (bool        num)
    (prep        pink "#5f87af")
 
@@ -54,8 +53,9 @@
    (str         teal-blue)
    (str-alt     grayish-blue)
    (doc         str-alt)
-   (warning     alt-orange)
-   (err         red)
+   ;; TODO: or light-orange
+   (warning     light-yellow)
+   (err         light-red)
 
    (dim-buffer "#140E14")
    (hl         light-green)
@@ -64,7 +64,7 @@
    (selection  bg4)
    (pulse      dark-blue)
 
-   (todo pink)
+   (todo light-red)
    (done light-green)
 
    (tooltip-bg    bg2)
