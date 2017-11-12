@@ -84,6 +84,7 @@
   "If nil, disable the underline style."
   :group 'kaolin-themes)
 
+;; TODO: rename to kaolin-underline-wave
 (defcustom kaolin-wave nil
   "When t, use the wave underline style instead of regular underline."
   :group 'kaolin-themes)
