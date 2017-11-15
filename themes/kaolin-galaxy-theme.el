@@ -1,10 +1,10 @@
-;;; kaolin-galaxy-theme.el --- Bright theme based on
+;;; kaolin-galaxy-theme.el --- Bright theme based on one of the Sebastian Andaur arts.
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme galaxy "Bright theme based on"
+(define-kaolin-theme galaxy "Bright theme based on one of the Sebastian Andaur arts."
   ;; Palette modification
   (
    ;; TODO: adjust color to steam, i.e. +1 or +2 step
@@ -127,6 +127,7 @@
 
   ;; Custom theme set faces
   (
+
    (company-tooltip-common-selection (:foreground light-green))
    ;; TODO: cyan, soft-blue, pink
    (link                (:foreground pink :underline underline))
