@@ -32,6 +32,8 @@
 ;;  * kaolin-light - light variant of the original kaolin-dark
 ;;  * kaolin-eclipse - a dark purple variant
 ;;  * kaolin-ocean - dark blue variant
+;;  * kaolin-tribal - theme based on Tribal color scheme by Dayle Rees.
+;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;
 ;;
 ;; =======  Configuration example  =======

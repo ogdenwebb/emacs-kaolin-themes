@@ -753,12 +753,6 @@
 (defconst kaolin-vars
   '())
 
-;; Works
-;; (let ((palette kaolin-palette))
-;;   (cl-loop for el in test-palette
-;;            do (kaolin-themes--add-to-alist 'palette (car el) (cdr el)))
-;;   (alist-get 'yellow palette))
-
 (provide 'kaolin-themes-lib)
 
 ;;; kaolin-themes-lib.el ends here
