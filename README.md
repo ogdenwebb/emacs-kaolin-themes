@@ -4,8 +4,6 @@
 [![Emacs](https://img.shields.io/badge/Emacs-24%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-**WARNING**: The original `kaolin` theme was renamed to `kaolin-dark`.
-
 Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large number of modes and external packages.
 
 ![kaolin-logo](https://user-images.githubusercontent.com/9018005/31884317-5715a32c-b7f5-11e7-8dce-0416051f55ce.png)
