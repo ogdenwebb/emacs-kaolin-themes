@@ -426,7 +426,8 @@
     ;; Company
     (company-tooltip                  (:background tooltip-bg :foreground fg3 :bold bold))
     (company-tooltip-common           (:foreground hl))
-    (company-tooltip-common-selection (:foreground light-orange))
+    ;; TODO:
+    (company-tooltip-common-selection (:bold bold))
     (company-tooltip-selection        (:background tooltip-hl-bg :foreground tooltip-hl-fg))
     (company-tooltip-annotation       (:foreground var))
     (company-scrollbar-bg             (:background bg1))

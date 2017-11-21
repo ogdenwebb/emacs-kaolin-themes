@@ -127,7 +127,6 @@
    (org-code               (:foreground green))
    (org-verbatim           (:foreground alt-yellow))
    (org-table              (:foreground moderate-blue :bold bold))
-   (company-tooltip-common-selection (:foreground blue))
 
    (js2-object-property          (:foreground brown))
    (evil-ex-info                 (:foreground moderate-pink)))

@@ -90,7 +90,6 @@
 
   ;; Custom theme set faces
   (
-   (company-tooltip-common-selection (:foreground lime))
    (link                (:foreground cyan :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 

@@ -128,7 +128,6 @@
   ;; Custom theme set faces
   (
 
-   (company-tooltip-common-selection (:foreground light-green))
    ;; TODO: cyan, soft-blue, pink
    (link                (:foreground pink :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
