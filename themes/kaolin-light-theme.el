@@ -17,18 +17,11 @@
    (faded-orange "#c78e6d")
 
    ;; Color vars
-   ;; grayish green
-   (bg1 "#dcded9")
-   (bg2 "#cfd2cb")
-   (bg3 "#c5c9c0")
-   (bg4 "#bcc0b6")
-   ;; grayish blue
-   ;; (bg1 "#c8ccd0")
-   ;; origin
-   ;; (bg1 white1)
-   ;; (bg2 white2)
-   ;; (bg3 white3)
-   ;; (bg4 white4)
+   (bg1 "#e9eae7")
+   (bg2 "#dcded9")
+   (bg3 "#cfd2cb")
+   (bg4 "#c5c9c0")
+   ;; (bg4 "#bcc0b6")
    (fg1 dark-jade)
    (fg2 "#3e574d")
    (fg3 "#476257")
@@ -109,7 +102,7 @@
    (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   grayish-green)
-   (line-num-hl   green)
+   (line-num-hl   hl)
 
    (cursor        gray)
 
