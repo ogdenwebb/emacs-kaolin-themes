@@ -63,7 +63,7 @@
    (hl-line    (if kaolin-hl-line-colored bg2 bg2))
    (hl-indent  light-gray)
    ;; TODO:
-   (selection white2)
+   (selection bg4)
    ;; TODO:
    (pulse teal)
 
