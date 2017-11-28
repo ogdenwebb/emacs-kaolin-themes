@@ -24,9 +24,7 @@
    (yellow       "#b9b963")
    (light-yellow "#eae46a")
    (wheat        "#c8c493" "#ffd7a5")
-   ;; (dark-blue "#223344")
    (dark-blue    "#232c35")
-   ;; (blue      "#22aabb")
    (cyan         "#22aabb")
    (blue         "#2a57cc")
    ;; (blue      "#335599")
@@ -37,7 +35,6 @@
    (pink         "#e55c7a")
    (light-pink   "#cc7799")
    (lime         "#73c66c")
-   ;; (green        "#57929c")
    (green        "#609ca6")
    (light-green  "#6dd797")
 
@@ -55,7 +52,7 @@
    (bool        num)
    (prep        pink "#5f87af")
 
-   ;; TODO: a bit more blue
+   ;; TODO: a bit more blue; at least for alt-comment
    (comment     gray)
    ;; TODO:
    (alt-comment "#4c344c")

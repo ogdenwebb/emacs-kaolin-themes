@@ -1,17 +1,17 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
+;; TODO: (??) make mode-line dark in ligth themes.
 ;; TODO: bright background option
 ;; TODO: (??) disable color background for terminal
 ;; TODO: org-headline-done, i.e. done org level
 ;; TODO: add to all colors light and dark variant
 ;; TODO: (??) add var to highlight key seq'
 
-;; TODO: add the following faces to lib:
-;; TODO: add custom-* and buttons
-;; TODO: add magit faces
+;; TODO: Add the following faces to lib:
+;; TODO: custom-* and buttons
+;; TODO: magit faces
 
 ;; TODO: add mode-line option/flat mode-line style
-;; TODO: add git-gutter style option(solid or symbol)
 
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
@@ -270,7 +270,7 @@
     (italic              (:italic italic))
     (default-italic      (:italic italic))
     (bold-italic         (:bold bold :italic italic))
-    (link                (:foreground faded-orange :underline underline))
+    (link                (:foreground prep :underline underline))
     (link-visited        (:inherit 'link :underline nil))
     (success             (:background nil :foreground light-green))
     (escape-glyph        (:background nil :foreground cyan))

@@ -15,20 +15,19 @@
    (violet    "#a78db5")
    (dark-blue "#325074")
 
-   ;; violet or lavender or purple, alt-purple, moderate-pink
    (keyword     alt-purple)
    (second-key  dark-purple alt-purple)
    (builtin     light-purple)
    (functions   builtin)
    ;; TODO:
-   (var         faded-orange)
+   (var         alt-lavender)
    (const       lavender)
    (type        light-jade)
    (num         wheat)
    (bool        num)
    ;; (prep        moderate-blue "#8787f5")
    ;; (prep        moderate-blue "#5f5faf")
-   (prep        moderate-blue "#5f87af")
+   (prep        faded-orange)
 
    (comment     black4)
    (alt-comment "#4c344c")
@@ -49,7 +48,6 @@
 
    (tooltip-bg    bg2)
    (tooltip-fg    light-gray)
-   ;; TODO:
    (tooltip-hl-bg dark-purple)
    (tooltip-hl-fg light-orange)
 
