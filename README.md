@@ -1,4 +1,4 @@
-# Kaolin theme
+# Kaolin themes for GNU Emacs
 [![MELPA Stable](https://stable.melpa.org/packages/kaolin-themes-badge.svg)](https://stable.melpa.org/#/kaolin-themes)
 [![MELPA](https://melpa.org/packages/kaolin-themes-badge.svg)](https://melpa.org/#/kaolin-themes)
 [![Emacs](https://img.shields.io/badge/Emacs-24%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
