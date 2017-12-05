@@ -230,7 +230,8 @@
     (line-fg           fg4)
     (line-bg1          bg2)
     (line-bg2          gray0)
-    (line-border       bg3)
+    ;; TODO: fix that
+    (line-border       gray0)
     (line-color1       keyword)
     (line-color2       builtin)
     (segment-active    gray3)
@@ -397,8 +398,8 @@
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
-    (mode-line           (:box (:line-width 2 :color line-bg2) :background line-bg1 :foreground var :bold bold))
-    (mode-line-inactive  (:box (:line-width 2 :color line-bg1) :background line-bg1 :foreground gray9 :bold bold))
+    (mode-line           (:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
+    (mode-line-inactive  (:box (:line-width 2 :color line-border) :background line-bg1 :foreground gray9 :bold bold))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
     (mode-line-emphasis  (:foreground fg1))
