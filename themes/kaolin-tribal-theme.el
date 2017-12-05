@@ -50,7 +50,7 @@
    (done light-green)
 
    (tooltip-bg    bg2)
-   (tooltip-fg    light-gray)
+   (tooltip-fg    gray9)
    ;; TODO:
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg light-violet)
@@ -80,8 +80,8 @@
    (line-color2       lavender)
    (line-border       bg3)
 
-   (segment-active    gray)
-   (segment-inactive  gray)
+   (segment-active    gray2)
+   (segment-inactive  gray2)
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
@@ -90,11 +90,11 @@
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
-   (win-border    dark-gray)
+   (win-border    black3)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
    ;; TOOD: or hl
-   (line-num-hl   faded-blue light-gray)
+   (line-num-hl   faded-blue gray9)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces

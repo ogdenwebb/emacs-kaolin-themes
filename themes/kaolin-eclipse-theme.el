@@ -47,7 +47,7 @@
    (todo pink)
 
    (tooltip-bg    bg2)
-   (tooltip-fg    light-gray)
+   (tooltip-fg    gray9)
    (tooltip-hl-bg dark-purple)
    (tooltip-hl-fg light-orange)
 
@@ -74,8 +74,8 @@
    (line-bg2          bg3)
    (line-border       bg3)
 
-   (segment-active    gray)
-   (segment-inactive  gray)
+   (segment-active    gray2)
+   (segment-inactive  gray2)
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
@@ -84,11 +84,11 @@
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
-   (win-border    dark-gray)
+   (win-border    black3)
    (line-num-bg   bg1)
    (line-num-fg   dark-purple black4)
    ;; TOOD: or hl
-   (line-num-hl   violet light-gray)
+   (line-num-hl   violet gray9)
    (cursor        "#e0c3c8"))
 
   ;; Custom theme set faces

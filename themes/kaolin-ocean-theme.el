@@ -44,7 +44,7 @@
    (todo pink)
 
    (tooltip-bg    bg2)
-   (tooltip-fg    light-gray)
+   (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg lime)
 
@@ -72,8 +72,8 @@
    (line-bg2          bg3)
    (line-border       bg3)
 
-   (segment-active    gray)
-   (segment-inactive  gray)
+   (segment-active    gray3)
+   (segment-inactive  gray3)
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
@@ -85,7 +85,7 @@
    (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   bg4)
-   (line-num-hl   faded-blue light-gray)
+   (line-num-hl   faded-blue gray9)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces

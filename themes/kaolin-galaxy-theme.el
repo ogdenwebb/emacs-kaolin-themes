@@ -53,7 +53,7 @@
    (prep        pink "#5f87af")
 
    ;; TODO: a bit more blue; at least for alt-comment
-   (comment     gray)
+   (comment     gray3)
    ;; TODO:
    (alt-comment "#4c344c")
    (str         teal-blue)
@@ -74,7 +74,7 @@
    (done light-green)
 
    (tooltip-bg    bg2)
-   (tooltip-fg    light-gray)
+   (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan)
 
@@ -103,8 +103,8 @@
    (line-color2       lavender)
    (line-border       bg3)
 
-   (segment-active    gray)
-   (segment-inactive  gray)
+   (segment-active    gray3)
+   (segment-inactive  gray3)
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
@@ -113,13 +113,13 @@
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
-   (win-border    dark-gray)
+   (win-border    black3)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
 
    (evil-normal teal-blue)
    ;; TOOD: or hl
-   (line-num-hl   grayish-blue light-gray)
+   (line-num-hl   grayish-blue gray9)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
@@ -130,7 +130,7 @@
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
-   (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground light-gray))
+   (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (org-document-title  (:foreground grayish-blue :bold bold))
    (org-document-info   (:foreground grayish-blue))

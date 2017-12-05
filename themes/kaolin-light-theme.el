@@ -49,12 +49,12 @@
    (warning     orange)
    (err         red)
 
-   (dim-buffer alt-white)
+   (dim-buffer white0)
    ;; TODO: soft blue or wheat or light-orange
    (hl         alt-purple)
    ;; TODO: add colored
    (hl-line    (if kaolin-hl-line-colored bg2 bg2))
-   (hl-indent  light-gray)
+   (hl-indent  gray9)
    ;; TODO:
    (selection bg4)
    ;; TODO:
@@ -63,7 +63,7 @@
    (todo moderate-pink)
 
    (tooltip-bg bg2)
-   (tooltip-fg light-gray)
+   (tooltip-fg gray9)
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 
@@ -89,8 +89,8 @@
    (line-border       bg3)
 
    ;; Telephone-line
-   (segment-active    gray)
-   (segment-inactive  gray)
+   (segment-active    gray2)
+   (segment-inactive  gray2)
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
@@ -104,9 +104,9 @@
    (line-num-fg   grayish-green)
    (line-num-hl   hl)
 
-   (cursor        gray)
+   (cursor        gray2)
 
-   (ivy1          light-gray)
+   (ivy1          gray9)
    (ivy2          alt-blue)
    (ivy3          pure-orange)
    (ivy4          red))
