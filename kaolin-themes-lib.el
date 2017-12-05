@@ -27,8 +27,7 @@
 ;; TODO: move git-gutter faces from a theme file to lib,
 ;; i.e. avoid duplication
 
-;; TODO: Rename gray colors to  gray1, gray2, etc
-;; TODO: add company-tooltip-common-selection to new themes
+;; TODO: add company-tooltip-common-selection for new themes
 
 ;; TODO background: #5a6066 || #5d636a
 
@@ -47,7 +46,7 @@
     (gray2           "#414849")
     (gray2           "#4b5254")
     (gray3           "#545c5e")
-    ;; gray4
+    ;; alt-gray
     (gray4           "#60696b")
     (gray5           "#697375")
     (gray6           "#737d80")
@@ -63,9 +62,7 @@
     ;; (gray8           "#939d9e")
     ;; (gray9           "")
 
-    (bright-gray     "#7b878a")
-
-    (gray9      "#9191a2")
+    ;; (bright-gray     "#7b878a")
 
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
@@ -230,7 +227,6 @@
     (line-fg           fg4)
     (line-bg1          bg2)
     (line-bg2          gray0)
-    ;; TODO: fix that
     (line-border       gray0)
     (line-color1       keyword)
     (line-color2       builtin)
