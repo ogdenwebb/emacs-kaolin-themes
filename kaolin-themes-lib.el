@@ -137,7 +137,9 @@
     (magenta         "#5454b6")
     (grayish-magenta "#796878")
     (light-purple    "#cea2ca")
-    (alt-purple      "#915c83")
+    ;; Antique fuchsia
+    ;; (alt-purple      "#915c83")
+    (alt-purple      "#a9779c")
     (lavender        "#967bb6")
     (alt-lavender    "#9d81ba")
 
@@ -152,11 +154,13 @@
     (underline       kaolin-underline)
     (underline-style (if kaolin-wave 'wave 'line))
 
+    (fg0  white0)
     (fg1  white1)
     (fg2  white2)
     (fg3  white3)
     (fg4  white4)
 
+    (bg0  black0)
     (bg1  black1)
     (bg2  black2)
     (bg3  black3)
