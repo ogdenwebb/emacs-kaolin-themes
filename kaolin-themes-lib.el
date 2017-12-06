@@ -56,19 +56,9 @@
     ;; light-gray
     (gray9           "#919a9c")
 
-    ;; (gray5           "#6c7679")
-    ;; (gray6           "#788486")
-    ;; (gray7           "#859092")
-    ;; (gray8           "#939d9e")
-    ;; (gray9           "")
-
-    ;; (bright-gray     "#7b878a")
-
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
 
-    ;; make more bright, ~90
-    ;; (white0       "#e7dfdf")
     (white0          "#e4e4e8")
     (white1          "#c8c8d0")
     (white2          "#babac4")
@@ -226,8 +216,8 @@
     ;; Mode-line
     (line-fg           fg4)
     (line-bg1          bg2)
-    (line-bg2          gray0)
-    (line-border       gray0)
+    (line-bg2          bg4)
+    (line-border       bg4)
     (line-color1       keyword)
     (line-color2       builtin)
     (segment-active    gray3)
