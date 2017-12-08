@@ -4,7 +4,7 @@
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
-;; Package-Requires: ((emacs "24.3") (autothemer "0.2.2") (cl-lib "0.6"))
+;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
 ;; Version: 1.0.6
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -66,6 +66,7 @@
   (require 'cl-lib))
 
 (require 'autothemer)
+(require 'map)
 
 (require 'kaolin-themes-lib)
 
@@ -113,32 +114,11 @@
   "Format kaolin-<sym> from SYM."
   (intern (format "kaolin-%s" (symbol-name sym))))
 
-;; Literally it's evil-add-to-alist.
-(defun kaolin-themes--add-to-alist (list-var key val &rest elements)
-  "Add the assocation of KEY and VAL to the value of LIST-VAR.
-If the list already contains an entry for KEY, update that entry;
-otherwise add at the end of the list."
-  (let ((tail (symbol-value list-var)))
-    (while (and tail (not (equal (car-safe (car-safe tail)) key)))
-      (setq tail (cdr tail)))
-    (if tail
-        (setcar tail (cons key val))
-      (set list-var (append (symbol-value list-var)
-                            (list (cons key val)))))
-    (if elements
-        (apply #'kaolin-themes--add-to-alist list-var elements)
-      (symbol-value list-var))))
-
-;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
-;; TODO: rewrite adding in pure style
-;; Using map :>
-;; map included in 25.1 emacs so
-;; TODO: bump version of dep
 (defun kaolin-themes--merge-alist (base-alist add-alist)
-  "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
+  "Add elements to BASE-LIST from ADD-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
-             do (kaolin-themes--add-to-alist 'res (car el) (cdr el)))
+             do (map-put res (car el) (cdr el)))
     res))
 
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
