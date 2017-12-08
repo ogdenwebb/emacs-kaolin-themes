@@ -1,7 +1,7 @@
 # Kaolin themes for GNU Emacs
 [![MELPA Stable](https://stable.melpa.org/packages/kaolin-themes-badge.svg)](https://stable.melpa.org/#/kaolin-themes)
 [![MELPA](https://melpa.org/packages/kaolin-themes-badge.svg)](https://melpa.org/#/kaolin-themes)
-[![Emacs](https://img.shields.io/badge/Emacs-24%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
+[![Emacs](https://img.shields.io/badge/Emacs-25.1%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large number of modes and external packages.

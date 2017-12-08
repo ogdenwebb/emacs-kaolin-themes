@@ -5,7 +5,7 @@
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.0.6
+;; Version: 1.1.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -54,7 +54,7 @@
 ;;  ;; If t, use the wave underline style instead of regular underline.
 ;;  (setq kaolin-wave t)
 ;;
-;;  ;; When t, will display colored hl-line style instead dim gray
+;;  ;; When t, will display colored hl-line style
 ;;  (setq kaolin-hl-line-colored t)
 ;;
 ;;
