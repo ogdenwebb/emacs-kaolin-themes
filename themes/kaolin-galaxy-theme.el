@@ -57,6 +57,7 @@
    ;; TODO:
    (alt-comment "#4c344c")
    (str         teal-blue)
+   ;; TODO: make bor bright
    (str-alt     grayish-blue)
    (doc         str-alt)
    ;; TODO: or light-orange

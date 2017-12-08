@@ -1,5 +1,7 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
+;; TODO: color spec and color functions
+
 ;; TODO: (??) make mode-line dark in ligth themes.
 ;; TODO: bright background option
 ;; TODO: (??) disable color background for terminal
@@ -15,7 +17,7 @@
 
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
-;; TODO: treemacs
+;; TODO: treemacs support
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
 ;; TODO: (??) outline-* faces
@@ -29,7 +31,7 @@
 
 ;; TODO: add company-tooltip-common-selection for new themes
 
-;; TODO background: #5a6066 || #5d636a
+;; TODO (??) background: #5a6066 || #5d636a
 
 ;; Predefined Kaolin palette
 (defconst kaolin-palette
@@ -42,18 +44,18 @@
 
     (gray0           "#353b3c")
     (gray1           "#383e3f")
-    ;; gray
+    ;; old gray
     (gray2           "#414849")
     (gray2           "#4b5254")
     (gray3           "#545c5e")
-    ;; alt-gray
+    ;; old alt-gray
     (gray4           "#60696b")
     (gray5           "#697375")
     (gray6           "#737d80")
-    ;; bright-gray
+    ;; old bright-gray
     (gray7           "#7c878a")
     (gray8           "#879193")
-    ;; light-gray
+    ;; old light-gray
     (gray9           "#919a9c")
 
     (lavender-gray   "#b6b5c5")
@@ -65,6 +67,7 @@
     (white3          "#adadb9")
     (white4          "#9f9fad")
 
+    ;; Maroon/brown
     (brown           "#7d6360")
     (light-brown     "#ae9895")
     (alt-brown       "#52413f")
@@ -76,6 +79,9 @@
     (faded-red       "#863d42")
     (alt-red         "#c93232")
     (light-red       "#d66e75")
+
+
+    ;; (rich) Maroon
     (moderate-pink   "#a0586c")
     (pink            "#d24b83")
     (light-pink      "#ef98aa")
@@ -127,13 +133,18 @@
     ;; (moderate-blue    "#4e7f95")
     (moderate-blue    "#53859d")
     (soft-blue        "#4CA6E8")
+
+    ;; Aqua/cyan
     (dark-cyan        "#008b8b")
     (cyan             "#54b6b6")
     (faded-blue       "#817f96")
 
+    ;; MAGENTA/Fuchsia
     (midnight-purple "#1a121a")
     (dark-purple     "#563d56")
     (purple          "#835d83")
+
+    ;; TODO my current magenta is moderate blue or even navy
     (magenta         "#5454b6")
     (grayish-magenta "#796878")
     (light-purple    "#cea2ca")
@@ -767,8 +778,8 @@
     (swiper-line-face    (:inherit 'hl-line))))
 
 ;; Predefined Kaolin variables
-(defconst kaolin-vars
-  '())
+;; (defconst kaolin-vars
+;;   '())
 
 (provide 'kaolin-themes-lib)
 

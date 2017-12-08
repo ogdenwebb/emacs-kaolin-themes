@@ -95,7 +95,7 @@
   "When t, will display colored hl-line style instead dim gray."
   :group 'kaolin-themes)
 
-;; TODO:
+;; TODO: implement
 (defcustom kaolin-comment-style 'normal
   "Sets the style of comments: normal, bright or colored."
   :options '(bright normal color)
@@ -131,6 +131,9 @@ otherwise add at the end of the list."
 
 ;; TODO: preasubmly cant add extra vars from theme file that doesn't exist in const
 ;; TODO: rewrite adding in pure style
+;; Using map :>
+;; map included in 25.1 emacs so
+;; TODO: bump version of dep
 (defun kaolin-themes--merge-alist (base-alist add-alist)
   "Add elements to BASE-LIST from ADD-LIST to BASE-LIST without dublicates."
   (let ((res (copy-alist base-alist)))
