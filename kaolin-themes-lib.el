@@ -297,6 +297,7 @@
     (italic              (:italic italic))
     (default-italic      (:italic italic))
     (bold-italic         (:bold bold :italic italic))
+    ;; TODO: add link var
     (link                (:foreground prep :underline underline))
     (link-visited        (:inherit 'link :underline nil))
     (success             (:background nil :foreground light-green))

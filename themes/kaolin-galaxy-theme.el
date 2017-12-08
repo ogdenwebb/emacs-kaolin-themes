@@ -7,7 +7,6 @@
 (define-kaolin-theme galaxy "Bright theme based on one of the Sebastian Andaur arts."
   ;; Palette modification
   (
-   ;; TODO: adjust color to steam, i.e. +1 or +2 step
    ;; dark
    ;; (bg1  "#1d1c21" black1)
    ;; (bg2          "#26252c" black2)

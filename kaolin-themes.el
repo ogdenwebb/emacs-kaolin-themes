@@ -1,4 +1,4 @@
-;;; kaolin-themes.el --- A set of eye pleasing themes
+;;; kaolin-themes.el --- A set of eye pleasing themes  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2017 ogdenwebb
 
