@@ -17,6 +17,7 @@
    (faded-orange "#c78e6d")
 
    ;; Color vars
+   (bg0 "#f5f6f5")
    (bg1 "#e9eae7")
    (bg2 "#dcded9")
    (bg3 "#cfd2cb")
