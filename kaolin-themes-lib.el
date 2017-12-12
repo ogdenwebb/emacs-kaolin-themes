@@ -5,7 +5,6 @@
 ;; TODO: (??) make mode-line dark in ligth themes.
 ;; TODO: bright background option
 ;; TODO: (??) disable color background for terminal
-;; TODO: org-headline-done, i.e. done org level
 ;; TODO: add to all colors light and dark variant
 ;; TODO: (??) add var to highlight key seq'
 
@@ -111,6 +110,8 @@
     (grayish-green      "#9ca78f")
     ;; (green              "#4a858c")
     (green              "#4d8d93")
+    ;; TODO: Viridian
+    ;; (green              "#40826d")
     (dark-green         "#39855f")
     (light-green        "#54b685")
     (lime               "#85b654")
@@ -651,6 +652,7 @@
     ;; TODO: org agenda faces
     (org-todo                      (:foreground todo :bold bold))
     (org-done                      (:foreground done  :bold bold))
+    (org-headline-done             (:foreground gray4  :bold nil))
     (org-ellipsis                  (:foreground builtin))
     (org-date                      (:foreground light-yellow :underline underline))
     (org-link                      (:inherit 'link))
