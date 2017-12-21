@@ -136,7 +136,7 @@
    (org-document-info   (:foreground grayish-blue))
    (org-date            (:foreground teal-green :underline underline))
    (org-code            (:foreground faded-orange))
-   (org-verbatim        (:foreground orange))
+   (org-verbatim        (:foreground light-jade))
    (org-quote           (:foreground faded-blue)))
 
   ;; Set custom vars
