@@ -31,15 +31,25 @@
 ;; TODO: add company-tooltip-common-selection for new themes
 
 ;; TODO (??) background: #5a6066 || #5d636a
+;; #617c7e
 
 ;; Predefined Kaolin palette
+;; 22-24 colors
+;; NEW - OLD
 (defconst kaolin-palette
   '(
-    (black0          "#181818")
-    (black1          "#1b1b1b")
-    (black2          "#252525")
-    (black3          "#2f2f2f")
-    (black4          "#353535")
+    ;; (black0          "#181818")
+    ;; (black1          "#1b1b1b")
+    ;; (black2          "#252525")
+    ;; (black3          "#2f2f2f")
+    ;; (black4          "#353535")
+
+    (black0          "#161618")
+    (black1          "#18181B")
+    (black2          "#222225")
+    (black3          "#2B2B2F")
+    (black4          "#303035")
+
 
     (gray0           "#353b3c")
     (gray1           "#383e3f")
@@ -66,21 +76,23 @@
     (white3          "#adadb9")
     (white4          "#9f9fad")
 
-    ;; Maroon/brown
+    ;; Brown
     (brown           "#7d6360")
     (light-brown     "#ae9895")
     (alt-brown       "#52413f")
     (bazaar          "#98777b")
 
-    ;; TODO:
-    (dark-red        "#832729")
-    (red             "#cd5c5c")
-    (faded-red       "#863d42")
-    (alt-red         "#c93232")
-    (light-red       "#d66e75")
+    ;; TODO: adjust
+    ;; Maroon  - dark-red
+    (dark-red        "#832729") ; dark red or maroon?
+
+    (red             "#FF3F3F") ; pure red, from alt-red
+    (alt-red         "#c93232") ; strong red
+    (red             "#cd5c5c") ; moderate red
+    (faded-red       "#863d42") ; dark moderate red; muted red
+    (light-red       "#d66e75") ; Slightly desaturated red/soft red
 
 
-    ;; (rich) Maroon
     (moderate-pink   "#a0586c")
     (pink            "#d24b83")
     (light-pink      "#ef98aa")
@@ -96,6 +108,7 @@
     (yellow          "#acb370")
     (alt-yellow      "#be9266")
     (light-yellow    "#c9bb87")
+
     (wheat           "#b9c791" "#ffd7a5")
     (alt-wheat       "#fdd5b1")
     (faded-wheat     "#D9CA9B")
@@ -104,23 +117,29 @@
     (jade               "#597a6e")
     (alt-jade           "#4d5d53")
     (light-jade         "#709688")
+
     (midnight-green     "#142223")
     (alt-midnight-green "#0F1E1D")
     (deep-green         "#39656b")
-    (grayish-green      "#9ca78f")
     ;; (green              "#4a858c")
     (green              "#4d8d93")
     ;; TODO: Viridian
     ;; (green              "#40826d")
     (dark-green         "#39855f")
     (light-green        "#54b685")
+
+    (grayish-green      "#9ca78f")
+
     (lime               "#85b654")
     (alt-lime           "#8fbc8f")
+
     (teal               "#80b6bc")
     (teal-blue          "#91b9c7")
+    ;; Aquaarine - teal-green
     (teal-green         "#6fb593")
 
 
+    ;; TODO: add sky blue
     (midnight-blue    "#1e2528" black2)
     ;; (alt-midnight-blue "#062732")
     ;; (alt-midnight-blue "#12121a")
@@ -138,6 +157,7 @@
     ;; Aqua/cyan
     (dark-cyan        "#008b8b")
     (cyan             "#54b6b6")
+    ;; navy
     (faded-blue       "#817f96")
 
     ;; MAGENTA/Fuchsia
