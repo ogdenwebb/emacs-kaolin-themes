@@ -51,6 +51,7 @@
     (black4          "#303035")
 
 
+    ;; TODO: (??) change hue to 240?
     (gray0           "#353b3c")
     (gray1           "#383e3f")
     ;; old gray
@@ -86,7 +87,7 @@
     ;; Maroon  - dark-red
     (dark-red        "#832729") ; dark red or maroon?
 
-    (red             "#FF3F3F") ; pure red, from alt-red
+    ;; (red             "#FF3F3F") ; pure red, from alt-red
     (alt-red         "#c93232") ; strong red
     (red             "#cd5c5c") ; moderate red
     (faded-red       "#863d42") ; dark moderate red; muted red
@@ -124,7 +125,7 @@
     ;; (green              "#4a858c")
     (green              "#4d8d93")
     ;; TODO: Viridian
-    ;; (green              "#40826d")
+    (viridian           "#40826d")
     (dark-green         "#39855f")
     (light-green        "#54b685")
 
@@ -148,6 +149,9 @@
     (alt-grayish-blue  "#8f9ca7")
     (dark-blue         "#2a4661")
     ;; TODO: (??) swap blue and soft-blue and rename to dark-blue
+    ;; try two follow
+    ;; (blue             "#6a6a9a")
+    ;; (blue             "#5757ad")
     (blue             "#3B6FA3")
     (alt-blue         "#267fb5")
     ;; (moderate-blue    "#4e7f95")
@@ -155,8 +159,8 @@
     (soft-blue        "#4CA6E8")
 
     ;; Aqua/cyan
-    (dark-cyan        "#008b8b")
     (cyan             "#54b6b6")
+    (dark-cyan        "#008b8b")
     ;; navy
     (faded-blue       "#817f96")
 

@@ -10,11 +10,17 @@
    ;; TODO: lime color
    (blue         "#5c9499")
    ;; (jade         "#597a6e")
-   (dark-blue     "#445588")
+   (dark-blue    "#445588")
    (pink         "#d45589")
    (dark-jade    "#3e594e")
+   (light-jade   "#518270")
    (pure-orange  "#d1832e")
    (faded-orange "#c78e6d")
+   (red          "#c86d6d")
+
+   (cyan         "#48a9a9")
+   (teal         "#6facb3")
+   (dark-cyan    "#008b8b")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -22,7 +28,13 @@
    (bg2 "#dcded9")
    (bg3 "#cfd2cb")
    (bg4 "#c5c9c0")
-   ;; (bg4 "#bcc0b6")
+
+   ;; (bg0 white0)
+   ;; (bg1 white0)
+   ;; (bg2 white1)
+   ;; (bg3 white2)
+   ;; (bg4 white3)
+
    (fg1 dark-jade)
    (fg2 "#3e574d")
    (fg3 "#476257")
@@ -35,24 +47,23 @@
    (second-key  jade)
    (var         lavender)
    (const       faded-blue)
-   (builtin     blue)
+   (builtin     light-jade)
    ;; TODO:
    (comment     "#9aa88c")
    (alt-comment alt-grayish-blue)
    (functions   builtin)
-   (str         moderate-pink)
-   (str-alt     dark-violet)
+   (str         cyan)
+   (str-alt     teal)
    (doc         str-alt)
-   (type        dark-green)
-   (num         faded-orange)
+   (type        faded-orange)
+   (num         red)
    (bool        num)
    (prep        dark-blue)
    (warning     orange)
    (err         red)
 
    (dim-buffer white0)
-   ;; TODO: soft blue or wheat or light-orange
-   (hl         alt-purple)
+   (hl         viridian)
    ;; TODO: add colored
    (hl-line    (if kaolin-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
