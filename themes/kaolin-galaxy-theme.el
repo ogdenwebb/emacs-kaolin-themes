@@ -47,9 +47,9 @@
    (var         light-orange)
    (const       wheat)
    (type        green)
-   (num         red)
+   (num         pink "#5f87af")
+   (prep        soft-blue)
    (bool        num)
-   (prep        pink "#5f87af")
 
    ;; TODO: a bit more blue; at least for alt-comment
    (comment     gray3)
