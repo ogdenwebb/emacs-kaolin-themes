@@ -77,6 +77,34 @@
     (white3          "#adadb9")
     (white4          "#9f9fad")
 
+    ;; EXTRA COLORS
+    ;; Brown
+
+    ;; Yellow #FFFF00
+    ;; Amber #FFBF00
+    ;; Orange #FF7F00
+    ;; Vermilion #FF3F00
+    ;; Red #FF0000
+    ;; Crimson #FF003F
+    ;; Rose #FF007F
+    ;; Cerise #FF00BF
+    ;; Magenta #FF00FF
+    ;; Purple #BF00FF
+    ;; Violet #7F00FF
+    ;; Ultramarine #3F00FF
+    ;; Blue #0000FF
+    ;; Cerulean #003FFF
+    ;; Azure #007FFF
+    ;; Capri #00BFFF
+    ;; Cyan #00FFFF
+    ;; Aquamarine #00FFBF
+    ;; Spring green #00FF7F
+    ;; Erin #00FF3F
+    ;; Green #00FF00
+    ;; Harlequin #3FFF00
+    ;; Chartreuse #7FFF00
+    ;; Lime #D5FF00
+
     ;; Brown
     (brown           "#7d6360")
     (light-brown     "#ae9895")
@@ -87,11 +115,11 @@
     ;; Maroon  - dark-red
     (dark-red        "#832729") ; dark red or maroon?
 
-    ;; (red             "#FF3F3F") ; pure red, from alt-red
+    ;; (pure-red             "#D90000") ; pure red
     (alt-red         "#c93232") ; strong red
     (red             "#cd5c5c") ; moderate red
-    (faded-red       "#863d42") ; dark moderate red; muted red
     (light-red       "#d66e75") ; Slightly desaturated red/soft red
+    (faded-red       "#863d42") ; dark moderate red; muted red
 
 
     (moderate-pink   "#a0586c")
@@ -115,29 +143,41 @@
     (faded-wheat     "#D9CA9B")
 
     (dark-jade          "#2e4039")
+    ;; cutty sark
     (jade               "#597a6e")
+    ;; Feldgrau
     (alt-jade           "#4d5d53")
     (light-jade         "#709688")
 
     (midnight-green     "#142223")
     (alt-midnight-green "#0F1E1D")
+    ;; Turquoise // Tax break
     (deep-green         "#39656b")
     ;; (green              "#4a858c")
+    ;; Teal; TODO: make a bit more green
     (green              "#4d8d93")
     ;; TODO: Viridian
     (viridian           "#40826d")
+    ;; Spring green
     (dark-green         "#39855f")
+    ;; Malachite // Jade
     (light-green        "#54b685")
 
     (grayish-green      "#9ca78f")
 
+    ;; Chartreuse
     (lime               "#85b654")
+    ;; Green
     (alt-lime           "#8fbc8f")
 
+    ;; Aqua/cyan
     (teal               "#80b6bc")
+    ;; Deep sky blue
     (teal-blue          "#91b9c7")
-    ;; Aquaarine - teal-green
+    ;; Spring green - teal-green
     (teal-green         "#6fb593")
+    ;;  Aquamarine
+    (aquamarine         "#7fffd4")
 
 
     ;; TODO: add sky blue
