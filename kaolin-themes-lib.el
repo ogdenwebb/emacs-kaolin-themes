@@ -177,7 +177,8 @@
     ;; Spring green - teal-green
     (teal-green         "#6fb593")
     ;;  Aquamarine
-    (aquamarine         "#7fffd4")
+    ; (aquamarine         "#7fffd4")
+    (aquamarine         "#68F3C5")
 
 
     ;; TODO: add sky blue
@@ -243,7 +244,8 @@
     (bg4  black4)
 
     (dim-buffer black0)
-    (hl         light-green)
+    ;; TODO: change because almost same green using by strings
+    (hl         aquamarine)
     (hl-mono    gray4)
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray3)
@@ -284,7 +286,7 @@
     (str         teal-green)
     (str-alt     jade)
     (doc         str-alt)
-    (type        alt-orange)
+    (type        faded-orange)
     (const       violet)
     (var         faded-blue)
     (num         red)
@@ -321,7 +323,7 @@
     (ivy1        fg1)
     (ivy2        soft-blue)
     (ivy3        light-orange)
-    (ivy4        moderate-pink)))
+    (ivy4        light-violet)))
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
