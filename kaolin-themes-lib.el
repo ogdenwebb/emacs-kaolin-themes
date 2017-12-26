@@ -283,6 +283,7 @@
     (comment     gray3)
     (alt-comment alt-grayish-blue)
     (functions   builtin)
+    ;; TODO: (??) change to light-brown like sierra.vim
     (str         teal-green)
     (str-alt     jade)
     (doc         str-alt)
@@ -431,6 +432,12 @@
                                                :italic nil :underline nil :strike-through nil))
     (linum-relative-current-line  (:inherit 'nlinum-current-line))
     (nlinum-relative-current-face (:inherit 'nlinum-current-line))
+
+    ;; Native line numbers
+    (line-number                  (:background line-num-bg :foreground line-num-fg :bold nil
+                                               :italic nil :underline nil :strike-through nil))
+    (line-number-current-line     (:background line-num-bg :foreground line-num-hl :bold bold
+                                               :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
     (which-func (:foreground orange))
