@@ -4,19 +4,13 @@
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme mono "Bright theme based on one of the Sebastian Andaur arts."
+(define-kaolin-theme mono "TODO"
   ;; Palette modification
   (
    (bg1          gray0)
    (bg2          gray1)
    (bg3          gray2)
    (bg4          gray3)
-
-   (fg0          white0)
-   (fg1          white1)
-   (fg2          white2)
-   (fg3          white3)
-   (fg4          white4)
 
    ;; Accent color
    (hl aquamarine)
@@ -39,7 +33,7 @@
    (comment     gray4)
    ;; TODO:
    (alt-comment "#4c344c")
-   (str         fg3)
+   (str         fg4)
    (str-alt     str)
    (doc         str-alt)
    (warning     orange)
@@ -94,7 +88,7 @@
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
-   (win-border    black3)
+   (win-border    black4)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
 

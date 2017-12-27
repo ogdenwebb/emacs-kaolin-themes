@@ -82,11 +82,11 @@
     (grayish-orange  "#a5a19c")
 
     ;; White
-    (white0          "#e4e4e8")
-    (white1          "#cfcfd6")
-    (white2          "#c4c4cd")
-    (white3          "#babac4")
-    (white4          "#adadb9")
+    (white0          "#e8e8e8")
+    (white1          "#d4d4d6")
+    (white2          "#c9c9cd")
+    (white3          "#bebec4")
+    (white4          "#b2b2b9")
 
     ;; EXTRA COLORS
     ;; Brown
