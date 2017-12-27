@@ -27,7 +27,7 @@
    (type        hl)
    (num         fg0)
    (bool        num)
-   (prep        fg1)
+   (prep        fg0)
 
    ;; TODO: a bit more blue; at least for alt-comment
    (comment     gray4)
@@ -99,7 +99,7 @@
 
   ;; Custom theme set faces
   (
-   (default             (:background bg1 :foreground fg0))
+   (default             (:background bg1 :foreground fg2))
 
    (link                (:foreground pink :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))

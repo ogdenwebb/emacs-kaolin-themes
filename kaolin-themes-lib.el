@@ -1,6 +1,7 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library
 
 ;; TODO: color spec and color functions
+;; TODO: add accent color like aquamarine
 
 ;; TODO: (??) make mode-line dark in ligth themes.
 ;; TODO: bright background option

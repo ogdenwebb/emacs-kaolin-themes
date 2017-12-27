@@ -29,7 +29,7 @@
    ;; (prep        moderate-blue "#5f5faf")
    (prep        faded-orange)
 
-   (comment     black4)
+   (comment     gray0)
    (alt-comment "#4c344c")
    (str         teal)
    (str-alt     faded-blue)

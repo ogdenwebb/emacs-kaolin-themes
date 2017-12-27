@@ -26,7 +26,7 @@
    (bool        num)
    (prep        magenta)
 
-   (comment     black4)
+   (comment     gray0)
    (alt-comment "#34344c")
    (str         wheat "#ffd787")
    (str-alt     faded-orange)
