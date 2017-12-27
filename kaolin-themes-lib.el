@@ -44,6 +44,7 @@
     ;; (black3          "#2f2f2f")
     ;; (black4          "#353535")
 
+    ;; Black
     (black0          "#161618")
     (black1          "#18181B")
     (black2          "#222225")
@@ -51,6 +52,7 @@
     (black4          "#303035")
 
 
+    ;; Gray
     ;; TODO: (??) change hue to 240?
     (gray0           "#353b3c")
     (gray1           "#383e3f")
@@ -71,6 +73,7 @@
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
 
+    ;; White
     (white0          "#e4e4e8")
     (white1          "#c8c8d0")
     (white2          "#babac4")

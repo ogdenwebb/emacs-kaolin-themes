@@ -12,51 +12,52 @@
    (bg3          gray2)
    (bg4          gray3)
 
-   (fg1          white2)
-   (fg2          white3)
-   (fg3          white4)
-   (fg3          gray9)
+   (fg0          white0)
+   (fg1          white1)
+   (fg2          white2)
+   (fg3          white3)
+   (fg4          white4)
 
-   (keyword     white4)
+   ;; Accent color
+   (hl aquamarine)
+
+   (keyword     fg0)
    (second-key  purple alt-purple)
    ;; TODO: adjust contrast with keyword
-   (builtin     gray7)
+   (builtin     fg1)
    (functions   builtin)
    ;; (var         lime)
    ;; (const       light-green)
-   (var         white0)
-   (const       white0)
-   (type        green)
-   (num         red)
+   (const       builtin)
+   (var         const)
+   (type        hl)
+   (num         fg0)
    (bool        num)
-   (prep        pink "#5f87af")
+   (prep        fg1)
 
    ;; TODO: a bit more blue; at least for alt-comment
-   (comment     gray3)
+   (comment     gray4)
    ;; TODO:
    (alt-comment "#4c344c")
-   (str         teal-blue)
-   ;; TODO: make bor bright
-   (str-alt     grayish-blue)
+   (str         fg3)
+   (str-alt     str)
    (doc         str-alt)
-   ;; TODO: or light-orange
    (warning     orange)
-   (err         light-red)
+   (err         red)
 
-   (dim-buffer "#140E14")
-   (hl         light-green)
+   (dim-buffer black4)
    (hl-line    gray2)
    (hl-indent  bg4)
    (selection  bg4)
-   (pulse      dark-blue)
+   (pulse      gray3)
 
-   (todo light-red)
+   (todo red)
    (done light-green)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg cyan)
+   (tooltip-hl-fg hl)
 
    (ivy2 cyan)
    (ivy3 faded-orange)
@@ -72,15 +73,15 @@
    (rb8 purple)
    (rb9 pink)
 
-   (diff-add    light-green)
-   (diff-change light-violet)
-   (diff-rem    light-red)
+   (diff-add    aquamarine)
+   (diff-change light-orange)
+   (diff-rem    red)
 
    ;; Mode-line
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       lavender)
+   (line-color2       fg0)
    (line-border       bg3)
 
    (segment-active    gray3)
@@ -100,12 +101,12 @@
    (evil-normal teal-blue)
 
    (line-num-hl  gray9)
-   (cursor       white4))
+   (cursor       white2))
 
   ;; Custom theme set faces
   (
+   (default             (:background bg1 :foreground fg0))
 
-   ;; TODO: cyan, soft-blue, pink
    (link                (:foreground pink :underline underline))
    (show-paren-mismatch (:background bg2 :foreground alt-red))
 
