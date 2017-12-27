@@ -67,6 +67,7 @@
    (hl         light-green)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
+   ;; TODO: (??) less bright
    (selection  bg4)
    (pulse      dark-blue)
 

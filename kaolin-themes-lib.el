@@ -51,6 +51,14 @@
     (black3          "#2B2B2F")
     (black4          "#303035")
 
+    ;; Midnigh colors
+    (midnight-green       "#142223")
+    (alt-midnight-green   "#0F1E1D")
+    (midnight-blue        "#1e2528" black2)
+    ;; (alt-midnight-blue "#062732")
+    ;; (alt-midnight-blue "#12121a")
+    (alt-midnight-blue    "#13131c" black2)
+    (midnight-purple      "#1a121a")
 
     ;; Gray
     ;; TODO: (??) change hue to 240?
@@ -152,8 +160,6 @@
     (alt-jade           "#4d5d53")
     (light-jade         "#709688")
 
-    (midnight-green     "#142223")
-    (alt-midnight-green "#0F1E1D")
     ;; Turquoise // Tax break
     (deep-green         "#39656b")
     ;; (green              "#4a858c")
@@ -185,10 +191,6 @@
 
 
     ;; TODO: add sky blue
-    (midnight-blue    "#1e2528" black2)
-    ;; (alt-midnight-blue "#062732")
-    ;; (alt-midnight-blue "#12121a")
-    (alt-midnight-blue "#13131c" black2)
     (grayish-blue      "#687184")
     (alt-grayish-blue  "#8f9ca7")
     (dark-blue         "#2a4661")
@@ -209,7 +211,6 @@
     (faded-blue       "#817f96")
 
     ;; MAGENTA/Fuchsia
-    (midnight-purple "#1a121a")
     (dark-purple     "#563d56")
     (purple          "#835d83")
 
