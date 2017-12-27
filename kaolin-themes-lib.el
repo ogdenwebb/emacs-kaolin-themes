@@ -75,10 +75,10 @@
 
     ;; White
     (white0          "#e4e4e8")
-    (white1          "#c8c8d0")
-    (white2          "#babac4")
-    (white3          "#adadb9")
-    (white4          "#9f9fad")
+    (white1          "#cfcfd6")
+    (white2          "#c4c4cd")
+    (white3          "#babac4")
+    (white4          "#adadb9")
 
     ;; EXTRA COLORS
     ;; Brown
