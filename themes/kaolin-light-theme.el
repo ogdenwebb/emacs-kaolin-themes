@@ -29,12 +29,6 @@
    (bg3 "#cfd2cb")
    (bg4 "#c5c9c0")
 
-   ;; (bg0 white0)
-   ;; (bg1 white0)
-   ;; (bg2 white1)
-   ;; (bg3 white2)
-   ;; (bg4 white3)
-
    (fg1 dark-jade)
    (fg2 "#3e574d")
    (fg3 "#476257")

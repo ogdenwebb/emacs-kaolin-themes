@@ -2,6 +2,7 @@
 
 ;; TODO: color spec and color functions
 ;; TODO: add accent color like aquamarine
+;; TODO: add pure colors
 
 ;; TODO: (??) make mode-line dark in ligth themes.
 ;; TODO: bright background option
@@ -37,6 +38,17 @@
 ;; Predefined Kaolin palette
 ;; 22-24 colors
 ;; NEW - OLD
+;; GAP +/- ~7 hue
+;; TODO: (??)
+;; saturation 100
+;; value 85
+;; TODO: (??)
+;; color0 - pure
+;; color1 - color
+;; color2 - light/bright
+;; color3 - dark
+;; color4 - faded
+
 (defconst kaolin-palette
   '(
     ;; (black0          "#181818")
@@ -45,7 +57,7 @@
     ;; (black3          "#2f2f2f")
     ;; (black4          "#353535")
 
-    ;; Black
+    ;; Black - #020203
     (black0          "#161618")
     (black1          "#18181B")
     (black2          "#222225")
@@ -65,57 +77,92 @@
     ;; TODO: (??) change hue to 240?
     (gray0           "#353b3c")
     (gray1           "#383e3f")
-    ;; old gray
-    (gray2           "#414849")
+    (gray2           "#414849") ; old gray
     (gray2           "#4b5254")
     (gray3           "#545c5e")
-    ;; old alt-gray
-    (gray4           "#60696b")
+    (gray4           "#60696b") ; old alt-gray
     (gray5           "#697375")
     (gray6           "#737d80")
-    ;; old bright-gray
-    (gray7           "#7c878a")
+    (gray7           "#7c878a") ; old bright-gray
     (gray8           "#879193")
-    ;; old light-gray
-    (gray9           "#919a9c")
+    (gray9           "#919a9c") ; old light-gray
 
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
 
-    ;; White
+    ;; White - #FDFDFF
     (white0          "#e8e8e8")
-    (white1          "#d4d4d6")
+    (white1          "#FDFDFF")
     (white2          "#c9c9cd")
     (white3          "#bebec4")
     (white4          "#b2b2b9")
 
+    ;; Yellow #FFFF00
+    (dark-yellow     "#555a2f")
+    (yellow          "#acb370")
+
+    ;; Amber #FFBF00
+    (faded-wheat     "#D9CA9B")
+    (light-yellow    "#c9bb87")
+
+    ;; Orange #FF7F00
+    (alt-orange      "#d9a76f")
+    (orange          "#dbac66")
+
+    ;; TODO Vermilion #FF3F00
+
+    ;; Red #FF0000
+    (alt-red         "#c93232") ; strong red
+    (red             "#cd5c5c") ; moderate red
+    (light-red       "#d66e75") ; Slightly desaturated red/soft red
+    (faded-red       "#863d42") ; dark moderate red; muted red
+
+    ;; Crimson #FF003F
+    (moderate-pink   "#a0586c")
+    (light-pink      "#ef98aa")
+
+    ;; Rose #FF007F
+    (pink            "#d24b83")
+    (soft-pink       "#fbaed2")
+
+    ;; Cerise #FF00BF
+
+    ;; Magenta #FF00FF
+
+    ;; Purple #BF00FF
+
+    ;; Violet #7F00FF
+
+    ;; Ultramarine #3F00FF
+
+    ;; Blue #0000FF
+
+    ;; Cerulean #003FFF
+
+    ;; Azure #007FFF
+
+    ;; Capri #00BFFF
+
+    ;; Cyan #00FFFF
+
+    ;; Aquamarine #00FFBF
+
+    ;; Spring green #00FF7F
+
+    ;; Erin #00FF3F
+
+    ;; Green #00FF00
+
+    ;; Harlequin #3FFF00
+
+    ;; Chartreuse #7FFF00
+
+    ;; Lime #D5FF00
+
+
     ;; EXTRA COLORS
     ;; Brown
 
-    ;; Yellow #FFFF00
-    ;; Amber #FFBF00
-    ;; Orange #FF7F00
-    ;; Vermilion #FF3F00
-    ;; Red #FF0000
-    ;; Crimson #FF003F
-    ;; Rose #FF007F
-    ;; Cerise #FF00BF
-    ;; Magenta #FF00FF
-    ;; Purple #BF00FF
-    ;; Violet #7F00FF
-    ;; Ultramarine #3F00FF
-    ;; Blue #0000FF
-    ;; Cerulean #003FFF
-    ;; Azure #007FFF
-    ;; Capri #00BFFF
-    ;; Cyan #00FFFF
-    ;; Aquamarine #00FFBF
-    ;; Spring green #00FF7F
-    ;; Erin #00FF3F
-    ;; Green #00FF00
-    ;; Harlequin #3FFF00
-    ;; Chartreuse #7FFF00
-    ;; Lime #D5FF00
 
     ;; Brown
     (brown           "#7d6360")
@@ -127,32 +174,19 @@
     ;; Maroon  - dark-red
     (dark-red        "#832729") ; dark red or maroon?
 
-    ;; (pure-red             "#D90000") ; pure red
-    (alt-red         "#c93232") ; strong red
-    (red             "#cd5c5c") ; moderate red
-    (light-red       "#d66e75") ; Slightly desaturated red/soft red
-    (faded-red       "#863d42") ; dark moderate red; muted red
-
-
-    (moderate-pink   "#a0586c")
-    (pink            "#d24b83")
-    (light-pink      "#ef98aa")
-    (soft-pink       "#fbaed2")
-
     (faded-orange    "#cd9575" "#d7af87")
-    (alt-orange      "#d9a76f")
-    (orange          "#dbac66")
     (light-orange    "#ddc085")
     (pure-orange     "#cc6a00")
 
-    (dark-yellow     "#555a2f")
-    (yellow          "#acb370")
-    (alt-yellow      "#be9266")
-    (light-yellow    "#c9bb87")
 
-    (wheat           "#b9c791" "#ffd7a5")
+    ;; ORANGE
+    (alt-yellow      "#be9266")
+
+    ;; WHEAT #f5deb3
     (alt-wheat       "#fdd5b1")
-    (faded-wheat     "#D9CA9B")
+
+    ;; TODO: First is Strong green
+    (wheat           "#b9c791" "#ffd7a5")
 
     (dark-jade          "#2e4039")
     ;; cutty sark

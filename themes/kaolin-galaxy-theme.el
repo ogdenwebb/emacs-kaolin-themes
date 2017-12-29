@@ -34,6 +34,7 @@
    (pink         "#e55c7a")
    (light-pink   "#cc7799")
    (lime         "#73c66c")
+   ;; TEAL
    (green        "#609ca6")
    (light-green  "#6dd797")
 
