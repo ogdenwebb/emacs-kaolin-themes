@@ -118,10 +118,9 @@
    (win-border    black3)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
+   (line-num-hl   gray9)
 
    (evil-normal teal-blue)
-   ;; TOOD: or hl
-   (line-num-hl   grayish-blue gray9)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
