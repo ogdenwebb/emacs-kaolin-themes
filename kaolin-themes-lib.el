@@ -105,17 +105,31 @@
     (faded-wheat     "#D9CA9B")
     (light-yellow    "#c9bb87")
 
+    ;; WHEAT #f5deb3
+    (wheat           "#d1bb90" "#ffd7a5")
+
     ;; Orange #FF7F00
     (alt-orange      "#d9a76f")
     (orange          "#dbac66")
+    (alt-yellow      "#be9266")
+    (alt-wheat       "#fdd5b1")
+    (pure-orange     "#cc6a00")
+
+    ;; TODO:
+    (faded-orange    "#cd9575" "#d7af87")
 
     ;; TODO Vermilion #FF3F00
+    (light-orange    "#ddc085")
 
     ;; Red #FF0000
     (alt-red         "#c93232") ; strong red
     (red             "#cd5c5c") ; moderate red
     (light-red       "#d66e75") ; Slightly desaturated red/soft red
     (faded-red       "#863d42") ; dark moderate red; muted red
+
+    ;; TODO: adjust
+    ;; Maroon  - dark-red
+    (dark-red        "#832729") ; dark red or maroon?
 
     ;; Crimson #FF003F
     (moderate-pink   "#a0586c")
@@ -126,74 +140,100 @@
     (soft-pink       "#fbaed2")
 
     ;; Cerise #FF00BF
+    ;; (alt-purple      "#915c83")
+    (alt-purple      "#a9779c")
+    ;; TODO:
+    (dark-violet     "#997a8d")
 
-    ;; Magenta #FF00FF
+    ;; Magenta/Fuchsia #FF00FF
+    (dark-purple     "#563d56")
+    (purple          "#835d83")
+
+    ;; TODO:
+    (grayish-magenta "#796878")
+    (light-purple    "#cea2ca")
 
     ;; Purple #BF00FF
+    (violet          "#ab98b5")
 
     ;; Violet #7F00FF
+    (lavender        "#967bb6")
+    (alt-lavender    "#9d81ba")
+
+    (light-violet    "#d1aef4")
+
+    ;; TODO: add to group
+    (alt-violet      "#af94f5")
 
     ;; Ultramarine #3F00FF
 
     ;; Blue #0000FF
+    ;; (blue             "#6a6a9a")
+    ;; (blue             "#5757ad")
+
+    (faded-blue       "#817f96") ;  Navy
+
+    (magenta         "#5454b6") ; TODO my current magenta is moderate blue or even navy
 
     ;; Cerulean #003FFF
+    (grayish-blue      "#687184")
 
     ;; Azure #007FFF
+    (alt-grayish-blue  "#8f9ca7")
+    (dark-blue         "#2a4661")
 
-    ;; Capri #00BFFF
+    (blue             "#3B6FA3")
+
+    ;; Dodger blue
+    ;; (moderate-blue    "#4e7f95")
+    (moderate-blue    "#53859d")
+
+
+    (soft-blue        "#4CA6E8")
+
+    ;; Capri/Deep Sky Blue #00BFFF
+    ;; TOOD: adjust
+    (alt-blue         "#267fb5")
 
     ;; Cyan #00FFFF
+    (cyan             "#54b6b6")
+    (dark-cyan        "#098B8B")
 
     ;; Aquamarine #00FFBF
+    ; (aquamarine         "#7fffd4")
+    (aquamarine         "#68F3C5")
+
+    ;; TODO: new group
+    (light-jade         "#709688")
 
     ;; Spring green #00FF7F
+    (dark-jade          "#2E4038")
+    (jade               "#597A6C")
+
+    ;; TODO: adjust
+    (light-jade         "#709688")
 
     ;; Erin #00FF3F
 
     ;; Green #00FF00
+    (alt-lime           "#8fbc8f")
 
     ;; Harlequin #3FFF00
 
     ;; Chartreuse #7FFF00
+    (lime               "#85b654")
 
     ;; Lime #D5FF00
-
+    ;; "#b9c791"
 
     ;; EXTRA COLORS
-    ;; Brown
-
-
-    ;; Brown
+    ;; TODO Brown
+    ;; Brown orange + black
     (brown           "#7d6360")
     (light-brown     "#ae9895")
     (alt-brown       "#52413f")
     (bazaar          "#98777b")
 
-    ;; TODO: adjust
-    ;; Maroon  - dark-red
-    (dark-red        "#832729") ; dark red or maroon?
-
-    (faded-orange    "#cd9575" "#d7af87")
-    (light-orange    "#ddc085")
-    (pure-orange     "#cc6a00")
-
-
-    ;; ORANGE
-    (alt-yellow      "#be9266")
-
-    ;; WHEAT #f5deb3
-    (alt-wheat       "#fdd5b1")
-
-    ;; TODO: First is Strong green
-    (wheat           "#b9c791" "#ffd7a5")
-
-    (dark-jade          "#2e4039")
-    ;; cutty sark
-    (jade               "#597a6e")
-    ;; Feldgrau
-    (alt-jade           "#4d5d53")
-    (light-jade         "#709688")
 
     ;; Turquoise // Tax break
     (deep-green         "#39656b")
@@ -209,60 +249,13 @@
 
     (grayish-green      "#9ca78f")
 
-    ;; Chartreuse
-    (lime               "#85b654")
-    ;; Green
-    (alt-lime           "#8fbc8f")
-
     ;; Aqua/cyan
     (teal               "#80b6bc")
     ;; Deep sky blue
     (teal-blue          "#91b9c7")
     ;; Spring green - teal-green
     (teal-green         "#6fb593")
-    ;;  Aquamarine
-    ; (aquamarine         "#7fffd4")
-    (aquamarine         "#68F3C5")
 
-
-    ;; TODO: add sky blue
-    (grayish-blue      "#687184")
-    (alt-grayish-blue  "#8f9ca7")
-    (dark-blue         "#2a4661")
-    ;; TODO: (??) swap blue and soft-blue and rename to dark-blue
-    ;; try two follow
-    ;; (blue             "#6a6a9a")
-    ;; (blue             "#5757ad")
-    (blue             "#3B6FA3")
-    (alt-blue         "#267fb5")
-    ;; (moderate-blue    "#4e7f95")
-    (moderate-blue    "#53859d")
-    (soft-blue        "#4CA6E8")
-
-    ;; Aqua/cyan
-    (cyan             "#54b6b6")
-    (dark-cyan        "#008b8b")
-    ;; navy
-    (faded-blue       "#817f96")
-
-    ;; MAGENTA/Fuchsia
-    (dark-purple     "#563d56")
-    (purple          "#835d83")
-
-    ;; TODO my current magenta is moderate blue or even navy
-    (magenta         "#5454b6")
-    (grayish-magenta "#796878")
-    (light-purple    "#cea2ca")
-    ;; Antique fuchsia
-    ;; (alt-purple      "#915c83")
-    (alt-purple      "#a9779c")
-    (lavender        "#967bb6")
-    (alt-lavender    "#9d81ba")
-
-    (dark-violet     "#997a8d")
-    (violet          "#ab98b5")
-    (alt-violet      "#af94f5")
-    (light-violet    "#d1aef4")
 
     ;; Named face options
     (bold            kaolin-bold)
