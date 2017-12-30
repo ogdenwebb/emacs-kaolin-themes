@@ -194,10 +194,14 @@
     ;; Capri/Deep Sky Blue #00BFFF
     ;; TOOD: adjust
     (alt-blue         "#267fb5")
+    (teal-blue          "#91b9c7")
 
     ;; Cyan #00FFFF
     (cyan             "#54b6b6")
     (dark-cyan        "#098B8B")
+
+    ;; TODO: rename
+    (teal               "#80b6bc")
 
     ;; Aquamarine #00FFBF
     ; (aquamarine         "#7fffd4")
@@ -206,9 +210,16 @@
     ;; TODO: new group
     (light-jade         "#709688")
 
+
+    ;; TODO: Viridian
+    (viridian           "#40826d")
+
     ;; Spring green #00FF7F
     (dark-jade          "#2E4038")
     (jade               "#597A6C")
+    (teal-green         "#6fb593")
+    (dark-green         "#39855f")
+    (light-green        "#54b685")
 
     ;; TODO: adjust
     (light-jade         "#709688")
@@ -217,6 +228,7 @@
 
     ;; Green #00FF00
     (alt-lime           "#8fbc8f")
+    (grayish-green      "#9ca78f")
 
     ;; Harlequin #3FFF00
 
@@ -234,27 +246,11 @@
     (alt-brown       "#52413f")
     (bazaar          "#98777b")
 
-
-    ;; Turquoise // Tax break
+    ;; TODO: make MAIN color more green :>
     (deep-green         "#39656b")
-    ;; (green              "#4a858c")
     ;; Teal; TODO: make a bit more green
+    ;; (green              "#4a858c")
     (green              "#4d8d93")
-    ;; TODO: Viridian
-    (viridian           "#40826d")
-    ;; Spring green
-    (dark-green         "#39855f")
-    ;; Malachite // Jade
-    (light-green        "#54b685")
-
-    (grayish-green      "#9ca78f")
-
-    ;; Aqua/cyan
-    (teal               "#80b6bc")
-    ;; Deep sky blue
-    (teal-blue          "#91b9c7")
-    ;; Spring green - teal-green
-    (teal-green         "#6fb593")
 
 
     ;; Named face options
