@@ -49,6 +49,8 @@
 ;; color3 - dark
 ;; color4 - faded
 
+;; TODO: (??) num, link and prep color vars use the same color
+
 (defconst kaolin-palette
   '(
     ;; (black0          "#181818")
@@ -87,12 +89,14 @@
     (gray8           "#879193")
     (gray9           "#919a9c") ; old light-gray
 
+
+    ;; TODO:
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
 
     ;; White - #FDFDFF
     (white0          "#e8e8e8")
-    (white1          "#FDFDFF")
+    (white1          "#d4d4d6")
     (white2          "#c9c9cd")
     (white3          "#bebec4")
     (white4          "#b2b2b9")
@@ -138,6 +142,7 @@
     ;; Rose #FF007F
     (pink            "#d24b83")
     (soft-pink       "#fbaed2")
+    ;; Dark rose is eggplant
 
     ;; Cerise #FF00BF
     ;; (alt-purple      "#915c83")
@@ -166,11 +171,11 @@
     (alt-violet      "#af94f5")
 
     ;; Ultramarine #3F00FF
+    ;; TODO: add color
 
     ;; Blue #0000FF
     ;; (blue             "#6a6a9a")
     ;; (blue             "#5757ad")
-
     (faded-blue       "#817f96") ;  Navy
 
     (magenta         "#5454b6") ; TODO my current magenta is moderate blue or even navy
@@ -178,7 +183,7 @@
     ;; Cerulean #003FFF
     (grayish-blue      "#687184")
 
-    ;; Azure #007FFF
+    ;; Azure/Sky Blue #007FFF
     (alt-grayish-blue  "#8f9ca7")
     (dark-blue         "#2a4661")
 
@@ -200,7 +205,7 @@
     (cyan             "#54b6b6")
     (dark-cyan        "#098B8B")
 
-    ;; TODO: rename
+    ;; teal is dark cyan
     (teal               "#80b6bc")
 
     ;; Aquamarine #00FFBF
@@ -225,12 +230,14 @@
     (light-jade         "#709688")
 
     ;; Erin #00FF3F
+    ;; TODO: add color
 
     ;; Green #00FF00
     (alt-lime           "#8fbc8f")
     (grayish-green      "#9ca78f")
 
     ;; Harlequin #3FFF00
+    ;; TODO: add color
 
     ;; Chartreuse #7FFF00
     (lime               "#85b654")

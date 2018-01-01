@@ -46,6 +46,7 @@
    (comment     "#9aa88c")
    (alt-comment alt-grayish-blue)
    (functions   builtin)
+   ;; TODO: (??) change to brown
    (str         cyan)
    (str-alt     teal)
    (doc         str-alt)
