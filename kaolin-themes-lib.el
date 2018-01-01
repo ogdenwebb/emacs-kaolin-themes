@@ -68,7 +68,7 @@
 
     ;; Midnigh colors
     (midnight-green       "#142223")
-    (alt-midnight-green   "#0F1E1D")
+    (alt-midnight-green   "#0f1e1d")
     (midnight-blue        "#1e2528" black2)
     ;; (alt-midnight-blue "#062732")
     ;; (alt-midnight-blue "#12121a")
@@ -106,7 +106,7 @@
     (yellow          "#acb370")
 
     ;; Amber #FFBF00
-    (faded-wheat     "#D9CA9B")
+    (faded-wheat     "#d9ca9b")
     (light-yellow    "#c9bb87")
 
     ;; WHEAT #f5deb3
@@ -187,14 +187,14 @@
     (alt-grayish-blue  "#8f9ca7")
     (dark-blue         "#2a4661")
 
-    (blue             "#3B6FA3")
+    (blue             "#3b6fa3")
 
     ;; Dodger blue
     ;; (moderate-blue    "#4e7f95")
     (moderate-blue    "#53859d")
 
 
-    (soft-blue        "#4CA6E8")
+    (soft-blue        "#4ca6e8")
 
     ;; Capri/Deep Sky Blue #00BFFF
     ;; TOOD: adjust
@@ -203,14 +203,14 @@
 
     ;; Cyan #00FFFF
     (cyan             "#54b6b6")
-    (dark-cyan        "#098B8B")
+    (dark-cyan        "#098b8b")
 
     ;; teal is dark cyan
     (teal               "#80b6bc")
 
     ;; Aquamarine #00FFBF
     ; (aquamarine         "#7fffd4")
-    (aquamarine         "#68F3C5")
+    (aquamarine         "#68f3c5")
 
     ;; TODO: new group
     (light-jade         "#709688")
