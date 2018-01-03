@@ -1,4 +1,4 @@
-;;; kaolin-themes-lib.el --- Kaolin-themes library
+;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 
 ;; TODO: (??) add travis ci
 
@@ -100,11 +100,11 @@
     (grayish-orange  "#a5a19c")
 
     ;; White - #FDFDFF
-    (white0          "#e8e8e8")
-    (white1          "#d4d4d6")
-    (white2          "#c9c9cd")
-    (white3          "#bebec4")
-    (white4          "#b2b2b9")
+    (white0          "#f2f2f2")
+    (white1          "#e6e6e8")
+    (white2          "#d4d4d6")
+    (white3          "#c9c9cd")
+    (white4          "#bebec4")
 
     ;; Yellow #FFFF00
     (dark-yellow     "#555a2f")
