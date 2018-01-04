@@ -10,7 +10,7 @@ Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large nu
 
 # Kaolin theme variants
 
-![kaolin-banner](https://user-images.githubusercontent.com/9018005/34539900-252419e2-f0db-11e7-9621-3089c8df317e.png)
+![kaolin-banner](https://user-images.githubusercontent.com/9018005/34557184-08f0707e-f142-11e7-9421-94424b953163.png)
 
 All screenshots are available in the wiki on the following pages:
 
