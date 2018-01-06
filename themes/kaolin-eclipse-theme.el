@@ -33,11 +33,11 @@
 
    (comment     gray0)
    (alt-comment "#4c344c")
-   (str         teal)
+   (str         cyan3)
    (str-alt     faded-blue)
    (doc         str-alt)
    (warning     alt-orange)
-   (err         red)
+   (err         red1)
 
    (dim-buffer "#140E14")
    (hl         pink)
@@ -58,7 +58,7 @@
 
    (rb1 moderate-pink)
    (rb2 lavender)
-   (rb3 teal)
+   (rb3 cyan3)
    (rb4 faded-blue)
    (rb5 alt-lavender)
    (rb6 light-violet)
@@ -68,7 +68,7 @@
 
    (diff-add    light-jade)
    (diff-change purple)
-   (diff-rem    faded-red)
+   (diff-rem    red4)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -81,7 +81,7 @@
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
-   (evil-replace      red)
+   (evil-replace      red1)
    (evil-motion       yellow)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
@@ -96,7 +96,7 @@
   ;; Custom theme set faces
   (
    (link                (:foreground light-jade :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
    ;; TODO: change
    (org-code            (:foreground green))

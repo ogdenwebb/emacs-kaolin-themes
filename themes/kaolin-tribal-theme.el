@@ -14,16 +14,16 @@
    (bg4       "#34343d" black4)
    (violet    "#a78db5")
    (dark-blue "#325074")
-   (faded-red "#9c3b42")
+   (red4 "#9c3b42")
 
    ;; violet or lavender or purple, alt-purple, moderate-pink
-   (keyword     faded-red)
+   (keyword     red4)
    (second-key  "#642628" alt-purple)
    (builtin     grayish-blue)
    (functions   builtin)
    ;; TODO:
-   (var         teal-blue)
-   (const       teal-blue)
+   (var         capri3)
+   (const       capri3)
    (type        fg1)
    (num         alt-lavender)
    (bool        num)
@@ -32,11 +32,11 @@
    ;; TODO:
    (comment     bg4)
    (alt-comment "#4c344c")
-   (str         cyan)
+   (str         cyan1)
    (str-alt     dark-purple)
    (doc         str-alt)
    (warning     alt-orange)
-   (err         red)
+   (err         red1)
 
    (dim-buffer "#140E14")
    ;; TODO: or soft/light-pink
@@ -57,7 +57,7 @@
 
    (ivy2 dark-green)
    (ivy3 faded-orange)
-   (ivy4 alt-blue)
+   (ivy4 capri1)
 
    (rb1 moderate-pink)
    (rb2 lavender)
@@ -67,11 +67,11 @@
    (rb6 grayish-blue)
    (rb7 grayish-orange)
    (rb8 purple)
-   (rb9 faded-red)
+   (rb9 red4)
 
    (diff-add    light-jade)
    (diff-change purple)
-   (diff-rem    faded-red)
+   (diff-rem    red4)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -85,7 +85,7 @@
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
-   (evil-replace      red)
+   (evil-replace      red1)
    (evil-motion       yellow)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
@@ -99,8 +99,8 @@
 
   ;; Custom theme set faces
   (
-   (link                (:foreground dark-cyan :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   (link                (:foreground cyan2 :underline underline))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
    (org-document-title  (:foreground moderate-pink :bold bold))
    (org-document-info   (:foreground moderate-pink))

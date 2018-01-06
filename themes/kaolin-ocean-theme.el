@@ -17,11 +17,11 @@
    (keyword     moderate-blue)
    ;; TODO: a bit more bright
    (second-key  bg4 alt-purple)
-   (builtin     teal-blue)
+   (builtin     capri3)
    (functions   builtin)
    (var         alt-lavender)
    (const       alt-purple)
-   (type        cyan)
+   (type        cyan1)
    (num         pink)
    (bool        num)
    (prep        magenta)
@@ -32,10 +32,10 @@
    (str-alt     faded-orange)
    (doc         str-alt)
    (warning     orange)
-   (err         red)
+   (err         red1)
 
    (dim-buffer "#0F0F17")
-   (hl         dark-cyan)
+   (hl         cyan2)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
@@ -52,9 +52,9 @@
    (ivy3 light-orange)
    (ivy4 light-green)
 
-   (rb1 teal)
+   (rb1 cyan3)
    (rb2 lavender)
-   (rb3 teal)
+   (rb3 cyan3)
    (rb4 faded-blue)
    (rb5 jade)
    (rb6 teal-green)
@@ -64,7 +64,7 @@
 
    (diff-add    light-jade)
    (diff-change purple)
-   (diff-rem    faded-red)
+   (diff-rem    red4)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -77,7 +77,7 @@
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
-   (evil-replace      red)
+   (evil-replace      red1)
    (evil-motion       yellow)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
@@ -90,8 +90,8 @@
 
   ;; Custom theme set faces
   (
-   (link                (:foreground cyan :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   (link                (:foreground cyan1 :underline underline))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
    (org-code            (:foreground green))
    (org-verbatim        (:foreground light-green))

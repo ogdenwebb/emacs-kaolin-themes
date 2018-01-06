@@ -16,11 +16,11 @@
    (light-jade   "#518270")
    (pure-orange  "#d1832e")
    (faded-orange "#c78e6d")
-   (red          "#c86d6d")
+   (red1          "#c86d6d")
 
-   (cyan         "#48a9a9")
-   (teal         "#6facb3")
-   (dark-cyan    "#008b8b")
+   (cyan1         "#48a9a9")
+   (cyan3         "#6facb3")
+   (cyan2    "#008b8b")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -47,15 +47,15 @@
    (alt-comment alt-grayish-blue)
    (functions   builtin)
    ;; TODO: (??) change to brown
-   (str         cyan)
-   (str-alt     teal)
+   (str         cyan1)
+   (str-alt     cyan3)
    (doc         str-alt)
    (type        faded-orange)
-   (num         red)
+   (num         red1)
    (bool        num)
    (prep        dark-blue)
    (warning     orange)
-   (err         red)
+   (err         red1)
 
    (dim-buffer white0)
    (hl         viridian)
@@ -65,7 +65,7 @@
    ;; TODO:
    (selection bg4)
    ;; TODO:
-   (pulse teal)
+   (pulse cyan3)
 
    (todo moderate-pink)
 
@@ -87,7 +87,7 @@
 
    (diff-add    light-jade)
    (diff-change faded-orange)
-   (diff-rem    faded-red)
+   (diff-rem    red4)
 
     ;; Mode-line
    (line-fg           fg4)
@@ -101,7 +101,7 @@
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
-   (evil-replace      red)
+   (evil-replace      red1)
    (evil-motion       yellow)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
@@ -114,9 +114,9 @@
    (cursor        gray2)
 
    (ivy1          gray9)
-   (ivy2          alt-blue)
+   (ivy2          capri1)
    (ivy3          pure-orange)
-   (ivy4          red))
+   (ivy4          red1))
 
   ((link                   (:foreground soft-blue :underline underline))
 

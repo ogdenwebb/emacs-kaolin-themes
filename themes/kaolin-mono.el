@@ -37,7 +37,7 @@
    (str-alt     str)
    (doc         str-alt)
    (warning     orange)
-   (err         red)
+   (err         red1)
 
    (dim-buffer black4)
    (hl-line    gray2)
@@ -45,7 +45,7 @@
    (selection  bg4)
    (pulse      gray3)
 
-   (todo red)
+   (todo red1)
    (done light-green)
 
    (tooltip-bg    bg2)
@@ -53,12 +53,12 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg hl)
 
-   (ivy2 cyan)
+   (ivy2 cyan1)
    (ivy3 faded-orange)
-   (ivy4 faded-red)
+   (ivy4 red4)
 
    (rb1 alt-lavender)
-   (rb2 teal)
+   (rb2 cyan3)
    (rb3 light-violet)
    (rb4 faded-blue)
    (rb5 wheat)
@@ -69,7 +69,7 @@
 
    (diff-add    aquamarine)
    (diff-change light-orange)
-   (diff-rem    red)
+   (diff-rem    red1)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -83,7 +83,7 @@
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
-   (evil-replace      red)
+   (evil-replace      red1)
    (evil-motion       yellow)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
@@ -92,7 +92,7 @@
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
 
-   (evil-normal teal-blue)
+   (evil-normal capri3)
 
    (line-num-hl  gray9)
    (cursor       white2))
@@ -102,7 +102,7 @@
    (default             (:background bg1 :foreground fg2))
 
    (link                (:foreground pink :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))

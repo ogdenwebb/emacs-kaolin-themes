@@ -24,13 +24,13 @@
    (light-yellow "#eae46a")
    (wheat        "#c8c493" "#ffd7a5")
    (dark-blue    "#232c35")
-   (cyan         "#22aabb")
+   (cyan1         "#22aabb")
    (blue         "#2a57cc")
    ;; (blue      "#335599")
    (orange       "#d2ab5d")
    (alt-orange   "#ab6448")
-   (faded-red    "#9c3b42")
-   (light-red    "#e84c58")
+   (red4    "#9c3b42")
+   (red3    "#e84c58")
    (pink         "#e55c7a")
    (light-pink   "#cc7799")
    (lime         "#73c66c")
@@ -56,13 +56,13 @@
    (comment     gray3)
    ;; TODO:
    (alt-comment "#4c344c")
-   (str         teal-blue)
+   (str         capri3)
    ;; TODO: make bor bright
    (str-alt     grayish-blue)
    (doc         str-alt)
    ;; TODO: or light-orange
    (warning     orange)
-   (err         light-red)
+   (err         red3)
 
    (dim-buffer "#140E14")
    (hl         light-green)
@@ -72,20 +72,20 @@
    (selection  bg4)
    (pulse      dark-blue)
 
-   (todo light-red)
+   (todo red3)
    (done light-green)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg cyan)
+   (tooltip-hl-fg cyan1)
 
-   (ivy2 cyan)
+   (ivy2 cyan1)
    (ivy3 faded-orange)
-   (ivy4 faded-red)
+   (ivy4 red4)
 
    (rb1 alt-lavender)
-   (rb2 teal)
+   (rb2 cyan3)
    (rb3 light-violet)
    (rb4 faded-blue)
    (rb5 wheat)
@@ -96,7 +96,7 @@
 
    (diff-add    light-green)
    (diff-change light-violet)
-   (diff-rem    light-red)
+   (diff-rem    red3)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -110,7 +110,7 @@
    (evil-normal       green)
    (evil-insert       light-green)
    (evil-visual       orange)
-   (evil-replace      red)
+   (evil-replace      red1)
    (evil-motion       yellow)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
@@ -120,7 +120,7 @@
    (line-num-fg   bg4 black4)
    (line-num-hl   gray9)
 
-   (evil-normal teal-blue)
+   (evil-normal capri3)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
@@ -128,7 +128,7 @@
 
    ;; TODO: cyan, soft-blue, pink
    (link                (:foreground pink :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
