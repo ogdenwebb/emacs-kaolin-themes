@@ -24,7 +24,7 @@
    (light-yellow "#eae46a")
    (wheat        "#c8c493" "#ffd7a5")
    (dark-blue    "#232c35")
-   (cyan1         "#22aabb")
+   (cyan1        "#22aabb")
    (blue         "#2a57cc")
    ;; (blue      "#335599")
    (orange       "#d2ab5d")
@@ -85,7 +85,7 @@
    (ivy4 red4)
 
    (rb1 alt-lavender)
-   (rb2 cyan3)
+   (rb2 teal4)
    (rb3 light-violet)
    (rb4 faded-blue)
    (rb5 wheat)

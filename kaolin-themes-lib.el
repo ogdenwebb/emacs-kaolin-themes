@@ -1,6 +1,8 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 
 ;; TODO: (??) add travis ci
+;; TODO: midnight colors
+;; DONT TOUCH OLD COLORS
 
 ;; TODO: color spec and color functions
 ;; TODO: add accent color like aquamarine
@@ -44,9 +46,9 @@
 
 ;; FINAL
 ;; color0 - pure/contrast/accent > 70 sat & > 70 val
-;; color1 - regular ~50-60 sat & 70-80 value
+;; color1 - regular
 ;; color2 - dark
-;; color3 - light/soft ~25 sat & 90 value
+;; color3 - light/soft
 ;; color4 - desaturated/faded/muted
 ;; color5 - midnight
 
@@ -201,16 +203,16 @@
     (cyan0            "#0bcccf")
     (cyan1            "#57c1c2")
     (cyan2            "#09898b")
-    (cyan3            "#59caca")
-    (cyan4            "#51acae")
+    (cyan3            "#6bdbdb")
+    (cyan4            "#65a1a0")
 
     ;; Teal; TODO: make MAIN color a bit more green
     (teal0    "#0d948d")
     ;; (teal1 "#4a858c")
     (teal1    "#4d9390")
     (teal2    "#396b68")
-    (teal3    "#59bdb1")
-    (teal4    "#65A1A0")
+    (teal3    "#5cbdb2")
+    (teal4    "#80bcb6")
 
     ;; Aquamarine #00FFBF
     ; (aquamarine         "#7fffd4")
@@ -309,7 +311,7 @@
 
     (keyword     teal1)
     (second-key  teal2)
-    (builtin     cyan3)
+    (builtin     teal4)
     (comment     gray3)
     (alt-comment alt-grayish-blue)
     (functions   builtin)
@@ -399,7 +401,7 @@
     (link                (:foreground prep :underline underline))
     (link-visited        (:inherit 'link :underline nil))
     (success             (:background nil :foreground light-green))
-    (escape-glyph        (:background nil :foreground cyan1))
+    (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
     (header-line (:background midnight-blue :foreground var))
