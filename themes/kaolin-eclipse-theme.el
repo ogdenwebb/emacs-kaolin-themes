@@ -53,7 +53,7 @@
    (tooltip-hl-bg dark-purple)
    (tooltip-hl-fg light-orange)
 
-   (ivy3 teal-green)
+   (ivy3 spring-green3)
    (ivy4 moderate-blue)
 
    (rb1 moderate-pink)
@@ -78,7 +78,7 @@
 
    (segment-active    gray2)
    (segment-inactive  gray2)
-   (evil-normal       green)
+   (evil-normal       teal1)
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
@@ -99,7 +99,7 @@
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    ;; TODO: change
-   (org-code            (:foreground green))
+   (org-code            (:foreground teal1))
    (org-verbatim        (:foreground wheat))
    (org-quote           (:foreground violet)))
 

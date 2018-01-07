@@ -80,7 +80,7 @@
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       green)
+   (evil-normal       teal1)
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
@@ -109,7 +109,7 @@
 
    (org-document-title  (:foreground grayish-blue :bold bold))
    (org-document-info   (:foreground grayish-blue))
-   (org-date            (:foreground teal-green :underline underline))
+   (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground faded-orange))
    (org-verbatim        (:foreground orange))
    (org-quote           (:foreground faded-blue)))

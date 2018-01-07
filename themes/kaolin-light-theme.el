@@ -33,8 +33,8 @@
    (fg2 "#3e574d")
    (fg3 "#476257")
    (fg4 "#4f6e62")
-   ;; (green "#3f7d7f")
-   (green "#5e8475")
+   ;; (teal1 "#3f7d7f")
+   (teal1 "#5e8475")
 
 
    (keyword     jade)
@@ -75,11 +75,11 @@
    (tooltip-hl-fg hl)
 
     ;; TODO:
-   (rb1 green)
+   (rb1 teal1)
    (rb2 dark-violet)
    (rb3 moderate-blue)
    (rb4 blue)
-   (rb5 green)
+   (rb5 teal1)
    (rb6 moderate-pink)
    (rb7 faded-orange)
    (rb8 jade)
@@ -98,7 +98,7 @@
    ;; Telephone-line
    (segment-active    gray2)
    (segment-inactive  gray2)
-   (evil-normal       green)
+   (evil-normal       teal1)
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
@@ -120,11 +120,11 @@
 
   ((link                   (:foreground soft-blue :underline underline))
 
-   (org-level-1            (:foreground green :bold bold :height 1.1))
+   (org-level-1            (:foreground teal1 :bold bold :height 1.1))
    (org-level-2            (:foreground faded-blue :bold nil))
    (org-level-3            (:foreground faded-orange :bold nil))
    (org-level-4            (:foreground faded-wheat :bold nil))
-   (org-code               (:foreground green))
+   (org-code               (:foreground teal1))
    (org-verbatim           (:foreground alt-yellow))
    (org-table              (:foreground moderate-blue :bold bold))
 

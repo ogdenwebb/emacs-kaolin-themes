@@ -16,26 +16,26 @@
    ;; Interface
    ;; TODO:
    (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
-   (custom-set            (:background nil :foreground teal-green))
+   (custom-set            (:background nil :foreground spring-green3))
    (custom-face-tag       (:background nil :foreground purple :bold bold))
    (custom-link           (:background nil :foreground cyan3 :bold bold))
-   (widget-button         (:background nil :foreground green :bold bold))
+   (widget-button         (:background nil :foreground teal1 :bold bold))
    (widget-button-pressed (:background nil :foreground jade))
    (widget-field          (:background bg3 :foreground fg1 :box (:line-width 1 :color bg2 :style nil)))
    (widget-documentation  (:background nil :foreground var))
 
    ;; Org-mode
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
-   (org-level-1                   (:foreground green :bold bold :height 1.1))
+   (org-level-1                   (:foreground teal1 :bold bold :height 1.1))
    (org-level-2                   (:foreground capri3 :bold nil))
    (org-level-3                   (:foreground light-jade :bold nil))
    (org-level-4                   (:foreground faded-wheat :bold nil))
    (org-tag                       (:foreground orange :bold bold))
-   (org-checkbox                  (:foreground green :bold bold))
+   (org-checkbox                  (:foreground teal1 :bold bold))
    ;; TODO: refact
    (org-headline-done             (:foreground capri3  :bold nil))
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
-   (org-checkbox-statistics-done  (:foreground teal-green :bold bold))
+   (org-checkbox-statistics-done  (:foreground spring-green3 :bold bold))
    (org-hide                      (:foreground bg2))
    (org-agenda-structure          (:background bg3 :foreground fg3 :bold bold))
    (org-agenda-date               (:foreground light-yellow :height 1.1))
@@ -79,9 +79,9 @@
    ;; TODO:
    (speedbar-separator-face (:background blue))
    (speedbar-directory-face (:foreground cyan3))
-   (speedbar-file-face      (:foreground green))
+   (speedbar-file-face      (:foreground teal1))
    (speedbar-tag-face       (:foreground var))
-   (speedbar-selected-face  (:foreground teal-green))
+   (speedbar-selected-face  (:foreground spring-green3))
    (speedbar-highlight-face (:foreground cyan1))
    (speedbar-button-face    (:foreground jade))
 
@@ -97,7 +97,7 @@
    (clojure-keyword-face (:inherit 'font-lock-variable-name-face))
 
    ;; OCaml
-   (tuareg-font-lock-governing-face (:foreground green :bold bold))
+   (tuareg-font-lock-governing-face (:foreground teal1 :bold bold))
    (tuareg-font-double-colon-face   (:foreground yellow))
    (tuareg-font-lock-error-face     (:foreground red0))
    ;; TODO: find code with following face
@@ -111,10 +111,10 @@
    (rst-adornment (:foreground jade))
    (rst-block     (:foreground cyan3))
    (rst-level-1   (:foreground violet))
-   (rst-level-2   (:foreground green))
+   (rst-level-2   (:foreground teal1))
    (rst-level-3   (:foreground capri3))
    (rst-level-4   (:foreground violet))
-   (rst-level-5   (:foreground green))
+   (rst-level-5   (:foreground teal1))
    (rst-level-6   (:foreground capri3))
 
    ;; TODO: split
@@ -131,7 +131,7 @@
    ;; TODO: split
    ;; Ivy & Swiper
    (ivy-modified-buffer     (:foreground alt-lavender))
-   (ivy-subdir              (:foreground green :bold bold))
+   (ivy-subdir              (:foreground teal1 :bold bold))
    (ivy-action              (:background nil :foreground light-green :bold bold))
    (ivy-virtual             (:foreground light-yellow))
    (ivy-remote              (:foreground red1))

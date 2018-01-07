@@ -57,7 +57,7 @@
    (rb3 cyan3)
    (rb4 faded-blue)
    (rb5 jade)
-   (rb6 teal-green)
+   (rb6 spring-green3)
    (rb7 light-yellow)
    (rb8 dark-blue)
    (rb9 soft-blue)
@@ -74,7 +74,7 @@
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       green)
+   (evil-normal       teal1)
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
@@ -93,7 +93,7 @@
    (link                (:foreground cyan1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (org-code            (:foreground green))
+   (org-code            (:foreground teal1))
    (org-verbatim        (:foreground light-green))
    (org-quote           (:foreground faded-blue))
 

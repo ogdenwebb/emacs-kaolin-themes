@@ -198,15 +198,19 @@
     (capri3           "#91b9c7")
 
     ;; Cyan #00FFFF
-    (cyan0            "#0BC5C5")
-    (cyan1            "#54b6b6")
-    (cyan2            "#098b8b")
-    (cyan3            "#80b6bc")
+    (cyan0            "#0bcccf")
+    (cyan1            "#57c1c2")
+    (cyan2            "#09898b")
+    (cyan3            "#59caca")
+    (cyan4            "#51acae")
 
     ;; Teal; TODO: make MAIN color a bit more green
-    (deep-green         "#396b68")
-    ;; (green              "#4a858c")
-    (green              "#4d9390")
+    (teal0    "#0d948d")
+    ;; (teal1 "#4a858c")
+    (teal1    "#4d9390")
+    (teal2    "#396b68")
+    (teal3    "#59bdb1")
+    (teal4    "#65A1A0")
 
     ;; Aquamarine #00FFBF
     ; (aquamarine         "#7fffd4")
@@ -217,14 +221,14 @@
     (viridian           "#40826d")
 
     ;; Spring green #00FF7F
-    (dark-jade          "#2E4038")
-    (jade               "#597a6c")
-    (teal-green         "#6fb593")
-    (dark-green         "#39855f")
-    (light-green        "#54b685")
+    (light-green        "#54b685") ; spring-green0
+    (dark-green         "#39855f") ; dark
+    (jade               "#597a6c") ; faded
+    (light-jade         "#709688") ; close to jade
+    (spring-green3         "#6fb593") ; light
+    (dark-jade          "#2E4038") ; midnight
 
     ;; TODO: adjust
-    (light-jade         "#709688")
 
     ;; Erin #00FF3F
     ;; TODO: add color
@@ -270,7 +274,7 @@
     (bg4  black4)
 
     (dim-buffer black0)
-    ;; TODO: change because almost same green using by strings
+
     (hl         aquamarine)
     (hl-mono    gray4)
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
@@ -279,7 +283,7 @@
     (pulse      dark-jade)
 
     (todo red1)
-    (done teal-green)
+    (done spring-green3)
 
     (button grayish-orange)
     (button-hl light-orange)
@@ -293,7 +297,7 @@
     (rb2 violet)
     (rb3 jade)
     (rb4 faded-blue)
-    (rb5 green)
+    (rb5 teal1)
     (rb6 light-violet)
     (rb7 grayish-orange)
     (rb8 grayish-magenta)
@@ -303,14 +307,14 @@
     (diff-change violet)
     (diff-rem    red1)
 
-    (keyword     green)
-    (second-key  deep-green)
+    (keyword     teal1)
+    (second-key  teal2)
     (builtin     cyan3)
     (comment     gray3)
     (alt-comment alt-grayish-blue)
     (functions   builtin)
     ;; TODO: (??) change to light-brown like sierra.vim
-    (str         teal-green)
+    (str         spring-green3)
     (str-alt     jade)
     (doc         str-alt)
     (type        faded-orange)
@@ -331,7 +335,7 @@
     (line-color2       builtin)
     (segment-active    gray3)
     (segment-inactive  gray3)
-    (evil-normal       green)
+    (evil-normal       teal1)
     (evil-insert       light-green)
     (evil-visual       orange)
     (evil-replace      red1)
@@ -414,7 +418,7 @@
     (custom-button-pressed (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'pressed-button)))
     (custom-button-unraised (:inherit 'custom-button))
     (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
-    (custom-state          (:background nil :foreground green))
+    (custom-state          (:background nil :foreground teal1))
     (custom-changed        (:background nil :foreground orange))
     (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
     (custom-invalid        (:background nil :foreground red1))
@@ -481,20 +485,20 @@
     (ruler-mode-current-column (:foreground orange))
     (ruler-mode-fill-column    (:foreground pink))
     (ruler-mode-comment-column (:foreground capri3))
-    (ruler-mode-fringes        (:foreground green))
+    (ruler-mode-fringes        (:foreground teal1))
     (ruler-mode-pad            (:foreground var))
     (ruler-mode-tab-stop       (:foreground violet))
     (ruler-mode-goal-column    (:foreground red0))
 
     ;; TODO: Message faces
-    (message-header-name    (:foreground deep-green))
-    (message-header-subject (:foreground teal-green))
-    (message-header-to      (:foreground teal-green))
+    (message-header-name    (:foreground teal2))
+    (message-header-subject (:foreground spring-green3))
+    (message-header-to      (:foreground spring-green3))
     (message-header-other   (:foreground cyan3))
 
     ;; Elfeed
     (elfeed-search-tag-face          (:foreground light-yellow))
-    (elfeed-search-feed-face         (:foreground green))
+    (elfeed-search-feed-face         (:foreground teal1))
     (elfeed-search-date-face         (:foreground var))
     (elfeed-search-unread-title-face (:foreground fg1))
     (elfeed-search-unread-count-face (:foreground orange))
@@ -533,8 +537,8 @@
     (sml/line-number      (:foreground lime))
     (sml/modes            (:foreground purple))
     (sml/global           (:foreground cyan3))
-    (sml/filename         (:foreground green))
-    (sml/charging         (:foreground green))
+    (sml/filename         (:foreground teal1))
+    (sml/charging         (:foreground teal1))
     (sml/discharging      (:foreground red1))
     (sml/modified         (:foreground light-green :bold bold))
     (sml/outside-modified (:background red0 :foreground fg1))
@@ -584,6 +588,7 @@
 
     ;; Hydra
     (hydra-face-red      (:foreground red1))
+    ;; TODO: change to teal
     (hydra-face-teal     (:foreground cyan3))
     (hydra-face-blue     (:foreground soft-blue))
     (hydra-face-pink     (:foreground pink))
@@ -682,7 +687,7 @@
 
     ;; Diff
     (diff-header      (:background bg2))
-    (diff-file-header (:background bg2 :foreground green))
+    (diff-file-header (:background bg2 :foreground teal1))
     (diff-added       (:background dark-green :foreground fg1))
     (diff-changed     (:background diff-change :foreground fg1))
     (diff-removed     (:background red2 :foreground fg1))
@@ -714,14 +719,14 @@
     (term-color-black   (:foreground black1))
     (term-color-blue    (:foreground blue))
     (term-color-red     (:foreground red1))
-    (term-color-green   (:foreground green))
+    (term-color-green   (:foreground teal1))
     (term-color-yellow  (:foreground yellow))
     (term-color-magenta (:foreground purple))
     (term-color-cyan    (:foreground cyan1))
     (term-color-white   (:foreground white2))
 
     ;; EShell
-    (eshell-prompt        (:foreground green :bold bold))
+    (eshell-prompt        (:foreground teal1 :bold bold))
     (eshell-ls-directory  (:foreground magenta :bold bold))
     (eshell-ls-symlink    (:foreground blue :bold bold))
     (eshell-ls-executable (:foreground lime :bold bold))
