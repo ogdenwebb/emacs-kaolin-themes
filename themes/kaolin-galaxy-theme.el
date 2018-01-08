@@ -20,7 +20,6 @@
    (bg4          "#3d3b46" black4)
 
    (violet       "#9f84ae")
-   (yellow       "#b9b963")
    (light-yellow "#eae46a")
    (wheat        "#c8c493" "#ffd7a5")
    (dark-blue    "#232c35")
@@ -32,7 +31,7 @@
    (red4    "#9c3b42")
    (red3    "#e84c58")
    (pink         "#e55c7a")
-   (light-pink   "#cc7799")
+   (crimson3   "#cc7799")
    (lime         "#73c66c")
    ;; TEAL
    (teal1        "#609ca6")
@@ -111,7 +110,7 @@
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
-   (evil-motion       yellow)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 

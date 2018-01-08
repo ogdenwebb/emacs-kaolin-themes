@@ -67,7 +67,7 @@
    ;; TODO:
    (pulse cyan3)
 
-   (todo moderate-pink)
+   (todo crimson4)
 
    (tooltip-bg bg2)
    (tooltip-fg gray9)
@@ -80,7 +80,7 @@
    (rb3 moderate-blue)
    (rb4 blue)
    (rb5 teal1)
-   (rb6 moderate-pink)
+   (rb6 crimson4)
    (rb7 faded-orange)
    (rb8 jade)
    (rb9 lavender)
@@ -102,7 +102,7 @@
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
-   (evil-motion       yellow)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
@@ -129,7 +129,7 @@
    (org-table              (:foreground moderate-blue :bold bold))
 
    (js2-object-property          (:foreground brown))
-   (evil-ex-info                 (:foreground moderate-pink)))
+   (evil-ex-info                 (:foreground crimson4)))
 
 
   (when kaolin-git-gutter-solid

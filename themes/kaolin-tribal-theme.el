@@ -16,7 +16,7 @@
    (dark-blue "#325074")
    (red4 "#9c3b42")
 
-   ;; violet or lavender or purple, alt-purple, moderate-pink
+   ;; violet or lavender or purple, alt-purple, crimson4
    (keyword     red4)
    (second-key  "#642628" alt-purple)
    (builtin     grayish-blue)
@@ -39,7 +39,7 @@
    (err         red1)
 
    (dim-buffer "#140E14")
-   ;; TODO: or soft/light-pink
+   ;; TODO: or soft/crimson3
    (hl         soft-blue)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
@@ -59,7 +59,7 @@
    (ivy3 faded-orange)
    (ivy4 capri1)
 
-   (rb1 moderate-pink)
+   (rb1 crimson4)
    (rb2 lavender)
    (rb3 light-brown)
    (rb4 faded-blue)
@@ -86,7 +86,7 @@
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
-   (evil-motion       yellow)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
@@ -102,8 +102,8 @@
    (link                (:foreground cyan2 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (org-document-title  (:foreground moderate-pink :bold bold))
-   (org-document-info   (:foreground moderate-pink))
+   (org-document-title  (:foreground crimson4 :bold bold))
+   (org-document-info   (:foreground crimson4))
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground faded-orange))
    (org-verbatim        (:foreground orange))

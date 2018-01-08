@@ -51,6 +51,7 @@
 ;; color3 - light/soft
 ;; color4 - desaturated/faded/muted
 ;; color5 - midnight
+;; color6 - grayish ???
 
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
 
@@ -108,8 +109,13 @@
     (white4          "#bebec4")
 
     ;; Yellow #FFFF00
-    (dark-yellow     "#555a2f")
-    (yellow          "#acb370")
+    ;; TODO: adjust
+    (yellow0        "#eeee28")
+    (yellow1        "#b9b963") ; yellow
+    (yellow2        "#919120") ; dark-yellow
+    (yellow3        "#c7d459")
+    (yellow4        "#989e65")
+    (yellow5        "#555a2f") ; TODO: midnight yellow
 
     ;; Amber #FFBF00
     (amber           "#d4b668")
@@ -141,8 +147,9 @@
     (red4      "#863d44")
 
     ;; Crimson #FF003F
-    (moderate-pink   "#a0586c")
-    (light-pink      "#ef98aa")
+    (crimson1 "#bd536c")    ; light-pink
+    (crimson3 "#ef98aa")    ; light-pink
+    (crimson4 "#a0586c")    ; moderate-pink
 
     ;; Rose #FF007F
     (pink            "#d24b83")
@@ -341,7 +348,7 @@
     (evil-insert       light-green)
     (evil-visual       orange)
     (evil-replace      red1)
-    (evil-motion       yellow)
+    (evil-motion       yellow1)
     (evil-operator     evil-normal)
     (evil-emacs        light-yellow)
 
@@ -722,7 +729,7 @@
     (term-color-blue    (:foreground blue))
     (term-color-red     (:foreground red1))
     (term-color-green   (:foreground teal1))
-    (term-color-yellow  (:foreground yellow))
+    (term-color-yellow  (:foreground yellow1))
     (term-color-magenta (:foreground purple))
     (term-color-cyan    (:foreground cyan1))
     (term-color-white   (:foreground white2))
@@ -736,7 +743,7 @@
     (eshell-ls-backup     (:foreground purple))
     (eshell-ls-clutter    (:foreground pink))
     (eshell-ls-missing    (:background bg3 :foreground red1))
-    (eshell-ls-product    (:foreground yellow))
+    (eshell-ls-product    (:foreground yellow1))
     (eshell-ls-readonly   (:foreground fg2))
     (eshell-ls-special    (:foreground light-green))
     (eshell-ls-unreadable (:foreground var))

@@ -78,7 +78,7 @@
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
-   (evil-motion       yellow)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 

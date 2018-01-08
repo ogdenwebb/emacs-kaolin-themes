@@ -98,7 +98,7 @@
 
    ;; OCaml
    (tuareg-font-lock-governing-face (:foreground teal1 :bold bold))
-   (tuareg-font-double-colon-face   (:foreground yellow))
+   (tuareg-font-double-colon-face   (:foreground yellow1))
    (tuareg-font-lock-error-face     (:foreground red0))
    ;; TODO: find code with following face
    ;; (tuareg-font-lock-multistage-face (:foreground red0))))

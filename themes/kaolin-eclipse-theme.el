@@ -56,7 +56,7 @@
    (ivy3 spring-green3)
    (ivy4 moderate-blue)
 
-   (rb1 moderate-pink)
+   (rb1 crimson4)
    (rb2 lavender)
    (rb3 cyan3)
    (rb4 faded-blue)
@@ -82,7 +82,7 @@
    (evil-insert       light-green)
    (evil-visual       orange)
    (evil-replace      red1)
-   (evil-motion       yellow)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
    (evil-emacs        light-yellow)
 
