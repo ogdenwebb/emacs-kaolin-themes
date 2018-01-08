@@ -29,8 +29,8 @@
    (org-level-1                   (:foreground teal1 :bold bold :height 1.1))
    (org-level-2                   (:foreground capri3 :bold nil))
    (org-level-3                   (:foreground light-jade :bold nil))
-   (org-level-4                   (:foreground faded-wheat :bold nil))
-   (org-tag                       (:foreground orange :bold bold))
+   (org-level-4                   (:foreground amber3 :bold nil))
+   (org-tag                       (:foreground orange1 :bold bold))
    (org-checkbox                  (:foreground teal1 :bold bold))
    ;; TODO: refact
    (org-headline-done             (:foreground capri3  :bold nil))
@@ -38,7 +38,7 @@
    (org-checkbox-statistics-done  (:foreground spring-green3 :bold bold))
    (org-hide                      (:foreground bg2))
    (org-agenda-structure          (:background bg3 :foreground fg3 :bold bold))
-   (org-agenda-date               (:foreground light-yellow :height 1.1))
+   (org-agenda-date               (:foreground amber3 :height 1.1))
    (org-agenda-date-today         (:foreground purple :height 1.2 :bold bold))
 
    ;; Ediff
@@ -91,7 +91,7 @@
    (perl6-type-constraint (:inherit 'font-lock-keyword-face))
 
    ;; Shell
-   (sh-quoted-exec (:foreground light-yellow))
+   (sh-quoted-exec (:foreground amber3))
 
    ;; Clojure
    (clojure-keyword-face (:inherit 'font-lock-variable-name-face))
@@ -133,11 +133,11 @@
    (ivy-modified-buffer     (:foreground alt-lavender))
    (ivy-subdir              (:foreground teal1 :bold bold))
    (ivy-action              (:background nil :foreground light-green :bold bold))
-   (ivy-virtual             (:foreground light-yellow))
+   (ivy-virtual             (:foreground amber3))
    (ivy-remote              (:foreground red1))
    (ivy-cursor              (:background bg3 :foreground fg1))
    (ivy-match-required-face (:background nil :foreground red0 :bold nil))
-   (ivy-confirm-face        (:background nil :foreground light-orange)))
+   (ivy-confirm-face        (:background nil :foreground amber3)))
 
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces

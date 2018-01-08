@@ -28,10 +28,10 @@
 
    (comment     gray0)
    (alt-comment "#34344c")
-   (str         wheat "#ffd787")
-   (str-alt     faded-orange)
+   (str         amber3 "#ffd787")
+   (str-alt     vermilion4)
    (doc         str-alt)
-   (warning     orange)
+   (warning     orange1)
    (err         red1)
 
    (dim-buffer "#0F0F17")
@@ -49,7 +49,7 @@
    (tooltip-hl-fg lime)
 
    (ivy2 pink)
-   (ivy3 light-orange)
+   (ivy3 amber3)
    (ivy4 light-green)
 
    (rb1 cyan3)
@@ -58,7 +58,7 @@
    (rb4 faded-blue)
    (rb5 jade)
    (rb6 spring-green3)
-   (rb7 light-yellow)
+   (rb7 amber3)
    (rb8 dark-blue)
    (rb9 soft-blue)
 
@@ -76,11 +76,11 @@
    (segment-inactive  gray3)
    (evil-normal       teal1)
    (evil-insert       light-green)
-   (evil-visual       orange)
+   (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        amber3)
 
    (win-border    bg3)
    (line-num-bg   bg1)

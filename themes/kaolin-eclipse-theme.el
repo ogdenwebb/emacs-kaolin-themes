@@ -25,18 +25,18 @@
    (var         alt-lavender)
    (const       lavender)
    (type        light-jade)
-   (num         wheat)
+   (num         amber3)
    (bool        num)
    ;; (prep        moderate-blue "#8787f5")
    ;; (prep        moderate-blue "#5f5faf")
-   (prep        faded-orange)
+   (prep        vermilion4)
 
    (comment     gray0)
    (alt-comment "#4c344c")
    (str         cyan3)
    (str-alt     faded-blue)
    (doc         str-alt)
-   (warning     alt-orange)
+   (warning     orange3)
    (err         red1)
 
    (dim-buffer "#140E14")
@@ -51,7 +51,7 @@
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg dark-purple)
-   (tooltip-hl-fg light-orange)
+   (tooltip-hl-fg amber3)
 
    (ivy3 spring-green3)
    (ivy4 moderate-blue)
@@ -80,11 +80,11 @@
    (segment-inactive  gray2)
    (evil-normal       teal1)
    (evil-insert       light-green)
-   (evil-visual       orange)
+   (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        amber3)
 
    (win-border    black3)
    (line-num-bg   bg1)
@@ -100,7 +100,7 @@
 
    ;; TODO: change
    (org-code            (:foreground teal1))
-   (org-verbatim        (:foreground wheat))
+   (org-verbatim        (:foreground amber3))
    (org-quote           (:foreground violet)))
 
   ;; Set custom vars

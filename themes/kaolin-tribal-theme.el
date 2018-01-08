@@ -35,7 +35,7 @@
    (str         cyan1)
    (str-alt     dark-purple)
    (doc         str-alt)
-   (warning     alt-orange)
+   (warning     orange3)
    (err         red1)
 
    (dim-buffer "#140E14")
@@ -56,7 +56,7 @@
    (tooltip-hl-fg light-violet)
 
    (ivy2 dark-green)
-   (ivy3 faded-orange)
+   (ivy3 vermilion4)
    (ivy4 capri1)
 
    (rb1 crimson4)
@@ -84,11 +84,11 @@
    (segment-inactive  gray2)
    (evil-normal       teal1)
    (evil-insert       light-green)
-   (evil-visual       orange)
+   (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        amber3)
 
    (win-border    black3)
    (line-num-bg   bg1)
@@ -105,8 +105,8 @@
    (org-document-title  (:foreground crimson4 :bold bold))
    (org-document-info   (:foreground crimson4))
    (org-date            (:foreground spring-green3 :underline underline))
-   (org-code            (:foreground faded-orange))
-   (org-verbatim        (:foreground orange))
+   (org-code            (:foreground vermilion4))
+   (org-verbatim        (:foreground orange1))
    (org-quote           (:foreground faded-blue)))
 
   ;; Set custom vars

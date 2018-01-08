@@ -3,6 +3,8 @@
 ;; TODO: (??) add travis ci
 ;; TODO: midnight colors
 ;; DONT TOUCH OLD COLORS
+;; TODO: move colors from galaxy theme.
+;; TODO: adjust colors for 256 terminal
 
 ;; TODO: color spec and color functions
 ;; TODO: add accent color like aquamarine
@@ -64,7 +66,18 @@
     ;; (black3          "#2f2f2f")
     ;; (black4          "#353535")
 
-    (test-color      "#008080")
+    ;; TODO:
+    ;; (galaxy-bg1          "#212026" black1)
+
+    ;; (galaxy-violet       "#9f84ae")
+    ;; (galaxy-dark-blue    "#232c35")
+    ;; (galaxy-blue         "#2a57cc")
+    ;; ;; (galaxy-blue      "#335599")
+    ;; (galaxy-pink         "#e55c7a")
+    ;; (galaxy-crimson3     "#cc7799")
+    ;; (galaxy-lime         "#73c66c")
+    ;; ;; TEAL
+    ;; (galaxy-light-green  "#6dd797")
 
     ;; Black - #020203
     (black0          "#161618")
@@ -110,44 +123,45 @@
 
     ;; Yellow #FFFF00
     ;; TODO: adjust
-    (yellow0        "#eeee28")
-    (yellow1        "#b9b963") ; yellow
-    (yellow2        "#919120") ; dark-yellow
-    (yellow3        "#c7d459")
-    (yellow4        "#989e65")
-    (yellow5        "#555a2f") ; TODO: midnight yellow
+    (yellow0 "#eeeb28")
+    (yellow1 "#b9b963") ; yellow
+    (yellow2 "#919120") ; dark-yellow
+    (yellow3 "#eae46a")
+    (yellow4 "#c8c493" "#ffd7a5")
+    (yellow5 "#555a2f") ; TODO: midnight yellow
 
     ;; Amber #FFBF00
-    (amber           "#d4b668")
-    (faded-wheat     "#d9ca9b")
-    (light-yellow    "#c9bb87") ; TODO alsmost same with previous
-    ;; WHEAT #f5deb3
-    ;; TODO: fix second
-    ;; (??) desaturared
-    (wheat           "#d1bb90" "#ffd7a5")
+    (amber0 "#f3c91f")
+    (amber1 "#d4b668")
+    (amber2 "#91762a")
+    (amber3 "#eed891")
+    (amber4 "#c5b378")
 
     ;; Orange #FF7F00
-    (alt-orange      "#d9a76f")
-    (orange          "#dbac66")
-    (alt-wheat       "#fdd5b1") ; TODO almost same with previous two
-    (alt-yellow      "#be9266")
-    (pure-orange     "#cc6a00")
-
-    ;; TODO:
-    (faded-orange    "#cd9575" "#d7af87")
+    (orange0    "#e67417")
+    (orange1    "#dbac66")
+    (orange2    "#b87e3c")
+    (orange3    "#f8d3a8")
+    (orange4    "#e1b079")
 
     ;; TODO Vermilion #FF3F00
-    (light-orange    "#ddc085")
+    (vermilion0      "#fa5016")
+    (vermilion1      "#ca6036")
+    (vermilion2      "#a14223")
+    (vermilion3      "#ee7042")
+    (vermilion4      "#cd9575" "#d7af87") ; faded-orange
 
     ;; Red #FF0000
     (red0      "#c93237")
     (red1      "#cd5c60")
+    ;; (red2      "#863d44")
     (red2      "#832729")
-    (red3      "#d66e78")
-    (red4      "#863d44")
+    (red3      "#e84c58")
+    (red4      "#9c3b42")
 
     ;; Crimson #FF003F
-    (crimson1 "#bd536c")    ; light-pink
+    (crimson0 "#e12a56")
+    (crimson1 "#bd536c")
     (crimson3 "#ef98aa")    ; light-pink
     (crimson4 "#a0586c")    ; moderate-pink
 
@@ -295,12 +309,12 @@
     (done spring-green3)
 
     (button grayish-orange)
-    (button-hl light-orange)
+    (button-hl amber3)
 
     (tooltip-bg bg2)
     (tooltip-fg gray9)
     (tooltip-hl-bg alt-brown)
-    (tooltip-hl-fg light-orange)
+    (tooltip-hl-fg amber3)
 
     (rb1 cyan3)
     (rb2 violet)
@@ -326,13 +340,13 @@
     (str         spring-green3)
     (str-alt     jade)
     (doc         str-alt)
-    (type        faded-orange)
+    (type        vermilion4)
     (const       violet)
     (var         faded-blue)
     (num         red1)
     (bool        num)
     (prep        lavender)
-    (warning     orange)
+    (warning     orange1)
     (err         red1)
 
     ;; Mode-line
@@ -346,11 +360,11 @@
     (segment-inactive  gray3)
     (evil-normal       teal1)
     (evil-insert       light-green)
-    (evil-visual       orange)
+    (evil-visual       orange1)
     (evil-replace      red1)
     (evil-motion       yellow1)
     (evil-operator     evil-normal)
-    (evil-emacs        light-yellow)
+    (evil-emacs        amber3)
 
     (win-border    black3)
     (line-num-bg   bg1)
@@ -362,7 +376,7 @@
     (ivy-bg      nil)
     (ivy1        fg1)
     (ivy2        soft-blue)
-    (ivy3        light-orange)
+    (ivy3        amber3)
     (ivy4        light-violet)))
 
 ;; Predefined Kaolin face specifications
@@ -428,7 +442,7 @@
     (custom-button-unraised (:inherit 'custom-button))
     (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
     (custom-state          (:background nil :foreground teal1))
-    (custom-changed        (:background nil :foreground orange))
+    (custom-changed        (:background nil :foreground orange1))
     (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
     (custom-invalid        (:background nil :foreground red1))
     (custom-set            (:background nil :foreground light-jade))
@@ -436,7 +450,7 @@
     (widget-button         (:background nil :foreground keyword))
 
     ;; Highlighting
-    (highlight                (:background bg2 :foreground light-orange))
+    (highlight                (:background bg2 :foreground amber3))
     (lazy-highlight           (:background bg3 :foreground fg2))
     (hl-line                  (:background hl-line))
     (highlight-numbers-number (:foreground num))
@@ -480,7 +494,7 @@
                                                :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
-    (which-func (:foreground orange))
+    (which-func (:foreground orange1))
 
     ;; Which-key
     (which-key-key-face                   (:foreground light-green :bold bold))
@@ -491,7 +505,7 @@
     ;; Ruler-mode
     (ruler-mode-default        (:background bg2 :foreground gray3))
     (ruler-mode-column-number  (:foreground var))
-    (ruler-mode-current-column (:foreground orange))
+    (ruler-mode-current-column (:foreground orange1))
     (ruler-mode-fill-column    (:foreground pink))
     (ruler-mode-comment-column (:foreground capri3))
     (ruler-mode-fringes        (:foreground teal1))
@@ -506,11 +520,11 @@
     (message-header-other   (:foreground cyan3))
 
     ;; Elfeed
-    (elfeed-search-tag-face          (:foreground light-yellow))
+    (elfeed-search-tag-face          (:foreground amber3))
     (elfeed-search-feed-face         (:foreground teal1))
     (elfeed-search-date-face         (:foreground var))
     (elfeed-search-unread-title-face (:foreground fg1))
-    (elfeed-search-unread-count-face (:foreground orange))
+    (elfeed-search-unread-count-face (:foreground orange1))
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
@@ -552,7 +566,7 @@
     (sml/modified         (:foreground light-green :bold bold))
     (sml/outside-modified (:background red0 :foreground fg1))
     (sml/prefix           (:foreground line-fg))
-    (sml/read-only        (:foreground orange))
+    (sml/read-only        (:foreground orange1))
 
     ;; TODO: maybe delete or change to other package
     ;; Fic-mode
@@ -576,9 +590,9 @@
     (company-scrollbar-fg             (:foreground keyword))
     ;; TODO: read about template
     (company-template-field           (:background bg3))
-    (company-echo-common              (:background bg1 :foreground light-yellow))
+    (company-echo-common              (:background bg1 :foreground amber3))
     (company-preview                  (:background nil :foreground keyword))
-    (company-preview-common           (:background bg2 :foreground light-orange))
+    (company-preview-common           (:background bg2 :foreground amber3))
     (company-preview-search           (:background bg1 :foreground blue))
     (company-tooltip-mouse            (:background bg3 :foreground fg3))
 
@@ -658,7 +672,7 @@
     (font-latex-math-face         (:foreground violet))
     (font-latex-sedate-face       (:foreground capri3))
     (font-latex-script-char-face  (:foreground violet))
-    (font-latex-sectioning-0-face (:foreground wheat :bold bold))
+    (font-latex-sectioning-0-face (:foreground amber3 :bold bold))
     (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
     (font-latex-sectioning-2-face (:inherit 'font-latex-sectioning-0-face))
     (font-latex-sectioning-3-face (:inherit 'font-latex-sectioning-0-face))
@@ -675,10 +689,10 @@
     ;; Rainbow delimeters
     ;; TODO: change color & rewrite
     ;; TODO: probably I need to define custom vars or smth...
-    (show-paren-match (:background nil :foreground orange :bold bold))
+    (show-paren-match (:background nil :foreground orange1 :bold bold))
     ;; (if (eq show-paren-style 'expression)
     ;;  (show-paren-match-face (:background bg3 :foreground nil))))
-    ;;  (show-paren-match-face (:background nil :foreground orange :bold bold)))))
+    ;;  (show-paren-match-face (:background nil :foreground orange1 :bold bold)))))
 
     ;; TODO: make red more contrast
     (show-paren-mismatch (:background red4 :foreground bg2))
@@ -757,8 +771,8 @@
     (whitespace-tab              (:background light-jade))
     (whitespace-space            (:background gray4 :foreground dark-jade))
     (whitespace-hspace           (:foreground cyan1))
-    (whitespace-space-before-tab (:background alt-yellow :foreground bg2))
-    (whitespace-space-after-tab  (:background alt-yellow :foreground bg2))
+    (whitespace-space-before-tab (:background orange2 :foreground bg2))
+    (whitespace-space-after-tab  (:background orange2 :foreground bg2))
     (whitespace-trailing         (:foreground red0))
     (whitespace-big-indent       (:background red2 :foreground red0))
 
@@ -768,9 +782,9 @@
     (org-done                      (:foreground done  :bold bold))
     (org-headline-done             (:foreground gray4  :bold nil))
     (org-ellipsis                  (:foreground builtin))
-    (org-date                      (:foreground light-yellow :underline underline))
+    (org-date                      (:foreground amber3 :underline underline))
     (org-link                      (:inherit 'link))
-    (org-code                      (:foreground light-yellow))
+    (org-code                      (:foreground amber3))
     (org-verbatim                  (:foreground soft-blue))
     (org-hide                      (:foreground bg1))
     (org-special-keyword           (:foreground functions))
@@ -827,7 +841,7 @@
     (nim-font-lock-export-face (:inherit 'font-lock-function-name-face :italic nil))
 
     ;; Evil ex
-    (evil-ex-info                   (:foreground orange))
+    (evil-ex-info                   (:foreground orange1))
     (evil-ex-substitute-matches     (:background nil :foreground red1 :underline underline))
     (evil-ex-substitute-replacement (:background nil :foreground light-green))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))

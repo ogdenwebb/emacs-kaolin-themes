@@ -14,8 +14,8 @@
    (pink         "#d45589")
    (dark-jade    "#3e594e")
    (light-jade   "#518270")
-   (pure-orange  "#d1832e")
-   (faded-orange "#c78e6d")
+   (orange0  "#d1832e")
+   (vermilion4 "#c78e6d")
    (red1          "#c86d6d")
 
    (cyan1         "#48a9a9")
@@ -50,11 +50,11 @@
    (str         cyan1)
    (str-alt     cyan3)
    (doc         str-alt)
-   (type        faded-orange)
+   (type        vermilion4)
    (num         red1)
    (bool        num)
    (prep        dark-blue)
-   (warning     orange)
+   (warning     orange1)
    (err         red1)
 
    (dim-buffer white0)
@@ -81,12 +81,12 @@
    (rb4 blue)
    (rb5 teal1)
    (rb6 crimson4)
-   (rb7 faded-orange)
+   (rb7 vermilion4)
    (rb8 jade)
    (rb9 lavender)
 
    (diff-add    light-jade)
-   (diff-change faded-orange)
+   (diff-change vermilion4)
    (diff-rem    red4)
 
     ;; Mode-line
@@ -100,11 +100,11 @@
    (segment-inactive  gray2)
    (evil-normal       teal1)
    (evil-insert       light-green)
-   (evil-visual       orange)
+   (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        amber3)
 
    (win-border    bg3)
    (line-num-bg   bg1)
@@ -115,17 +115,17 @@
 
    (ivy1          gray9)
    (ivy2          capri1)
-   (ivy3          pure-orange)
+   (ivy3          orange0)
    (ivy4          red1))
 
   ((link                   (:foreground soft-blue :underline underline))
 
    (org-level-1            (:foreground teal1 :bold bold :height 1.1))
    (org-level-2            (:foreground faded-blue :bold nil))
-   (org-level-3            (:foreground faded-orange :bold nil))
-   (org-level-4            (:foreground faded-wheat :bold nil))
+   (org-level-3            (:foreground vermilion4 :bold nil))
+   (org-level-4            (:foreground amber3 :bold nil))
    (org-code               (:foreground teal1))
-   (org-verbatim           (:foreground alt-yellow))
+   (org-verbatim           (:foreground orange2))
    (org-table              (:foreground moderate-blue :bold bold))
 
    (js2-object-property          (:foreground brown))
