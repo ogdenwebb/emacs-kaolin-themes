@@ -22,7 +22,7 @@
    (var         alt-lavender)
    (const       alt-purple)
    (type        cyan1)
-   (num         pink)
+   (num         pink1)
    (bool        num)
    (prep        magenta)
 
@@ -41,14 +41,14 @@
    (selection  bg4)
    (pulse      bg4)
 
-   (todo pink)
+   (todo pink1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg lime)
 
-   (ivy2 pink)
+   (ivy2 pink1)
    (ivy3 amber3)
    (ivy4 light-green)
 

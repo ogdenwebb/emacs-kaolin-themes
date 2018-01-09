@@ -25,8 +25,6 @@
    ;; (blue      "#335599")
    (orange1      "#d2ab5d")
    (orange3      "#ab6448")
-   (pink         "#e55c7a")
-   (crimson3     "#cc7799")
    (lime         "#73c66c")
    (light-green  "#6dd797")
 
@@ -40,7 +38,7 @@
    (var         amber3)
    (const       yellow4)
    (type        teal1)
-   (num         pink "#5f87af")
+   (num         crimson1 "#5f87af")
    (prep        soft-blue)
    (bool        num)
 
@@ -84,7 +82,7 @@
    (rb6 grayish-blue)
    (rb7 grayish-orange)
    (rb8 purple)
-   (rb9 pink)
+   (rb9 crimson1)
 
    (diff-add    light-green)
    (diff-change light-violet)
@@ -118,8 +116,8 @@
   ;; Custom theme set faces
   (
 
-   ;; TODO: cyan, soft-blue, pink
-   (link                (:foreground pink :underline underline))
+   ;; TODO: cyan, soft-blue, crimson1
+   (link                (:foreground crimson1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))

@@ -104,7 +104,7 @@
    ;; (tuareg-font-lock-multistage-face (:foreground red0))))
 
    ;; Ace-window
-   (aw-leading-char-face (:foreground pink :bold bold))
+   (aw-leading-char-face (:foreground pink1 :bold bold))
    (aw-background-face   (:foreground bg4 :bold bold))
 
    ;; Rst-mode

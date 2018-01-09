@@ -65,7 +65,7 @@
    (rb6 grayish-blue)
    (rb7 grayish-orange)
    (rb8 purple)
-   (rb9 pink)
+   (rb9 pink1)
 
    (diff-add    aquamarine)
    (diff-change amber3)
@@ -101,7 +101,7 @@
   (
    (default             (:background bg1 :foreground fg2))
 
-   (link                (:foreground pink :underline underline))
+   (link                (:foreground pink1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))

@@ -40,13 +40,13 @@
    (err         red1)
 
    (dim-buffer "#140E14")
-   (hl         pink)
+   (hl         pink1)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
    (pulse      dark-purple)
 
-   (todo pink)
+   (todo pink1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
@@ -64,7 +64,7 @@
    (rb6 light-violet)
    (rb7 grayish-orange)
    (rb8 dark-blue)
-   (rb9 soft-pink)
+   (rb9 pink3)
 
    (diff-add    light-jade)
    (diff-change purple)

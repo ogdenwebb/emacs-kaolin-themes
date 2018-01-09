@@ -3,8 +3,8 @@
 ;; TODO: (??) add travis ci
 ;; TODO: midnight colors
 ;; DONT TOUCH OLD COLORS
-;; TODO: move colors from galaxy theme.
 ;; TODO: adjust colors for 256 terminal
+;; TODO: create simple color list
 
 ;; TODO: color spec and color functions
 ;; TODO: add accent color like aquamarine
@@ -74,7 +74,6 @@
     ;; (galaxy-blue         "#2a57cc")
     ;; ;; (galaxy-blue      "#335599")
     ;; (galaxy-pink         "#e55c7a")
-    ;; (galaxy-crimson3     "#cc7799")
     ;; (galaxy-lime         "#73c66c")
     ;; ;; TEAL
     ;; (galaxy-light-green  "#6dd797")
@@ -161,18 +160,21 @@
 
     ;; Crimson #FF003F
     (crimson0 "#e12a56")
-    (crimson1 "#bd536c")
-    (crimson3 "#ef98aa")    ; light-pink
+    (crimson1 "#e55c7a")
+    (crimson2 "#941b37")
+    (crimson3 "#ef6787")    ; light-pink
     (crimson4 "#a0586c")    ; moderate-pink
 
-    ;; Rose #FF007F
-    (pink            "#d24b83")
-    (soft-pink       "#fbaed2")
+    ;; Rose/pink #FF007F
+    (pink0       "#eb3380")
+    (pink1       "#d24b83")
+    (pink2       "#9E2256")
+    (pink3       "#fbaed2")
 
+    ;; TODO:
     ;; Cerise #FF00BF
     ;; (alt-purple      "#915c83")
     (alt-purple      "#a9779c")
-    ;; TODO:
     (dark-violet     "#997a8d")
 
     ;; Magenta/Fuchsia #FF00FF
@@ -506,7 +508,7 @@
     (ruler-mode-default        (:background bg2 :foreground gray3))
     (ruler-mode-column-number  (:foreground var))
     (ruler-mode-current-column (:foreground orange1))
-    (ruler-mode-fill-column    (:foreground pink))
+    (ruler-mode-fill-column    (:foreground pink1))
     (ruler-mode-comment-column (:foreground capri3))
     (ruler-mode-fringes        (:foreground teal1))
     (ruler-mode-pad            (:foreground var))
@@ -614,7 +616,7 @@
     ;; TODO: change to teal
     (hydra-face-teal     (:foreground cyan3))
     (hydra-face-blue     (:foreground soft-blue))
-    (hydra-face-pink     (:foreground pink))
+    (hydra-face-pink     (:foreground pink1))
     (hydra-face-amaranth (:foreground purple))
 
     ;; Ido
@@ -755,7 +757,7 @@
     (eshell-ls-executable (:foreground lime :bold bold))
     (eshell-ls-archive    (:foreground red1))
     (eshell-ls-backup     (:foreground purple))
-    (eshell-ls-clutter    (:foreground pink))
+    (eshell-ls-clutter    (:foreground pink1))
     (eshell-ls-missing    (:background bg3 :foreground red1))
     (eshell-ls-product    (:foreground yellow1))
     (eshell-ls-readonly   (:foreground fg2))

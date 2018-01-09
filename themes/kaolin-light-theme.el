@@ -11,7 +11,7 @@
    (blue         "#5c9499")
    ;; (jade         "#597a6e")
    (dark-blue    "#445588")
-   (pink         "#d45589")
+   (pink1         "#d45589")
    (dark-jade    "#3e594e")
    (light-jade   "#518270")
    (orange0  "#d1832e")
