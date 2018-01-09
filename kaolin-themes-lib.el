@@ -150,6 +150,12 @@
     (vermilion3      "#ee7042")
     (vermilion4      "#cd9575" "#d7af87") ; faded-orange
 
+    ;; TODO: Brown #A33728
+    (brown           "#7d6360")
+    (light-brown     "#ae9895")
+    (alt-brown       "#52413f")
+    (bazaar          "#98777b")
+
     ;; Red #FF0000
     (red0      "#c93237")
     (red1      "#cd5c60")
@@ -166,16 +172,16 @@
     (crimson4 "#a0586c")    ; moderate-pink
 
     ;; Rose/pink #FF007F
-    (pink0       "#eb3380")
-    (pink1       "#d24b83")
-    (pink2       "#9E2256")
-    (pink3       "#fbaed2")
+    (pink0 "#eb3380")
+    (pink1 "#d24b83")
+    (pink2 "#9E2256")
+    (pink3 "#fbaed2")
 
     ;; TODO:
     ;; Cerise #FF00BF
     ;; (alt-purple      "#915c83")
-    (alt-purple      "#a9779c")
-    (dark-violet     "#997a8d")
+    (alt-purple  "#a9779c")
+    (dark-violet "#997a8d")
 
     ;; Magenta/Fuchsia #FF00FF
     (dark-purple     "#563d56")
@@ -191,14 +197,11 @@
     ;; Violet #7F00FF
     (lavender        "#967bb6")
     (alt-lavender    "#9d81ba")
-
     (light-violet    "#d1aef4")
-
-    ;; TODO: add to group
-    (alt-violet      "#af94f5")
 
     ;; Ultramarine #3F00FF
     ;; TODO: add color
+    (alt-violet      "#af94f5")
 
     ;; Blue #0000FF
     ;; (blue             "#6a6a9a")
@@ -253,13 +256,14 @@
     (spring-green3         "#6fb593") ; light
     (dark-jade          "#2E4038") ; midnight
 
-    ;; TODO: adjust
-
     ;; Erin #00FF3F
     ;; TODO: add color
 
     ;; Green #00FF00
-    (alt-lime           "#8fbc8f")
+    (green0           "#21e121")
+    (green1           "#44cf44")
+    (green2           "#18a318")
+    (green3           "#61e361")
     (grayish-green      "#9ca78f")
 
     ;; Harlequin #3FFF00
@@ -270,14 +274,6 @@
 
     ;; Lime #D5FF00
     ;; "#b9c791"
-
-    ;; EXTRA COLORS
-    ;; TODO Brown
-    ;; Brown orange + black
-    (brown           "#7d6360")
-    (light-brown     "#ae9895")
-    (alt-brown       "#52413f")
-    (bazaar          "#98777b")
 
 
     ;; Named face options
@@ -898,11 +894,11 @@
 
     ;; Ivy & swiper basic
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
+
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
-    (ivy-current-match           (:background hl-line :foreground hl :bold t))
 
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
