@@ -79,7 +79,7 @@
    (segment-active    gray2)
    (segment-inactive  gray2)
    (evil-normal       teal1)
-   (evil-insert       light-green)
+   (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)

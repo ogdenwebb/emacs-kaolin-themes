@@ -20,8 +20,8 @@
    ;; TODO: adjust contrast with keyword
    (builtin     fg1)
    (functions   builtin)
-   ;; (var         lime)
-   ;; (const       light-green)
+   ;; (var         chartreuse1)
+   ;; (const       spring-green1)
    (const       builtin)
    (var         const)
    (type        hl)
@@ -46,7 +46,7 @@
    (pulse      gray3)
 
    (todo red1)
-   (done light-green)
+   (done spring-green1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
@@ -81,7 +81,7 @@
    (segment-active    gray3)
    (segment-inactive  gray3)
    (evil-normal       teal1)
-   (evil-insert       light-green)
+   (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
@@ -92,7 +92,7 @@
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
 
-   (evil-normal capri3)
+   (evil-normal capri4)
 
    (line-num-hl  gray9)
    (cursor       white2))

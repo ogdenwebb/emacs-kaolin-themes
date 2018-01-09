@@ -22,8 +22,8 @@
    (builtin     grayish-blue)
    (functions   builtin)
    ;; TODO:
-   (var         capri3)
-   (const       capri3)
+   (var         capri4)
+   (const       capri4)
    (type        fg1)
    (num         alt-lavender)
    (bool        num)
@@ -47,7 +47,7 @@
    (pulse      dark-blue)
 
    (todo pink)
-   (done light-green)
+   (done spring-green1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
@@ -55,7 +55,7 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg light-violet)
 
-   (ivy2 dark-green)
+   (ivy2 spring-green2)
    (ivy3 vermilion4)
    (ivy4 capri1)
 
@@ -83,7 +83,7 @@
    (segment-active    gray2)
    (segment-inactive  gray2)
    (evil-normal       teal1)
-   (evil-insert       light-green)
+   (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)

@@ -27,13 +27,13 @@
    ;; Org-mode
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
    (org-level-1                   (:foreground teal1 :bold bold :height 1.1))
-   (org-level-2                   (:foreground capri3 :bold nil))
+   (org-level-2                   (:foreground capri4 :bold nil))
    (org-level-3                   (:foreground light-jade :bold nil))
    (org-level-4                   (:foreground amber3 :bold nil))
    (org-tag                       (:foreground orange1 :bold bold))
    (org-checkbox                  (:foreground teal1 :bold bold))
    ;; TODO: refact
-   (org-headline-done             (:foreground capri3  :bold nil))
+   (org-headline-done             (:foreground capri4  :bold nil))
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
    (org-checkbox-statistics-done  (:foreground spring-green3 :bold bold))
    (org-hide                      (:foreground bg2))
@@ -44,8 +44,8 @@
    ;; Ediff
    ;; TODO: change
    (ediff-current-diff-A (:background red2 :foreground red1))
-   (ediff-current-diff-B (:background dark-green :foreground light-green))
-   (ediff-current-diff-C (:background dark-blue :foreground capri3))
+   (ediff-current-diff-B (:background spring-green2 :foreground spring-green1))
+   (ediff-current-diff-C (:background dark-blue :foreground capri4))
 
    (ediff-even-diff-A (:background bg2))
    (ediff-even-diff-B (:background bg2))
@@ -112,10 +112,10 @@
    (rst-block     (:foreground cyan3))
    (rst-level-1   (:foreground violet))
    (rst-level-2   (:foreground teal1))
-   (rst-level-3   (:foreground capri3))
+   (rst-level-3   (:foreground capri4))
    (rst-level-4   (:foreground violet))
    (rst-level-5   (:foreground teal1))
-   (rst-level-6   (:foreground capri3))
+   (rst-level-6   (:foreground capri4))
 
    ;; TODO: split
    ;; Vimish-fold
@@ -132,7 +132,7 @@
    ;; Ivy & Swiper
    (ivy-modified-buffer     (:foreground alt-lavender))
    (ivy-subdir              (:foreground teal1 :bold bold))
-   (ivy-action              (:background nil :foreground light-green :bold bold))
+   (ivy-action              (:background nil :foreground spring-green1 :bold bold))
    (ivy-virtual             (:foreground amber3))
    (ivy-remote              (:foreground red1))
    (ivy-cursor              (:background bg3 :foreground fg1))

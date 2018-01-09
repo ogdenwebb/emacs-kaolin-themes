@@ -7,12 +7,12 @@
 (define-kaolin-theme light  "Light Kaolin theme variant."
   ;; Palette modification
   (
-   ;; TODO: lime color
+   ;; TODO: chartreuse1 color
    (blue         "#5c9499")
    ;; (jade         "#597a6e")
    (dark-blue    "#445588")
    (pink1         "#d45589")
-   (dark-jade    "#3e594e")
+   (spring-green5    "#3e594e")
    (light-jade   "#518270")
    (orange0  "#d1832e")
    (vermilion4 "#c78e6d")
@@ -29,7 +29,7 @@
    (bg3 "#cfd2cb")
    (bg4 "#c5c9c0")
 
-   (fg1 dark-jade)
+   (fg1 spring-green5)
    (fg2 "#3e574d")
    (fg3 "#476257")
    (fg4 "#4f6e62")
@@ -99,7 +99,7 @@
    (segment-active    gray2)
    (segment-inactive  gray2)
    (evil-normal       teal1)
-   (evil-insert       light-green)
+   (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)

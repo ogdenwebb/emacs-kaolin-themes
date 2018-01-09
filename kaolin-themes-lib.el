@@ -73,10 +73,6 @@
     ;; (galaxy-dark-blue    "#232c35")
     ;; (galaxy-blue         "#2a57cc")
     ;; ;; (galaxy-blue      "#335599")
-    ;; (galaxy-pink         "#e55c7a")
-    ;; (galaxy-lime         "#73c66c")
-    ;; ;; TEAL
-    ;; (galaxy-light-green  "#6dd797")
 
     ;; Black - #020203
     (black0          "#161618")
@@ -222,8 +218,12 @@
     (moderate-blue    "#53859d")
 
     ;; Capri/Deep Sky Blue #00BFFF
-    (capri1           "#267fb5") ; TODO: adjust
-    (capri3           "#91b9c7")
+    ;; TODO: adjust
+    (capri0           "#1a9eee")
+    (capri1           "#2683b5")
+    (capri2           "#1c5f87")
+    (capri3           "#41b0f3")
+    (capri4           "#91b9c7")
 
     ;; Cyan #00FFFF
     (cyan0            "#0bcccf")
@@ -249,28 +249,37 @@
     (viridian           "#40826d")
 
     ;; Spring green #00FF7F
-    (light-green        "#54b685") ; spring-green0
-    (dark-green         "#39855f") ; dark
-    (jade               "#597a6c") ; faded
-    (light-jade         "#709688") ; close to jade
-    (spring-green3         "#6fb593") ; light
-    (dark-jade          "#2E4038") ; midnight
+    (spring-green0        "#2ae186")
+    (spring-green1        "#51b884")
+    ;; (galaxy-spring-green1  "#6dd797")
+    (spring-green2 "#39855f") ; dark
+    (spring-green3 "#6fb593") ; light
+    (spring-green5 "#2E4038") ; midnight
+
+    ;; TODO:
+    (jade          "#597a6c") ; faded
+    (light-jade    "#709688") ; close to jade
 
     ;; Erin #00FF3F
     ;; TODO: add color
 
     ;; Green #00FF00
-    (green0           "#21e121")
-    (green1           "#44cf44")
-    (green2           "#18a318")
-    (green3           "#61e361")
-    (grayish-green      "#9ca78f")
+    (green0        "#21e121")
+    (green1        "#44cf44")
+    (green2        "#18a318")
+    (green3        "#61e361")
+    (green4        "#73c66c")
+    (grayish-green "#9ca78f")
 
     ;; Harlequin #3FFF00
     ;; TODO: add color
 
-    ;; Chartreuse #7FFF00
-    (lime               "#85b654")
+    ;; Chartreuse1 #7FFF00
+    (chartreuse0 "#8bee1a")
+    (chartreuse1 "#8fbf50")
+    (chartreuse2 "#5ba111")
+    (chartreuse3 "#9de346")
+    (chartreuse4 "#7fa148")
 
     ;; Lime #D5FF00
     ;; "#b9c791"
@@ -294,14 +303,14 @@
     (bg3  black3)
     (bg4  black4)
 
-    (dim-buffer black0)
+    (dim-buffer bg0)
 
     (hl         aquamarine)
     (hl-mono    gray4)
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray3)
     (selection  bg3)
-    (pulse      dark-jade)
+    (pulse      spring-green5)
 
     (todo red1)
     (done spring-green3)
@@ -324,7 +333,7 @@
     (rb8 grayish-magenta)
     (rb9 lavender)
 
-    (diff-add    light-green)
+    (diff-add    spring-green1)
     (diff-change violet)
     (diff-rem    red1)
 
@@ -357,7 +366,7 @@
     (segment-active    gray3)
     (segment-inactive  gray3)
     (evil-normal       teal1)
-    (evil-insert       light-green)
+    (evil-insert       spring-green1)
     (evil-visual       orange1)
     (evil-replace      red1)
     (evil-motion       yellow1)
@@ -406,7 +415,7 @@
     (shadow              (:foreground gray4))
     (file-name-shadow    (:inherit 'shadow))
     (region              (:background selection))
-    (secondary-selection (:background dark-jade))
+    (secondary-selection (:background spring-green5))
     (fringe              (:background bg1 :foreground fg1))
     (cursor              (:background cursor))
     (vertical-border     (:foreground win-border))
@@ -419,7 +428,7 @@
     ;; TODO: add link var
     (link                (:foreground prep :underline underline))
     (link-visited        (:inherit 'link :underline nil))
-    (success             (:background nil :foreground light-green))
+    (success             (:background nil :foreground spring-green1))
     (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
@@ -495,7 +504,7 @@
     (which-func (:foreground orange1))
 
     ;; Which-key
-    (which-key-key-face                   (:foreground light-green :bold bold))
+    (which-key-key-face                   (:foreground spring-green1 :bold bold))
     (which-key-group-description-face     (:foreground alt-lavender))
     (which-key-local-map-description-face (:foreground soft-blue))
     (which-key-command-description-face   (:foreground cyan3))
@@ -505,7 +514,7 @@
     (ruler-mode-column-number  (:foreground var))
     (ruler-mode-current-column (:foreground orange1))
     (ruler-mode-fill-column    (:foreground pink1))
-    (ruler-mode-comment-column (:foreground capri3))
+    (ruler-mode-comment-column (:foreground capri4))
     (ruler-mode-fringes        (:foreground teal1))
     (ruler-mode-pad            (:foreground var))
     (ruler-mode-tab-stop       (:foreground violet))
@@ -555,13 +564,13 @@
     (spaceline-highlight-face (:foreground cyan3))
 
     ;; Smart-mode-line
-    (sml/line-number      (:foreground lime))
+    (sml/line-number      (:foreground chartreuse1))
     (sml/modes            (:foreground purple))
     (sml/global           (:foreground cyan3))
     (sml/filename         (:foreground teal1))
     (sml/charging         (:foreground teal1))
     (sml/discharging      (:foreground red1))
-    (sml/modified         (:foreground light-green :bold bold))
+    (sml/modified         (:foreground spring-green1 :bold bold))
     (sml/outside-modified (:background red0 :foreground fg1))
     (sml/prefix           (:foreground line-fg))
     (sml/read-only        (:foreground orange1))
@@ -596,12 +605,12 @@
 
 
     ;; Flycheck
-    (flycheck-info           (:foreground capri3))
+    (flycheck-info           (:foreground capri4))
     (flycheck-warning        (:underline (:style underline-style :color warning)))
     (flycheck-error          (:underline (:style underline-style :color err)))
     (flycheck-fringe-error   (:foreground err))
     (flycheck-fringe-warning (:foreground warning))
-    (flycheck-fringe-info    (:foreground capri3))
+    (flycheck-fringe-info    (:foreground capri4))
 
     ;; Flyspell
     (flyspell-duplicate (:underline (:style underline-style :color warning)))
@@ -668,7 +677,7 @@
     (font-latex-warning-face      (:inherit 'warning))
     (font-latex-string-face       (:inherit 'font-lock-string-face))
     (font-latex-math-face         (:foreground violet))
-    (font-latex-sedate-face       (:foreground capri3))
+    (font-latex-sedate-face       (:foreground capri4))
     (font-latex-script-char-face  (:foreground violet))
     (font-latex-sectioning-0-face (:foreground amber3 :bold bold))
     (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
@@ -709,7 +718,7 @@
     ;; Diff
     (diff-header      (:background bg2))
     (diff-file-header (:background bg2 :foreground teal1))
-    (diff-added       (:background dark-green :foreground fg1))
+    (diff-added       (:background spring-green2 :foreground fg1))
     (diff-changed     (:background diff-change :foreground fg1))
     (diff-removed     (:background red2 :foreground fg1))
 
@@ -750,24 +759,24 @@
     (eshell-prompt        (:foreground teal1 :bold bold))
     (eshell-ls-directory  (:foreground magenta :bold bold))
     (eshell-ls-symlink    (:foreground blue :bold bold))
-    (eshell-ls-executable (:foreground lime :bold bold))
+    (eshell-ls-executable (:foreground chartreuse1 :bold bold))
     (eshell-ls-archive    (:foreground red1))
     (eshell-ls-backup     (:foreground purple))
     (eshell-ls-clutter    (:foreground pink1))
     (eshell-ls-missing    (:background bg3 :foreground red1))
     (eshell-ls-product    (:foreground yellow1))
     (eshell-ls-readonly   (:foreground fg2))
-    (eshell-ls-special    (:foreground light-green))
+    (eshell-ls-special    (:foreground spring-green1))
     (eshell-ls-unreadable (:foreground var))
 
     ;; Whitespace mode
     ;; TODO: Add variant for light themes
-    (whitespace-empty            (:background dark-jade :foreground gray9))
+    (whitespace-empty            (:background spring-green5 :foreground gray9))
     (whitespace-line             (:background bg3 :foreground warning))
     (whitespace-newline          (:foreground cyan3))
     (whitespace-indentation      (:background hl-indent))
     (whitespace-tab              (:background light-jade))
-    (whitespace-space            (:background gray4 :foreground dark-jade))
+    (whitespace-space            (:background gray4 :foreground spring-green5))
     (whitespace-hspace           (:foreground cyan1))
     (whitespace-space-before-tab (:background orange2 :foreground bg2))
     (whitespace-space-after-tab  (:background orange2 :foreground bg2))
@@ -841,7 +850,7 @@
     ;; Evil ex
     (evil-ex-info                   (:foreground orange1))
     (evil-ex-substitute-matches     (:background nil :foreground red1 :underline underline))
-    (evil-ex-substitute-replacement (:background nil :foreground light-green))
+    (evil-ex-substitute-replacement (:background nil :foreground spring-green1))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
 
     ;; Evil-goggles

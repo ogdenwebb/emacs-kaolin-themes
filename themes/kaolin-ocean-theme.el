@@ -17,7 +17,7 @@
    (keyword     moderate-blue)
    ;; TODO: a bit more bright
    (second-key  bg4 alt-purple)
-   (builtin     capri3)
+   (builtin     capri4)
    (functions   builtin)
    (var         alt-lavender)
    (const       alt-purple)
@@ -46,11 +46,11 @@
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg lime)
+   (tooltip-hl-fg chartreuse1)
 
    (ivy2 pink1)
    (ivy3 amber3)
-   (ivy4 light-green)
+   (ivy4 spring-green1)
 
    (rb1 cyan3)
    (rb2 lavender)
@@ -75,7 +75,7 @@
    (segment-active    gray3)
    (segment-inactive  gray3)
    (evil-normal       teal1)
-   (evil-insert       light-green)
+   (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
@@ -94,7 +94,7 @@
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (org-code            (:foreground teal1))
-   (org-verbatim        (:foreground light-green))
+   (org-verbatim        (:foreground spring-green1))
    (org-quote           (:foreground faded-blue))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))

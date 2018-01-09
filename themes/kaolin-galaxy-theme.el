@@ -25,16 +25,16 @@
    ;; (blue      "#335599")
    (orange1      "#d2ab5d")
    (orange3      "#ab6448")
-   (lime         "#73c66c")
-   (light-green  "#6dd797")
+   (chartreuse1         "#73c66c")
+   (spring-green1  "#6dd797")
 
    (keyword     light-violet)
    (second-key  purple alt-purple)
    ;; TODO: adjust contrast with keyword
    (builtin     violet)
    (functions   builtin)
-   ;; (var         lime)
-   ;; (const       light-green)
+   ;; (var         chartreuse1)
+   ;; (const       spring-green1)
    (var         amber3)
    (const       yellow4)
    (type        teal1)
@@ -46,7 +46,7 @@
    (comment     gray3)
    ;; TODO:
    (alt-comment "#4c344c")
-   (str         capri3)
+   (str         capri4)
    ;; TODO: make bor bright
    (str-alt     grayish-blue)
    (doc         str-alt)
@@ -55,7 +55,7 @@
    (err         red3)
 
    (dim-buffer "#140E14")
-   (hl         light-green)
+   (hl         spring-green1)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    ;; TODO: (??) less bright
@@ -63,7 +63,7 @@
    (pulse      dark-blue)
 
    (todo red3)
-   (done light-green)
+   (done spring-green1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
@@ -84,7 +84,7 @@
    (rb8 purple)
    (rb9 crimson1)
 
-   (diff-add    light-green)
+   (diff-add    spring-green1)
    (diff-change light-violet)
    (diff-rem    red3)
 
@@ -98,7 +98,7 @@
    (segment-active    gray3)
    (segment-inactive  gray3)
    (evil-normal       teal1)
-   (evil-insert       light-green)
+   (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
    (evil-motion       yellow1)
@@ -110,7 +110,7 @@
    (line-num-fg   bg4 black4)
    (line-num-hl   gray9)
 
-   (evil-normal capri3)
+   (evil-normal capri4)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
