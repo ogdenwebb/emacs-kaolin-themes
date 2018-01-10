@@ -226,39 +226,37 @@
     (capri4           "#91b9c7")
 
     ;; Cyan #00FFFF
-    (cyan0            "#0bcccf")
-    (cyan1            "#57c1c2")
-    (cyan2            "#09898b")
-    (cyan3            "#6bdbdb")
-    (cyan4            "#65a1a0")
+    (cyan0 "#0bc9cf")
+    (cyan1 "#57bfc2")
+    (cyan2 "#09878b")
+    (cyan3 "#6bd9db")
+    (cyan4 "#65a0a1")
 
     ;; Teal; TODO: make MAIN color a bit more green
     (teal0    "#0d948d")
     ;; (teal1 "#4a858c")
-    (teal1    "#4d9392")
+    (teal1    "#4d9391")
     (teal2    "#396b68")
     (teal3    "#49bdb0")
     (teal4    "#80bcb6")
 
     ;; Aquamarine #00FFBF
-    ; (aquamarine         "#7fffd4")
-    (aquamarine         "#68f3c5")
-    (light-jade         "#709688")
-
-    ;; TODO: Viridian
-    (viridian           "#40826d")
+    (aquamarine0 "#0ed49b")
+    (aquamarine1 "#47ba99")
+    (aquamarine2 "#40826d")
+    ;; (aquamarine3 "#7fffd4")
+    (aquamarine3 "#68f3ca")
+    (aquamarine4 "#709688")
 
     ;; Spring green #00FF7F
-    (spring-green0        "#2ae186")
-    (spring-green1        "#51b884")
-    ;; (galaxy-spring-green1  "#6dd797")
+    (spring-green0 "#2ae186")
+    (spring-green1 "#51b884")
     (spring-green2 "#39855f") ; dark
-    (spring-green3 "#6fb593") ; light
+    (spring-green3 "#6fb593") ; old light green
+    (spring-green4 "#597a6c") ; faded
     (spring-green5 "#2E4038") ; midnight
 
     ;; TODO:
-    (jade          "#597a6c") ; faded
-    (light-jade    "#709688") ; close to jade
 
     ;; Erin #00FF3F
     ;; TODO: add color
@@ -274,15 +272,19 @@
     ;; Harlequin #3FFF00
     ;; TODO: add color
 
-    ;; Chartreuse1 #7FFF00
+    ;; Chartreuse #7FFF00
     (chartreuse0 "#8bee1a")
     (chartreuse1 "#8fbf50")
     (chartreuse2 "#5ba111")
     (chartreuse3 "#9de346")
     (chartreuse4 "#7fa148")
 
-    ;; Lime #D5FF00
-    ;; "#b9c791"
+    ;; Lime #BFFF00
+    (lime0 "#aadc13")
+    (lime1 "#a8c749")
+    (lime2 "#82a80e")
+    (lime3 "#c8ee57")
+    (lime4 "#b9c791")
 
 
     ;; Named face options
@@ -305,7 +307,7 @@
 
     (dim-buffer bg0)
 
-    (hl         aquamarine)
+    (hl         aquamarine3)
     (hl-mono    gray4)
     (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
     (hl-indent  gray3)
@@ -325,7 +327,7 @@
 
     (rb1 cyan3)
     (rb2 violet)
-    (rb3 jade)
+    (rb3 spring-green4)
     (rb4 faded-blue)
     (rb5 teal1)
     (rb6 light-violet)
@@ -345,7 +347,7 @@
     (functions   builtin)
     ;; TODO: (??) change to light-brown like sierra.vim
     (str         spring-green3)
-    (str-alt     jade)
+    (str-alt     spring-green4)
     (doc         str-alt)
     (type        vermilion4)
     (const       violet)
@@ -452,7 +454,7 @@
     (custom-changed        (:background nil :foreground orange1))
     (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
     (custom-invalid        (:background nil :foreground red1))
-    (custom-set            (:background nil :foreground light-jade))
+    (custom-set            (:background nil :foreground aquamarine4))
     (widget-documentation  (:background nil :foreground var))
     (widget-button         (:background nil :foreground keyword))
 
@@ -775,7 +777,7 @@
     (whitespace-line             (:background bg3 :foreground warning))
     (whitespace-newline          (:foreground cyan3))
     (whitespace-indentation      (:background hl-indent))
-    (whitespace-tab              (:background light-jade))
+    (whitespace-tab              (:background aquamarine4))
     (whitespace-space            (:background gray4 :foreground spring-green5))
     (whitespace-hspace           (:foreground cyan1))
     (whitespace-space-before-tab (:background orange2 :foreground bg2))
@@ -873,7 +875,7 @@
     (helm-selection                           (:background bg2 :foreground type :bold bold))
     (helm-selection-line                      (:background bg2 :foreground type :bold bold))
     (helm-visible-mark                        (:foreground blue))
-    (helm-candidate-number                    (:foreground light-jade))
+    (helm-candidate-number                    (:foreground aquamarine4))
     (helm-separator                           (:foreground type))
     (helm-time-zone-current                   (:foreground builtin))
     (helm-time-zone-home                      (:foreground type))

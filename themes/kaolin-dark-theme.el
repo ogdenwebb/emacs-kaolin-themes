@@ -20,7 +20,7 @@
    (custom-face-tag       (:background nil :foreground purple :bold bold))
    (custom-link           (:background nil :foreground cyan3 :bold bold))
    (widget-button         (:background nil :foreground teal1 :bold bold))
-   (widget-button-pressed (:background nil :foreground jade))
+   (widget-button-pressed (:background nil :foreground spring-green4))
    (widget-field          (:background bg3 :foreground fg1 :box (:line-width 1 :color bg2 :style nil)))
    (widget-documentation  (:background nil :foreground var))
 
@@ -28,7 +28,7 @@
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
    (org-level-1                   (:foreground teal1 :bold bold :height 1.1))
    (org-level-2                   (:foreground capri4 :bold nil))
-   (org-level-3                   (:foreground light-jade :bold nil))
+   (org-level-3                   (:foreground aquamarine4 :bold nil))
    (org-level-4                   (:foreground amber3 :bold nil))
    (org-tag                       (:foreground orange1 :bold bold))
    (org-checkbox                  (:foreground teal1 :bold bold))
@@ -83,7 +83,7 @@
    (speedbar-tag-face       (:foreground var))
    (speedbar-selected-face  (:foreground spring-green3))
    (speedbar-highlight-face (:foreground cyan1))
-   (speedbar-button-face    (:foreground jade))
+   (speedbar-button-face    (:foreground spring-green4))
 
    ;; Perl6
    ;; TODO:
@@ -108,7 +108,7 @@
    (aw-background-face   (:foreground bg4 :bold bold))
 
    ;; Rst-mode
-   (rst-adornment (:foreground jade))
+   (rst-adornment (:foreground spring-green4))
    (rst-block     (:foreground cyan3))
    (rst-level-1   (:foreground violet))
    (rst-level-2   (:foreground teal1))
@@ -120,11 +120,11 @@
    ;; TODO: split
    ;; Vimish-fold
    (vimish-fold-overlay (:background bg2 :foreground comment))
-   (vimish-fold-fringe  (:background nil :foreground jade))
+   (vimish-fold-fringe  (:background nil :foreground spring-green4))
 
    ;; Avy
    (avy-lead-face   (:background red2 :foreground fg1))
-   (avy-lead-face-0 (:background jade :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
    (avy-lead-face-1 (:background dark-blue :foreground fg1))
    (avy-lead-face-2 (:background dark-purple :foreground fg1))
 

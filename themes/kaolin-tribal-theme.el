@@ -69,7 +69,7 @@
    (rb8 purple)
    (rb9 red4)
 
-   (diff-add    light-jade)
+   (diff-add    aquamarine4)
    (diff-change purple)
    (diff-rem    red4)
 

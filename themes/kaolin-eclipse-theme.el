@@ -24,7 +24,7 @@
    ;; TODO:
    (var         alt-lavender)
    (const       lavender)
-   (type        light-jade)
+   (type        aquamarine4)
    (num         amber3)
    (bool        num)
    ;; (prep        moderate-blue "#8787f5")
@@ -66,7 +66,7 @@
    (rb8 dark-blue)
    (rb9 pink3)
 
-   (diff-add    light-jade)
+   (diff-add    aquamarine4)
    (diff-change purple)
    (diff-rem    red4)
 
@@ -95,7 +95,7 @@
 
   ;; Custom theme set faces
   (
-   (link                (:foreground light-jade :underline underline))
+   (link                (:foreground aquamarine4 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    ;; TODO: change

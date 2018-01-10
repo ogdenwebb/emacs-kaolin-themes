@@ -9,11 +9,11 @@
   (
    ;; TODO: chartreuse1 color
    (blue         "#5c9499")
-   ;; (jade         "#597a6e")
+   ;; (spring-green4         "#597a6e")
    (dark-blue    "#445588")
    (pink1         "#d45589")
    (spring-green5    "#3e594e")
-   (light-jade   "#518270")
+   (aquamarine4   "#518270")
    (orange0  "#d1832e")
    (vermilion4 "#c78e6d")
    (red1          "#c86d6d")
@@ -37,11 +37,11 @@
    (teal1 "#5e8475")
 
 
-   (keyword     jade)
-   (second-key  jade)
+   (keyword     spring-green4)
+   (second-key  spring-green4)
    (var         lavender)
    (const       faded-blue)
-   (builtin     light-jade)
+   (builtin     aquamarine4)
    ;; TODO:
    (comment     "#9aa88c")
    (alt-comment alt-grayish-blue)
@@ -58,7 +58,7 @@
    (err         red1)
 
    (dim-buffer white0)
-   (hl         viridian)
+   (hl         aquamarine2)
    ;; TODO: add colored
    (hl-line    (if kaolin-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
@@ -82,10 +82,10 @@
    (rb5 teal1)
    (rb6 crimson4)
    (rb7 vermilion4)
-   (rb8 jade)
+   (rb8 spring-green4)
    (rb9 lavender)
 
-   (diff-add    light-jade)
+   (diff-add    aquamarine4)
    (diff-change vermilion4)
    (diff-rem    red4)
 

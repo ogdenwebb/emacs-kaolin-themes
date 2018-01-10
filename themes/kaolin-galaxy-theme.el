@@ -70,7 +70,8 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan0)
 
-   (ivy2 teal1)
+   ;; TODO: (??) change
+   (ivy2 lime3)
    (ivy3 vermilion3)
    (ivy4 red3)
 
@@ -127,7 +128,7 @@
    (org-document-info   (:foreground grayish-blue))
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground vermilion4))
-   (org-verbatim        (:foreground light-jade))
+   (org-verbatim        (:foreground aquamarine4))
    (org-quote           (:foreground faded-blue)))
 
   ;; Set custom vars

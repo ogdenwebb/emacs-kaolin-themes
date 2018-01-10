@@ -13,7 +13,7 @@
    (bg4          gray3)
 
    ;; Accent color
-   (hl aquamarine)
+   (hl aquamarine3)
 
    (keyword     fg0)
    (second-key  purple alt-purple)
@@ -67,7 +67,7 @@
    (rb8 purple)
    (rb9 pink1)
 
-   (diff-add    aquamarine)
+   (diff-add    aquamarine3)
    (diff-change amber3)
    (diff-rem    red1)
 

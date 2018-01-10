@@ -56,13 +56,13 @@
    (rb2 lavender)
    (rb3 cyan3)
    (rb4 faded-blue)
-   (rb5 jade)
+   (rb5 spring-green4)
    (rb6 spring-green3)
    (rb7 amber3)
    (rb8 dark-blue)
    (rb9 soft-blue)
 
-   (diff-add    light-jade)
+   (diff-add    aquamarine4)
    (diff-change purple)
    (diff-rem    red4)
 
