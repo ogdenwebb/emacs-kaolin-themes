@@ -55,7 +55,7 @@
    (err         red3)
 
    (dim-buffer "#140E14")
-   (hl         spring-green1)
+   (hl        cyan0)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    ;; TODO: (??) less bright
@@ -70,9 +70,9 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan0)
 
-   (ivy2 cyan0)
-   (ivy3 vermilion4)
-   (ivy4 red4)
+   (ivy2 teal1)
+   (ivy3 vermilion3)
+   (ivy4 red3)
 
    (rb1 alt-lavender)
    (rb2 teal4)

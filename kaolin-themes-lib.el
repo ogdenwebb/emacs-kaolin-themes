@@ -161,7 +161,7 @@
     (red4      "#9c3b42")
 
     ;; Crimson #FF003F
-    (crimson0 "#e12a56")
+    (crimson0 "#dc2e58")
     (crimson1 "#e55c7a")
     (crimson2 "#941b37")
     (crimson3 "#ef6787")    ; light-pink
@@ -235,9 +235,9 @@
     ;; Teal; TODO: make MAIN color a bit more green
     (teal0    "#0d948d")
     ;; (teal1 "#4a858c")
-    (teal1    "#4d9390")
+    (teal1    "#4d9392")
     (teal2    "#396b68")
-    (teal3    "#5cbdb2")
+    (teal3    "#49bdb0")
     (teal4    "#80bcb6")
 
     ;; Aquamarine #00FFBF
