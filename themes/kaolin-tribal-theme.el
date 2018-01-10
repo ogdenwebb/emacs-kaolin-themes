@@ -61,9 +61,9 @@
 
    (rb1 crimson4)
    (rb2 lavender)
-   (rb3 light-brown)
+   (rb3 brown3)
    (rb4 blue4)
-   (rb5 brown)
+   (rb5 brown1)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
    (rb8 purple)

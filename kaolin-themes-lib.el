@@ -103,7 +103,6 @@
     (gray8           "#879193")
     (gray9           "#919a9c") ; old light-gray
 
-
     ;; TODO:
     (lavender-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
@@ -145,11 +144,12 @@
     (vermilion3      "#ee7042")
     (vermilion4      "#cd9575" "#d7af87") ; faded-orange
 
-    ;; TODO: Brown #A33728
-    (brown           "#7d6360")
-    (light-brown     "#ae9895")
-    (alt-brown       "#52413f")
-    (bazaar          "#98777b")
+    ;; TODO: Brown #A33C28
+    (brown0 "#872C19")
+    (brown1 "#7d6360")
+    (brown2 "#52413f")
+    (brown3 "#ae9895")
+    ;; (bazaar          "#98777b")
 
     ;; Red #FF0000
     (red0      "#c93237")
@@ -254,10 +254,14 @@
     (spring-green4 "#597a6c") ; faded
     (spring-green5 "#2E4038") ; midnight
 
-    ;; TODO:
-
     ;; Erin #00FF3F
     ;; TODO: add color
+    (erin0 "#26e356")
+    (erin1 "#48ca69")
+    (erin2 "#39854C")
+    (erin3 "#56e87b")
+    (erin4 "#597a64")
+    (erin5 "#2E4033")
 
     ;; Green #00FF00
     (green0        "#21e121")
@@ -320,7 +324,7 @@
 
     (tooltip-bg bg2)
     (tooltip-fg gray9)
-    (tooltip-hl-bg alt-brown)
+    (tooltip-hl-bg brown2)
     (tooltip-hl-fg amber3)
 
     (rb1 cyan3)
@@ -343,7 +347,7 @@
     (comment     gray3)
     (alt-comment azure5)
     (functions   builtin)
-    ;; TODO: (??) change to light-brown like sierra.vim
+    ;; TODO: (??) change to brown3 like sierra.vim
     (str         spring-green3)
     (str-alt     spring-green4)
     (doc         str-alt)
@@ -656,7 +660,7 @@
     (js2-function-param           (:foreground const))
     (js2-error                    (:underline (:color red0 :style underline-style)))
     (js2-function-call            (:foreground functions))
-    (js2-object-property          (:foreground light-brown))
+    (js2-object-property          (:foreground brown3))
     (js2-jsdoc-value              (:foreground str))
     (js2-private-member           (:foreground fg3))
     (js3-function-param-face      (:foreground keyword))

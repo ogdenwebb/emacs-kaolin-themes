@@ -23,8 +23,6 @@
    (azure2    "#232c35")
    (azure1         "#2a57cc")
    ;; (azure1      "#335599")
-   (orange1      "#d2ab5d")
-   (orange3      "#ab6448")
    (chartreuse1         "#73c66c")
    (spring-green1  "#6dd797")
 
@@ -36,7 +34,7 @@
    ;; (var         chartreuse1)
    ;; (const       spring-green1)
    (var         amber3)
-   (const       yellow4)
+   (const       orange3)
    (type        teal1)
    (num         crimson1 "#5f87af")
    (prep        azure3)

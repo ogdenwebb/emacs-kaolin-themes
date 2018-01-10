@@ -46,7 +46,7 @@
    (comment     "#9aa88c")
    (alt-comment azure5)
    (functions   builtin)
-   ;; TODO: (??) change to brown
+   ;; TODO: (??) change to brown1
    (str         cyan1)
    (str-alt     cyan3)
    (doc         str-alt)
@@ -128,7 +128,7 @@
    (org-verbatim           (:foreground orange2))
    (org-table              (:foreground azure4 :bold bold))
 
-   (js2-object-property          (:foreground brown))
+   (js2-object-property          (:foreground brown1))
    (evil-ex-info                 (:foreground crimson4)))
 
 
