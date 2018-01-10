@@ -8,9 +8,9 @@
   ;; Palette modification
   (
    ;; TODO: chartreuse1 color
-   (blue         "#5c9499")
+   (azure1         "#5c9499")
    ;; (spring-green4         "#597a6e")
-   (dark-blue    "#445588")
+   (azure2    "#445588")
    (pink1         "#d45589")
    (spring-green5    "#3e594e")
    (aquamarine4   "#518270")
@@ -40,11 +40,11 @@
    (keyword     spring-green4)
    (second-key  spring-green4)
    (var         lavender)
-   (const       faded-blue)
+   (const       blue4)
    (builtin     aquamarine4)
    ;; TODO:
    (comment     "#9aa88c")
-   (alt-comment alt-grayish-blue)
+   (alt-comment azure5)
    (functions   builtin)
    ;; TODO: (??) change to brown
    (str         cyan1)
@@ -53,7 +53,7 @@
    (type        vermilion4)
    (num         red1)
    (bool        num)
-   (prep        dark-blue)
+   (prep        azure2)
    (warning     orange1)
    (err         red1)
 
@@ -77,7 +77,7 @@
     ;; TODO:
    (rb1 teal1)
    (rb2 dark-violet)
-   (rb3 moderate-blue)
+   (rb3 azure4)
    (rb4 blue)
    (rb5 teal1)
    (rb6 crimson4)
@@ -118,15 +118,15 @@
    (ivy3          orange0)
    (ivy4          red1))
 
-  ((link                   (:foreground soft-blue :underline underline))
+  ((link                   (:foreground azure3 :underline underline))
 
    (org-level-1            (:foreground teal1 :bold bold :height 1.1))
-   (org-level-2            (:foreground faded-blue :bold nil))
+   (org-level-2            (:foreground blue4 :bold nil))
    (org-level-3            (:foreground vermilion4 :bold nil))
    (org-level-4            (:foreground amber3 :bold nil))
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2))
-   (org-table              (:foreground moderate-blue :bold bold))
+   (org-table              (:foreground azure4 :bold bold))
 
    (js2-object-property          (:foreground brown))
    (evil-ex-info                 (:foreground crimson4)))

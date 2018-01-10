@@ -20,15 +20,15 @@
    (bg4          "#3d3b46" black4)
 
    (violet       "#9f84ae")
-   (dark-blue    "#232c35")
-   (blue         "#2a57cc")
-   ;; (blue      "#335599")
+   (azure2    "#232c35")
+   (azure1         "#2a57cc")
+   ;; (azure1      "#335599")
    (orange1      "#d2ab5d")
    (orange3      "#ab6448")
    (chartreuse1         "#73c66c")
    (spring-green1  "#6dd797")
 
-   (keyword     light-violet)
+   (keyword     violet3)
    (second-key  purple alt-purple)
    ;; TODO: adjust contrast with keyword
    (builtin     violet)
@@ -39,10 +39,10 @@
    (const       yellow4)
    (type        teal1)
    (num         crimson1 "#5f87af")
-   (prep        soft-blue)
+   (prep        azure3)
    (bool        num)
 
-   ;; TODO: a bit more blue; at least for alt-comment
+   ;; TODO: a bit more azure1; at least for alt-comment
    (comment     gray3)
    ;; TODO:
    (alt-comment "#4c344c")
@@ -60,7 +60,7 @@
    (hl-indent  bg4)
    ;; TODO: (??) less bright
    (selection  bg4)
-   (pulse      dark-blue)
+   (pulse      azure2)
 
    (todo red3)
    (done spring-green1)
@@ -77,8 +77,8 @@
 
    (rb1 alt-lavender)
    (rb2 teal4)
-   (rb3 light-violet)
-   (rb4 faded-blue)
+   (rb3 violet3)
+   (rb4 blue4)
    (rb5 yellow4)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
@@ -86,7 +86,7 @@
    (rb9 crimson1)
 
    (diff-add    spring-green1)
-   (diff-change light-violet)
+   (diff-change violet3)
    (diff-rem    red3)
 
    ;; Mode-line
@@ -117,11 +117,11 @@
   ;; Custom theme set faces
   (
 
-   ;; TODO: cyan, soft-blue, crimson1
+   ;; TODO: cyan, azure3, crimson1
    (link                (:foreground crimson1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure5))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (org-document-title  (:foreground grayish-blue :bold bold))
@@ -129,7 +129,7 @@
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground vermilion4))
    (org-verbatim        (:foreground aquamarine4))
-   (org-quote           (:foreground faded-blue)))
+   (org-quote           (:foreground blue4)))
 
   ;; Set custom vars
   (custom-theme-set-variables

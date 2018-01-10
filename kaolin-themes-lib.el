@@ -70,7 +70,6 @@
     ;; (galaxy-bg1          "#212026" black1)
 
     ;; (galaxy-violet       "#9f84ae")
-    ;; (galaxy-dark-blue    "#232c35")
     ;; (galaxy-blue         "#2a57cc")
     ;; ;; (galaxy-blue      "#335599")
 
@@ -193,37 +192,36 @@
     ;; Violet #7F00FF
     (lavender        "#967bb6")
     (alt-lavender    "#9d81ba")
-    (light-violet    "#d1aef4")
+    (violet3    "#c79af4")
 
     ;; Ultramarine #3F00FF
     ;; TODO: add color
     (alt-violet      "#af94f5")
 
     ;; Blue #0000FF
-    ;; (blue             "#6a6a9a")
-    ;; (blue             "#5757ad")
-    (faded-blue       "#817f96") ;  Navy
-    (magenta         "#5454b6") ; TODO my current magenta is moderate blue or even navy
+    (blue0 "#3232ca")
+    (blue1 "#5454b6")
+    (blue3 "#4141eb")
+    (blue4 "#817f96")
 
     ;; Cerulean #003FFF
     (grayish-blue      "#687184")
 
     ;; Azure/Sky Blue #007FFF
-    (alt-grayish-blue  "#8f9ca7")
-    (dark-blue         "#2a4661")
-    (blue              "#3b6fa3")
-
-    (soft-blue        "#4ca6e8")
-    ;; (moderate-blue    "#4e7f95")
-    (moderate-blue    "#53859d")
+    (azure0 "#0e70d1")
+    (azure1 "#3f7dba") ; old blue
+    (azure2 "#2a4661")
+    (azure3 "#4ca6e8") ; old soft-blue
+    (azure4 "#53859d")
+    (azure5 "#8f9ca7")
 
     ;; Capri/Deep Sky Blue #00BFFF
     ;; TODO: adjust
-    (capri0           "#1a9eee")
-    (capri1           "#2683b5")
-    (capri2           "#1c5f87")
-    (capri3           "#41b0f3")
-    (capri4           "#91b9c7")
+    (capri0 "#1a9eee")
+    (capri1 "#2683b5")
+    (capri2 "#1c5f87")
+    (capri3 "#41b0f3")
+    (capri4 "#91b9c7")
 
     ;; Cyan #00FFFF
     (cyan0 "#0bc9cf")
@@ -283,7 +281,7 @@
     (lime0 "#aadc13")
     (lime1 "#a8c749")
     (lime2 "#82a80e")
-    (lime3 "#c8ee57")
+    (lime3 "#c7ee53")
     (lime4 "#b9c791")
 
 
@@ -328,9 +326,9 @@
     (rb1 cyan3)
     (rb2 violet)
     (rb3 spring-green4)
-    (rb4 faded-blue)
+    (rb4 blue4)
     (rb5 teal1)
-    (rb6 light-violet)
+    (rb6 violet3)
     (rb7 grayish-orange)
     (rb8 grayish-magenta)
     (rb9 lavender)
@@ -343,7 +341,7 @@
     (second-key  teal2)
     (builtin     teal4)
     (comment     gray3)
-    (alt-comment alt-grayish-blue)
+    (alt-comment azure5)
     (functions   builtin)
     ;; TODO: (??) change to light-brown like sierra.vim
     (str         spring-green3)
@@ -351,7 +349,7 @@
     (doc         str-alt)
     (type        vermilion4)
     (const       violet)
-    (var         faded-blue)
+    (var         blue4)
     (num         red1)
     (bool        num)
     (prep        lavender)
@@ -384,9 +382,9 @@
     (swiper-bg   bg2)
     (ivy-bg      nil)
     (ivy1        fg1)
-    (ivy2        soft-blue)
+    (ivy2        azure3)
     (ivy3        amber3)
-    (ivy4        light-violet)))
+    (ivy4        violet3)))
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
@@ -508,7 +506,7 @@
     ;; Which-key
     (which-key-key-face                   (:foreground spring-green1 :bold bold))
     (which-key-group-description-face     (:foreground alt-lavender))
-    (which-key-local-map-description-face (:foreground soft-blue))
+    (which-key-local-map-description-face (:foreground azure3))
     (which-key-command-description-face   (:foreground cyan3))
 
     ;; Ruler-mode
@@ -602,7 +600,7 @@
     (company-echo-common              (:background bg1 :foreground amber3))
     (company-preview                  (:background nil :foreground keyword))
     (company-preview-common           (:background bg2 :foreground amber3))
-    (company-preview-search           (:background bg1 :foreground blue))
+    (company-preview-search           (:background bg1 :foreground azure1))
     (company-tooltip-mouse            (:background bg3 :foreground fg3))
 
 
@@ -622,7 +620,7 @@
     (hydra-face-red      (:foreground red1))
     ;; TODO: change to teal
     (hydra-face-teal     (:foreground cyan3))
-    (hydra-face-blue     (:foreground soft-blue))
+    (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
     (hydra-face-amaranth (:foreground purple))
 
@@ -749,7 +747,7 @@
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground black1))
-    (term-color-blue    (:foreground blue))
+    (term-color-blue    (:foreground azure1))
     (term-color-red     (:foreground red1))
     (term-color-green   (:foreground teal1))
     (term-color-yellow  (:foreground yellow1))
@@ -759,8 +757,8 @@
 
     ;; EShell
     (eshell-prompt        (:foreground teal1 :bold bold))
-    (eshell-ls-directory  (:foreground magenta :bold bold))
-    (eshell-ls-symlink    (:foreground blue :bold bold))
+    (eshell-ls-directory  (:foreground blue1 :bold bold))
+    (eshell-ls-symlink    (:foreground azure1 :bold bold))
     (eshell-ls-executable (:foreground chartreuse1 :bold bold))
     (eshell-ls-archive    (:foreground red1))
     (eshell-ls-backup     (:foreground purple))
@@ -794,7 +792,7 @@
     (org-date                      (:foreground amber3 :underline underline))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground amber3))
-    (org-verbatim                  (:foreground soft-blue))
+    (org-verbatim                  (:foreground azure3))
     (org-hide                      (:foreground bg1))
     (org-special-keyword           (:foreground functions))
     (org-table                     (:foreground var :bold bold))
@@ -871,10 +869,10 @@
     (helm-header                              (:foreground fg2 :underline nil :box nil))
     (helm-source-header                       (:foreground keyword :underline nil :bold bold))
     (helm-match                               (:foreground type :bold bold))
-    (helm-header-line-left-margin             (:background blue :foreground bg1))
+    (helm-header-line-left-margin             (:background azure1 :foreground bg1))
     (helm-selection                           (:background bg2 :foreground type :bold bold))
     (helm-selection-line                      (:background bg2 :foreground type :bold bold))
-    (helm-visible-mark                        (:foreground blue))
+    (helm-visible-mark                        (:foreground azure1))
     (helm-candidate-number                    (:foreground aquamarine4))
     (helm-separator                           (:foreground type))
     (helm-time-zone-current                   (:foreground builtin))
@@ -886,7 +884,7 @@
     (helm-ff-directory                        (:foreground functions :bold bold))
     (helm-buffer-directory                    (:foreground purple))
     (helm-ff-dotted-directory                 (:foreground functions :bold bold))
-    (helm-ff-dotted-symlink-directory         (:foreground blue :bold bold))
+    (helm-ff-dotted-symlink-directory         (:foreground azure1 :bold bold))
     (helm-ff-file                             (:foreground fg1 :weight 'normal))
     (helm-ff-executable                       (:foreground keyword :weight 'normal))
     (helm-ff-invalid-symlink                  (:foreground warning :bold bold))

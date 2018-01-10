@@ -59,8 +59,8 @@
 
    (rb1 alt-lavender)
    (rb2 cyan3)
-   (rb3 light-violet)
-   (rb4 faded-blue)
+   (rb3 violet3)
+   (rb4 blue4)
    (rb5 amber3)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
@@ -104,7 +104,7 @@
    (link                (:foreground pink1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure5))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (org-document-title  (:foreground grayish-blue :bold bold))
@@ -112,7 +112,7 @@
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground vermilion4))
    (org-verbatim        (:foreground orange1))
-   (org-quote           (:foreground faded-blue)))
+   (org-quote           (:foreground blue4)))
 
   ;; Set custom vars
   (custom-theme-set-variables

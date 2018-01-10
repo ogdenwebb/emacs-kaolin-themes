@@ -13,7 +13,7 @@
    (bg3       "#2b2b32" black3)
    (bg4       "#34343d" black4)
    (violet    "#a78db5")
-   (dark-blue "#325074")
+   (azure2 "#325074")
    (red4 "#9c3b42")
 
    ;; violet or lavender or purple, alt-purple, crimson4
@@ -27,7 +27,7 @@
    (type        fg1)
    (num         alt-lavender)
    (bool        num)
-   (prep        moderate-blue "#5f87af")
+   (prep        azure4 "#5f87af")
 
    ;; TODO:
    (comment     bg4)
@@ -40,11 +40,11 @@
 
    (dim-buffer "#140E14")
    ;; TODO: or soft/crimson3
-   (hl         soft-blue)
+   (hl         azure3)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
-   (pulse      dark-blue)
+   (pulse      azure2)
 
    (todo pink)
    (done spring-green1)
@@ -53,7 +53,7 @@
    (tooltip-fg    gray9)
    ;; TODO:
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg light-violet)
+   (tooltip-hl-fg violet3)
 
    (ivy2 spring-green2)
    (ivy3 vermilion4)
@@ -62,7 +62,7 @@
    (rb1 crimson4)
    (rb2 lavender)
    (rb3 light-brown)
-   (rb4 faded-blue)
+   (rb4 blue4)
    (rb5 brown)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
@@ -94,7 +94,7 @@
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
    ;; TOOD: or hl
-   (line-num-hl   faded-blue gray9)
+   (line-num-hl   blue4 gray9)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
@@ -107,7 +107,7 @@
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground vermilion4))
    (org-verbatim        (:foreground orange1))
-   (org-quote           (:foreground faded-blue)))
+   (org-quote           (:foreground blue4)))
 
   ;; Set custom vars
   (custom-theme-set-variables

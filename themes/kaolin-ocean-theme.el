@@ -12,9 +12,9 @@
    (bg4 "#32324a" black4)
 
    (violet    "#a78db5")
-   (dark-blue "#325074")
+   (azure2 "#325074")
 
-   (keyword     moderate-blue)
+   (keyword     azure4)
    ;; TODO: a bit more bright
    (second-key  bg4 alt-purple)
    (builtin     capri4)
@@ -24,7 +24,7 @@
    (type        cyan1)
    (num         pink1)
    (bool        num)
-   (prep        magenta)
+   (prep        blue1)
 
    (comment     gray0)
    (alt-comment "#34344c")
@@ -55,12 +55,12 @@
    (rb1 cyan3)
    (rb2 lavender)
    (rb3 cyan3)
-   (rb4 faded-blue)
+   (rb4 blue4)
    (rb5 spring-green4)
    (rb6 spring-green3)
    (rb7 amber3)
-   (rb8 dark-blue)
-   (rb9 soft-blue)
+   (rb8 azure2)
+   (rb9 azure3)
 
    (diff-add    aquamarine4)
    (diff-change purple)
@@ -85,7 +85,7 @@
    (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   bg4)
-   (line-num-hl   faded-blue gray9)
+   (line-num-hl   blue4 gray9)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
@@ -95,7 +95,7 @@
 
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground spring-green1))
-   (org-quote           (:foreground faded-blue))
+   (org-quote           (:foreground blue4))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-change :foreground diff-change))

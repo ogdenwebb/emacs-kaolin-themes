@@ -45,7 +45,7 @@
    ;; TODO: change
    (ediff-current-diff-A (:background red2 :foreground red1))
    (ediff-current-diff-B (:background spring-green2 :foreground spring-green1))
-   (ediff-current-diff-C (:background dark-blue :foreground capri4))
+   (ediff-current-diff-C (:background azure2 :foreground capri4))
 
    (ediff-even-diff-A (:background bg2))
    (ediff-even-diff-B (:background bg2))
@@ -77,7 +77,7 @@
 
    ;; Speedbar
    ;; TODO:
-   (speedbar-separator-face (:background blue))
+   (speedbar-separator-face (:background azure1))
    (speedbar-directory-face (:foreground cyan3))
    (speedbar-file-face      (:foreground teal1))
    (speedbar-tag-face       (:foreground var))
@@ -125,7 +125,7 @@
    ;; Avy
    (avy-lead-face   (:background red2 :foreground fg1))
    (avy-lead-face-0 (:background spring-green4 :foreground fg1))
-   (avy-lead-face-1 (:background dark-blue :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
    (avy-lead-face-2 (:background dark-purple :foreground fg1))
 
    ;; TODO: split
