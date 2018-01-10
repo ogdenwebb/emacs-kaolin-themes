@@ -6,7 +6,7 @@
 
 (define-kaolin-theme eclipse "Dark purple Kaolin theme variant."
   ;; Palette modification
-  ((bg1  midnight-purple black1)
+  ((bg1  magenta5 black1)
    ;; TODO:
    ; (bg1  "#1C101C" black1)
    ;; (bg2  "#291c29")
@@ -17,9 +17,9 @@
    (violet    "#a78db5")
    (azure2 "#325074")
 
-   (keyword     alt-purple)
-   (second-key  dark-purple alt-purple)
-   (builtin     light-purple)
+   (keyword     cerise4)
+   (second-key  magenta2 cerise4)
+   (builtin     magenta3)
    (functions   builtin)
    ;; TODO:
    (var         alt-lavender)
@@ -44,13 +44,13 @@
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
-   (pulse      dark-purple)
+   (pulse      magenta2)
 
    (todo pink1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
-   (tooltip-hl-bg dark-purple)
+   (tooltip-hl-bg magenta2)
    (tooltip-hl-fg amber3)
 
    (ivy3 spring-green3)
@@ -67,7 +67,7 @@
    (rb9 pink3)
 
    (diff-add    aquamarine4)
-   (diff-change purple)
+   (diff-change magenta4)
    (diff-rem    red4)
 
    ;; Mode-line
@@ -88,7 +88,7 @@
 
    (win-border    black3)
    (line-num-bg   bg1)
-   (line-num-fg   dark-purple black4)
+   (line-num-fg   magenta2 black4)
    ;; TOOD: or hl
    (line-num-hl   violet gray9)
    (cursor        "#e0c3c8"))

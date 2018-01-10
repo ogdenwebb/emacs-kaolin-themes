@@ -5,6 +5,7 @@
 ;; DONT TOUCH OLD COLORS
 ;; TODO: adjust colors for 256 terminal
 ;; TODO: create simple color list
+;; TODO: blue colors in themes
 
 ;; TODO: color spec and color functions
 ;; TODO: add accent color like aquamarine
@@ -87,7 +88,6 @@
     ;; (alt-midnight-blue "#062732")
     ;; (alt-midnight-blue "#12121a")
     (alt-midnight-blue    "#13131c" black2)
-    (midnight-purple      "#1a121a")
 
     ;; Gray
     ;; TODO: (??) change hue to 240?
@@ -148,7 +148,8 @@
     (brown0 "#872C19")
     (brown1 "#7d6360")
     (brown2 "#52413f")
-    (brown3 "#ae9895")
+    (brown3 "#d47057")
+    (brown4 "#ae9895")
     ;; (bazaar          "#98777b")
 
     ;; Red #FF0000
@@ -171,20 +172,24 @@
     (pink1 "#d24b83")
     (pink2 "#9E2256")
     (pink3 "#fbaed2")
+    (lime4 "#c791aa")
 
-    ;; TODO:
     ;; Cerise #FF00BF
-    ;; (alt-purple      "#915c83")
-    (alt-purple  "#a9779c")
-    (dark-violet "#997a8d")
+    (cerise0 "#E121B1")
+    (cerise1 "#CF44AC")
+    (cerise2 "#a31880")
+    (cerise3 "#e361c3")
+    (cerise4 "#a9779c")
 
     ;; Magenta/Fuchsia #FF00FF
-    (dark-purple     "#563d56")
-    (purple          "#835d83")
+    (magenta0 "#C932C9")
+    (magenta1 "#cd5ccd")
+    (magenta2 "#563d56")
+    (magenta3 "#cea2ca") ; light-puprle
+    (magenta4 "#835d83") ; purple
+    (magenta5 "#1a121a")
 
-    ;; TODO:
     (grayish-magenta "#796878")
-    (light-purple    "#cea2ca")
 
     ;; Purple #BF00FF
     (violet          "#ab98b5")
@@ -201,6 +206,7 @@
     ;; Blue #0000FF
     (blue0 "#3232ca")
     (blue1 "#5454b6")
+    (blue2 "#1818A3")
     (blue3 "#4141eb")
     (blue4 "#817f96")
 
@@ -569,7 +575,7 @@
 
     ;; Smart-mode-line
     (sml/line-number      (:foreground chartreuse1))
-    (sml/modes            (:foreground purple))
+    (sml/modes            (:foreground magenta4))
     (sml/global           (:foreground cyan3))
     (sml/filename         (:foreground teal1))
     (sml/charging         (:foreground teal1))
@@ -626,7 +632,7 @@
     (hydra-face-teal     (:foreground cyan3))
     (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
-    (hydra-face-amaranth (:foreground purple))
+    (hydra-face-amaranth (:foreground magenta4))
 
     ;; Ido
     (ido-indicator   (:foreground num))
@@ -755,7 +761,7 @@
     (term-color-red     (:foreground red1))
     (term-color-green   (:foreground teal1))
     (term-color-yellow  (:foreground yellow1))
-    (term-color-magenta (:foreground purple))
+    (term-color-magenta (:foreground magenta4))
     (term-color-cyan    (:foreground cyan1))
     (term-color-white   (:foreground white2))
 
@@ -765,7 +771,7 @@
     (eshell-ls-symlink    (:foreground azure1 :bold bold))
     (eshell-ls-executable (:foreground chartreuse1 :bold bold))
     (eshell-ls-archive    (:foreground red1))
-    (eshell-ls-backup     (:foreground purple))
+    (eshell-ls-backup     (:foreground magenta4))
     (eshell-ls-clutter    (:foreground pink1))
     (eshell-ls-missing    (:background bg3 :foreground red1))
     (eshell-ls-product    (:foreground yellow1))
@@ -886,7 +892,7 @@
     (helm-buffer-saved-out                    (:foreground fg1))
     (helm-buffer-size                         (:foreground fg1))
     (helm-ff-directory                        (:foreground functions :bold bold))
-    (helm-buffer-directory                    (:foreground purple))
+    (helm-buffer-directory                    (:foreground magenta4))
     (helm-ff-dotted-directory                 (:foreground functions :bold bold))
     (helm-ff-dotted-symlink-directory         (:foreground azure1 :bold bold))
     (helm-ff-file                             (:foreground fg1 :weight 'normal))

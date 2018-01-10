@@ -27,7 +27,7 @@
    (spring-green1  "#6dd797")
 
    (keyword     violet3)
-   (second-key  purple alt-purple)
+   (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
    (builtin     violet)
    (functions   builtin)
@@ -80,7 +80,7 @@
    (rb5 yellow4)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 purple)
+   (rb8 magenta4)
    (rb9 crimson1)
 
    (diff-add    spring-green1)

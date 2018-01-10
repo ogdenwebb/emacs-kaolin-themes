@@ -16,9 +16,9 @@
    (azure2 "#325074")
    (red4 "#9c3b42")
 
-   ;; violet or lavender or purple, alt-purple, crimson4
+   ;; violet or lavender or magenta4, cerise4, crimson4
    (keyword     red4)
-   (second-key  "#642628" alt-purple)
+   (second-key  "#642628" cerise4)
    (builtin     grayish-blue)
    (functions   builtin)
    ;; TODO:
@@ -33,7 +33,7 @@
    (comment     bg4)
    (alt-comment "#4c344c")
    (str         cyan1)
-   (str-alt     dark-purple)
+   (str-alt     magenta2)
    (doc         str-alt)
    (warning     orange3)
    (err         red1)
@@ -66,11 +66,11 @@
    (rb5 brown1)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 purple)
+   (rb8 magenta4)
    (rb9 red4)
 
    (diff-add    aquamarine4)
-   (diff-change purple)
+   (diff-change magenta4)
    (diff-rem    red4)
 
    ;; Mode-line

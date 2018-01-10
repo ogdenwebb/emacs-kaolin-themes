@@ -17,7 +17,7 @@
    ;; TODO:
    (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
    (custom-set            (:background nil :foreground spring-green3))
-   (custom-face-tag       (:background nil :foreground purple :bold bold))
+   (custom-face-tag       (:background nil :foreground magenta4 :bold bold))
    (custom-link           (:background nil :foreground cyan3 :bold bold))
    (widget-button         (:background nil :foreground teal1 :bold bold))
    (widget-button-pressed (:background nil :foreground spring-green4))
@@ -39,7 +39,7 @@
    (org-hide                      (:foreground bg2))
    (org-agenda-structure          (:background bg3 :foreground fg3 :bold bold))
    (org-agenda-date               (:foreground amber3 :height 1.1))
-   (org-agenda-date-today         (:foreground purple :height 1.2 :bold bold))
+   (org-agenda-date-today         (:foreground magenta4 :height 1.2 :bold bold))
 
    ;; Ediff
    ;; TODO: change
@@ -126,7 +126,7 @@
    (avy-lead-face   (:background red2 :foreground fg1))
    (avy-lead-face-0 (:background spring-green4 :foreground fg1))
    (avy-lead-face-1 (:background azure2 :foreground fg1))
-   (avy-lead-face-2 (:background dark-purple :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1))
 
    ;; TODO: split
    ;; Ivy & Swiper

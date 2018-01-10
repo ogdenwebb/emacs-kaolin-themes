@@ -16,11 +16,11 @@
 
    (keyword     azure4)
    ;; TODO: a bit more bright
-   (second-key  bg4 alt-purple)
+   (second-key  bg4 cerise4)
    (builtin     capri4)
    (functions   builtin)
    (var         alt-lavender)
-   (const       alt-purple)
+   (const       cerise4)
    (type        cyan1)
    (num         pink1)
    (bool        num)
@@ -63,7 +63,7 @@
    (rb9 azure3)
 
    (diff-add    aquamarine4)
-   (diff-change purple)
+   (diff-change magenta4)
    (diff-rem    red4)
 
    ;; Mode-line

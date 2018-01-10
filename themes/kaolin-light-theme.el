@@ -76,7 +76,7 @@
 
     ;; TODO:
    (rb1 teal1)
-   (rb2 dark-violet)
+   (rb2 cerise4)
    (rb3 azure4)
    (rb4 blue)
    (rb5 teal1)

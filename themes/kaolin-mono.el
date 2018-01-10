@@ -16,7 +16,7 @@
    (hl aquamarine3)
 
    (keyword     fg0)
-   (second-key  purple alt-purple)
+   (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
    (builtin     fg1)
    (functions   builtin)
@@ -64,7 +64,7 @@
    (rb5 amber3)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 purple)
+   (rb8 magenta4)
    (rb9 pink1)
 
    (diff-add    aquamarine3)
