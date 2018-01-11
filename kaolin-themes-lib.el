@@ -80,7 +80,7 @@
     (black3          "#2B2B2F")
     (black4          "#303035")
 
-    ;; Midnigh colors
+    ;; TODO Midnigh colors
     (midnight-green       "#142223")
     (alt-midnight-green   "#0f1e1d")
     (midnight-blue        "#1e2528" black2)
@@ -89,7 +89,7 @@
     (alt-midnight-blue    "#13131c" black2)
 
     ;; Gray
-    ;; TODO: (??) change hue to 240?
+    ;; TODO: (??) change hue to 240
     (gray0           "#353b3c")
     (gray1           "#383e3f")
     (gray2           "#414849") ; old gray
@@ -133,7 +133,7 @@
     (orange0    "#e67417")
     (orange1    "#dbac66")
     (orange2    "#b87e3c")
-    (orange3    "#f8d3a8")
+    (orange3    "#f5c791")
     (orange4    "#e1b079")
 
     ;; TODO Vermilion #FF3F00
@@ -143,7 +143,7 @@
     (vermilion3      "#ee7042")
     (vermilion4      "#cd9575" "#d7af87") ; faded-orange
 
-    ;; TODO: Brown #A33C28
+    ;; Brown #A33C28
     (brown0 "#872C19")
     (brown1 "#7d6360")
     (brown2 "#52413f")
@@ -171,7 +171,7 @@
     (pink1 "#d24b83")
     (pink2 "#9E2256")
     (pink3 "#fbaed2")
-    (lime4 "#c791aa")
+    (pink4 "#c791aa")
 
     ;; Cerise #FF00BF
     (cerise0 "#e121b1")
@@ -195,25 +195,36 @@
     (purple3 "#bc90d4")
     (purple4 "#ab98b5")
 
-    ;; TODO: Violet #7F00FF
-    (violet3    "#c79af4")
-    (violet4    "#9d81ba") ; alt-lavender
+    ;; Violet #7F00FF
+    (violet0 "#7f1de1")
+    (violet1 "#8B48CF")
+    (violet2 "#61259e")
+    (violet3 "#c79af4")
+    (violet4 "#9d81ba") ; alt-lavender
 
     ;; Ultramarine #3F00FF
-    (ultramarine0 "#4013d4")
-    (ultramarine1 "#461eca")
-    (ultramarine2 "#351d87")
+    ;; TODO adjust
+    (ultramarine0 "#4618dc")
+    (ultramarine1 "#5f3eca")
+    (ultramarine2 "#3d2394")
     (ultramarine3 "#6d44eb")
     (ultramarine4 "#787096")
 
     ;; Blue #0000FF
-    (blue0 "#3232ca")
-    (blue1 "#5454b6")
-    (blue2 "#1818A3")
-    (blue3 "#4141eb")
-    (blue4 "#817f96")
+    (blue0 "#3237CA")
+    (blue1 "#4145b6")
+    (blue2 "#2B2FA6")
+    (blue3 "#525df3")
+    (blue4 "#807f96")
 
     ;; Cerulean #003FFF
+    (cerulean0 "#0E4CD1")
+    (cerulean1 "#3F66BA")
+    (cerulean2 "#2d4b8c")
+    (cerulean3 "#4C7DE8")
+    (cerulean4 "#536A9D")
+    (cerulean5 "#28395e")
+    ;; (cerulean6 "#8F97A7")
     (grayish-blue      "#687184")
 
     ;; Azure/Sky Blue #007FFF
@@ -222,6 +233,7 @@
     (azure2 "#2a4661")
     (azure3 "#4ca6e8") ; old soft-blue
     (azure4 "#53859d")
+    ;; TODO: 5 -> azure6
     (azure5 "#8f9ca7")
 
     ;; Capri/Deep Sky Blue #00BFFF
@@ -239,7 +251,7 @@
     (cyan3 "#6bd9db")
     (cyan4 "#65a0a1")
 
-    ;; Teal; TODO: make MAIN color a bit more green
+    ;; Teal
     (teal0    "#0d948d")
     ;; (teal1 "#4a858c")
     (teal1    "#4d9391")
@@ -264,7 +276,6 @@
     (spring-green5 "#2E4038") ; midnight
 
     ;; Erin #00FF3F
-    ;; TODO: add color
     (erin0 "#26e356")
     (erin1 "#48ca69")
     (erin2 "#39854C")
@@ -274,18 +285,22 @@
 
     ;; Green #00FF00
     (green0        "#21e121")
-    (green1        "#44cf44")
+    (green1        "#47cc47")
     (green2        "#18a318")
     (green3        "#61e361")
     (green4        "#73c66c")
     (grayish-green "#9ca78f")
 
     ;; Harlequin #3FFF00
-    ;; TODO: add color
+    (harlequin0 "#58f021")
+    (harlequin1 "#6FC550")
+    (harlequin2 "#37A111")
+    (harlequin3 "#70E346")
+    (harlequin4 "#60A148")
 
     ;; Chartreuse #7FFF00
     (chartreuse0 "#8bee1a")
-    (chartreuse1 "#8fbf50")
+    (chartreuse1 "#92c550")
     (chartreuse2 "#5ba111")
     (chartreuse3 "#9de346")
     (chartreuse4 "#7fa148")

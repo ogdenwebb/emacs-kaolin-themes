@@ -121,6 +121,8 @@
              do (map-put res (car el) (cdr el)))
     res))
 
+;; TODO (??) add ability to create own variables in themes with vars from lib
+;; like (my-new-theme-color cyan1)
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
