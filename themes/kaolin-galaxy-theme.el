@@ -19,7 +19,6 @@
    (bg3          "#33323b" black3)
    (bg4          "#3d3b46" black4)
 
-   (violet       "#9f84ae")
    (azure2    "#232c35")
    (azure1         "#2a57cc")
    ;; (azure1      "#335599")
@@ -29,7 +28,7 @@
    (keyword     violet3)
    (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
-   (builtin     violet)
+   (builtin     violet4)
    (functions   builtin)
    ;; (var         chartreuse1)
    ;; (const       spring-green1)
@@ -37,7 +36,7 @@
    (const       orange3)
    (type        teal1)
    (num         crimson1 "#5f87af")
-   (prep        azure3)
+   (prep        capri3)
    (bool        num)
 
    ;; TODO: a bit more azure1; at least for alt-comment

@@ -22,6 +22,7 @@
    (cyan3         "#6facb3")
    (cyan2    "#008b8b")
 
+
    ;; Color vars
    (bg0 "#f5f6f5")
    (bg1 "#e9eae7")
@@ -43,12 +44,13 @@
    (const       blue4)
    (builtin     aquamarine4)
    ;; TODO:
+   ;; (comment     "#9aa88c")
    (comment     "#9aa88c")
    (alt-comment azure5)
    (functions   builtin)
    ;; TODO: (??) change to brown1
-   (str         cyan1)
-   (str-alt     cyan3)
+   (str         brown1)
+   (str-alt     brown1)
    (doc         str-alt)
    (type        vermilion4)
    (num         red1)
@@ -78,7 +80,7 @@
    (rb1 teal1)
    (rb2 cerise4)
    (rb3 azure4)
-   (rb4 blue)
+   (rb4 blue3)
    (rb5 teal1)
    (rb6 crimson4)
    (rb7 vermilion4)
