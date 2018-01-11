@@ -11,7 +11,6 @@
    (bg3 "#28283a" black3)
    (bg4 "#32324a" black4)
 
-   (violet    "#a78db5")
    (azure2 "#325074")
 
    (keyword     azure4)
@@ -19,7 +18,7 @@
    (second-key  bg4 cerise4)
    (builtin     capri4)
    (functions   builtin)
-   (var         alt-lavender)
+   (var         violet4)
    (const       cerise4)
    (type        cyan1)
    (num         pink1)
@@ -53,7 +52,7 @@
    (ivy4 spring-green1)
 
    (rb1 cyan3)
-   (rb2 lavender)
+   (rb2 violet4)
    (rb3 cyan3)
    (rb4 blue4)
    (rb5 spring-green4)

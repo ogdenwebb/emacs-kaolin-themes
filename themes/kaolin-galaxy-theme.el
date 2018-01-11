@@ -73,7 +73,7 @@
    (ivy3 vermilion3)
    (ivy4 red3)
 
-   (rb1 alt-lavender)
+   (rb1 violet4)
    (rb2 teal4)
    (rb3 violet3)
    (rb4 blue4)
@@ -91,7 +91,7 @@
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       lavender)
+   (line-color2       violet4)
    (line-border       bg3)
 
    (segment-active    gray3)

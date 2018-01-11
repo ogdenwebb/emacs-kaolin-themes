@@ -70,7 +70,6 @@
     ;; TODO:
     ;; (galaxy-bg1          "#212026" black1)
 
-    ;; (galaxy-violet       "#9f84ae")
     ;; (galaxy-blue         "#2a57cc")
     ;; ;; (galaxy-blue      "#335599")
 
@@ -104,7 +103,7 @@
     (gray9           "#919a9c") ; old light-gray
 
     ;; TODO:
-    (lavender-gray   "#b6b5c5")
+    (violet4-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
 
     ;; White - #FDFDFF
@@ -175,33 +174,37 @@
     (lime4 "#c791aa")
 
     ;; Cerise #FF00BF
-    (cerise0 "#E121B1")
-    (cerise1 "#CF44AC")
+    (cerise0 "#e121b1")
+    (cerise1 "#cf44ac")
     (cerise2 "#a31880")
     (cerise3 "#e361c3")
     (cerise4 "#a9779c")
 
     ;; Magenta/Fuchsia #FF00FF
-    (magenta0 "#C932C9")
+    (magenta0 "#c932c9")
     (magenta1 "#cd5ccd")
     (magenta2 "#563d56")
     (magenta3 "#cea2ca") ; light-puprle
     (magenta4 "#835d83") ; purple
     (magenta5 "#1a121a")
 
-    (grayish-magenta "#796878")
-
     ;; Purple #BF00FF
-    (violet          "#ab98b5")
+    (purple0 "#ab33eb")
+    (purple1 "#A34BD2")
+    (purple2 "#73229E")
+    (purple3 "#bc90d4")
+    (purple4 "#ab98b5")
 
-    ;; Violet #7F00FF
-    (lavender        "#967bb6")
-    (alt-lavender    "#9d81ba")
+    ;; TODO: Violet #7F00FF
     (violet3    "#c79af4")
+    (violet4    "#9d81ba") ; alt-lavender
 
     ;; Ultramarine #3F00FF
-    ;; TODO: add color
-    (alt-violet      "#af94f5")
+    (ultramarine0 "#4013d4")
+    (ultramarine1 "#461eca")
+    (ultramarine2 "#351d87")
+    (ultramarine3 "#6d44eb")
+    (ultramarine4 "#787096")
 
     ;; Blue #0000FF
     (blue0 "#3232ca")
@@ -334,17 +337,17 @@
     (tooltip-hl-fg amber3)
 
     (rb1 cyan3)
-    (rb2 violet)
+    (rb2 purple4)
     (rb3 spring-green4)
     (rb4 blue4)
     (rb5 teal1)
     (rb6 violet3)
     (rb7 grayish-orange)
-    (rb8 grayish-magenta)
-    (rb9 lavender)
+    (rb8 magenta4)
+    (rb9 violet4)
 
     (diff-add    spring-green1)
-    (diff-change violet)
+    (diff-change purple4)
     (diff-rem    red1)
 
     (keyword     teal1)
@@ -358,11 +361,11 @@
     (str-alt     spring-green4)
     (doc         str-alt)
     (type        vermilion4)
-    (const       violet)
+    (const       purple4)
     (var         blue4)
     (num         red1)
     (bool        num)
-    (prep        lavender)
+    (prep        violet4)
     (warning     orange1)
     (err         red1)
 
@@ -515,7 +518,7 @@
 
     ;; Which-key
     (which-key-key-face                   (:foreground spring-green1 :bold bold))
-    (which-key-group-description-face     (:foreground alt-lavender))
+    (which-key-group-description-face     (:foreground violet4))
     (which-key-local-map-description-face (:foreground azure3))
     (which-key-command-description-face   (:foreground cyan3))
 
@@ -527,7 +530,7 @@
     (ruler-mode-comment-column (:foreground capri4))
     (ruler-mode-fringes        (:foreground teal1))
     (ruler-mode-pad            (:foreground var))
-    (ruler-mode-tab-stop       (:foreground violet))
+    (ruler-mode-tab-stop       (:foreground purple4))
     (ruler-mode-goal-column    (:foreground red0))
 
     ;; TODO: Message faces
@@ -638,7 +641,7 @@
     (ido-indicator   (:foreground num))
     (ido-first-match (:foreground hl :bold bold))
     (ido-only-match  (:foreground cyan1))
-    (ido-subdir      (:foreground lavender))
+    (ido-subdir      (:foreground violet4))
 
     ;; Gnus
     (gnus-header-content (:foreground keyword))
@@ -686,9 +689,9 @@
     ;; Latex/Auctex
     (font-latex-warning-face      (:inherit 'warning))
     (font-latex-string-face       (:inherit 'font-lock-string-face))
-    (font-latex-math-face         (:foreground violet))
+    (font-latex-math-face         (:foreground purple4))
     (font-latex-sedate-face       (:foreground capri4))
-    (font-latex-script-char-face  (:foreground violet))
+    (font-latex-script-char-face  (:foreground purple4))
     (font-latex-sectioning-0-face (:foreground amber3 :bold bold))
     (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
     (font-latex-sectioning-2-face (:inherit 'font-latex-sectioning-0-face))

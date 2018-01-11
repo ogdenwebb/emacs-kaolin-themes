@@ -12,11 +12,10 @@
    (bg2       "#222228" black2)
    (bg3       "#2b2b32" black3)
    (bg4       "#34343d" black4)
-   (violet    "#a78db5")
    (azure2 "#325074")
    (red4 "#9c3b42")
 
-   ;; violet or lavender or magenta4, cerise4, crimson4
+   ;; violet or violet4 or magenta4, cerise4, crimson4
    (keyword     red4)
    (second-key  "#642628" cerise4)
    (builtin     grayish-blue)
@@ -25,7 +24,7 @@
    (var         capri4)
    (const       capri4)
    (type        fg1)
-   (num         alt-lavender)
+   (num         violet4)
    (bool        num)
    (prep        azure4 "#5f87af")
 
@@ -60,7 +59,7 @@
    (ivy4 capri1)
 
    (rb1 crimson4)
-   (rb2 lavender)
+   (rb2 violet4)
    (rb3 brown3)
    (rb4 blue4)
    (rb5 brown1)
@@ -77,7 +76,7 @@
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       lavender)
+   (line-color2       violet4)
    (line-border       bg3)
 
    (segment-active    gray2)

@@ -14,7 +14,6 @@
    (bg2       "#261a26" black2)
    (bg3       "#312231" black3)
    (bg4       "#3d2a3d" black4)
-   (violet    "#a78db5")
    (azure2 "#325074")
 
    (keyword     cerise4)
@@ -22,8 +21,8 @@
    (builtin     magenta3)
    (functions   builtin)
    ;; TODO:
-   (var         alt-lavender)
-   (const       lavender)
+   (var         violet4)
+   (const       violet4)
    (type        aquamarine4)
    (num         amber3)
    (bool        num)
@@ -57,10 +56,10 @@
    (ivy4 azure4)
 
    (rb1 crimson4)
-   (rb2 lavender)
+   (rb2 violet4)
    (rb3 cyan3)
    (rb4 blue4)
-   (rb5 alt-lavender)
+   (rb5 violet4)
    (rb6 violet3)
    (rb7 grayish-orange)
    (rb8 azure2)
@@ -90,7 +89,7 @@
    (line-num-bg   bg1)
    (line-num-fg   magenta2 black4)
    ;; TOOD: or hl
-   (line-num-hl   violet gray9)
+   (line-num-hl   magenta3 gray9)
    (cursor        "#e0c3c8"))
 
   ;; Custom theme set faces
@@ -101,7 +100,7 @@
    ;; TODO: change
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground amber3))
-   (org-quote           (:foreground violet)))
+   (org-quote           (:foreground magenta3)))
 
   ;; Set custom vars
   (custom-theme-set-variables

@@ -57,7 +57,7 @@
    (ivy3 vermilion4)
    (ivy4 red4)
 
-   (rb1 alt-lavender)
+   (rb1 violet4)
    (rb2 cyan3)
    (rb3 violet3)
    (rb4 blue4)

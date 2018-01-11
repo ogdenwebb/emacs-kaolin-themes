@@ -39,7 +39,7 @@
 
    (keyword     spring-green4)
    (second-key  spring-green4)
-   (var         lavender)
+   (var         violet4)
    (const       blue4)
    (builtin     aquamarine4)
    ;; TODO:
@@ -83,7 +83,7 @@
    (rb6 crimson4)
    (rb7 vermilion4)
    (rb8 spring-green4)
-   (rb9 lavender)
+   (rb9 violet4)
 
    (diff-add    aquamarine4)
    (diff-change vermilion4)
