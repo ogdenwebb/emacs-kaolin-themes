@@ -7,20 +7,21 @@
 (define-kaolin-theme light  "Light Kaolin theme variant."
   ;; Palette modification
   (
-   ;; TODO: lime color
-   (blue         "#5c9499")
-   ;; (jade         "#597a6e")
-   (dark-blue    "#445588")
-   (pink         "#d45589")
-   (dark-jade    "#3e594e")
-   (light-jade   "#518270")
-   (pure-orange  "#d1832e")
-   (faded-orange "#c78e6d")
-   (red          "#c86d6d")
+   ;; TODO: chartreuse1 color
+   (azure1         "#5c9499")
+   ;; (spring-green4         "#597a6e")
+   (azure2    "#445588")
+   (pink1         "#d45589")
+   (spring-green5    "#3e594e")
+   (aquamarine4   "#518270")
+   (orange0  "#d1832e")
+   (vermilion4 "#c78e6d")
+   (red1          "#c86d6d")
 
-   (cyan         "#48a9a9")
-   (teal         "#6facb3")
-   (dark-cyan    "#008b8b")
+   (cyan1         "#48a9a9")
+   (cyan3         "#6facb3")
+   (cyan2    "#008b8b")
+
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -29,45 +30,46 @@
    (bg3 "#cfd2cb")
    (bg4 "#c5c9c0")
 
-   (fg1 dark-jade)
+   (fg1 spring-green5)
    (fg2 "#3e574d")
    (fg3 "#476257")
    (fg4 "#4f6e62")
-   ;; (green "#3f7d7f")
-   (green "#5e8475")
+   ;; (teal1 "#3f7d7f")
+   (teal1 "#5e8475")
 
 
-   (keyword     jade)
-   (second-key  jade)
-   (var         lavender)
-   (const       faded-blue)
-   (builtin     light-jade)
+   (keyword     spring-green4)
+   (second-key  spring-green4)
+   (var         violet4)
+   (const       blue4)
+   (builtin     aquamarine4)
    ;; TODO:
+   ;; (comment     "#9aa88c")
    (comment     "#9aa88c")
-   (alt-comment alt-grayish-blue)
+   (alt-comment azure5)
    (functions   builtin)
-   ;; TODO: (??) change to brown
-   (str         cyan)
-   (str-alt     teal)
+   ;; TODO: (??) change to brown1
+   (str         brown1)
+   (str-alt     brown1)
    (doc         str-alt)
-   (type        faded-orange)
-   (num         red)
+   (type        vermilion4)
+   (num         red1)
    (bool        num)
-   (prep        dark-blue)
-   (warning     orange)
-   (err         red)
+   (prep        num)
+   (warning     orange1)
+   (err         red1)
 
    (dim-buffer white0)
-   (hl         viridian)
+   (hl         aquamarine2)
    ;; TODO: add colored
    (hl-line    (if kaolin-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
    ;; TODO:
    (selection bg4)
    ;; TODO:
-   (pulse teal)
+   (pulse cyan3)
 
-   (todo moderate-pink)
+   (todo crimson4)
 
    (tooltip-bg bg2)
    (tooltip-fg gray9)
@@ -75,19 +77,19 @@
    (tooltip-hl-fg hl)
 
     ;; TODO:
-   (rb1 green)
-   (rb2 dark-violet)
-   (rb3 moderate-blue)
-   (rb4 blue)
-   (rb5 green)
-   (rb6 moderate-pink)
-   (rb7 faded-orange)
-   (rb8 jade)
-   (rb9 lavender)
+   (rb1 teal1)
+   (rb2 cerise4)
+   (rb3 azure4)
+   (rb4 blue3)
+   (rb5 teal1)
+   (rb6 crimson4)
+   (rb7 vermilion4)
+   (rb8 spring-green4)
+   (rb9 violet4)
 
-   (diff-add    light-jade)
-   (diff-change faded-orange)
-   (diff-rem    faded-red)
+   (diff-add    aquamarine4)
+   (diff-change vermilion4)
+   (diff-rem    red4)
 
     ;; Mode-line
    (line-fg           fg4)
@@ -98,38 +100,38 @@
    ;; Telephone-line
    (segment-active    gray2)
    (segment-inactive  gray2)
-   (evil-normal       green)
-   (evil-insert       light-green)
-   (evil-visual       orange)
-   (evil-replace      red)
-   (evil-motion       yellow)
+   (evil-normal       teal1)
+   (evil-insert       spring-green1)
+   (evil-visual       orange1)
+   (evil-replace      red1)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        amber3)
 
    (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   grayish-green)
    (line-num-hl   hl)
 
-   (cursor        gray2)
+   (cursor        gray3)
 
    (ivy1          gray9)
-   (ivy2          alt-blue)
-   (ivy3          pure-orange)
-   (ivy4          red))
+   (ivy2          capri1)
+   (ivy3          orange0)
+   (ivy4          red1))
 
-  ((link                   (:foreground soft-blue :underline underline))
+  ((link                   (:foreground azure3 :underline underline))
 
-   (org-level-1            (:foreground green :bold bold :height 1.1))
-   (org-level-2            (:foreground faded-blue :bold nil))
-   (org-level-3            (:foreground faded-orange :bold nil))
-   (org-level-4            (:foreground faded-wheat :bold nil))
-   (org-code               (:foreground green))
-   (org-verbatim           (:foreground alt-yellow))
-   (org-table              (:foreground moderate-blue :bold bold))
+   (org-level-1            (:foreground teal1 :bold bold :height 1.1))
+   (org-level-2            (:foreground blue4 :bold nil))
+   (org-level-3            (:foreground vermilion4 :bold nil))
+   (org-level-4            (:foreground amber3 :bold nil))
+   (org-code               (:foreground teal1))
+   (org-verbatim           (:foreground orange2))
+   (org-table              (:foreground azure4 :bold bold))
 
-   (js2-object-property          (:foreground brown))
-   (evil-ex-info                 (:foreground moderate-pink)))
+   (js2-object-property          (:foreground brown1))
+   (evil-ex-info                 (:foreground crimson4)))
 
 
   (when kaolin-git-gutter-solid

@@ -13,15 +13,15 @@
    (bg4          gray3)
 
    ;; Accent color
-   (hl aquamarine)
+   (hl aquamarine3)
 
    (keyword     fg0)
-   (second-key  purple alt-purple)
+   (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
    (builtin     fg1)
    (functions   builtin)
-   ;; (var         lime)
-   ;; (const       light-green)
+   ;; (var         chartreuse1)
+   ;; (const       spring-green1)
    (const       builtin)
    (var         const)
    (type        hl)
@@ -36,8 +36,8 @@
    (str         fg4)
    (str-alt     str)
    (doc         str-alt)
-   (warning     orange)
-   (err         red)
+   (warning     orange1)
+   (err         red1)
 
    (dim-buffer black4)
    (hl-line    gray2)
@@ -45,31 +45,31 @@
    (selection  bg4)
    (pulse      gray3)
 
-   (todo red)
-   (done light-green)
+   (todo red1)
+   (done spring-green1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg hl)
 
-   (ivy2 cyan)
-   (ivy3 faded-orange)
-   (ivy4 faded-red)
+   (ivy2 cyan1)
+   (ivy3 vermilion4)
+   (ivy4 red4)
 
-   (rb1 alt-lavender)
-   (rb2 teal)
-   (rb3 light-violet)
-   (rb4 faded-blue)
-   (rb5 wheat)
+   (rb1 violet4)
+   (rb2 cyan3)
+   (rb3 violet3)
+   (rb4 blue4)
+   (rb5 amber3)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 purple)
-   (rb9 pink)
+   (rb8 magenta4)
+   (rb9 pink1)
 
-   (diff-add    aquamarine)
-   (diff-change light-orange)
-   (diff-rem    red)
+   (diff-add    aquamarine3)
+   (diff-change amber3)
+   (diff-rem    red1)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -80,19 +80,19 @@
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       green)
-   (evil-insert       light-green)
-   (evil-visual       orange)
-   (evil-replace      red)
-   (evil-motion       yellow)
+   (evil-normal       teal1)
+   (evil-insert       spring-green1)
+   (evil-visual       orange1)
+   (evil-replace      red1)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        amber3)
 
    (win-border    black4)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
 
-   (evil-normal teal-blue)
+   (evil-normal capri4)
 
    (line-num-hl  gray9)
    (cursor       white2))
@@ -101,18 +101,18 @@
   (
    (default             (:background bg1 :foreground fg2))
 
-   (link                (:foreground pink :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   (link                (:foreground pink1 :underline underline))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure5))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (org-document-title  (:foreground grayish-blue :bold bold))
    (org-document-info   (:foreground grayish-blue))
-   (org-date            (:foreground teal-green :underline underline))
-   (org-code            (:foreground faded-orange))
-   (org-verbatim        (:foreground orange))
-   (org-quote           (:foreground faded-blue)))
+   (org-date            (:foreground spring-green3 :underline underline))
+   (org-code            (:foreground vermilion4))
+   (org-verbatim        (:foreground orange1))
+   (org-quote           (:foreground blue4)))
 
   ;; Set custom vars
   (custom-theme-set-variables

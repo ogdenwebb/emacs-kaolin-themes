@@ -1,22 +1,24 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 
 ;; TODO: (??) add travis ci
+;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
+;; TODO: midnight colors
+;; TODO: adjust colors for 256 terminal
+;; TODO: create simple/flat color list
+;; TODO: blue colors in themes
 
 ;; TODO: color spec and color functions
-;; TODO: add accent color like aquamarine
-;; TODO: add pure colors
 
-;; TODO: (??) make mode-line dark in ligth themes.
-;; TODO: bright background option
+;; TODO: bright background option/or contrast settings
 ;; TODO: (??) disable color background for terminal
-;; TODO: add to all colors light and dark variant
-;; TODO: (??) add var to highlight key seq'
+;; TODO: (??) add var to highlight key seq' - keysym
 
 ;; TODO: Add the following faces to lib:
 ;; TODO: custom-* and buttons
 ;; TODO: magit faces
 
 ;; TODO: add mode-line option/flat mode-line style
+;; TODO: (??) make dark mode-line in ligth themes.
 
 ;; TODO: (??) add base(terminal) colors
 ;; TODO: (??) colorful comments
@@ -31,33 +33,21 @@
 ;; TODO: distant foregound
 ;; TODO: move git-gutter faces from a theme file to lib,
 ;; i.e. avoid duplication
+;; TODO: (??) num, link and prep color vars use the same color
 
 ;; TODO: add company-tooltip-common-selection for new themes
 
-;; TODO (??) background: #5a6066 || #5d636a
-;; #617c7e
-
-;; Predefined Kaolin palette
-;; 22-24 colors
-;; NEW - OLD
-;; GAP +/- ~7 hue
-;; TODO: (??)
-;; saturation 100
-;; value 85
-;; TODO: (??)
-;; color0 - pure
-;; color1 - color
+;; color0 - pure/contrast/accent > 70 sat & > 70 val
+;; color1 - regular
 ;; color2 - dark
-;; color3 - light/bright
-;; color4 - faded
-
-
-;; TODO: (??) num, link and prep color vars use the same color
-
-;; TERMINAL COLORS: 0-7 is dark, 8-15 is light, so...
+;; color3 - light/soft
+;; color4 - desaturated/faded/muted
+;; color5 - midnight
+;; color6 - grayish
 
 (defconst kaolin-palette
   '(
+    ;; Old black
     ;; (black0          "#181818")
     ;; (black1          "#1b1b1b")
     ;; (black2          "#252525")
@@ -71,17 +61,8 @@
     (black3          "#2B2B2F")
     (black4          "#303035")
 
-    ;; Midnigh colors
-    (midnight-green       "#142223")
-    (alt-midnight-green   "#0f1e1d")
-    (midnight-blue        "#1e2528" black2)
-    ;; (alt-midnight-blue "#062732")
-    ;; (alt-midnight-blue "#12121a")
-    (alt-midnight-blue    "#13131c" black2)
-    (midnight-purple      "#1a121a")
-
     ;; Gray
-    ;; TODO: (??) change hue to 240?
+    ;; TODO: (??) change hue to 240
     (gray0           "#353b3c")
     (gray1           "#383e3f")
     (gray2           "#414849") ; old gray
@@ -94,9 +75,8 @@
     (gray8           "#879193")
     (gray9           "#919a9c") ; old light-gray
 
-
     ;; TODO:
-    (lavender-gray   "#b6b5c5")
+    (violet4-gray   "#b6b5c5")
     (grayish-orange  "#a5a19c")
 
     ;; White - #FDFDFF
@@ -107,164 +87,207 @@
     (white4          "#bebec4")
 
     ;; Yellow #FFFF00
-    (dark-yellow     "#555a2f")
-    (yellow          "#acb370")
+    ;; TODO: adjust
+    (yellow0 "#eeeb28")
+    (yellow1 "#b9b963") ; yellow
+    (yellow2 "#919120") ; dark-yellow
+    (yellow3 "#eae46a")
+    (yellow4 "#c8c493" "#ffd7a5")
+    (yellow5 "#555a2f") ; TODO: midnight yellow
 
     ;; Amber #FFBF00
-    (amber           "#d4b668")
-    (faded-wheat     "#d9ca9b")
-    (light-yellow    "#c9bb87")
-    ;; WHEAT #f5deb3
-    ;; TODO: fix second
-    ;; (??) desaturared
-    (wheat           "#d1bb90" "#ffd7a5")
+    (amber0 "#f3c91f")
+    (amber1 "#d4b668")
+    (amber2 "#91762a")
+    (amber3 "#eed891")
+    (amber4 "#c5b378")
 
     ;; Orange #FF7F00
-    (alt-orange      "#d9a76f")
-    (orange          "#dbac66")
-    (alt-yellow      "#be9266")
-    (alt-wheat       "#fdd5b1")
-    (pure-orange     "#cc6a00")
-
-    ;; TODO:
-    (faded-orange    "#cd9575" "#d7af87")
+    (orange0    "#e67417")
+    (orange1    "#dbac66")
+    (orange2    "#b87e3c")
+    (orange3    "#f5c791")
+    (orange4    "#e1b079")
 
     ;; TODO Vermilion #FF3F00
-    (light-orange    "#ddc085")
+    (vermilion0      "#fa5016")
+    (vermilion1      "#ca6036")
+    (vermilion2      "#a14223")
+    (vermilion3      "#ee7042")
+    (vermilion4      "#cd9575" "#d7af87") ; faded-orange
+
+    ;; Brown #A33C28
+    (brown0 "#872C19")
+    (brown1 "#7d6360")
+    (brown2 "#52413f")
+    (brown3 "#d47057")
+    (brown4 "#ae9895")
+    ;; (bazaar          "#98777b")
 
     ;; Red #FF0000
-    (alt-red         "#c93232") ; strong red
-    (red             "#cd5c5c") ; moderate red
-    (light-red       "#d66e75") ; Slightly desaturated red/soft red
-    (faded-red       "#863d42") ; dark moderate red; muted red
-
-    ;; TODO: adjust
-    ;; Maroon  - dark-red
-    (dark-red        "#832729") ; dark red or maroon?
+    (red0      "#c93237")
+    (red1      "#cd5c60")
+    ;; (red2      "#863d44")
+    (red2      "#832729")
+    (red3      "#e84c58")
+    (red4      "#9c3b42")
 
     ;; Crimson #FF003F
-    (moderate-pink   "#a0586c")
-    (light-pink      "#ef98aa")
+    (crimson0 "#dc2e58")
+    (crimson1 "#e55c7a")
+    (crimson2 "#941b37")
+    (crimson3 "#ef6787")    ; light-pink
+    (crimson4 "#a0586c")    ; moderate-pink
 
-    ;; Rose #FF007F
-    (pink            "#d24b83")
-    (soft-pink       "#fbaed2")
-    ;; Dark rose is eggplant
+    ;; Rose/pink #FF007F
+    (pink0 "#eb3380")
+    (pink1 "#d24b83")
+    (pink2 "#9E2256")
+    (pink3 "#fbaed2")
+    (pink4 "#c791aa")
 
     ;; Cerise #FF00BF
-    ;; (alt-purple      "#915c83")
-    (alt-purple      "#a9779c")
-    ;; TODO:
-    (dark-violet     "#997a8d")
+    (cerise0 "#e121b1")
+    (cerise1 "#cf44ac")
+    (cerise2 "#a31880")
+    (cerise3 "#e361c3")
+    (cerise4 "#a9779c")
 
     ;; Magenta/Fuchsia #FF00FF
-    (dark-purple     "#563d56")
-    (purple          "#835d83")
-
-    ;; TODO:
-    (grayish-magenta "#796878")
-    (light-purple    "#cea2ca")
+    (magenta0 "#c932c9")
+    (magenta1 "#cd5ccd")
+    (magenta2 "#563d56")
+    (magenta3 "#cea2ca") ; light-puprle
+    (magenta4 "#835d83") ; purple
+    (magenta5 "#1a121a")
 
     ;; Purple #BF00FF
-    (violet          "#ab98b5")
+    (purple0 "#ab33eb")
+    (purple1 "#A34BD2")
+    (purple2 "#73229E")
+    (purple3 "#bc90d4")
+    (purple4 "#ab98b5")
 
     ;; Violet #7F00FF
-    (lavender        "#967bb6")
-    (alt-lavender    "#9d81ba")
-
-    (light-violet    "#d1aef4")
-
-    ;; TODO: add to group
-    (alt-violet      "#af94f5")
+    (violet0 "#7f1de1")
+    (violet1 "#8B48CF")
+    (violet2 "#61259e")
+    (violet3 "#c79af4")
+    (violet4 "#9d81ba") ; alt-lavender
 
     ;; Ultramarine #3F00FF
-    ;; TODO: add color
+    ;; TODO adjust
+    (ultramarine0 "#4618dc")
+    (ultramarine1 "#5f3eca")
+    (ultramarine2 "#3d2394")
+    (ultramarine3 "#6d44eb")
+    (ultramarine4 "#787096")
 
     ;; Blue #0000FF
-    ;; (blue             "#6a6a9a")
-    ;; (blue             "#5757ad")
-    (faded-blue       "#817f96") ;  Navy
-
-    (magenta         "#5454b6") ; TODO my current magenta is moderate blue or even navy
+    (blue0 "#3237CA")
+    (blue1 "#4145b6")
+    (blue2 "#2B2FA6")
+    (blue3 "#525df3")
+    (blue4 "#807f96")
+    (blue5 "#13131C" black2)
 
     ;; Cerulean #003FFF
+    (cerulean0 "#0E4CD1")
+    (cerulean1 "#3F66BA")
+    (cerulean2 "#2d4b8c")
+    (cerulean3 "#4C7DE8")
+    (cerulean4 "#536A9D")
+    (cerulean5 "#28395e")
+    ;; (cerulean6 "#8F97A7")
     (grayish-blue      "#687184")
 
     ;; Azure/Sky Blue #007FFF
-    (alt-grayish-blue  "#8f9ca7")
-    (dark-blue         "#2a4661")
-
-    (blue             "#3b6fa3")
-
-    ;; Dodger blue
-    ;; (moderate-blue    "#4e7f95")
-    (moderate-blue    "#53859d")
-
-
-    (soft-blue        "#4ca6e8")
+    (azure0 "#0e70d1")
+    (azure1 "#3f7dba") ; old blue
+    (azure2 "#2a4661")
+    (azure3 "#4ca6e8") ; old soft-blue
+    (azure4 "#53859d")
+    ;; TODO: 5 -> azure6
+    (azure5 "#8f9ca7")
 
     ;; Capri/Deep Sky Blue #00BFFF
-    ;; TOOD: adjust
-    (alt-blue         "#267fb5")
-    (teal-blue          "#91b9c7")
+    ;; TODO: adjust
+    (capri0 "#1a9eee")
+    (capri1 "#2683b5")
+    (capri2 "#1c5f87")
+    (capri3 "#41b0f3")
+    (capri4 "#91b9c7")
+    (capri5 "#1e2528" black2)
 
     ;; Cyan #00FFFF
-    (cyan             "#54b6b6")
-    (dark-cyan        "#098b8b")
+    (cyan0 "#0bc9cf")
+    (cyan1 "#57bfc2")
+    (cyan2 "#09878b")
+    (cyan3 "#6bd9db")
+    (cyan4 "#65a0a1")
+    (cyan5 "#142223")
 
-    ;; my old teal is dark cyan
-    (teal               "#80b6bc")
+    ;; Teal
+    (teal0    "#0d948d")
+    ;; (teal1 "#4a858c")
+    (teal1    "#4d9391")
+    (teal2    "#396b68")
+    (teal3    "#49bdb0")
+    (teal4    "#80bcb6")
+    (teal5    "#0f1e1d")
 
     ;; Aquamarine #00FFBF
-    ; (aquamarine         "#7fffd4")
-    (aquamarine         "#68f3c5")
-
-    ;; TODO: new group
-    (light-jade         "#709688")
-
-
-    ;; TODO: Viridian
-    (viridian           "#40826d")
+    (aquamarine0 "#0ed49b")
+    (aquamarine1 "#47ba99")
+    (aquamarine2 "#40826d")
+    ;; (aquamarine3 "#7fffd4")
+    (aquamarine3 "#68f3ca")
+    (aquamarine4 "#709688")
 
     ;; Spring green #00FF7F
-    (dark-jade          "#2E4038")
-    (jade               "#597A6C")
-    (teal-green         "#6fb593")
-    (dark-green         "#39855f")
-    (light-green        "#54b685")
-
-    ;; TODO: adjust
-    (light-jade         "#709688")
+    (spring-green0 "#2ae186")
+    (spring-green1 "#51b884")
+    (spring-green2 "#39855f") ; dark
+    (spring-green3 "#6fb593") ; old light green
+    (spring-green4 "#597a6c") ; faded
+    (spring-green5 "#2E4038") ; midnight
 
     ;; Erin #00FF3F
-    ;; TODO: add color
+    (erin0 "#26e356")
+    (erin1 "#48ca69")
+    (erin2 "#39854C")
+    (erin3 "#56e87b")
+    (erin4 "#597a64")
+    (erin5 "#2E4033")
 
     ;; Green #00FF00
-    (alt-lime           "#8fbc8f")
-    (grayish-green      "#9ca78f")
+    (green0        "#21e121")
+    (green1        "#47cc47")
+    (green2        "#18a318")
+    (green3        "#61e361")
+    (green4        "#73c66c")
+    (grayish-green "#9ca78f")
 
     ;; Harlequin #3FFF00
-    ;; TODO: add color
+    (harlequin0 "#58f021")
+    (harlequin1 "#6FC550")
+    (harlequin2 "#37A111")
+    (harlequin3 "#70E346")
+    (harlequin4 "#60A148")
 
     ;; Chartreuse #7FFF00
-    (lime               "#85b654")
+    (chartreuse0 "#8bee1a")
+    (chartreuse1 "#92c550")
+    (chartreuse2 "#5ba111")
+    (chartreuse3 "#9de346")
+    (chartreuse4 "#7fa148")
 
-    ;; Lime #D5FF00
-    ;; "#b9c791"
-
-    ;; EXTRA COLORS
-    ;; TODO Brown
-    ;; Brown orange + black
-    (brown           "#7d6360")
-    (light-brown     "#ae9895")
-    (alt-brown       "#52413f")
-    (bazaar          "#98777b")
-
-    ;; TODO: make MAIN color more green :>
-    (deep-green         "#39656b")
-    ;; Teal; TODO: make a bit more green
-    ;; (green              "#4a858c")
-    (green              "#4d8d93")
+    ;; Lime #BFFF00
+    (lime0 "#aadc13")
+    (lime1 "#a8c749")
+    (lime2 "#82a80e")
+    (lime3 "#c7ee53")
+    (lime4 "#b9c791")
 
 
     ;; Named face options
@@ -285,58 +308,58 @@
     (bg3  black3)
     (bg4  black4)
 
-    (dim-buffer black0)
-    ;; TODO: change because almost same green using by strings
-    (hl         aquamarine)
+    (dim-buffer bg0)
+
+    (hl         aquamarine3)
     (hl-mono    gray4)
-    (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
+    (hl-line    (if kaolin-hl-line-colored capri5 bg2))
     (hl-indent  gray3)
     (selection  bg3)
-    (pulse      dark-jade)
+    (pulse      spring-green5)
 
-    (todo red)
-    (done teal-green)
+    (todo red1)
+    (done spring-green3)
 
     (button grayish-orange)
-    (button-hl light-orange)
+    (button-hl amber3)
 
     (tooltip-bg bg2)
     (tooltip-fg gray9)
-    (tooltip-hl-bg alt-brown)
-    (tooltip-hl-fg light-orange)
+    (tooltip-hl-bg brown2)
+    (tooltip-hl-fg amber3)
 
-    (rb1 teal)
-    (rb2 violet)
-    (rb3 jade)
-    (rb4 faded-blue)
-    (rb5 green)
-    (rb6 light-violet)
+    (rb1 cyan3)
+    (rb2 purple4)
+    (rb3 spring-green4)
+    (rb4 blue4)
+    (rb5 teal1)
+    (rb6 violet3)
     (rb7 grayish-orange)
-    (rb8 grayish-magenta)
-    (rb9 lavender)
+    (rb8 magenta4)
+    (rb9 violet4)
 
-    (diff-add    light-green)
-    (diff-change violet)
-    (diff-rem    red)
+    (diff-add    spring-green1)
+    (diff-change purple4)
+    (diff-rem    red1)
 
-    (keyword     green)
-    (second-key  deep-green)
-    (builtin     teal)
+    (keyword     teal1)
+    (second-key  teal2)
+    (builtin     teal4)
     (comment     gray3)
-    (alt-comment alt-grayish-blue)
+    (alt-comment azure5)
     (functions   builtin)
-    ;; TODO: (??) change to light-brown like sierra.vim
-    (str         teal-green)
-    (str-alt     jade)
+    ;; TODO: (??) change to brown3 like sierra.vim
+    (str         spring-green3)
+    (str-alt     spring-green4)
     (doc         str-alt)
-    (type        faded-orange)
-    (const       violet)
-    (var         faded-blue)
-    (num         red)
+    (type        vermilion4)
+    (const       purple4)
+    (var         blue4)
+    (num         red1)
     (bool        num)
-    (prep        lavender)
-    (warning     orange)
-    (err         red)
+    (prep        violet4)
+    (warning     orange1)
+    (err         red1)
 
     ;; Mode-line
     (line-fg           fg4)
@@ -347,13 +370,13 @@
     (line-color2       builtin)
     (segment-active    gray3)
     (segment-inactive  gray3)
-    (evil-normal       green)
-    (evil-insert       light-green)
-    (evil-visual       orange)
-    (evil-replace      red)
-    (evil-motion       yellow)
+    (evil-normal       teal1)
+    (evil-insert       spring-green1)
+    (evil-visual       orange1)
+    (evil-replace      red1)
+    (evil-motion       yellow1)
     (evil-operator     evil-normal)
-    (evil-emacs        light-yellow)
+    (evil-emacs        amber3)
 
     (win-border    black3)
     (line-num-bg   bg1)
@@ -364,9 +387,9 @@
     (swiper-bg   bg2)
     (ivy-bg      nil)
     (ivy1        fg1)
-    (ivy2        soft-blue)
-    (ivy3        light-orange)
-    (ivy4        light-violet)))
+    (ivy2        azure3)
+    (ivy3        amber3)
+    (ivy4        violet3)))
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
@@ -379,7 +402,7 @@
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions :bold bold))
     (font-lock-keyword-face           (:foreground keyword :bold bold))
-    (font-lock-negation-char-face     (:foreground red))
+    (font-lock-negation-char-face     (:foreground red1))
     (font-lock-preprocessor-face      (:foreground prep :bold nil))
     (font-lock-reference-face         (:foreground const))
     (font-lock-string-face            (:foreground str))
@@ -397,7 +420,7 @@
     (shadow              (:foreground gray4))
     (file-name-shadow    (:inherit 'shadow))
     (region              (:background selection))
-    (secondary-selection (:background dark-jade))
+    (secondary-selection (:background spring-green5))
     (fringe              (:background bg1 :foreground fg1))
     (cursor              (:background cursor))
     (vertical-border     (:foreground win-border))
@@ -410,16 +433,16 @@
     ;; TODO: add link var
     (link                (:foreground prep :underline underline))
     (link-visited        (:inherit 'link :underline nil))
-    (success             (:background nil :foreground light-green))
-    (escape-glyph        (:background nil :foreground cyan))
+    (success             (:background nil :foreground spring-green1))
+    (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
-    (header-line (:background midnight-blue :foreground var))
+    (header-line (:background capri5 :foreground var))
     (tooltip     (:foreground tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
-    (isearch-fail (:background nil :foreground red))
+    (isearch-fail (:background nil :foreground red1))
 
 
     ;; Interface
@@ -430,16 +453,16 @@
     (custom-button-pressed (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'pressed-button)))
     (custom-button-unraised (:inherit 'custom-button))
     (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
-    (custom-state          (:background nil :foreground green))
-    (custom-changed        (:background nil :foreground orange))
-    (custom-visibility     (:background nil :foreground cyan :height 0.9 :underline underline))
-    (custom-invalid        (:background nil :foreground red))
-    (custom-set            (:background nil :foreground light-jade))
+    (custom-state          (:background nil :foreground teal1))
+    (custom-changed        (:background nil :foreground orange1))
+    (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
+    (custom-invalid        (:background nil :foreground red1))
+    (custom-set            (:background nil :foreground aquamarine4))
     (widget-documentation  (:background nil :foreground var))
     (widget-button         (:background nil :foreground keyword))
 
     ;; Highlighting
-    (highlight                (:background bg2 :foreground light-orange))
+    (highlight                (:background bg2 :foreground amber3))
     (lazy-highlight           (:background bg3 :foreground fg2))
     (hl-line                  (:background hl-line))
     (highlight-numbers-number (:foreground num))
@@ -483,37 +506,37 @@
                                                :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
-    (which-func (:foreground orange))
+    (which-func (:foreground orange1))
 
     ;; Which-key
-    (which-key-key-face                   (:foreground light-green :bold bold))
-    (which-key-group-description-face     (:foreground alt-lavender))
-    (which-key-local-map-description-face (:foreground soft-blue))
-    (which-key-command-description-face   (:foreground teal))
+    (which-key-key-face                   (:foreground spring-green1 :bold bold))
+    (which-key-group-description-face     (:foreground violet4))
+    (which-key-local-map-description-face (:foreground azure3))
+    (which-key-command-description-face   (:foreground cyan3))
 
     ;; Ruler-mode
     (ruler-mode-default        (:background bg2 :foreground gray3))
     (ruler-mode-column-number  (:foreground var))
-    (ruler-mode-current-column (:foreground orange))
-    (ruler-mode-fill-column    (:foreground pink))
-    (ruler-mode-comment-column (:foreground teal-blue))
-    (ruler-mode-fringes        (:foreground green))
+    (ruler-mode-current-column (:foreground orange1))
+    (ruler-mode-fill-column    (:foreground pink1))
+    (ruler-mode-comment-column (:foreground capri4))
+    (ruler-mode-fringes        (:foreground teal1))
     (ruler-mode-pad            (:foreground var))
-    (ruler-mode-tab-stop       (:foreground violet))
-    (ruler-mode-goal-column    (:foreground alt-red))
+    (ruler-mode-tab-stop       (:foreground purple4))
+    (ruler-mode-goal-column    (:foreground red0))
 
     ;; TODO: Message faces
-    (message-header-name    (:foreground deep-green))
-    (message-header-subject (:foreground teal-green))
-    (message-header-to      (:foreground teal-green))
-    (message-header-other   (:foreground teal))
+    (message-header-name    (:foreground teal2))
+    (message-header-subject (:foreground spring-green3))
+    (message-header-to      (:foreground spring-green3))
+    (message-header-other   (:foreground cyan3))
 
     ;; Elfeed
-    (elfeed-search-tag-face          (:foreground light-yellow))
-    (elfeed-search-feed-face         (:foreground green))
+    (elfeed-search-tag-face          (:foreground amber3))
+    (elfeed-search-feed-face         (:foreground teal1))
     (elfeed-search-date-face         (:foreground var))
     (elfeed-search-unread-title-face (:foreground fg1))
-    (elfeed-search-unread-count-face (:foreground orange))
+    (elfeed-search-unread-count-face (:foreground orange1))
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
@@ -543,19 +566,19 @@
     (powerline-inactive2 (:inherit 'mode-line-inactive))
 
     ;; Spaceline
-    (spaceline-highlight-face (:foreground teal))
+    (spaceline-highlight-face (:foreground cyan3))
 
     ;; Smart-mode-line
-    (sml/line-number      (:foreground lime))
-    (sml/modes            (:foreground purple))
-    (sml/global           (:foreground teal))
-    (sml/filename         (:foreground green))
-    (sml/charging         (:foreground green))
-    (sml/discharging      (:foreground red))
-    (sml/modified         (:foreground light-green :bold bold))
-    (sml/outside-modified (:background alt-red :foreground fg1))
+    (sml/line-number      (:foreground chartreuse1))
+    (sml/modes            (:foreground magenta4))
+    (sml/global           (:foreground cyan3))
+    (sml/filename         (:foreground teal1))
+    (sml/charging         (:foreground teal1))
+    (sml/discharging      (:foreground red1))
+    (sml/modified         (:foreground spring-green1 :bold bold))
+    (sml/outside-modified (:background red0 :foreground fg1))
     (sml/prefix           (:foreground line-fg))
-    (sml/read-only        (:foreground orange))
+    (sml/read-only        (:foreground orange1))
 
     ;; TODO: maybe delete or change to other package
     ;; Fic-mode
@@ -579,37 +602,38 @@
     (company-scrollbar-fg             (:foreground keyword))
     ;; TODO: read about template
     (company-template-field           (:background bg3))
-    (company-echo-common              (:background bg1 :foreground light-yellow))
+    (company-echo-common              (:background bg1 :foreground amber3))
     (company-preview                  (:background nil :foreground keyword))
-    (company-preview-common           (:background bg2 :foreground light-orange))
-    (company-preview-search           (:background bg1 :foreground blue))
+    (company-preview-common           (:background bg2 :foreground amber3))
+    (company-preview-search           (:background bg1 :foreground azure1))
     (company-tooltip-mouse            (:background bg3 :foreground fg3))
 
 
     ;; Flycheck
-    (flycheck-info           (:foreground teal-blue))
+    (flycheck-info           (:foreground capri4))
     (flycheck-warning        (:underline (:style underline-style :color warning)))
     (flycheck-error          (:underline (:style underline-style :color err)))
     (flycheck-fringe-error   (:foreground err))
     (flycheck-fringe-warning (:foreground warning))
-    (flycheck-fringe-info    (:foreground teal-blue))
+    (flycheck-fringe-info    (:foreground capri4))
 
     ;; Flyspell
     (flyspell-duplicate (:underline (:style underline-style :color warning)))
     (flyspell-incorrect (:underline (:style underline-style :color err)))
 
     ;; Hydra
-    (hydra-face-red      (:foreground red))
-    (hydra-face-teal     (:foreground teal))
-    (hydra-face-blue     (:foreground soft-blue))
-    (hydra-face-pink     (:foreground pink))
-    (hydra-face-amaranth (:foreground purple))
+    (hydra-face-red      (:foreground red1))
+    ;; TODO: change to teal
+    (hydra-face-teal     (:foreground cyan3))
+    (hydra-face-blue     (:foreground azure3))
+    (hydra-face-pink     (:foreground pink1))
+    (hydra-face-amaranth (:foreground magenta4))
 
     ;; Ido
     (ido-indicator   (:foreground num))
     (ido-first-match (:foreground hl :bold bold))
-    (ido-only-match  (:foreground cyan))
-    (ido-subdir      (:foreground lavender))
+    (ido-only-match  (:foreground cyan1))
+    (ido-subdir      (:foreground violet4))
 
     ;; Gnus
     (gnus-header-content (:foreground keyword))
@@ -635,9 +659,9 @@
     (js2-jsdoc-html-tag-name      (:foreground keyword))
     (js2-external-variable        (:foreground type))
     (js2-function-param           (:foreground const))
-    (js2-error                    (:underline (:color alt-red :style underline-style)))
+    (js2-error                    (:underline (:color red0 :style underline-style)))
     (js2-function-call            (:foreground functions))
-    (js2-object-property          (:foreground light-brown))
+    (js2-object-property          (:foreground brown3))
     (js2-jsdoc-value              (:foreground str))
     (js2-private-member           (:foreground fg3))
     (js3-function-param-face      (:foreground keyword))
@@ -657,10 +681,10 @@
     ;; Latex/Auctex
     (font-latex-warning-face      (:inherit 'warning))
     (font-latex-string-face       (:inherit 'font-lock-string-face))
-    (font-latex-math-face         (:foreground violet))
-    (font-latex-sedate-face       (:foreground teal-blue))
-    (font-latex-script-char-face  (:foreground violet))
-    (font-latex-sectioning-0-face (:foreground wheat :bold bold))
+    (font-latex-math-face         (:foreground purple4))
+    (font-latex-sedate-face       (:foreground capri4))
+    (font-latex-script-char-face  (:foreground purple4))
+    (font-latex-sectioning-0-face (:foreground amber3 :bold bold))
     (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
     (font-latex-sectioning-2-face (:inherit 'font-latex-sectioning-0-face))
     (font-latex-sectioning-3-face (:inherit 'font-latex-sectioning-0-face))
@@ -669,7 +693,7 @@
 
     ;; Undo-tree
     (undo-tree-visualizer-active-branch-face (:foreground fg1 :bold bold))
-    (undo-tree-visualizer-current-face       (:foreground cyan))
+    (undo-tree-visualizer-current-face       (:foreground cyan1))
     (undo-tree-visualizer-default-face       (:foreground fg2))
     (undo-tree-visualizer-unmodified-face    (:foreground var))
     (undo-tree-visualizer-register-face      (:foreground type))
@@ -677,13 +701,13 @@
     ;; Rainbow delimeters
     ;; TODO: change color & rewrite
     ;; TODO: probably I need to define custom vars or smth...
-    (show-paren-match (:background nil :foreground orange :bold bold))
+    (show-paren-match (:background nil :foreground orange1 :bold bold))
     ;; (if (eq show-paren-style 'expression)
     ;;  (show-paren-match-face (:background bg3 :foreground nil))))
-    ;;  (show-paren-match-face (:background nil :foreground orange :bold bold)))))
+    ;;  (show-paren-match-face (:background nil :foreground orange1 :bold bold)))))
 
     ;; TODO: make red more contrast
-    (show-paren-mismatch (:background faded-red :foreground bg2))
+    (show-paren-mismatch (:background red4 :foreground bg2))
     (rainbow-delimiters-unmatched-face (:foreground warning))
     (rainbow-delimiters-base-face    (:foreground rb1))
     (rainbow-delimiters-depth-1-face (:foreground rb1))
@@ -698,10 +722,10 @@
 
     ;; Diff
     (diff-header      (:background bg2))
-    (diff-file-header (:background bg2 :foreground green))
-    (diff-added       (:background dark-green :foreground fg1))
+    (diff-file-header (:background bg2 :foreground teal1))
+    (diff-added       (:background spring-green2 :foreground fg1))
     (diff-changed     (:background diff-change :foreground fg1))
-    (diff-removed     (:background dark-red :foreground fg1))
+    (diff-removed     (:background red2 :foreground fg1))
 
     ;; Imenu list
     ;; TODO:
@@ -728,41 +752,41 @@
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground black1))
-    (term-color-blue    (:foreground blue))
-    (term-color-red     (:foreground red))
-    (term-color-green   (:foreground green))
-    (term-color-yellow  (:foreground yellow))
-    (term-color-magenta (:foreground purple))
-    (term-color-cyan    (:foreground cyan))
+    (term-color-blue    (:foreground azure1))
+    (term-color-red     (:foreground red1))
+    (term-color-green   (:foreground teal1))
+    (term-color-yellow  (:foreground yellow1))
+    (term-color-magenta (:foreground magenta4))
+    (term-color-cyan    (:foreground cyan1))
     (term-color-white   (:foreground white2))
 
     ;; EShell
-    (eshell-prompt        (:foreground green :bold bold))
-    (eshell-ls-directory  (:foreground magenta :bold bold))
-    (eshell-ls-symlink    (:foreground blue :bold bold))
-    (eshell-ls-executable (:foreground lime :bold bold))
-    (eshell-ls-archive    (:foreground red))
-    (eshell-ls-backup     (:foreground purple))
-    (eshell-ls-clutter    (:foreground pink))
-    (eshell-ls-missing    (:background bg3 :foreground red))
-    (eshell-ls-product    (:foreground yellow))
+    (eshell-prompt        (:foreground teal1 :bold bold))
+    (eshell-ls-directory  (:foreground blue1 :bold bold))
+    (eshell-ls-symlink    (:foreground azure1 :bold bold))
+    (eshell-ls-executable (:foreground chartreuse1 :bold bold))
+    (eshell-ls-archive    (:foreground red1))
+    (eshell-ls-backup     (:foreground magenta4))
+    (eshell-ls-clutter    (:foreground pink1))
+    (eshell-ls-missing    (:background bg3 :foreground red1))
+    (eshell-ls-product    (:foreground yellow1))
     (eshell-ls-readonly   (:foreground fg2))
-    (eshell-ls-special    (:foreground light-green))
+    (eshell-ls-special    (:foreground spring-green1))
     (eshell-ls-unreadable (:foreground var))
 
     ;; Whitespace mode
     ;; TODO: Add variant for light themes
-    (whitespace-empty            (:background dark-jade :foreground gray9))
+    (whitespace-empty            (:background spring-green5 :foreground gray9))
     (whitespace-line             (:background bg3 :foreground warning))
-    (whitespace-newline          (:foreground teal))
+    (whitespace-newline          (:foreground cyan3))
     (whitespace-indentation      (:background hl-indent))
-    (whitespace-tab              (:background light-jade))
-    (whitespace-space            (:background gray4 :foreground dark-jade))
-    (whitespace-hspace           (:foreground cyan))
-    (whitespace-space-before-tab (:background alt-yellow :foreground bg2))
-    (whitespace-space-after-tab  (:background alt-yellow :foreground bg2))
-    (whitespace-trailing         (:foreground alt-red))
-    (whitespace-big-indent       (:background dark-red :foreground alt-red))
+    (whitespace-tab              (:background aquamarine4))
+    (whitespace-space            (:background gray4 :foreground spring-green5))
+    (whitespace-hspace           (:foreground cyan1))
+    (whitespace-space-before-tab (:background orange2 :foreground bg2))
+    (whitespace-space-after-tab  (:background orange2 :foreground bg2))
+    (whitespace-trailing         (:foreground red0))
+    (whitespace-big-indent       (:background red2 :foreground red0))
 
     ;; Org-mode
     ;; TODO: org agenda faces
@@ -770,10 +794,10 @@
     (org-done                      (:foreground done  :bold bold))
     (org-headline-done             (:foreground gray4  :bold nil))
     (org-ellipsis                  (:foreground builtin))
-    (org-date                      (:foreground light-yellow :underline underline))
+    (org-date                      (:foreground amber3 :underline underline))
     (org-link                      (:inherit 'link))
-    (org-code                      (:foreground light-yellow))
-    (org-verbatim                  (:foreground soft-blue))
+    (org-code                      (:foreground amber3))
+    (org-verbatim                  (:foreground azure3))
     (org-hide                      (:foreground bg1))
     (org-special-keyword           (:foreground functions))
     (org-table                     (:foreground var :bold bold))
@@ -829,9 +853,9 @@
     (nim-font-lock-export-face (:inherit 'font-lock-function-name-face :italic nil))
 
     ;; Evil ex
-    (evil-ex-info                   (:foreground orange))
-    (evil-ex-substitute-matches     (:background nil :foreground red :underline underline))
-    (evil-ex-substitute-replacement (:background nil :foreground light-green))
+    (evil-ex-info                   (:foreground orange1))
+    (evil-ex-substitute-matches     (:background nil :foreground red1 :underline underline))
+    (evil-ex-substitute-replacement (:background nil :foreground spring-green1))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
 
     ;; Evil-goggles
@@ -850,11 +874,11 @@
     (helm-header                              (:foreground fg2 :underline nil :box nil))
     (helm-source-header                       (:foreground keyword :underline nil :bold bold))
     (helm-match                               (:foreground type :bold bold))
-    (helm-header-line-left-margin             (:background blue :foreground bg1))
+    (helm-header-line-left-margin             (:background azure1 :foreground bg1))
     (helm-selection                           (:background bg2 :foreground type :bold bold))
     (helm-selection-line                      (:background bg2 :foreground type :bold bold))
-    (helm-visible-mark                        (:foreground blue))
-    (helm-candidate-number                    (:foreground light-jade))
+    (helm-visible-mark                        (:foreground azure1))
+    (helm-candidate-number                    (:foreground aquamarine4))
     (helm-separator                           (:foreground type))
     (helm-time-zone-current                   (:foreground builtin))
     (helm-time-zone-home                      (:foreground type))
@@ -863,13 +887,13 @@
     (helm-buffer-saved-out                    (:foreground fg1))
     (helm-buffer-size                         (:foreground fg1))
     (helm-ff-directory                        (:foreground functions :bold bold))
-    (helm-buffer-directory                    (:foreground purple))
+    (helm-buffer-directory                    (:foreground magenta4))
     (helm-ff-dotted-directory                 (:foreground functions :bold bold))
-    (helm-ff-dotted-symlink-directory         (:foreground blue :bold bold))
+    (helm-ff-dotted-symlink-directory         (:foreground azure1 :bold bold))
     (helm-ff-file                             (:foreground fg1 :weight 'normal))
     (helm-ff-executable                       (:foreground keyword :weight 'normal))
     (helm-ff-invalid-symlink                  (:foreground warning :bold bold))
-    (helm-resume-need-update                  (:background alt-red :foreground nil))
+    (helm-resume-need-update                  (:background red0 :foreground nil))
     (helm-ff-symlink                          (:foreground keyword :bold bold))
     (helm-ff-prefix                           (:background keyword :foreground bg1 :weight 'normal))
     (helm-grep-cmd-line                       (:foreground fg1))
@@ -884,11 +908,11 @@
 
     ;; Ivy & swiper basic
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
+
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
-    (ivy-current-match           (:background hl-line :foreground hl :bold t))
 
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))

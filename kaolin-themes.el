@@ -1,11 +1,11 @@
 ;;; kaolin-themes.el --- A set of eye pleasing themes  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2017 ogdenwebb
+;; Copyright (C) 2017-2018 ogdenwebb
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.1.1
+;; Version: 1.2.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -32,7 +32,6 @@
 ;;  * kaolin-light - light variant of the original kaolin-dark
 ;;  * kaolin-eclipse - a dark purple variant
 ;;  * kaolin-ocean - dark blue variant
-;;  * kaolin-tribal - theme based on Tribal color scheme by Dayle Rees.
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;
 ;;
@@ -121,6 +120,8 @@
              do (map-put res (car el) (cdr el)))
     res))
 
+;; TODO (??) add ability to create own variables in themes with vars from lib
+;; like (my-new-theme-color cyan1)
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))

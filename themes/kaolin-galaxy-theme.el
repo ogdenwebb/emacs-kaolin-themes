@@ -19,126 +19,114 @@
    (bg3          "#33323b" black3)
    (bg4          "#3d3b46" black4)
 
-   (violet       "#9f84ae")
-   (yellow       "#b9b963")
-   (light-yellow "#eae46a")
-   (wheat        "#c8c493" "#ffd7a5")
-   (dark-blue    "#232c35")
-   (cyan         "#22aabb")
-   (blue         "#2a57cc")
-   ;; (blue      "#335599")
-   (orange       "#d2ab5d")
-   (alt-orange   "#ab6448")
-   (faded-red    "#9c3b42")
-   (light-red    "#e84c58")
-   (pink         "#e55c7a")
-   (light-pink   "#cc7799")
-   (lime         "#73c66c")
-   ;; TEAL
-   (green        "#609ca6")
-   (light-green  "#6dd797")
+   (azure2    "#232c35")
+   (azure1         "#2a57cc")
+   ;; (azure1      "#335599")
+   (chartreuse1         "#73c66c")
+   (spring-green1  "#6dd797")
 
-   (keyword     light-violet)
-   (second-key  purple alt-purple)
+   (keyword     violet3)
+   (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
-   (builtin     violet)
+   (builtin     violet4)
    (functions   builtin)
-   ;; (var         lime)
-   ;; (const       light-green)
-   (var         light-orange)
-   (const       wheat)
-   (type        green)
-   (num         pink "#5f87af")
-   (prep        soft-blue)
+   ;; (var         chartreuse1)
+   ;; (const       spring-green1)
+   (var         amber3)
+   (const       orange3)
+   (type        teal1)
+   (num         crimson1 "#5f87af")
+   (prep        capri3)
    (bool        num)
 
-   ;; TODO: a bit more blue; at least for alt-comment
+   ;; TODO: a bit more azure1; at least for alt-comment
    (comment     gray3)
    ;; TODO:
    (alt-comment "#4c344c")
-   (str         teal-blue)
+   (str         capri4)
    ;; TODO: make bor bright
    (str-alt     grayish-blue)
    (doc         str-alt)
-   ;; TODO: or light-orange
-   (warning     orange)
-   (err         light-red)
+   ;; TODO: or amber3
+   (warning     orange1)
+   (err         red3)
 
    (dim-buffer "#140E14")
-   (hl         light-green)
+   (hl        cyan0)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    ;; TODO: (??) less bright
    (selection  bg4)
-   (pulse      dark-blue)
+   (pulse      azure2)
 
-   (todo light-red)
-   (done light-green)
+   (todo red3)
+   (done spring-green1)
 
    (tooltip-bg    bg2)
    (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg cyan)
+   (tooltip-hl-fg cyan0)
 
-   (ivy2 cyan)
-   (ivy3 faded-orange)
-   (ivy4 faded-red)
+   ;; TODO: (??) change
+   (ivy2 lime3)
+   (ivy3 vermilion3)
+   (ivy4 red3)
 
-   (rb1 alt-lavender)
-   (rb2 teal)
-   (rb3 light-violet)
-   (rb4 faded-blue)
-   (rb5 wheat)
+   (rb1 violet4)
+   (rb2 cyan4)
+   (rb3 violet3)
+   (rb4 blue4)
+   (rb5 yellow4)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
-   (rb8 purple)
-   (rb9 pink)
+   (rb8 magenta4)
+   (rb9 crimson1)
 
-   (diff-add    light-green)
-   (diff-change light-violet)
-   (diff-rem    light-red)
+   (diff-add    spring-green1)
+   (diff-change violet3)
+   (diff-rem    red3)
 
    ;; Mode-line
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       lavender)
+   (line-color2       violet4)
    (line-border       bg3)
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       green)
-   (evil-insert       light-green)
-   (evil-visual       orange)
-   (evil-replace      red)
-   (evil-motion       yellow)
+   (evil-normal       teal1)
+   (evil-insert       spring-green1)
+   (evil-visual       orange1)
+   (evil-replace      red1)
+   (evil-motion       yellow1)
    (evil-operator     evil-normal)
-   (evil-emacs        light-yellow)
+   (evil-emacs        yellow3)
 
    (win-border    black3)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
    (line-num-hl   gray9)
 
-   (evil-normal teal-blue)
+   (evil-normal capri4)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
   (
 
-   ;; TODO: cyan, soft-blue, pink
-   (link                (:foreground pink :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground alt-red))
+   ;; TODO: cyan, azure3, crimson1
+   (link                (:foreground crimson1 :underline underline))
+   (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground alt-grayish-blue))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure5))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (org-document-title  (:foreground grayish-blue :bold bold))
    (org-document-info   (:foreground grayish-blue))
-   (org-date            (:foreground teal-green :underline underline))
-   (org-code            (:foreground faded-orange))
-   (org-verbatim        (:foreground light-jade))
-   (org-quote           (:foreground faded-blue)))
+   (org-date            (:foreground spring-green3 :underline underline))
+   (org-code            (:foreground vermilion4))
+   (org-verbatim        (:foreground aquamarine4))
+   (org-quote           (:foreground blue4)))
 
   ;; Set custom vars
   (custom-theme-set-variables

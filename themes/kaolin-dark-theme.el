@@ -15,37 +15,37 @@
    ;; Theme faces
    ;; Interface
    ;; TODO:
-   (custom-visibility     (:background nil :foreground cyan :height 0.9 :underline underline))
-   (custom-set            (:background nil :foreground teal-green))
-   (custom-face-tag       (:background nil :foreground purple :bold bold))
-   (custom-link           (:background nil :foreground teal :bold bold))
-   (widget-button         (:background nil :foreground green :bold bold))
-   (widget-button-pressed (:background nil :foreground jade))
+   (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
+   (custom-set            (:background nil :foreground spring-green3))
+   (custom-face-tag       (:background nil :foreground magenta4 :bold bold))
+   (custom-link           (:background nil :foreground cyan3 :bold bold))
+   (widget-button         (:background nil :foreground teal1 :bold bold))
+   (widget-button-pressed (:background nil :foreground spring-green4))
    (widget-field          (:background bg3 :foreground fg1 :box (:line-width 1 :color bg2 :style nil)))
    (widget-documentation  (:background nil :foreground var))
 
    ;; Org-mode
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
-   (org-level-1                   (:foreground green :bold bold :height 1.1))
-   (org-level-2                   (:foreground teal-blue :bold nil))
-   (org-level-3                   (:foreground light-jade :bold nil))
-   (org-level-4                   (:foreground faded-wheat :bold nil))
-   (org-tag                       (:foreground orange :bold bold))
-   (org-checkbox                  (:foreground green :bold bold))
+   (org-level-1                   (:foreground teal1 :bold bold :height 1.1))
+   (org-level-2                   (:foreground capri4 :bold nil))
+   (org-level-3                   (:foreground aquamarine4 :bold nil))
+   (org-level-4                   (:foreground amber3 :bold nil))
+   (org-tag                       (:foreground orange1 :bold bold))
+   (org-checkbox                  (:foreground teal1 :bold bold))
    ;; TODO: refact
-   (org-headline-done             (:foreground teal-blue  :bold nil))
+   (org-headline-done             (:foreground capri4  :bold nil))
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
-   (org-checkbox-statistics-done  (:foreground teal-green :bold bold))
+   (org-checkbox-statistics-done  (:foreground spring-green3 :bold bold))
    (org-hide                      (:foreground bg2))
    (org-agenda-structure          (:background bg3 :foreground fg3 :bold bold))
-   (org-agenda-date               (:foreground light-yellow :height 1.1))
-   (org-agenda-date-today         (:foreground purple :height 1.2 :bold bold))
+   (org-agenda-date               (:foreground amber3 :height 1.1))
+   (org-agenda-date-today         (:foreground magenta4 :height 1.2 :bold bold))
 
    ;; Ediff
    ;; TODO: change
-   (ediff-current-diff-A (:background dark-red :foreground red))
-   (ediff-current-diff-B (:background dark-green :foreground light-green))
-   (ediff-current-diff-C (:background dark-blue :foreground teal-blue))
+   (ediff-current-diff-A (:background red2 :foreground red1))
+   (ediff-current-diff-B (:background spring-green2 :foreground spring-green1))
+   (ediff-current-diff-C (:background azure2 :foreground capri4))
 
    (ediff-even-diff-A (:background bg2))
    (ediff-even-diff-B (:background bg2))
@@ -77,67 +77,67 @@
 
    ;; Speedbar
    ;; TODO:
-   (speedbar-separator-face (:background blue))
-   (speedbar-directory-face (:foreground teal))
-   (speedbar-file-face      (:foreground green))
+   (speedbar-separator-face (:background azure1))
+   (speedbar-directory-face (:foreground cyan3))
+   (speedbar-file-face      (:foreground teal1))
    (speedbar-tag-face       (:foreground var))
-   (speedbar-selected-face  (:foreground teal-green))
-   (speedbar-highlight-face (:foreground cyan))
-   (speedbar-button-face    (:foreground jade))
+   (speedbar-selected-face  (:foreground spring-green3))
+   (speedbar-highlight-face (:foreground cyan1))
+   (speedbar-button-face    (:foreground spring-green4))
 
    ;; Perl6
    ;; TODO:
-   (perl6-phaser          (:foreground cyan))
+   (perl6-phaser          (:foreground cyan1))
    (perl6-type-constraint (:inherit 'font-lock-keyword-face))
 
    ;; Shell
-   (sh-quoted-exec (:foreground light-yellow))
+   (sh-quoted-exec (:foreground amber3))
 
    ;; Clojure
    (clojure-keyword-face (:inherit 'font-lock-variable-name-face))
 
    ;; OCaml
-   (tuareg-font-lock-governing-face (:foreground green :bold bold))
-   (tuareg-font-double-colon-face   (:foreground yellow))
-   (tuareg-font-lock-error-face     (:foreground alt-red))
+   (tuareg-font-lock-governing-face (:foreground teal1 :bold bold))
+   (tuareg-font-double-colon-face   (:foreground yellow1))
+   (tuareg-font-lock-error-face     (:foreground red0))
    ;; TODO: find code with following face
-   ;; (tuareg-font-lock-multistage-face (:foreground alt-red))))
+   ;; (tuareg-font-lock-multistage-face (:foreground red0))))
 
    ;; Ace-window
-   (aw-leading-char-face (:foreground pink :bold bold))
+   (aw-leading-char-face (:foreground pink1 :bold bold))
    (aw-background-face   (:foreground bg4 :bold bold))
 
    ;; Rst-mode
-   (rst-adornment (:foreground jade))
-   (rst-block     (:foreground teal))
-   (rst-level-1   (:foreground violet))
-   (rst-level-2   (:foreground green))
-   (rst-level-3   (:foreground teal-blue))
-   (rst-level-4   (:foreground violet))
-   (rst-level-5   (:foreground green))
-   (rst-level-6   (:foreground teal-blue))
+   (rst-adornment (:foreground spring-green4))
+   (rst-block     (:foreground cyan3))
+   (rst-level-1   (:foreground purple4))
+   (rst-level-2   (:foreground teal1))
+   (rst-level-3   (:foreground capri4))
+   (rst-level-4   (:foreground purple4))
+   (rst-level-5   (:foreground teal1))
+   (rst-level-6   (:foreground capri4))
 
    ;; TODO: split
    ;; Vimish-fold
    (vimish-fold-overlay (:background bg2 :foreground comment))
-   (vimish-fold-fringe  (:background nil :foreground jade))
+   (vimish-fold-fringe  (:background nil :foreground spring-green4))
 
    ;; Avy
-   (avy-lead-face   (:background dark-red :foreground fg1))
-   (avy-lead-face-0 (:background jade :foreground fg1))
-   (avy-lead-face-1 (:background dark-blue :foreground fg1))
-   (avy-lead-face-2 (:background dark-purple :foreground fg1))
+   (avy-lead-face   (:background red2 :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1))
 
    ;; TODO: split
    ;; Ivy & Swiper
-   (ivy-modified-buffer     (:foreground alt-lavender))
-   (ivy-subdir              (:foreground green :bold bold))
-   (ivy-action              (:background nil :foreground light-green :bold bold))
-   (ivy-virtual             (:foreground light-yellow))
-   (ivy-remote              (:foreground red))
+   (ivy-modified-buffer     (:foreground violet4))
+   (ivy-subdir              (:foreground teal1 :bold bold))
+   (ivy-action              (:background nil :foreground spring-green1 :bold bold))
+   (ivy-virtual             (:foreground amber3))
+   (ivy-remote              (:foreground red1))
    (ivy-cursor              (:background bg3 :foreground fg1))
-   (ivy-match-required-face (:background nil :foreground alt-red :bold nil))
-   (ivy-confirm-face        (:background nil :foreground light-orange)))
+   (ivy-match-required-face (:background nil :foreground red0 :bold nil))
+   (ivy-confirm-face        (:background nil :foreground amber3)))
 
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
