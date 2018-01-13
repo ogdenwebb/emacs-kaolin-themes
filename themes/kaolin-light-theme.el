@@ -55,7 +55,7 @@
    (type        vermilion4)
    (num         red1)
    (bool        num)
-   (prep        azure2)
+   (prep        num)
    (warning     orange1)
    (err         red1)
 
@@ -113,7 +113,7 @@
    (line-num-fg   grayish-green)
    (line-num-hl   hl)
 
-   (cursor        gray2)
+   (cursor        gray3)
 
    (ivy1          gray9)
    (ivy2          capri1)

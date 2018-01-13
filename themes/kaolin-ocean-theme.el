@@ -6,7 +6,7 @@
 
 (define-kaolin-theme ocean "Dark blue Kaolin theme variant."
   ;; Palette modification
-  ((bg1 alt-midnight-blue black1)
+  ((bg1 blue5 black1)
    (bg2 "#1d1d2b" black2)
    (bg3 "#28283a" black3)
    (bg4 "#32324a" black4)

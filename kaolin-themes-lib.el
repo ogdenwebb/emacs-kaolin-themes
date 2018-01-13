@@ -61,14 +61,6 @@
     (black3          "#2B2B2F")
     (black4          "#303035")
 
-    ;; TODO Midnigh colors
-    (midnight-green       "#142223")
-    (alt-midnight-green   "#0f1e1d")
-    (midnight-blue        "#1e2528" black2)
-    ;; (alt-midnight-blue "#062732")
-    ;; (alt-midnight-blue "#12121a")
-    (alt-midnight-blue    "#13131c" black2)
-
     ;; Gray
     ;; TODO: (??) change hue to 240
     (gray0           "#353b3c")
@@ -197,6 +189,7 @@
     (blue2 "#2B2FA6")
     (blue3 "#525df3")
     (blue4 "#807f96")
+    (blue5 "#13131C" black2)
 
     ;; Cerulean #003FFF
     (cerulean0 "#0E4CD1")
@@ -224,6 +217,7 @@
     (capri2 "#1c5f87")
     (capri3 "#41b0f3")
     (capri4 "#91b9c7")
+    (capri5 "#1e2528" black2)
 
     ;; Cyan #00FFFF
     (cyan0 "#0bc9cf")
@@ -231,6 +225,7 @@
     (cyan2 "#09878b")
     (cyan3 "#6bd9db")
     (cyan4 "#65a0a1")
+    (cyan5 "#142223")
 
     ;; Teal
     (teal0    "#0d948d")
@@ -239,6 +234,7 @@
     (teal2    "#396b68")
     (teal3    "#49bdb0")
     (teal4    "#80bcb6")
+    (teal5    "#0f1e1d")
 
     ;; Aquamarine #00FFBF
     (aquamarine0 "#0ed49b")
@@ -316,7 +312,7 @@
 
     (hl         aquamarine3)
     (hl-mono    gray4)
-    (hl-line    (if kaolin-hl-line-colored midnight-blue bg2))
+    (hl-line    (if kaolin-hl-line-colored capri5 bg2))
     (hl-indent  gray3)
     (selection  bg3)
     (pulse      spring-green5)
@@ -441,7 +437,7 @@
     (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
-    (header-line (:background midnight-blue :foreground var))
+    (header-line (:background capri5 :foreground var))
     (tooltip     (:foreground tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
