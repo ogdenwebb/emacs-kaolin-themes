@@ -1,20 +1,17 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 
 ;; TODO: (??) add travis ci
+;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
 ;; TODO: midnight colors
-;; DONT TOUCH OLD COLORS
 ;; TODO: adjust colors for 256 terminal
-;; TODO: create simple color list
+;; TODO: create simple/flat color list
 ;; TODO: blue colors in themes
 
 ;; TODO: color spec and color functions
-;; TODO: add accent color like aquamarine
-;; TODO: add pure colors
 
 ;; TODO: bright background option/or contrast settings
 ;; TODO: (??) disable color background for terminal
-;; TODO: add to all colors light and dark variant
-;; TODO: (??) add var to highlight key seq'
+;; TODO: (??) add var to highlight key seq' - keysym
 
 ;; TODO: Add the following faces to lib:
 ;; TODO: custom-* and buttons
@@ -40,38 +37,22 @@
 
 ;; TODO: add company-tooltip-common-selection for new themes
 
-;; TODO (??) background: #5a6066 || #5d636a
-;; #617c7e
-
-;; Predefined Kaolin palette
-;; 22-24 colors
-;; GAP +/- ~7 hue
-
-;; FINAL
 ;; color0 - pure/contrast/accent > 70 sat & > 70 val
 ;; color1 - regular
 ;; color2 - dark
 ;; color3 - light/soft
 ;; color4 - desaturated/faded/muted
 ;; color5 - midnight
-;; color6 - grayish ???
-
-;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
-
+;; color6 - grayish
 
 (defconst kaolin-palette
   '(
+    ;; Old black
     ;; (black0          "#181818")
     ;; (black1          "#1b1b1b")
     ;; (black2          "#252525")
     ;; (black3          "#2f2f2f")
     ;; (black4          "#353535")
-
-    ;; TODO:
-    ;; (galaxy-bg1          "#212026" black1)
-
-    ;; (galaxy-blue         "#2a57cc")
-    ;; ;; (galaxy-blue      "#335599")
 
     ;; Black - #020203
     (black0          "#161618")

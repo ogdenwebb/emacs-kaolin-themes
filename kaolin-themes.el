@@ -1,6 +1,6 @@
 ;;; kaolin-themes.el --- A set of eye pleasing themes  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2017 ogdenwebb
+;; Copyright (C) 2017-2018 ogdenwebb
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
@@ -32,7 +32,6 @@
 ;;  * kaolin-light - light variant of the original kaolin-dark
 ;;  * kaolin-eclipse - a dark purple variant
 ;;  * kaolin-ocean - dark blue variant
-;;  * kaolin-tribal - theme based on Tribal color scheme by Dayle Rees.
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;
 ;;

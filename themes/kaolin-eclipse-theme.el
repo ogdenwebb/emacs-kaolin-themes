@@ -32,7 +32,7 @@
 
    (comment     gray0)
    (alt-comment "#4c344c")
-   (str         cyan3)
+   (str         teal4)
    (str-alt     blue4)
    (doc         str-alt)
    (warning     orange3)

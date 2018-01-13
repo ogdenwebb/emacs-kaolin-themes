@@ -73,7 +73,7 @@
    (ivy4 red3)
 
    (rb1 violet4)
-   (rb2 teal4)
+   (rb2 cyan4)
    (rb3 violet3)
    (rb4 blue4)
    (rb5 yellow4)
