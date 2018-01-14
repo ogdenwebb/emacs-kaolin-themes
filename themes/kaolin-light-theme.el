@@ -71,8 +71,6 @@
 
    (todo crimson4)
 
-   (tooltip-bg bg2)
-   (tooltip-fg gray9)
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 

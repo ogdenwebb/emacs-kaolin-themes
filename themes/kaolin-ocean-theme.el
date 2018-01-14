@@ -42,8 +42,6 @@
 
    (todo pink1)
 
-   (tooltip-bg    bg2)
-   (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg chartreuse1)
 

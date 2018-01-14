@@ -62,8 +62,7 @@
    (todo red3)
    (done spring-green1)
 
-   (tooltip-bg    bg2)
-   (tooltip-fg    gray9)
+   ;; Tooltip
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan0)
 

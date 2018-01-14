@@ -47,8 +47,6 @@
 
    (todo pink1)
 
-   (tooltip-bg    bg2)
-   (tooltip-fg    gray9)
    (tooltip-hl-bg magenta2)
    (tooltip-hl-fg amber3)
 

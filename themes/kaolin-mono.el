@@ -48,8 +48,6 @@
    (todo red1)
    (done spring-green1)
 
-   (tooltip-bg    bg2)
-   (tooltip-fg    gray9)
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg hl)
 

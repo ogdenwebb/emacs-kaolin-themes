@@ -324,7 +324,7 @@
     (button-hl amber3)
 
     (tooltip-bg bg2)
-    (tooltip-fg gray9)
+    (tooltip-fg fg2)
     (tooltip-hl-bg brown2)
     (tooltip-hl-fg amber3)
 
@@ -438,7 +438,7 @@
 
     (menu        (:background bg2 :foreground fg2))
     (header-line (:background capri5 :foreground var))
-    (tooltip     (:foreground tooltip-bg :foreground tooltip-fg))
+    (tooltip     (:background tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
@@ -592,7 +592,7 @@
     (icompletep-determined (:foreground builtin))
 
     ;; Company
-    (company-tooltip                  (:background tooltip-bg :foreground fg3 :bold bold))
+    (company-tooltip                  (:background tooltip-bg :foreground tooltip-fg :bold bold))
     (company-tooltip-common           (:foreground hl))
     ;; TODO:
     (company-tooltip-common-selection (:bold bold))
