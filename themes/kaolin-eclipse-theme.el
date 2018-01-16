@@ -50,8 +50,9 @@
    (tooltip-hl-bg magenta2)
    (tooltip-hl-fg amber3)
 
-   (ivy3 spring-green3)
-   (ivy4 azure4)
+   (ivy2 capri0)
+   (ivy3 spring-green1)
+   (ivy4 ultramarine3)
 
    (rb1 crimson4)
    (rb2 violet4)
