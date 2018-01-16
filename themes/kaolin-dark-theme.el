@@ -59,22 +59,6 @@
    (ediff-odd-diff-B (:background bg3))
    (ediff-odd-diff-C (:background bg3))
 
-   ;; Magit
-   (magit-section-highlight      (:background bg2))
-   (magit-diff-file-header       (:background bg3 :foreground fg2))
-   (magit-item-highlight :background bg3)
-   (magit-section-heading        (:foreground keyword :bold bold))
-   (magit-hunk-heading           (:background bg3))
-   (magit-hunk-heading-highlight (:background bg3))
-   (magit-diff-context-highlight (:background bg3 :foreground fg3))
-   (magit-diffstat-added         (:foreground type))
-   (magit-diffstat-removed       (:foreground var))
-   (magit-process-ok             (:foreground functions :bold bold))
-   (magit-process-ng             (:foreground warning :bold bold))
-   (magit-branch                 (:foreground const :bold bold))
-   (magit-log-author             (:foreground fg3))
-   (magit-hash                   (:foreground fg2))
-
    ;; Speedbar
    ;; TODO:
    (speedbar-separator-face (:background azure1))

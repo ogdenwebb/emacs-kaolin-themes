@@ -188,7 +188,7 @@
     (blue1 "#4145b6")
     (blue2 "#2B2FA6")
     (blue3 "#525df3")
-    (blue4 "#807f96")
+    (blue4 "#807f96") ; old faded-blue
     (blue5 "#13131C" black2)
 
     ;; Cerulean #003FFF
@@ -438,6 +438,8 @@
 
     (menu        (:background bg2 :foreground fg2))
     (header-line (:background capri5 :foreground var))
+
+    ;; TODO: (??) color fg
     (tooltip     (:background tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
@@ -607,6 +609,42 @@
     (company-preview-common           (:background bg2 :foreground amber3))
     (company-preview-search           (:background bg1 :foreground azure1))
     (company-tooltip-mouse            (:background bg3 :foreground fg3))
+
+    ;; Magit
+    (magit-section-highlight      (:background bg2))
+    (magit-diff-file-header       (:background bg3 :foreground fg2))
+    (magit-item-highlight :background bg3)
+    (magit-hunk-heading           (:background bg3))
+    (magit-hunk-heading-highlight (:background bg3))
+    (magit-diff-context-highlight (:background bg3 :foreground fg3))
+
+    (magit-section-heading        (:foreground keyword :bold bold))
+    (magit-branch                 (:foreground cyan3))
+    (magit-branch-remote          (:foreground aquamarine3))
+    (magit-branch-local           (:foreground cyan3))
+    (magit-diff-added             (:background spring-green2 :foreground fg0))
+    (magit-diff-added-highlight   (:background spring-green2 :foreground fg0))
+    (magit-diff-removed           (:background red2 :foreground fg0))
+    (magit-diff-removed-highlight (:background red2 :foreground fg0))
+    (magit-diffstat-added         (:foreground aquamarine1))
+    (magit-diffstat-removed       (:foreground red4))
+    (magit-tag                    (:foreground orange3))
+    (magit-hash                   (:inherit    'magit-tag))
+    (magit-branch                 (:foreground const :bold bold))
+    (magit-log-author             (:foreground prep))
+    (magit-log-date               (:foreground var))
+    (magit-process-ok             (:foreground spring-green3 :bold bold))
+    (magit-process-ng             (:foreground warning :bold bold))
+    (magit-process-ng             (:foreground warning :bold bold))
+
+    (magit-reflog-amend           (:foreground violet3))
+    (magit-reflog-checkout        (:foreground capri3))
+    (magit-reflog-cherry-pick     (:foreground spring-green1))
+    (magit-reflog-commit          (:foreground spring-green1))
+    (magit-reflog-merge           (:foreground spring-green1))
+    (magit-reflog-other           (:foreground cyan3))
+    (magit-reflog-rebase          (:foreground violet3))
+    (magit-reflog-remote          (:foreground cyan3))
 
 
     ;; Flycheck
