@@ -56,7 +56,7 @@
 
    (rb1 crimson4)
    (rb2 violet4)
-   (rb3 cyan3)
+   (rb3 teal4)
    (rb4 blue4)
    (rb5 violet4)
    (rb6 violet3)

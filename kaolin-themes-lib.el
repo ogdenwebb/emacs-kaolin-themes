@@ -15,7 +15,6 @@
 
 ;; TODO: Add the following faces to lib:
 ;; TODO: custom-* and buttons
-;; TODO: magit faces
 
 ;; TODO: add mode-line option/flat mode-line style
 ;; TODO: (??) make dark mode-line in ligth themes.
@@ -37,6 +36,7 @@
 
 ;; TODO: add company-tooltip-common-selection for new themes
 
+;;; Color order
 ;; color0 - pure/contrast/accent > 70 sat & > 70 val
 ;; color1 - regular
 ;; color2 - dark
@@ -44,6 +44,37 @@
 ;; color4 - desaturated/faded/muted
 ;; color5 - midnight
 ;; color6 - grayish
+
+;;; Color list
+;; Black - #020203
+;; Gray - #CED8D9
+;; White - #FDFDFF
+;; Yellow #FFFF00
+;; Amber #FFBF00
+;; Orange #FF7F00
+;; Vermilion #FF3F00
+;; Brown #A33C28
+;; Red #FF0000
+;; Crimson #FF003F
+;; Rose/pink #FF007F
+;; Cerise #FF00BF
+;; Magenta/Fuchsia #FF00FF
+;; Purple #BF00FF
+;; Violet #7F00FF
+;; Ultramarine #3F00FF
+;; Blue #0000FF
+;; Cerulean #003FFF
+;; Azure/Sky Blue #007FFF
+;; Capri/Deep Sky Blue #00BFFF
+;; Cyan #00FFFF
+;; Teal #00FFEE
+;; Aquamarine #00FFBF
+;; Spring green #00FF7F
+;; Erin #00FF3F
+;; Green #00FF00
+;; Harlequin #3FFF00
+;; Chartreuse #7FFF00
+;; Lime #BFFF00
 
 (defconst kaolin-palette
   '(
@@ -61,7 +92,7 @@
     (black3          "#2B2B2F")
     (black4          "#303035")
 
-    ;; Gray
+    ;; Gray - #CED8D9
     ;; TODO: (??) change hue to 240
     (gray0           "#353b3c")
     (gray1           "#383e3f")
@@ -109,7 +140,7 @@
     (orange3    "#f5c791")
     (orange4    "#e1b079")
 
-    ;; TODO Vermilion #FF3F00
+    ;; Vermilion #FF3F00
     (vermilion0      "#fa5016")
     (vermilion1      "#ca6036")
     (vermilion2      "#a14223")
@@ -227,7 +258,7 @@
     (cyan4 "#65a0a1")
     (cyan5 "#142223")
 
-    ;; Teal
+    ;; Teal #00FFEE
     (teal0    "#0d948d")
     ;; (teal1 "#4a858c")
     (teal1    "#4d9391")

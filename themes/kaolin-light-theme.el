@@ -10,17 +10,17 @@
    ;; TODO: chartreuse1 color
    (azure1         "#5c9499")
    ;; (spring-green4         "#597a6e")
-   (azure2    "#445588")
+   (azure2        "#445588")
    (pink1         "#d45589")
-   (spring-green5    "#3e594e")
+   (spring-green5 "#3e594e")
    (aquamarine4   "#518270")
-   (orange0  "#d1832e")
-   (vermilion4 "#c78e6d")
+   (orange0       "#d1832e")
+   (vermilion4    "#c78e6d")
    (red1          "#c86d6d")
 
    (cyan1         "#48a9a9")
    (cyan3         "#6facb3")
-   (cyan2    "#008b8b")
+   (cyan2         "#008b8b")
 
 
    ;; Color vars
@@ -30,18 +30,16 @@
    (bg3 "#cfd2cb")
    (bg4 "#c5c9c0")
 
-   (fg1 spring-green5)
-   (fg2 "#3e574d")
-   (fg3 "#476257")
-   (fg4 "#4f6e62")
-   ;; (teal1 "#3f7d7f")
-   (teal1 "#5e8475")
+   (fg1 gray0)
+   (fg2 gray2)
+   (fg3 gray3)
+   (fg4 gray4)
 
 
-   (keyword     spring-green4)
-   (second-key  spring-green4)
-   (var         violet4)
-   (const       blue4)
+   (keyword     teal2)
+   (second-key  teal2)
+   (var         ultramarine4)
+   (const       violet4)
    (builtin     aquamarine4)
    ;; TODO:
    ;; (comment     "#9aa88c")
@@ -78,7 +76,7 @@
    (rb1 teal1)
    (rb2 cerise4)
    (rb3 azure4)
-   (rb4 blue3)
+   (rb4 ultramarine4)
    (rb5 teal1)
    (rb6 crimson4)
    (rb7 vermilion4)
@@ -118,15 +116,15 @@
    (ivy3          orange0)
    (ivy4          red1))
 
-  ((link                   (:foreground azure3 :underline underline))
+  ((link                   (:foreground capri1 :underline underline))
 
    (org-level-1            (:foreground teal1 :bold bold :height 1.1))
-   (org-level-2            (:foreground blue4 :bold nil))
+   (org-level-2            (:foreground ultramarine4 :bold nil))
    (org-level-3            (:foreground vermilion4 :bold nil))
-   (org-level-4            (:foreground amber3 :bold nil))
+   (org-level-4            (:foreground cerise4 :bold nil))
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2))
-   (org-table              (:foreground azure4 :bold bold))
+   (org-table              (:foreground ultramarine4 :bold bold))
 
    (js2-object-property          (:foreground brown1))
    (evil-ex-info                 (:foreground crimson4)))

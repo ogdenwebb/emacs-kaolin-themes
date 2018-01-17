@@ -57,8 +57,6 @@
 ;;  (setq kaolin-hl-line-colored t)
 ;;
 ;;
-;;                           The end of the path is the beginning.
-;;
 ;;; Code:
 
 (eval-when-compile

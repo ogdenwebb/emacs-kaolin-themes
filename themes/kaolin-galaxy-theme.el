@@ -72,14 +72,14 @@
    (ivy4 red3)
 
    (rb1 violet4)
-   (rb2 cyan4)
+   (rb2 teal4)
    (rb3 violet3)
    (rb4 blue4)
-   (rb5 yellow4)
+   (rb5 capri4)
    (rb6 grayish-blue)
    (rb7 grayish-orange)
    (rb8 magenta4)
-   (rb9 crimson1)
+   (rb9 crimson3)
 
    (diff-add    spring-green1)
    (diff-change violet3)
