@@ -60,8 +60,8 @@
    (rb3 violet3)
    (rb4 blue4)
    (rb5 amber3)
-   (rb6 grayish-blue)
-   (rb7 grayish-orange)
+   (rb6 cerulean6)
+   (rb7 orange6)
    (rb8 magenta4)
    (rb9 pink1)
 
@@ -102,11 +102,11 @@
    (link                (:foreground pink1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure5))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure6))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
-   (org-document-title  (:foreground grayish-blue :bold bold))
-   (org-document-info   (:foreground grayish-blue))
+   (org-document-title  (:foreground cerulean6 :bold bold))
+   (org-document-info   (:foreground cerulean6))
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground vermilion4))
    (org-verbatim        (:foreground orange1))

@@ -44,7 +44,7 @@
    ;; TODO:
    ;; (comment     "#9aa88c")
    (comment     "#9aa88c")
-   (alt-comment azure5)
+   (alt-comment azure6)
    (functions   builtin)
    ;; TODO: (??) change to brown1
    (str         brown1)
@@ -106,7 +106,7 @@
 
    (win-border    bg3)
    (line-num-bg   bg1)
-   (line-num-fg   grayish-green)
+   (line-num-fg   chartreuse6)
    (line-num-hl   hl)
 
    (cursor        gray3)

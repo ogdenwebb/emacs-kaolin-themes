@@ -9,7 +9,9 @@
    (white1          "#e4e4e8")
    (white2          "#c8c8d0")
    (white3          "#babac4")
-   (white4          "#adadb9"))
+   (white4          "#adadb9")
+
+   (bg1    crimson5))
 
   (
    ;; Theme faces

@@ -2,10 +2,10 @@
 
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
-;; TODO: midnight colors
 ;; TODO: adjust colors for 256 terminal
 ;; TODO: create simple/flat color list
 ;; TODO: blue colors in themes
+;; TODO: adjust 5 and 6 colors
 
 ;; TODO: color spec and color functions
 
@@ -37,12 +37,12 @@
 ;; TODO: add company-tooltip-common-selection for new themes
 
 ;;; Color order
-;; color0 - pure/contrast/accent > 70 sat & > 70 val
+;; color0 - pure/contrast/accent >= 70 sat & > 70 val
 ;; color1 - regular
 ;; color2 - dark
 ;; color3 - light/soft
 ;; color4 - desaturated/faded/muted
-;; color5 - midnight
+;; color5 - midnight <= 50 sat & < 30 value
 ;; color6 - grayish
 
 ;;; Color list
@@ -107,8 +107,6 @@
     (gray9           "#919a9c") ; old light-gray
 
     ;; TODO:
-    (violet4-gray   "#b6b5c5")
-    (grayish-orange  "#a5a19c")
 
     ;; White - #FDFDFF
     (white0          "#f2f2f2")
@@ -124,7 +122,8 @@
     (yellow2 "#919120") ; dark-yellow
     (yellow3 "#eae46a")
     (yellow4 "#c8c493" "#ffd7a5")
-    (yellow5 "#555a2f") ; TODO: midnight yellow
+    (yellow5 "#242618") ; midnight yellow
+    (yellow6 "#c5c7b5")
 
     ;; Amber #FFBF00
     (amber0 "#f3c91f")
@@ -132,20 +131,26 @@
     (amber2 "#91762a")
     (amber3 "#eed891")
     (amber4 "#c5b378")
+    (amber5 "#262113")
+    (amber6 "#c7c2af")
 
     ;; Orange #FF7F00
-    (orange0    "#e67417")
-    (orange1    "#dbac66")
-    (orange2    "#b87e3c")
-    (orange3    "#f5c791")
-    (orange4    "#e1b079")
+    (orange0 "#e67417")
+    (orange1 "#dbac66")
+    (orange2 "#b87e3c")
+    (orange3 "#f5c791")
+    (orange4 "#e1b079")
+    (orange5 "#261D13")
+    (orange6 "#a5a19c") ; grayish-orange
 
     ;; Vermilion #FF3F00
-    (vermilion0      "#fa5016")
-    (vermilion1      "#ca6036")
-    (vermilion2      "#a14223")
-    (vermilion3      "#ee7042")
-    (vermilion4      "#cd9575" "#d7af87") ; faded-orange
+    (vermilion0 "#fa5016")
+    (vermilion1 "#ca6036")
+    (vermilion2 "#a14223")
+    (vermilion3 "#ee7042")
+    (vermilion4 "#cd9575" "#d7af87") ; faded-orange
+    (vermilion5 "#231610")
+    (vermilion6 "#bfb5b0")
 
     ;; Brown #A33C28
     (brown0 "#872C19")
@@ -153,15 +158,17 @@
     (brown2 "#52413f")
     (brown3 "#d47057")
     (brown4 "#ae9895")
-    ;; (bazaar          "#98777b")
+    (brown5 "#211914")
+    (brown6 "#98777b")
 
     ;; Red #FF0000
-    (red0      "#c93237")
-    (red1      "#cd5c60")
-    ;; (red2      "#863d44")
-    (red2      "#832729")
-    (red3      "#e84c58")
-    (red4      "#9c3b42")
+    (red0 "#c93237")
+    (red1 "#cd5c60")
+    (red2 "#832729")
+    (red3 "#e84c58")
+    (red4 "#9c3b42")
+    (red5 "#210f10")
+    (red6 "#d4c1c1")
 
     ;; Crimson #FF003F
     (crimson0 "#dc2e58")
@@ -169,6 +176,8 @@
     (crimson2 "#941b37")
     (crimson3 "#ef6787")    ; light-pink
     (crimson4 "#a0586c")    ; moderate-pink
+    (crimson5 "#210E14")
+    (crimson6 "#D4C1C7")
 
     ;; Rose/pink #FF007F
     (pink0 "#eb3380")
@@ -176,6 +185,8 @@
     (pink2 "#9E2256")
     (pink3 "#fbaed2")
     (pink4 "#c791aa")
+    (pink5 "#210F17")
+    (pink6 "#e3d6dc")
 
     ;; Cerise #FF00BF
     (cerise0 "#e121b1")
@@ -183,6 +194,8 @@
     (cerise2 "#a31880")
     (cerise3 "#e361c3")
     (cerise4 "#a9779c")
+    (cerise5 "#23121C")
+    (cerise6 "#D9D0D6")
 
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
@@ -198,6 +211,8 @@
     (purple2 "#73229E")
     (purple3 "#bc90d4")
     (purple4 "#ab98b5")
+    (purple5 "#1F1623")
+    (purple6 "#CEC5D1")
 
     ;; Violet #7F00FF
     (violet0 "#7f1de1")
@@ -205,6 +220,8 @@
     (violet2 "#61259e")
     (violet3 "#c79af4")
     (violet4 "#9d81ba") ; alt-lavender
+    (violet5 "#1f1926")
+    (violet6 "#CBC5D1")
 
     ;; Ultramarine #3F00FF
     ;; TODO adjust
@@ -213,6 +230,8 @@
     (ultramarine2 "#3d2394")
     (ultramarine3 "#6d44eb")
     (ultramarine4 "#787096")
+    (ultramarine5 "#1b1826")
+    (ultramarine6 "#b3afc5")
 
     ;; Blue #0000FF
     (blue0 "#3237CA")
@@ -220,17 +239,17 @@
     (blue2 "#2B2FA6")
     (blue3 "#525df3")
     (blue4 "#807f96") ; old faded-blue
-    (blue5 "#13131C" black2)
+    (blue5 "#14141e" black2) ; old midnight-blue
+    (blue6 "#b6b5c5")
 
     ;; Cerulean #003FFF
-    (cerulean0 "#0E4CD1")
-    (cerulean1 "#3F66BA")
+    (cerulean0 "#0e4cd1")
+    (cerulean1 "#3f66ba")
     (cerulean2 "#2d4b8c")
-    (cerulean3 "#4C7DE8")
-    (cerulean4 "#536A9D")
-    (cerulean5 "#28395e")
-    ;; (cerulean6 "#8F97A7")
-    (grayish-blue      "#687184")
+    (cerulean3 "#4c7de8")
+    (cerulean4 "#536a9d")
+    (cerulean5 "#171f30")
+    (cerulean6 "#687184") ; grayish-blue
 
     ;; Azure/Sky Blue #007FFF
     (azure0 "#0e70d1")
@@ -238,8 +257,8 @@
     (azure2 "#2a4661")
     (azure3 "#4ca6e8") ; old soft-blue
     (azure4 "#53859d")
-    ;; TODO: 5 -> azure6
-    (azure5 "#8f9ca7")
+    (azure5 "#192430")
+    (azure6 "#8f9ca7")
 
     ;; Capri/Deep Sky Blue #00BFFF
     ;; TODO: adjust
@@ -297,7 +316,6 @@
     (green2        "#18a318")
     (green3        "#61e361")
     (green4        "#73c66c")
-    (grayish-green "#9ca78f")
 
     ;; Harlequin #3FFF00
     (harlequin0 "#58f021")
@@ -312,6 +330,8 @@
     (chartreuse2 "#5ba111")
     (chartreuse3 "#9de346")
     (chartreuse4 "#7fa148")
+
+    (chartreuse6 "#9ca78f")
 
     ;; Lime #BFFF00
     (lime0 "#aadc13")
@@ -351,7 +371,7 @@
     (todo red1)
     (done spring-green3)
 
-    (button grayish-orange)
+    (button orange6)
     (button-hl amber3)
 
     (tooltip-bg bg2)
@@ -365,19 +385,19 @@
     (rb4 blue4)
     (rb5 teal1)
     (rb6 violet3)
-    (rb7 grayish-orange)
+    (rb7 orange6)
     (rb8 magenta4)
     (rb9 violet4)
 
     (diff-add    spring-green1)
-    (diff-change purple4)
+    (diff-change purple3)
     (diff-rem    red1)
 
     (keyword     teal1)
     (second-key  teal2)
     (builtin     teal4)
     (comment     gray3)
-    (alt-comment azure5)
+    (alt-comment azure6)
     (functions   builtin)
     ;; TODO: (??) change to brown3 like sierra.vim
     (str         spring-green3)
