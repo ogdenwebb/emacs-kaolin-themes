@@ -7,7 +7,6 @@
 (define-kaolin-theme light  "Light Kaolin theme variant."
   ;; Palette modification
   (
-   ;; TODO: chartreuse1 color
    (azure1         "#5c9499")
    ;; (spring-green4         "#597a6e")
    (azure2        "#445588")
@@ -30,7 +29,7 @@
    (bg3 "#cfd2cb")
    (bg4 "#c5c9c0")
 
-   (fg1 gray0)
+   (fg1 gray1)
    (fg2 gray2)
    (fg3 gray3)
    (fg4 gray4)
@@ -41,12 +40,9 @@
    (var         ultramarine4)
    (const       violet4)
    (builtin     aquamarine4)
-   ;; TODO:
-   ;; (comment     "#9aa88c")
-   (comment     "#9aa88c")
+   (comment     chartreuse6)
    (alt-comment azure6)
    (functions   builtin)
-   ;; TODO: (??) change to brown1
    (str         brown1)
    (str-alt     brown1)
    (doc         str-alt)

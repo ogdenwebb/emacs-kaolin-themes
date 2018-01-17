@@ -6,6 +6,7 @@
 ;; TODO: create simple/flat color list
 ;; TODO: blue colors in themes
 ;; TODO: adjust 5 and 6 colors
+;; TODO: manage colors in themes
 
 ;; TODO: color spec and color functions
 
