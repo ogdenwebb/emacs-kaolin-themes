@@ -330,7 +330,7 @@
     (chartreuse2 "#5ba111")
     (chartreuse3 "#9de346")
     (chartreuse4 "#7fa148")
-
+    ;; TODO:
     (chartreuse6 "#9ca78f")
 
     ;; Lime #BFFF00
