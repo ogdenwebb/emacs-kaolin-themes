@@ -80,41 +80,41 @@
 (defconst kaolin-palette
   '(
     ;; Old black
-    ;; (black0          "#181818")
-    ;; (black1          "#1b1b1b")
-    ;; (black2          "#252525")
-    ;; (black3          "#2f2f2f")
-    ;; (black4          "#353535")
+    ;; (black0 "#181818")
+    ;; (black1 "#1b1b1b")
+    ;; (black2 "#252525")
+    ;; (black3 "#2f2f2f")
+    ;; (black4 "#353535")
 
     ;; Black - #020203
-    (black0          "#161618")
-    (black1          "#18181B")
-    (black2          "#222225")
-    (black3          "#2B2B2F")
-    (black4          "#303035")
+    (black0 "#161618")
+    (black1 "#18181B")
+    (black2 "#222225")
+    (black3 "#2B2B2F")
+    (black4 "#303035")
 
     ;; Gray - #CED8D9
     ;; TODO: (??) change hue to 240
-    (gray0           "#353b3c")
-    (gray1           "#383e3f")
-    (gray2           "#414849") ; old gray
-    (gray2           "#4b5254")
-    (gray3           "#545c5e")
-    (gray4           "#60696b") ; old alt-gray
-    (gray5           "#697375")
-    (gray6           "#737d80")
-    (gray7           "#7c878a") ; old bright-gray
-    (gray8           "#879193")
-    (gray9           "#919a9c") ; old light-gray
+    (gray0 "#353b3c")
+    (gray1 "#383e3f")
+    (gray2 "#414849") ; old gray
+    (gray2 "#4b5254")
+    (gray3 "#545c5e")
+    (gray4 "#60696b") ; old alt-gray
+    (gray5 "#697375")
+    (gray6 "#737d80")
+    (gray7 "#7c878a") ; old bright-gray
+    (gray8 "#879193")
+    (gray9 "#919a9c") ; old light-gray
 
     ;; TODO:
 
     ;; White - #FDFDFF
-    (white0          "#f2f2f2")
-    (white1          "#e6e6e8")
-    (white2          "#d4d4d6")
-    (white3          "#c9c9cd")
-    (white4          "#bebec4")
+    (white0 "#f2f2f2")
+    (white1 "#e6e6e8")
+    (white2 "#d4d4d6")
+    (white3 "#c9c9cd")
+    (white4 "#bebec4")
 
     ;; Yellow #FFFF00
     ;; TODO: adjust
@@ -195,8 +195,8 @@
     (cerise2 "#a31880")
     (cerise3 "#e361c3")
     (cerise4 "#a9779c")
-    (cerise5 "#23121C")
-    (cerise6 "#D9D0D6")
+    (cerise5 "#23121c")
+    (cerise6 "#d9d0d6")
 
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
@@ -222,7 +222,7 @@
     (violet3 "#c79af4")
     (violet4 "#9d81ba") ; alt-lavender
     (violet5 "#1f1926")
-    (violet6 "#CBC5D1")
+    (violet6 "#cac3d1")
 
     ;; Ultramarine #3F00FF
     ;; TODO adjust
@@ -232,7 +232,7 @@
     (ultramarine3 "#6d44eb")
     (ultramarine4 "#787096")
     (ultramarine5 "#1b1826")
-    (ultramarine6 "#b3afc5")
+    (ultramarine6 "#b0acc5")
 
     ;; Blue #0000FF
     (blue0 "#3237CA")
@@ -241,7 +241,7 @@
     (blue3 "#525df3")
     (blue4 "#807f96") ; old faded-blue
     (blue5 "#14141e" black2) ; old midnight-blue
-    (blue6 "#b6b5c5")
+    (blue6 "#abaac5")
 
     ;; Cerulean #003FFF
     (cerulean0 "#0e4cd1")
@@ -269,6 +269,7 @@
     (capri3 "#41b0f3")
     (capri4 "#91b9c7")
     (capri5 "#1e2528" black2)
+    (capri6 "#a2b1b8")
 
     ;; Cyan #00FFFF
     (cyan0 "#0bc9cf")
@@ -277,23 +278,25 @@
     (cyan3 "#6bd9db")
     (cyan4 "#65a0a1")
     (cyan5 "#142223")
+    (cyan6 "#a7caca")
 
     ;; Teal #00FFEE
-    (teal0    "#0d948d")
-    ;; (teal1 "#4a858c")
-    (teal1    "#4d9391")
-    (teal2    "#396b68")
-    (teal3    "#49bdb0")
-    (teal4    "#80bcb6")
-    (teal5    "#0f1e1d")
+    (teal0 "#0d948d")
+    (teal1 "#4d9391")
+    (teal2 "#396b68")
+    (teal3 "#49bdb0")
+    (teal4 "#80bcb6")
+    (teal5 "#0f1e1d")
+    (teal6 "#a4bab9")
 
     ;; Aquamarine #00FFBF
     (aquamarine0 "#0ed49b")
     (aquamarine1 "#47ba99")
     (aquamarine2 "#40826d")
-    ;; (aquamarine3 "#7fffd4")
     (aquamarine3 "#68f3ca")
     (aquamarine4 "#709688")
+    (aquamarine5 "#12231E")
+    (aquamarine6 "#c8e1da")
 
     ;; Spring green #00FF7F
     (spring-green0 "#2ae186")
@@ -301,7 +304,8 @@
     (spring-green2 "#39855f") ; dark
     (spring-green3 "#6fb593") ; old light green
     (spring-green4 "#597a6c") ; faded
-    (spring-green5 "#2E4038") ; midnight
+    (spring-green5 "#2E4038") ; old midnight
+    (spring-green6 "#90aea1") ; faded
 
     ;; Erin #00FF3F
     (erin0 "#26e356")
@@ -309,14 +313,17 @@
     (erin2 "#39854C")
     (erin3 "#56e87b")
     (erin4 "#597a64")
-    (erin5 "#2E4033")
+    (erin5 "#213025")
+    (erin6 "#ABC7B5")
 
     ;; Green #00FF00
-    (green0        "#21e121")
-    (green1        "#47cc47")
-    (green2        "#18a318")
-    (green3        "#61e361")
-    (green4        "#73c66c")
+    (green0 "#21e121")
+    (green1 "#47cc47")
+    (green2 "#18a318")
+    (green3 "#61e361")
+    (green4 "#73c66c")
+    (green5 "#0f1e0f")
+    (green6 "#abc6a8")
 
     ;; Harlequin #3FFF00
     (harlequin0 "#58f021")
@@ -324,6 +331,8 @@
     (harlequin2 "#37A111")
     (harlequin3 "#70E346")
     (harlequin4 "#60A148")
+    (harlequin5 "#121E0E")
+    (harlequin6 "#b0c6a8")
 
     ;; Chartreuse #7FFF00
     (chartreuse0 "#8bee1a")
@@ -331,8 +340,8 @@
     (chartreuse2 "#5ba111")
     (chartreuse3 "#9de346")
     (chartreuse4 "#7fa148")
-    ;; TODO:
-    (chartreuse6 "#9ca78f")
+    (chartreuse5 "#161E0D")
+    (chartreuse6 "#afbaa2")
 
     ;; Lime #BFFF00
     (lime0 "#aadc13")
@@ -340,9 +349,11 @@
     (lime2 "#82a80e")
     (lime3 "#c7ee53")
     (lime4 "#b9c791")
+    (lime5 "#1B210E")
+    (lime6 "#b5baa4")
 
 
-    ;; Named face options
+    ;; Named color vars
     (bold            kaolin-bold)
     (italic          kaolin-italic)
     (underline       kaolin-underline)
