@@ -23,7 +23,7 @@
    (type        cyan1)
    (num         pink1)
    (bool        num)
-   (prep        blue1)
+   (prep        ultramarine3)
 
    (comment     gray0)
    (alt-comment "#34344c")
