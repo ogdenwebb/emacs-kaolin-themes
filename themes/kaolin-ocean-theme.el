@@ -23,7 +23,7 @@
    (type        cyan1)
    (num         pink1)
    (bool        num)
-   (prep        ultramarine3)
+   (prep        violet1)
 
    (comment     gray0)
    (alt-comment "#34344c")
@@ -34,7 +34,7 @@
    (err         red1)
 
    (dim-buffer "#0F0F17")
-   (hl         cyan2)
+   (hl         cyan0)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
@@ -45,17 +45,17 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg chartreuse1)
 
-   (ivy2 pink1)
+   (ivy2 cerise1)
    (ivy3 amber3)
    (ivy4 spring-green1)
 
-   (rb1 cyan3)
+   (rb1 cyan1)
    (rb2 violet4)
-   (rb3 cyan3)
+   (rb3 teal1)
    (rb4 blue4)
-   (rb5 spring-green4)
+   (rb5 aquamarine2)
    (rb6 spring-green3)
-   (rb7 amber3)
+   (rb7 amber1)
    (rb8 azure2)
    (rb9 azure3)
 
