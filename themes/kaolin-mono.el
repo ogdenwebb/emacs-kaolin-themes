@@ -7,10 +7,18 @@
 (define-kaolin-theme mono "TODO"
   ;; Palette modification
   (
-   (bg1          gray0)
-   (bg2          gray1)
-   (bg3          gray2)
-   (bg4          gray3)
+   ;; (bg0          "#0c0f12")
+   ;; ;; (bg1          azure5)
+   ;; (bg2          "#1c232a")
+   ;; (bg3          "#222A33")
+   ;; (bg4          "#28323D")
+
+   (bg0          "#141E19")
+   (bg1          "#141E19")
+   (bg2          "#141E19")
+   (bg3          "#141E19")
+   (bg4          "#141E19")
+
 
    ;; Accent color
    (hl aquamarine3)

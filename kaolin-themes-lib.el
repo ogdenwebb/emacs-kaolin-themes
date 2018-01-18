@@ -1,10 +1,11 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 
+;; TODO: create theme with azure5 for bg
+
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
 ;; TODO: adjust colors for 256 terminal
-;; TODO: create simple/flat color list
-;; TODO: blue colors in themes
+;; TODO: check blue colors in themes
 ;; TODO: adjust 5 and 6 colors
 ;; TODO: manage colors in themes
 
@@ -20,8 +21,7 @@
 ;; TODO: add mode-line option/flat mode-line style
 ;; TODO: (??) make dark mode-line in ligth themes.
 
-;; TODO: (??) add base(terminal) colors
-;; TODO: (??) colorful comments
+;; TODO: colorful comments
 ;; TODO: treemacs support
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
@@ -31,11 +31,11 @@
 
 ;; TODO: add colored selection option
 ;; TODO: distant foregound
-;; TODO: move git-gutter faces from a theme file to lib,
+;; TODO: move git-gutter faces from a theme file to lib
 ;; i.e. avoid duplication
-;; TODO: (??) num, link and prep color vars use the same color
-
 ;; TODO: add company-tooltip-common-selection for new themes
+
+;; TODO: (??) num, link and prep color vars use the same color
 
 ;;; Color order
 ;; color0 - pure/contrast/accent >= 70 sat & > 70 val
@@ -45,6 +45,8 @@
 ;; color4 - desaturated/faded/muted
 ;; color5 - midnight <= 50 sat & < 30 value
 ;; color6 - grayish
+;; TODO: (??) almost white color
+;; TODO: (??) dark grayish like cerulean6
 
 ;;; Color list
 ;; Black - #020203
@@ -107,8 +109,6 @@
     (gray8 "#879193")
     (gray9 "#919a9c") ; old light-gray
 
-    ;; TODO:
-
     ;; White - #FDFDFF
     (white0 "#f2f2f2")
     (white1 "#e6e6e8")
@@ -123,7 +123,8 @@
     (yellow2 "#919120") ; dark-yellow
     (yellow3 "#eae46a")
     (yellow4 "#c8c493" "#ffd7a5")
-    (yellow5 "#242618") ; midnight yellow
+    ;; (yellow5 "#242618") ; midnight yellow
+    (yellow5 "#1e1e14") ; midnight yellow
     (yellow6 "#c5c5a5")
 
     ;; Amber #FFBF00
@@ -132,7 +133,7 @@
     (amber2 "#91762a")
     (amber3 "#eed891")
     (amber4 "#c5b378")
-    (amber5 "#262113")
+    (amber5 "#1e1c14")
     (amber6 "#c7c2af")
 
     ;; Orange #FF7F00
@@ -141,7 +142,8 @@
     (orange2 "#b87e3c")
     (orange3 "#f5c791")
     (orange4 "#e1b079")
-    (orange5 "#261D13")
+    ;; (orange5 "#261D13")
+    (orange5 "#1e1914")
     (orange6 "#c2b4a1") ; grayish-orange
 
     ;; Vermilion #FF3F00
@@ -159,7 +161,7 @@
     (brown2 "#52413f")
     (brown3 "#d47057")
     (brown4 "#ae9895")
-    (brown5 "#211914")
+    (brown5 "#1C1511")
     (brown6 "#B39DA0")
 
     ;; Red #FF0000
@@ -168,7 +170,8 @@
     (red2 "#832729")
     (red3 "#e84c58")
     (red4 "#9c3b42")
-    (red5 "#210f10")
+    ;; (red5 "#210f10")
+    (red5 "#1E1414")
     (red6 "#CAABAB")
 
     ;; Crimson #FF003F
@@ -186,7 +189,8 @@
     (pink2 "#9E2256")
     (pink3 "#fbaed2")
     (pink4 "#c791aa")
-    (pink5 "#210F17")
+    ;; (pink5 "#210F17")
+    (pink5 "#1e1419")
     (pink6 "#CAB2BD")
 
     ;; Cerise #FF00BF
@@ -204,7 +208,7 @@
     (magenta2 "#563d56")
     (magenta3 "#cea2ca") ; light-puprle
     (magenta4 "#835d83") ; purple
-    (magenta5 "#1a121a")
+    (magenta5 "#1a121a") ; old midnight-purple
     (magenta6 "#BFA8BF")
 
     ;; Purple #BF00FF
@@ -232,7 +236,7 @@
     (ultramarine2 "#3d2394")
     (ultramarine3 "#6d44eb")
     (ultramarine4 "#787096")
-    (ultramarine5 "#1b1826")
+    (ultramarine5 "#16141e")
     (ultramarine6 "#b0acc5")
 
     ;; Blue #0000FF
@@ -250,7 +254,7 @@
     (cerulean2 "#2d4b8c")
     (cerulean3 "#4c7de8")
     (cerulean4 "#536a9d")
-    (cerulean5 "#171f30")
+    (cerulean5 "#14171e")
     (cerulean6 "#687184") ; old grayish-blue
 
     ;; Azure/Sky Blue #007FFF
@@ -259,7 +263,8 @@
     (azure2 "#2a4661")
     (azure3 "#4ca6e8") ; old soft-blue
     (azure4 "#53859d")
-    (azure5 "#192430")
+    ;; (azure5 "#192430")
+    (azure5 "#14191e")
     (azure6 "#8f9ca7")
 
     ;; Capri/Deep Sky Blue #00BFFF
@@ -278,7 +283,8 @@
     (cyan2 "#09878b")
     (cyan3 "#6bd9db")
     (cyan4 "#65a0a1")
-    (cyan5 "#142223")
+    ;; (cyan5 "#142223")
+    (cyan5 "#141e1e")
     (cyan6 "#a7caca")
 
     ;; Teal #00FFEE
@@ -287,7 +293,7 @@
     (teal2 "#396b68")
     (teal3 "#49bdb0")
     (teal4 "#80bcb6")
-    (teal5 "#0f1e1d")
+    (teal5 "#141e1d")
     (teal6 "#a4bab9")
 
     ;; Aquamarine #00FFBF
@@ -296,7 +302,7 @@
     (aquamarine2 "#40826d")
     (aquamarine3 "#68f3ca")
     (aquamarine4 "#709688")
-    (aquamarine5 "#12231E")
+    (aquamarine5 "#141e1b")
     (aquamarine6 "#A7C2BA")
 
     ;; Spring green #00FF7F
@@ -306,6 +312,7 @@
     (spring-green3 "#6fb593") ; old light green
     (spring-green4 "#597a6c") ; faded
     (spring-green5 "#2E4038") ; old midnight
+    ;; (spring-green5 "#141E1A") ; old midnight
     (spring-green6 "#90aea1") ; faded
 
     ;; Erin #00FF3F
@@ -314,7 +321,7 @@
     (erin2 "#39854C")
     (erin3 "#56e87b")
     (erin4 "#597a64")
-    (erin5 "#213025")
+    (erin5 "#141e17")
     (erin6 "#ABC7B5")
 
     ;; Green #00FF00
@@ -323,7 +330,8 @@
     (green2 "#18a318")
     (green3 "#61e361")
     (green4 "#73c66c")
-    (green5 "#0f1e0f")
+    ;; (green5 "#111C11")
+    (green5 "#141e14")
     (green6 "#abc6a8")
 
     ;; Harlequin #3FFF00
@@ -332,7 +340,7 @@
     (harlequin2 "#37A111")
     (harlequin3 "#70E346")
     (harlequin4 "#60A148")
-    (harlequin5 "#121E0E")
+    (harlequin5 "#161E14")
     (harlequin6 "#b0c6a8")
 
     ;; Chartreuse #7FFF00
@@ -938,10 +946,10 @@
     (org-document-info             (:foreground builtin))
     (org-footnote                  (:foreground fg4 :underline underline))
 
-    (org-agenda-date-weekend       (:weight 'normal :foreground fg4))
+    (org-agenda-date-weekend       (:foreground fg4 :weight 'normal))
     (org-block                     (:foreground fg3))
-    (org-quote                     (:inherit 'org-block :slant 'italic))
-    (org-verse                     (:inherit 'org-block :slant 'italic))
+    (org-quote                     (:inherit 'org-block :italic italic))
+    (org-verse                     (:inherit 'org-block :italic italic))
     (org-agenda-done               (:foreground bg4))
     (org-scheduled                 (:foreground type))
     (org-scheduled-today           (:foreground functions :height 1.2 :bold bold))
