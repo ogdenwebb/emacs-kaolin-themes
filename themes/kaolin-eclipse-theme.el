@@ -14,6 +14,7 @@
    (bg2       "#261a26" black2)
    (bg3       "#312231" black3)
    (bg4       "#3d2a3d" black4)
+
    (azure2 "#325074")
 
    (keyword     cerise4)

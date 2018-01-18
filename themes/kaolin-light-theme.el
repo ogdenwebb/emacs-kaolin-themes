@@ -5,22 +5,17 @@
 (require 'kaolin-themes)
 
 (define-kaolin-theme light  "Light Kaolin theme variant."
+
   ;; Palette modification
   (
-   (azure1         "#5c9499")
-   ;; (spring-green4         "#597a6e")
-   (azure2        "#445588")
-   (pink1         "#d45589")
+   ;; Colors
    (spring-green5 "#3e594e")
    (aquamarine4   "#518270")
    (orange0       "#d1832e")
-   (vermilion4    "#c78e6d")
-   (red1          "#c86d6d")
 
    (cyan1         "#48a9a9")
-   (cyan3         "#6facb3")
    (cyan2         "#008b8b")
-
+   (cyan3         "#6facb3")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -47,11 +42,11 @@
    (str-alt     brown1)
    (doc         str-alt)
    (type        vermilion4)
-   (num         red1)
+   (num         red4)
    (bool        num)
    (prep        num)
    (warning     orange1)
-   (err         red1)
+   (err         red4)
 
    (dim-buffer white0)
    (hl         aquamarine2)
@@ -95,7 +90,7 @@
    (evil-normal       teal1)
    (evil-insert       spring-green1)
    (evil-visual       orange1)
-   (evil-replace      red1)
+   (evil-replace      red4)
    (evil-motion       yellow1)
    (evil-operator     evil-normal)
    (evil-emacs        amber3)
@@ -110,7 +105,7 @@
    (ivy1          gray9)
    (ivy2          capri1)
    (ivy3          orange0)
-   (ivy4          red1))
+   (ivy4          red4))
 
   ((link                   (:foreground capri1 :underline underline))
 

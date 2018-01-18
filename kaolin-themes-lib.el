@@ -13,7 +13,8 @@
 
 ;; TODO: bright background option/or contrast settings
 ;; TODO: (??) disable color background for terminal
-;; TODO: (??) add var to highlight key seq' - keysym
+;; TODO: add var to highlight key seq' - keysym
+;; TODO: var to enable distinct for fringe and line num
 
 ;; TODO: Add the following faces to lib:
 ;; TODO: custom-* and buttons
@@ -43,10 +44,12 @@
 ;; color2 - dark
 ;; color3 - light/soft
 ;; color4 - desaturated/faded/muted
+
 ;; color5 - midnight <= 50 sat & < 30 value
-;; color6 - grayish
+;; color6 - light grayish; sat ~10 & val ~ 50+
+;; color7 - dark grayish sat ~20 & val 50+
 ;; TODO: (??) almost white color
-;; TODO: (??) dark grayish like cerulean6
+;; TODO: very dark color 20-30 sat & val like spring-green5
 
 ;;; Color list
 ;; Black - #020203
@@ -169,7 +172,7 @@
     (red1 "#cd5c60")
     (red2 "#832729")
     (red3 "#e84c58")
-    (red4 "#9c3b42")
+    (red4 "#c86d6d")
     ;; (red5 "#210f10")
     (red5 "#1E1414")
     (red6 "#CAABAB")
@@ -312,8 +315,8 @@
     (spring-green3 "#6fb593") ; old light green
     (spring-green4 "#597a6c") ; faded
     (spring-green5 "#2E4038") ; old midnight
-    ;; (spring-green5 "#141E1A") ; old midnight
-    (spring-green6 "#90aea1") ; faded
+    ;; (spring-green5 "#141E1A")
+    (spring-green6 "#90aea1")
 
     ;; Erin #00FF3F
     (erin0 "#26e356")
@@ -705,7 +708,7 @@
     (magit-diff-removed           (:background crimson4 :foreground fg0))
     (magit-diff-removed-highlight (:background crimson4 :foreground fg0))
     (magit-diffstat-added         (:foreground aquamarine2))
-    (magit-diffstat-removed       (:foreground red4))
+    (magit-diffstat-removed       (:foreground red2))
     (magit-tag                    (:foreground orange1))
     (magit-hash                   (:inherit 'magit-tag))
     (magit-dimmed                 (:inherit 'shadow))

@@ -13,6 +13,7 @@
 
    (azure2 "#325074")
 
+
    (keyword     azure4)
    ;; TODO: a bit more bright
    (second-key  bg4 cerise4)

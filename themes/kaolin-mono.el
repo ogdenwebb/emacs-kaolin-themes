@@ -24,6 +24,7 @@
    (hl aquamarine3)
 
    (keyword     fg0)
+   (keyword     fg4)
    (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
    (builtin     fg1)
