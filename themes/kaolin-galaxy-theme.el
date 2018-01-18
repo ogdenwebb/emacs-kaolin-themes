@@ -82,9 +82,9 @@
    (rb8 magenta4)
    (rb9 crimson3)
 
-   (diff-add    spring-green1)
-   (diff-change violet3)
-   (diff-rem    red3)
+   (diff-add spring-green1)
+   (diff-mod violet3)
+   (diff-rem red3)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -137,7 +137,7 @@
     (custom-theme-set-faces
      'kaolin-galaxy
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
-     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 

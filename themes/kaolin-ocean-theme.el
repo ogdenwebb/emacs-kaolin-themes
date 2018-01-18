@@ -60,9 +60,9 @@
    (rb8 azure2)
    (rb9 azure3)
 
-   (diff-add    aquamarine4)
-   (diff-change magenta4)
-   (diff-rem    red4)
+   (diff-add aquamarine4)
+   (diff-mod magenta4)
+   (diff-rem red4)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -96,7 +96,7 @@
    (org-quote           (:foreground blue4))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
-   (git-gutter:modified (:background diff-change :foreground diff-change))
+   (git-gutter:modified (:background diff-mod :foreground diff-mod))
    (git-gutter:deleted  (:background diff-rem :foreground diff-rem)))
 
   ;; Set custom vars
@@ -108,7 +108,7 @@
     (custom-theme-set-faces
      'kaolin-ocean
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
-     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 

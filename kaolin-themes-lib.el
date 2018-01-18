@@ -46,10 +46,10 @@
 ;; color4 - desaturated/faded/muted
 
 ;; color5 - midnight <= 50 sat & < 30 value
-;; color6 - light grayish; sat ~10 & val ~ 50+
-;; color7 - dark grayish sat ~20 & val 50+
-;; TODO: (??) almost white color
 ;; TODO: very dark color 20-30 sat & val like spring-green5
+;; color7 - dark grayish sat ~20 & val 50+
+;; color6 - light grayish; sat ~10 & val ~ 50+
+;; TODO: (??) almost white color
 
 ;;; Color list
 ;; Black - #020203
@@ -414,7 +414,7 @@
     (rb9 violet4)
 
     (diff-add    spring-green1)
-    (diff-change purple3)
+    (diff-mod    purple3)
     (diff-rem    red1)
 
     (keyword     teal1)
@@ -512,10 +512,10 @@
     (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
-    (header-line (:background capri5 :foreground var))
+    (header-line (:background bg4 :foreground var))
 
     ;; TODO: (??) color fg
-    (tooltip     (:background tooltip-bg :foreground tooltip-fg))
+    (tooltip      (:background tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
@@ -707,8 +707,8 @@
     (magit-diff-added-highlight   (:background spring-green2 :foreground fg0))
     (magit-diff-removed           (:background crimson4 :foreground fg0))
     (magit-diff-removed-highlight (:background crimson4 :foreground fg0))
-    (magit-diffstat-added         (:foreground aquamarine2))
-    (magit-diffstat-removed       (:foreground red2))
+    (magit-diffstat-added         (:foreground diff-add))
+    (magit-diffstat-removed       (:foreground diff-rem))
     (magit-tag                    (:foreground orange1))
     (magit-hash                   (:inherit 'magit-tag))
     (magit-dimmed                 (:inherit 'shadow))
@@ -860,7 +860,7 @@
     (diff-header      (:background bg2))
     (diff-file-header (:background bg2 :foreground teal1))
     (diff-added       (:background spring-green2 :foreground fg1))
-    (diff-changed     (:background diff-change :foreground fg1))
+    (diff-modd     (:background diff-mod :foreground fg1))
     (diff-removed     (:background red2 :foreground fg1))
 
     ;; Imenu list
@@ -872,12 +872,12 @@
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))
     (git-gutter:added     (:background bg1 :foreground diff-add :bold bold))
-    (git-gutter:modified  (:background bg1 :foreground diff-change :bold bold))
+    (git-gutter:modified  (:background bg1 :foreground diff-mod :bold bold))
     (git-gutter:deleted   (:background bg1 :foreground diff-rem :bold bold))
 
     ;; Diff-hl
     (diff-hl-insert (:background diff-add))
-    (diff-hl-change (:background diff-change))
+    (diff-hl-change (:background diff-mod))
     (diff-hl-delete (:background diff-rem))
 
     ;; Popup

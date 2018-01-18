@@ -65,9 +65,9 @@
    (rb8 azure2)
    (rb9 pink3)
 
-   (diff-add    aquamarine4)
-   (diff-change magenta4)
-   (diff-rem    red4)
+   (diff-add aquamarine4)
+   (diff-mod magenta4)
+   (diff-rem red4)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -111,7 +111,7 @@
     (custom-theme-set-faces
      'kaolin-eclipse
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
-     `(git-gutter:modified  ((t (:background ,diff-change :foreground ,diff-change))))
+     `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
