@@ -7,82 +7,73 @@
 (define-kaolin-theme mono "TODO"
   ;; Palette modification
   (
-   ;; (bg0          "#0c0f12")
-   ;; ;; (bg1          azure5)
-   ;; (bg2          "#1c232a")
-   ;; (bg3          "#222A33")
-   ;; (bg4          "#28323D")
-
-   (bg0          "#141E19")
-   (bg1          "#141E19")
-   (bg2          "#141E19")
-   (bg3          "#141E19")
-   (bg4          "#141E19")
-
+   (bg0          "#0c120f")
+   (bg1          "#111915")
+   (bg2          "#16211C")
+   (bg3          "#1B2822")
+   (bg4          "#25352D")
 
    ;; Accent color
    (hl aquamarine3)
+   (keyword spring-green6)
 
-   (keyword     fg0)
-   (keyword     fg4)
    (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
-   (builtin     fg1)
+   (builtin     fg0)
    (functions   builtin)
-   ;; (var         chartreuse1)
-   ;; (const       spring-green1)
    (const       builtin)
    (var         const)
-   (type        hl)
-   (num         fg0)
-   (bool        num)
-   (prep        fg0)
+   (type        fg0)
 
-   ;; TODO: a bit more blue; at least for alt-comment
-   (comment     gray4)
-   ;; TODO:
-   (alt-comment "#4c344c")
-   (str         fg4)
-   (str-alt     str)
-   (doc         str-alt)
+   ;; (comment     spring-green4)
+   (comment     "#3b5749")
+   (alt-comment gray6)
    (warning     orange1)
    (err         red1)
 
-   (dim-buffer black4)
-   (hl-line    gray2)
+   (prep        aquamarine1)
+   (num         aquamarine1)
+   (bool        num)
+   (str         aquamarine1)
+   (str-alt     str)
+   (doc         str-alt)
+
+
+   (dim-buffer bg0)
+   (hl-line    bg3)
    (hl-indent  bg4)
    (selection  bg4)
-   (pulse      gray3)
+   (pulse      bg4)
 
-   (todo red1)
+   (todo red3)
    (done spring-green1)
 
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg hl)
 
-   (ivy2 cyan1)
-   (ivy3 vermilion4)
-   (ivy4 red4)
+   (ivy2 amber1)
+   (ivy3 vermilion3)
+   (ivy4 green1)
 
-   (rb1 violet4)
-   (rb2 cyan3)
-   (rb3 violet3)
-   (rb4 blue4)
-   (rb5 amber3)
-   (rb6 cerulean6)
-   (rb7 orange6)
-   (rb8 magenta4)
-   (rb9 pink1)
+   (rb1 gray9)
+   (rb2 gray9)
+   (rb3 gray9)
+   (rb4 gray9)
+   (rb5 gray9)
+   (rb6 gray9)
+   (rb7 gray9)
+   (rb8 gray9)
+   (rb9 gray9)
 
    (diff-add aquamarine3)
    (diff-mod amber3)
-   (diff-rem red1)
+   (diff-rem red3)
 
    ;; Mode-line
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       fg0)
+   (line-color2       keyword)
    (line-border       bg3)
 
    (segment-active    gray3)
@@ -95,7 +86,7 @@
    (evil-operator     evil-normal)
    (evil-emacs        amber3)
 
-   (win-border    black4)
+   (win-border    bg3)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
 
@@ -106,7 +97,8 @@
 
   ;; Custom theme set faces
   (
-   (default             (:background bg1 :foreground fg2))
+   (default             (:background bg1 :foreground fg3))
+   (minibuffer-prompt   (:foreground prep :bold bold))
 
    (link                (:foreground pink1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
