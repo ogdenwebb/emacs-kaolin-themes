@@ -1,4 +1,4 @@
-;;; kaolin-galaxy-theme.el --- Bright theme based on one of the Sebastian Andaur arts.
+;;; kaolin-TODO-theme.el --- TODO
 ;;; Commentary:
 
 ;;; Code:
@@ -18,7 +18,7 @@
    (keyword spring-green6)
 
    (second-key  magenta4 cerise4)
-   ;; TODO: adjust contrast with keyword
+   ;; TODO: change fg0 to white-green or smth
    (builtin     fg0)
    (functions   builtin)
    (const       builtin)
@@ -34,7 +34,7 @@
    (prep        aquamarine1)
    (num         aquamarine1)
    (bool        num)
-   (str         aquamarine1)
+   (str         spring-green3)
    (str-alt     str)
    (doc         str-alt)
 
@@ -126,4 +126,4 @@
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
-;;; kaolin-galaxy-theme.el ends here
+;;; kaolin-TODO-theme.el ends here

@@ -1,6 +1,7 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 
 ;; TODO: create theme with azure5 for bg
+;; TODO: git-commit-summary
 
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
@@ -248,7 +249,7 @@
     (blue2 "#2B2FA6")
     (blue3 "#525df3")
     (blue4 "#807f96") ; old faded-blue
-    (blue5 "#14141e" black2) ; old midnight-blue
+    (blue5 "#14141e" black2) ; old alt-midnight-blue
     (blue6 "#A1A0C5")
 
     ;; Cerulean #003FFF
@@ -277,7 +278,7 @@
     (capri2 "#1c5f87")
     (capri3 "#41b0f3")
     (capri4 "#91b9c7")
-    (capri5 "#1e2528" black2)
+    (capri5 "#1e2528" black2) ;; old midnight-blue
     (capri6 "#a2b1b8")
 
     ;; Cyan #00FFFF
