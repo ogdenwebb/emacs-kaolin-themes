@@ -129,10 +129,6 @@
    (org-quote           (:foreground blue4)))
 
   ;; Set custom vars
-  (custom-theme-set-variables
-   'kaolin-galaxy
-   '(kaolin-hl-line-colored t))
-
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-galaxy

@@ -100,10 +100,6 @@
    (git-gutter:deleted  (:background diff-rem :foreground diff-rem)))
 
   ;; Set custom vars
-  (custom-theme-set-variables
-   'kaolin-ocean
-   '(kaolin-hl-line-colored t))
-
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-ocean

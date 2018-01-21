@@ -2,6 +2,7 @@
 
 ;; TODO: create theme with azure5 for bg
 ;; TODO: git-commit-summary
+;; TODO: add diff-bg vars
 
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
@@ -418,6 +419,10 @@
     (diff-mod    purple3)
     (diff-rem    red1)
 
+    (diff-bg-add spring-green2)
+    (diff-bg-mod purple3)
+    (diff-bg-rem crimson4)
+
     (keyword     teal1)
     (second-key  teal2)
     (builtin     teal4)
@@ -704,10 +709,10 @@
     (magit-diff-file-header       (:background bg3 :foreground fg2))
     (magit-diff-context           (:background bg3 :foreground fg3))
     (magit-diff-context-highlight (:background bg3 :foreground fg2))
-    (magit-diff-added             (:background spring-green2 :foreground fg0))
-    (magit-diff-added-highlight   (:background spring-green2 :foreground fg0))
-    (magit-diff-removed           (:background crimson4 :foreground fg0))
-    (magit-diff-removed-highlight (:background crimson4 :foreground fg0))
+    (magit-diff-added             (:background diff-bg-add :foreground fg1))
+    (magit-diff-added-highlight   (:background diff-bg-add :foreground fg0))
+    (magit-diff-removed           (:background diff-bg-rem :foreground fg1))
+    (magit-diff-removed-highlight (:background diff-bg-rem :foreground fg0))
     (magit-diffstat-added         (:foreground diff-add))
     (magit-diffstat-removed       (:foreground diff-rem))
     (magit-tag                    (:foreground orange1))
@@ -837,7 +842,7 @@
 
     ;; Rainbow delimeters
     ;; TODO: change color & rewrite
-    ;; TODO: probably I need to define custom vars or smth...
+    ;; TODO: probably need to define custom vars or smth...
     (show-paren-match (:background nil :foreground orange1 :bold bold))
     ;; (if (eq show-paren-style 'expression)
     ;;  (show-paren-match-face (:background bg3 :foreground nil))))
@@ -860,9 +865,9 @@
     ;; Diff
     (diff-header      (:background bg2))
     (diff-file-header (:background bg2 :foreground teal1))
-    (diff-added       (:background spring-green2 :foreground fg1))
-    (diff-modd     (:background diff-mod :foreground fg1))
-    (diff-removed     (:background red2 :foreground fg1))
+    (diff-added       (:background diff-bg-add :foreground fg1))
+    (diff-changed     (:background diff-bg-mod :foreground fg1))
+    (diff-removed     (:background diff-bg-rem :foreground fg1))
 
     ;; Imenu list
     ;; TODO:

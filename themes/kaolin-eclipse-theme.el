@@ -103,10 +103,6 @@
    (org-quote           (:foreground magenta3)))
 
   ;; Set custom vars
-  (custom-theme-set-variables
-   'kaolin-eclipse
-   '(kaolin-hl-line-colored t))
-
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-eclipse
