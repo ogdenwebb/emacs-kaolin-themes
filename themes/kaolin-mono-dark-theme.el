@@ -15,7 +15,7 @@
 
    ;; Accent color
    (hl aquamarine3)
-   (keyword spring-green6)
+   (keyword spring-green8)
 
    (second-key  magenta4 cerise4)
    ;; TODO: change fg0 to white-green or smth
