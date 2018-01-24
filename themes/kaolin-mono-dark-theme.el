@@ -107,15 +107,15 @@
    (link                (:foreground prep :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure6))
+   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (org-level-1         (:foreground teal1 :bold bold :height 1.1))
    (org-level-2         (:foreground keyword :bold nil))
    (org-level-3         (:foreground spring-green3 :bold nil))
    (org-level-4         (:foreground aquamarine1 :bold nil))
-   (org-document-title  (:foreground cerulean6 :bold bold))
-   (org-document-info   (:foreground cerulean6))
+   (org-document-title  (:foreground cerulean7 :bold bold))
+   (org-document-info   (:foreground cerulean7))
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground vermilion4))
    (org-verbatim        (:foreground orange1))

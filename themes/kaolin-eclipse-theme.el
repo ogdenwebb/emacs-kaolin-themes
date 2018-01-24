@@ -61,7 +61,7 @@
    (rb4 blue4)
    (rb5 violet4)
    (rb6 violet3)
-   (rb7 orange6)
+   (rb7 orange8)
    (rb8 azure2)
    (rb9 pink3)
 

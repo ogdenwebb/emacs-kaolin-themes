@@ -2,7 +2,6 @@
 
 ;; TODO: create theme with azure5 for bg
 ;; TODO: git-commit-summary
-;; TODO: add diff-bg vars
 
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
@@ -41,19 +40,21 @@
 ;; TODO: (??) num, link and prep color vars use the same color
 
 ;;; Color order
+;;
 ;; color0 - pure/contrast/accent >= 70 sat & > 70 val
 ;; color1 - regular
 ;; color2 - dark
 ;; color3 - light/soft
 ;; color4 - desaturated/faded/muted
-
+;;
 ;; color5 - midnight <= 50 sat & < 30 value
-;; TODO: very dark color 20-30 sat & val like spring-green5
-;; color7 - dark grayish sat ~20 & val 50+
-;; color6 - light grayish; sat ~10 & val ~ 50+
-;; TODO: (??) almost white color
+;; color6 - very dark color 20-30 sat & val; see spring-green
+;; color7 - dark grayish sat ~20 & val 50+; see cerulean
+;; color8 - light grayish; sat ~10 & val ~ 50+
+;; color9 - almost white color hue 3 value 98
 
 ;;; Color list
+;;
 ;; Black - #020203
 ;; Gray - #CED8D9
 ;; White - #FDFDFF
@@ -101,7 +102,6 @@
     (black4 "#303035")
 
     ;; Gray - #CED8D9
-    ;; TODO: (??) change hue to 240
     (gray0 "#353b3c")
     (gray1 "#383e3f")
     (gray2 "#414849") ; old gray
@@ -128,9 +128,9 @@
     (yellow2 "#919120") ; dark-yellow
     (yellow3 "#eae46a")
     (yellow4 "#c8c493" "#ffd7a5")
-    ;; (yellow5 "#242618") ; midnight yellow
-    (yellow5 "#1e1e14") ; midnight yellow
-    (yellow6 "#c5c5a5")
+    (yellow5 "#1e1e14") ; old midnight yellow
+
+    (yellow8 "#c5c5a5")
 
     ;; Amber #FFBF00
     (amber0 "#f3c91f")
@@ -139,7 +139,8 @@
     (amber3 "#eed891")
     (amber4 "#c5b378")
     (amber5 "#1e1c14")
-    (amber6 "#c7c2af")
+
+    (amber8 "#c7c2af")
 
     ;; Orange #FF7F00
     (orange0 "#e67417")
@@ -149,7 +150,8 @@
     (orange4 "#e1b079")
     ;; (orange5 "#261D13")
     (orange5 "#1e1914")
-    (orange6 "#c2b4a1") ; grayish-orange
+
+    (orange8 "#c2b4a1") ; grayish-orange
 
     ;; Vermilion #FF3F00
     (vermilion0 "#fa5016")
@@ -158,7 +160,8 @@
     (vermilion3 "#ee7042")
     (vermilion4 "#cd9575" "#d7af87") ; faded-orange
     (vermilion5 "#231610")
-    (vermilion6 "#bfaa9f")
+
+    (vermilion8 "#bfaa9f")
 
     ;; Brown #A33C28
     (brown0 "#872C19")
@@ -167,7 +170,7 @@
     (brown3 "#d47057")
     (brown4 "#ae9895")
     (brown5 "#1C1511")
-    (brown6 "#B39DA0")
+    (brown8 "#B39DA0")
 
     ;; Red #FF0000
     (red0 "#c93237")
@@ -177,7 +180,8 @@
     (red4 "#c86d6d")
     ;; (red5 "#210f10")
     (red5 "#1E1414")
-    (red6 "#CAABAB")
+
+    (red8 "#CAABAB")
 
     ;; Crimson #FF003F
     (crimson0 "#dc2e58")
@@ -186,7 +190,8 @@
     (crimson3 "#ef6787")    ; light-pink
     (crimson4 "#a0586c")    ; moderate-pink
     (crimson5 "#210E14")
-    (crimson6 "#c5b3b9")
+
+    (crimson8 "#c5b3b9")
 
     ;; Rose/pink #FF007F
     (pink0 "#eb3380")
@@ -196,7 +201,7 @@
     (pink4 "#c791aa")
     ;; (pink5 "#210F17")
     (pink5 "#1e1419")
-    (pink6 "#CAB2BD")
+    (pink8 "#CAB2BD")
 
     ;; Cerise #FF00BF
     (cerise0 "#e121b1")
@@ -205,7 +210,8 @@
     (cerise3 "#e361c3")
     (cerise4 "#a9779c")
     (cerise5 "#23121c")
-    (cerise6 "#c7b7c2")
+
+    (cerise8 "#c7b7c2")
 
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
@@ -214,7 +220,8 @@
     (magenta3 "#cea2ca") ; light-puprle
     (magenta4 "#835d83") ; purple
     (magenta5 "#1a121a") ; old midnight-purple
-    (magenta6 "#BFA8BF")
+
+    (magenta8 "#BFA8BF")
 
     ;; Purple #BF00FF
     (purple0 "#ab33eb")
@@ -223,7 +230,7 @@
     (purple3 "#bc90d4")
     (purple4 "#ab98b5")
     (purple5 "#1f1623")
-    (purple6 "#bcacbf")
+    (purple8 "#bcacbf")
 
     ;; Violet #7F00FF
     (violet0 "#7f1de1")
@@ -232,7 +239,8 @@
     (violet3 "#c79af4")
     (violet4 "#9d81ba") ; alt-lavender
     (violet5 "#1f1926")
-    (violet6 "#cac3d1")
+
+    (violet8 "#cac3d1")
 
     ;; Ultramarine #3F00FF
     ;; TODO adjust
@@ -242,7 +250,8 @@
     (ultramarine3 "#6d44eb")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
-    (ultramarine6 "#b0acc5")
+
+    (ultramarine8 "#b0acc5")
 
     ;; Blue #0000FF
     (blue0 "#3237CA")
@@ -251,7 +260,8 @@
     (blue3 "#525df3")
     (blue4 "#807f96") ; old faded-blue
     (blue5 "#14141e" black2) ; old alt-midnight-blue
-    (blue6 "#A1A0C5")
+
+    (blue8 "#A1A0C5")
 
     ;; Cerulean #003FFF
     (cerulean0 "#0e4cd1")
@@ -260,7 +270,8 @@
     (cerulean3 "#4c7de8")
     (cerulean4 "#536a9d")
     (cerulean5 "#14171e")
-    (cerulean6 "#687184") ; old grayish-blue
+
+    (cerulean7 "#687184") ; old grayish-blue
 
     ;; Azure/Sky Blue #007FFF
     (azure0 "#0e70d1")
@@ -270,7 +281,8 @@
     (azure4 "#53859d")
     ;; (azure5 "#192430")
     (azure5 "#14191e")
-    (azure6 "#8f9ca7")
+
+    (azure8 "#8f9ca7")
 
     ;; Capri/Deep Sky Blue #00BFFF
     ;; TODO: adjust
@@ -280,7 +292,8 @@
     (capri3 "#41b0f3")
     (capri4 "#91b9c7")
     (capri5 "#1e2528" black2) ;; old midnight-blue
-    (capri6 "#a2b1b8")
+
+    (capri8 "#a2b1b8")
 
     ;; Cyan #00FFFF
     (cyan0 "#0bc9cf")
@@ -290,7 +303,8 @@
     (cyan4 "#65a0a1")
     ;; (cyan5 "#142223")
     (cyan5 "#141e1e")
-    (cyan6 "#a7caca")
+
+    (cyan8 "#a7caca")
 
     ;; Teal #00FFEE
     (teal0 "#0d948d")
@@ -299,7 +313,8 @@
     (teal3 "#49bdb0")
     (teal4 "#80bcb6")
     (teal5 "#141e1d")
-    (teal6 "#a4bab9")
+
+    (teal8 "#a4bab9")
 
     ;; Aquamarine #00FFBF
     (aquamarine0 "#0ed49b")
@@ -308,7 +323,8 @@
     (aquamarine3 "#68f3ca")
     (aquamarine4 "#709688")
     (aquamarine5 "#141e1b")
-    (aquamarine6 "#A7C2BA")
+
+    (aquamarine8 "#A7C2BA")
 
     ;; Spring green #00FF7F
     (spring-green0 "#2ae186")
@@ -316,9 +332,10 @@
     (spring-green2 "#39855f") ; dark
     (spring-green3 "#6fb593") ; old light green
     (spring-green4 "#597a6c") ; faded
-    (spring-green5 "#2E4038") ; old midnight
-    ;; (spring-green5 "#141E1A")
-    (spring-green6 "#90aea1")
+    (spring-green5 "#141E1A")
+    (spring-green6 "#2E4038") ; old midnight
+
+    (spring-green8 "#90aea1")
 
     ;; Erin #00FF3F
     (erin0 "#26e356")
@@ -327,7 +344,8 @@
     (erin3 "#56e87b")
     (erin4 "#597a64")
     (erin5 "#141e17")
-    (erin6 "#ABC7B5")
+
+    (erin8 "#ABC7B5")
 
     ;; Green #00FF00
     (green0 "#21e121")
@@ -337,7 +355,8 @@
     (green4 "#73c66c")
     ;; (green5 "#111C11")
     (green5 "#141e14")
-    (green6 "#abc6a8")
+
+    (green8 "#abc6a8")
 
     ;; Harlequin #3FFF00
     (harlequin0 "#58f021")
@@ -346,7 +365,8 @@
     (harlequin3 "#70E346")
     (harlequin4 "#60A148")
     (harlequin5 "#161E14")
-    (harlequin6 "#b0c6a8")
+
+    (harlequin8 "#b0c6a8")
 
     ;; Chartreuse #7FFF00
     (chartreuse0 "#8bee1a")
@@ -355,7 +375,8 @@
     (chartreuse3 "#9de346")
     (chartreuse4 "#7fa148")
     (chartreuse5 "#161E0D")
-    (chartreuse6 "#afbaa2")
+
+    (chartreuse8 "#afbaa2")
 
     ;; Lime #BFFF00
     (lime0 "#aadc13")
@@ -364,7 +385,8 @@
     (lime3 "#c7ee53")
     (lime4 "#b9c791")
     (lime5 "#1B210E")
-    (lime6 "#b5baa4")
+
+    (lime8 "#b5baa4")
 
 
     ;; Named color vars
@@ -392,12 +414,12 @@
     (hl-line    (if kaolin-hl-line-colored capri5 bg2))
     (hl-indent  gray3)
     (selection  bg3)
-    (pulse      spring-green5)
+    (pulse      spring-green6)
 
     (todo red1)
     (done spring-green3)
 
-    (button orange6)
+    (button orange8)
     (button-hl amber3)
 
     (tooltip-bg bg2)
@@ -411,7 +433,7 @@
     (rb4 blue4)
     (rb5 teal1)
     (rb6 violet3)
-    (rb7 orange6)
+    (rb7 orange8)
     (rb8 magenta4)
     (rb9 violet4)
 
@@ -427,7 +449,7 @@
     (second-key  teal2)
     (builtin     teal4)
     (comment     gray3)
-    (alt-comment azure6)
+    (alt-comment azure8)
     (functions   builtin)
     ;; TODO: (??) change to brown3 like sierra.vim
     (str         spring-green3)
@@ -501,7 +523,7 @@
     (shadow              (:foreground gray4))
     (file-name-shadow    (:inherit 'shadow))
     (region              (:background selection))
-    (secondary-selection (:background spring-green5))
+    (secondary-selection (:background spring-green6))
     (fringe              (:background bg1 :foreground fg1))
     (cursor              (:background cursor))
     (vertical-border     (:foreground win-border))
@@ -918,12 +940,12 @@
 
     ;; Whitespace mode
     ;; TODO: Add variant for light themes
-    (whitespace-empty            (:background spring-green5 :foreground gray9))
+    (whitespace-empty            (:background spring-green6 :foreground gray9))
     (whitespace-line             (:background bg3 :foreground warning))
     (whitespace-newline          (:foreground cyan3))
     (whitespace-indentation      (:background hl-indent))
     (whitespace-tab              (:background aquamarine4))
-    (whitespace-space            (:background gray4 :foreground spring-green5))
+    (whitespace-space            (:background gray4 :foreground spring-green6))
     (whitespace-hspace           (:foreground cyan1))
     (whitespace-space-before-tab (:background orange2 :foreground bg2))
     (whitespace-space-after-tab  (:background orange2 :foreground bg2))

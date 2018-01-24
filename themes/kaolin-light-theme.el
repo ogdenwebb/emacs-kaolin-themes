@@ -9,7 +9,7 @@
   ;; Palette modification
   (
    ;; Colors
-   (spring-green5 "#3e594e")
+   (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
    (orange0       "#d1832e")
 
@@ -35,8 +35,8 @@
    (var         ultramarine4)
    (const       violet4)
    (builtin     aquamarine4)
-   (comment     chartreuse6)
-   (alt-comment azure6)
+   (comment     chartreuse8)
+   (alt-comment azure8)
    (functions   builtin)
    (str         brown1)
    (str-alt     brown1)
@@ -97,7 +97,7 @@
 
    (win-border    bg3)
    (line-num-bg   bg1)
-   (line-num-fg   chartreuse6)
+   (line-num-fg   chartreuse8)
    (line-num-hl   hl)
 
    (cursor        gray3)
