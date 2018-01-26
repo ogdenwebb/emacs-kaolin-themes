@@ -60,7 +60,7 @@
    (selection  bg4)
    (pulse      azure2)
 
-   (todo red3)
+   (todo crimson1)
    (done spring-green1)
 
    ;; Tooltip

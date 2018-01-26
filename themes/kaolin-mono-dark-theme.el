@@ -18,8 +18,8 @@
    (keyword spring-green8)
 
    (second-key  magenta4 cerise4)
-   ;; TODO: change fg0 to white-green or smth
-   (builtin     fg0)
+   ;; TODO:
+   (builtin     "#E0F3EB")
    (functions   builtin)
    (const       builtin)
    (var         const)
@@ -39,7 +39,7 @@
 
    (dim-buffer bg0)
    ;; TODO:
-   (hl-line    (if kaolin-hl-line-colored brown2 bg3))
+   (hl-line    (if kaolin-hl-line-colored brown6 bg3))
    (hl-indent  bg4)
    (selection  bg4)
    (pulse      bg4)

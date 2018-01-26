@@ -18,6 +18,7 @@
    (cyan3         "#6facb3")
 
    ;; Color vars
+   ;; TODO change to more green
    (bg0 "#f5f6f5")
    (bg1 "#e9eae7")
    (bg2 "#dcded9")

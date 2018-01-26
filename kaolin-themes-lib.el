@@ -53,6 +53,8 @@
 ;; color7 - dark grayish sat ~20 & val 50+; see cerulean
 ;; color8 - light grayish; sat ~10 & val ~ 50+
 ;; color9 - almost white color hue 3 value 98
+;; TODO: move color 9 -> color 10
+;; and new color9 is hue ~8 val ~95
 
 ;;; Color list
 ;;
@@ -315,7 +317,7 @@
     (azure1 "#3f7dba") ; old blue
     (azure2 "#2a4661")
     (azure3 "#4ca6e8") ; old soft-blue
-    (azure4 "#53859d")
+    (azure4 "#53859d") ; old moderate-blue
     (azure5 "#14191e")
     (azure6 "#2E3740")
     (azure7 "#687684")
