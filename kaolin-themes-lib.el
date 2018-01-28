@@ -1125,8 +1125,13 @@
     (helm-source-go-package-godoc-description (:foreground str))
     (helm-bookmark-w3m                        (:foreground type))
 
-    ;; Ivy & swiper basic
+    ;; Ivy & swiper
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
+    (ivy-match-required-face     (:background nil :foreground err :bold nil))
+    (ivy-subdir                  (:foreground keyword :bold bold))
+    (ivy-cursor                  (:background bg3 :foreground fg1))
+    (ivy-confirm-face            (:inherit 'success))
+    (ivy-modified-buffer         (:foreground diff-mod))
 
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))

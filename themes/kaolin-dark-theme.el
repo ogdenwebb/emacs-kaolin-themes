@@ -113,15 +113,11 @@
    (avy-lead-face-1 (:background azure2 :foreground fg1))
    (avy-lead-face-2 (:background magenta2 :foreground fg1))
 
-   ;; TODO: split
    ;; Ivy & Swiper
    (ivy-modified-buffer     (:foreground violet4))
-   (ivy-subdir              (:foreground teal1 :bold bold))
    (ivy-action              (:background nil :foreground spring-green1 :bold bold))
    (ivy-virtual             (:foreground amber3))
    (ivy-remote              (:foreground red1))
-   (ivy-cursor              (:background bg3 :foreground fg1))
-   (ivy-match-required-face (:background nil :foreground red0 :bold nil))
    (ivy-confirm-face        (:background nil :foreground amber3)))
 
   (when kaolin-git-gutter-solid
