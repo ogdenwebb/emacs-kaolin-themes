@@ -69,7 +69,7 @@
 
 
 (defgroup kaolin-themes nil
-  "Kaolin theme properties"
+  "Kaolin theme properties."
   :group 'faces)
 
 (defcustom kaolin-bold t

@@ -4,6 +4,15 @@
 ;;; Code:
 (require 'kaolin-themes)
 
+(defgroup kaolin-galaxy nil
+  "Kaolin galaxy theme options."
+  :group 'kaolin-themes)
+
+(defcustom kaolin-galaxy-alt-bg nil
+  "Use alternative darker background color."
+  :type 'boolean
+  :group 'kaolin-themes)
+
 (define-kaolin-theme galaxy "Bright theme based on one of the Sebastian Andaur arts."
   ;; Palette modification
   (
@@ -13,21 +22,17 @@
    (chartreuse1         "#73c66c")
    (spring-green1  "#6dd797")
 
-   ;; Dark
-   ;; (bg1  "#1d1c21" black1)
-   ;; (bg2          "#26252c" black2)
-   ;; (bg3          "#302e36" black3)
-   ;; (bg4          "#393741" black4)
+   ;;                             dark      bright
+   (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
+   (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
+   (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#33323b") black3)
+   (bg4 (if kaolin-galaxy-alt-bg "#393741" "#3d3b46") black4)
 
-   ;; Brigth
-   (bg1          "#212026" black1)
-   (bg2          "#2a2931" black2)
-   (bg3          "#33323b" black3)
-   (bg4          "#3d3b46" black4)
+   ;; TODO:
+   (fg1 blue9)
 
    (keyword     violet3)
-   (second-key  magenta4 cerise4)
-   ;; TODO: adjust contrast with keyword
+   (second-key  ultramarine4 cerise4)
    (builtin     violet4)
    (functions   builtin)
    ;; (var         chartreuse1)
@@ -41,23 +46,20 @@
 
    ;; TODO: a bit more azure1; at least for alt-comment
    (comment     gray3)
-   ;; TODO:
    (alt-comment "#4c344c")
    (str         capri4)
-   ;; TODO: make bor bright
-   (str-alt     cerulean7)
+   (str-alt     cerulean8)
    (doc         str-alt)
-   ;; TODO: or amber3
-   (warning     orange1)
-   (err         red3)
+   (warning     orange3)
+   (err         crimson0)
 
    (dim-buffer "#140E14")
-   (hl        cyan0)
+   (hl         cyan0)
    (hl-line    (if kaolin-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    ;; TODO: (??) less bright
    (selection  bg4)
-   (pulse      azure2)
+   (pulse      ultramarine6)
 
    (todo crimson1)
    (done spring-green1)
@@ -123,9 +125,9 @@
    (org-document-title  (:foreground cerulean7 :bold bold))
    (org-document-info   (:foreground cerulean7))
    (org-date            (:foreground spring-green3 :underline underline))
-   (org-code            (:foreground vermilion4))
-   (org-verbatim        (:foreground aquamarine4))
-   (org-quote           (:foreground blue4)))
+   (org-code            (:foreground erin3))
+   (org-verbatim        (:foreground aquamarine3))
+   (org-quote           (:foreground blue9)))
 
   ;; Set custom vars
   (when kaolin-git-gutter-solid

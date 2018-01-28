@@ -7,8 +7,7 @@
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
 ;; TODO: adjust colors for 256 terminal
-;; TODO: check blue colors in themes
-;; TODO: adjust 5 and 6 colors
+;; TODO: adjust 5-9 colors
 ;; TODO: manage colors in themes
 
 ;; TODO: color spec and color functions
@@ -69,7 +68,7 @@
 ;; Brown #A33C28 - 6
 ;; Red #FF0000 - 358
 ;; Crimson #FF003F - 347
-;; Rose/pink #FF007F - 335
+;; Pink/rose #FF007F - 335
 ;; Cerise #FF00BF - 315
 ;; Magenta/Fuchsia #FF00FF - 300
 ;; Purple #BF00FF - 279
@@ -269,7 +268,7 @@
     (violet5 "#1f1926")
     (violet6 "#372E40")
     (violet7 "#766884")
-    (violet8 "#cac3d1")
+    (violet8 "#B8ABC5")
     (violet9 "#E2D3EE")
 
     ;; Ultramarine #3F00FF
