@@ -51,8 +51,8 @@
 ;; color5 - midnight <= 50 sat & < 30 value
 ;; color6 - very dark color 20-30 sat & val; see spring-green
 ;; color7 - dark grayish sat ~20 & val 50+; see cerulean
-;; color8 - light grayish; sat ~10 & val ~ 50+
-;; color9 - very light color hue 11 value 93
+;; color8 - light grayish; sat ~10-15 & val ~ 70+
+;; color9 - very light color hue 11 value 93; h - 8, v - 95
 
 ;;; Color list
 ;;
@@ -176,17 +176,16 @@
     (vermilion9 "#EEDBD3")
 
     ;; Brown #A33C28
-    ;; TODO: adjust for good
     (brown0 "#872C19")
     (brown1 "#7d6360")
     (brown2 "#52413f")
-    (brown3 "#d47057")
-    (brown4 "#ae9895")
+    (brown3 "#B08C77")
+    (brown4 "#B89A88")
     (brown5 "#1C1511")
     (brown6 "#40332E")
     (brown7 "#846B68")
-    (brown8 "#B39DA0")
-    (brown9 "#F3ECEB")
+    (brown8 "#AEA19E")
+    (brown9 "#EEDDD3")
 
     ;; Red #FF0000
     (red0 "#c93237")
