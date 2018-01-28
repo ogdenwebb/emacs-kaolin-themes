@@ -52,9 +52,7 @@
 ;; color6 - very dark color 20-30 sat & val; see spring-green
 ;; color7 - dark grayish sat ~20 & val 50+; see cerulean
 ;; color8 - light grayish; sat ~10 & val ~ 50+
-;; color9 - almost white color hue 3 value 98
-;; TODO: move color 9 -> color 10
-;; and new color9 is hue ~8 val ~95
+;; color9 - very light color hue 11 value 93
 
 ;;; Color list
 ;;
@@ -139,7 +137,7 @@
     (yellow6 "#40402E")
     (yellow7 "#848468")
     (yellow8 "#c5c5a5")
-    (yellow9 "#FAFAF3")
+    (yellow9 "#EEEED3")
 
     ;; Amber #FFBF00
     (amber0 "#f3c91f")
@@ -151,7 +149,7 @@
     (amber6 "#403B2E")
     (amber7 "#847C68")
     (amber8 "#c7c2af")
-    (amber9 "#FAF8F3")
+    (amber9 "#EEE6D3")
 
     ;; Orange #FF7F00
     (orange0 "#e67417")
@@ -163,7 +161,7 @@
     (orange6 "#40392E")
     (orange7 "#847968")
     (orange8 "#c2b4a1") ; grayish-orange
-    (orange9 "#FAF8F3")
+    (orange9 "#EEE6D3")
 
     ;; Vermilion #FF3F00
     (vermilion0 "#fa5016")
@@ -175,7 +173,7 @@
     (vermilion6 "#40332E")
     (vermilion7 "#847068")
     (vermilion8 "#bfaa9f")
-    (vermilion9 "#FAF5F3")
+    (vermilion9 "#EEDBD3")
 
     ;; Brown #A33C28
     ;; TODO: adjust for good
@@ -200,7 +198,7 @@
     (red6 "#402e2e")
     (red7 "#846869")
     (red8 "#CAABAB")
-    (red9 "#F3ECED")
+    (red9 "#EED3D7")
 
     ;; Crimson #FF003F
     (crimson0 "#dc2e58")
@@ -212,7 +210,7 @@
     (crimson6 "#402E33")
     (crimson7 "#84686E")
     (crimson8 "#c5b3b9")
-    (crimson9 "#FAF3F5")
+    (crimson9 "#EED3DB")
 
     ;; Rose/pink #FF007F
     (pink0 "#eb3380")
@@ -225,7 +223,7 @@
     (pink6 "#402E35")
     (pink7 "#846874")
     (pink8 "#CAB2BD")
-    (pink9 "#FAF3F6")
+    (pink9 "#EED3DF")
 
     ;; Cerise #FF00BF
     (cerise0 "#e121b1")
@@ -237,7 +235,7 @@
     (cerise6 "#402E3B")
     (cerise7 "#84687D")
     (cerise8 "#c7b7c2")
-    (cerise9 "#FAF3F9")
+    (cerise9 "#EED3EA")
 
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
@@ -249,7 +247,7 @@
     (magenta6 "#402E40")
     (magenta7 "#846884")
     (magenta8 "#BFA8BF")
-    (magenta9 "#FAF3FA")
+    (magenta9 "#EED3EE")
 
     ;; Purple #BF00FF
     (purple0 "#ab33eb")
@@ -261,7 +259,7 @@
     (purple6 "#392E40")
     (purple7 "#7A6884")
     (purple8 "#bcacbf")
-    (purple9 "#F8F3FA")
+    (purple9 "#E6D3EE")
 
     ;; Violet #7F00FF
     (violet0 "#7f1de1")
@@ -273,7 +271,7 @@
     (violet6 "#372E40")
     (violet7 "#766884")
     (violet8 "#cac3d1")
-    (violet9 "#F7F3FA")
+    (violet9 "#E2D3EE")
 
     ;; Ultramarine #3F00FF
     ;; TODO adjust
@@ -286,7 +284,7 @@
     (ultramarine6 "#322E40")
     (ultramarine7 "#6E6884")
     (ultramarine8 "#b0acc5")
-    (ultramarine9 "#F5F3FA")
+    (ultramarine9 "#DBD3EE")
 
     ;; Blue #0000FF
     (blue0 "#3237CA")
@@ -298,7 +296,7 @@
     (blue6 "#2E2E40")
     (blue7 "#686984")
     (blue8 "#A1A0C5")
-    (blue9 "#F3F4FA")
+    (blue9 "#D3D7EE")
 
     ;; Cerulean #003FFF
     (cerulean0 "#0e4cd1")
@@ -310,7 +308,7 @@
     (cerulean6 "#2E3340")
     (cerulean7 "#687184") ; old grayish-blue
     (cerulean8 "#8F97A7")
-    (cerulean9 "#F3F6FA")
+    (cerulean9 "#D3DFEE")
 
     ;; Azure/Sky Blue #007FFF
     (azure0 "#0e70d1")
@@ -322,7 +320,7 @@
     (azure6 "#2E3740")
     (azure7 "#687684")
     (azure8 "#8f9ca7")
-    (azure9 "#F3F7FA")
+    (azure9 "#D3E2ED")
 
     ;; Capri/Deep Sky Blue #00BFFF
     ;; TODO: adjust
@@ -335,7 +333,7 @@
     (capri6 "#2E3940")
     (capri7 "#687A84")
     (capri8 "#a2b1b8")
-    (capri9 "#F3F8FA")
+    (capri9 "#D3E6EE")
 
     ;; Cyan #00FFFF
     (cyan0 "#0bc9cf")
@@ -348,7 +346,7 @@
     (cyan6 "#2e3f40")
     (cyan7 "#688384")
     (cyan8 "#a7caca")
-    (cyan9 "#F3FAFA")
+    (cyan9 "#D3EEEE")
 
     ;; Teal #00FFEE
     (teal0 "#0d948d")
@@ -360,7 +358,7 @@
     (teal6 "#2E403F")
     (teal7 "#688483")
     (teal8 "#a4bab9")
-    (teal9 "#F3FAFA")
+    (teal9 "#D3EEEC")
 
     ;; Aquamarine #00FFBF
     (aquamarine0 "#0ed49b")
@@ -372,7 +370,7 @@
     (aquamarine6 "#2E403B")
     (aquamarine7 "#68847C")
     (aquamarine8 "#A7C2BA")
-    (aquamarine9 "#F3FAF8")
+    (aquamarine9 "#D3EEE6")
 
     ;; Spring green #00FF7F
     (spring-green0 "#2ae186")
@@ -384,7 +382,7 @@
     (spring-green6 "#2E4038") ; old midnight
     (spring-green7 "#688476")
     (spring-green8 "#90aea1")
-    (spring-green9 "#F3FAF7")
+    (spring-green9 "#D4EEE3")
 
     ;; Erin #00FF3F
     (erin0 "#26e356")
@@ -396,7 +394,7 @@
     (erin6 "#2E4032")
     (erin7 "#68846F")
     (erin8 "#ABC7B5")
-    (erin9 "#F3FAF5")
+    (erin9 "#D3EEDB")
 
     ;; Green #00FF00
     (green0 "#21e121")
@@ -409,7 +407,7 @@
     (green6 "#2E402E")
     (green7 "#688468")
     (green8 "#abc6a8")
-    (green9 "#F3FAF3")
+    (green9 "#D3EED3")
 
     ;; Harlequin #3FFF00
     (harlequin0 "#58f021")
@@ -421,7 +419,7 @@
     (harlequin6 "#33402E")
     (harlequin7 "#6F8468")
     (harlequin8 "#b0c6a8")
-    (harlequin9 "#F5FAF3")
+    (harlequin9 "#DBEED3")
 
     ;; Chartreuse #7FFF00
     (chartreuse0 "#8bee1a")
@@ -433,7 +431,7 @@
     (chartreuse6 "#38402e")
     (chartreuse7 "#788468")
     (chartreuse8 "#afbaa2")
-    (chartreuse9 "#F7FAF3")
+    (chartreuse9 "#E2EED3")
 
     ;; Lime #BFFF00
     (lime0 "#aadc13")
@@ -445,7 +443,7 @@
     (lime6 "#3B402E")
     (lime7 "#7D8468")
     (lime8 "#b5baa4")
-    (lime9 "#F9FAF3")
+    (lime9 "#EAEED3")
 
 
     ;; Named color vars

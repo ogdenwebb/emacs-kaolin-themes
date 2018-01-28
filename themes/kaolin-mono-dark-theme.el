@@ -13,17 +13,23 @@
    (bg3          "#1B2822")
    (bg4          "#25352D")
 
+   (fg0 "#f5f6f5")
+   (fg1 "#e9eae7")
+   (fg2 "#dcded9")
+   (fg3 "#cfd2cb")
+   (fg4 "#c5c9c0")
+
    ;; Accent color
    (hl aquamarine3)
    (keyword spring-green8)
 
    (second-key  magenta4 cerise4)
-   ;; TODO:
-   (builtin     "#E0F3EB")
+   ;; (builtin     "#E0F3EB")
+   (builtin     spring-green9)
    (functions   builtin)
    (const       builtin)
    (var         const)
-   (type        fg0)
+   (type        spring-green9)
 
    (comment     "#436353")
    (alt-comment gray6)

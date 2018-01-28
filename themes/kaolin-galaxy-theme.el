@@ -25,7 +25,6 @@
    (bg3          "#33323b" black3)
    (bg4          "#3d3b46" black4)
 
-
    (keyword     violet3)
    (second-key  magenta4 cerise4)
    ;; TODO: adjust contrast with keyword
