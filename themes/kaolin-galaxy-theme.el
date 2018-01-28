@@ -28,15 +28,13 @@
    (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#33323b") black3)
    (bg4 (if kaolin-galaxy-alt-bg "#393741" "#3d3b46") black4)
 
-   ;; TODO:
+   ;; TODO: add other fg vars
    (fg1 blue9)
 
    (keyword     violet3)
    (second-key  ultramarine4 cerise4)
    (builtin     violet4)
    (functions   builtin)
-   ;; (var         chartreuse1)
-   ;; (const       spring-green1)
    (var         amber3)
    (const       orange3)
    (type        teal1)
@@ -45,7 +43,8 @@
    (bool        num)
 
    ;; TODO: a bit more azure1; at least for alt-comment
-   (comment     gray3)
+   ;; (comment     gray3)
+   (comment     blue7)
    (alt-comment "#4c344c")
    (str         capri4)
    (str-alt     cerulean8)
@@ -68,7 +67,6 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan0)
 
-   ;; TODO: (??) change
    (ivy2 lime3)
    (ivy3 vermilion3)
    (ivy4 red3)
@@ -107,7 +105,7 @@
    (win-border    black3)
    (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
-   (line-num-hl   gray9)
+   (line-num-hl   cerulean8)
 
    (evil-normal capri4)
    (cursor        "#c3c8e0"))
