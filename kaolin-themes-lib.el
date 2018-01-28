@@ -9,6 +9,7 @@
 ;; TODO: adjust colors for 256 terminal
 ;; TODO: adjust 5-9 colors
 ;; TODO: manage colors in themes
+;; TODO: make less hardcoded colors in faces wihith kaolin-lib
 
 ;; TODO: color spec and color functions
 
@@ -829,12 +830,12 @@
 
 
     ;; Flycheck
-    (flycheck-info           (:foreground capri4))
+    (flycheck-info           (:underline (:style underline-style :color done)))
     (flycheck-warning        (:underline (:style underline-style :color warning)))
     (flycheck-error          (:underline (:style underline-style :color err)))
     (flycheck-fringe-error   (:foreground err))
     (flycheck-fringe-warning (:foreground warning))
-    (flycheck-fringe-info    (:foreground capri4))
+    (flycheck-fringe-info    (:foreground done))
 
     ;; Flyspell
     (flyspell-duplicate (:underline (:style underline-style :color warning)))

@@ -29,7 +29,7 @@
    (functions   builtin)
    (const       builtin)
    (var         const)
-   (type        spring-green9)
+   (type        spring-green7)
 
    (comment     "#436353")
    (alt-comment gray6)
