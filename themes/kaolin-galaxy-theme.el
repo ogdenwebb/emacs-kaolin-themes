@@ -39,7 +39,7 @@
    (const       orange3)
    (type        teal1)
    (num         crimson1 "#5f87af")
-   (prep        capri3)
+   (prep        azure3)
    (bool        num)
 
    ;; TODO: a bit more azure1; at least for alt-comment
@@ -94,7 +94,7 @@
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       teal1)
+   (evil-normal       capri4)
    (evil-insert       spring-green1)
    (evil-visual       orange1)
    (evil-replace      red1)
@@ -107,7 +107,6 @@
    (line-num-fg   bg4 black4)
    (line-num-hl   cerulean8)
 
-   (evil-normal capri4)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces

@@ -7,11 +7,11 @@
 (define-kaolin-theme mono-dark "Almost monochrome dark green Kaolin theme."
   ;; Palette modification
   (
-   (bg0          "#0c120f")
-   (bg1          "#111915")
-   (bg2          "#16211C")
-   (bg3          "#1B2822")
-   (bg4          "#25352D")
+   (bg0 "#0c120f")
+   (bg1 "#111915")
+   (bg2 "#16211C")
+   (bg3 "#1B2822")
+   (bg4 "#25352D")
 
    (fg0 "#f5f6f5")
    (fg1 "#e9eae7")
@@ -31,7 +31,7 @@
    (var         const)
    (type        spring-green7)
 
-   (comment     "#436353")
+   (comment "#41544B")
    (alt-comment gray6)
    (warning     orange1)
    (err         red1)
@@ -98,11 +98,9 @@
 
    (win-border    bg3)
    (line-num-bg   bg1)
-   (line-num-fg   bg4 black4)
-
-   (evil-normal capri4)
-
+   (line-num-fg   spring-green6 black4)
    (line-num-hl  gray9)
+
    (cursor       white2))
 
   ;; Custom theme set faces
