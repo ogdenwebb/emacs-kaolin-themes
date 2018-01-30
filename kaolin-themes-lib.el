@@ -501,11 +501,11 @@
     (diff-bg-mod purple3)
     (diff-bg-rem crimson4)
 
-    (keyword     teal1)
-    (second-key  teal2)
-    (builtin     teal4)
     (comment     gray3)
     (alt-comment azure8)
+    (keyword     teal1)
+    (second-key  comment)
+    (builtin     teal4)
     (functions   builtin)
     ;; TODO: (??) change to brown3 like sierra.vim
     (str         spring-green3)

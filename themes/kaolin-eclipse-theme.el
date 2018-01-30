@@ -66,8 +66,8 @@
    (rb9 pink3)
 
    (diff-add aquamarine4)
-   (diff-mod magenta4)
-   (diff-rem red4)
+   (diff-mod violet3)
+   (diff-rem crimson3)
 
    ;; Mode-line
    (line-fg           fg4)
