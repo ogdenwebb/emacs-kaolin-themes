@@ -65,7 +65,7 @@
    (rb8 azure2)
    (rb9 pink3)
 
-   (diff-add aquamarine4)
+   (diff-add teal3)
    (diff-mod violet3)
    (diff-rem crimson3)
 

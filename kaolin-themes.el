@@ -28,11 +28,12 @@
 ;;
 ;; =======  This package includes the following themes  =======
 ;;
-;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim
-;;  * kaolin-light - light variant of the original kaolin-dark
-;;  * kaolin-eclipse - a dark purple variant
-;;  * kaolin-ocean - dark blue variant
+;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim.
+;;  * kaolin-light - light variant of the original kaolin-dark.
+;;  * kaolin-eclipse - a dark purple variant.
+;;  * kaolin-ocean - dark blue variant.
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
+;;  * kaolin-mono-dark - almost monochrome dark green Kaolin theme.
 ;;
 ;;
 ;; =======  Configuration example  =======
