@@ -62,6 +62,7 @@
 ;; Gray #CED8D9 - 189
 ;; White #FDFDFF - 240
 ;;
+;; TODO: (??) change strict colors such as erin
 ;; Yellow #FFFF00 - 60
 ;; Amber #FFBF00 - 43
 ;; Orange #FF7F00 - 36
@@ -80,7 +81,7 @@
 ;; Azure/Sky Blue #007FFF - 210
 ;; Capri/Deep Sky Blue #00BFFF - 201
 ;; Cyan #00FFFF - 182
-;; Teal #00FFEE - 178
+;; Teal #00A89D - 178
 ;; Aquamarine #00FFBF - 163
 ;; Spring green #00FF7F - 150
 ;; Erin #00FF3F - 135
@@ -347,7 +348,7 @@
     (cyan8 "#a7caca")
     (cyan9 "#D3EEEE")
 
-    ;; Teal #00FFEE
+    ;; Teal #00A89D
     (teal0 "#0d948d")
     (teal1 "#4d9391")
     (teal2 "#396b68")

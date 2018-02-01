@@ -36,7 +36,7 @@
    (var         ultramarine4)
    (const       violet4)
    (builtin     aquamarine4)
-   (comment     chartreuse8)
+   (comment     lime7)
    (alt-comment azure8)
    (functions   builtin)
    (str         brown1)
