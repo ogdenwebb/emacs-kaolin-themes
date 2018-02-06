@@ -380,7 +380,9 @@
     (spring-green0 "#2ae186")
     (spring-green1 "#51b884")
     (spring-green2 "#39855f") ; dark
+    ;; TODO adjust
     (spring-green3 "#6fb593") ; old light green
+    ;; (spring-green3 "#5DD49A") ; old light green
     (spring-green4 "#597a6c") ; faded
     (spring-green5 "#141E1A")
     (spring-green6 "#2E4038") ; old midnight

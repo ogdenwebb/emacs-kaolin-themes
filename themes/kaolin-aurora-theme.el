@@ -1,14 +1,16 @@
-;;; kaolin-TODO-theme.el --- TODO
+;;; kaolin-aurora-theme.el --- Kaolin meets polar lights.
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme new "TODO"
+(define-kaolin-theme aurora "Kaolin meets polar lights."
   ;; Palette modification
   (
    (teal0 "#0E9E97")
    (aquamarine3 "#63E8C1")
+   (cyan3 "#67D6DB")
+   (spring-green0 "#31E183")
 
    (bg0 "#0C0F12")
    (bg1 azure5)
@@ -17,6 +19,7 @@
    (bg4 "#252D35")
 
    ;; Accent color
+   ;; TODO:
    (hl magenta3)
 
    (keyword     violet4)
@@ -25,9 +28,9 @@
 
    (functions   aquamarine3)
    (const       teal0)
-   (var         teal0)
+   (var         spring-green0)
 
-   (type        cyan0)
+   (type        cyan3)
 
 
    ;; TODO:
@@ -61,7 +64,7 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg hl)
 
-   (ivy2 cerulean3)
+   (ivy2 lime3)
    (ivy3 crimson3)
    (ivy4 erin3)
 
@@ -87,7 +90,7 @@
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       teal1)
+   (line-color2       teal0)
    (line-border       bg3)
 
    (segment-active    gray3)
@@ -118,7 +121,7 @@
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    (highlight-quoted-quote   (:foreground type))
-   (highlight-quoted-symbol  (:foreground var))
+   (highlight-quoted-symbol  (:foreground teal0))
 
    (org-level-1         (:foreground var :bold bold :height 1.1))
    (org-level-2         (:foreground aquamarine3 :bold nil))
@@ -139,4 +142,4 @@
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
-;;; kaolin-TODO-theme.el ends here
+;;; kaolin-aurora-theme.el ends here
