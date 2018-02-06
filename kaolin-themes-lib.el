@@ -1,8 +1,10 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
 ;;; Commentary:
 
-;; TODO: create theme with azure5 for bg
 ;; TODO: git-commit-summary
+;; TODO: (??) split colors for builtin and functions
+;; highlight-quoted-quote && highlight-quoted-symbol
+;; TODO: color7 close to color4
 
 ;; TODO: (??) add travis ci
 ;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
@@ -50,7 +52,7 @@
 ;;
 ;; color5 - midnight <= 50 sat & < 30 value
 ;; color6 - very dark color 20-30 sat & val; see spring-green
-;; color7 - dark grayish sat ~20 & val 50+; see cerulean
+;; color7 - dark grayish sat ~20 & val 50+; adjust with gray3; see erin7
 ;; color8 - light grayish; sat ~10-15 & val ~ 70+
 ;; color9 - very light color hue 11 value 93; h - 8, v - 95
 
@@ -83,7 +85,7 @@
 ;; Cyan #00FFFF - 182
 ;; Teal #00A89D - 178
 ;; Aquamarine #00FFBF - 163
-;; Spring green #00FF7F - 150
+;; Spring-green #00FF7F - 150
 ;; Erin #00FF3F - 135
 ;; Green #00FF00 - 120
 ;; Harlequin #3FFF00 - 104
@@ -340,6 +342,8 @@
     (cyan1 "#57bfc2")
     (cyan2 "#09878b")
     (cyan3 "#6bd9db")
+    ;; TODO:
+    ;; (cyan3 "#68d7f3")
     (cyan4 "#65a0a1")
     ;; (cyan5 "#142223")
     (cyan5 "#141e1e")
@@ -376,7 +380,9 @@
     (spring-green0 "#2ae186")
     (spring-green1 "#51b884")
     (spring-green2 "#39855f") ; dark
+    ;; TODO adjust
     (spring-green3 "#6fb593") ; old light green
+    ;; (spring-green3 "#5DD49A") ; old light green
     (spring-green4 "#597a6c") ; faded
     (spring-green5 "#141E1A")
     (spring-green6 "#2E4038") ; old midnight
@@ -388,12 +394,12 @@
     (erin0 "#26e356")
     (erin1 "#48ca69")
     (erin2 "#39854C")
-    (erin3 "#56e87b")
+    (erin3 "#68f385")
     (erin4 "#597a64")
     (erin5 "#141e17")
     (erin6 "#2E4032")
-    (erin7 "#68846F")
-    (erin8 "#ABC7B5")
+    (erin7 "#526156")
+    (erin8 "#A8CFB6")
     (erin9 "#D3EEDB")
 
     ;; Green #00FF00
@@ -413,7 +419,7 @@
     (harlequin0 "#58f021")
     (harlequin1 "#6FC550")
     (harlequin2 "#37A111")
-    (harlequin3 "#70E346")
+    (harlequin3 "#91f368")
     (harlequin4 "#60A148")
     (harlequin5 "#161E14")
     (harlequin6 "#33402E")

@@ -23,6 +23,7 @@
    (spring-green1  "#6dd797")
 
    ;;                             dark      bright
+   ;; TODO: add bg0
    (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
    (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
    (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#33323b") black3)
@@ -42,10 +43,8 @@
    (prep        azure3)
    (bool        num)
 
-   ;; TODO: a bit more azure1; at least for alt-comment
-   ;; (comment     gray3)
-   (comment     blue7)
-   (alt-comment "#4c344c")
+   ;; TODO: a bit more like azure1 at least for alt-comment
+   (comment     gray3)
    (str         capri4)
    (str-alt     cerulean8)
    (doc         str-alt)
@@ -109,15 +108,15 @@
 
    (cursor        "#c3c8e0"))
 
-  ;; Custom theme set faces
   (
-
-   ;; TODO: cyan, azure3, crimson1
+   ;; Custom theme set faces
    (link                (:foreground crimson1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
+
+   (highlight-quoted-symbol  (:foreground var))
 
    (org-document-title  (:foreground cerulean7 :bold bold))
    (org-document-info   (:foreground cerulean7))
