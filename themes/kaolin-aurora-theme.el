@@ -11,6 +11,7 @@
    (aquamarine3 "#63E8C1")
    (cyan3 "#67D6DB")
    (spring-green0 "#31E183")
+   (magenta3 "#CE8EC8")
 
    (bg0 "#0C0F12")
    (bg1 azure5)
@@ -18,18 +19,15 @@
    (bg3 "#1F272E")
    (bg4 "#252D35")
 
-   ;; Accent color
-   ;; TODO:
    (hl magenta3)
 
    (keyword     violet4)
    (builtin     violet4)
-   (second-key  cyan3)
+   (second-key  teal0)
 
    (functions   aquamarine3)
    (const       teal0)
    (var         spring-green0)
-
    (type        cyan3)
 
 
@@ -39,7 +37,7 @@
    (comment     "#454459")
    (alt-comment gray6)
    (warning     orange1)
-   (err         red1)
+   (err         crimson1)
 
    (prep        spring-green0)
    (num         orange3)
@@ -79,8 +77,8 @@
    (rb9 aquamarine1)
 
    (diff-add teal3)
-   (diff-mod amber3)
-   (diff-rem red1)
+   (diff-mod orange3)
+   (diff-rem crimson1)
 
    (diff-bg-add aquamarine6)
    (diff-bg-mod vermilion6)
@@ -127,9 +125,10 @@
    (org-level-2         (:foreground aquamarine3 :bold nil))
    (org-level-3         (:foreground violet3 :bold nil))
    (org-level-4         (:foreground orange3 :bold nil))
-   (org-document-title  (:foreground harlequin3 :bold bold))
-   (org-document-info   (:foreground harlequin3))
+   (org-document-title  (:foreground cyan3 :bold bold))
+   (org-document-info   (:foreground cyan3))
    (org-date            (:foreground teal0 :underline underline))
+   (org-table           (:foreground capri4))
    (org-code            (:foreground vermilion4))
    (org-verbatim        (:foreground yellow3))
    (org-quote           (:foreground blue4)))

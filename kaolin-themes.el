@@ -33,6 +33,7 @@
 ;;  * kaolin-eclipse - a dark purple variant.
 ;;  * kaolin-ocean - dark blue variant.
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
+;;  * kaolin-aurora - Kaolin meets polar lights.
 ;;  * kaolin-mono-dark - almost monochrome dark green Kaolin theme.
 ;;
 ;;
