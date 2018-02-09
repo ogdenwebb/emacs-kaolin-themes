@@ -35,10 +35,10 @@
    (second-key  teal2)
    (var         ultramarine4)
    (const       violet4)
-   (builtin     aquamarine4)
+   (builtin     cyan4)
    (comment     lime7)
    (alt-comment azure8)
-   (functions   builtin)
+   (functions   teal1)
    (str         brown1)
    (str-alt     brown1)
    (doc         str-alt)
@@ -109,6 +109,9 @@
    (ivy4          red4))
 
   ((link                   (:foreground capri1 :underline underline))
+
+   (highlight-quoted-quote   (:foreground keyword))
+   (highlight-quoted-symbol  (:foreground teal2))
 
    (org-level-1            (:foreground teal1 :bold bold :height 1.1))
    (org-level-2            (:foreground ultramarine4 :bold nil))

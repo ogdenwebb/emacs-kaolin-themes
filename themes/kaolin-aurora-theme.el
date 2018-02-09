@@ -9,15 +9,15 @@
   (
    (teal0 "#0E9E97")
    (aquamarine3 "#63E8C1")
-   (cyan3 "#67D6DB")
+   (cyan3 "#62D2DB")
    (spring-green0 "#31E183")
    (magenta3 "#CE8EC8")
 
-   (bg0 "#0C0F12")
-   (bg1 azure5)
-   (bg2 "#191F26")
-   (bg3 "#1F272E")
-   (bg4 "#252D35")
+   (bg0 "#0C0F12" black0)
+   (bg1 azure5 black1)
+   (bg2 "#191F26" black2)
+   (bg3 "#1F272E" black3)
+   (bg4 "#252D35" black4)
 
    (hl magenta3)
 
