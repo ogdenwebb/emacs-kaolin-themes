@@ -127,7 +127,7 @@
 
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
-     'kaolin-galaxy
+     'kaolin-mono-dark
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))

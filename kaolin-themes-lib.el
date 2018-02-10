@@ -27,7 +27,6 @@
 ;; TODO: (??) make dark mode-line in ligth themes.
 
 ;; TODO: colorful comments
-;; TODO: treemacs support
 ;; TODO: (??) color cornflower blue
 ;; TODO: (??) add -pkg.el
 ;; TODO: (??) outline-* faces
@@ -954,11 +953,13 @@
     (diff-changed     (:background diff-bg-mod :foreground fg1))
     (diff-removed     (:background diff-bg-rem :foreground fg1))
 
-    ;; Imenu list
-    ;; TODO:
+    ;; TODO Imenu list
     (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
     (imenu-list-entry-face-1 (:foreground tooltip-fg))
     (imenu-list-entry-face-0 (:inherit 'font-lock-type-face))
+
+    ;; TODO Treemacs
+    (treemacs-header-face (:inherit 'header-line))
 
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))
