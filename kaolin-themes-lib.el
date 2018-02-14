@@ -52,8 +52,8 @@
 ;; color5 - midnight <= 50 sat & < 30 value
 ;; color6 - very dark color 20-30 sat & val; see spring-green
 ;; color7 - dark grayish sat ~20 & val 50+; adjust with gray3; see erin7
-;; color8 - light grayish; sat ~10-15 & val ~ 70+
-;; color9 - very light color hue 11 value 93; h - 8, v - 95
+;; color8 - light grayish; sat ~10-15 & val ~ 65+
+;; color9 - very light color hue 8-17 value ~90-95
 
 ;;; Color list
 ;;
@@ -309,9 +309,9 @@
     (cerulean6 "#2E3340")
     (cerulean7 "#687184") ; old grayish-blue
     (cerulean8 "#8F97A7")
-    (cerulean9 "#D3DFEE")
+    (cerulean9 "#C6D5E8")
 
-    ;; Azure/Sky Blue #007FFF
+    ;; Azure #007FFF
     (azure0 "#0e70d1")
     (azure1 "#3f7dba") ; old blue
     (azure2 "#2a4661")
@@ -320,10 +320,10 @@
     (azure5 "#14191e")
     (azure6 "#2E3740")
     (azure7 "#687684")
-    (azure8 "#8f9ca7")
-    (azure9 "#D3E2ED")
+    (azure8 "#8B9AA7")
+    (azure9 "#D3E4F0")
 
-    ;; Capri/Deep Sky Blue #00BFFF
+    ;; Capri #00BFFF
     ;; TODO: adjust
     (capri0 "#1a9eee")
     (capri1 "#2683b5")
@@ -333,7 +333,7 @@
     (capri5 "#1e2528" black2) ;; old midnight-blue
     (capri6 "#2E3940")
     (capri7 "#687A84")
-    (capri8 "#a2b1b8")
+    (capri8 "#98AAB3")
     (capri9 "#D3E6EE")
 
     ;; Cyan #00FFFF
@@ -348,7 +348,7 @@
     (cyan5 "#141e1e")
     (cyan6 "#2e3f40")
     (cyan7 "#688384")
-    (cyan8 "#a7caca")
+    (cyan8 "#A2C5C5")
     (cyan9 "#D3EEEE")
 
     ;; Teal #00A89D
