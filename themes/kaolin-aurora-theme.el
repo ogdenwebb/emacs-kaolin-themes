@@ -112,7 +112,7 @@
    ;; Custom theme set faces
    (default             (:background bg1 :foreground fg2))
 
-   (link                (:foreground harlequin3 :underline underline))
+   (link                (:foreground erin3 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
@@ -121,7 +121,7 @@
    (highlight-quoted-quote   (:foreground type))
    (highlight-quoted-symbol  (:foreground teal0))
 
-   (org-level-1         (:foreground var :bold bold :height 1.1))
+   (org-level-1         (:foreground teal0 :bold bold :height 1.1))
    (org-level-2         (:foreground aquamarine3 :bold nil))
    (org-level-3         (:foreground violet3 :bold nil))
    (org-level-4         (:foreground orange3 :bold nil))
@@ -129,8 +129,8 @@
    (org-document-info   (:foreground cyan3))
    (org-date            (:foreground teal0 :underline underline))
    (org-table           (:foreground capri4))
-   (org-code            (:foreground vermilion4))
-   (org-verbatim        (:foreground yellow3))
+   (org-code            (:foreground yellow3))
+   (org-verbatim        (:inherit    'org-code))
    (org-quote           (:foreground blue4)))
 
   (when kaolin-git-gutter-solid
