@@ -95,6 +95,11 @@
   "When t, will display colored hl-line style instead dim gray."
   :group 'kaolin-themes)
 
+
+(defcustom kaolin-italic-comments nil
+  "If t, enable italic style in comments."
+  :group 'kaolin-themes)
+
 ;; TODO: implement
 (defcustom kaolin-comment-style 'normal
   "Sets the style of comments: normal, alt(darker for dark theme and lighter for light themes) or colored."

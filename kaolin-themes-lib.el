@@ -1,4 +1,4 @@
-;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the theme engine
+;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package  -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;; TODO: git-commit-summary
@@ -562,7 +562,7 @@
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
     (font-lock-comment-delimiter-face (:foreground comment))
-    (font-lock-comment-face           (:foreground comment))
+    (font-lock-comment-face           (:foreground comment :italic kaolin-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions :bold bold))
@@ -872,7 +872,6 @@
     (mu4e-view-url-number-face (:foreground type))
     (mu4e-cited-1-face         (:foreground fg2))
     (mu4e-cited-7-face         (:foreground fg3))
-
     ;; ffap
     (ffap (:foreground fg4))
 
