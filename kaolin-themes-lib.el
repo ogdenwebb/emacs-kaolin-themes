@@ -561,7 +561,7 @@
   '(
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
-    (font-lock-comment-delimiter-face (:foreground comment))
+    (font-lock-comment-delimiter-face (:foreground comment :italic kaolin-italic-comments))
     (font-lock-comment-face           (:foreground comment :italic kaolin-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
