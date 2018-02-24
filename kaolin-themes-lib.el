@@ -1,49 +1,9 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package  -*- lexical-binding: t; -*-
 ;;; Commentary:
 
-;; TODO: git-commit-summary
-;; TODO: (??) split colors for builtin and functions
-;; highlight-quoted-quote && highlight-quoted-symbol
-;; TODO: color7 close to color4
-
-;; TODO: (??) add travis ci
-;; TODO: (??) increase color1 constrast to make them universal for light and dark themes
-;; TODO: adjust colors for 256 terminal
-;; TODO: adjust 5-9 colors
-;; TODO: manage colors in themes
-;; TODO: make less hardcoded colors in faces wihith kaolin-lib
-
-;; TODO: color spec and color functions
-
-;; TODO: bright background option/or contrast settings
-;; TODO: (??) disable color background for terminal
-;; TODO: add var to highlight key seq' - keysym
-;; TODO: var to enable distinct for fringe and line num
-
-;; TODO: Add the following faces to lib:
-;; TODO: custom-* and buttons
-
-;; TODO: add mode-line option/flat mode-line style
-;; TODO: (??) make dark mode-line in ligth themes.
-
-;; TODO: colorful comments
-;; TODO: (??) color cornflower blue
-;; TODO: (??) add -pkg.el
-;; TODO: (??) outline-* faces
-
-;; TODO: line-num opt: hl or mono(gray)
-
-;; TODO: add colored selection option
-;; TODO: distant foregound
-;; TODO: move git-gutter faces from a theme file to lib
-;; i.e. avoid duplication
-;; TODO: add company-tooltip-common-selection for new themes
-
-;; TODO: (??) num, link and prep color vars use the same color
-
 ;;; Color order
 ;;
-;; color0 - pure/contrast/accent >= 70 sat & > 70 val
+;; color0 - almost pure/contrast >= 70 sat & > 70 val
 ;; color1 - regular
 ;; color2 - dark
 ;; color3 - light/soft
@@ -111,7 +71,7 @@
     ;; Gray - #CED8D9
     (gray0 "#353b3c")
     (gray1 "#383e3f")
-    (gray2 "#414849") ; old gray
+    ;; (gray2 "#414849") ; old gray
     (gray2 "#4b5254")
     (gray3 "#545c5e")
     (gray4 "#60696b") ; old alt-gray
@@ -613,7 +573,7 @@
 
 
     ;; Interface
-    (package-name (:inherit 'link :underline nil))
+    (package-name          (:inherit 'link :underline nil))
     (button                (:inherit 'link))
     (custom-button         (:background bg3 :foreground button :box (:line-width 2 :color bg2 :style 'released-button)))
     (custom-button-mouse   (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'released-button)))
@@ -656,6 +616,7 @@
 
     ;; Auto-dim-other-buffers
     (auto-dim-other-buffers-face  (:background dim-buffer))
+
 
     ;; Linum & nlinum
     (linum                        (:background line-num-bg :foreground line-num-fg :bold nil

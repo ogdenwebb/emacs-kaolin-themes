@@ -108,22 +108,21 @@
    (ivy3          orange0)
    (ivy4          red4))
 
-  ((link                   (:foreground capri1 :underline underline))
+  ((link                    (:foreground capri1 :underline underline))
 
-   (highlight-quoted-quote   (:foreground keyword))
-   (highlight-quoted-symbol  (:foreground teal2))
+   (highlight-quoted-quote  (:foreground keyword))
+   (highlight-quoted-symbol (:foreground teal2))
 
-   (org-level-1            (:foreground teal1 :bold bold :height 1.1))
-   (org-level-2            (:foreground ultramarine4 :bold nil))
-   (org-level-3            (:foreground vermilion4 :bold nil))
-   (org-level-4            (:foreground cerise4 :bold nil))
-   (org-code               (:foreground teal1))
-   (org-verbatim           (:foreground orange2))
-   (org-table              (:foreground ultramarine4 :bold bold))
+   (org-level-1             (:foreground teal1 :bold bold :height 1.1))
+   (org-level-2             (:foreground ultramarine4 :bold nil))
+   (org-level-3             (:foreground vermilion4 :bold nil))
+   (org-level-4             (:foreground cerise4 :bold nil))
+   (org-code                (:foreground teal1))
+   (org-verbatim            (:foreground orange2))
+   (org-table               (:foreground ultramarine4 :bold bold))
 
-   (js2-object-property          (:foreground brown1))
-   (evil-ex-info                 (:foreground crimson4)))
-
+   (js2-object-property     (:foreground brown1))
+   (evil-ex-info            (:foreground crimson4)))
 
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
