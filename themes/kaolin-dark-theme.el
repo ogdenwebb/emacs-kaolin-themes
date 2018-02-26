@@ -9,7 +9,10 @@
    (white1          "#e4e4e8")
    (white2          "#c8c8d0")
    (white3          "#babac4")
-   (white4          "#adadb9"))
+   (white4          "#adadb9")
+
+   (spring-green3 "#6fb593")) ; old light green
+
 
   (
    ;; Theme faces
