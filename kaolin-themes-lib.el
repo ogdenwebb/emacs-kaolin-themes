@@ -339,7 +339,7 @@
     (spring-green0 "#2ae186")
     (spring-green1 "#51b884")
     (spring-green2 "#39855f") ; dark
-    (spring-green3 "#5DD49A")
+    (spring-green3 "#65E6A7")
     (spring-green4 "#597a6c") ; faded
     (spring-green5 "#141E1A")
     (spring-green6 "#2E4038") ; old midnight
@@ -890,9 +890,9 @@
     ;;  (show-paren-match-face (:background bg3 :foreground nil))))
     ;;  (show-paren-match-face (:background nil :foreground orange1 :bold bold)))))
 
-    ;; TODO: make red more contrast
-    (show-paren-mismatch (:background red4 :foreground bg2))
-    (rainbow-delimiters-unmatched-face (:foreground warning))
+    (show-paren-mismatch (:background red2 :foreground bg2))
+    (rainbow-delimiters-mismatched-face (:background red2 :foreground err))
+    (rainbow-delimiters-unmatched-face (:inherit 'rainbow-delimiters-mismatched-face))
     (rainbow-delimiters-base-face    (:foreground rb1))
     (rainbow-delimiters-depth-1-face (:foreground rb1))
     (rainbow-delimiters-depth-2-face (:foreground rb2))
