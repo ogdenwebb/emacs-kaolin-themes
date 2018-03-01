@@ -484,6 +484,8 @@
     (warning     orange1)
     (err         red1)
 
+    (keysym      spring-green3)
+
     ;; Mode-line
     (line-fg           fg4)
     (line-bg1          bg2)
@@ -635,7 +637,7 @@
     (which-func (:foreground orange1))
 
     ;; Which-key
-    (which-key-key-face                   (:foreground spring-green1 :bold bold))
+    (which-key-key-face                   (:foreground keysym :bold bold))
     (which-key-group-description-face     (:foreground violet4))
     (which-key-local-map-description-face (:foreground azure3))
     (which-key-command-description-face   (:foreground cyan3))
@@ -719,9 +721,8 @@
 
     ;; Company
     (company-tooltip                  (:background tooltip-bg :foreground tooltip-fg :bold bold))
-    (company-tooltip-common           (:foreground hl))
-    ;; TODO:
-    (company-tooltip-common-selection (:bold bold))
+    (company-tooltip-common           (:foreground hl :underline underline))
+    (company-tooltip-common-selection (:foreground hl :underline underline))
     (company-tooltip-selection        (:background tooltip-hl-bg :foreground tooltip-hl-fg))
     (company-tooltip-annotation       (:foreground var))
     (company-scrollbar-bg             (:background bg1))
@@ -1016,6 +1017,7 @@
     (flx-highlight-face (:foreground hl :underline underline))
 
     ;; Smartparens
+    ;; TODO:
     (sp-pair-overlay-face (:foreground nil))
 
     ;; Web-mode
