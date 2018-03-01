@@ -484,7 +484,7 @@
     (warning     orange1)
     (err         red1)
 
-    (keysym      spring-green3)
+    (keysym      prep)
 
     ;; Mode-line
     (line-fg           fg4)
@@ -794,6 +794,8 @@
     (magit-signature-bad          (:foreground red0))
     (magit-signature-untrusted    (:foreground cyan1))
 
+    (magit-popup-key              (:foreground keysym))
+
 
     ;; Flycheck
     (flycheck-info           (:underline (:style underline-style :color done)))
@@ -809,7 +811,7 @@
 
     ;; Hydra
     (hydra-face-red      (:foreground red1))
-    ;; TODO: change to teal
+    ;; TODO: (??) change to teal
     (hydra-face-teal     (:foreground cyan3))
     (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
