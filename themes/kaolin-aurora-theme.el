@@ -19,6 +19,7 @@
    (bg3 "#1F272E" black3)
    (bg4 "#252D35" black4)
 
+   ;; TODO: mb yellow3
    (hl magenta3)
 
    (keyword     violet4)

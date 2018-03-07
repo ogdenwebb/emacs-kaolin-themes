@@ -7,10 +7,6 @@
 (define-kaolin-theme eclipse "Dark purple Kaolin theme variant."
   ;; Palette modification
   ((bg1  magenta5 black1)
-   ;; TODO:
-   ; (bg1  "#1C101C" black1)
-   ;; (bg2  "#291c29")
-   ;; (bg4  "#473147")
    (bg2       "#261a26" black2)
    (bg3       "#312231" black3)
    (bg4       "#3d2a3d" black4)
