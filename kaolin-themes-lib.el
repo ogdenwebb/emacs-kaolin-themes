@@ -849,7 +849,7 @@
     (js2-function-param           (:foreground const))
     (js2-error                    (:underline (:color red0 :style underline-style)))
     (js2-function-call            (:foreground functions))
-    (js2-object-property          (:foreground brown3))
+    (js2-object-property          (:foreground num))
     (js2-jsdoc-value              (:foreground str))
     (js2-private-member           (:foreground fg3))
     (js3-function-param-face      (:foreground keyword))
