@@ -30,10 +30,13 @@
 
    ;; (var         teal3)
    ;; (const       cyan3)
-   (var         spring-green3)
-   (const       harlequin3)
+   ;; (var         spring-green3)
+   ;; (const       harlequin3)
+   (var         crimson3)
+   (const       crimson3)
    ;; TODO:
-   (functions   crimson3)
+   ;; (functions   crimson3)
+   (functions   cyan3)
    (type        amber3)
 
    (comment     brown2)
@@ -47,7 +50,7 @@
 
    (prep        vermilion3)
    ;; TODO:
-   (num         capri3)
+   (num         harlequin3)
    (bool        num)
    (warning     orange1)
    (err         red1)
@@ -114,12 +117,11 @@
   (
 
    ;; TODO:
-   ;; (highlight-quoted-quote   (:foreground builtin))
-   ;; (highlight-quoted-symbol  (:foreground orange1))
-   ;; (highlight-quoted-symbol  (:foreground const))
-   (highlight-quoted-quote   (:foreground orange1))
-   (highlight-quoted-symbol  (:foreground type))
+   ;; (highlight-quoted-quote   (:foreground orange1))
+   ;; (highlight-quoted-symbol  (:foreground type))
+   (highlight-quoted-symbol  (:foreground harlequin3))
 
+   (treemacs-directory-face (:foreground str))
    (org-level-1            (:foreground teal1 :bold bold :height 1.1))
    (org-level-2            (:foreground ultramarine4 :bold nil))
    (org-level-3            (:foreground vermilion4 :bold nil))
