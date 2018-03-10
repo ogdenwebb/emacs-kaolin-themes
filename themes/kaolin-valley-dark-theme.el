@@ -87,6 +87,7 @@
 
     ;; Mode-line
    (line-fg           fg4)
+   (line-color2       str)
    (line-bg1          bg2)
    (line-bg2          bg3)
    (line-border       bg3)

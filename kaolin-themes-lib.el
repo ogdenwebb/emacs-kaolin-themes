@@ -709,10 +709,10 @@
     (sml/prefix           (:foreground line-fg))
     (sml/read-only        (:foreground orange1))
 
-    ;; TODO: maybe delete or change to other package
-    ;; Fic-mode
+    ;; Highlight TODOs
     (fic-face         (:background nil :foreground todo :bold bold))
     (fic-author-face  (:background nil :foreground todo :bold bold))
+    (hl-todo          (:background nil :foreground todo :bold bold))
 
     ;; Additional completion
     (ac-completion-face    (:foreground keyword :underline underline))
