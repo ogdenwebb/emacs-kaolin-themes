@@ -92,6 +92,8 @@
    (line-bg2          bg3)
    (line-border       bg3)
 
+   (prompt aquamarine1)
+
    ;; Telephone-line
    (segment-active    gray2)
    (segment-inactive  gray2)

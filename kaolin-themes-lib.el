@@ -486,6 +486,7 @@
     (err         red1)
 
     (keysym      prep)
+    (prompt      keyword)
 
     ;; Mode-line
     (line-fg           fg4)
@@ -551,7 +552,7 @@
     (cursor              (:background cursor))
     (vertical-border     (:foreground win-border))
     (window-divider      (:foreground win-border))
-    (minibuffer-prompt   (:foreground keyword :bold bold))
+    (minibuffer-prompt   (:foreground prompt :bold bold))
     (bold                (:bold bold))
     (italic              (:italic italic))
     (default-italic      (:italic italic))
