@@ -28,7 +28,7 @@
    (builtin     spring-green9)
    (functions   builtin)
    (const       builtin)
-   (var         const)
+   (var         builtin)
    (type        spring-green7)
 
    (comment "#41544B")
