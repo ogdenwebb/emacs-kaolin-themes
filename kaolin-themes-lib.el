@@ -495,6 +495,7 @@
     (line-border       bg4)
     (line-color1       keyword)
     (line-color2       builtin)
+    ; TODO:
     (segment-active    gray3)
     (segment-inactive  gray3)
     (evil-normal       teal1)
