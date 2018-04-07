@@ -5,7 +5,7 @@
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.3.0
+;; Version: 1.3.2
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -34,6 +34,7 @@
 ;;  * kaolin-ocean - dark blue variant.
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;  * kaolin-aurora - Kaolin meets polar lights.
+;;  * kaolin-valley-dark - colorful Kaolin theme with brown background.
 ;;  * kaolin-mono-dark - almost monochrome dark green Kaolin theme.
 ;;
 ;;
