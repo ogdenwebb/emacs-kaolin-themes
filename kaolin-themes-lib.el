@@ -624,10 +624,11 @@
     ;; Linum & nlinum
     (linum                        (:background line-num-bg :foreground line-num-fg :bold nil
                                                :italic nil :underline nil :strike-through nil))
+    (linum-highlight-face          (:background line-num-bg :foreground line-num-hl :bold bold
+                                                :italic nil :underline nil :strike-through nil))
     (nlinum-current-line          (:background line-num-bg :foreground line-num-hl :bold bold
                                                :italic nil :underline nil :strike-through nil))
-    (linum-highlight-face         (:inherit 'nlinum-current-line))
-    (linum-relative-current-line  (:inherit 'nlinum-current-line))
+    (linum-relative-current-line  (:inherit 'linum-highlight-face))
     (nlinum-relative-current-face (:inherit 'nlinum-current-line))
 
     ;; Native line numbers
