@@ -624,9 +624,9 @@
     ;; Linum & nlinum
     (linum                        (:background line-num-bg :foreground line-num-fg :bold nil
                                                :italic nil :underline nil :strike-through nil))
-    (linum-highlight-face         (:inherit 'linum))
     (nlinum-current-line          (:background line-num-bg :foreground line-num-hl :bold bold
                                                :italic nil :underline nil :strike-through nil))
+    (linum-highlight-face         (:inherit 'nlinum-current-line))
     (linum-relative-current-line  (:inherit 'nlinum-current-line))
     (nlinum-relative-current-face (:inherit 'nlinum-current-line))
 
