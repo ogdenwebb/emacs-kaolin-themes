@@ -918,6 +918,30 @@
     (diff-changed     (:background diff-bg-mod :foreground fg1))
     (diff-removed     (:background diff-bg-rem :foreground fg1))
 
+   ;; Ediff
+   ;; (ediff-current-diff-A (:background hl-line :foreground fg4))
+   ;; (ediff-current-diff-B (:background hl-line :foreground fg4))
+   ;; (ediff-current-diff-C (:background hl-line :foreground fg4))
+   (ediff-current-diff-Ancestor (:background diff-bg-mod :foreground fg2))
+   (ediff-current-diff-A (:background red2 :foreground fg2))
+   (ediff-current-diff-B (:background spring-green2 :foreground fg2))
+   (ediff-current-diff-C (:background cyan2 :foreground fg2))
+
+   (ediff-even-diff-Ancestor (:background bg3))
+   (ediff-even-diff-A (:background bg3))
+   (ediff-even-diff-B (:background bg3))
+   (ediff-even-diff-C (:background bg3))
+
+   (ediff-fine-diff-face-Ancestor (:background nil :bold bold))
+   (ediff-fine-diff-A (:background nil :bold bold))
+   (ediff-fine-diff-B (:background nil :bold bold))
+   (ediff-fine-diff-C (:background nil :bold bold))
+
+   (ediff-odd-diff-Ancestor (:background bg4))
+   (ediff-odd-diff-A (:background bg4))
+   (ediff-odd-diff-B (:background bg4))
+   (ediff-odd-diff-C (:background bg4))
+
     ;; TODO Imenu list
     (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
     (imenu-list-entry-face-1 (:foreground tooltip-fg))

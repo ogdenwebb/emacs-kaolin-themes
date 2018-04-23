@@ -45,24 +45,6 @@
    (org-agenda-date               (:foreground amber3 :height 1.1))
    (org-agenda-date-today         (:foreground magenta4 :height 1.2 :bold bold))
 
-   ;; Ediff
-   ;; TODO: change
-   (ediff-current-diff-A (:background red2 :foreground red1))
-   (ediff-current-diff-B (:background spring-green2 :foreground spring-green1))
-   (ediff-current-diff-C (:background azure2 :foreground capri4))
-
-   (ediff-even-diff-A (:background bg2))
-   (ediff-even-diff-B (:background bg2))
-   (ediff-even-diff-C (:background bg2))
-
-   (ediff-fine-diff-A (:background nil :bold bold))
-   (ediff-fine-diff-B (:background nil :bold bold))
-   (ediff-fine-diff-C (:background nil :bold bold))
-
-   (ediff-odd-diff-A (:background bg3))
-   (ediff-odd-diff-B (:background bg3))
-   (ediff-odd-diff-C (:background bg3))
-
    ;; Speedbar
    ;; TODO:
    (speedbar-separator-face (:background azure1))
