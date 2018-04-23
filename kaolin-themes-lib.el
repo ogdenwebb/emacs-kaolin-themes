@@ -932,10 +932,10 @@
    (ediff-even-diff-B (:background bg3))
    (ediff-even-diff-C (:background bg3))
 
-   (ediff-fine-diff-face-Ancestor (:background nil :bold bold))
-   (ediff-fine-diff-A (:background nil :bold bold))
-   (ediff-fine-diff-B (:background nil :bold bold))
-   (ediff-fine-diff-C (:background nil :bold bold))
+   (ediff-fine-diff-Ancestor (:background diff-bg-mod :bold bold :foreground white0))
+   (ediff-fine-diff-A (:background red3 :bold bold :foreground white0))
+   (ediff-fine-diff-B (:background spring-green1 :bold bold :foreground white0))
+   (ediff-fine-diff-C (:background cyan1 :bold bold :foreground white0))
 
    (ediff-odd-diff-Ancestor (:background bg4))
    (ediff-odd-diff-A (:background bg4))
