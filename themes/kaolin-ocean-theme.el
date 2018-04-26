@@ -97,7 +97,13 @@
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-mod :foreground diff-mod))
-   (git-gutter:deleted  (:background diff-rem :foreground diff-rem)))
+   (git-gutter:deleted  (:background diff-rem :foreground diff-rem))
+
+   ;; Avy
+   (avy-lead-face   (:background red2 :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1)))
 
   ;; Set custom vars
   (when kaolin-git-gutter-solid

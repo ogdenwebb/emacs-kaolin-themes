@@ -131,7 +131,13 @@
    (org-level-4            (:foreground vermilion4 :bold nil))
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2))
-   (org-table              (:foreground ultramarine4 :bold bold)))
+   (org-table              (:foreground ultramarine4 :bold bold))
+
+   ;; Avy
+   (avy-lead-face   (:background red2 :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1)))
 
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces
