@@ -1124,6 +1124,12 @@
     (helm-source-go-package-godoc-description (:foreground str))
     (helm-bookmark-w3m                        (:foreground type))
 
+     ;; Avy
+    (avy-lead-face-0 (:background spring-green2 :foreground fg1))
+    (avy-lead-face   (:background red2 :foreground fg1))
+    (avy-lead-face-1 (:background capri2 :foreground fg1))
+    (avy-lead-face-2 (:background magenta2 :foreground fg1))
+
     ;; Ivy & swiper
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
     (ivy-match-required-face     (:background nil :foreground err :bold nil))

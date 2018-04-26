@@ -92,12 +92,6 @@
    (vimish-fold-overlay (:background bg2 :foreground comment))
    (vimish-fold-fringe  (:background nil :foreground spring-green4))
 
-   ;; Avy
-   (avy-lead-face   (:background red2 :foreground fg1))
-   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
-   (avy-lead-face-1 (:background azure2 :foreground fg1))
-   (avy-lead-face-2 (:background magenta2 :foreground fg1))
-
    ;; Ivy & Swiper
    (ivy-modified-buffer     (:foreground violet4))
    (ivy-action              (:background nil :foreground spring-green1 :bold bold))
