@@ -123,7 +123,13 @@
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground erin3))
    (org-verbatim        (:foreground aquamarine3))
-   (org-quote           (:foreground blue9)))
+   (org-quote           (:foreground blue9))
+
+   ;; Avy
+   (avy-lead-face   (:background red2 :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1)))
 
   ;; Set custom vars
   (when kaolin-git-gutter-solid

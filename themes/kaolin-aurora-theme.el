@@ -132,7 +132,13 @@
    (org-table           (:foreground capri4))
    (org-code            (:foreground yellow3))
    (org-verbatim        (:inherit    'org-code))
-   (org-quote           (:foreground blue4)))
+   (org-quote           (:foreground blue4))
+
+   ;; Avy
+   (avy-lead-face   (:background red2 :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1)))
 
   (when kaolin-git-gutter-solid
     (custom-theme-set-faces

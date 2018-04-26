@@ -96,7 +96,13 @@
    ;; TODO: change
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground amber3))
-   (org-quote           (:foreground magenta3)))
+   (org-quote           (:foreground magenta3))
+
+   ;; Avy
+   (avy-lead-face   (:background red2 :foreground fg1))
+   (avy-lead-face-0 (:background spring-green4 :foreground fg1))
+   (avy-lead-face-1 (:background azure2 :foreground fg1))
+   (avy-lead-face-2 (:background magenta2 :foreground fg1)))
 
   ;; Set custom vars
   (when kaolin-git-gutter-solid
