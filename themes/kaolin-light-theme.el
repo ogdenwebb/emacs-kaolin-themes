@@ -52,7 +52,7 @@
    (dim-buffer white0)
    (hl         aquamarine2)
    ;; TODO: add colored
-   (hl-line    (if kaolin-hl-line-colored bg2 bg2))
+   (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
    ;; TODO:
    (selection bg4)
@@ -124,7 +124,7 @@
    (js2-object-property     (:foreground brown1))
    (evil-ex-info            (:foreground crimson4)))
 
-  (when kaolin-git-gutter-solid
+  (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-light
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))

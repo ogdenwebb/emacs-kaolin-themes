@@ -411,10 +411,10 @@
 
 
     ;; Named color vars
-    (bold            kaolin-bold)
-    (italic          kaolin-italic)
-    (underline       kaolin-underline)
-    (underline-style (if kaolin-wave 'wave 'line))
+    (italic          kaolin-themes-italic)
+    (bold            kaolin-themes-bold)
+    (underline       kaolin-themes-underline)
+    (underline-style (if kaolin-themes-underline-wave 'wave 'line))
 
     (fg0  white0)
     (fg1  white1)
@@ -432,7 +432,7 @@
 
     (hl         aquamarine3)
     (hl-mono    gray4)
-    (hl-line    (if kaolin-hl-line-colored capri5 bg2))
+    (hl-line    (if kaolin-themes-hl-line-colored capri5 bg2))
     (hl-indent  gray3)
     (selection  bg3)
     (pulse      spring-green6)
@@ -524,8 +524,8 @@
   '(
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
-    (font-lock-comment-delimiter-face (:foreground comment :italic kaolin-italic-comments))
-    (font-lock-comment-face           (:foreground comment :italic kaolin-italic-comments))
+    (font-lock-comment-delimiter-face (:foreground comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-face           (:foreground comment :italic kaolin-themes-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions :bold bold))
@@ -539,7 +539,7 @@
     (font-lock-warning-face           (:background nil :foreground warning))
 
     ;; Kaolin faces
-    (kaolin-boolean (:foreground bool))
+    (kaolin-themes-boolean (:foreground bool))
 
     ;; General
     (default             (:background bg1 :foreground fg1))

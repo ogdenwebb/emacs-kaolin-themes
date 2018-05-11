@@ -37,7 +37,7 @@
 
    (dim-buffer "#140E14")
    (hl         pink1)
-   (hl-line    (if kaolin-hl-line-colored bg2 black1))
+   (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
    (pulse      magenta2)
@@ -99,7 +99,7 @@
    (org-quote           (:foreground magenta3)))
 
   ;; Set custom vars
-  (when kaolin-git-gutter-solid
+  (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-eclipse
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))

@@ -15,7 +15,6 @@
    ;; (cerulean4     "#536a9d")
    (cerulean4     "#47629E")
 
-
    ;; Color vars
    (bg1 "#211D1D")
    (bg2 "#262121")
@@ -58,7 +57,7 @@
    (dim-buffer white0)
    (hl         azure3)
    ;; TODO: add colored
-   (hl-line    (if kaolin-hl-line-colored bg3 bg3))
+   (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  gray0)
    ;; TODO:
    (selection bg4)
@@ -132,7 +131,7 @@
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2)))
 
-  (when kaolin-git-gutter-solid
+  (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-valley-dark
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))

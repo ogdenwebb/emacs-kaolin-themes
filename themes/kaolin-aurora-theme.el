@@ -51,7 +51,7 @@
 
    (dim-buffer bg0)
    ;; TODO:
-   (hl-line    (if kaolin-hl-line-colored bg3 bg3))
+   (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  bg4)
    (selection  bg4)
    (pulse      bg4)
@@ -134,7 +134,7 @@
    (org-verbatim        (:inherit    'org-code))
    (org-quote           (:foreground blue4)))
 
-  (when kaolin-git-gutter-solid
+  (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-aurora
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))

@@ -53,7 +53,7 @@
 
    (dim-buffer "#140E14")
    (hl         cyan0)
-   (hl-line    (if kaolin-hl-line-colored bg2 black1))
+   (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    ;; TODO: (??) less bright
    (selection  bg4)
@@ -126,7 +126,7 @@
    (org-quote           (:foreground blue9)))
 
   ;; Set custom vars
-  (when kaolin-git-gutter-solid
+  (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-galaxy
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))

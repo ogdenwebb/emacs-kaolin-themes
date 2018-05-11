@@ -5,7 +5,7 @@
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.3.3
+;; Version: 1.3.4
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -35,6 +35,7 @@
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;  * kaolin-aurora - Kaolin meets polar lights.
 ;;  * kaolin-valley-dark - colorful Kaolin theme with brown background.
+;;  * kaolin-valley-light - light version of kaolin-valley-dark theme.
 ;;  * kaolin-mono-dark - almost monochrome dark green Kaolin theme.
 ;;
 ;;
@@ -47,17 +48,17 @@
 ;; =======  Custom theme settings  =======
 ;;
 ;;  ;; The following set to t by default
-;;  (setq kaolin-bold t       ; If nil, disable the bold style.
-;;        kaolin-italic t     ; If nil, disable the italic style.
-;;        kaolin-underline t) ; If nil, disable the underline style.
+;;  (setq kaolin-themes-bold t       ; If nil, disable the bold style.
+;;        kaolin-themes-italic t     ; If nil, disable the italic style.
+;;        kaolin-themes-underline t) ; If nil, disable the underline style.
 ;;
 ;; =======  Some extra theme features, disabled by default  =======
 ;;
 ;;  ;; If t, use the wave underline style instead of regular underline.
-;;  (setq kaolin-wave t)
+;;  (setq kaolin-themes-underline-wave t)
 ;;
 ;;  ;; When t, will display colored hl-line style
-;;  (setq kaolin-hl-line-colored t)
+;;  (setq kaolin-themes-hl-line-colored t)
 ;;
 ;;
 ;;; Code:
@@ -70,54 +71,61 @@
 
 (require 'kaolin-themes-lib)
 
-
 (defgroup kaolin-themes nil
   "Kaolin theme properties."
   :group 'faces)
 
-(defcustom kaolin-bold t
+(defcustom kaolin-themes-bold t
   "If nil, disable the bold style."
   :group 'kaolin-themes)
 
-(defcustom kaolin-italic t
+(defcustom kaolin-themes-italic t
   "If nil, disable the italic style."
   :group 'kaolin-themes)
 
-(defcustom kaolin-underline t
+(defcustom kaolin-themes-underline t
   "If nil, disable the underline style."
   :group 'kaolin-themes)
 
-;; TODO: rename to kaolin-underline-wave
-(defcustom kaolin-wave nil
+(defcustom kaolin-themes-underline-wave nil
   "When t, use the wave underline style instead of regular underline."
   :group 'kaolin-themes)
 
-(defcustom kaolin-hl-line-colored nil
+
+(defcustom kaolin-themes-hl-line-colored nil
   "When t, will display colored hl-line style instead dim gray."
   :group 'kaolin-themes)
 
-
-(defcustom kaolin-italic-comments nil
+(defcustom kaolin-themes-italic-comments nil
   "If t, enable italic style in comments."
   :group 'kaolin-themes)
 
 ;; TODO: implement
-(defcustom kaolin-comment-style 'normal
-  "Sets the style of comments: normal, alt(darker for dark theme and lighter for light themes) or colored."
-  :options '(bright normal color)
-  :group 'kaolin-themes)
+;; (defcustom kaolin-themes-comment-style 'normal
+;;   "Sets the style of comments: normal, alt(darker for dark theme and lighter for light themes) or colored."
+;;   :options '(bright normal color)
+;;   :group 'kaolin-themes)
 
-;; (pcase kaolin-comment-style
+;; (pcase kaolin-themes-comment-style
 ;;   ('normal (message "Normal!"))
 ;;   ('bright (message "bright!")))
 
-(defcustom kaolin-git-gutter-solid nil
+(defcustom kaolin-themes-git-gutter-solid nil
   "If t, display solid line to highlight git-gutter changes in fringe."
   :group 'kaolin-themes)
 
-(defface kaolin-boolean nil
+(defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)
+
+(define-obsolete-variable-alias 'kaolin-bold 'kaolin-themes-bold "1.3.4")
+(define-obsolete-variable-alias 'kaolin-italic 'kaolin-themes-italic "1.3.4")
+(define-obsolete-variable-alias 'kaolin-underline 'kaolin-themes-underline "1.3.4")
+(define-obsolete-variable-alias 'kaolin-wave 'kaolin-themes-underline-wave "1.3.4")
+(define-obsolete-variable-alias 'kaolin-hl-line-colored 'kaolin-themes-hl-line-colored "1.3.4")
+(define-obsolete-variable-alias 'kaolin-italic-comments 'kaolin-themes-italic-comments "1.3.4")
+(define-obsolete-variable-alias 'kaolin-git-gutter-solid 'kaolin-themes-git-gutter-solid "1.3.4")
+(define-obsolete-variable-alias 'kaolin-wave 'kaolin-themes-underline-wave "1.3.4")
 
 (defun kaolin-themes--make-name (sym)
   "Format kaolin-<sym> from SYM."

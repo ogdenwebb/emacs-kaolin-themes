@@ -36,7 +36,7 @@
 
    (dim-buffer "#0F0F17")
    (hl         cyan0)
-   (hl-line    (if kaolin-hl-line-colored bg2 black1))
+   (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
    (pulse      bg4)
@@ -100,7 +100,7 @@
    (git-gutter:deleted  (:background diff-rem :foreground diff-rem)))
 
   ;; Set custom vars
-  (when kaolin-git-gutter-solid
+  (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-ocean
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
