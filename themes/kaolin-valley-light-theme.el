@@ -138,7 +138,7 @@
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
-     'kaolin-valley-dark
+     'kaolin-valley-light
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))

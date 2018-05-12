@@ -138,6 +138,9 @@
              do (map-put res (car el) (cdr el)))
     res))
 
+(defun kaolin-themes-get-hex (name)
+  (car (map-elt kaolin-palette name)))
+
 ;; TODO (??) add ability to create own variables in themes with vars from lib
 ;; like (my-new-theme-color cyan1)
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)

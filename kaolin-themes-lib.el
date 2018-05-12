@@ -1018,7 +1018,7 @@
     (org-hide                      (:foreground bg1))
     (org-special-keyword           (:foreground functions))
     (org-table                     (:background bg2 :foreground fg3))
-    (org-formula                   (:foreground type))
+    (org-formula                   (:background nil :foreground type))
     (org-warning                   (:foreground warning :underline underline))
     (org-tag                       (:foreground prep))
     (org-checkbox                  (:inherit 'org-special-keyword))
