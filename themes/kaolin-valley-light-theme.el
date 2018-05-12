@@ -114,7 +114,7 @@
    (line-num-fg   brown8)
    (line-num-hl   amber3)
 
-   (cursor       gray5)
+   (cursor       gray3)
 
    (ivy1          gray9)
    (ivy2          purple3)
