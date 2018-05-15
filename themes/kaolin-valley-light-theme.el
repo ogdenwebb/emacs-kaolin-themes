@@ -12,12 +12,14 @@
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
    (orange0       "#d1832e")
+   (orange3       "#F3AE6C")
    ;; (cerulean4     "#536a9d")
    (cerulean4     "#47629E")
 
    ;; (teal0 "#0d948d")
    (teal0 "#10948D")
    (cyan3 "#2BC8CC")
+   ;; (cyan3 "#3CDADE")
    ;; (harlequin3 "#91f368")
    (harlequin3 "#4CDE0D")
    (crimson3 "#EF4F75")
@@ -25,7 +27,8 @@
    (amber3 "#F3CB41")
 
    ;; Color vars
-   (bg1 "#F9F5F1")
+   ;; (bg1 "#F9F5F1")
+   (bg1 "#FDF9F5")
    (bg2 "#F8F0E9")
    (bg3 "#F0E8E0")
    (bg4 "#EBE3DD")
@@ -41,7 +44,8 @@
    ;; TODO:
    ;; (functions   crimson3)
    (functions   cyan3)
-   (type        amber3)
+   (type       "#F3AE6C")
+   (type       orange3)
 
    (comment     brown8)
    (alt-comment azure8)
