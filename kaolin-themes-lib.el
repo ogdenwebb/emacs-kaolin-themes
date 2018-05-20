@@ -960,6 +960,9 @@
     (diff-hl-insert (:background diff-add))
     (diff-hl-change (:background diff-mod))
     (diff-hl-delete (:background diff-rem))
+    (diff-hl-margin-insert (:background diff-add :foreground bg1 :slant 'normal))
+    (diff-hl-margin-change (:background diff-mod :foreground bg1 :slant 'normal))
+    (diff-hl-margin-delete (:background diff-rem :foreground bg1 :slant 'normal))
 
     ;; Popup
     (popup-face                (:background tooltip-bg :foreground tooltip-fg :bold bold))
