@@ -1090,6 +1090,9 @@
     ;; Beacon-mode
     (beacon-fallback-background (:background pulse))
 
+    ;; Tuareg/OCaml
+    (tuareg-font-double-colon-face (:foreground keyword))
+
     ;; Helm
     ;; TODO: (!!) find helm status line color that based on var face
     ;; TODO: update faces

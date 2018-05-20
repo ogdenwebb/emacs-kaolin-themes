@@ -58,7 +58,7 @@
 
    (prep        vermilion3)
    ;; TODO:
-   (num         harlequin3)
+   (num         harlequin1)
    (bool        num)
    (warning     orange1)
    (err         red3)
@@ -106,7 +106,7 @@
    (segment-active    gray2)
    (segment-inactive  gray2)
    (evil-normal       brown3)
-   (evil-insert       harlequin3)
+   (evil-insert       harlequin1)
    (evil-visual       orange3)
    (evil-replace      red3)
    (evil-motion       amber3)
