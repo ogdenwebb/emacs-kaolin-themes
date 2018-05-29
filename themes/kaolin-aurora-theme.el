@@ -103,7 +103,6 @@
    (evil-emacs        amber3)
 
    (win-border   bg3)
-   (line-num-bg  bg1)
    (line-num-fg  azure6 black4)
    (line-num-hl  teal0)
 

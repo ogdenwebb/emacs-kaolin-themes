@@ -102,7 +102,6 @@
    (evil-emacs        yellow3)
 
    (win-border    black3)
-   (line-num-bg   bg1)
    (line-num-fg   bg4 black4)
    (line-num-hl   cerulean8)
 

@@ -97,7 +97,6 @@
    (evil-emacs        amber3)
 
    (win-border    bg3)
-   (line-num-bg   bg1)
    (line-num-fg   chartreuse8)
    (line-num-hl   hl)
 

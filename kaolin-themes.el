@@ -114,6 +114,10 @@
   "If t, display solid line to highlight git-gutter changes in fringe."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-distinct-fringe nil
+  "Enable distinct background for fringe and line numbers."
+  :group 'kaolin-themes)
+
 (defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)

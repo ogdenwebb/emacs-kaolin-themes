@@ -114,7 +114,6 @@
    (evil-emacs        cyan3)
 
    (win-border    bg3)
-   (line-num-bg   bg1)
    (line-num-fg   brown8)
    (line-num-hl   amber3)
 
