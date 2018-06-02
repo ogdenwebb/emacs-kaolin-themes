@@ -18,8 +18,9 @@
 
    ;; (teal0 "#0d948d")
    (teal0 "#10948D")
-   (cyan3 "#2BC8CC")
+   ;; (cyan3 "#2BC8CC")
    ;; (cyan3 "#3CDADE")
+   (cyan3 "#48B9C7")
    ;; (harlequin3 "#91f368")
    (harlequin3 "#4CDE0D")
    (crimson3 "#EF4F75")
@@ -27,17 +28,22 @@
    (amber3 "#F3CB41")
 
    ;; Color vars
-   ;; (bg1 "#F9F5F1")
    (bg1 "#FDF9F5")
    (bg2 "#F8F0E9")
-   (bg3 "#F0E8E0")
-   (bg4 "#EBE3DD")
+   ;; (bg2 "#F2EDE6")
+   (bg3 "#EEE6DE")
+   (bg4 "#E8E1DB")
 
+   ;; TODO
    (fg1 black4)
+   (fg2 gray0)
+   (fg3 gray2)
+   (fg4 gray4)
 
    (keyword     teal0)
    (second-key  keyword)
-   (builtin     aquamarine1)
+   ;; (builtin     aquamarine1)
+   (builtin     spring-green1)
 
    (var         crimson3)
    (const       crimson3)
@@ -75,8 +81,10 @@
 
    (todo red3)
 
+   (tooltip-fg fg3)
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
+
 
     ;; TODO:
    (rb1 teal1)
@@ -127,9 +135,7 @@
   (
 
    ;; TODO:
-   ;; (highlight-quoted-quote   (:foreground orange1))
-   ;; (highlight-quoted-symbol  (:foreground type))
-   (highlight-quoted-symbol  (:foreground harlequin1))
+   (highlight-quoted-symbol  (:foreground chartreuse4))
 
    ;; (org-level-1            (:foreground teal0 :bold bold :height 1.1))
    ;; (org-level-2            (:foreground violet4  :bold nil))
