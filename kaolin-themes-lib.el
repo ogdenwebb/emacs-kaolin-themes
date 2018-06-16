@@ -482,6 +482,7 @@
     (num         red1)
     (bool        num)
     (prep        violet4)
+    (link        prep)
     (warning     orange1)
     (err         red1)
 
@@ -559,8 +560,7 @@
     (italic              (:italic italic))
     (default-italic      (:italic italic))
     (bold-italic         (:bold bold :italic italic))
-    ;; TODO: add link var
-    (link                (:foreground prep :underline underline))
+    (link                (:foreground link :underline underline))
     (link-visited        (:inherit 'link :underline nil))
     (success             (:background nil :foreground spring-green1))
     (escape-glyph        (:background nil :foreground cyan3))
@@ -570,6 +570,7 @@
 
     ;; TODO: (??) color fg
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
+
 
     (match        (:background nil :foreground hl))
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
@@ -891,12 +892,7 @@
     (undo-tree-visualizer-register-face      (:foreground type))
 
     ;; Rainbow delimeters
-    ;; TODO: change color & rewrite
-    ;; TODO: probably need to define custom vars or smth...
     (show-paren-match (:background nil :foreground orange1 :bold bold))
-    ;; (if (eq show-paren-style 'expression)
-    ;;  (show-paren-match-face (:background bg3 :foreground nil))))
-    ;;  (show-paren-match-face (:background nil :foreground orange1 :bold bold)))))
 
     (show-paren-mismatch (:background red2 :foreground bg2))
     (rainbow-delimiters-mismatched-face (:background red2 :foreground err))

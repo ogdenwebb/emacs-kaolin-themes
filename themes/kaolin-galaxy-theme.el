@@ -23,7 +23,7 @@
    (spring-green1 "#6dd797")
 
    ;;                             dark      bright
-   ;; TODO: add bg0
+   (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
    (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
    (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
    (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#33323b") black3)
