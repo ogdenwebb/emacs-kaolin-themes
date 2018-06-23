@@ -15,7 +15,6 @@
 
    (bg0 "#0C0D12")
    (bg1 cerulean5)
-   ;; (bg1 erin5)
    (bg2 "#191D26")
    (bg3 "#202430")
    (bg4 "#272C3A")
@@ -42,7 +41,6 @@
    (warning     orange1)
    (err         crimson1)
 
-   ;; (prep        spring-green0)
    (prep        violet3)
    (num         violet3)
    (bool        num)
