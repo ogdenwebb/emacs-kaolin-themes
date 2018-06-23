@@ -1,10 +1,10 @@
-;;; kaolin-bubblegum-theme.el --- Kaolin meets polar lights.
+;;; kaolin-bubblegum-theme.el --- Kaolin colorful theme with dark blue background.
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme bubblegum "Kaolin meets polar lights."
+(define-kaolin-theme bubblegum "Kaolin colorful theme with dark blue background."
   ;; Palette modification
   (
    (teal0 "#0E9E97")
