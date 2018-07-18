@@ -54,7 +54,7 @@
    (type       orange3)
 
    (comment     brown8)
-   (alt-comment azure8)
+   (comment-alt azure8)
 
    ;; (str         magenta3)
    ;; (str-alt     violet4)

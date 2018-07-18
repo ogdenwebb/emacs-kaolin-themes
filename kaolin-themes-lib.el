@@ -467,7 +467,14 @@
     (diff-bg-rem crimson4)
 
     (comment     gray3)
-    (alt-comment azure8)
+    (comment-alt azure8)
+
+    (kaolin-comment
+      (pcase kaolin-themes-comments-style
+        ('normal comment)
+        ('color  comment-alt)
+        ('bright comment)))
+
     (keyword     teal1)
     (second-key  comment)
     (builtin     teal4)
@@ -526,8 +533,8 @@
   '(
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
-    (font-lock-comment-delimiter-face (:foreground comment :italic kaolin-themes-italic-comments))
-    (font-lock-comment-face           (:foreground comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-delimiter-face (:foreground kaolin-comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-face           (:foreground kaolin-comment :italic kaolin-themes-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions :bold bold))

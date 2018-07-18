@@ -37,7 +37,7 @@
    (const       violet4)
    (builtin     cyan4)
    (comment     lime7)
-   (alt-comment azure8)
+   (comment-alt azure8)
    (functions   teal1)
    (str         brown1)
    (str-alt     brown1)

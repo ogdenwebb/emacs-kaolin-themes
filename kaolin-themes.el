@@ -101,15 +101,10 @@
   "If t, enable italic style in comments."
   :group 'kaolin-themes)
 
-;; TODO: implement
-;; (defcustom kaolin-themes-comment-style 'normal
-;;   "Sets the style of comments: normal, alt(darker for dark theme and lighter for light themes) or colored."
-;;   :options '(bright normal color)
-;;   :group 'kaolin-themes)
-
-;; (pcase kaolin-themes-comment-style
-;;   ('normal (message "Normal!"))
-;;   ('bright (message "bright!")))
+(defcustom kaolin-themes-comments-style 'normal
+  "Sets the style of comments: normal, alt(darker for dark theme and lighter for light themes) or colored."
+  :options '(normal bright color)
+  :group 'kaolin-themes)
 
 (defcustom kaolin-themes-git-gutter-solid nil
   "If t, display solid line to highlight git-gutter changes in fringe."

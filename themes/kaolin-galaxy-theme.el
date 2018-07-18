@@ -43,7 +43,7 @@
    (prep        azure3)
    (bool        num)
 
-   ;; TODO: a bit more like azure1 at least for alt-comment
+   ;; TODO: a bit more like azure1 at least for comment-alt
    (comment     gray3)
    (str         capri4)
    (str-alt     cerulean8)
