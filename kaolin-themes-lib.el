@@ -521,6 +521,9 @@
     (line-num-hl   gray9)
     (cursor        white0)
 
+    (company-scroll-bg (if kaolin-themes-distinct-company-scrollbar bg4 bg2))
+    (company-scroll-fg (if kaolin-themes-distinct-company-scrollbar line-num-hl bg4))
+
     (swiper-bg   bg2)
     (ivy-bg      nil)
     (ivy1        fg1)
@@ -738,8 +741,8 @@
     (company-tooltip-common-selection (:foreground hl :underline underline))
     (company-tooltip-selection        (:background tooltip-hl-bg :foreground tooltip-hl-fg))
     (company-tooltip-annotation       (:foreground var))
-    (company-scrollbar-bg             (:background bg1))
-    (company-scrollbar-fg             (:foreground keyword))
+    (company-scrollbar-bg             (:background company-scroll-bg))
+    (company-scrollbar-fg             (:background company-scroll-fg))
     ;; TODO: read about template
     (company-template-field           (:background bg3))
     (company-echo-common              (:background bg1 :foreground amber3))

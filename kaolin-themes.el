@@ -114,6 +114,10 @@
   "Enable distinct background for fringe and line numbers."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-distinct-company-scrollbar nil
+  "Enable distinct colors for company popup scrollbar."
+  :group 'kaolin-themes)
+
 (defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)
