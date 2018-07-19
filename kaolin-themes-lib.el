@@ -955,7 +955,9 @@
     (imenu-list-entry-face-0 (:inherit 'font-lock-type-face))
 
     ;; TODO Treemacs
-    (treemacs-header-face (:inherit 'header-line))
+    (treemacs-root-face (:foreground keyword :height 1.2 :underline nil))
+    (treemacs-directory-face (:foreground functions))
+    (treemacs-git-modified-face (:foreground diff-mod))
 
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))

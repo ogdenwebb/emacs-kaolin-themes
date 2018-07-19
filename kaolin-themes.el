@@ -69,6 +69,7 @@
 
 (require 'autothemer)
 (require 'map)
+(require 'color)
 
 (require 'kaolin-themes-lib)
 
@@ -143,10 +144,9 @@
     res))
 
 (defun kaolin-themes-get-hex (name)
+  "Return hex value of color in kaolin-pallete by NAME"
   (car (map-elt kaolin-palette name)))
 
-;; TODO (??) add ability to create own variables in themes with vars from lib
-;; like (my-new-theme-color cyan1)
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))

@@ -122,7 +122,6 @@
    ;; (highlight-quoted-symbol  (:foreground type))
    (highlight-quoted-symbol  (:foreground harlequin3))
 
-   (treemacs-directory-face (:foreground str))
    (org-level-1            (:foreground teal0 :bold bold :height 1.1))
    (org-level-2            (:foreground violet4  :bold nil))
    (org-level-3            (:foreground harlequin3 :bold nil))
