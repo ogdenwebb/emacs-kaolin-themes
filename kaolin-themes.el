@@ -143,10 +143,29 @@
              do (map-put res (car el) (cdr el)))
     res))
 
+;;;###autoload
+;; (defun kaolin-themes-get-hex (name)
+;;   "Return hex value of color in kaolin-pallete by NAME"
+;;   (let ((color-str (symbol-name name))
+;;         (color (if (string-match-p )))))
+;;     (car (map-elt kaolin-palette name)))
 (defun kaolin-themes-get-hex (name)
-  "Return hex value of color in kaolin-pallete by NAME"
-  (car (map-elt kaolin-palette name)))
+    (car (map-elt kaolin-palette name)))
 
+;;;###autoload
+(defmacro kaolin-themes-name-to-rgb (name)
+  "TODO"
+  `(color-name-to-rgb (kaolin-themes-get-hex ,name)))
+
+;;;###autoload
+(defmacro kaolin-themes-color-complement (name)
+  "TODO"
+  `(color-complement (kaolin-themes-get-hex ,name)))
+
+(defalias 'kaolin-rgb-to-hex 'color-rgb-to-hex)
+(defalias 'kaolin-color 'kaolin-themes-get-hex)
+
+;;;###autoload
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
