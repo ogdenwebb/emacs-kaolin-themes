@@ -45,6 +45,7 @@
 
    ;; TODO: a bit more like azure1 at least for comment-alt
    (comment     gray3)
+   (comment-alt vermilion7)
    (str         capri4)
    (str-alt     cerulean8)
    (doc         str-alt)

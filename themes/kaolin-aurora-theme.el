@@ -32,11 +32,8 @@
    (type        cyan3)
 
 
-   ;; TODO:
-   ;; (comment     gray2)
-   ;; (comment     "#424153")
    (comment     "#454459")
-   (comment-alt gray6)
+   (comment-alt teal2)
    (warning     orange1)
    (err         crimson1)
 

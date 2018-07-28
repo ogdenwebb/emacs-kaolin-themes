@@ -37,7 +37,7 @@
 
 
    (comment     "#454459")
-   (comment-alt gray6)
+   (comment-alt vermilion7)
    (warning     orange1)
    (err         crimson1)
 

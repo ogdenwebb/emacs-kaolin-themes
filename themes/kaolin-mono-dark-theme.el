@@ -32,6 +32,7 @@
    (type        spring-green7)
 
    (comment "#41544B")
+   ;; TODO:
    (comment-alt gray6)
    (warning     orange1)
    (err         red1)

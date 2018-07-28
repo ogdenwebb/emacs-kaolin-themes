@@ -27,7 +27,7 @@
    (prep        violet1)
 
    (comment     gray2)
-   (comment-alt "#34344c")
+   (comment-alt "#43436E")
    (str         amber3 "#ffd787")
    (str-alt     vermilion4)
    (doc         str-alt)

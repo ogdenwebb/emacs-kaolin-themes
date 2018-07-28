@@ -28,7 +28,7 @@
    (prep        vermilion4)
 
    (comment     gray0)
-   (comment-alt "#4c344c")
+   (comment-alt "#663E66")
    (str         teal4)
    (str-alt     blue4)
    (doc         str-alt)

@@ -39,7 +39,8 @@
    (type        amber3)
 
    (comment     brown2)
-   (comment-alt azure8)
+   ;; TODO:
+   (comment-alt teal2)
 
    ;; (str         magenta3)
    ;; (str-alt     violet4)
@@ -121,7 +122,7 @@
    ;; (highlight-quoted-symbol  (:foreground type))
    (highlight-quoted-symbol  (:foreground harlequin3))
 
-   (org-level-1            (:foreground harlequin3 :bold bold :height 1.1))
+   (org-level-1            (:foreground doc :bold bold :height 1.1))
    (org-level-2            (:foreground teal1  :bold nil))
    (org-level-3            (:foreground violet4 :bold nil))
    (org-level-4            (:foreground vermilion4 :bold nil))
