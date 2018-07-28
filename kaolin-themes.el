@@ -144,13 +144,16 @@
     res))
 
 ;;;###autoload
-;; (defun kaolin-themes-get-hex (name)
-;;   "Return hex value of color in kaolin-pallete by NAME"
-;;   (let ((color-str (symbol-name name))
-;;         (color (if (string-match-p )))))
-;;     (car (map-elt kaolin-palette name)))
+(defun kaolin-themes-get-color (name)
+  "Return color value in kaolin-pallete by NAME"
+  (car (map-elt kaolin-palette name)))
+
 (defun kaolin-themes-get-hex (name)
-    (car (map-elt kaolin-palette name)))
+  "Return color value in kaolin-pallete by NAME"
+  (let ((color (kaolin-themes-get-color name)))
+    (if (stringp color)
+        color
+      (kaolin-themes-get-hex color))))
 
 ;;;###autoload
 (defmacro kaolin-themes-name-to-rgb (name)
@@ -164,6 +167,11 @@
 
 (defalias 'kaolin-rgb-to-hex 'color-rgb-to-hex)
 (defalias 'kaolin-color 'kaolin-themes-get-hex)
+
+;; TODO: add access to opt-palette
+;; TESTING
+(kaolin-themes-get-hex 'cyan1)
+(kaolin-color 'num)
 
 ;;;###autoload
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
