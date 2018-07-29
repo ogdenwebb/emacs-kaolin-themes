@@ -18,36 +18,38 @@
   (
    (azure2        "#232c35")
    (azure1        "#2a57cc")
-   ;; (azure1     "#335599")
    (chartreuse1   "#73c66c")
    (spring-green1 "#6dd797")
+   (ultramarine7  "#615B75")
 
    ;;                             dark      bright
    (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
    (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
    (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
-   (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#33323b") black3)
+   (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#31303A") black3)
    (bg4 (if kaolin-galaxy-alt-bg "#393741" "#3d3b46") black4)
 
    ;; TODO: add other fg vars
    (fg1 blue9)
 
-   (keyword     violet3)
+   (keyword     cyan3)
    (second-key  ultramarine4 cerise4)
-   (builtin     violet4)
-   (functions   builtin)
+   (builtin     teal1)
+   ;; TODO:
+   (functions   magenta3)
    (var         amber3)
    (const       orange3)
-   (type        teal1)
-   (num         crimson1 "#5f87af")
-   (prep        azure3)
+   (type        crimson3)
+   (prep        capri3)
+   (num         capri3)
    (bool        num)
 
-   ;; TODO: a bit more like azure1 at least for comment-alt
-   (comment     gray3)
-   (comment-alt vermilion7)
-   (str         capri4)
-   (str-alt     cerulean8)
+   ;; TODO: a bit more darken
+   (comment     ultramarine7)
+   ;; (comment-alt vermilion7)
+   (comment-alt azure4)
+   (str         spring-green3)
+   (str-alt     harlequin3)
    (doc         str-alt)
    (warning     orange3)
    (err         crimson0)
@@ -89,7 +91,7 @@
    (line-fg           fg4)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-color2       violet4)
+   (line-color2       keyword)
    (line-border       bg3)
 
    (segment-active    gray3)
@@ -103,14 +105,13 @@
    (evil-emacs        yellow3)
 
    (win-border    black3)
-   (line-num-fg   bg4 black4)
+   (line-num-fg   ultramarine7 black4)
    (line-num-hl   cerulean8)
 
    (cursor        "#c3c8e0"))
 
   (
    ;; Custom theme set faces
-   (link                (:foreground crimson1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
