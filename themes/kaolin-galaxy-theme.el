@@ -30,7 +30,7 @@
    (bg4 (if kaolin-galaxy-alt-bg "#393741" "#3d3b46") black4)
 
    ;; TODO: add other fg vars
-   (fg1 blue9)
+   ;; (fg1 blue9)
 
    (keyword     cyan3)
    (second-key  ultramarine4 cerise4)
@@ -107,7 +107,7 @@
 
    (win-border    black3)
    (line-num-fg   ultramarine7 black4)
-   (line-num-hl   cerulean8)
+   (line-num-hl   hl)
 
    (cursor        "#c3c8e0"))
 

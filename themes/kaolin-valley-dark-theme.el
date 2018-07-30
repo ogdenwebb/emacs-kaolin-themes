@@ -123,7 +123,7 @@
    ;; (highlight-quoted-symbol  (:foreground type))
    (highlight-quoted-symbol  (:foreground harlequin3))
 
-   (org-document-title     (:foreground brown3 :bold bold))
+   (org-document-title     (:foreground orange3 :bold bold))
    (org-document-info      (:foreground brown3))
 
    (org-level-1            (:foreground vermilion4 :bold bold :height 1.1))
