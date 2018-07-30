@@ -55,6 +55,7 @@
    (err         crimson0)
 
    (dim-buffer "#140E14")
+   ;; TODO: ??) change
    (hl         cyan0)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)

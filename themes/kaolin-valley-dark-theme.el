@@ -16,6 +16,7 @@
    (cerulean4     "#47629E")
 
    ;; Color vars
+   ;; TODO: (??) make more bright
    (bg1 "#211D1D")
    (bg2 "#262121")
    (bg3 "#2E2828")
@@ -24,7 +25,7 @@
    (fg1 amber9)
 
    (keyword     teal0)
-   (second-key  keyword)
+   (second-key  brown1)
    (builtin     aquamarine1)
 
    ;; (var         teal3)
@@ -122,10 +123,13 @@
    ;; (highlight-quoted-symbol  (:foreground type))
    (highlight-quoted-symbol  (:foreground harlequin3))
 
-   (org-level-1            (:foreground doc :bold bold :height 1.1))
-   (org-level-2            (:foreground teal1  :bold nil))
+   (org-document-title     (:foreground brown3 :bold bold))
+   (org-document-info      (:foreground brown3))
+
+   (org-level-1            (:foreground vermilion4 :bold bold :height 1.1))
+   (org-level-2            (:foreground type  :bold nil))
    (org-level-3            (:foreground violet4 :bold nil))
-   (org-level-4            (:foreground vermilion4 :bold nil))
+   (org-level-4            (:foreground teal1 :bold nil))
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2)))
 
