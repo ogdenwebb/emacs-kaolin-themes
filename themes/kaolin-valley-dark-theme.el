@@ -25,7 +25,7 @@
    (fg1 amber9)
 
    (keyword     teal0)
-   (second-key  brown1)
+   (second-key  keyword)
    (builtin     aquamarine1)
 
    ;; (var         teal3)
@@ -119,12 +119,10 @@
 
   (
    ;; TODO:
-   ;; (highlight-quoted-quote   (:foreground orange1))
-   ;; (highlight-quoted-symbol  (:foreground type))
-   (highlight-quoted-symbol  (:foreground harlequin3))
+   (highlight-quoted-symbol  (:foreground num))
 
    (org-document-title     (:foreground orange3 :bold bold))
-   (org-document-info      (:foreground brown3))
+   ;; (org-document-info      (:foreground brown3))
 
    (org-level-1            (:foreground ultramarine4 :bold bold :height 1.1))
    (org-level-2            (:foreground teal1  :bold nil))
