@@ -118,15 +118,15 @@
    (ivy4          red3))
 
   (
-   ;; TODO:
    (highlight-quoted-symbol  (:foreground num))
 
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
 
-   (org-level-1            (:foreground ultramarine4 :bold bold :height 1.1))
-   (org-level-2            (:foreground teal1  :bold nil))
-   (org-level-3            (:foreground functions :bold nil))
+   ;; TODO:
+   (org-level-1            (:foreground keyword :bold bold :height 1.1))
+   (org-level-2            (:foreground functions  :bold nil))
+   (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground builtin :bold nil))
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2)))
