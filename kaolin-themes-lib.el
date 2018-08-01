@@ -952,9 +952,12 @@
    (ediff-odd-diff-C (:background bg4))
 
     ;; TODO Imenu list
-    (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
-    (imenu-list-entry-face-1 (:foreground tooltip-fg))
-    (imenu-list-entry-face-0 (:inherit 'font-lock-type-face))
+    ;; (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
+    (imenu-list-entry-face   (:inherit 'font-lock-keyword-name-face))
+    (imenu-list-entry-face-0 (:inherit 'font-lock-keyword-face :height 1.1))
+    (imenu-list-entry-face-1 (:inherit 'font-lock-function-name-face))
+    (imenu-list-entry-face-2 (:inherit 'font-lock-string-face))
+    (imenu-list-entry-face-3 (:inherit 'font-lock-type-face))
 
     ;; TODO Treemacs
     (treemacs-root-face (:foreground keyword :height 1.2 :underline nil))
