@@ -149,7 +149,7 @@
   (car (map-elt kaolin-palette name)))
 
 (defun kaolin-themes-get-hex (name)
-  "Return color value in kaolin-pallete by NAME"
+  "Return hex value of color from `kaolin-pallete' by NAME"
   (let ((color (kaolin-themes-get-color name)))
     (if (stringp color)
         color
@@ -157,25 +157,59 @@
 
 ;;;###autoload
 (defmacro kaolin-themes-name-to-rgb (name)
-  "TODO"
+  "Convert color from `kaolin-palette' by name to a list of normalized RGB components."
   `(color-name-to-rgb (kaolin-themes-get-hex ,name)))
 
 ;;;###autoload
-(defmacro kaolin-themes-color-complement (name)
-  "TODO"
+(defmacro kaolin-themes-complement (name)
+  "Return the color that is the complement of color with NAME in palette."
   `(color-complement (kaolin-themes-get-hex ,name)))
 
-(defalias 'kaolin-rgb-to-hex 'color-rgb-to-hex)
-(defalias 'kaolin-color 'kaolin-themes-get-hex)
+;;;###autoload
+(defmacro kaolin-themes-complement-hex (name)
+  "Return the color that is the complement of NAME, in hexadecimal format."
+  `(apply 'kaolin-rgb-to-hex (kaolin-themes-complement ,name)))
 
-;; TODO: add access to opt-palette
-;; TESTING
-(kaolin-themes-get-hex 'cyan1)
-(kaolin-color 'num)
+;;;###autoload
+(defmacro kaolin-themes-saturate-name (name percent)
+  "Make a color with NAME in `kaolin-palette' more saturated by PERCENT."
+  `(color-saturate-name (kaolin-themes-get-hex ,name) ,percent))
+
+;;;###autoload
+(defmacro kaolin-themes-desaturate-name (name percent)
+  "Make a color with NAME in `kaolin-palette' less saturated by PERCENT."
+  `(color-desaturate-name (kaolin-themes-get-hex ,name) ,percent))
+
+;;;###autoload
+(defmacro kaolin-themes-lighten-name (name percent)
+  "Make a color with NAME in `kaolin-palette' lighten by PERCENT."
+  `(color-lighten-name (kaolin-themes-get-hex ,name) ,percent))
+
+;;;###autoload
+(defmacro kaolin-themes-darken-name (name percent)
+  "Make a color with NAME in `kaolin-palette' darker by PERCENT."
+  `(color-lighten-name (kaolin-themes-get-hex ,name) (- ,percent)))
+
+(defalias 'kaolin-color          'kaolin-themes-get-hex)
+(defalias 'kaolin-complement     'kaolin-themes-complement)
+(defalias 'kaolin-complement-hex 'kaolin-themes-complement-hex)
+(defalias 'kaolin-rgb-to-hex     'color-rgb-to-hex)
+(defalias 'kaolin-rgb-to-hsv     'color-rgb-to-hsv)
+(defalias 'kaolin-hsl-to-rgb     'color-hsl-to-rgb)
+(defalias 'kaolin-rgb-to-hsl     'color-rgb-to-hsl)
+
+(defalias 'kaolin-saturate 'kaolin-themes-saturate-name)
+(defalias 'kaolin-saturate 'kaolin-themes-desaturate-name)
+(defalias 'kaolin-lighten  'kaolin-themes-lighten-name)
+(defalias 'kaolin-darken   'kaolin-themes-darken-name)
+
+;; TODO: kaolin-set-faces
 
 ;;;###autoload
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
-  "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
+  "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name.
+OPT-PALETTE and OPT-FACES specify optional extra palette and faces for a theme.
+BODY can evaluate ordinary elisp code"
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
          (kaolin-theme-palette (if opt-palette
                                    (kaolin-themes--merge-alist kaolin-palette opt-palette)
