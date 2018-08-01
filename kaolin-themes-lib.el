@@ -3,17 +3,17 @@
 
 ;;; Color order
 ;;
-;; color0 - almost pure/contrast >= 70 sat & > 70 val
+;; color0 - almost pure/contrast
 ;; color1 - regular
 ;; color2 - dark
-;; color3 - light/soft
+;; color3 - bright/soft
 ;; color4 - desaturated/faded/muted
 ;;
-;; color5 - midnight <= 50 sat & < 30 value
-;; color6 - very dark color 20-30 sat & val; see spring-green
-;; color7 - dark grayish sat ~20 & val 50+; adjust with gray3; see erin7
-;; color8 - light grayish; sat ~10-15 & val ~ 65+
-;; color9 - very light color hue 8-17 value ~90-95
+;; color5 - midnight
+;; color6 - very dark color
+;; color7 - dark grayish
+;; color8 - light grayish
+;; color9 - very light
 
 ;;; Color list
 ;;
@@ -470,12 +470,11 @@
     (comment     gray3)
     (comment-alt teal2)
 
-    ;; TODO:
     (kaolin-comment
       (pcase kaolin-themes-comments-style
         ('normal comment)
         ('color  comment-alt)
-        ('bright comment)))
+        ('bright (kaolin-themes-lighten-name 'comment 12))))
 
     (keyword     teal1)
     (second-key  comment)
@@ -980,7 +979,7 @@
     (popup-menu-selection-face (:background tooltip-hl-bg :foreground tooltip-hl-fg :bold bold))
     (popup-tip-face            (:background tooltip-hl-bg :foreground builtin :bold bold))
 
-    ;; Terminal
+    ;; TODO: Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground black1))
     (term-color-blue    (:foreground azure1))
