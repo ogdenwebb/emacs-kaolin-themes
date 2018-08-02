@@ -474,7 +474,7 @@
       (pcase kaolin-themes-comments-style
         ('normal comment)
         ('color  comment-alt)
-        ('bright (kaolin-themes-lighten-name 'comment 12))))
+        ('bright (kaolin-themes-lighten-name 'comment 12))
         ('dark   (kaolin-themes-darken-name 'comment 12))))
 
     (keyword     teal1)
