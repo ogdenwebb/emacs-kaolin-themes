@@ -107,8 +107,8 @@
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-comments-style 'normal
-  "Sets the style of comments: normal, alt(darker for dark theme and lighter for light themes) or colored."
-  :options '(normal bright color)
+  "Sets the style of comments: normal, bright or color."
+  :options '(normal bright dark color)
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-git-gutter-solid nil
