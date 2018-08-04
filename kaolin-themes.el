@@ -207,7 +207,36 @@
 (defalias 'kaolin-lighten  'kaolin-themes-lighten-name)
 (defalias 'kaolin-darken   'kaolin-themes-darken-name)
 
-;; TODO: kaolin-set-faces
+;; Taken from autothemer package
+(defun kaolin-themes--reduced-spec-to-facespec (display reduced-specs)
+  "Create a face spec for DISPLAY, with specs REDUCED-SPECS.
+E.g., (kaolin--spec-to-facespec '(min-colors 60)
+'(button (:underline t :foreground red)))
+-> `(button (((min-colors 60) (:underline ,t :foreground
+,red))))."
+  (let* ((face (elt reduced-specs 0))
+         (properties (elt reduced-specs 1))
+         (spec (kaolin-themes--demote-heads `(list (,display ,properties)))))
+    `(list ',face ,spec)))
+
+(defun kaolin-themes--demote-heads (expr)
+  "Demote every list head within EXPR by one element.
+E.g., (a (b c d) e (f g)) -> (list a (list b c d) e (list f g))."
+  (if (listp expr)
+      `(list ,@(mapcar (lambda (it) (if (and (listp it) (not (eq (car it) 'quote)))
+                                        (kaolin-themes--demote-heads it) it))
+                       expr))
+    expr))
+
+;; TODO: var for available display classes
+;; TODO: reduced specs -> N display specific faces
+
+;;;###autoload
+(defmacro kaolin-themes-set-faces (name &rest faces)
+  "Call `custom-themes-set-faces' for Kaolin NAME theme with reduced spec list of FACES."
+  `(custom-theme-set-faces
+    ,name
+    ,@(mapcar #'kaolin-themes--make-faces faces)))
 
 ;;;###autoload
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
