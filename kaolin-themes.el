@@ -152,10 +152,11 @@
   "Return color value in kaolin-pallete by NAME"
   (car (map-elt (if default-palette kaolin-palette kaolin-themes-current-palette) name)))
 
+;;;###autoload
 (defun kaolin-themes-get-hex (name &optional default-palette)
   "Return hex value of color from `kaolin-pallete' by NAME"
   (let ((color (kaolin-themes-get-color name default-palette)))
-    (if (stringp color)
+    (if (or (stringp color) (boundp color))
         color
       (kaolin-themes-get-hex color default-palette))))
 
@@ -207,6 +208,8 @@
 (defalias 'kaolin-lighten  'kaolin-themes-lighten-name)
 (defalias 'kaolin-darken   'kaolin-themes-darken-name)
 
+(defalias 'kaolin-themes--current-theme 'autothemer--current-theme)
+
 ;; Taken from autothemer package
 (defun kaolin-themes--reduced-spec-to-facespec (display reduced-specs)
   "Create a face spec for DISPLAY, with specs REDUCED-SPECS.
@@ -228,7 +231,37 @@ E.g., (a (b c d) e (f g)) -> (list a (list b c d) e (list f g))."
                        expr))
     expr))
 
-;; (autothemer--approximate-spec '(button (:underline t :foreground red1)) autothemer--current-theme)
+(defun kaolin-themes--approximate-spec (reduced-spec)
+  "Replace colors in REDUCED-SPEC by their closest approximations in THEME.
+Replace every expression in REDUCED-SPEC that passes
+`color-defined-p' by the closest approximation found in
+`kaolin-themes--current-theme'.  Also quote all face names and
+unbound symbols, such as `normal' or `demibold'."
+  (let* ((theme autothemer--current-theme)
+        (colors (autothemer--theme-colors theme))
+        (face (car reduced-spec))
+        (spec (cdr reduced-spec)))
+    `(,face ,@(--tree-map (cond ((and (stringp it) (color-defined-p it))
+                                 (autothemer--color-name
+                                  (autothemer--find-closest-color colors it)))
+                                ((stringp it) it)
+                                ((numberp it) it)
+                                ((facep it) `(quote ,it))
+                                ;; ((not (boundp it)) (kaolin-themes-get-hex it))
+                                ((not (null (kaolin-themes-get-color it))) (kaolin-themes-get-hex it))
+                                ((not (boundp it)) `(quote ,it))
+                                (t it))
+                          spec))))
+
+(defun kaolin-themes--make-faces (&rest faces))
+
+;; TODO: causes error
+(kaolin-themes-get-hex 'line-bg1)
+(kaolin-themes-get-hex 'kaolin-comment)
+
+(kaolin-themes--approximate-spec '(button (:underline t :foreground line-bg1)))
+(kaolin-themes--approximate-spec
+ '(:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
 ;; (color-defined-p (autothemer--color-value 'red1))
 
 ;; TODO: var for available display classes
