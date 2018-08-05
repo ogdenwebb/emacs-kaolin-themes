@@ -150,15 +150,20 @@
 ;;;###autoload
 (defun kaolin-themes-get-color (name &optional default-palette)
   "Return color value in kaolin-pallete by NAME"
-  (car (map-elt (if default-palette kaolin-palette kaolin-themes-current-palette) name)))
+  (let* ((palette (if default-palette kaolin-palette kaolin-themes-current-palette))
+        (value (car-safe (map-elt palette name))))
+      value))
+
 
 ;;;###autoload
 (defun kaolin-themes-get-hex (name &optional default-palette)
   "Return hex value of color from `kaolin-pallete' by NAME"
-  (let ((color (kaolin-themes-get-color name default-palette)))
-    (if (or (stringp color) (boundp color))
-        color
-      (kaolin-themes-get-hex color default-palette))))
+  (let ((value (kaolin-themes-get-color name default-palette)))
+      (cond ((listp value) (kaolin-themes-get-color value default-palette))
+            ((stringp value) value)
+            ((and (boundp value) (symbolp value)) (symbol-value value))
+            (t (kaolin-themes-get-hex value default-palette)))))
+
 
 ;;;###autoload
 (defmacro kaolin-themes-name-to-rgb (name &optional default-palette)
@@ -253,15 +258,16 @@ unbound symbols, such as `normal' or `demibold'."
                                 (t it))
                           spec))))
 
-(defun kaolin-themes--make-faces (&rest faces))
+;; (defun kaolin-themes--make-faces (&rest faces))
 
 ;; TODO: causes error
-(kaolin-themes-get-hex 'line-bg1)
-(kaolin-themes-get-hex 'kaolin-comment)
+;; (kaolin-themes-get-hex 'line-bg1)
+;; (kaolin-themes-get-hex 'hl-line)
+;; (kaolin-themes-get-hex 'kaolin-comment)
 
-(kaolin-themes--approximate-spec '(button (:underline t :foreground line-bg1)))
-(kaolin-themes--approximate-spec
- '(:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
+;; (kaolin-themes--approximate-spec '(button (:underline t :bold kaolin-themes-bold)))
+;; (kaolin-themes--approximate-spec
+;;  '(:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
 ;; (color-defined-p (autothemer--color-value 'red1))
 
 ;; TODO: var for available display classes
