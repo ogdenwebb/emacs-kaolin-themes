@@ -228,8 +228,14 @@ E.g., (a (b c d) e (f g)) -> (list a (list b c d) e (list f g))."
                        expr))
     expr))
 
+;; (autothemer--approximate-spec '(button (:underline t :foreground red1)) autothemer--current-theme)
+;; (color-defined-p (autothemer--color-value 'red1))
+
 ;; TODO: var for available display classes
 ;; TODO: reduced specs -> N display specific faces
+;; TODO: replace color var with hex values in kaolin-themes-set-faces
+;; TODO: or just set-faces (get-hex name)
+;; TODO: color-defined-p
 
 ;;;###autoload
 (defmacro kaolin-themes-set-faces (name &rest faces)
