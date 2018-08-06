@@ -122,8 +122,8 @@
    ;; (highlight-quoted-symbol  (:foreground type))
    (highlight-quoted-symbol  (:foreground harlequin3))
 
-   (org-level-1            (:foreground doc :bold bold :height 1.1))
-   (org-level-2            (:foreground teal1  :bold nil))
+   (org-level-1            (:foreground keyword :bold bold :height 1.1))
+   (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground violet4 :bold nil))
    (org-level-4            (:foreground vermilion4 :bold nil))
    (org-code               (:foreground teal1))
