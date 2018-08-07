@@ -117,9 +117,7 @@
    (ivy4          red3))
 
   (
-   ;; TODO:
-   ;; (highlight-quoted-quote   (:foreground orange1))
-   ;; (highlight-quoted-symbol  (:foreground type))
+   ;; Custom faces
    (highlight-quoted-symbol  (:foreground harlequin3))
 
    (org-level-1            (:foreground keyword :bold bold :height 1.1))

@@ -79,7 +79,7 @@
   :group 'faces)
 
 (defvar kaolin-themes-current-palette nil
-  "List with colors for current Kaolin theme")
+  "List with colors from current Kaolin theme.")
 
 (defcustom kaolin-themes-bold t
   "If nil, disable the bold style."
@@ -148,22 +148,38 @@
     res))
 
 ;;;###autoload
-(defun kaolin-themes-get-color (name &optional default-palette)
-  "Return color value in kaolin-pallete by NAME"
-  (let* ((palette (if default-palette kaolin-palette kaolin-themes-current-palette))
-        (value (car-safe (map-elt palette name))))
-      value))
+(defun kaolin-themes-palette-value-p (palette name)
+  "Check if palette contains value by key. Return nil if not."
+  (map-contains-key palette name))
 
+;;;###autoload
+;; TODO: support for display variable
+(defun kaolin-themes-palette-get (name palette)
+  "Return value in kaolin-pallete by NAME if defined, otherwise nil."
+  (when (and (mapp palette) (symbolp name))
+             (car-safe (map-elt palette name))))
+
+;;;###autoload
+(defun kaolin-themes-palette-names (palette)
+  (when (mapp palette)
+    (map-keys palette)))
+
+;;;###autoload
+(defmacro kaolin-themes-get-value (name &optional default-palette)
+  "Return final value"
+  (let* ((palette (if default-palette kaolin-palette kaolin-themes-current-palette))
+        (value (kaolin-themes-palette-get name palette)))
+    (when value
+      (cond ((listp value) (let)))
 
 ;;;###autoload
 (defun kaolin-themes-get-hex (name &optional default-palette)
   "Return hex value of color from `kaolin-pallete' by NAME"
   (let ((value (kaolin-themes-get-color name default-palette)))
-      (cond ((listp value) (kaolin-themes-get-color value default-palette))
+      (cond ((nested-alist-p value) (message "write func to replace nil values"))
             ((stringp value) value)
             ((and (boundp value) (symbolp value)) (symbol-value value))
             (t (kaolin-themes-get-hex value default-palette)))))
-
 
 ;;;###autoload
 (defmacro kaolin-themes-name-to-rgb (name &optional default-palette)
@@ -236,45 +252,13 @@ E.g., (a (b c d) e (f g)) -> (list a (list b c d) e (list f g))."
                        expr))
     expr))
 
-(defun kaolin-themes--approximate-spec (reduced-spec)
-  "Replace colors in REDUCED-SPEC by their closest approximations in THEME.
-Replace every expression in REDUCED-SPEC that passes
-`color-defined-p' by the closest approximation found in
-`kaolin-themes--current-theme'.  Also quote all face names and
-unbound symbols, such as `normal' or `demibold'."
-  (let* ((theme autothemer--current-theme)
-        (colors (autothemer--theme-colors theme))
-        (face (car reduced-spec))
-        (spec (cdr reduced-spec)))
-    `(,face ,@(--tree-map (cond ((and (stringp it) (color-defined-p it))
-                                 (autothemer--color-name
-                                  (autothemer--find-closest-color colors it)))
-                                ((stringp it) it)
-                                ((numberp it) it)
-                                ((facep it) `(quote ,it))
-                                ;; ((not (boundp it)) (kaolin-themes-get-hex it))
-                                ((not (null (kaolin-themes-get-color it))) (kaolin-themes-get-hex it))
-                                ((not (boundp it)) `(quote ,it))
-                                (t it))
-                          spec))))
-
 ;; (defun kaolin-themes--make-faces (&rest faces))
-
-;; TODO: causes error
-;; (kaolin-themes-get-hex 'line-bg1)
-;; (kaolin-themes-get-hex 'hl-line)
-;; (kaolin-themes-get-hex 'kaolin-comment)
 
 ;; (kaolin-themes--approximate-spec '(button (:underline t :bold kaolin-themes-bold)))
 ;; (kaolin-themes--approximate-spec
 ;;  '(:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
 ;; (color-defined-p (autothemer--color-value 'red1))
 
-;; TODO: var for available display classes
-;; TODO: reduced specs -> N display specific faces
-;; TODO: replace color var with hex values in kaolin-themes-set-faces
-;; TODO: or just set-faces (get-hex name)
-;; TODO: color-defined-p
 
 ;;;###autoload
 (defmacro kaolin-themes-set-faces (name &rest faces)
