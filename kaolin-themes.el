@@ -147,32 +147,32 @@
              do (map-put res (car el) (cdr el)))
     res))
 
-;;;###autoload
+(defun kaolin-themes--extract-let-block (palette n)
+  "Extract a variable definition block from PALETTE containing all color definitions corresponding to display type #N."
+  (cl-loop for row in palette
+           collect (list (car row) (elt row (1+ n)))))
+
 (defun kaolin-themes-palette-value-p (palette name)
   "Check if palette contains value by key. Return nil if not."
   (map-contains-key palette name))
 
-;;;###autoload
 ;; TODO: support for display variable
-(defun kaolin-themes-palette-get (name palette)
+(defun kaolin-themes-palette-get (name palette &optional display)
   "Return value in kaolin-pallete by NAME if defined, otherwise nil."
   (when (and (mapp palette) (symbolp name))
-             (car-safe (map-elt palette name))))
+    (map-elt palette name)))
 
-;;;###autoload
 (defun kaolin-themes-palette-names (palette)
   (when (mapp palette)
     (map-keys palette)))
 
-;;;###autoload
-(defmacro kaolin-themes-get-value (name &optional default-palette)
-  "Return final value"
-  (let* ((palette (if default-palette kaolin-palette kaolin-themes-current-palette))
-        (value (kaolin-themes-palette-get name palette)))
-    (when value
-      (cond ((listp value) (let)))
+;; (defmacro kaolin-themes-get-value (name &optional default-palette)
+;;   "Return final value"
+;;   (let* ((palette (if default-palette kaolin-palette kaolin-themes-current-palette))
+;;         (value (kaolin-themes-palette-get name palette)))
+;;     (when value
+;;       (cond ((listp value) (let)))
 
-;;;###autoload
 (defun kaolin-themes-get-hex (name &optional default-palette)
   "Return hex value of color from `kaolin-pallete' by NAME"
   (let ((value (kaolin-themes-get-color name default-palette)))
@@ -181,37 +181,30 @@
             ((and (boundp value) (symbolp value)) (symbol-value value))
             (t (kaolin-themes-get-hex value default-palette)))))
 
-;;;###autoload
 (defmacro kaolin-themes-name-to-rgb (name &optional default-palette)
   "Convert color from `kaolin-palette' by name to a list of normalized RGB components."
   `(color-name-to-rgb (kaolin-themes-get-hex ,name ,default-palette)))
 
-;;;###autoload
 (defmacro kaolin-themes-complement (name &optional default-palette)
   "Return the color that is the complement of color with NAME in palette."
   `(color-complement (kaolin-themes-get-hex ,name ,default-palette)))
 
-;;;###autoload
 (defmacro kaolin-themes-complement-hex (name &optional default-palette)
   "Return the color that is the complement of NAME, in hexadecimal format."
   `(apply 'kaolin-rgb-to-hex (kaolin-themes-complement ,name ,default-palette)))
 
-;;;###autoload
 (defmacro kaolin-themes-saturate-name (name percent &optional default-palette)
   "Make a color with NAME in `kaolin-palette' more saturated by PERCENT."
   `(color-saturate-name (kaolin-themes-get-hex ,name ,default-palette) ,percent))
 
-;;;###autoload
 (defmacro kaolin-themes-desaturate-name (name percent &optional default-palette)
   "Make a color with NAME in `kaolin-palette' less saturated by PERCENT."
   `(color-desaturate-name (kaolin-themes-get-hex ,name ,default-palette) ,percent))
 
-;;;###autoload
 (defmacro kaolin-themes-lighten-name (name percent &optional default-palette)
   "Make a color with NAME in `kaolin-palette' lighten by PERCENT."
   `(color-lighten-name (kaolin-themes-get-hex ,name ,default-palette) ,percent))
 
-;;;###autoload
 (defmacro kaolin-themes-darken-name (name percent &optional default-palette)
   "Make a color with NAME in `kaolin-palette' darker by PERCENT."
   `(color-lighten-name (kaolin-themes-get-hex ,name ,default-palette) (- ,percent)))
@@ -252,12 +245,28 @@ E.g., (a (b c d) e (f g)) -> (list a (list b c d) e (list f g))."
                        expr))
     expr))
 
-;; (defun kaolin-themes--make-faces (&rest faces))
+;; (defmacro kaolin-themes--make-faces (&rest faces)
+;;   (let* ((temp-colorname (make-symbol "colorname"))
+;;          (temp-color (make-symbol "color")))
+;;   `(let (,@(kaolin-themes--extract-let-block kaolin-themes-current-palette 0))
+;;     ,(cl-loop for face in faces
+;;              collect (kaolin-themes--reduced-spec-to-facespec t face))))
+;;     )
 
-;; (kaolin-themes--approximate-spec '(button (:underline t :bold kaolin-themes-bold)))
-;; (kaolin-themes--approximate-spec
-;;  '(:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
-;; (color-defined-p (autothemer--color-value 'red1))
+
+;; (kaolin-themes-set-faces
+;;  'kaolin-dark
+;;  '(font-lock-keyword-face (:foreground red3 :bold t)))
+
+;; (kaolin-themes--make-faces
+;;  '(font-lock-keyword-face (:foreground red3 :bold t)))
+
+;; (kaolin-themes--reduced-spec-to-facespec
+;;  t
+;;  '(font-lock-keyword-face (:foreground red3 :bold t)))
+
+;; => (list (quote font-lock-keyword-face) (list list (list t (list :foreground red3 :bold t))))
+
 
 
 ;;;###autoload
