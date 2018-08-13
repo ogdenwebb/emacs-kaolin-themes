@@ -686,7 +686,7 @@
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
-    (mode-line           (:box (:line-width 2 :color line-border) :background line-bg1 :foreground var :bold bold))
+    (mode-line           (:box (:line-width 2 :color line-border) :background line-bg1 :foreground line-color1 :bold bold))
     (mode-line-inactive  (:box (:line-width 2 :color line-border) :background line-bg1 :foreground gray9 :bold bold))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
@@ -703,6 +703,7 @@
     (telephone-line-evil-motion     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-motion))
     (telephone-line-evil-operator   (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-operator))
     (telephone-line-evil-emacs      (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-emacs))
+    (telephone-line-projectile      (:foreground prep))
 
     ;; Powerline
     ;; TODO: check it
@@ -963,6 +964,7 @@
     (treemacs-root-face (:foreground keyword :height 1.2 :underline nil))
     (treemacs-directory-face (:foreground functions))
     (treemacs-git-modified-face (:foreground diff-mod))
+    (treemacs-fringe-indicator-face (:foreground prep))
 
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))
