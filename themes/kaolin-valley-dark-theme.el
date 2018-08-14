@@ -16,6 +16,7 @@
    (cerulean4     "#47629E")
 
    ;; Color vars
+   ;; TODO: (??) make more bright
    (bg1 "#211D1D")
    (bg2 "#262121")
    (bg3 "#2E2828")
@@ -117,13 +118,17 @@
    (ivy4          red3))
 
   (
-   ;; Custom faces
-   (highlight-quoted-symbol  (:foreground harlequin3))
+   (highlight-quoted-symbol  (:foreground num))
 
+   (org-document-title     (:foreground orange3 :bold bold))
+   ;; (org-document-info      (:foreground brown3))
+
+   ;; TODO:
    (org-level-1            (:foreground keyword :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
-   (org-level-3            (:foreground violet4 :bold nil))
-   (org-level-4            (:foreground vermilion4 :bold nil))
+   (org-level-3            (:foreground str :bold nil))
+   (org-level-4            (:foreground builtin :bold nil))
+>>>>>>> master
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2)))
 

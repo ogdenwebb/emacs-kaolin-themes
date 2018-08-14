@@ -94,7 +94,7 @@
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-underline-wave nil
-  "When t, use the wave underline style instead of regular underline."
+  "When t, use the wave underline style to highlight warnings and error."
   :group 'kaolin-themes)
 
 
