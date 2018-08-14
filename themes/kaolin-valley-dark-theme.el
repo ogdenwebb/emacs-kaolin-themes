@@ -128,7 +128,6 @@
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground builtin :bold nil))
->>>>>>> master
    (org-code               (:foreground teal1))
    (org-verbatim           (:foreground orange2)))
 
