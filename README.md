@@ -28,13 +28,15 @@ All screenshots are available in the wiki on the following pages:
 To install the theme via package.el: `M-x package-install RET kaolin-themes RET`
 
 ## Quick start
+```emacs-lisp
 (require 'kaolin-themes)                                                
 (load-theme 'kaolin-dark t) 
 
 ;; Or if you have use-package installed
 (use-package kaolin-themes
     :config
-    (load-theme 'kaolin-dark t))   
+    (load-theme 'kaolin-dark t))  
+```
 
 # Configuration
 Information about configuring Kaolin theme is available in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki#configuration-example).
