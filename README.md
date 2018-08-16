@@ -25,7 +25,7 @@ All screenshots are available in the wiki on the following pages:
 
 # Installation
 ## MELPA
-To install the theme via package.el: `M-x package-install RET kaolin-themes RET`
+To install the Kaolin themes pack via package.el: `M-x package-install RET kaolin-themes RET`
 
 ## Quick start
 ```emacs-lisp
@@ -39,7 +39,7 @@ To install the theme via package.el: `M-x package-install RET kaolin-themes RET`
 ```
 
 # Configuration
-Information about configuring Kaolin theme is available in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki#configuration-example).
+Information about configuring Kaolin themes is available in [the project wiki](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki#configuration-example).
 
 # Advanced highlighting
 
