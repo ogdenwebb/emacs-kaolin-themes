@@ -118,7 +118,8 @@
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
-   (highlight-quoted-symbol  (:foreground var))
+   (highlight-quoted-quote  (:foreground builtin))
+   (highlight-quoted-symbol  (:foreground type))
 
    (org-document-title  (:foreground cerulean7 :bold bold))
    (org-document-info   (:foreground cerulean7))
