@@ -56,7 +56,7 @@
 
    (dim-buffer "#140E14")
    ;; TODO: ??) change
-   (hl         cyan0)
+   (hl         vermilion3)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    ;; TODO: (??) less bright
@@ -70,9 +70,9 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan0)
 
-   (ivy2 lime3)
-   (ivy3 vermilion3)
-   (ivy4 red3)
+   (ivy2 cerulean3)
+   (ivy3 red3)
+   (ivy4 violet1)
 
    (rb1 violet4)
    (rb2 teal4)
@@ -118,6 +118,7 @@
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
+   ;; TODO:
    (highlight-quoted-quote  (:foreground builtin))
    (highlight-quoted-symbol  (:foreground type))
 
