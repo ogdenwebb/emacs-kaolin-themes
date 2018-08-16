@@ -34,8 +34,8 @@ To install the Kaolin themes pack via package.el: `M-x package-install RET kaoli
 
 ;; Or if you have use-package installed
 (use-package kaolin-themes
-    :config
-    (load-theme 'kaolin-dark t))  
+  :config
+  (load-theme 'kaolin-dark t))  
 ```
 
 # Configuration
