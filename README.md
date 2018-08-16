@@ -14,11 +14,11 @@ Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large nu
 
 All screenshots are available in the wiki on the following pages:
 
- * [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - a dark jade variant inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
+* [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - a dark jade variant inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
 * [kaolin-aurora](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-aurora-theme) - Kaolin meets polar lights.
 * [kaolin-bubblegum](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-bubblegum-theme) - Kaolin colorful theme with dark blue background.
- * [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin-dark.
- * [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant
+* [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin-dark.
+* [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant
 * [kaolin-ocean](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-ocean-theme) - a dark blue variant.
 * [kaolin-galaxy](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-galaxy-theme) - bright theme based on one of the Sebastian Andaur arts.
 * [kaolin-valley-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-valley-dark-theme) - colorful Kaolin theme with brown background.
