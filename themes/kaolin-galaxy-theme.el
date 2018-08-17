@@ -22,7 +22,7 @@
    (spring-green1 "#6dd797")
    (ultramarine7  "#615B75")
 
-   ;;                             dark      bright
+   ;;                             dark      bright   fallback
    (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
    (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
    (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
@@ -34,6 +34,7 @@
 
    (keyword     cyan3)
    (second-key  ultramarine4 cerise4)
+   ;; TODO: teal0
    (builtin     teal1)
    ;; TODO:
    (functions   magenta3)
@@ -55,7 +56,7 @@
    (err         crimson0)
 
    (dim-buffer "#140E14")
-   ;; TODO: ??) change
+   ;; TODO: (??) change
    (hl         vermilion3)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)

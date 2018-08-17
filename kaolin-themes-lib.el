@@ -314,7 +314,7 @@
     (cyan9 "#D3EEEE")
 
     ;; Teal #00A89D
-    (teal0 "#0d948d")
+    (teal0 "#0D9C94")
     (teal1 "#4d9391")
     (teal2 "#1D5E5C")
     (teal3 "#49bdb0")
