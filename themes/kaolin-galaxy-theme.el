@@ -86,7 +86,7 @@
    (rb9 crimson3)
 
    (diff-add spring-green1)
-   (diff-mod violet3)
+   (diff-mod yellow3)
    (diff-rem red3)
 
    ;; Mode-line
