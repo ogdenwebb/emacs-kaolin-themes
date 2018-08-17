@@ -81,7 +81,7 @@
    (evil-operator     evil-normal)
    (evil-emacs        amber3)
 
-   (win-border    black3)
+   (win-border    bg3)
    (line-num-fg   magenta2 black4)
    ;; TOOD: or hl
    (line-num-hl   magenta3 gray9)

@@ -35,7 +35,7 @@
    (keyword     cyan3)
    (second-key  ultramarine4 cerise4)
    ;; TODO: teal0
-   (builtin     teal1)
+   (builtin     teal0)
    ;; TODO:
    (functions   magenta3)
    (var         amber3)
@@ -106,9 +106,9 @@
    (evil-operator     evil-normal)
    (evil-emacs        yellow3)
 
-   (win-border    black3)
+   (win-border    bg3)
    (line-num-fg   ultramarine7 black4)
-   (line-num-hl   hl)
+   (line-num-hl   capri3)
 
    (cursor        "#c3c8e0"))
 
