@@ -444,6 +444,7 @@
     (button orange8)
     (button-hl amber3)
 
+    ;; TODO:
     (tooltip-bg bg2)
     (tooltip-fg fg2)
     (tooltip-hl-bg brown2)
@@ -686,8 +687,10 @@
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
-    (mode-line           (:box (:line-width 2 :color line-border) :background line-bg1 :foreground line-color1 :bold bold))
-    (mode-line-inactive  (:box (:line-width 2 :color line-border) :background line-bg1 :foreground gray9 :bold bold))
+    (mode-line           (:background line-bg1 :foreground line-color1 :bold bold
+                                      :box (:line-width 2 :color line-border)))
+    (mode-line-inactive  (:background line-bg1 :foreground comment :bold bold
+                                      :box (:line-width 2 :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
     (mode-line-emphasis  (:foreground fg1))
@@ -706,14 +709,16 @@
     (telephone-line-projectile      (:foreground prep))
 
     ;; Powerline
-    ;; TODO: check it
-    (powerline-active1   (:inherit 'mode-line))
-    (powerline-active2   (:inherit 'mode-line))
-    (powerline-inactive1 (:inherit 'mode-line-inactive))
-    (powerline-inactive2 (:inherit 'mode-line-inactive))
+    (powerline-active0           (:background line-bg2 :foreground line-color1))
+    (powerline-active1           (:background line-bg2 :foreground line-color2))
+    (powerline-active2           (:background line-bg1 :foreground line-color2))
+    (powerline-inactive0         (:inherit 'mode-line-inactive))
+    (powerline-inactive1         (:inherit 'mode-line-inactive))
+    (powerline-inactive2         (:inherit 'mode-line-inactive))
 
-    ;; Spaceline
-    (spaceline-highlight-face (:foreground cyan3))
+    ;; ;; Spaceline
+    ;; TODO:
+    (spaceline-highlight-face (:background line-bg2 :foreground line-num-hl :bold bold))
 
     ;; Smart-mode-line
     (sml/line-number      (:foreground chartreuse1))
