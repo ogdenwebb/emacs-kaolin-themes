@@ -718,7 +718,7 @@
 
     ;; ;; Spaceline
     ;; TODO:
-    (spaceline-highlight-face (:background line-bg2 :foreground line-num-hl :bold bold))
+    (spaceline-highlight-face (:background line-bg2 :foreground hl :bold bold))
 
     ;; Smart-mode-line
     (sml/line-number      (:foreground chartreuse1))
