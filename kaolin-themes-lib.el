@@ -238,7 +238,8 @@
     ;; TODO adjust
     (ultramarine0 "#4618dc")
     (ultramarine1 "#5f3eca")
-    (ultramarine2 "#40249C")
+    ;; TODO:
+    (ultramarine2  "#6D6487")
     (ultramarine3 "#6d44eb")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
