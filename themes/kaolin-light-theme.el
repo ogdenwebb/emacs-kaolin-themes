@@ -56,7 +56,7 @@
    (err         crimson0)
 
    (dim-buffer white0)
-   (hl         aquamarine2)
+   (hl         green2)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
