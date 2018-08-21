@@ -277,7 +277,8 @@
     ;; Azure #007FFF
     (azure0 "#0e70d1")
     (azure1 "#3f7dba") ; old blue
-    (azure2 "#2a4661")
+    ;; (azure2 "#2a4661")
+    (azure2 "#3B6F87")
     (azure3 "#4ca6e8") ; old soft-blue
     (azure4 "#53859d") ; old moderate-blue
     (azure5 "#14191e")

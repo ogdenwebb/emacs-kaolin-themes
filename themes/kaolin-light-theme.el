@@ -18,6 +18,9 @@
    (cyan3         "#6facb3")
    (teal2         "#1D6B69")
    (spring-green2 "#317A56")
+   (vermilion3    "#E36B3F")
+   (aquamarine1   "#47ba99")
+   (azure4        "#4C7A90")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -34,20 +37,20 @@
 
    (keyword     teal2)
    (second-key  teal2)
-   (var         ultramarine4)
-   (const       ultramarine4)
-   (builtin     spring-green2)
-   ;; (builtin     aquamarine1)
+   (var         magenta4)
+   (const       magenta4)
+   (builtin     azure4)
+   (functions   azure4)
    (comment     azure8)
    (comment-alt lime7)
-   (functions   cyan2)
-   (str         brown1)
-   (str-alt     brown1)
+   ;; (str         brown1)
+   (str         erin2)
+   (str-alt     brown3)
    (doc         str-alt)
-   (type        vermilion4)
-   (num         red4)
+   (type        vermilion3)
+   (num         red1)
    (bool        num)
-   (prep        num)
+   (prep        ultramarine3)
    (warning     orange1)
    (err         red4)
 
@@ -56,8 +59,8 @@
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
-   (selection aquamarine1)
-   (pulse aquamarine1)
+   (selection  teal8)
+   (pulse      teal8)
 
    (done aquamarine1)
    (todo crimson0)
@@ -98,7 +101,7 @@
    (evil-emacs        amber3)
 
    (win-border    bg3)
-   (line-num-fg   chartreuse8)
+   (line-num-fg   chartreuse7)
    (line-num-hl   hl)
 
    (cursor        gray3)
@@ -110,8 +113,8 @@
 
   ((link                    (:foreground capri1 :underline underline))
 
-   ;; (highlight-quoted-quote  (:foreground keyword))
-   ;; (highlight-quoted-symbol (:foreground teal2))
+   (highlight-quoted-quote  (:foreground type))
+   (highlight-quoted-symbol (:foreground teal2))
 
    (org-level-1             (:foreground spring-green2 :bold bold :height 1.1))
    (org-level-2             (:foreground ultramarine4 :bold nil))
