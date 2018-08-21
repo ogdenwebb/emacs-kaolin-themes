@@ -21,6 +21,7 @@
    (vermilion3    "#E36B3F")
    (aquamarine1   "#47ba99")
    (azure4        "#4C7A90")
+   (ultramarine3  "#6D46E3")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -52,7 +53,7 @@
    (bool        num)
    (prep        ultramarine3)
    (warning     orange1)
-   (err         red4)
+   (err         crimson0)
 
    (dim-buffer white0)
    (hl         aquamarine2)
