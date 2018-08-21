@@ -21,6 +21,7 @@
    (vermilion3    "#E36B3F")
    (aquamarine1   "#47ba99")
    (azure4        "#4C7A90")
+   ;; TODO: less contrast
    (ultramarine3  "#6D46E3")
 
    ;; Color vars
@@ -56,6 +57,7 @@
    (err         crimson0)
 
    (dim-buffer white0)
+   ;; TODO:
    (hl         green2)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
@@ -108,14 +110,15 @@
    (cursor        gray3)
 
    (ivy1          gray9)
+   ;; TODO:
    (ivy2          capri1)
    (ivy3          orange0)
    (ivy4          red4))
 
   ((link                    (:foreground capri1 :underline underline))
 
-   (highlight-quoted-quote  (:foreground type))
-   (highlight-quoted-symbol (:foreground teal2))
+   (highlight-quoted-quote  (:foreground keyword))
+   (highlight-quoted-symbol (:foreground const))
 
    (org-level-1             (:foreground spring-green2 :bold bold :height 1.1))
    (org-level-2             (:foreground ultramarine4 :bold nil))
