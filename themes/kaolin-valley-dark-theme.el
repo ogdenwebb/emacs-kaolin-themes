@@ -129,8 +129,9 @@
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground builtin :bold nil))
-   (org-code               (:foreground teal1))
-   (org-verbatim           (:foreground orange2)))
+   (org-date               (:foreground aquamarine3 :underline underline))
+   (org-code               (:foreground num))
+   (org-verbatim           (:foreground orange1)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
