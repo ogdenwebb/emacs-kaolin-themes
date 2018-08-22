@@ -115,7 +115,7 @@
    (ivy3          orange0)
    (ivy4          red4))
 
-  ((link                    (:foreground capri1 :underline underline))
+  ((link                    (:foreground prep :underline underline))
 
    (highlight-quoted-quote  (:foreground keyword))
    (highlight-quoted-symbol (:foreground const))
