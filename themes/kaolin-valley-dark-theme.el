@@ -38,7 +38,7 @@
    (comment-alt teal2)
 
    (str         violet3)
-   (str-alt     magenta2)
+   (str-alt     cerise4)
    (doc         str-alt)
 
    (prep        vermilion3)

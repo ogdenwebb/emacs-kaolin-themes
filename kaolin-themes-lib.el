@@ -201,7 +201,8 @@
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
     (magenta1 "#cd5ccd")
-    (magenta2 "#563d56")
+    ;; (magenta2 "#563d56")
+    (magenta2 "#734073")
     (magenta3 "#cea2ca") ; light-puprle
     (magenta4 "#835d83") ; purple
     (magenta5 "#1a121a") ; old midnight-purple
