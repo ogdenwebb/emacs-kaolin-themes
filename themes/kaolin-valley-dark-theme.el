@@ -28,14 +28,8 @@
    (second-key  keyword)
    (builtin     aquamarine1)
 
-   ;; (var         teal3)
-   ;; (const       cyan3)
-   ;; (var         spring-green3)
-   ;; (const       harlequin3)
    (var         crimson3)
    (const       crimson3)
-   ;; TODO:
-   ;; (functions   crimson3)
    (functions   cyan3)
    (type        amber3)
 
@@ -43,14 +37,11 @@
    ;; TODO:
    (comment-alt teal2)
 
-   ;; (str         magenta3)
-   ;; (str-alt     violet4)
    (str         violet3)
-   (str-alt     ultramarine4)
+   (str-alt     magenta2)
    (doc         str-alt)
 
    (prep        vermilion3)
-   ;; TODO:
    (num         harlequin3)
    (bool        num)
    (warning     orange1)
