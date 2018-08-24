@@ -105,7 +105,7 @@
    (cursor        fg1)
 
    (ivy1          gray9)
-   (ivy2          purple3)
+   (ivy2          magenta1)
    (ivy3          yellow0)
    (ivy4          red3))
 
