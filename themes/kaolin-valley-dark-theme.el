@@ -38,6 +38,7 @@
    (comment-alt teal2)
 
    (str         violet3)
+   (str         magenta3)
    (str-alt     cerise4)
    (doc         str-alt)
 
@@ -48,7 +49,7 @@
    (err         red3)
 
    (dim-buffer white0)
-   (hl         azure3)
+   (hl         capri3)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  gray0)
@@ -105,7 +106,7 @@
    (cursor        fg1)
 
    (ivy1          gray9)
-   (ivy2          magenta1)
+   (ivy2          cerulean3)
    (ivy3          yellow0)
    (ivy4          red3))
 
