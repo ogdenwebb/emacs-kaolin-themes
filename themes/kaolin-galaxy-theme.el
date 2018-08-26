@@ -22,7 +22,7 @@
    (spring-green1 "#6dd797")
    (ultramarine7  "#615B75")
 
-   ;;                             dark      bright   fallback
+                               ;; dark      bright   terminal
    (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
    (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
    (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
@@ -33,10 +33,8 @@
    ;; (fg1 blue9)
 
    (keyword     cyan3)
-   (second-key  ultramarine4 cerise4)
-   ;; TODO: teal0
+   (second-key  keyword)
    (builtin     teal0)
-   ;; TODO:
    (functions   magenta3)
    (var         amber3)
    (const       orange3)
@@ -120,11 +118,11 @@
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
    ;; TODO:
-   (highlight-quoted-quote  (:foreground builtin))
+   (highlight-quoted-quote   (:foreground builtin))
    (highlight-quoted-symbol  (:foreground type))
 
-   (org-document-title  (:foreground cerulean7 :bold bold))
-   (org-document-info   (:foreground cerulean7))
+   (org-document-title  (:foreground amber3 :bold bold))
+   (org-document-info   (:foreground type))
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground erin3))
    (org-verbatim        (:foreground aquamarine3))
