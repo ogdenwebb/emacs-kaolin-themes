@@ -968,11 +968,15 @@
     (imenu-list-entry-face-2 (:inherit 'font-lock-string-face))
     (imenu-list-entry-face-3 (:inherit 'font-lock-type-face))
 
-    ;; TODO Treemacs
-    (treemacs-root-face (:foreground keyword :height 1.2 :underline nil))
-    (treemacs-directory-face (:foreground functions))
-    (treemacs-git-modified-face (:foreground diff-mod))
+    ;; Treemacs
+    (treemacs-root-face             (:foreground keyword :height 1.2 :underline nil))
+    (treemacs-directory-face        (:foreground functions))
+    (treemacs-git-modified-face     (:foreground diff-mod))
     (treemacs-fringe-indicator-face (:foreground prep))
+    (treemacs-tags-face             (:foreground fg1))
+    (treemacs-on-success-pulse-face (:background diff-bg-add :foreground bg1))
+    (treemacs-on-failure-pulse-face (:background err :foreground bg1))
+    (treemacs-term-node-face        (:foreground prep))
 
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))
@@ -1117,6 +1121,9 @@
     ;; Beacon-mode
     (beacon-fallback-background (:background pulse))
 
+    ;; Solaire mode
+    (solaire-default-face       (:background bg2))
+
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face (:foreground keyword))
 
@@ -1167,7 +1174,7 @@
     (avy-lead-face-1 (:background capri2 :foreground fg1))
     (avy-lead-face-2 (:background magenta2 :foreground fg1))
 
-    ;; Ivy & swiper
+    ;; Ivy
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
     (ivy-match-required-face     (:background nil :foreground err :bold nil))
     (ivy-subdir                  (:foreground keyword :bold bold))
@@ -1180,6 +1187,7 @@
     (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
 
+    ;; Swiper
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
     (swiper-match-face-3 (:background bg2 :foreground ivy3 :bold bold))
