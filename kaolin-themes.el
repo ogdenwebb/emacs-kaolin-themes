@@ -6,6 +6,7 @@
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
 ;; Version: 1.4.0
+;; Keywords: dark light teal blue violet purple brown theme faces
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -46,20 +47,20 @@
 ;;
 ;; (load-theme 'kaolin-dark)
 ;;
-;; -------  Custom theme settings  -------
+;; ;;  Custom theme settings
 ;;
-;;  ;; The following set to t by default
-;;  (setq kaolin-themes-bold t       ; If nil, disable the bold style.
-;;        kaolin-themes-italic t     ; If nil, disable the italic style.
-;;        kaolin-themes-underline t) ; If nil, disable the underline style.
+;; ;; The following set to t by default
+;; (setq kaolin-themes-bold t       ; If nil, disable the bold style.
+;;       kaolin-themes-italic t     ; If nil, disable the italic style.
+;;       kaolin-themes-underline t) ; If nil, disable the underline style.
 ;;
 ;; -------  Some extra theme features, disabled by default  -------
 ;;
-;;  ;; If t, use the wave underline style instead of regular underline.
-;;  (setq kaolin-themes-underline-wave t)
+;; ;; If t, use the wave underline style instead of regular underline.
+;; (setq kaolin-themes-underline-wave t)
 ;;
-;;  ;; When t, will display colored hl-line style
-;;  (setq kaolin-themes-hl-line-colored t)
+;; ;; When t, will display colored hl-line style
+;; (setq kaolin-themes-hl-line-colored t)
 ;;
 ;;
 ;;; Code:
