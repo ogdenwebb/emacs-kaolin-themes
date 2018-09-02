@@ -23,7 +23,8 @@
 
    (fg1 amber9)
 
-   (keyword     red3)
+   ;; (keyword     red3)
+   (keyword     crimson1)
    (second-key  keyword)
    (builtin     aquamarine1)
 
@@ -42,14 +43,14 @@
    (str-alt     cerise4)
    (doc         str-alt)
 
-   (prep        cyan1)
+   (prep        capri3)
    (num         amber3)
    (bool        num)
    (warning     orange1)
    (err         red3)
 
    (dim-buffer white0)
-   (hl         capri3)
+   (hl         amber0)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  gray0)
@@ -85,8 +86,6 @@
    (line-bg1          bg2)
    (line-bg2          bg3)
    (line-border       bg3)
-
-   (prompt aquamarine1)
 
    ;; Telephone-line
    (segment-active    gray2)
