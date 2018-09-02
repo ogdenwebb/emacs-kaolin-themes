@@ -47,19 +47,19 @@
 ;;
 ;; (load-theme 'kaolin-dark)
 ;;
-;; ;;  Custom theme settings
+;;  ;;  Custom theme settings
 ;;
-;; ;; The following set to t by default
+;;  ;; The following set to t by default
 ;; (setq kaolin-themes-bold t       ; If nil, disable the bold style.
 ;;       kaolin-themes-italic t     ; If nil, disable the italic style.
 ;;       kaolin-themes-underline t) ; If nil, disable the underline style.
 ;;
 ;; -------  Some extra theme features, disabled by default  -------
 ;;
-;; ;; If t, use the wave underline style instead of regular underline.
+;;  ;; If t, use the wave underline style instead of regular underline.
 ;; (setq kaolin-themes-underline-wave t)
 ;;
-;; ;; When t, will display colored hl-line style
+;;  ;; When t, will display colored hl-line style
 ;; (setq kaolin-themes-hl-line-colored t)
 ;;
 ;;

@@ -12,9 +12,12 @@
    (cyan3 "#62D2DB")
    (spring-green0 "#31E183")
    (magenta3 "#CE8EC8")
+   (capri5 "#181F23")
 
    (bg0 "#0C0D12")
    (bg1 cerulean5)
+   ;; TODO:
+   ;; (bg1 "#151A28")
    (bg2 "#191D26")
    (bg3 "#202430")
    (bg4 "#272C3A")
