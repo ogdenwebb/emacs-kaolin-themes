@@ -37,7 +37,6 @@
    ;; TODO:
    (comment-alt teal2)
 
-   (str         violet3)
    (str         magenta3)
    (str-alt     cerise4)
    (doc         str-alt)

@@ -324,7 +324,7 @@
     (teal4 "#80bcb6")
     (teal5 "#141e1d")
     (teal6 "#2E403F")
-    (teal7 "#688483")
+    (teal7 "#5F7A79")
     (teal8 "#a4bab9")
     (teal9 "#D3EEEC")
 
