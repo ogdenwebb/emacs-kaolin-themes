@@ -43,7 +43,7 @@
    (str-alt     cerise4)
    (doc         str-alt)
 
-   (prep        capri3)
+   (prep        vermilion3)
    (num         amber3)
    (bool        num)
    (warning     orange1)
@@ -119,7 +119,7 @@
    (org-level-1            (:foreground keyword :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
-   (org-level-4            (:foreground builtin :bold nil))
+   (org-level-4            (:foreground var :bold nil))
    (org-date               (:foreground aquamarine3 :underline underline))
    (org-code               (:foreground num))
    (org-verbatim           (:foreground orange1)))
