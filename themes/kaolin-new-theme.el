@@ -99,7 +99,7 @@
 
    (win-border    bg3)
    (line-num-fg   azure7)
-   (line-num-hl   amber3)
+   (line-num-hl   hl)
 
    (cursor        fg1)
 
@@ -116,14 +116,10 @@
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
 
-   ;; TODO:
    (org-level-1            (:foreground keyword :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
-   (org-level-4            (:foreground var :bold nil))
-   (org-date               (:foreground aquamarine3 :underline underline))
-   (org-code               (:foreground num))
-   (org-verbatim           (:foreground orange1)))
+   (org-level-4            (:foreground var :bold nil)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
