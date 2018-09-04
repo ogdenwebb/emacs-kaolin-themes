@@ -31,16 +31,16 @@
    (var         magenta3)
    (const       pink3)
    (functions   teal3)
-   (type        spring-green3)
+   ;; (type        spring-green3)
+   (type        ultramarine3)
+   ;; (type        azure3)
 
-   ;; TODO:
-   (comment     vermilion7)
-   ; TODO:
-   (comment-alt teal2)
+   (comment     azure7)
+   (comment-alt vermilion7)
 
    ;; (str         "#4ca6e8")
    (str         capri4)
-   (str-alt     cerise4)
+   (str-alt     azure4)
    (doc         str-alt)
 
    (prep        vermilion3)
@@ -99,7 +99,7 @@
    (evil-emacs        cyan3)
 
    (win-border    bg3)
-   (line-num-fg   vermilion7)
+   (line-num-fg   azure7)
    (line-num-hl   amber3)
 
    (cursor        fg1)
