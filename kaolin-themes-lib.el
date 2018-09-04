@@ -200,7 +200,8 @@
 
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
-    (magenta1 "#cd5ccd")
+    ;; (magenta1 "#cd5ccd")
+    (magenta1 "#D16BD1")
     ;; (magenta2 "#563d56")
     (magenta2 "#734073")
     (magenta3 "#cea2ca") ; light-puprle
@@ -241,7 +242,8 @@
     (ultramarine1 "#5f3eca")
     ;; TODO:
     (ultramarine2  "#6D6487")
-    (ultramarine3 "#6d44eb")
+    ;; (ultramarine3 "#6d44eb")
+    (ultramarine3 "#9A81EF")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
     ;; (ultramarine6 "#322E40")
