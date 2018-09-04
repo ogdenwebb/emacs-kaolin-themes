@@ -31,9 +31,8 @@
    (var         magenta3)
    (const       pink3)
    (functions   teal3)
-   ;; (type        spring-green3)
+   ;; TODO: mb swap with prep color
    (type        ultramarine3)
-   ;; (type        azure3)
 
    (comment     azure7)
    (comment-alt vermilion7)
@@ -104,12 +103,14 @@
 
    (cursor        fg1)
 
+   ;; TODO:
    (ivy1          gray9)
    (ivy2          cerulean3)
    (ivy3          yellow0)
    (ivy4          red3))
 
   (
+   (highlight-quoted-quote   (:foreground type))
    (highlight-quoted-symbol  (:foreground num))
 
    (org-document-title     (:foreground orange3 :bold bold))
