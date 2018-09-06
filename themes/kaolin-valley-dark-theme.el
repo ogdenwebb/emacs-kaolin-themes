@@ -65,12 +65,12 @@
 
    (rb1 teal1)
    (rb2 aquamarine1)
-   (rb3 brown4)
+   (rb3 violet4)
    (rb4 cyan1)
    (rb5 spring-green1)
    (rb6 amber3)
    (rb7 magenta3)
-   (rb8 ultramarine3)
+   (rb8 brown3)
    (rb9 crimson3)
 
    (diff-add spring-green3)
