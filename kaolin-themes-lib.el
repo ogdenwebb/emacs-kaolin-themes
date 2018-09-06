@@ -243,7 +243,7 @@
     ;; TODO:
     (ultramarine2  "#6D6487")
     ;; (ultramarine3 "#6d44eb")
-    (ultramarine3 "#9A81EF")
+    (ultramarine3 "#9C83F2")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
     ;; (ultramarine6 "#322E40")
@@ -348,7 +348,7 @@
     (spring-green1 "#51b884")
     (spring-green2 "#39855f") ; dark
     (spring-green3 "#65E6A7")
-    (spring-green4 "#597a6c") ; faded
+    (spring-green4 "#5D8272") ; faded
     (spring-green5 "#141E1A")
     (spring-green6 "#2E4038") ; old midnight
     (spring-green7 "#688476")

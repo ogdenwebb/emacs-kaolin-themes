@@ -22,29 +22,24 @@
 
    (fg1 amber9)
 
-   ;; (keyword     red3)
-   ;; (keyword     crimson1)
    (keyword     crimson1)
    (second-key  keyword)
-   ;; (builtin     cyan0)
    (builtin     cerulean4)
 
-   ;; (var         magenta3)
-   (var         magenta3)
-   (const       pink3)
-   ;; (functions   aquamarine3)
+   (var         pink3)
+   (const       cerise3)
    (functions   ultramarine3)
    ;; TODO: mb swap with prep color
-   ;; (type        ultramarine3)
    ;; (type        aquamarine3)
-   (type        spring-green3)
-   ;; (type        cyan0)
+   ;; (type        spring-green3)
+   (type        cyan0)
+   ;; (type        teal0)
 
    (comment     azure7)
    (comment-alt vermilion7)
 
    (str         capri4)
-   (str-alt     azure4)
+   (str-alt     spring-green4)
    (doc         str-alt)
 
    (prep        orange3)
