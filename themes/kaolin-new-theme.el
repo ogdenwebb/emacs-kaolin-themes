@@ -11,8 +11,6 @@
    ;; Colors
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
-   ;; (cerulean4     "#536a9d")
-   (cerulean4     "#47629E")
    (orange3       "#f5c791")
    (teal0         "#0E9E97")
 
@@ -25,19 +23,22 @@
    (fg1 amber9)
 
    ;; (keyword     red3)
+   ;; (keyword     crimson1)
    (keyword     crimson1)
    (second-key  keyword)
-   (builtin     spring-green3)
-   ;; (builtin     ultramarine3)
+   ;; (builtin     cyan0)
+   (builtin     cerulean4)
 
+   ;; (var         magenta3)
    (var         magenta3)
    (const       pink3)
-   (functions   aquamarine3)
-   ;; (functions   ultramarine3)
+   ;; (functions   aquamarine3)
+   (functions   ultramarine3)
    ;; TODO: mb swap with prep color
    ;; (type        ultramarine3)
    ;; (type        aquamarine3)
-   (type        cyan0)
+   (type        spring-green3)
+   ;; (type        cyan0)
 
    (comment     azure7)
    (comment-alt vermilion7)
@@ -114,8 +115,8 @@
    (ivy4          red3))
 
   (
-   (highlight-quoted-quote   (:foreground vermilion3))
-   (highlight-quoted-symbol  (:foreground orange3))
+   (highlight-quoted-quote   (:foreground orange3))
+   (highlight-quoted-symbol  (:foreground amber3))
 
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
