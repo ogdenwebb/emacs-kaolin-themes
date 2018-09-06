@@ -26,16 +26,15 @@
    (second-key  keyword)
    (builtin     cerulean4)
 
-   (var         pink3)
-   (const       cerise3)
+   ;; (var         pink3)
+   ;; (const       cerise3)
+   ;; (var         spring-green3)
+   ;; (const       green3)
    (var         aquamarine3)
-   (const       green3)
+   (const       cyan0)
    (functions   ultramarine3)
-   ;; TODO: mb swap with prep color
-   ;; (type        aquamarine3)
-   ;; (type        spring-green3)
    (type        cyan0)
-   ;; (type        teal0)
+   (type        pink3)
 
    (comment     azure7)
    (comment-alt vermilion7)
