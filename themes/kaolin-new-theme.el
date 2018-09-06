@@ -33,7 +33,7 @@
    (var         aquamarine3)
    (const       cyan0)
    (functions   ultramarine3)
-   (type        cyan0)
+   ;; (type        cyan0)
    (type        pink3)
 
    (comment     azure7)
@@ -64,15 +64,14 @@
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 
-    ;; TODO:
-   (rb1 teal1)
-   (rb2 aquamarine1)
-   (rb3 violet4)
-   (rb4 ultramarine4)
-   (rb5 vermilion4)
-   (rb6 brown3)
-   (rb7 capri4)
-   (rb8 magenta3)
+   (rb1 crimson3)
+   (rb2 pink3)
+   (rb3 orange3)
+   (rb4 aquamarine1)
+   (rb5 purple3)
+   (rb6 cyan0)
+   (rb7 spring-green3)
+   (rb8 ultramarine3)
    (rb9 yellow3)
 
    (diff-add spring-green3)
