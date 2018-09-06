@@ -28,6 +28,8 @@
 
    (var         pink3)
    (const       cerise3)
+   (var         aquamarine3)
+   (const       green3)
    (functions   ultramarine3)
    ;; TODO: mb swap with prep color
    ;; (type        aquamarine3)
