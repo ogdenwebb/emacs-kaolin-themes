@@ -63,16 +63,15 @@
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 
-    ;; TODO:
    (rb1 teal1)
    (rb2 aquamarine1)
-   (rb3 violet4)
-   (rb4 ultramarine4)
-   (rb5 vermilion4)
-   (rb6 brown3)
-   (rb7 capri4)
-   (rb8 magenta3)
-   (rb9 yellow3)
+   (rb3 brown4)
+   (rb4 cyan1)
+   (rb5 spring-green1)
+   (rb6 amber3)
+   (rb7 magenta3)
+   (rb8 ultramarine3)
+   (rb9 crimson3)
 
    (diff-add spring-green3)
    (diff-mod vermilion3)
