@@ -11,9 +11,10 @@
    ;; Colors
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
-   (orange0       "#d1832e")
    ;; (cerulean4     "#536a9d")
    (cerulean4     "#47629E")
+   (orange3       "#f5c791")
+   (teal0         "#0E9E97")
 
    ;; Color vars
    (bg1 black3)
@@ -26,23 +27,26 @@
    ;; (keyword     red3)
    (keyword     crimson1)
    (second-key  keyword)
-   (builtin     aquamarine1)
+   (builtin     spring-green3)
+   ;; (builtin     ultramarine3)
 
    (var         magenta3)
    (const       pink3)
-   (functions   teal3)
+   (functions   aquamarine3)
+   ;; (functions   ultramarine3)
    ;; TODO: mb swap with prep color
-   (type        ultramarine3)
+   ;; (type        ultramarine3)
+   ;; (type        aquamarine3)
+   (type        cyan0)
 
    (comment     azure7)
    (comment-alt vermilion7)
 
-   ;; (str         "#4ca6e8")
    (str         capri4)
    (str-alt     azure4)
    (doc         str-alt)
 
-   (prep        vermilion3)
+   (prep        orange3)
    (num         amber3)
    (bool        num)
    (warning     orange1)
@@ -110,16 +114,16 @@
    (ivy4          red3))
 
   (
-   (highlight-quoted-quote   (:foreground type))
-   (highlight-quoted-symbol  (:foreground num))
+   (highlight-quoted-quote   (:foreground vermilion3))
+   (highlight-quoted-symbol  (:foreground orange3))
 
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
 
-   (org-level-1            (:foreground keyword :bold bold :height 1.1))
+   (org-level-1            (:foreground var :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
-   (org-level-4            (:foreground var :bold nil)))
+   (org-level-4            (:foreground num :bold nil)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
