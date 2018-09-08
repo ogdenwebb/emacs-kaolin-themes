@@ -435,6 +435,7 @@
     (bg2  black2)
     (bg3  black3)
     (bg4  black4)
+    (pane bg0)
 
     (dim-buffer bg0)
 
@@ -696,7 +697,7 @@
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-color1 :bold bold
                                       :box (:line-width 2 :color line-border)))
-    (mode-line-inactive  (:background line-bg1 :foreground comment :bold bold
+    (mode-line-inactive  (:background line-bg1 :foreground fg4 :bold bold
                                       :box (:line-width 2 :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
@@ -704,7 +705,7 @@
 
     ;; Telephone-line
     (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground line-fg))
-    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
+    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground fg4))
     (telephone-line-evil            (:inherit 'mode-line))
     (telephone-line-evil-normal     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-normal))
     (telephone-line-evil-insert     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-insert))
@@ -713,7 +714,7 @@
     (telephone-line-evil-motion     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-motion))
     (telephone-line-evil-operator   (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-operator))
     (telephone-line-evil-emacs      (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-emacs))
-    (telephone-line-projectile      (:foreground prep))
+    (telephone-line-projectile      (:foreground type))
 
     ;; Powerline
     (powerline-active0           (:background line-bg2 :foreground line-color1))
@@ -1126,7 +1127,7 @@
     (beacon-fallback-background (:background pulse))
 
     ;; Solaire mode
-    (solaire-default-face       (:background bg2))
+    (solaire-default-face       (:background pane))
 
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face (:foreground keyword))
