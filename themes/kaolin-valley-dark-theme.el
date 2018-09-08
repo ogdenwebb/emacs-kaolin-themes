@@ -17,12 +17,12 @@
 
    ;; Color vars
    ;; TODO: (??) make more bright
+   (bg0 "#1C1616")
    (bg1 "#211D1D")
    ;; (bg1 "#211f1d")
    (bg2 "#262121")
    (bg3 "#2E2828")
    (bg4 "#352D2D")
-   (pane "#282020")
 
    (fg1 amber9)
 

@@ -26,14 +26,9 @@
    (second-key  keyword)
    (builtin     cerulean4)
 
-   ;; (var         pink3)
-   ;; (const       cerise3)
-   ;; (var         spring-green3)
-   ;; (const       green3)
    (var         aquamarine3)
-   (const       cyan0)
+   (const       teal0)
    (functions   ultramarine3)
-   ;; (type        cyan0)
    (type        pink3)
 
    (comment     azure7)
@@ -103,11 +98,10 @@
 
    (cursor        fg1)
 
-   ;; TODO:
    (ivy1          gray9)
    (ivy2          cerulean3)
    (ivy3          yellow0)
-   (ivy4          red3))
+   (ivy4          green3))
 
   (
    (highlight-quoted-quote   (:foreground orange3))

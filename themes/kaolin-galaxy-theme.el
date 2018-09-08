@@ -114,9 +114,6 @@
    ;; Custom theme set faces
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
-   (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
-
    ;; TODO:
    (highlight-quoted-quote   (:foreground builtin))
    (highlight-quoted-symbol  (:foreground type))
