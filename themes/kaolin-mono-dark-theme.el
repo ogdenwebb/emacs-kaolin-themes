@@ -7,11 +7,11 @@
 (define-kaolin-theme mono-dark "Almost monochrome dark green Kaolin theme."
   ;; Palette modification
   (
-   (bg0 "#0c120f")
-   (bg1 "#111915")
-   (bg2 "#16211C")
-   (bg3 "#1B2822")
-   (bg4 "#25352D")
+   (bg0 "#0c120f" black0)
+   (bg1 "#111915" black1)
+   (bg2 "#16211C" black2)
+   (bg3 "#1B2822" black3)
+   (bg4 "#25352D" black4)
 
    (fg0 "#f5f6f5")
    (fg1 "#e9eae7")
@@ -46,7 +46,7 @@
 
    (dim-buffer bg0)
    ;; TODO:
-   (hl-line    (if kaolin-themes-hl-line-colored brown6 bg3))
+   (hl-line    (if kaolin-themes-hl-line-colored brown6 bg3) "#af5f00")
    (hl-indent  bg4)
    (selection  bg4)
    (pulse      bg4)
@@ -131,6 +131,5 @@
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
-
 
 ;;; kaolin-mono-dark-theme.el ends here
