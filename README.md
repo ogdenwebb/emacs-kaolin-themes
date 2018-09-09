@@ -23,6 +23,23 @@ All screenshots are available in the wiki on the following pages:
 * [kaolin-galaxy](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-galaxy-theme) - bright theme based on one of the Sebastian Andaur arts.
 * [kaolin-valley-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-valley-dark-theme) - colorful Kaolin theme with brown background.
 
+### Further themes
+
+#### WIP
+
+These themes might be changed in the future.
+
+* **kaolin-valley-light** - light variant of kaolin-valley theme.
+* **kaolin-bubblegum** - colorful theme with dark blue background.
+* **kaolin-mono-dark** - almost monochrome dark green Kaolin theme.
+* Theme with dark gray background and syntax highlighting based on bright colors, such as crimson, pink, teal, amber and ultramarine. Very soon.
+
+### Planned
+
+* kaolin-mono-light - light variant of monochrome theme.
+
+###### p.s. Bold means that a theme was added to master.
+
 # Installation
 ## MELPA
 To install the Kaolin themes pack via package.el: `M-x package-install RET kaolin-themes RET`
