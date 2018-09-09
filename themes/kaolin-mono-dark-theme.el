@@ -7,11 +7,11 @@
 (define-kaolin-theme mono-dark "Almost monochrome dark green Kaolin theme."
   ;; Palette modification
   (
-   (bg0 "#0c120f" "color-232")
-   (bg1 "#111915" "color-233")
-   (bg2 "#16211C" "color-234")
-   (bg3 "#1B2822" "color-235")
-   (bg4 "#25352D" "color-236")
+   (bg0 "#0c120f" black0)
+   (bg1 "#111915" black1)
+   (bg2 "#16211C" black2)
+   (bg3 "#1B2822" black3)
+   (bg4 "#25352D" black4)
 
    (fg0 "#f5f6f5")
    (fg1 "#e9eae7")
