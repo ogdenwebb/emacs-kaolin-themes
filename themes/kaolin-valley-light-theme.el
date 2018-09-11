@@ -15,24 +15,21 @@
    (orange3       "#F3AE6C")
    ;; (cerulean4     "#536a9d")
    (cerulean4     "#47629E")
+   (ultramarine3 "#744DF7")
 
-   ;; (teal0 "#0d948d")
-   (teal0 "#10948D")
-   ;; (cyan3 "#2BC8CC")
-   ;; (cyan3 "#3CDADE")
-   (cyan3 "#48B9C7")
+   (teal0 "#0D7A75")
+   (cyan3 "#1EACBD")
    ;; (harlequin3 "#91f368")
+   (harlequin1  "#417E2A")
    (harlequin3 "#4CDE0D")
-   (crimson3 "#EF4F75")
-   ;; TODO: less satured, like dark theme.
+   (crimson3 "#EE4970")
    (amber3 "#F3CB41")
 
    ;; Color vars
-   (bg1 "#FDF9F5")
-   (bg2 "#F8F0E9")
-   ;; (bg2 "#F2EDE6")
-   (bg3 "#EEE6DE")
-   (bg4 "#E8E1DB")
+   (bg1 "#FAF2E9")
+   (bg2 "#F3E7D3")
+   (bg3 "#F0DFCA")
+   (bg4 "#EBD7BE")
 
    ;; TODO
    (fg1 black4)
@@ -45,26 +42,24 @@
    ;; (builtin     aquamarine1)
    (builtin     spring-green1)
 
-   (var         crimson3)
-   (const       crimson3)
+   (var         crimson0)
+   (const       crimson0)
    ;; TODO:
-   ;; (functions   crimson3)
-   (functions   cyan3)
-   (type       "#F3AE6C")
-   (type       orange3)
+   (functions   cyan0)
+   (type       orange0)
 
    (comment     brown8)
    (comment-alt teal7)
 
    ;; (str         magenta3)
    ;; (str-alt     violet4)
-   (str         violet3)
+   (str         ultramarine3)
    (str-alt     ultramarine4)
    (doc         str-alt)
 
-   (prep        vermilion3)
+   (prep        vermilion0)
    ;; TODO:
-   (num         harlequin1)
+   (num         green1)
    (bool        num)
    (warning     orange1)
    (err         red3)
@@ -128,7 +123,7 @@
    (cursor       gray3)
 
    (ivy1          gray9)
-   (ivy2          purple3)
+   (ivy2          cerise0)
    (ivy3          yellow0)
    (ivy4          red3))
 

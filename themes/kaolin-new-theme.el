@@ -20,8 +20,6 @@
    (bg3 gray0)
    (bg4 gray1)
 
-   (fg1 amber9)
-
    (keyword     crimson1)
    (second-key  keyword)
    (builtin     cerulean4)

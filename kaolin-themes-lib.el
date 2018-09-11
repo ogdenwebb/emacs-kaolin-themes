@@ -162,7 +162,7 @@
     (red9 "#EED3D7")
 
     ;; Crimson #FF003F
-    (crimson0 "#dc2e58")
+    (crimson0 "#D6224D")
     (crimson1 "#e55c7a")
     (crimson2 "#941b37")
     (crimson3 "#ef6787")    ; light-pink
