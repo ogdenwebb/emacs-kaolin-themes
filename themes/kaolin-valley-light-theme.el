@@ -13,17 +13,21 @@
    (aquamarine4   "#518270")
    (orange0       "#d1832e")
    (orange3       "#F3AE6C")
-   ;; (cerulean4     "#536a9d")
+   ;; (cerulean4  "#536a9d")
    (cerulean4     "#47629E")
-   (ultramarine3 "#744DF7")
+   (ultramarine3  "#744DF7")
 
-   (teal0 "#0D7A75")
-   (cyan3 "#1EACBD")
-   ;; (harlequin3 "#91f368")
-   (harlequin1  "#417E2A")
+   (azure1     "#0070CC")
+   (teal0      "#0D7A75")
+   (capri1     "#0D5D7A")
+   (harlequin1 "#417E2A")
    (harlequin3 "#4CDE0D")
-   (crimson3 "#EE4970")
-   (amber3 "#F3CB41")
+   (crimson3   "#EE4970")
+   (amber3     "#F3CB41")
+   (harlequin2 "#2C820D")
+   ;; (erin2      "#038217")
+   (erin2      "#18803A")
+   (lime2      "#5B7709")
 
    ;; Color vars
    (bg1 "#FAF2E9")
@@ -39,27 +43,24 @@
 
    (keyword     teal0)
    (second-key  keyword)
-   ;; (builtin     aquamarine1)
-   (builtin     spring-green1)
+   (builtin     erin2)
 
    (var         crimson0)
    (const       crimson0)
-   ;; TODO:
-   (functions   cyan0)
-   (type       orange0)
+   (functions   azure1)
+   ;; (functions   capri1)
+   (type        orange0)
 
    (comment     brown8)
    (comment-alt teal7)
 
-   ;; (str         magenta3)
-   ;; (str-alt     violet4)
    (str         ultramarine3)
    (str-alt     ultramarine4)
    (doc         str-alt)
 
    (prep        vermilion0)
    ;; TODO:
-   (num         green1)
+   (num         vermilion0)
    (bool        num)
    (warning     orange1)
    (err         red3)
@@ -69,9 +70,7 @@
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  white4)
-   ;; TODO:
-   (selection bg4)
-   ;; TODO:
+   (selection vermilion4)
    (pulse bg4)
 
    (todo red3)
@@ -130,7 +129,7 @@
   (
 
    ;; TODO:
-   (highlight-quoted-symbol  (:foreground chartreuse4))
+   (highlight-quoted-symbol  (:foreground builtin))
 
    ;; (org-level-1            (:foreground teal0 :bold bold :height 1.1))
    ;; (org-level-2            (:foreground violet4  :bold nil))
