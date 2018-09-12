@@ -162,7 +162,7 @@
     (red9 "#EED3D7")
 
     ;; Crimson #FF003F
-    (crimson0 "#dc2e58")
+    (crimson0 "#D6224D")
     (crimson1 "#e55c7a")
     (crimson2 "#941b37")
     (crimson3 "#ef6787")    ; light-pink
@@ -200,7 +200,8 @@
 
     ;; Magenta/Fuchsia #FF00FF
     (magenta0 "#c932c9")
-    (magenta1 "#cd5ccd")
+    ;; (magenta1 "#cd5ccd")
+    (magenta1 "#D16BD1")
     ;; (magenta2 "#563d56")
     (magenta2 "#734073")
     (magenta3 "#cea2ca") ; light-puprle
@@ -241,7 +242,8 @@
     (ultramarine1 "#5f3eca")
     ;; TODO:
     (ultramarine2  "#6D6487")
-    (ultramarine3 "#6d44eb")
+    ;; (ultramarine3 "#6d44eb")
+    (ultramarine3 "#9C83F2")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
     ;; (ultramarine6 "#322E40")
@@ -268,7 +270,8 @@
     (cerulean1 "#3f66ba")
     (cerulean2 "#2d4b8c")
     (cerulean3 "#4c7de8")
-    (cerulean4 "#536a9d")
+    ;; (cerulean4 "#536a9d")
+    (cerulean4 "#819fef")
     (cerulean5 "#14171e")
     (cerulean6 "#2E3340")
     (cerulean7 "#687184") ; old grayish-blue
@@ -324,7 +327,7 @@
     (teal4 "#80bcb6")
     (teal5 "#141e1d")
     (teal6 "#2E403F")
-    (teal7 "#688483")
+    (teal7 "#5F7A79")
     (teal8 "#a4bab9")
     (teal9 "#D3EEEC")
 
@@ -345,7 +348,7 @@
     (spring-green1 "#51b884")
     (spring-green2 "#39855f") ; dark
     (spring-green3 "#65E6A7")
-    (spring-green4 "#597a6c") ; faded
+    (spring-green4 "#5D8272") ; faded
     (spring-green5 "#141E1A")
     (spring-green6 "#2E4038") ; old midnight
     (spring-green7 "#688476")
@@ -368,7 +371,8 @@
     (green0 "#21e121")
     (green1 "#47cc47")
     (green2 "#18a318")
-    (green3 "#61e361")
+    ;; (green3 "#61e361")
+    (green3 "#7CF083")
     (green4 "#73c66c")
     ;; (green5 "#111C11")
     (green5 "#141e14")
@@ -431,6 +435,7 @@
     (bg2  black2)
     (bg3  black3)
     (bg4  black4)
+    (pane bg0)
 
     (dim-buffer bg0)
 
@@ -692,7 +697,7 @@
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-color1 :bold bold
                                       :box (:line-width 2 :color line-border)))
-    (mode-line-inactive  (:background line-bg1 :foreground comment :bold bold
+    (mode-line-inactive  (:background line-bg1 :foreground fg4 :bold bold
                                       :box (:line-width 2 :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
     (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
@@ -700,7 +705,7 @@
 
     ;; Telephone-line
     (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground line-fg))
-    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
+    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground fg4))
     (telephone-line-evil            (:inherit 'mode-line))
     (telephone-line-evil-normal     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-normal))
     (telephone-line-evil-insert     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-insert))
@@ -709,7 +714,7 @@
     (telephone-line-evil-motion     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-motion))
     (telephone-line-evil-operator   (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-operator))
     (telephone-line-evil-emacs      (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-emacs))
-    (telephone-line-projectile      (:foreground prep))
+    (telephone-line-projectile      (:foreground type))
 
     ;; Powerline
     (powerline-active0           (:background line-bg2 :foreground line-color1))
@@ -1122,7 +1127,7 @@
     (beacon-fallback-background (:background pulse))
 
     ;; Solaire mode
-    (solaire-default-face       (:background bg2))
+    (solaire-default-face       (:background pane))
 
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face (:foreground keyword))

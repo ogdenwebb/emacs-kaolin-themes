@@ -40,7 +40,6 @@
    (org-headline-done             (:foreground capri4  :bold nil))
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
    (org-checkbox-statistics-done  (:foreground spring-green3 :bold bold))
-   (org-hide                      (:foreground bg2))
    (org-agenda-structure          (:background bg3 :foreground fg3 :bold bold))
    (org-agenda-date               (:foreground amber3 :height 1.1))
    (org-agenda-date-today         (:foreground magenta4 :height 1.2 :bold bold))
