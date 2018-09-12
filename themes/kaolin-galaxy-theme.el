@@ -39,8 +39,8 @@
    (var         amber3)
    (const       orange3)
    (type        crimson3)
-   (prep        ultramarine3)
-   (num         ultramarine3)
+   (prep        capri3)
+   (num         capri3)
    (bool        num)
 
    ;; TODO: a bit more darken
