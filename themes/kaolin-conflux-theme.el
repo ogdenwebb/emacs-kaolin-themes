@@ -1,10 +1,11 @@
-;;; kaolin-TODO-theme.el --- TODO
+;;; kaolin-conflux-theme.el --- Colorful theme with dark gray background
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme new  "TODO"
+(define-kaolin-theme conflux
+  "Theme with dark gray background and syntax highlighting based on bright colors, such as crimson, pink, teal, amber and ultramarine."
 
   ;; Palette modification
   (
@@ -115,9 +116,9 @@
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
-     'kaolin-new
+     'kaolin-conflux
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
-;;; kaolin-TODO-theme.el ends here
+;;; kaolin-conflux-theme.el ends here
