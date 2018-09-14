@@ -114,6 +114,8 @@
    ;; Custom theme set faces
    (show-paren-mismatch (:background bg2 :foreground red0))
 
+   (org-level-3         (:foreground magenta3))
+
    ;; TODO:
    (highlight-quoted-quote   (:foreground builtin))
    (highlight-quoted-symbol  (:foreground type))
