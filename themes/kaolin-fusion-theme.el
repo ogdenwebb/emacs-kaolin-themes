@@ -48,7 +48,7 @@
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored capri6 bg3))
    (hl-indent  gray0)
-   ;; (selection capri6)
+   ;; TODO:
    (selection crimson6)
    ;; (selection ultramarine6)
    ;; TODO:

@@ -31,11 +31,12 @@
 ;;
 ;;  * kaolin-dark - a dark jade variant inspired by Sierra.vim.
 ;;  * kaolin-light - light variant of the original kaolin-dark.
-;;  * kaolin-eclipse - a dark purple variant.
-;;  * kaolin-ocean - dark blue variant.
-;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;  * kaolin-aurora - Kaolin meets polar lights.
 ;;  * kaolin-bubblegum - Kaolin colorful theme with dark blue background.
+;;  * kaolin-eclipse - a dark purple variant.
+;;  * kaolin-fusion - dark gray background and syntax based on bright colors.
+;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
+;;  * kaolin-ocean - dark blue variant.
 ;;  * kaolin-valley-dark - colorful Kaolin theme with brown background.
 ;;  * kaolin-valley-light - light version of kaolin-valley-dark theme.
 ;;  * kaolin-mono-dark - almost monochrome dark green Kaolin theme.
