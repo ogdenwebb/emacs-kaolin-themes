@@ -46,10 +46,11 @@
    (dim-buffer white0)
    (hl         amber0)
    ;; TODO: add colored
-   (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
+   (hl-line    (if kaolin-themes-hl-line-colored capri6 bg3))
    (hl-indent  gray0)
-   ;; TODO:
-   (selection bg4)
+   ;; (selection capri6)
+   (selection crimson6)
+   ;; (selection ultramarine6)
    ;; TODO:
    (pulse bg4)
 
