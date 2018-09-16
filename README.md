@@ -48,11 +48,14 @@ To install the Kaolin themes pack via package.el: `M-x package-install RET kaoli
 ```emacs-lisp
 (require 'kaolin-themes)
 (load-theme 'kaolin-dark t)
+;; Apply treemacs customization for Kaolin themes, requires the all-the-icons package.
+(kaolin-treemacs-theme)
 
 ;; Or if you have use-package installed
 (use-package kaolin-themes
   :config
-  (load-theme 'kaolin-dark t))
+  (load-theme 'kaolin-dark t)
+  (kaolin-treemacs-theme))
 ```
 
 # Configuration
