@@ -179,6 +179,11 @@
 
 
 ;;;###autoload
+(defun kaolin-treemacs-theme ()
+  "Enable kaolin-themes treemacs theme with all-the-icons package."
+  (require 'kaolin-themes-treemacs))
+
+;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (let* ((base (file-name-directory load-file-name))
          (dir (expand-file-name "themes/" base)))

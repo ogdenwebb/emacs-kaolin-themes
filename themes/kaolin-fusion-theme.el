@@ -20,6 +20,7 @@
    (bg2 black4)
    (bg3 gray0)
    (bg4 gray1)
+   (pane black4)
 
    (keyword     crimson1)
    (second-key  keyword)
