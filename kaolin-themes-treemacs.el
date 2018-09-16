@@ -15,7 +15,7 @@
   :group 'kaolin-treemacs)
 
 (defcustom kaolin-themes-treemacs-icons t
-  "Use predifined icons for Kaolin themes from the all-the-icons package."
+  "Use predefined icons for Kaolin themes from the all-the-icons package."
   :type 'boolean
   :group 'kaolin-treemacs)
 
