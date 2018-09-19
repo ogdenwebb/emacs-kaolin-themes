@@ -45,8 +45,16 @@
 ;; -------  Configuration example  -------
 ;;
 ;;  (require 'kaolin-themes)
-;;
 ;;  (load-theme 'kaolin-dark)
+;;
+;;  ;; Apply treemacs customization for Kaolin themes, requires the all-the-icons package.
+;;  (kaolin-treemacs-theme)
+
+;;  ;; Or if you have use-package installed
+;;  (use-package kaolin-themes
+;;    :config
+;;    (load-theme 'kaolin-dark t)
+;;    (kaolin-treemacs-theme))
 ;;
 ;;  ;;  Custom theme settings
 ;;
