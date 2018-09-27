@@ -116,8 +116,7 @@
 
    (org-level-3         (:foreground magenta3))
 
-   ;; TODO:
-   (highlight-quoted-quote   (:foreground builtin))
+   (highlight-quoted-quote   (:foreground functions))
    (highlight-quoted-symbol  (:foreground type))
 
    (org-document-title  (:foreground amber3 :bold bold))
