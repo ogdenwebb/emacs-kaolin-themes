@@ -28,7 +28,7 @@
 
    (azure1     "#0070CC")
    (teal0      "#0D7A75")
-   (capri1     "#0D5D7A")
+   (capri1     "#0F79BF")
    (harlequin1 "#417E2A")
    (harlequin3 "#4CDE0D")
    (crimson3   "#EE4970")
@@ -56,8 +56,7 @@
 
    (var         crimson0)
    (const       crimson0)
-   (functions   azure1)
-   ;; (functions   capri1)
+   (functions   capri1)
    (type        orange0)
 
    (comment     brown8)
