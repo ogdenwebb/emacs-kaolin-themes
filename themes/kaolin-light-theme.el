@@ -4,6 +4,15 @@
 ;;; Code:
 (require 'kaolin-themes)
 
+(defgroup kaolin-light nil
+  "Kaolin light theme options."
+  :group 'kaolin-themes)
+
+(defcustom kaolin-light-alt-bg nil
+  "Use more pure white background color."
+  :type 'boolean
+  :group 'kaolin-themes)
+
 (define-kaolin-theme light  "Light Kaolin theme variant."
 
   ;; Palette modification
@@ -26,10 +35,10 @@
 
    ;; Color vars
    (bg0 "#f5f6f5")
-   (bg1 "#EDEEEB")
-   (bg2 "#DFE1DC")
-   (bg3 "#D1D4CD")
-   (bg4 "#C8CCC3")
+   (bg1 (if kaolin-light-alt-bg "#FBFBFB" "#EDEEEB"))
+   (bg2 (if kaolin-light-alt-bg white0 "#DFE1DC"))
+   (bg3 (if kaolin-light-alt-bg white1 "#D1D4CD"))
+   (bg4 (if kaolin-light-alt-bg white2 "#C8CCC3"))
 
    (fg1 gray1)
    (fg2 gray2)
