@@ -11,7 +11,7 @@
 (defcustom kaolin-valley-light-alt-bg nil
   "Use white background color."
   :type 'boolean
-  :group 'kaolin-themes)
+  :group 'kaolin-valley-light)
 
 (define-kaolin-theme valley-light  "Light variant of kaolin-valley-dark theme."
 

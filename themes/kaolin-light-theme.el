@@ -11,7 +11,7 @@
 (defcustom kaolin-light-alt-bg nil
   "Use more pure white background color."
   :type 'boolean
-  :group 'kaolin-themes)
+  :group 'kaolin-light)
 
 (define-kaolin-theme light  "Light Kaolin theme variant."
 
