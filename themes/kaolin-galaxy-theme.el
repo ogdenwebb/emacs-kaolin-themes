@@ -40,6 +40,7 @@
    (const       orange3)
    (type        crimson3)
    (prep        capri3)
+   ;; TODO: change to type or str color
    (num         capri3)
    (bool        num)
 

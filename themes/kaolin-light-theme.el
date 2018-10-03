@@ -26,10 +26,10 @@
 
    ;; Color vars
    (bg0 "#f5f6f5")
-   (bg1 "#e9eae7")
-   (bg2 "#dcded9")
-   (bg3 "#cfd2cb")
-   (bg4 "#c5c9c0")
+   (bg1 "#EDEEEB")
+   (bg2 "#DFE1DC")
+   (bg3 "#D1D4CD")
+   (bg4 "#C8CCC3")
 
    (fg1 gray1)
    (fg2 gray2)
