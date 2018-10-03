@@ -62,7 +62,7 @@
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
    (hl-indent  gray9)
-   (selection  teal8)
+   (selection  azure9)
    (pulse      teal8)
 
    (done aquamarine1)
@@ -104,7 +104,7 @@
    (evil-emacs        amber3)
 
    (win-border    bg3)
-   (line-num-fg   chartreuse7)
+   (line-num-fg   azure8)
    (line-num-hl   hl)
 
    (cursor        gray3)
