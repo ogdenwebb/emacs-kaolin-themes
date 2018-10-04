@@ -57,6 +57,7 @@
    (var         crimson0)
    (const       crimson0)
    (functions   capri1)
+   (functions   capri1)
    (type        orange0)
 
    (comment     brown8)

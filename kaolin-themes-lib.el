@@ -23,33 +23,33 @@
 ;; Gray #CED8D9 - 189
 ;; White #FDFDFF - 240
 ;;
-;; TODO: (??) change strict colors such as erin
-;; Yellow #FFFF00 - 60
-;; Amber #FFBF00 - 43
-;; Orange #FF7F00 - 36
-;; Vermilion #FF3F00 - 17
+;; Colors:
+;; Red #FF0000 - 358-360
 ;; Brown #A33C28 - 6
-;; Red #FF0000 - 358
-;; Crimson #FF003F - 347
-;; Pink/rose #FF007F - 335
-;; Cerise #FF00BF - 315
-;; Magenta/Fuchsia #FF00FF - 300
-;; Purple #BF00FF - 279
-;; Violet #7F00FF - 270
-;; Ultramarine #3F00FF - 254
-;; Blue #0000FF - 238
-;; Cerulean #003FFF - 221
+;; Vermilion #FF3F00 - 17
+;; Orange #FF7F00 - 36
+;; Amber #FFBF00 - 43
+;; Yellow #FFFF00 - 60
+;; Lime #BFFF00 - 75
+;; Chartreuse #7FFF00 - 86
+;; Harlequin #3FFF00 - 104
+;; Green #00FF00 - 120
+;; Erin #00FF3F - 135
+;; Spring-green #00FF7F - 150
+;; Aquamarine #00FFBF - 163
+;; Teal #00A89D - 178
+;; Cyan #00FFFF - 182
 ;; Azure/Sky Blue #007FFF - 210
 ;; Capri/Deep Sky Blue #00BFFF - 201
-;; Cyan #00FFFF - 182
-;; Teal #00A89D - 178
-;; Aquamarine #00FFBF - 163
-;; Spring-green #00FF7F - 150
-;; Erin #00FF3F - 135
-;; Green #00FF00 - 120
-;; Harlequin #3FFF00 - 104
-;; Chartreuse #7FFF00 - 86
-;; Lime #BFFF00 - 75
+;; Cerulean #003FFF - 221
+;; Blue #0000FF - 238
+;; Ultramarine #3F00FF - 254
+;; Violet #7F00FF - 270
+;; Purple #BF00FF - 279
+;; Magenta/Fuchsia #FF00FF - 300
+;; Cerise #FF00BF - 315
+;; Pink/rose #FF007F - 335
+;; Crimson #FF003F - 347
 
 ;;; Code:
 (defconst kaolin-palette
@@ -695,12 +695,12 @@
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
-    (mode-line           (:background line-bg1 :foreground line-color1 :bold bold
+    (mode-line           (:background line-bg1 :foreground line-color1 :bold nil
                                       :box (:line-width 2 :color line-border)))
     (mode-line-inactive  (:background line-bg1 :foreground fg4 :bold bold
                                       :box (:line-width 2 :color line-border)))
-    (mode-line-buffer-id (:background nil :foreground line-color2 :bold bold))
-    (mode-line-highlight (:foreground line-color2 :box nil :bold bold))
+    (mode-line-buffer-id (:background nil :foreground line-color2 :bold nil))
+    (mode-line-highlight (:foreground line-color2 :box nil :bold nil))
     (mode-line-emphasis  (:foreground fg1))
 
     ;; Telephone-line
@@ -726,7 +726,7 @@
 
     ;; ;; Spaceline
     ;; TODO:
-    (spaceline-highlight-face (:background line-bg2 :foreground hl :bold bold))
+    (spaceline-highlight-face (:background line-bg2 :foreground hl :bold nil))
 
     ;; Smart-mode-line
     (sml/line-number      (:foreground chartreuse1))
@@ -735,7 +735,7 @@
     (sml/filename         (:foreground teal1))
     (sml/charging         (:foreground teal1))
     (sml/discharging      (:foreground red1))
-    (sml/modified         (:foreground spring-green1 :bold bold))
+    (sml/modified         (:foreground spring-green1))
     (sml/outside-modified (:background red0 :foreground fg1))
     (sml/prefix           (:foreground line-fg))
     (sml/read-only        (:foreground orange1))
