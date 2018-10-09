@@ -7,7 +7,6 @@
 (define-kaolin-theme aurora "Kaolin meets polar lights."
   ;; Palette modification
   (
-   (teal0 "#0E9E97")
    (aquamarine3 "#63E8C1")
    (cyan3 "#62D2DB")
    (spring-green0 "#31E183")

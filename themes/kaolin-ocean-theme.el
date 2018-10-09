@@ -12,15 +12,15 @@
    (bg4 "#32324a" black4)
 
    (azure2 "#325074")
+   (blue1  "#4D4DD9")
 
-
-   (keyword     azure4)
+   (keyword     blue1)
    ;; TODO: a bit more bright
    (second-key  bg4 cerise4)
-   (builtin     capri4)
+   (builtin     capri3)
    (functions   builtin)
-   (var         violet4)
-   (const       cerise4)
+   (var         ultramarine3)
+   (const       violet4)
    (type        cyan1)
    (num         pink1)
    (bool        num)
@@ -89,6 +89,9 @@
   (
    (link                (:foreground cyan1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
+
+   (highlight-quoted-quote   (:foreground const))
+   (highlight-quoted-symbol  (:foreground num))
 
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground spring-green1))

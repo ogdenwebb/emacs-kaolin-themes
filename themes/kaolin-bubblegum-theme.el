@@ -7,7 +7,6 @@
 (define-kaolin-theme bubblegum "Kaolin colorful theme with dark blue background."
   ;; Palette modification
   (
-   (teal0 "#0E9E97")
    (aquamarine3 "#63E8C1")
    (cyan3 "#62D2DB")
    (spring-green0 "#31E183")

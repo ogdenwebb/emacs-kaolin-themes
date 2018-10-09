@@ -13,7 +13,6 @@
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
-   (teal0         "#0E9E97")
 
    ;; Color vars
    (bg1 black3)
