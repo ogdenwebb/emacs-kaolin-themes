@@ -105,13 +105,11 @@
    (diff-rem red3)
 
     ;; Mode-line
-   (line-fg           gray9)
+   (line-fg           fg4)
    (line-color2       brown4)
    (line-bg1          bg2)
    (line-bg2          bg3)
    (line-border       bg3)
-
-   (prompt aquamarine1)
 
    ;; Telephone-line
    (segment-active    gray2)
