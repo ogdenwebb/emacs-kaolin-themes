@@ -897,6 +897,16 @@
     (font-latex-match-reference-keywords (:foreground const))
     (font-latex-match-variable-keywords  (:foreground var))
 
+    ;; Rst-mode
+    (rst-adornment (:foreground comment))
+    (rst-block     (:foreground functions))
+    (rst-level-1   (:foreground keyword))
+    (rst-level-2   (:foreground builtin))
+    (rst-level-3   (:foreground num))
+    (rst-level-4   (:foreground const))
+    (rst-level-5   (:foreground type))
+    (rst-level-6   (:foreground keyword))
+
     ;; Latex/Auctex
     (font-latex-warning-face      (:inherit 'warning))
     (font-latex-string-face       (:inherit 'font-lock-string-face))

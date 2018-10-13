@@ -76,16 +76,6 @@
    (aw-leading-char-face (:foreground pink1 :bold bold))
    (aw-background-face   (:foreground bg4 :bold bold))
 
-   ;; Rst-mode
-   (rst-adornment (:foreground spring-green4))
-   (rst-block     (:foreground cyan3))
-   (rst-level-1   (:foreground purple4))
-   (rst-level-2   (:foreground teal1))
-   (rst-level-3   (:foreground capri4))
-   (rst-level-4   (:foreground purple4))
-   (rst-level-5   (:foreground teal1))
-   (rst-level-6   (:foreground capri4))
-
    ;; Vimish-fold
    (vimish-fold-overlay (:background bg2 :foreground comment))
    (vimish-fold-fringe  (:background nil :foreground spring-green4))
