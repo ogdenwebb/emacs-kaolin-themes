@@ -25,7 +25,7 @@
    (builtin     violet4)
    (second-key  teal0)
 
-   (functions   aquamarine3)
+   (functions   cyan0)
    (const       teal0)
    (var         spring-green0)
    (type        cyan3)

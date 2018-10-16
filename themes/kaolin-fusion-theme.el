@@ -15,6 +15,7 @@
    (orange3       "#f5c791")
 
    ;; Color vars
+   ;; TODO: maybe capri5 as bg, at least as alt-bg
    (bg1 black3)
    (bg2 black4)
    (bg3 gray0)
