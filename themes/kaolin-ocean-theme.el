@@ -11,9 +11,6 @@
    (bg3 "#28283a" black3)
    (bg4 "#32324a" black4)
 
-   (azure2 "#325074")
-   (blue1  "#4D4DD9")
-
    (keyword     azure1)
    ;; (keyword     capri1)
    ;; TODO: a bit more bright
@@ -21,11 +18,11 @@
    (builtin     capri3)
    (functions   builtin)
    (var         ultramarine3)
-   (const       violet4)
+   (const       magenta3)
    (type        cyan1)
+   (prep        pink1)
    (num         pink1)
    (bool        num)
-   (prep        violet1)
 
    (comment     gray2)
    (comment-alt "#43436E")
@@ -36,7 +33,7 @@
    (err         red1)
 
    (dim-buffer "#0F0F17")
-   (hl         cyan0)
+   (hl         aquamarine0)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
    (hl-indent  bg4)
    (selection  bg4)
@@ -61,9 +58,9 @@
    (rb8 azure2)
    (rb9 azure3)
 
-   (diff-add aquamarine4)
-   (diff-mod magenta4)
-   (diff-rem red4)
+   (diff-add spring-green1)
+   (diff-mod orange1)
+   (diff-rem red3)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -91,8 +88,8 @@
    (link                (:foreground cyan1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (highlight-quoted-quote   (:foreground const))
-   (highlight-quoted-symbol  (:foreground num))
+   (highlight-quoted-quote   (:foreground functions))
+   (highlight-quoted-symbol  (:foreground type))
 
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground spring-green1))

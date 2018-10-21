@@ -284,6 +284,8 @@
     (azure1 "#3B84CC") ; old blue
     ;; (azure2 "#2a4661")
     (azure2 "#3B6F87")
+    ;; TODO:
+    ;; (azure2 "#325074")
     (azure3 "#4ca6e8") ; old soft-blue
     (azure4 "#53859d") ; old moderate-blue
     (azure5 "#14191e")

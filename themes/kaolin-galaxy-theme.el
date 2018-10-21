@@ -16,7 +16,6 @@
 (define-kaolin-theme galaxy "Bright theme based on one of the Sebastian Andaur arts."
   ;; Palette modification
   (
-   (azure2        "#232c35")
    (azure1        "#2a57cc")
    (chartreuse1   "#73c66c")
    (spring-green1 "#6dd797")
