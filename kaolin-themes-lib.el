@@ -932,8 +932,8 @@
 
     ;; Rainbow delimeters
     (show-paren-match (:background nil :foreground orange1 :bold bold))
-
     (show-paren-mismatch (:background red2 :foreground bg2))
+
     (rainbow-delimiters-mismatched-face (:background red2 :foreground err))
     (rainbow-delimiters-unmatched-face (:inherit 'rainbow-delimiters-mismatched-face))
     (rainbow-delimiters-base-face    (:foreground rb1))
@@ -997,6 +997,10 @@
     (imenu-list-entry-face-1 (:inherit 'font-lock-function-name-face))
     (imenu-list-entry-face-2 (:inherit 'font-lock-string-face))
     (imenu-list-entry-face-3 (:inherit 'font-lock-type-face))
+    (imenu-list-entry-subalist-face-0 (:inherit 'imenu-list-entry-face-0 :bold bold))
+    (imenu-list-entry-subalist-face-1 (:inherit 'imenu-list-entry-face-1 :bold bold))
+    (imenu-list-entry-subalist-face-2 (:inherit 'imenu-list-entry-face-2 :bold bold))
+    (imenu-list-entry-subalist-face-3 (:inherit 'imenu-list-entry-face-3 :bold bold))
 
     ;; Treemacs
     (treemacs-root-face             (:foreground keyword :height 1.2 :underline nil))
