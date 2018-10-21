@@ -14,7 +14,8 @@
    (azure2 "#325074")
    (blue1  "#4D4DD9")
 
-   (keyword     blue1)
+   (keyword     azure1)
+   ;; (keyword     capri1)
    ;; TODO: a bit more bright
    (second-key  bg4 cerise4)
    (builtin     capri3)
