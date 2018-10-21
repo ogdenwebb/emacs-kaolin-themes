@@ -80,7 +80,7 @@
 
    (win-border    bg3)
    (line-num-fg   bg4)
-   (line-num-hl   blue8 gray9)
+   (line-num-hl   keyword)
    (cursor        "#c3c8e0"))
 
   ;; Custom theme set faces
