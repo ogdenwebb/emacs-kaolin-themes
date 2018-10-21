@@ -954,6 +954,18 @@
     (diff-changed     (:background diff-bg-mod :foreground fg1))
     (diff-removed     (:background diff-bg-rem :foreground fg1))
 
+    ;; smerge
+    (smerge-base    (:background bg2))
+    (smerge-upper   (:background diff-bg-add))
+    (smerge-lower   (:background diff-bg-rem))
+    (smerge-markers (:background comment :foreground bg))
+    ;; Emacs version <= 25
+    (smerge-mine    (:background diff-bg-add))
+    (smerge-other   (:background diff-bg-rem))
+    ;; ??
+    ;; smerge-refined-added
+    ;; smerge-refined-removed
+
    ;; Ediff
    ;; (ediff-current-diff-A (:background hl-line :foreground fg4))
    ;; (ediff-current-diff-B (:background hl-line :foreground fg4))
