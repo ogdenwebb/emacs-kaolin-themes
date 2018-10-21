@@ -704,7 +704,7 @@
                                       :box (:line-width 2 :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold nil))
     (mode-line-highlight (:foreground line-color2 :box nil :bold nil))
-    (mode-line-emphasis  (:foreground fg1))
+    (mode-line-emphasis  (:foreground hl))
 
     ;; Telephone-line
     (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground line-fg))
