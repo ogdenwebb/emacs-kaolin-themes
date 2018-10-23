@@ -42,7 +42,6 @@
    (todo pink1)
 
    (tooltip-hl-bg bg4)
-   (tooltip-hl-fg chartreuse1)
 
    (ivy2 cerise1)
    (ivy3 amber3)
@@ -83,8 +82,8 @@
    (line-num-hl   keyword)
    (cursor        "#c3c8e0"))
 
-  ;; Custom theme set faces
   (
+   ;; Custom theme set faces
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (highlight-quoted-quote   (:foreground functions))
@@ -104,7 +103,6 @@
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
-
 
 
 ;;; kaolin-ocean-theme.el ends here
