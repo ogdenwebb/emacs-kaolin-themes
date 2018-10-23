@@ -85,7 +85,6 @@
 
   ;; Custom theme set faces
   (
-   (link                (:foreground cyan1 :underline underline))
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    (highlight-quoted-quote   (:foreground functions))
