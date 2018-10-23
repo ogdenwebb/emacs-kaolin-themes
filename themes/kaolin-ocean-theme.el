@@ -14,7 +14,7 @@
    (keyword     azure1)
    ;; (keyword     capri1)
    ;; TODO: a bit more bright
-   (second-key  bg4 cerise4)
+   (second-key  cerise4 cerise4)
    (builtin     capri3)
    (functions   builtin)
    (var         ultramarine3)
@@ -91,9 +91,8 @@
    (highlight-quoted-quote   (:foreground functions))
    (highlight-quoted-symbol  (:foreground type))
 
-   (org-code            (:foreground teal1))
+   (org-code            (:foreground var))
    (org-verbatim        (:foreground spring-green1))
-   (org-quote           (:foreground blue4))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-mod :foreground diff-mod))
