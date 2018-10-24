@@ -143,8 +143,7 @@
    ;; (org-level-3            (:foreground harlequin3 :bold nil))
    ;; (org-level-4            (:foreground vermilion4 :bold nil))
    (org-code               (:foreground teal1))
-   (org-verbatim           (:foreground orange2))
-   (org-table              (:foreground ultramarine4 :bold bold)))
+   (org-verbatim           (:foreground orange2)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
