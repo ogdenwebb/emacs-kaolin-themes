@@ -1159,7 +1159,13 @@
     (solaire-default-face       (:background pane))
 
     ;; Tuareg/OCaml
-    (tuareg-font-double-colon-face (:foreground keyword))
+    (tuareg-font-double-colon-face            (:foreground warning))
+    (tuareg-font-lock-governing-face          (:foreground keyword))
+    (tuareg-font-lock-operator-face           (:foreground builtin))
+    (tuareg-font-lock-error-face              (:inherit 'error))
+    (tuareg-font-lock-multistage-face         (:inherit 'font-lock-preprocessor-face))
+    (tuareg-font-lock-interactive-error-face  (:inherit 'error))
+    (tuareg-font-lock-interactive-output-face (:inherit 'default))
 
     ;; Helm
     ;; TODO: (!!) find helm status line color that based on var face
