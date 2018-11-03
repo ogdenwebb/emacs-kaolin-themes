@@ -1161,6 +1161,7 @@
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face            (:foreground warning))
     (tuareg-font-lock-governing-face          (:foreground keyword))
+    ;; TODO maybe str or prep, num, functions
     (tuareg-font-lock-operator-face           (:foreground builtin))
     (tuareg-font-lock-error-face              (:inherit 'error))
     (tuareg-font-lock-multistage-face         (:inherit 'font-lock-preprocessor-face))

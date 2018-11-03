@@ -89,7 +89,7 @@
    (highlight-quoted-quote   (:foreground functions))
    (highlight-quoted-symbol  (:foreground type))
 
-   (org-code            (:foreground var))
+   (org-code            (:foreground pink1))
    (org-verbatim        (:foreground spring-green1))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
