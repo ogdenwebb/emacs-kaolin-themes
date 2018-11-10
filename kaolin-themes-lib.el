@@ -205,7 +205,8 @@
     ;; (magenta2 "#563d56")
     (magenta2 "#734073")
     (magenta3 "#cea2ca") ; light-puprle
-    (magenta4 "#835d83") ; purple
+    ;; (magenta4 "#835d83") ; purple
+    (magenta4 "#845A84") ; purple
     (magenta5 "#1a121a") ; old midnight-purple
     (magenta6 "#402E40")
     (magenta7 "#846884")
