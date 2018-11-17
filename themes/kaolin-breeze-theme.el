@@ -114,16 +114,16 @@
 
   ((link                   (:foreground capri1 :underline underline))
 
-   (highlight-quoted-quote   (:foreground keyword))
-   (highlight-quoted-symbol  (:foreground keyword))
-
-   (org-level-1            (:foreground teal1 :bold bold :height 1.1))
-   (org-level-2            (:foreground ultramarine4 :bold nil))
-   (org-level-3            (:foreground vermilion4 :bold nil))
-   (org-level-4            (:foreground cerise4 :bold nil))
-   (org-code               (:foreground teal1))
+   (org-level-1           (:foreground keyword :bold bold :height 1.1))
+   (org-level-2            (:foreground var :bold nil))
+   (org-level-3            (:foreground str :bold nil))
+   (org-level-4            (:foreground builtin :bold nil))
+   (org-code               (:foreground keyword))
    (org-verbatim           (:foreground orange2))
-   (org-table              (:foreground ultramarine4 :bold bold))
+   (org-list-dt            (:foreground str))
+   (org-checkbox           (:foreground str))
+   (org-table              (:foreground ultramarine2))
+   (org-date               (:foreground ultramarine2))
 
    (js2-object-property          (:foreground brown1))
    (evil-ex-info                 (:foreground crimson4)))
