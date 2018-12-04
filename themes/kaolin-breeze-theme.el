@@ -92,13 +92,6 @@
    ;; Telephone-line
    (segment-active    gray2)
    (segment-inactive  gray2)
-   (evil-normal       teal1)
-   (evil-insert       spring-green1)
-   (evil-visual       orange1)
-   (evil-replace      red4)
-   (evil-motion       yellow1)
-   (evil-operator     evil-normal)
-   (evil-emacs        amber3)
 
    (win-border    bg3)
    (line-num-bg   bg1)

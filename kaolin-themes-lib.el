@@ -398,7 +398,7 @@
     (harlequin9 "#DBEED3")
 
     ;; Chartreuse #7FFF00
-    (chartreuse0 "#8bee1a")
+    (chartreuse0 "#88ee1a")
     (chartreuse1 "#92c550")
     (chartreuse2 "#5ba111")
     (chartreuse3 "#9de346")
@@ -521,13 +521,14 @@
     ; TODO:
     (segment-active    gray3)
     (segment-inactive  gray3)
-    (evil-normal       teal1)
-    (evil-insert       spring-green1)
-    (evil-visual       orange1)
-    (evil-replace      red1)
-    (evil-motion       yellow1)
-    (evil-operator     evil-normal)
-    (evil-emacs        amber3)
+
+    (evil-normal       type)
+    (evil-insert       done)
+    (evil-visual       var)
+    (evil-replace      todo)
+    (evil-motion       warning)
+    (evil-operator     type)
+    (evil-emacs        prep)
 
     (fringe        (if kaolin-themes-distinct-fringe bg2 bg1))
     (win-border    bg3)
@@ -704,7 +705,7 @@
     (mode-line-inactive  (:background line-bg1 :foreground fg4 :bold bold
                                       :box (:line-width 2 :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold nil))
-    (mode-line-highlight (:foreground line-color2 :box nil :bold nil))
+    (mode-line-highlight (:foreground hl :box nil :bold nil))
     (mode-line-emphasis  (:foreground hl))
 
     ;; Telephone-line
@@ -719,6 +720,17 @@
     (telephone-line-evil-operator   (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-operator))
     (telephone-line-evil-emacs      (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-emacs))
     (telephone-line-projectile      (:foreground type))
+
+    ;; Doom-modeline
+    (doom-modeline-bar                 (:background type))
+    (doom-modeline-evil-normal-state   (:foreground evil-normal))
+    (doom-modeline-evil-insert-state   (:foreground evil-insert))
+    (doom-modeline-evil-visual-state   (:foreground evil-visual))
+    (doom-modeline-evil-replace-state  (:foreground evil-replace))
+    (doom-modeline-evil-motion-state   (:foreground evil-motion))
+    (doom-modeline-evil-operator-state (:foreground evil-operator))
+    (doom-modeline-evil-emacs-state    (:foreground evil-emacs))
+    (doom-modeline-panel               (:background hl :foreground line-bg1))
 
     ;; Powerline
     (powerline-active0           (:background line-bg2 :foreground line-color1))

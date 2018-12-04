@@ -85,13 +85,6 @@
    ;; Telephone-line
    (segment-active    gray2)
    (segment-inactive  gray2)
-   (evil-normal       brown3)
-   (evil-insert       harlequin3)
-   (evil-visual       orange3)
-   (evil-replace      red3)
-   (evil-motion       amber3)
-   (evil-operator     evil-normal)
-   (evil-emacs        cyan3)
 
    (win-border    bg3)
    (line-num-fg   azure7)
@@ -111,7 +104,7 @@
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
 
-   (org-level-1            (:foreground var :bold bold :height 1.1))
+   (org-level-1           (:foreground var :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground num :bold nil)))

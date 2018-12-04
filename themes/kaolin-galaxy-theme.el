@@ -17,7 +17,6 @@
   ;; Palette modification
   (
    (azure1        "#2a57cc")
-   (chartreuse1   "#73c66c")
    (spring-green1 "#6dd797")
    (ultramarine7  "#615B75")
 
@@ -96,13 +95,6 @@
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       capri4)
-   (evil-insert       spring-green1)
-   (evil-visual       orange1)
-   (evil-replace      red1)
-   (evil-motion       yellow1)
-   (evil-operator     evil-normal)
-   (evil-emacs        yellow3)
 
    (win-border    bg3)
    (line-num-fg   ultramarine7 black4)

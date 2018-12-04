@@ -90,13 +90,6 @@
 
    (segment-active    gray3)
    (segment-inactive  gray3)
-   (evil-normal       teal1)
-   (evil-insert       spring-green1)
-   (evil-visual       orange1)
-   (evil-replace      red1)
-   (evil-motion       yellow1)
-   (evil-operator     evil-normal)
-   (evil-emacs        amber3)
 
    (win-border   bg3)
    (line-num-fg  azure6 black4)

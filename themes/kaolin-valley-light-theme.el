@@ -114,13 +114,6 @@
    ;; Telephone-line
    (segment-active    gray2)
    (segment-inactive  gray2)
-   (evil-normal       brown3)
-   (evil-insert       harlequin1)
-   (evil-visual       orange3)
-   (evil-replace      red3)
-   (evil-motion       amber3)
-   (evil-operator     evil-normal)
-   (evil-emacs        cyan3)
 
    (win-border    bg3)
    (line-num-fg   brown8)
