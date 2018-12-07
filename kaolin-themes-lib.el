@@ -731,6 +731,8 @@
     (doom-modeline-evil-operator-state (:foreground evil-operator))
     (doom-modeline-evil-emacs-state    (:foreground evil-emacs))
     (doom-modeline-panel               (:background hl :foreground line-bg1))
+    (doom-modeline-buffer-path         (:foreground var))
+    (doom-modeline-buffer-major-mode   (:foreground str))
 
     ;; Powerline
     (powerline-active0           (:background line-bg2 :foreground line-color1))

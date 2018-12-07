@@ -104,7 +104,7 @@
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
 
-   (org-level-1           (:foreground var :bold bold :height 1.1))
+   (org-level-1            (:foreground var :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground num :bold nil)))
