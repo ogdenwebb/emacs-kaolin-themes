@@ -719,7 +719,7 @@
     (telephone-line-evil-motion     (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-motion))
     (telephone-line-evil-operator   (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-operator))
     (telephone-line-evil-emacs      (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-emacs))
-    (telephone-line-projectile      (:foreground type))
+    (telephone-line-projectile      (:foreground var))
 
     ;; Doom-modeline
     (doom-modeline-bar                 (:background keyword))
