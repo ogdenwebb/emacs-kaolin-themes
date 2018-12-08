@@ -522,7 +522,7 @@
     (segment-active    gray3)
     (segment-inactive  gray3)
 
-    (evil-normal       type)
+    (evil-normal       keyword)
     (evil-insert       done)
     (evil-visual       var)
     (evil-replace      todo)
@@ -722,7 +722,7 @@
     (telephone-line-projectile      (:foreground type))
 
     ;; Doom-modeline
-    (doom-modeline-bar                 (:background type))
+    (doom-modeline-bar                 (:background keyword))
     (doom-modeline-evil-normal-state   (:foreground evil-normal))
     (doom-modeline-evil-insert-state   (:foreground evil-insert))
     (doom-modeline-evil-visual-state   (:foreground evil-visual))
