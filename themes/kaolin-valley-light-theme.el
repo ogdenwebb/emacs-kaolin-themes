@@ -75,7 +75,7 @@
    (err         red3)
 
    (dim-buffer white0)
-   (hl         azure3)
+   (hl         azure1)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  white4)
