@@ -158,7 +158,21 @@
   (car (map-elt kaolin-palette name)))
 
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
-  "Define new Kaolin theme, using NAME as part of full kaolin-<name> theme name."
+  "Define new Kaolin theme, using NAME as part of full kaolin-<name>,
+the DOC argument provides a short description for new theme.
+
+OPT-PALETTE is a list marks a optional theme palette which will be merged with the `kaolin-palette',
+and OPT-FACES is a list for new theme faces. Any color defined within OPT-PALETTE
+will override the original one,similar with faces from OPT-PALETTE and `kaolin-faces'.
+In terms of kaolin-themes GNU Emacs, palette contains both colors
+(such as blue1, orange2 and etc) and variables(bg1, var, functions, etc)
+to highlight specific part of GNU Emacs.
+
+Palette is a ordinary association list, e.g. ((color1 \"#ffffff\") (color2 \"#ff0000\")).
+You can define your own color/variable (my-own-red \"#ff0000\") in HEX
+or inherit a value from another variable (my-own-color red3).
+
+Use kaolin-dark.el as example."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
          (kaolin-theme-palette (if opt-palette
                                    (kaolin-themes--merge-alist kaolin-palette opt-palette)
