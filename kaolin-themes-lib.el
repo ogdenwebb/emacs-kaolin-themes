@@ -621,7 +621,7 @@
     (widget-button         (:background nil :foreground keyword))
 
     ;; Highlighting
-    (highlight                (:background bg2 :foreground amber3))
+    (highlight                (:background hl :foreground nil))
     (lazy-highlight           (:background bg4 :foreground hl))
     (hl-line                  (:background hl-line))
     (highlight-numbers-number (:foreground num))
