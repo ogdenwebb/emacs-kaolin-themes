@@ -172,7 +172,7 @@ Palette is a ordinary association list, e.g. ((color1 \"#ffffff\") (color2 \"#ff
 You can define your own color/variable (my-own-red \"#ff0000\") in HEX
 or inherit a value from another variable (my-own-color red3).
 
-Use kaolin-dark.el as example."
+Use kaolin-dark-theme.el as example."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
          (kaolin-theme-palette (if opt-palette
                                    (kaolin-themes--merge-alist kaolin-palette opt-palette)

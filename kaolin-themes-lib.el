@@ -1046,7 +1046,7 @@
     ;; Popup
     (popup-face                (:background tooltip-bg :foreground tooltip-fg :bold bold))
     (popup-menu-selection-face (:background tooltip-hl-bg :foreground tooltip-hl-fg :bold bold))
-    (popup-tip-face            (:background tooltip-hl-bg :foreground builtin :bold bold))
+    (popup-tip-face            (:background tooltip-hl-bg :foreground fg1 :bold bold))
 
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
