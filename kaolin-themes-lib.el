@@ -621,7 +621,7 @@
     (widget-button         (:background nil :foreground keyword))
 
     ;; Highlighting
-    (highlight                (:background hl :foreground nil))
+    (highlight                (:background hl :foreground bg1))
     (lazy-highlight           (:background bg4 :foreground hl))
     (hl-line                  (:background hl-line))
     (highlight-numbers-number (:foreground num))
@@ -692,7 +692,7 @@
     (message-header-to      (:foreground spring-green3))
     (message-header-other   (:foreground cyan3))
 
-    ;; Elfeed
+    ;; TODO: Elfeed
     (elfeed-search-tag-face          (:foreground amber3))
     (elfeed-search-feed-face         (:foreground teal1))
     (elfeed-search-date-face         (:foreground var))
