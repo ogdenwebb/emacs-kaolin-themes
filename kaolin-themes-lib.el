@@ -594,6 +594,7 @@
 
     (menu        (:background bg2 :foreground fg2))
     (header-line (:background bg4 :foreground var))
+    (tool-bar    (:inherit 'header-line))
 
     ;; TODO: (??) color fg
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
@@ -767,9 +768,11 @@
 
     ;; Additional completion
     (ac-completion-face    (:foreground keyword :underline underline))
+    (icompletep-determined (:foreground builtin))
+
+    ;; TODO: info faces
     (info-quoted-name      (:foreground builtin))
     (info-string           (:foreground str))
-    (icompletep-determined (:foreground builtin))
 
     ;; Company
     (company-tooltip                  (:background tooltip-bg :foreground tooltip-fg :bold bold))
@@ -785,7 +788,9 @@
     (company-preview                  (:background nil :foreground keyword))
     (company-preview-common           (:background bg2 :foreground amber3))
     (company-preview-search           (:background bg1 :foreground azure1))
-    (company-tooltip-mouse            (:background bg3 :foreground fg3))
+    (company-tooltip-mouse            (:background bg3 :foreground tooltip-hl-fg))
+
+    ;; TODO: all-the-icons faces
 
     ;; Magit
     (magit-section-highlight         (:background bg2))
@@ -965,6 +970,7 @@
     (rainbow-delimiters-depth-9-face (:foreground rb9))
 
     ;; Diff
+    ;; TODO diff-refine faces
     (diff-header      (:background bg2))
     (diff-file-header (:background bg2 :foreground teal1))
     (diff-added       (:background diff-bg-add :foreground fg1))
@@ -1239,6 +1245,7 @@
     (ivy-cursor                  (:background bg3 :foreground fg1))
     (ivy-confirm-face            (:inherit 'success))
     (ivy-modified-buffer         (:foreground diff-mod))
+    (ivy-remote                  (:foreground prep))
 
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
