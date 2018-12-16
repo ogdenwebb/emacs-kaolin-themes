@@ -36,7 +36,7 @@
    (warning     orange1)
    (err         crimson1)
 
-   (prep        spring-green0)
+   (prep        crimson3)
    (num         orange3)
    (bool        num)
 
