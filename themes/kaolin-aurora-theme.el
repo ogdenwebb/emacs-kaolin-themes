@@ -36,7 +36,7 @@
    (warning     orange1)
    (err         crimson1)
 
-   (prep        crimson3)
+   (prep        crimson1)
    (num         orange3)
    (bool        num)
 
