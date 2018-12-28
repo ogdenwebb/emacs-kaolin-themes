@@ -117,13 +117,13 @@
 
    (win-border    bg3)
    (line-num-fg   brown8)
-   (line-num-hl   amber3)
+   (line-num-hl   amber0)
 
    (cursor       gray3)
 
    (ivy1          gray9)
    (ivy2          cerise0)
-   (ivy3          yellow0)
+   (ivy3          amber0)
    (ivy4          red3))
 
   (
@@ -135,7 +135,7 @@
    ;; (org-level-2            (:foreground violet4  :bold nil))
    ;; (org-level-3            (:foreground harlequin3 :bold nil))
    ;; (org-level-4            (:foreground vermilion4 :bold nil))
-   (org-code               (:foreground teal1))
+   (org-code               (:foreground keyword))
    (org-verbatim           (:foreground orange2)))
 
   (when kaolin-themes-git-gutter-solid

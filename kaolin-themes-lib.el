@@ -453,7 +453,9 @@
     (todo red1)
     (done spring-green3)
 
-    (button orange8)
+    (button amber6)
+    ;; TODO: add light style
+    (button-border gray3)
     (button-hl amber3)
 
     ;; TODO:
@@ -599,27 +601,27 @@
     ;; TODO: (??) color fg
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
 
-
     (match        (:background nil :foreground hl))
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
-    (isearch-fail (:background nil :foreground red1))
+    (isearch-fail (:background nil :foreground err))
 
 
     ;; Interface
     (package-name          (:inherit 'link :underline nil))
     (button                (:inherit 'link))
-    (custom-button         (:background bg3 :foreground button :box (:line-width 2 :color bg2 :style 'released-button)))
-    (custom-button-mouse   (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'released-button)))
-    (custom-button-pressed (:background bg4 :foreground button-hl :box (:line-width 2 :color bg2 :style 'pressed-button)))
+    (custom-button         (:background bg4 :foreground fg3 :box (:line-width 2 :color button-border :style nil)))
+    (custom-button-mouse   (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-hl :style 'released-button)))
+    (custom-button-pressed (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-border :style 'pressed-button)))
     (custom-button-unraised (:inherit 'custom-button))
     (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
     (custom-state          (:background nil :foreground teal1))
     (custom-changed        (:background nil :foreground orange1))
     (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
-    (custom-invalid        (:background nil :foreground red1))
-    (custom-set            (:background nil :foreground aquamarine4))
+    (custom-invalid        (:background nil :foreground err))
+    (custom-set            (:background nil :foreground done))
     (widget-documentation  (:background nil :foreground var))
     (widget-button         (:background nil :foreground keyword))
+    (widget-field          (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
 
     ;; Highlighting
     (highlight                (:background hl :foreground bg1))
@@ -1260,8 +1262,14 @@
     (swiper-line-face    (:inherit 'hl-line))))
 
 ;; Predefined Kaolin variables
-;; (defconst kaolin-vars
-;;   '())
+;; (defconst kaolin-common-vars
+;;   '((pos-tip-background-color (face-background 'tooltip))
+;;     (pos-tip-foreground-color (face-foreground 'tooltip))))
+
+;; (custom-theme-set-variables
+;;  'kaolin-valley-dark
+;;  '(pos-tip-background-color (face-foreground 'tooltip)))
+;;  ;; `,@kaolin-common-vars)
 
 (provide 'kaolin-themes-lib)
 

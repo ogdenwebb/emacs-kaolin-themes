@@ -196,8 +196,12 @@ Use kaolin-dark-theme.el as example."
                           ;; Set vars or execute an arbitrary function body
                            ,@body
 
+                           ;; (custom-theme-set-faces ',kaolin-theme-name
+                           ;;                         ,@kaolin-common-vars)
+
                            ;; Provide theme
-                           (provide-theme ',kaolin-theme-name))))
+                           (provide-theme ',kaolin-theme-name)
+                           )))
 
 
 ;;;###autoload
