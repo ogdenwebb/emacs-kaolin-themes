@@ -972,12 +972,21 @@
     (rainbow-delimiters-depth-9-face (:foreground rb9))
 
     ;; Diff
-    ;; TODO diff-refine faces
-    (diff-header      (:background bg2))
-    (diff-file-header (:background bg2 :foreground teal1))
-    (diff-added       (:background diff-bg-add :foreground fg1))
-    (diff-changed     (:background diff-bg-mod :foreground fg1))
-    (diff-removed     (:background diff-bg-rem :foreground fg1))
+    (diff-context           (:foreground comment))
+    (diff-header            (:background bg4))
+    (diff-function          (:background bg4 :foreground functions))
+    (diff-nonexistent       (:foreground err))
+    (diff-hunk-header       (:background bg4))
+    (diff-file-header       (:background nil :foreground keyword))
+    (diff-added             (:background diff-bg-add :foreground fg1))
+    (diff-changed           (:background diff-bg-mod :foreground fg1))
+    (diff-removed           (:background diff-bg-rem :foreground fg1))
+    (diff-refine-added      (:background diff-add :foreground fg0))
+    (diff-refine-changed    (:background diff-mod :foreground fg1))
+    (diff-refine-removed    (:background diff-rem :foreground fg1))
+    (diff-indicator-added   (:background bg1 :foreground diff-add))
+    (diff-indicator-changed (:background bg1 :foreground diff-mod))
+    (diff-indicator-removed (:background bg1 :foreground diff-rem))
 
     ;; smerge
     (smerge-base    (:background bg2))

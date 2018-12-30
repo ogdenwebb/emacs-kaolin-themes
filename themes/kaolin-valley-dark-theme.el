@@ -75,7 +75,7 @@
    (rb8 brown3)
    (rb9 crimson3)
 
-   (diff-add spring-green3)
+   (diff-add spring-green1)
    (diff-mod vermilion3)
    (diff-rem red3)
 
