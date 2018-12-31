@@ -948,10 +948,10 @@
     (font-latex-sectioning-5-face (:inherit 'font-latex-sectioning-0-face))
 
     ;; Undo-tree
-    (undo-tree-visualizer-active-branch-face (:foreground fg1 :bold bold))
-    (undo-tree-visualizer-current-face       (:foreground cyan1))
+    (undo-tree-visualizer-active-branch-face (:foreground functions :bold bold))
+    (undo-tree-visualizer-current-face       (:foreground hl))
     (undo-tree-visualizer-default-face       (:foreground fg2))
-    (undo-tree-visualizer-unmodified-face    (:foreground var))
+    (undo-tree-visualizer-unmodified-face    (:foreground done))
     (undo-tree-visualizer-register-face      (:foreground type))
 
     ;; Rainbow delimeters
