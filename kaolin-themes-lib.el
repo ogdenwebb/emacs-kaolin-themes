@@ -624,6 +624,7 @@
     (widget-field          (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
 
     ;; Highlighting
+    ;; TODO: change highlight face somehow
     (highlight                (:background hl :foreground bg1))
     (lazy-highlight           (:background bg4 :foreground hl))
     (hl-line                  (:background hl-line))
@@ -1124,6 +1125,7 @@
 
     (org-document-info-keyword     (:foreground second-key))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
+    (org-block                     (:foreground functions))
     (org-block-begin-line          (:foreground second-key))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
@@ -1132,10 +1134,9 @@
     (org-footnote                  (:foreground fg4 :underline underline))
 
     (org-agenda-date-weekend       (:foreground fg4 :weight 'normal))
-    (org-block                     (:foreground fg3))
-    (org-quote                     (:inherit 'org-block :italic italic))
-    (org-verse                     (:inherit 'org-block :italic italic))
-    (org-agenda-done               (:foreground bg4))
+    (org-quote                     (:foreground fg3 :italic italic))
+    (org-verse                     (:foreground fg3 :italic italic))
+    (org-agenda-done               (:foreground done))
     (org-scheduled                 (:foreground type))
     (org-scheduled-today           (:foreground functions :height 1.2 :bold bold))
     (org-sexp-date                 (:foreground fg4))
