@@ -624,8 +624,7 @@
     (widget-field          (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
 
     ;; Highlighting
-    ;; TODO: change highlight face somehow
-    (highlight                (:background hl :foreground bg1))
+    (highlight                (:background bg4 :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
     (hl-line                  (:background hl-line))
     (highlight-numbers-number (:foreground num))

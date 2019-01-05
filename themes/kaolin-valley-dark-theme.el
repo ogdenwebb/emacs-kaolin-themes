@@ -99,7 +99,7 @@
 
    (cursor        fg1)
 
-   (ivy1          gray9)
+   (ivy1          fg4)
    (ivy2          cerulean3)
    (ivy3          yellow0)
    (ivy4          red3))
