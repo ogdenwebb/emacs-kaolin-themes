@@ -619,6 +619,7 @@
     (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
     (custom-invalid        (:background nil :foreground err))
     (custom-set            (:background nil :foreground done))
+    (custom-variable-tag   (:foreground type))
     (widget-documentation  (:background nil :foreground var))
     (widget-button         (:background nil :foreground keyword))
     (widget-field          (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
