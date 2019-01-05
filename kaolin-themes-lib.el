@@ -1144,11 +1144,11 @@
 
     ;; org-agenda
     (org-agenda-dimmed-todo-face (:foreground comment))
-    (org-agenda-date             (:foreground fg3))
-    (org-agenda-date-today       (:foreground str :bold bold))
+    (org-agenda-date             (:foreground fg1))
+    (org-agenda-date-today       (:foreground prep :bold bold))
     (org-agenda-date-weekend     (:foreground warning))
     (org-agenda-done             (:foreground done))
-    (org-agenda-structure        (:inherit 'header-line :background nil))
+    (org-agenda-structure        (:foreground builtin))
     (org-scheduled               (:foreground fg1))
     (org-scheduled-today         (:foreground functions :height 1.2 :bold bold))
     (org-sexp-date               (:foreground fg4))
