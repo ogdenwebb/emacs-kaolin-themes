@@ -23,7 +23,8 @@
    (bg2 "#262121" black2)
    (bg3 "#2E2828" black3)
    (bg4 "#352D2D" black4)
-   (pane "#262122")
+   ;; (pane "#262122")
+   ;; (bg-alt "#453947")
 
    (fg1 amber9)
 
@@ -54,7 +55,7 @@
    (hl         capri3)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
-   (hl-indent  gray0)
+   (hl-indent  "#453947")
    ;; TODO:
    (selection bg4)
    ;; TODO:
@@ -81,7 +82,6 @@
 
     ;; Mode-line
    (line-fg           fg4)
-   (line-color1       functions)
    (line-color2       str)
    (line-bg1          bg2)
    (line-bg2          bg3)

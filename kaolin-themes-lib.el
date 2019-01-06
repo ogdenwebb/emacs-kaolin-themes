@@ -519,7 +519,7 @@
     (line-bg1          bg2)
     (line-bg2          bg4)
     (line-border       bg4)
-    (line-color1       keyword)
+    (line-color1       fg1)
     (line-color2       builtin)
     ; TODO:
     (segment-active    gray3)
