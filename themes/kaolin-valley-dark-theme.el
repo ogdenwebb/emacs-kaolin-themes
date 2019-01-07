@@ -81,7 +81,7 @@
    (diff-rem red3)
 
     ;; Mode-line
-   (line-fg           fg4)
+   (line-fg           fg3)
    (line-color2       str)
    (line-bg1          bg2)
    (line-bg2          bg3)

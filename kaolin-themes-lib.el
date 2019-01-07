@@ -543,8 +543,6 @@
     (company-scroll-bg (if kaolin-themes-distinct-company-scrollbar bg4 bg2))
     (company-scroll-fg (if kaolin-themes-distinct-company-scrollbar line-num-hl bg4))
 
-    (swiper-bg   bg2)
-    (ivy-bg      nil)
     (ivy1        fg1)
     (ivy2        azure3)
     (ivy3        amber3)
@@ -705,7 +703,7 @@
     (elfeed-search-title-face        (:foreground comment))
 
     ;; Modeline
-    (mode-line           (:background line-bg1 :foreground line-color1 :bold nil
+    (mode-line           (:background line-bg1 :foreground line-fg :bold nil
                                       :box (:line-width 2 :color line-border)))
     (mode-line-inactive  (:background line-bg1 :foreground line-inactive :bold bold
                                       :box (:line-width 2 :color line-border)))
