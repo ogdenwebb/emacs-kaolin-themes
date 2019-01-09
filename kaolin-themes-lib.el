@@ -1104,7 +1104,6 @@
     (whitespace-big-indent       (:background red2 :foreground red0))
 
     ;; Org-mode
-    ;; TODO: org agenda faces
     (org-todo                      (:foreground todo :bold bold))
     (org-done                      (:foreground done  :bold bold))
     (org-headline-done             (:foreground gray4  :bold nil))
