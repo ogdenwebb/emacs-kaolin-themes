@@ -1,6 +1,6 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package  -*- lexical-binding: t; -*-
 ;;; Commentary:
-
+;;
 ;;; Color order
 ;;
 ;; color0 - almost pure/contrast >= 70 sat & > 70 val
@@ -14,7 +14,7 @@
 ;; color7 - dark grayish sat ~20 & val 50+; adjust with gray3; see erin7
 ;; color8 - light grayish; sat ~10-15 & val ~ 65+
 ;; color9 - very light color hue 8-17 value ~90-95
-
+;;
 ;;; Color list
 ;;
 ;; Color name - color hex - Kaolin hue
@@ -50,7 +50,7 @@
 ;; Cerise #FF00BF - 315
 ;; Pink/rose #FF007F - 335
 ;; Crimson #FF003F - 347
-
+;;
 ;;; Code:
 (defconst kaolin-palette
   '(
@@ -267,7 +267,8 @@
     (blue9 "#D3D7EE")
 
     ;; Cerulean #003FFF
-    (cerulean0 "#0e4cd1")
+    ;; (cerulean0 "#0e4cd1")
+    (cerulean0 "#316CED")
     (cerulean1 "#3f66ba")
     (cerulean2 "#2d4b8c")
     (cerulean3 "#4c7de8")
@@ -458,7 +459,7 @@
     (button-border gray3)
     (button-hl amber3)
 
-    ;; TODO:
+    ;; TODO: add pos-tip in custom-theme-set-variables
     (tooltip-bg bg2)
     (tooltip-fg fg2)
     (tooltip-hl-bg brown2)
@@ -775,6 +776,9 @@
     (info-quoted-name      (:foreground builtin))
     (info-string           (:foreground str))
 
+    ;; Helpful
+    (helpful-heading (:foreground done :weight 'bold :height 1.1))
+
     ;; Company
     (company-tooltip                  (:background tooltip-bg :foreground tooltip-fg :bold bold))
     (company-tooltip-common           (:foreground hl :underline underline))
@@ -783,8 +787,7 @@
     (company-tooltip-annotation       (:foreground var))
     (company-scrollbar-bg             (:background company-scroll-bg))
     (company-scrollbar-fg             (:background company-scroll-fg))
-    ;; TODO: read about template
-    (company-template-field           (:background bg3))
+    (company-template-field           (:background keyword :foreground bg1))
     (company-echo-common              (:background bg1 :foreground amber3))
     (company-preview                  (:background nil :foreground keyword))
     (company-preview-common           (:background bg2 :foreground amber3))
@@ -805,7 +808,7 @@
     (all-the-icons-orange   (:foreground vermilion1))
     (all-the-icons-lorange  (:foreground vermilion3))
     (all-the-icons-dorange  (:foreground vermilion2))
-    (all-the-icons-blue     (:foreground blue3))
+    (all-the-icons-blue     (:foreground cerulean3))
     (all-the-icons-blue-alt (:foreground capri1))
     (all-the-icons-lblue    (:foreground capri3))
     (all-the-icons-dblue    (:foreground capri2))
