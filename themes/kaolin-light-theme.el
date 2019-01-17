@@ -52,7 +52,7 @@
    (const       magenta4)
    (builtin     azure4)
    (functions   azure4)
-   (comment     azure8)
+   (comment     gray7)
    (comment-alt lime7)
    ;; (str         brown1)
    (str         erin2)
