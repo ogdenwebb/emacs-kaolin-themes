@@ -99,10 +99,9 @@
   "If nil, disable the underline style."
   :group 'kaolin-themes)
 
-(defcustom kaolin-themes-underline-wave nil
+(defcustom kaolin-themes-underline-wave t
   "When t, use the wave underline style to highlight warnings and error."
   :group 'kaolin-themes)
-
 
 (defcustom kaolin-themes-hl-line-colored nil
   "When t, will display colored hl-line style instead dim gray."

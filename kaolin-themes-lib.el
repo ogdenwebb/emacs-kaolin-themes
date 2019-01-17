@@ -905,7 +905,7 @@
     ;; Hydra
     (hydra-face-red      (:foreground red1))
     ;; TODO: (??) change to teal
-    (hydra-face-teal     (:foreground teal1))
+    (hydra-face-teal     (:foreground teal0))
     (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
     (hydra-face-amaranth (:foreground magenta4))
