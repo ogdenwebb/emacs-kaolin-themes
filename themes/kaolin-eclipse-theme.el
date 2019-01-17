@@ -23,8 +23,6 @@
    (type        aquamarine4)
    (num         amber3)
    (bool        num)
-   ;; (prep        azure4 "#8787f5")
-   ;; (prep        azure4 "#5f5faf")
    (prep        vermilion4)
 
    (comment     gray0)

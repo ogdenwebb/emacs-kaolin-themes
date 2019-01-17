@@ -82,6 +82,7 @@
    (pulse bg4)
 
    (todo red3)
+   (done aquamarine1)
 
    (tooltip-fg fg3)
    (tooltip-hl-bg bg3)
@@ -135,7 +136,8 @@
    ;; (org-level-3            (:foreground harlequin3 :bold nil))
    ;; (org-level-4            (:foreground vermilion4 :bold nil))
    (org-code               (:foreground keyword))
-   (org-verbatim           (:foreground orange2)))
+   (org-verbatim           (:foreground orange2))
+   (org-date               (:foreground aquamarine1 :underline kaolin-themes-underline)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

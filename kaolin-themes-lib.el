@@ -892,7 +892,6 @@
 
     (magit-popup-key              (:foreground keysym))
 
-
     ;; Flycheck
     (flycheck-info           (:underline (:style underline-style :color done)))
     (flycheck-warning        (:underline (:style underline-style :color warning)))
@@ -1060,6 +1059,8 @@
    (ediff-odd-diff-A (:background bg4))
    (ediff-odd-diff-B (:background bg4))
    (ediff-odd-diff-C (:background bg4))
+
+   ;; TODO: calfw
 
     ;; TODO Imenu list
     ;; (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
