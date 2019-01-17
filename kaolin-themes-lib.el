@@ -272,8 +272,7 @@
     (cerulean1 "#3f66ba")
     (cerulean2 "#2d4b8c")
     (cerulean3 "#4c7de8")
-    ;; (cerulean4 "#536a9d")
-    (cerulean4 "#819fef")
+    (cerulean4 "#738FD7")
     (cerulean5 "#14171e")
     (cerulean6 "#2E3340")
     (cerulean7 "#687184") ; old grayish-blue
