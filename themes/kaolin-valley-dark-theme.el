@@ -11,7 +11,6 @@
    ;; Colors
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
-   (orange0       "#d1832e")
    ;; (cerulean4     "#536a9d")
    (cerulean4     "#47629E")
 
@@ -48,7 +47,7 @@
    (prep        vermilion3)
    (num         harlequin3)
    (bool        num)
-   (warning     orange1)
+   (warning     amber1)
    (err         red3)
 
    (dim-buffer white0)
@@ -117,7 +116,7 @@
    (org-level-4            (:foreground builtin :bold nil))
    (org-date               (:foreground aquamarine3 :underline underline))
    (org-code               (:foreground num))
-   (org-verbatim           (:foreground orange1)))
+   (org-verbatim           (:foreground orange3)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
