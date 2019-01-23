@@ -442,9 +442,18 @@
     (pane bg0)
 
     (dim-buffer bg0)
+    (comment     gray3)
+    (comment-alt teal2)
+
+    ;; TODO:
+    (kaolin-comment
+      (pcase kaolin-themes-comments-style
+        ('normal comment)
+        ('color  comment-alt)
+        ('bright comment)))
 
     (hl         aquamarine3)
-    (hl-mono    gray4)
+    (hl-bg      comment)
     (hl-line    (if kaolin-themes-hl-line-colored capri5 bg2))
     (hl-indent  gray3)
     (selection  bg3)
@@ -481,16 +490,6 @@
     (diff-bg-add spring-green2)
     (diff-bg-mod purple3)
     (diff-bg-rem crimson4)
-
-    (comment     gray3)
-    (comment-alt teal2)
-
-    ;; TODO:
-    (kaolin-comment
-      (pcase kaolin-themes-comments-style
-        ('normal comment)
-        ('color  comment-alt)
-        ('bright comment)))
 
     (keyword     teal1)
     (second-key  comment)
@@ -623,7 +622,7 @@
     (widget-field          (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
 
     ;; Highlighting
-    (highlight                (:background bg4 :foreground fg1))
+    (highlight                (:background hl-bg :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
     (hl-line                  (:background hl-line))
     (highlight-numbers-number (:foreground num))
