@@ -13,23 +13,24 @@
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
+   (crimson0      "#E14676")
 
    ;; Color vars
-   ;; TODO: maybe capri5 as bg, at least as alt-bg
-   (bg1 black3)
-   (bg2 black4)
-   (bg3 gray0)
-   (bg4 gray1)
-   (pane black4)
+   (bg1 "#222933")
+   (bg2 "#2a323f")
+   (bg3 "#323c4b")
+   (bg4 "#3a4556")
 
-   (keyword     crimson1)
+   (keyword     crimson0)
    (second-key  keyword)
-   (builtin     cerulean4)
+   (builtin     teal4)
+   (functions   cyan3)
 
    (var         aquamarine3)
-   (const       teal0)
-   (functions   ultramarine3)
-   (type        pink3)
+   (const       magenta3)
+   ;; (type        capri3)
+   (type        teal0)
+   (type        ultramarine3)
 
    (comment     azure7)
    (comment-alt vermilion7)
@@ -38,7 +39,8 @@
    (str-alt     spring-green4)
    (doc         str-alt)
 
-   (prep        orange3)
+   (prep        teal0)
+   ;; (prep        ultramarine3)
    (num         amber3)
    (bool        num)
    (warning     orange1)
