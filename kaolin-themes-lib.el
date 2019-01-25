@@ -1102,30 +1102,31 @@
     (popup-menu-selection-face (:background tooltip-hl-bg :foreground tooltip-hl-fg :bold bold))
     (popup-tip-face            (:background tooltip-hl-bg :foreground fg1 :bold bold))
 
-    ;; TODO: rework; mb add term0-16 vars
+    ;; TODO: mb add term0-16 vars
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground black1))
-    (term-color-blue    (:foreground azure1))
-    (term-color-red     (:foreground red1))
-    (term-color-green   (:foreground teal1))
-    (term-color-yellow  (:foreground yellow1))
-    (term-color-magenta (:foreground magenta4))
-    (term-color-cyan    (:foreground cyan1))
+    (term-color-blue    (:foreground azure3))
+    (term-color-red     (:foreground red3))
+    (term-color-green   (:foreground teal0))
+    (term-color-yellow  (:foreground yellow3))
+    (term-color-magenta (:foreground magenta3))
+    (term-color-cyan    (:foreground cyan3))
     (term-color-white   (:foreground white2))
+    (term-underline     (:inherit 'underline))
 
     ;; EShell
-    (eshell-prompt        (:foreground teal1 :bold bold))
+    (eshell-prompt        (:foreground teal0 :bold bold))
     (eshell-ls-directory  (:foreground blue1 :bold bold))
-    (eshell-ls-symlink    (:foreground azure1 :bold bold))
+    (eshell-ls-symlink    (:foreground azure3 :bold bold))
     (eshell-ls-executable (:foreground chartreuse1 :bold bold))
-    (eshell-ls-archive    (:foreground red1))
-    (eshell-ls-backup     (:foreground magenta4))
+    (eshell-ls-archive    (:foreground red3))
+    (eshell-ls-backup     (:foreground magenta3))
     (eshell-ls-clutter    (:foreground pink1))
-    (eshell-ls-missing    (:background bg3 :foreground red1))
-    (eshell-ls-product    (:foreground yellow1))
+    (eshell-ls-missing    (:background bg3 :foreground red3))
+    (eshell-ls-product    (:foreground yellow3))
     (eshell-ls-readonly   (:foreground fg2))
-    (eshell-ls-special    (:foreground spring-green1))
+    (eshell-ls-special    (:foreground spring-green3))
     (eshell-ls-unreadable (:foreground var))
 
     ;; Whitespace mode
