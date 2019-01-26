@@ -29,8 +29,9 @@
    (var         aquamarine3)
    (const       magenta3)
    ;; (type        capri3)
-   (type        teal0)
+   ;; (type        teal0)
    (type        ultramarine3)
+   (link        type)
 
    (comment     azure7)
    (comment-alt vermilion7)
@@ -39,7 +40,7 @@
    (str-alt     spring-green4)
    (doc         str-alt)
 
-   (prep        teal0)
+   (prep        magenta1)
    ;; (prep        ultramarine3)
    (num         amber3)
    (bool        num)
