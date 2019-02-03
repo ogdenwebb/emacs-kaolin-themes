@@ -128,6 +128,10 @@
   "Enable distinct colors for company popup scrollbar."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-org-scale-headings t
+  "If not-nil, scale heading size in org-mode."
+  :group 'kaolin-themes)
+
 (defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)

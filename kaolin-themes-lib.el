@@ -126,7 +126,7 @@
     (orange9 "#EEE6D3")
 
     ;; Vermilion #FF3F00
-    (vermilion0 "#fa5016")
+    (vermilion0 "#FA4716")
     (vermilion1 "#ca6036")
     (vermilion2 "#a14223")
     (vermilion3 "#ee7042")
@@ -226,7 +226,7 @@
     (purple9 "#E6D3EE")
 
     ;; Violet #7F00FF
-    (violet0 "#7f1de1")
+    (violet0 "#853AE1")
     (violet1 "#8B48CF")
     (violet2 "#61259e")
     (violet3 "#c79af4")
@@ -549,7 +549,7 @@
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
-  '(
+  `(
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
     (font-lock-comment-delimiter-face (:foreground kaolin-comment :italic kaolin-themes-italic-comments))
