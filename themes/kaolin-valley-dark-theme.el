@@ -84,7 +84,7 @@
    (line-color2       str)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-border       bg3)
+   (line-border       (if kaolin-themes-modeline-border bg3 line-bg1))
 
    (prompt aquamarine1)
 

@@ -517,7 +517,7 @@
     (line-inactive     comment)
     (line-bg1          bg2)
     (line-bg2          bg4)
-    (line-border       bg4)
+    (line-border       (if kaolin-themes-modeline-border bg4 line-bg1))
     (line-color1       fg1)
     (line-color2       builtin)
     ; TODO:

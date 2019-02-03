@@ -132,6 +132,10 @@
   "If not-nil, scale heading size in org-mode."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-modeline-border t
+  "If not-nil, enable distinct border in mode-line."
+  :group 'kaolin-themes)
+
 (defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)
