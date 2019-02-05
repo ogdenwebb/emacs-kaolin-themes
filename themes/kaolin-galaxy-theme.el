@@ -32,7 +32,7 @@
 
    (keyword     cyan3)
    (second-key  keyword)
-   (builtin     teal0)
+   (builtin     teal3)
    (functions   magenta3)
    (var         amber3)
    (const       orange3)
@@ -47,6 +47,7 @@
    ;; (comment-alt vermilion7)
    (comment-alt azure4)
    (str         spring-green3)
+   ;; TODO:
    (str-alt     harlequin3)
    (doc         str-alt)
    (warning     orange3)
