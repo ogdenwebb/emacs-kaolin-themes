@@ -4,14 +4,14 @@
 ;;; Code:
 (require 'kaolin-themes)
 
-(defgroup kaolin-galaxy nil
+(defgroup kaolin-valley-dark nil
   "Kaolin valley dark theme options."
   :group 'kaolin-themes)
 
 (defcustom kaolin-valley-dark-alt-bg nil
   "Use alternative brighter background."
   :type 'boolean
-  :group 'kaolin-galaxy)
+  :group 'kaolin-valley-dark)
 
 (define-kaolin-theme valley-dark  "Colorful Kaolin theme with dark brown background."
   ;; Palette modification
