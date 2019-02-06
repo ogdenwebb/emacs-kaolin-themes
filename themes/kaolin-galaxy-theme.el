@@ -11,7 +11,7 @@
 (defcustom kaolin-galaxy-alt-bg nil
   "Use alternative darker background color."
   :type 'boolean
-  :group 'kaolin-themes)
+  :group 'kaolin-galaxy)
 
 (define-kaolin-theme galaxy "Bright theme based on one of the Sebastian Andaur arts."
   ;; Palette modification
@@ -19,7 +19,6 @@
    (azure1        "#2a57cc")
    (spring-green1 "#6dd797")
    (ultramarine7  "#615B75")
-
                                ;; dark      bright   terminal
    (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
    (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
