@@ -1,11 +1,11 @@
 ;;; kaolin-themes.el --- A set of eye pleasing themes  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2017-2018 ogdenwebb
+;; Copyright (C) 2017-2019 ogdenwebb
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.4.2
+;; Version: 1.4.3
 ;; Keywords: dark light teal blue violet purple brown theme faces
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -106,6 +106,9 @@
 (defcustom kaolin-themes-hl-line-colored nil
   "When t, will display colored hl-line style instead dim gray."
   :group 'kaolin-themes)
+
+(defcustom kaolin-theme-linum-hl-line-style nil
+  "When t, enable same style for hl-line and line number faces.")
 
 (defcustom kaolin-themes-italic-comments nil
   "If t, enable italic style in comments."
