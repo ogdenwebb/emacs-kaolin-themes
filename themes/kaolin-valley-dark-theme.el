@@ -4,8 +4,16 @@
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme valley-dark  "Colorful Kaolin theme with brown background."
+(defgroup kaolin-galaxy nil
+  "Kaolin valley dark theme options."
+  :group 'kaolin-themes)
 
+(defcustom kaolin-valley-dark-alt-bg nil
+  "Use alternative brighter background."
+  :type 'boolean
+  :group 'kaolin-galaxy)
+
+(define-kaolin-theme valley-dark  "Colorful Kaolin theme with dark brown background."
   ;; Palette modification
   (
    ;; Colors
@@ -15,15 +23,13 @@
    (cerulean4     "#47629E")
 
    ;; Color vars
-   ;; TODO: (??) make more bright
+   ;; dark      bright   terminal
    (bg0 "#1C1616")
-   ;; (bg1 "#211D1D" black1)
-   (bg1 "#232020" black1)
-   (bg2 "#282323" black2)
-   (bg3 "#2E2828" black3)
-   (bg4 "#352D2D" black4)
+   (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#211F1D") black1)
+   (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#282423") black2)
+   (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#282423") black3)
+   (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#282423") black4)
    ;; (pane "#262122")
-   ;; (bg-alt "#453947")
 
    (fg1 amber9)
 
