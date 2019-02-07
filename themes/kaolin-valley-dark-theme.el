@@ -27,8 +27,8 @@
    (bg0 "#1C1616")
    (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#211F1D") black1)
    (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#282423") black2)
-   (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#282423") black3)
-   (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#282423") black4)
+   (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#2E2828") black3)
+   (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#352D2D") black4)
    ;; (pane "#262122")
 
    (fg1 amber9)
@@ -90,7 +90,7 @@
    (line-color2       str)
    (line-bg1          bg2)
    (line-bg2          bg3)
-   (line-border       (if kaolin-themes-modeline-border bg3 line-bg1))
+   (line-border       (if kaolin-themes-modeline-border bg4 line-bg1))
 
    (prompt aquamarine1)
 
