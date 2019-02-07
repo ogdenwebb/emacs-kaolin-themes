@@ -47,7 +47,7 @@
 
 
    (keyword     teal2)
-   (second-key  teal2)
+   (metakey     teal2)
    (var         magenta4)
    (const       magenta4)
    (builtin     azure4)

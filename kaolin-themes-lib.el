@@ -309,6 +309,7 @@
     (capri9 "#D3E6EE")
 
     ;; Cyan #00FFFF
+    ;; TODO: #00B7EB
     (cyan0 "#0bc9cf")
     (cyan1 "#57bfc2")
     (cyan2 "#09878b")
@@ -492,8 +493,9 @@
     (diff-bg-rem crimson4)
 
     (keyword     teal1)
-    (second-key  comment)
+    (metakey     comment)
     (builtin     teal4)
+    (header      builtin)
     (functions   builtin)
     ;; TODO: (??) change to brown3 like sierra.vim
     (str         spring-green3)
@@ -775,7 +777,7 @@
     (info-string           (:foreground str))
 
     ;; Helpful
-    (helpful-heading (:foreground done :weight 'bold :height 1.1))
+    (helpful-heading (:foreground header :weight 'bold :height 1.1))
 
     ;; Company
     (company-tooltip                  (:background tooltip-bg :foreground tooltip-fg :bold bold))
@@ -1160,11 +1162,11 @@
     (org-tag                       (:foreground prep))
     (org-checkbox                  (:foreground functions))
 
-    (org-document-info-keyword     (:foreground second-key))
+    (org-document-info-keyword     (:foreground metakey))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
     ;; TODO: org-src-fontify-natively doesn't change fg to default
     (org-block                     (:foreground fg3))
-    (org-block-begin-line          (:foreground second-key))
+    (org-block-begin-line          (:foreground metakey))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
     (org-document-title            (:foreground builtin :bold bold))
@@ -1247,6 +1249,29 @@
     (tuareg-font-lock-multistage-face         (:inherit 'font-lock-preprocessor-face))
     (tuareg-font-lock-interactive-error-face  (:inherit 'error))
     (tuareg-font-lock-interactive-output-face (:inherit 'default))
+
+    ;; Markdown
+    (markdown-bold-face               (:inherit 'bold))
+    (markdown-italic-face             (:inherit 'italic))
+    (markdown-header-face             (:foreground header :bold 'bold))
+    (markdown-header-delimiter-face   (:inherit 'markdown-header-face))
+    (markdown-metadata-key-face       (:foreground metakey))
+    (markdown-metadata-value-face     (:foreground doc))
+    (markdown-markup-face             (:foreground functions))
+    (markdown-list-face               (:foreground functions))
+    (markdown-pre-face                (:foreground str))
+    (markdown-code-face               (:background bg2))
+    (markdown-inline-code-face        (:inherit '(markdown-code-face markdown-pre-face)))
+    (markdown-link-face               (:inherit 'link))
+    (markdown-url-face                (:foreground str))
+    (markdown-blockquote-face         (:foreground fg4))
+    (markdown-reference-face          (:foreground doc))
+    (markdown-language-keyword-face   (:foreground type))
+    (markdown-html-tag-name-face      (:inherit 'font-lock-keyword-face))
+    (markdown-html-tag-delimiter-face (:inherit 'web-mode-html-tag-face))
+    (markdown-html-entity-face        (:inherit 'font-lock-variable-name-face))
+    (markdown-html-attr-name-face     (:inherit 'font-lock-function-name-face))
+    (markdown-html-attr-value-face    (:inherit 'font-lock-string-face))
 
     ;; Helm
     ;; TODO: rework

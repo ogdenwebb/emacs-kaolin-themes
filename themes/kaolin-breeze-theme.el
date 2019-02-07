@@ -32,7 +32,7 @@
    (fg4 gray4)
 
    (keyword     cerulean4)
-   (second-key  keyword)
+   (metakey     keyword)
    (builtin     vermilion4)
 
    (var         crimson3)

@@ -51,7 +51,7 @@
    (fg4 gray4)
 
    (keyword     teal0)
-   (second-key  keyword)
+   (metakey     keyword)
    (builtin     erin2)
 
    (var         crimson0)

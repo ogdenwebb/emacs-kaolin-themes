@@ -23,7 +23,7 @@
 
    (keyword     violet4)
    (builtin     violet4)
-   (second-key  teal0)
+   (metakey     teal0)
 
    (functions   cyan0)
    (const       teal0)

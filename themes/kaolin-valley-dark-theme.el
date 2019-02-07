@@ -34,8 +34,9 @@
    (fg1 amber9)
 
    (keyword     teal0)
-   (second-key  keyword)
+   (metakey     keyword)
    (builtin     aquamarine1)
+   (header      orange3)
 
    (var         crimson3)
    (const       crimson3)

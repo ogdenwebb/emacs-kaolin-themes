@@ -14,7 +14,7 @@
    (keyword     azure1)
    ;; (keyword     capri1)
    ;; TODO: a bit more bright
-   (second-key  cerise4 cerise4)
+   (metakey     cerise4 cerise4)
    (builtin     capri3)
    (functions   builtin)
    (var         ultramarine3)

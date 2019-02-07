@@ -22,7 +22,7 @@
    (bg4 "#3a4556")
 
    (keyword     crimson0)
-   (second-key  keyword)
+   (metakey     keyword)
    (builtin     teal4)
    (functions   cyan3)
 

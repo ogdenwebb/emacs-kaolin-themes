@@ -23,7 +23,7 @@
    (hl aquamarine3)
    (keyword spring-green8)
 
-   (second-key  magenta4 cerise4)
+   (metakey     magenta4 cerise4)
    ;; (builtin     "#E0F3EB")
    (builtin     spring-green9)
    (functions   builtin)

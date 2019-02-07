@@ -14,7 +14,7 @@
    (azure2 "#325074")
 
    (keyword     cerise4)
-   (second-key  magenta2 cerise4)
+   (metakey  magenta2 cerise4)
    (builtin     magenta3)
    (functions   builtin)
    ;; TODO:
