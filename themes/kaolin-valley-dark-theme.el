@@ -54,7 +54,7 @@
    (prep        vermilion3)
    (num         harlequin3)
    (bool        num)
-   (warning     amber1)
+   (warning     amber0)
    (err         red3)
 
    (dim-buffer white0)
@@ -63,7 +63,7 @@
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
    (hl-indent  "#453947")
    ;; TODO:
-   (selection bg4)
+   (selection amber6)
    ;; TODO:
    (pulse bg4)
 
