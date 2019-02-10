@@ -37,7 +37,7 @@
 ;; TODO: remap hl-line after load-theme
 (defun kaolin-treemacs--remap-hl-line ()
   "Remap hl-line face."
-  (face-remap-add-relative 'hl-line `(:background ,(face-background 'default) :foreground ,(face-foreground 'font-lock-preprocessor-face))))
+  (face-remap-add-relative 'hl-line `(:background ,(face-background 'default) :foreground ,(face-foreground 'lazy-highlight))))
 
 (defun kaolin-treemacs--hook ()
   (setq line-spacing kaolin-themes-treemacs-line-spacing
