@@ -13,7 +13,7 @@
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
-   (crimson0      "#D94170")
+   (crimson0      "#DC4473")
 
    ;; Color vars
    (bg1 "#222933")
@@ -28,8 +28,6 @@
 
    (var         aquamarine3)
    (const       magenta3)
-   ;; (type        capri3)
-   ;; (type        teal0)
    (type        ultramarine1)
    (link        type)
 
@@ -41,7 +39,6 @@
    (doc         str-alt)
 
    (prep        magenta1)
-   ;; (prep        ultramarine1)
    (num         amber3)
    (bool        num)
    (warning     orange1)
