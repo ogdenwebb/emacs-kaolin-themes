@@ -17,7 +17,7 @@
    (metakey     cerise4 cerise4)
    (builtin     capri3)
    (functions   builtin)
-   (var         ultramarine3)
+   (var         ultramarine1)
    (const       magenta3)
    (type        cyan1)
    (prep        pink1)

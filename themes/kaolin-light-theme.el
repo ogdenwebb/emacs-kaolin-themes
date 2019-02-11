@@ -31,7 +31,7 @@
    (aquamarine1   "#47ba99")
    (azure4        "#4C7A90")
    ;; TODO: less contrast
-   (ultramarine3  "#6D46E3")
+   (ultramarine1  "#6D46E3")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -61,7 +61,7 @@
    (type        vermilion3)
    (num         red1)
    (bool        num)
-   (prep        ultramarine3)
+   (prep        ultramarine1)
    (warning     orange1)
    (err         crimson0)
 

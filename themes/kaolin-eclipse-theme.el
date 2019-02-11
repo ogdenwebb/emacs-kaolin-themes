@@ -47,7 +47,7 @@
 
    (ivy2 capri0)
    (ivy3 spring-green1)
-   (ivy4 ultramarine3)
+   (ivy4 ultramarine1)
 
    (rb1 crimson4)
    (rb2 violet4)

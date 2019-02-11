@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;
 ;;; Color order
+;; TODO: add color close to color5 but satured
 ;;
 ;; color0 - almost pure/contrast >= 70 sat & > 70 val
 ;; color1 - regular
@@ -114,6 +115,7 @@
     (amber9 "#eee6d3")
 
     ;; Orange #FF7F00
+    ;; TODO: maybe add #dbb68f
     (orange0 "#e67417")
     (orange1 "#dbac66")
     (orange2 "#b87e3c")
@@ -240,11 +242,11 @@
     ;; Ultramarine #3F00FF
     ;; TODO adjust
     (ultramarine0 "#4618dc")
-    (ultramarine1 "#5f3eca")
+    (ultramarine1 "#9277F2")
     ;; TODO:
     (ultramarine2  "#6D6487")
     ;; (ultramarine3 "#6d44eb")
-    (ultramarine3 "#9C83F2")
+    (ultramarine3 "#a287dd")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
     ;; (ultramarine6 "#322E40")

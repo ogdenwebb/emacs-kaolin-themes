@@ -24,7 +24,7 @@
    (orange3       "#F3AE6C")
    ;; (cerulean4  "#536a9d")
    (cerulean4     "#47629E")
-   (ultramarine3  "#744DF7")
+   (ultramarine1  "#744DF7")
 
    (azure1     "#0070CC")
    (teal0      "#0D7A75")
@@ -62,7 +62,7 @@
    (comment     brown8)
    (comment-alt teal7)
 
-   (str         ultramarine3)
+   (str         ultramarine1)
    (str-alt     ultramarine4)
    (doc         str-alt)
 

@@ -13,7 +13,7 @@
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
-   (crimson0      "#DC3F70")
+   (crimson0      "#D94170")
 
    ;; Color vars
    (bg1 "#222933")
@@ -30,7 +30,7 @@
    (const       magenta3)
    ;; (type        capri3)
    ;; (type        teal0)
-   (type        ultramarine3)
+   (type        ultramarine1)
    (link        type)
 
    (comment     azure7)
@@ -41,7 +41,7 @@
    (doc         str-alt)
 
    (prep        magenta1)
-   ;; (prep        ultramarine3)
+   ;; (prep        ultramarine1)
    (num         amber3)
    (bool        num)
    (warning     orange1)
@@ -70,7 +70,7 @@
    (rb5 purple3)
    (rb6 cyan0)
    (rb7 spring-green3)
-   (rb8 ultramarine3)
+   (rb8 ultramarine1)
    (rb9 yellow3)
 
    (diff-add spring-green3)

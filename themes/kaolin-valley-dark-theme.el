@@ -60,7 +60,6 @@
    (err         red3)
 
    (dim-buffer white0)
-   (hl         capri3)
    (hl         vermilion3)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
