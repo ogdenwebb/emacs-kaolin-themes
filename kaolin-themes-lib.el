@@ -240,13 +240,10 @@
     (violet9 "#E2D3EE")
 
     ;; Ultramarine #3F00FF
-    ;; TODO adjust
-    (ultramarine0 "#4618dc")
-    (ultramarine1 "#9277F2")
-    ;; TODO:
-    (ultramarine2  "#6D6487")
-    ;; (ultramarine3 "#6d44eb")
-    (ultramarine3 "#a287dd")
+    (ultramarine0 "#554AF5")
+    (ultramarine1 "#7F77F2")
+    (ultramarine2 "#6D6487")
+    (ultramarine3 "#9587DD")
     (ultramarine4 "#787096")
     (ultramarine5 "#16141e")
     ;; (ultramarine6 "#322E40")
