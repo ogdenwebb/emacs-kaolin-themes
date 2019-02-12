@@ -128,7 +128,7 @@
     (orange9 "#EEE6D3")
 
     ;; Vermilion #FF3F00
-    (vermilion0 "#FA4716")
+    (vermilion0 "#F84B1B")
     (vermilion1 "#ca6036")
     (vermilion2 "#a14223")
     (vermilion3 "#ee7042")
@@ -557,10 +557,10 @@
     (font-lock-comment-face           (:foreground kaolin-comment :italic kaolin-themes-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
-    (font-lock-function-name-face     (:foreground functions :bold bold))
-    (font-lock-keyword-face           (:foreground keyword :bold bold))
+    (font-lock-function-name-face     (:foreground functions))
+    (font-lock-keyword-face           (:foreground keyword))
     (font-lock-negation-char-face     (:foreground red1))
-    (font-lock-preprocessor-face      (:foreground prep :bold nil))
+    (font-lock-preprocessor-face      (:foreground prep))
     (font-lock-reference-face         (:foreground const))
     (font-lock-string-face            (:foreground str))
     (font-lock-type-face              (:foreground type))
