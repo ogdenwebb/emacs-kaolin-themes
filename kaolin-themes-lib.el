@@ -559,7 +559,7 @@
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions))
     (font-lock-keyword-face           (:foreground keyword))
-    (font-lock-negation-char-face     (:foreground red1))
+    (font-lock-negation-char-face     (:foreground err))
     (font-lock-preprocessor-face      (:foreground prep))
     (font-lock-reference-face         (:foreground const))
     (font-lock-string-face            (:foreground str))
@@ -589,7 +589,7 @@
     (bold-italic         (:bold bold :italic italic))
     (link                (:foreground link :underline underline))
     (link-visited        (:inherit 'link :underline nil))
-    (success             (:background nil :foreground spring-green1))
+    (success             (:background nil :foreground done))
     (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
@@ -602,7 +602,6 @@
     (match        (:background nil :foreground hl))
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
     (isearch-fail (:background nil :foreground err))
-
 
     ;; Interface
     (package-name          (:inherit 'link :underline nil))
