@@ -21,21 +21,17 @@
    (bg3 "#202430" black3)
    (bg4 "#272C3A" black4)
 
-   ;; TODO:
    (hl amber0)
 
-   (keyword     vermilion3)
+   (keyword     ultramarine3)
    (builtin     aquamarine3)
-   (metakey     teal0)
+   (metakey     keyword)
 
-   ;; TODO:
-   (functions   lime3)
-   ;; (functions   amber3)
-   (const       teal0)
-   (var         cyan3)
-   ;; (type        cyan3)
-   (type        green3)
-   ;; (type        erin3)
+   (functions   magenta3)
+   (const       capri3)
+   (var         capri3)
+   ;; (type        green3)
+   (type        teal0)
 
 
    (comment     "#454459")
@@ -47,9 +43,14 @@
    (num         violet3)
    (bool        num)
 
-   (str         crimson3)
-   ;; TODO: more distinct
-   (str-alt     pink4)
+   ; var1
+   ;; (str         crimson3)
+   ;; (str-alt     pink4)
+   ; var2
+   ;; (str         amber3)
+   ;; (str-alt     orange3)
+   (str         cyan3)
+   (str-alt     spring-green4)
    (doc         str-alt)
 
    (dim-buffer bg0)
@@ -113,8 +114,8 @@
    ;; (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    ;; (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
-   ;; (highlight-quoted-quote   (:foreground type))
-   ;; (highlight-quoted-symbol  (:foreground teal0))
+   (highlight-quoted-quote   (:foreground type))
+   (highlight-quoted-symbol  (:foreground type))
 
    ;; TODO:
    (org-level-1         (:foreground teal0 :bold bold :height 1.1))
@@ -124,7 +125,7 @@
    (org-document-title  (:foreground cyan3 :bold bold))
    (org-document-info   (:foreground cyan3))
    (org-date            (:foreground teal0 :underline underline))
-   (org-table           (:foreground capri4))
+   (org-table           (:background bg2 :foreground blue4))
    (org-code            (:foreground yellow3))
    (org-verbatim        (:inherit    'org-code))
    (org-quote           (:foreground blue4)))
