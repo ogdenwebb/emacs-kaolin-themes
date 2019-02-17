@@ -116,7 +116,7 @@
   (
    (highlight-quoted-symbol  (:foreground num))
 
-   (org-document-title     (:foreground orange3 :bold bold))
+   (org-document-title     (:foreground header :bold bold))
    ;; (org-document-info      (:foreground brown3))
 
    ;; TODO:
