@@ -11,23 +11,23 @@
    (bg3 "#28283a" black3)
    (bg4 "#32324a" black4)
 
-   (keyword     azure1)
-   ;; (keyword     capri1)
-   ;; TODO: a bit more bright
-   (metakey     cerise4 cerise4)
-   (builtin     capri3)
+   (keyword     azure3)
+   (metakey     cerise4 cerise4) ; todo
+   (builtin     cyan1)
    (functions   builtin)
-   (var         ultramarine1)
+   (var         violet3)
    (const       magenta3)
-   (type        cyan1)
+   (type        amber3)
    (prep        pink1)
    (num         pink1)
    (bool        num)
 
    (comment     gray2)
    (comment-alt "#43436E")
-   (str         amber3 "#ffd787")
-   (str-alt     vermilion4)
+   ;; (str         amber3 "#ffd787")
+   ;; (str-alt     vermilion4)
+   (str         teal4)
+   (str-alt     aquamarine2)
    (doc         str-alt)
    (warning     orange1)
    (err         red1)
@@ -79,8 +79,8 @@
    ;; Custom theme set faces
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (highlight-quoted-quote   (:foreground functions))
-   (highlight-quoted-symbol  (:foreground type))
+   ;; (highlight-quoted-quote   (:foreground functions))
+   ;; (highlight-quoted-symbol  (:foreground type))
 
    (org-code            (:foreground pink1))
    (org-verbatim        (:foreground spring-green1))
