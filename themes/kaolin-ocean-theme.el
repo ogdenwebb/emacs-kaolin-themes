@@ -4,16 +4,26 @@
 ;;; Code:
 (require 'kaolin-themes)
 
+(defgroup kaolin-ocean nil
+  "Kaolin valley dark theme options."
+  :group 'kaolin-themes)
+
+(defcustom kaolin-ocean-alt-bg nil
+  "Use alternative dark gray background."
+  :type 'boolean
+  :group 'kaolin-ocean)
+
 (define-kaolin-theme ocean "Dark blue Kaolin theme variant."
   ;; Palette modification
-  ((bg1 blue5 black1)
-   (bg2 "#1d1d2b" black2)
-   (bg3 "#28283a" black3)
-   (bg4 "#32324a" black4)
+  ((bg1 (if kaolin-ocean-alt-bg black2 blue5) black2)
+   (bg2 (if kaolin-ocean-alt-bg black3 "#1d1d2b") black3)
+   (bg3 (if kaolin-ocean-alt-bg black4 "#28283a") black4)
+   (bg4 (if kaolin-ocean-alt-bg gray0 "#32324a") gray0)
 
    (keyword     azure3)
+   (keyword     cerulean4)
    (metakey     cerise4 cerise4) ; todo
-   (builtin     cyan1)
+   (builtin     azure3)
    (functions   builtin)
    (var         violet3)
    (const       magenta3)
@@ -26,8 +36,10 @@
    (comment-alt "#43436E")
    ;; (str         amber3 "#ffd787")
    ;; (str-alt     vermilion4)
-   (str         teal4)
-   (str-alt     aquamarine2)
+   ;; (str         teal4)
+   ;; (str-alt     aquamarine2)
+   (str         vermilion4)
+   (str-alt     vermilion7)
    (doc         str-alt)
    (warning     orange1)
    (err         red1)
@@ -79,8 +91,8 @@
    ;; Custom theme set faces
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   ;; (highlight-quoted-quote   (:foreground functions))
-   ;; (highlight-quoted-symbol  (:foreground type))
+   (highlight-quoted-quote   (:foreground functions))
+   (highlight-quoted-symbol  (:foreground type))
 
    (org-code            (:foreground pink1))
    (org-verbatim        (:foreground spring-green1))
