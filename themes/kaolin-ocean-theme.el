@@ -32,13 +32,13 @@
    (num         amber3)
    (bool        num)
 
+   (keysym amber3)
+
    (comment     gray2)
    ;; (comment     blue7)
    (comment-alt "#43436E")
-   ;; (str         vermilion4)
-   ;; (str-alt     vermilion7)
-   (str         capri4)
-   (str-alt     azure4)
+   (str         green3)
+   (str-alt     spring-green4)
    (doc         str-alt)
    (warning     orange1)
    (err         red1)
