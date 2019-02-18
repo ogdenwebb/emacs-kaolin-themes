@@ -889,6 +889,13 @@
 
     (magit-popup-key              (:foreground keysym))
 
+    ;; Magit Transient
+    (transient-heading         (:foreground header))
+    (transient-key             (:foreground keysym))
+    (transient-argument        (:foreground hl))
+    (transient-enabled-suffix  (:background done :foreground bg1))
+    (transient-disabled-suffix (:background err :foreground bg1))
+
     ;; Flycheck
     (flycheck-info           (:underline (:style underline-style :color done)))
     (flycheck-warning        (:underline (:style underline-style :color warning)))
