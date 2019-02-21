@@ -1,11 +1,11 @@
-;;; kaolin-temple-theme.el --- TODO
+;;; kaolin-temple-theme.el --- Other Kaolin theme with dark brown background
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
 (define-kaolin-theme temple
-  "TODO"
+  "The terrestrial sphere imbues my spirit."
 
   ;; Palette modification
   (
@@ -14,36 +14,39 @@
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
    (crimson0      "#DC4473")
+   (vermilion4    "#D7936D")
+   (cyan1         "#57B2C2")
 
    ;; Color vars
    (bg1 "#262522")
    (bg2 "#302E2B")
    (bg3 "#3B3935")
-   (bg4 "#45413E")
+   (bg4 "#45433e")
+
+   (fg1 orange9)
 
    (keyword     vermilion4)
    (metakey     keyword)
    (builtin     amber3)
    (functions   amber3)
 
-   (var         teal1)
+   (var         teal4)
+   ;; (var         capri4)
    (const       cyan1)
    (type        violet4)
 
-   (comment     azure7)
+   (comment     orange7)
    (comment-alt vermilion7)
 
    (str         pink3)
    (str-alt     pink7)
    (doc         str-alt)
 
-   ;; (prep        vermilion3)
-   ;; (prep        cyan1)
    (prep        crimson3)
    (link        prep)
-   (num         capri4)
+   (num         crimson3)
    (bool        num)
-   (warning     orange1)
+   (warning     yellow3)
    (err         red3)
 
    (dim-buffer white0)
@@ -57,24 +60,27 @@
    ;; TODO:
    (pulse bg4)
 
-   (todo red3)
+   (todo red1)
 
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 
-   (rb1 crimson3)
-   (rb2 pink3)
-   (rb3 orange3)
-   (rb4 aquamarine1)
-   (rb5 purple3)
-   (rb6 cyan0)
-   (rb7 spring-green3)
-   (rb8 ultramarine1)
+   (rb1 orange3)
+   (rb2 pink4)
+   (rb3 capri4)
+   (rb4 brown3)
+   (rb5 amber3)
+   (rb6 teal1)
+   (rb7 cyan1)
+   (rb8 ultramarine4)
    (rb9 yellow3)
 
-   (diff-add spring-green3)
-   (diff-mod vermilion3)
-   (diff-rem red3)
+   ;; (diff-add spring-green3)
+   ;; (diff-mod vermilion3)
+   ;; (diff-rem red3)
+   (diff-add teal1)
+   (diff-mod vermilion4)
+   (diff-rem red1)
 
     ;; Mode-line
    (line-fg           fg4)
@@ -89,7 +95,7 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   (line-num-fg   azure7)
+   (line-num-fg   comment)
    (line-num-hl   hl)
 
    (cursor        fg1)

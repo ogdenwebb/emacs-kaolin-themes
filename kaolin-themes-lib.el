@@ -582,7 +582,7 @@
     (cursor              (:background cursor))
     (vertical-border     (:foreground win-border))
     (window-divider      (:foreground win-border))
-    (minibuffer-prompt   (:foreground prompt :bold bold))
+    (minibuffer-prompt   (:background nil :foreground prompt :bold bold))
     (bold                (:bold bold))
     (italic              (:italic italic))
     (default-italic      (:italic italic))
