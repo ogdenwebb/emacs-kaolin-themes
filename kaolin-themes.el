@@ -34,7 +34,7 @@
 ;;  * kaolin-aurora - Kaolin meets polar lights.
 ;;  * kaolin-bubblegum - Kaolin colorful theme with dark blue background.
 ;;  * kaolin-eclipse - a dark purple variant.
-;;  * kaolin-fusion - dark gray background and syntax based on bright colors.
+;;  * kaolin-temple - dark brown background with syntax highlighting based on orange and cyan shades.
 ;;  * kaolin-galaxy - bright theme based on one of the Sebastian Andaur arts.
 ;;  * kaolin-ocean - dark blue variant.
 ;;  * kaolin-valley-dark - colorful Kaolin theme with brown background.

@@ -32,7 +32,7 @@ These themes might be changed in the future.
 * **kaolin-valley-light** - light variant of kaolin-valley theme.
 * **kaolin-bubblegum** - colorful theme with dark blue background.
 * **kaolin-mono-dark** - almost monochrome dark green Kaolin theme.
-* **kaolin-fusion** - Theme with dark gray background and syntax highlighting based on bright colors, such as crimson, pink, teal, amber and ultramarine.
+* **kaolin-temple** - dark brown background with syntax highlighting based on orange and cyan shades.
 * **kaolin-breeze** - Light Kaolin theme with soft colors.
 
 ### Planned
