@@ -1,11 +1,11 @@
-;;; kaolin-fusion-theme.el --- Colorful theme with dark gray background
+;;; kaolin-temple-theme.el --- TODO
 ;;; Commentary:
 
 ;;; Code:
 (require 'kaolin-themes)
 
-(define-kaolin-theme fusion
-  "Theme with dark gray background and syntax highlighting based on bright colors, such as crimson, pink, teal, amber and ultramarine."
+(define-kaolin-theme temple
+  "TODO"
 
   ;; Palette modification
   (
@@ -16,38 +16,40 @@
    (crimson0      "#DC4473")
 
    ;; Color vars
-   (bg1 "#222933")
-   (bg2 "#2a323f")
-   (bg3 "#323c4b")
-   (bg4 "#3a4556")
+   (bg1 "#262522")
+   (bg2 "#302E2B")
+   (bg3 "#3B3935")
+   (bg4 "#45413E")
 
-   (keyword     crimson0)
+   (keyword     vermilion4)
    (metakey     keyword)
-   (builtin     teal4)
-   (functions   cyan3)
+   (builtin     amber3)
+   (functions   amber3)
 
-   (var         aquamarine3)
-   (const       magenta3)
-   (type        ultramarine1)
-   (link        type)
+   (var         teal1)
+   (const       cyan1)
+   (type        violet4)
 
    (comment     azure7)
    (comment-alt vermilion7)
 
-   (str         capri4)
-   (str-alt     azure4)
+   (str         pink3)
+   (str-alt     pink7)
    (doc         str-alt)
 
-   (prep        magenta1)
-   (num         amber3)
+   ;; (prep        vermilion3)
+   ;; (prep        cyan1)
+   (prep        crimson3)
+   (link        prep)
+   (num         capri4)
    (bool        num)
    (warning     orange1)
    (err         red3)
 
    (dim-buffer white0)
-   (hl         amber0)
+   (hl         aquamarine3)
    ;; TODO: add colored
-   (hl-line    (if kaolin-themes-hl-line-colored capri6 bg3))
+   (hl-line    bg2)
    (hl-indent  gray0)
    ;; TODO:
    (selection crimson6)
@@ -111,9 +113,9 @@
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
-     'kaolin-fusion
+     'kaolin-temple
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
-;;; kaolin-fusion-theme.el ends here
+;;; kaolin-temple-theme.el ends here
