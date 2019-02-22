@@ -15,6 +15,7 @@
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
    (crimson0      "#DC4473")
+   (crimson7      "#BA667D")
    (vermilion4    "#D7936D")
    (cyan1         "#57B2C2")
    (red1          "#C74A4D")
@@ -38,10 +39,11 @@
    (type        violet4)
 
    (comment     orange7)
+   ;; (comment     crimson7)
    (comment-alt vermilion7)
 
    (str         pink3)
-   (str-alt     pink7)
+   (str-alt     crimson7)
    (doc         str-alt)
 
    (prep        crimson3)
