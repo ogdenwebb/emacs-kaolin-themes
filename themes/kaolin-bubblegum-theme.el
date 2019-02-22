@@ -114,7 +114,7 @@
    ;; (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    ;; (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
-   (highlight-quoted-quote   (:foreground type))
+   (highlight-quoted-quote   (:foreground aquamarine3))
    (highlight-quoted-symbol  (:foreground type))
 
    ;; TODO:
