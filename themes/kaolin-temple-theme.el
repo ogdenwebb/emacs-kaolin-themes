@@ -11,11 +11,13 @@
   (
    ;; Colors
    (spring-green6 "#3e594e")
+   (aquamarine1   "#47BF9D")
    (aquamarine4   "#518270")
    (orange3       "#f5c791")
    (crimson0      "#DC4473")
    (vermilion4    "#D7936D")
    (cyan1         "#57B2C2")
+   (red1          "#C74A4D")
 
    ;; Color vars
    (bg1 "#262522")
@@ -61,6 +63,7 @@
    (pulse bg4)
 
    (todo red1)
+   (done aquamarine1)
 
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
@@ -111,11 +114,13 @@
 
    (org-document-title     (:foreground orange3 :bold bold))
    ;; (org-document-info      (:foreground brown3))
+   (org-verbatim     (:foreground cyan1 :bold bold))
 
    (org-level-1            (:foreground var :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
-   (org-level-4            (:foreground num :bold nil)))
+   (org-level-4            (:foreground keyword :bold nil))
+   (org-level-5            (:foreground prep :bold nil)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
