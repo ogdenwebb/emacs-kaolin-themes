@@ -41,7 +41,7 @@
    (str-alt     spring-green4)
    (doc         str-alt)
    (warning     orange1)
-   (err         red1)
+   (err         red3)
 
    (dim-buffer "#0F0F17")
    (hl         aquamarine0)
@@ -58,14 +58,14 @@
    (ivy3 amber3)
    (ivy4 spring-green1)
 
-   (rb1 cyan1)
+   (rb1 blue4)
    (rb2 violet4)
    (rb3 teal1)
-   (rb4 blue4)
-   (rb5 aquamarine2)
-   (rb6 spring-green3)
-   (rb7 amber1)
-   (rb8 azure2)
+   (rb4 crimson4)
+   (rb5 azure4)
+   (rb6 spring-green4)
+   (rb7 vermilion4)
+   (rb8 capri4)
    (rb9 azure3)
 
    (diff-add spring-green1)
@@ -87,9 +87,6 @@
    (cursor        "#c3c8e0"))
 
   (
-   ;; Custom theme set faces
-   (show-paren-mismatch (:background bg2 :foreground red0))
-
    (highlight-quoted-quote   (:foreground functions))
    (highlight-quoted-symbol  (:foreground amber3))
 
