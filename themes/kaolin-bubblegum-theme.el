@@ -50,7 +50,7 @@
    ;; (str         amber3)
    ;; (str-alt     orange3)
    (str         cyan3)
-   (str-alt     spring-green4)
+   (str-alt     cyan4)
    (doc         str-alt)
 
    (dim-buffer bg0)
