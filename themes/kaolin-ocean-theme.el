@@ -34,7 +34,7 @@
 
    (keysym amber3)
 
-   (comment     gray2)
+   (comment     gray3)
    ;; (comment     blue7)
    (comment-alt "#43436E")
    (str         green3)
@@ -82,7 +82,7 @@
    (segment-inactive  gray3)
 
    (win-border    bg3)
-   (line-num-fg   bg4)
+   (line-num-fg   gray3)
    (line-num-hl   keyword)
    (cursor        "#c3c8e0"))
 
