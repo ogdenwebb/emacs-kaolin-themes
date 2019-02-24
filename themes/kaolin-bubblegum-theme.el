@@ -43,12 +43,6 @@
    (num         violet3)
    (bool        num)
 
-   ; var1
-   ;; (str         crimson3)
-   ;; (str-alt     pink4)
-   ; var2
-   ;; (str         amber3)
-   ;; (str-alt     orange3)
    (str         cyan3)
    (str-alt     cyan4)
    (doc         str-alt)
