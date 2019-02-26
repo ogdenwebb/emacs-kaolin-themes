@@ -1154,7 +1154,7 @@
     (org-todo                      (:foreground todo :bold bold))
     (org-done                      (:foreground done  :bold bold))
     (org-headline-done             (:foreground gray4  :bold nil))
-    (org-ellipsis                  (:foreground builtin))
+    (org-ellipsis                  (:foreground builtin :underline nil))
     (org-date                      (:foreground amber3 :underline underline))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground amber3))
@@ -1344,7 +1344,13 @@
     (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
     (swiper-match-face-3 (:background bg2 :foreground ivy3 :bold bold))
     (swiper-match-face-4 (:background bg2 :foreground ivy4 :bold bold))
-    (swiper-line-face    (:inherit 'hl-line))))
+    (swiper-line-face    (:inherit 'hl-line))
+
+    ;; Awesome-tabs
+    (awesome-tab-default    (:background bg1 :foreground bg1))
+    (awesome-tab-unselected (:background bg2 :foreground comment))
+    (awesome-tab-selected   (:background bg3 :foreground hl))
+    ))
 
 ;; Predefined Kaolin variables
 ;; (defconst kaolin-common-vars
