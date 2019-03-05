@@ -54,9 +54,9 @@
 
    (tooltip-hl-bg bg4)
 
-   (ivy2 cerise1)
-   (ivy3 amber3)
-   (ivy4 spring-green1)
+   (ivy2 vermilion3)
+   (ivy3 teal0)
+   (ivy4 yellow3)
 
    (rb1 blue4)
    (rb2 violet4)
@@ -83,8 +83,7 @@
 
    (win-border    bg3)
    (line-num-fg   gray3)
-   (line-num-hl   keyword)
-   (cursor        "#c3c8e0"))
+   (line-num-hl   keyword))
 
   (
    (highlight-quoted-quote   (:foreground functions))
