@@ -621,6 +621,15 @@
     (widget-button         (:background nil :foreground keyword))
     (widget-field          (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
 
+    ;; Compilation
+    (compilation-column-number  (:foreground fg2))
+    (compilation-line-number    (:foreground num))
+    (compilation-info           (:inherit 'success))
+    (compilation-warning        (:inherit 'warning))
+    (compilation-error          (:inherit 'error :weight 'bold))
+    (compilation-mode-line-exit (:inherit 'compilation-info))
+    (compilation-mode-line-fail (:inherit 'compilation-error))
+
     ;; Highlighting
     (highlight                (:background hl-bg :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
