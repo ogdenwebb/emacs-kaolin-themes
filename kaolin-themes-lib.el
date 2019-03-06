@@ -574,7 +574,7 @@
     (default             (:background bg1 :foreground fg1))
     (warning             (:foreground warning))
     (error               (:foreground err))
-    (shadow              (:foreground gray4))
+    (shadow              (:foreground comment))
     (file-name-shadow    (:inherit 'shadow))
     (region              (:background selection :inverse-video nil))
     (secondary-selection (:background spring-green6))
