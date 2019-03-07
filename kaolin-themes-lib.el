@@ -593,6 +593,7 @@
     (escape-glyph        (:background nil :foreground cyan3))
 
     (menu        (:background bg2 :foreground fg2))
+    ;; TODO: default bg
     (header-line (:background bg4 :foreground var))
     (tool-bar    (:inherit 'header-line))
 
@@ -814,7 +815,7 @@
     (company-tooltip-search-selection (:background selection))
     (company-scrollbar-bg             (:background company-scroll-bg))
     (company-scrollbar-fg             (:background company-scroll-fg))
-    (company-template-field           (:background keyword :foreground bg1))
+    (company-template-field           (:foreground comment :underline t))
     (company-echo-common              (:background bg1 :foreground amber3))
     (company-preview                  (:background nil :foreground keyword))
     (company-preview-common           (:background bg2 :foreground amber3))
