@@ -576,7 +576,7 @@
     (error               (:foreground err))
     (shadow              (:foreground comment))
     (file-name-shadow    (:inherit 'shadow))
-    (region              (:background selection :inverse-video nil))
+    (region              (:background selection :foreground fg4))
     (secondary-selection (:background spring-green6))
     (fringe              (:background fringe :foreground fg1))
     (cursor              (:background cursor))
