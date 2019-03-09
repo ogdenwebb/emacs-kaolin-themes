@@ -640,14 +640,14 @@
     (compilation-mode-line-fail (:inherit 'compilation-error))
 
     ;; Dired
-    (dired-header     (:foreground header :bold bold))
+    (dired-header     (:foreground header :weight 'bold))
     (dired-directory  (:foreground keyword))
     (dired-ignored    (:foreground comment))
     (dired-flagged    (:foreground err))
-    (dired-mark       (:foreground num :bold bold))
-    (dired-marked     (:foreground hl :bold bold))
+    (dired-mark       (:foreground num :weight 'bold))
+    (dired-marked     (:foreground hl :weight 'bold))
     (dired-perm-write (:foreground fg1 :underline t))
-    (dired-symlink    (:foreground num))
+    (dired-symlink    (:foreground functions))
     (dired-warning    (:inherit 'font-lock-warning-face))
 
     ;; Highlighting
