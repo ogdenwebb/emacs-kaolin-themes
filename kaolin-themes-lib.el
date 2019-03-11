@@ -927,7 +927,7 @@
     (magit-bisect-good            (:foreground aquamarine1))
     (magit-bisect-bad             (:foreground red0))
     (magit-bisect-skip            (:foreground lime1))
-    (magit-signature-good         (:foreground aquamarine1))
+    (magit-signature-good         (:foreground spring-green3))
     (magit-signature-bad          (:foreground red0))
     (magit-signature-untrusted    (:foreground cyan1))
 
@@ -940,6 +940,11 @@
     (transient-enabled-suffix  (:background done :foreground bg1))
     (transient-disabled-suffix (:background err :foreground bg1))
 
+    ;; Flymake
+    (flymake-note    (:underline (:style underline-style :color done))
+    (flymake-warning (:underline (:style underline-style :color warning))
+    (flymake-error   (:underline (:style underline-style :color err))
+
     ;; Flycheck
     (flycheck-info           (:underline (:style underline-style :color done)))
     (flycheck-warning        (:underline (:style underline-style :color warning)))
@@ -947,6 +952,13 @@
     (flycheck-fringe-error   (:foreground err))
     (flycheck-fringe-warning (:foreground warning))
     (flycheck-fringe-info    (:foreground done))
+
+    ;; Flycheck posframe
+    (flycheck-posframe-face            (:inherit 'default))
+    (flycheck-posframe-background-face (:background tooltip-bg))
+    (flycheck-posframe-info-face       (:inherit 'flycheck-posframe-face :foreground tooltip-fg))
+    (flycheck-posframe-warning-face    (:inherit 'flycheck-posframe-face :foreground warning))
+    (flycheck-posframe-error-face      (:inherit 'flycheck-posframe-face :foreground err))
 
     ;; Flyspell
     (flyspell-duplicate (:underline (:style underline-style :color warning)))
