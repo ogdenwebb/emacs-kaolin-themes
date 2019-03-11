@@ -941,9 +941,9 @@
     (transient-disabled-suffix (:background err :foreground bg1))
 
     ;; Flymake
-    (flymake-note    (:underline (:style underline-style :color done))
-    (flymake-warning (:underline (:style underline-style :color warning))
-    (flymake-error   (:underline (:style underline-style :color err))
+    (flymake-note    (:underline (:style underline-style :color done)))
+    (flymake-warning (:underline (:style underline-style :color warning)))
+    (flymake-error   (:underline (:style underline-style :color err)))
 
     ;; Flycheck
     (flycheck-info           (:underline (:style underline-style :color done)))
