@@ -70,7 +70,7 @@
    ;; TODO:
    (num         vermilion0)
    (bool        num)
-   (warning     orange1)
+   (warning     orange0)
    (err         red3)
 
    (dim-buffer white0)

@@ -32,6 +32,7 @@
    (azure4        "#4C7A90")
    ;; TODO: less contrast
    (ultramarine1  "#6D46E3")
+   (orange1 "#DBA451")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -63,7 +64,7 @@
    (bool        num)
    (prep        ultramarine1)
    (warning     orange1)
-   (err         crimson0)
+   (err         crimson3)
 
    (dim-buffer white0)
    ;; TODO:
