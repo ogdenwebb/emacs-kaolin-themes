@@ -75,7 +75,7 @@
    (selection  azure9)
    (pulse      teal8)
 
-   (done aquamarine1)
+   (done erin2)
    (todo crimson0)
 
    (tooltip-hl-bg bg3)

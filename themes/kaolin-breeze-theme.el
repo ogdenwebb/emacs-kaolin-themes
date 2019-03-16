@@ -64,6 +64,7 @@
    (pulse cyan3)
 
    (todo red3)
+   (done erin2)
 
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)

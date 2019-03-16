@@ -82,7 +82,7 @@
    (pulse bg4)
 
    (todo red3)
-   (done aquamarine1)
+   (done erin2)
 
    (tooltip-fg fg3)
    (tooltip-hl-bg bg3)
