@@ -40,8 +40,8 @@
 ;; Aquamarine #00FFBF - 163
 ;; Teal #00A89D - 178
 ;; Cyan #00FFFF - 182
-;; Azure/Sky Blue #007FFF - 210
 ;; Capri/Deep Sky Blue #00BFFF - 201
+;; Azure/Sky Blue #007FFF - 210
 ;; Cerulean #003FFF - 221
 ;; Blue #0000FF - 238
 ;; Ultramarine #3F00FF - 254
@@ -52,6 +52,19 @@
 ;; Pink/rose #FF007F - 335
 ;; Crimson #FF003F - 347
 ;;
+
+(defun color-lab-luminance (color)
+  "Return the luminance through LAB color space of a color string (e.g. \"#ffaa00\", \"blue\")."
+  (nth 0 (apply #'color-srgb-to-lab (color-name-to-rgb color))))
+
+(defun color-dark-p (color)
+  "Return t if COLOR (e.g. hex string or name) is dark."
+  (< (color-lab-luminance color) 50))
+
+(defun color-light-p (color)
+  "Return t if COLOR (e.g. hex string or name) is light."
+  (> (color-lab-luminance color) 50))
+
 ;;; Code:
 (defconst kaolin-palette
   '(
@@ -467,6 +480,7 @@
     (button-border gray3)
     (button-hl amber3)
 
+    (adaptive-fg (if (color-dark-p bg1) white0 bg1))
     ;; TODO: add pos-tip in custom-theme-set-variables
     (tooltip-bg bg2)
     (tooltip-fg fg2)
@@ -1377,10 +1391,11 @@
     (helm-bookmark-w3m                        (:foreground type))
 
      ;; Avy
-    (avy-lead-face-0 (:background spring-green2 :foreground fg1))
-    (avy-lead-face   (:background red2 :foreground fg1))
-    (avy-lead-face-1 (:background capri2 :foreground fg1))
-    (avy-lead-face-2 (:background magenta2 :foreground fg1))
+    (avy-background-face (:inherit 'font-lock-comment-face))
+    (avy-lead-face       (:background spring-green2 :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face-0     (:background red2 :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face-1     (:background magenta2 :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face-2     (:background capri2 :foreground adaptive-fg :weight 'bold))
 
     ;; Ivy
     (ivy-current-match           (:background hl-line :foreground hl :bold t))

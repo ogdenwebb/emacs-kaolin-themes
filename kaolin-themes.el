@@ -163,9 +163,14 @@
              do (map-put res (car el) (cdr el)))
     res))
 
-(defun kaolin-themes-get-hex (name)
-  "Return hex value of color in kaolin-pallete by NAME"
-  (car (map-elt kaolin-palette name)))
+;; (defun kaolin-themes-palette-get (name)
+;;   "Return hex value of color in kaolin-pallete by NAME"
+;;   (let ((val (car-safe (map-elt kaolin-palette name 'missing))))
+;;     (if (and (not (null val))
+;;              (not (eql val 'missing))
+;;              (not (stringp val)))
+;;         (kaolin-themes-palette-get val)
+;;       val)))
 
 (defmacro define-kaolin-theme (name doc &optional opt-palette opt-faces &rest body)
   "Define new Kaolin theme, using NAME as part of full kaolin-<name>,
@@ -182,7 +187,7 @@ Palette is a ordinary association list, e.g. ((color1 \"#ffffff\") (color2 \"#ff
 You can define your own color/variable (my-own-red \"#ff0000\") in HEX
 or inherit a value from another variable (my-own-color red3).
 
-Use kaolin-dark-theme.el as example."
+Use kaolin-valley-dark-theme.el as example."
   (let* ((kaolin-theme-name (kaolin-themes--make-name name))
          (kaolin-theme-palette (if opt-palette
                                    (kaolin-themes--merge-alist kaolin-palette opt-palette)

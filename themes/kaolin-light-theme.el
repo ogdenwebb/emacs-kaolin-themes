@@ -13,10 +13,12 @@
   :type 'boolean
   :group 'kaolin-light)
 
-(define-kaolin-theme light  "Light Kaolin theme variant."
+(define-kaolin-theme light
+  "Light Kaolin theme variant."
 
   ;; Palette modification
   (
+
    ;; Colors
    (spring-green6 "#3e594e")
    (aquamarine4   "#518270")
