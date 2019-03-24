@@ -130,7 +130,7 @@
    (org-level-3             (:foreground vermilion4 :bold nil))
    (org-level-4             (:foreground cerise4 :bold nil))
    (org-code                (:foreground teal1))
-   (org-date                (:foreground vermilion4))
+   (org-date                (:foreground vermilion3))
    (org-verbatim            (:foreground orange2))
 
    (js2-object-property     (:foreground brown1))
