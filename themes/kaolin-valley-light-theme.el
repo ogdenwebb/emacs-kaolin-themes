@@ -137,7 +137,7 @@
    ;; (org-level-4            (:foreground vermilion4 :bold nil))
    (org-code               (:foreground keyword))
    (org-verbatim           (:foreground orange2))
-   (org-date               (:foreground aquamarine1 :underline kaolin-themes-underline)))
+   (org-date               (:foreground erin2 :underline kaolin-themes-underline)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
