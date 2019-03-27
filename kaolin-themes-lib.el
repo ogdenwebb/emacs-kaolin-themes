@@ -117,7 +117,7 @@
 
     ;; Amber #FFBF00
     (amber0 "#f3c91f")
-    (amber1 "#d4b668")
+    (amber1 "#CFB05F")
     (amber2 "#91762a")
     (amber3 "#eed891")
     (amber4 "#c5b378")
