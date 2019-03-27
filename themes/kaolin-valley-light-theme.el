@@ -45,10 +45,10 @@
    (bg4 (if kaolin-valley-light-alt-bg white2 "#EBD7BE"))
 
    ;; TODO
-   (fg1 black4)
-   (fg2 gray0)
-   (fg3 gray2)
-   (fg4 gray4)
+   (fg1 "#5E5854")
+   (fg2 "#6b6560")
+   (fg3 "#79716c")
+   (fg4 "#867e78")
 
    (keyword     teal0)
    (metakey     keyword)
@@ -67,7 +67,6 @@
    (doc         str-alt)
 
    (prep        vermilion0)
-   ;; TODO:
    (num         vermilion0)
    (bool        num)
    (warning     orange0)
@@ -117,7 +116,7 @@
 
    (win-border    bg3)
    (line-num-fg   brown8)
-   (line-num-hl   amber0)
+   (line-num-hl   amber1)
 
    (cursor       gray3)
 
