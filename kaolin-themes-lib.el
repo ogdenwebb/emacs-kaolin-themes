@@ -103,10 +103,9 @@
     (white4 "#bebec4")
 
     ;; Yellow #FFFF00
-    ;; TODO: adjust
     (yellow0 "#eeeb28")
-    (yellow1 "#b9b963") ; yellow
-    (yellow2 "#919120") ; dark-yellow
+    (yellow1 "#E3D168")
+    (yellow2 "#a39423") ; dark-yellow
     (yellow3 "#eae46a")
     (yellow4 "#c8c493" "#ffd7a5")
     (yellow5 "#1e1e14") ; old midnight yellow
@@ -133,7 +132,8 @@
     (orange1 "#dbac66")
     (orange2 "#b87e3c")
     (orange3 "#f5c791")
-    (orange4 "#e1b079")
+    ;; (orange4 "#e1b079")
+    (orange4 "#dbb68f")
     (orange5 "#1e1914")
     (orange6 "#40392E")
     (orange7 "#847968")
