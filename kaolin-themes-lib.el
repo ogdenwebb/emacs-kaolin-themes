@@ -127,7 +127,6 @@
     (amber9 "#eee6d3")
 
     ;; Orange #FF7F00
-    ;; TODO: maybe add #dbb68f
     (orange0 "#e67417")
     (orange1 "#dbac66")
     (orange2 "#b87e3c")
@@ -267,9 +266,9 @@
 
     ;; Blue #0000FF
     (blue0 "#3237CA")
-    (blue1 "#4145b6")
-    ;; TODO: change
-    (blue2 "#2B2FA6")
+    (blue1 "#4246BA")
+    ;; (blue2 "#2C30AB")
+    (blue2 "#3242A1")
     (blue3 "#526AF3")
     (blue4 "#807f96") ; old faded-blue
     (blue5 "#14141e" black2) ; old alt-midnight-blue
@@ -899,8 +898,8 @@
     (magit-branch-remote          (:foreground aquamarine1))
     (magit-hunk-heading           (:background bg3))
     (magit-hunk-heading-highlight (:background bg3))
-    (magit-diff-base              (:background amber2 :foreground fg2))
-    (magit-diff-base-highlight    (:background amber2 :foreground fg1))
+    (magit-diff-base              (:background vermilion3 :foreground fg2))
+    (magit-diff-base-highlight    (:background vermilion3 :foreground fg1))
     (magit-diff-file-header       (:background bg3 :foreground fg2))
     (magit-diff-context           (:background bg3 :foreground fg3))
     (magit-diff-context-highlight (:background bg3 :foreground fg2))
@@ -1067,6 +1066,7 @@
     (undo-tree-visualizer-register-face      (:foreground type))
 
     ;; Rainbow delimeters
+    ;; TODO: light themes
     (show-paren-match (:background nil :foreground orange1 :bold bold))
     (show-paren-mismatch (:background red2 :foreground bg2))
 
