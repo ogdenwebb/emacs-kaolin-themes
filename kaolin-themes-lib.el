@@ -509,7 +509,6 @@
     (builtin     teal4)
     (header      builtin)
     (functions   builtin)
-    ;; TODO: (??) change to brown3 like sierra.vim
     (str         spring-green3)
     (str-alt     spring-green4)
     (doc         str-alt)
@@ -979,7 +978,6 @@
 
     ;; Hydra
     (hydra-face-red      (:foreground red1))
-    ;; TODO: (??) change to teal
     (hydra-face-teal     (:foreground teal0))
     (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
@@ -1226,7 +1224,7 @@
     (org-headline-done             (:foreground gray4  :bold nil))
     (org-ellipsis                  (:foreground builtin :underline nil))
     (org-date                      (:foreground builtin :underline underline))
-    (org-date-selected             (:background hl :foreground bg1 :weight 'bold))
+    (org-date-selected             (:background bg4 :foreground hl :weight 'bold))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground amber3))
     (org-verbatim                  (:foreground azure3))
