@@ -45,9 +45,9 @@
    (tooltip-hl-bg magenta2)
    (tooltip-hl-fg amber3)
 
-   (ivy2 capri0)
-   (ivy3 spring-green1)
-   (ivy4 ultramarine1)
+   (search1 capri0)
+   (search2 spring-green1)
+   (search3 ultramarine1)
 
    (rb1 crimson4)
    (rb2 violet4)

@@ -68,9 +68,9 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg cyan0)
 
-   (ivy2 cerulean3)
-   (ivy3 red3)
-   (ivy4 violet1)
+   (search1 cerulean3)
+   (search2 red3)
+   (search3 violet1)
 
    (rb1 violet4)
    (rb2 teal4)

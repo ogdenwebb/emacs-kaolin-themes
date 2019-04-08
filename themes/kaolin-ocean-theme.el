@@ -54,9 +54,9 @@
 
    (tooltip-hl-bg bg4)
 
-   (ivy2 vermilion3)
-   (ivy3 teal0)
-   (ivy4 yellow3)
+   (search1 vermilion3)
+   (search2 teal0)
+   (search3 yellow3)
 
    (rb1 blue4)
    (rb2 violet4)

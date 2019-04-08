@@ -32,6 +32,7 @@
    (var         capri3)
    ;; (type        green3)
    (type        teal0)
+   ;; (type        erin3)
 
 
    (comment     "#454459")
@@ -60,9 +61,9 @@
    (tooltip-hl-bg bg4)
    (tooltip-hl-fg hl)
 
-   (ivy2 blue3)
-   (ivy3 red3)
-   (ivy4 harlequin3)
+   (search1 blue3)
+   (search2 red3)
+   (search3 harlequin3)
 
    ;; TODO:
    (rb1 teal0)

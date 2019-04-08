@@ -109,9 +109,9 @@
    (cursor        fg1)
 
    (ivy1          fg4)
-   (ivy2          cerulean3)
-   (ivy3          yellow0)
-   (ivy4          red3))
+   (search1          cerulean3)
+   (search2          yellow0)
+   (search3          red3))
 
   (
    (highlight-quoted-symbol  (:foreground num))

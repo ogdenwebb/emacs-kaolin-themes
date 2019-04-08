@@ -556,10 +556,10 @@
     (company-scroll-bg (if kaolin-themes-distinct-company-scrollbar bg4 bg2))
     (company-scroll-fg (if kaolin-themes-distinct-company-scrollbar line-num-hl bg4))
 
-    (ivy1        fg1)
-    (ivy2        azure3)
-    (ivy3        amber3)
-    (ivy4        violet3)))
+    (ivy1   fg1)
+    (search1        azure3)
+    (search2        amber3)
+    (search3        violet3)))
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
@@ -1408,15 +1408,15 @@
     (ivy-modified-buffer         (:foreground diff-mod))
     (ivy-remote                  (:foreground prep))
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
-    (ivy-minibuffer-match-face-2 (:background nil :foreground ivy2 :bold bold))
-    (ivy-minibuffer-match-face-3 (:background nil :foreground ivy3 :bold bold))
-    (ivy-minibuffer-match-face-4 (:background nil :foreground ivy4 :bold bold))
+    (ivy-minibuffer-match-face-2 (:background nil :foreground search1 :bold bold))
+    (ivy-minibuffer-match-face-3 (:background nil :foreground search2 :bold bold))
+    (ivy-minibuffer-match-face-4 (:background nil :foreground search3 :bold bold))
 
     ;; Swiper
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
-    (swiper-match-face-2 (:background bg2 :foreground ivy2 :bold bold))
-    (swiper-match-face-3 (:background bg2 :foreground ivy3 :bold bold))
-    (swiper-match-face-4 (:background bg2 :foreground ivy4 :bold bold))
+    (swiper-match-face-2 (:background bg2 :foreground search1 :bold bold))
+    (swiper-match-face-3 (:background bg2 :foreground search2 :bold bold))
+    (swiper-match-face-4 (:background bg2 :foreground search3 :bold bold))
     (swiper-line-face    (:inherit 'hl-line))
 
     ;; Awesome-tabs

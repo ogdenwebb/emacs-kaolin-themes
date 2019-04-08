@@ -116,9 +116,9 @@
 
    (ivy1          gray9)
    ;; TODO:
-   (ivy2          capri1)
-   (ivy3          orange0)
-   (ivy4          red4))
+   (search1          capri1)
+   (search2          orange0)
+   (search3          red4))
 
   ((link                    (:foreground prep :underline underline))
 
@@ -139,6 +139,7 @@
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-light
+     `(show-paren-match     ((t (:background nil :foreground ,red0 :bold bold))))
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))

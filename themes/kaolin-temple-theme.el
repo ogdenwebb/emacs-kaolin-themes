@@ -33,15 +33,18 @@
    (builtin     amber3)
    (functions   amber3)
 
-   (var         teal4)
    ;; (var         capri4)
-   (const       cyan1)
-   (type        violet4)
+   (var         teal4)
+   ;; (const       cyan1)
+   (const       capri4)
+   ;; (type        violet4)
+   (type        cerise4)
 
    (comment     orange7)
    ;; (comment     crimson7)
    (comment-alt vermilion7)
 
+   (str         pink3)
    (str         pink3)
    (str-alt     crimson7)
    (doc         str-alt)
@@ -106,9 +109,9 @@
    (cursor        fg1)
 
    (ivy1          gray9)
-   (ivy2          cerulean3)
-   (ivy3          yellow0)
-   (ivy4          green3))
+   (search1       cerulean3)
+   (search2       yellow0)
+   (search3       green3))
 
   (
    (highlight-quoted-quote   (:foreground orange3))
