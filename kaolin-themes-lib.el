@@ -556,10 +556,10 @@
     (company-scroll-bg (if kaolin-themes-distinct-company-scrollbar bg4 bg2))
     (company-scroll-fg (if kaolin-themes-distinct-company-scrollbar line-num-hl bg4))
 
-    (ivy1   fg1)
-    (search1        azure3)
-    (search2        amber3)
-    (search3        violet3)))
+    (ivy1     fg1)
+    (search1  azure3)
+    (search2  amber3)
+    (search3  violet3)))
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
@@ -1310,6 +1310,10 @@
     ;; Evil-goggles
     ;; TODO: add rest of evil goggles faces
     (evil-goggles-default-face  (:background pulse))
+
+    ;; Evil-snipe
+    (evil-snipe-first-match-face (:foreground search1))
+    (evil-snipe-matches-face     (:foreground search2))
 
     ;; Beacon-mode
     (beacon-fallback-background (:background pulse))
