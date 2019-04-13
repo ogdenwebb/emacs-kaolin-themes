@@ -121,9 +121,9 @@
    (cursor       gray3)
 
    (ivy1          gray9)
-   (search2          cerise0)
-   (search3          amber0)
-   (search4          red3))
+   (search1       cerise0)
+   (search2       amber0)
+   (search3       red3))
 
   (
 
