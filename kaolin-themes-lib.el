@@ -475,8 +475,7 @@
     (done spring-green3)
 
     (button amber6)
-    ;; TODO: add light style
-    (button-border gray3)
+    (button-border (if (color-dark-p bg1) gray3 white4))
     (button-hl amber3)
 
     (adaptive-fg (if (color-dark-p bg1) white0 bg1))
