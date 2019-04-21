@@ -605,10 +605,9 @@
 
     (menu        (:background bg2 :foreground fg2))
     ;; TODO: default bg
-    (header-line (:background bg4 :foreground var))
+    (header-line (:background nil :foreground var))
     (tool-bar    (:inherit 'header-line))
 
-    ;; TODO: (??) color fg
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
