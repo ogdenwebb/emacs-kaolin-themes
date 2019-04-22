@@ -662,6 +662,31 @@
     (dired-symlink    (:foreground functions))
     (dired-warning    (:inherit 'font-lock-warning-face))
 
+    ;; dired-plus
+    (diredp-dir-name               (:foreground keyword :weight 'bold :strike-through nil))
+    (diredp-dir-heading            (:foreground header :weight 'bold :strike-through nil))
+    (diredp-file-name              (:foreground fg1 :strike-through nil))
+    (diredp-file-suffix            (:foreground const))
+    (diredp-ignored-file-name      (:inherit 'shadow))
+    (diredp-omit-file-name         (:inherit 'shadow))
+    (diredp-compressed-file-suffix (:foreground comment))
+    (diredp-symlink                (:foreground functions))
+    (diredp-read-priv              (:foreground diff-add))
+    (diredp-write-priv             (:foreground diff-mod))
+    (diredp-exec-priv              (:foreground diff-rem))
+    (diredp-executable-tag         (:foreground diff-rem))
+    (diredp-rare-priv              (:foreground err :weight 'bold))
+    (diredp-dir-priv               (:foreground keyword :weight 'bold))
+    (diredp-other-priv             (:foreground warning))
+    (diredp-no-priv                (:foreground comment))
+    (diredp-number                 (:foreground num))
+    (diredp-date-time              (:foreground prep))
+    (diredp-flag-mark              (:background hl-bg :foreground diff-mod))
+    (diredp-flag-mark-line         (:background hl-bg))
+    (diredp-deletion               (:background nil :foreground err :underline underline))
+    (diredp-deletion-file-name     (:background nil :foreground err :underline underline))
+    (diredp-autofile-name          (:foreground num :underline underline))
+
     ;; Highlighting
     (highlight                (:background hl-bg :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
@@ -1307,7 +1332,7 @@
 
     ;; Evil ex
     (evil-ex-info                   (:foreground orange1))
-    (evil-ex-substitute-matches     (:background nil :foreground red1 :underline underline))
+    (evil-ex-substitute-matches     (:background nil :foreground err :underline underline))
     (evil-ex-substitute-replacement (:background nil :foreground spring-green1))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
 
