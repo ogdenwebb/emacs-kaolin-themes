@@ -467,7 +467,7 @@
     (hl         aquamarine3)
     (hl-bg      comment)
     (hl-line    (if kaolin-themes-hl-line-colored capri5 bg2))
-    (hl-indent  gray3)
+    (hl-indent  comment)
     (selection  bg3)
     (pulse      spring-green6)
 

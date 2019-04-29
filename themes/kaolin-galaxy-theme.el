@@ -56,7 +56,7 @@
    ;; TODO: (??) change
    (hl         vermilion3)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
-   (hl-indent  bg4)
+   ; (hl-indent bg4)
    ;; TODO: (??) less bright
    (selection  bg4)
    (pulse      ultramarine6)

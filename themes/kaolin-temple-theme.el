@@ -61,7 +61,7 @@
    (hl         aquamarine3)
    ;; TODO: add colored
    (hl-line    bg2)
-   (hl-indent  gray0)
+   ;; (hl-indent  cerulean7)
    ;; TODO:
    (selection crimson6)
    ;; (selection ultramarine6)

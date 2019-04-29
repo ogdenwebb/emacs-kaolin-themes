@@ -47,7 +47,7 @@
    (dim-buffer bg0)
    ;; TODO:
    (hl-line    (if kaolin-themes-hl-line-colored "#af5f00" bg3))
-   (hl-indent  bg4)
+   ; (hl-indent bg4)
    (selection  bg4)
    (pulse      bg4)
 

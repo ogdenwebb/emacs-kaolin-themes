@@ -36,7 +36,7 @@
    (dim-buffer "#140E14")
    (hl         pink1)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
-   (hl-indent  bg4)
+   ; (hl-indent bg4)
    (selection  bg4)
    (pulse      magenta2)
 

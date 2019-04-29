@@ -46,7 +46,7 @@
    (dim-buffer "#0F0F17")
    (hl         aquamarine0)
    (hl-line    bg2)
-   (hl-indent  bg4)
+   ;; ; (hl-indent bg4)
    (selection  bg4)
    (pulse      bg4)
 
