@@ -24,11 +24,6 @@
    (red1          "#C74A4D")
 
    ;; Color vars
-   ;; (bg1 "#262522")
-   ;; (bg1 "#23211C")
-   ;; (bg2 "#302E2B")
-   ;; (bg3 "#3B3935")
-   ;; (bg4 "#45433e")
    (bg1 black3)
    (bg2 black4)
    (bg3 gray0)
@@ -36,29 +31,19 @@
 
    (fg1 orange9)
 
-   ;; (keyword     amber1)
-   ;; (keyword     teal1)
    (keyword     cyan1)
    (metakey     keyword)
-   ;; (builtin     amber3)
-   ;; (functions   amber3)
-   ;; (builtin     teal0)
-   ;; (functions   teal0)
    (builtin     capri4)
    (functions   capri4)
 
-   ;; (var         capri4)
-   ;; (var         capri4)
    (var         aquamarine4)
    ;; (const       cyan1)
    (const       teal1)
-   (type        violet4)
-   ;; (type        cerise4)
-   (type        erin3)
+   ;; (type        orange3)
+   (type        lime4)
 
-   ;; (comment     orange7)
-   ;; (comment     crimson7)
-   (comment     gray5)
+   ;; (comment     gray5)
+   (comment     cerulean7)
    (comment-alt vermilion7)
 
    (str         pink3)
