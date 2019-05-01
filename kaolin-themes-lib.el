@@ -485,6 +485,7 @@
     (tooltip-hl-bg brown2)
     (tooltip-hl-fg amber3)
 
+    (rb-match hl)
     (rb1 cyan3)
     (rb2 purple4)
     (rb3 spring-green4)
@@ -1096,7 +1097,7 @@
 
     ;; Rainbow delimeters
     ;; TODO: light themes
-    (show-paren-match (:background nil :foreground orange1 :bold bold))
+    (show-paren-match (:background bg2 :foreground rb-match :bold bold))
     (show-paren-mismatch (:background red2 :foreground bg2))
 
     (rainbow-delimiters-mismatched-face (:background red2 :foreground err))
