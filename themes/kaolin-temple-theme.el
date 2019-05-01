@@ -22,6 +22,8 @@
    (cyan1         "#57B2C2")
    (cyan3         "#68DFE8")
    (red1          "#C74A4D")
+   ;; (orange9       "#EEDEC6")
+   (orange9       "#EEDCC1")
 
    ;; Color vars
    (bg1 black3)
@@ -54,7 +56,7 @@
    (link        prep)
    (num         crimson3)
    (bool        num)
-   (warning     yellow3)
+   (warning     orange1)
    (err         red3)
 
    (dim-buffer white0)
@@ -74,14 +76,15 @@
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 
-   (rb1 orange3)
-   (rb2 pink4)
-   (rb3 capri4)
-   (rb4 brown3)
-   (rb5 amber3)
-   (rb6 teal1)
+   (rb-match crimson3)
+   (rb1 cyan1)
+   (rb2 capri4)
+   (rb3 teal1)
+   (rb4 pink4)
+   (rb5 blue4)
+   (rb6 aquamarine4)
    (rb7 cyan1)
-   (rb8 ultramarine4)
+   (rb8 crimson7)
    (rb9 yellow3)
 
    ;; (diff-add spring-green3)
