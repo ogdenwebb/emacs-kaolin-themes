@@ -775,7 +775,7 @@
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-fg :bold nil
                                       :box (:line-width 2 :color line-border)))
-    (mode-line-inactive  (:background line-bg1 :foreground line-inactive :bold bold
+    (mode-line-inactive  (:background line-bg1 :foreground line-inactive :bold nil
                                       :box (:line-width 2 :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold nil))
     (mode-line-highlight (:foreground hl :box nil :bold nil))
@@ -1458,16 +1458,6 @@
     (awesome-tab-unselected (:background bg2 :foreground comment))
     (awesome-tab-selected   (:background bg3 :foreground hl))
     ))
-
-;; Predefined Kaolin variables
-;; (defconst kaolin-common-vars
-;;   '((pos-tip-background-color (face-background 'tooltip))
-;;     (pos-tip-foreground-color (face-foreground 'tooltip))))
-
-;; (custom-theme-set-variables
-;;  'kaolin-valley-dark
-;;  '(pos-tip-background-color (face-foreground 'tooltip)))
-;;  ;; `,@kaolin-common-vars)
 
 (provide 'kaolin-themes-lib)
 
