@@ -63,7 +63,7 @@
 
 (defun color-light-p (color)
   "Return t if COLOR (e.g. hex string or name) is light."
-  (> (color-lab-luminance color) 50))
+  (>= (color-lab-luminance color) 50))
 
 ;;; Code:
 (defconst kaolin-palette
