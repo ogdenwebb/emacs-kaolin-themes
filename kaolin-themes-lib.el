@@ -1296,7 +1296,7 @@
     (org-agenda-structure        (:foreground builtin))
     (org-agenda-clocking         (:background hl-bg :foreground fg1))
     (org-scheduled               (:foreground fg1))
-    (org-scheduled-today         (:foreground functions :height 1.2 :bold bold))
+    (org-scheduled-today         (:foreground functions :bold bold))
     (org-sexp-date               (:foreground fg4))
     (org-time-grid               (:foreground comment))
 
