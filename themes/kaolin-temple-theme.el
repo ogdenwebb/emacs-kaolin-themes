@@ -1,4 +1,4 @@
-;;; kaolin-temple-theme.el --- Other Kaolin theme with dark brown background
+;;; kaolin-temple-theme.el --- The terrestrial sphere imbues my spirit.
 ;;; Commentary:
 
 ;;; Code:
@@ -56,7 +56,7 @@
    (link        prep)
    (num         crimson3)
    (bool        num)
-   (warning     orange1)
+   (warning     amber0)
    (err         red3)
 
    (dim-buffer white0)
@@ -87,9 +87,6 @@
    (rb8 crimson7)
    (rb9 yellow3)
 
-   ;; (diff-add spring-green3)
-   ;; (diff-mod vermilion3)
-   ;; (diff-rem red3)
    (diff-add teal1)
    (diff-mod vermilion4)
    (diff-rem red1)
@@ -122,7 +119,6 @@
    (highlight-quoted-symbol  (:foreground amber3))
 
    (org-document-title     (:foreground orange3 :bold bold))
-   ;; (org-document-info      (:foreground brown3))
    (org-verbatim     (:foreground cyan1 :bold bold))
 
    (org-level-1            (:foreground var :bold bold :height 1.1))
