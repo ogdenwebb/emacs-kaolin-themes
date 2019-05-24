@@ -565,8 +565,8 @@
   `(
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
-    (font-lock-comment-delimiter-face (:foreground kaolin-comment :italic kaolin-themes-italic-comments))
-    (font-lock-comment-face           (:foreground kaolin-comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-delimiter-face (:background nil :foreground kaolin-comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-face           (:background nil :foreground kaolin-comment :italic kaolin-themes-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions))
@@ -1392,7 +1392,7 @@
     ;; TODO: add helm-locate-finish and helm-prefarg
     ;; TODO: customize '[?]' write something like fsfasfsa in helm
     (helm-header                              (:foreground fg2 :underline nil :box nil))
-    (helm-source-header                       (:foreground keyword :underline nil :bold bold))
+    (helm-source-header                       (:background bg2 :foreground header :underline nil :bold bold))
     (helm-match                               (:foreground type :bold bold))
     (helm-header-line-left-margin             (:background azure1 :foreground bg1))
     (helm-selection                           (:background bg2 :foreground type :bold bold))
