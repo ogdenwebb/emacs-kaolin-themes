@@ -89,9 +89,9 @@
    (highlight-quoted-quote   (:foreground functions))
    (highlight-quoted-symbol  (:foreground amber3))
 
-   (org-document-title  (:foreground cyan3))
    (org-code            (:foreground pink1))
    (org-verbatim        (:foreground spring-green1))
+   (org-level-2         (:foreground functions))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-mod :foreground diff-mod))
