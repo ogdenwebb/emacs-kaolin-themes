@@ -1237,18 +1237,17 @@
     (eshell-ls-unreadable (:foreground var))
 
     ;; Whitespace mode
-    ;; TODO: rework
-    (whitespace-empty            (:background spring-green6 :foreground fg4))
-    (whitespace-line             (:background bg3 :foreground warning))
-    (whitespace-newline          (:foreground cyan3))
-    (whitespace-indentation      (:background hl-indent))
-    (whitespace-tab              (:background aquamarine4))
-    (whitespace-space            (:background gray4 :foreground spring-green6))
-    (whitespace-hspace           (:foreground cyan1))
-    (whitespace-space-before-tab (:background orange2 :foreground bg2))
-    (whitespace-space-after-tab  (:background orange2 :foreground bg2))
-    (whitespace-trailing         (:foreground red0))
-    (whitespace-big-indent       (:background red2 :foreground red0))
+    (whitespace-empty            (:background bg4))
+    (whitespace-line             (:background bg1 :foreground err))
+    (whitespace-newline          (:foreground bg3 :foreground num))
+    (whitespace-indentation      (:background hl-indent :foreground bg2))
+    (whitespace-tab              (:background bg4 :foreground comment))
+    (whitespace-space            (:background bg4 :foreground comment))
+    (whitespace-space-before-tab (:background diff-add :foreground bg2))
+    (whitespace-space-after-tab  (:background diff-add :foreground bg2))
+    ;; (whitespace-hspace           (:foreground num))
+    (whitespace-trailing         (:inherit 'trailing-whitespace :foreground bg2))
+    (whitespace-big-indent       (:background red0 :foreground bg2))
 
     ;; Org-mode
     (org-todo                      (:foreground todo :bold bold))
