@@ -603,6 +603,7 @@
     (link-visited        (:inherit 'link :underline nil))
     (success             (:background nil :foreground done))
     (escape-glyph        (:background nil :foreground cyan3))
+    (trailing-whitespace (:background err))
 
     (menu        (:background bg2 :foreground fg2))
     ;; TODO: default bg
@@ -869,9 +870,9 @@
     (company-scrollbar-bg             (:background company-scroll-bg))
     (company-scrollbar-fg             (:background company-scroll-fg))
     (company-template-field           (:foreground comment :underline t))
-    (company-echo-common              (:background bg1 :foreground amber3))
+    (company-echo-common              (:background bg1 :foreground diff-mod))
     (company-preview                  (:background nil :foreground keyword))
-    (company-preview-common           (:background bg2 :foreground amber3))
+    (company-preview-common           (:background bg2 :foreground diff-mod))
     (company-preview-search           (:inherit 'company-tooltip-search))
 
     ;; all-the-icons
