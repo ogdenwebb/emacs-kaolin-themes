@@ -1426,6 +1426,13 @@
     (helm-source-go-package-godoc-description (:foreground str))
     (helm-bookmark-w3m                        (:foreground type))
 
+    ;; Wgrep
+    (wgrep-face        (:background bg2 :foreground diff-mod))
+    (wgrep-delete-face (:background diff-bg-rem :foreground bg2))
+    (wgrep-done-face   (:foreground done))
+    (wgrep-file-face   (:foreground comment))
+    (wgrep-reject-face (:inherit 'error))
+
      ;; Avy
     (avy-background-face (:inherit 'font-lock-comment-face))
     (avy-lead-face       (:background spring-green2 :foreground adaptive-fg :weight 'bold))
