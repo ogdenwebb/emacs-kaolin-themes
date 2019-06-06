@@ -1191,6 +1191,18 @@
     (treemacs-on-failure-pulse-face (:background err :foreground bg1))
     (treemacs-term-node-face        (:foreground prep))
 
+    ;; Neotree
+    (neo-root-dir-face    (:foreground keyword :underline nil))
+    (neo-dir-link-face    (:foreground functions))
+    (neo-file-link-face   (:foreground fg1))
+    (neo-expand-btn-face  (:foreground hl))
+    (neo-vc-added-face    (:foreground diff-add))
+    (neo-vc-edited-face   (:foreground diff-mod))
+    (neo-vc-removed-face  (:foreground diff-rem :strike-through t))
+    (neo-vc-conflict-face (:foreground err))
+    (neo-vc-missing-face  (:foreground warning))
+    (neo-vc-ignored-face  (:foreground comment))
+
     ;; Git gutter
     (git-gutter:unchanged (:background bg1 :foreground nil))
     (git-gutter:added     (:background bg1 :foreground diff-add :bold bold))
