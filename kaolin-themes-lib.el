@@ -1167,7 +1167,24 @@
    (ediff-odd-diff-B (:background bg4))
    (ediff-odd-diff-C (:background bg4))
 
-   ;; TODO: calfw
+   ;; calfw
+   (cfw:face-grid (:foreground comment))
+   (cfw:face-title (:foreground prep :weight 'bold :height 1.8))
+   (cfw:face-default-content (:foreground fg1))
+   (cfw:face-day-title (:background bg3 :foreground fg1))
+   (cfw:face-today (:background bg3 :foreground prep))
+   (cfw:face-today-title (:background todo :foreground bg1))
+   (cfw:face-saturday (:background bg3 :foreground todo))
+   (cfw:face-sunday (:background bg3 :foreground todo))
+   (cfw:face-holiday (:background bg3 :foreground functions))
+   (cfw:face-periods (:foreground num))
+   (cfw:face-header (:background bg3 :foreground str))
+   (cfw:face-annotation (:foreground doc))
+   (cfw:face-select (:background hl :foreground bg1))
+   (cfw:face-toolbar (:background nil :foreground nil))
+   (cfw:face-toolbar-button-on (:background nil :foreground hl))
+   (cfw:face-toolbar-button-off (:foreground fg4))
+   (cfw:face-disable (:background bg3 :foreground comment))
 
     ;; Imenu list
     ;; (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
