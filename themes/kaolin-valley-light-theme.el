@@ -77,7 +77,7 @@
 
    (dim-buffer white0)
    (hl         azure1)
-   (hl-line    (if kaolin-themes-hl-line-colored bg3 green9))
+   (hl-line    (if kaolin-themes-hl-line-colored green9 bg3))
    (hl-indent  white4)
    (selection green9)
    (pulse bg4)
