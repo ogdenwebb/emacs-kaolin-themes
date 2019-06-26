@@ -39,10 +39,13 @@
    (lime2      "#5B7709")
 
    ;; Color vars
+   (bg0 "#FDF7EE")
    (bg1 (if kaolin-valley-light-alt-bg "#FBFBFB" "#FAF2E9"))
    (bg2 (if kaolin-valley-light-alt-bg white0 "#F3E7D3"))
    (bg3 (if kaolin-valley-light-alt-bg white1 "#F0DFCA"))
    (bg4 (if kaolin-valley-light-alt-bg white2 "#EBD7BE"))
+
+   (pane orange9)
 
    ;; TODO
    (fg1 "#5E5854")
