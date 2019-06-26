@@ -74,8 +74,7 @@
 
    (dim-buffer white0)
    (hl         azure1)
-   ;; TODO: add colored
-   (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
+   (hl-line    (if kaolin-themes-hl-line-colored bg3 green9))
    (hl-indent  white4)
    (selection vermilion4)
    (pulse bg4)
