@@ -9,7 +9,7 @@
   "Settings for Kaolin's treemacs theme."
   :group 'kaolin-themes)
 
-(defcustom kaolin-themes-treemacs-hl-line t
+(defcustom kaolin-themes-treemacs-hl-line nil
   "Remap hl-line face for treemacs, uses distinct foreground and default background."
   :type 'boolean
   :group 'kaolin-treemacs)
