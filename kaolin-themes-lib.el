@@ -639,10 +639,15 @@
     (custom-variable-tag            (:foreground var))
     (custom-variable-obsolete       (:inherit 'shadow))
     (widget-documentation           (:background nil :foreground var))
-    (widget-button                  (:background nil :foreground keyword))
+    ;; (widget-button                  (:background nil :foreground keyword))
     (widget-button-pressed          (:background nil :foreground builtin))
     (widget-field                   (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
+
+    ;; Dashboard
+    (dashboard-heading   (:foreground header))
+    (dashboard-navigator (:foreground prep))
+    (dashboard-footer    (:foreground str))
 
     ;; Compilation
     (compilation-column-number  (:foreground fg2))
