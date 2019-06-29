@@ -1521,13 +1521,13 @@
     (awesome-tab-default    (:background bg1 :foreground bg1))
     (awesome-tab-unselected (:background bg2 :foreground comment))
     (awesome-tab-selected   (:background bg3 :foreground hl))
-    
+
     ;; Centaur-tabs
     (centaur-tabs-default    (:background bg0 :foreground bg0))
     (centaur-tabs-selected   (:background bg1 :foreground fg1))
     (centaur-tabs-unselected (:background bg0 :foreground comment))
-    (centaur-tabs-selected-modified   (:background bg1 :foreground header))
-    (centaur-tabs-unselected-modified (:background bg0 :foreground header))
+    (centaur-tabs-selected-modified   (:background bg1 :foreground todo))
+    (centaur-tabs-unselected-modified (:background bg0 :foreground todo))
     (centaur-tabs-active-bar-face (:background keyword))
     (centaur-tabs-modified-marker-selected (:inherit 'centaur-tabs-selected :foreground keyword))
     (centaur-tabs-modified-marker-unselected (:inherit 'centaur-tabs-unselected :foreground keyword))
