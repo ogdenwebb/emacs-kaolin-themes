@@ -1411,6 +1411,7 @@
 
     ;; Solaire mode
     (solaire-default-face       (:background pane))
+    (solaire-hl-line-face  (:inherit 'hl-line :background bg3))
 
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face            (:foreground warning))
