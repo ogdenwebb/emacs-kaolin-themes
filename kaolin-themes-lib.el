@@ -639,10 +639,15 @@
     (custom-variable-tag            (:foreground var))
     (custom-variable-obsolete       (:inherit 'shadow))
     (widget-documentation           (:background nil :foreground var))
-    (widget-button                  (:background nil :foreground keyword))
+    ;; (widget-button                  (:background nil :foreground keyword))
     (widget-button-pressed          (:background nil :foreground builtin))
     (widget-field                   (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
+
+    ;; Dashboard
+    (dashboard-heading   (:foreground header))
+    (dashboard-navigator (:foreground prep))
+    (dashboard-footer    (:foreground str))
 
     ;; Compilation
     (compilation-column-number  (:foreground fg2))
@@ -1521,6 +1526,16 @@
     (awesome-tab-default    (:background bg1 :foreground bg1))
     (awesome-tab-unselected (:background bg2 :foreground comment))
     (awesome-tab-selected   (:background bg3 :foreground hl))
+
+    ;; Centaur-tabs
+    (centaur-tabs-default    (:background bg0 :foreground bg0))
+    (centaur-tabs-selected   (:background bg1 :foreground fg1))
+    (centaur-tabs-unselected (:background bg0 :foreground comment))
+    (centaur-tabs-selected-modified   (:background bg1 :foreground todo))
+    (centaur-tabs-unselected-modified (:background bg0 :foreground todo))
+    (centaur-tabs-active-bar-face (:background keyword))
+    (centaur-tabs-modified-marker-selected (:inherit 'centaur-tabs-selected :foreground keyword))
+    (centaur-tabs-modified-marker-unselected (:inherit 'centaur-tabs-unselected :foreground keyword))
     ))
 
 (provide 'kaolin-themes-lib)

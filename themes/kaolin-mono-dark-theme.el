@@ -8,7 +8,8 @@
   ;; Palette modification
   (
    (bg0 "#0c120f" black0)
-   (bg1 "#111915" black1)
+   ;; (bg1 "#111915" black1)
+   (bg1 aquamarine5 black1)
    (bg2 "#16211C" black2)
    (bg3 "#1B2822" black3)
    (bg4 "#25352D" black4)
@@ -21,15 +22,16 @@
 
    ;; Accent color
    (hl aquamarine3)
-   (keyword spring-green8)
+   ;; (keyword spring-green8)
+   (keyword     aquamarine2)
 
-   (metakey     magenta4 cerise4)
-   ;; (builtin     "#E0F3EB")
-   (builtin     spring-green9)
+   (metakey     spring-green4)
+   ;; (builtin     aquamarine2)
+   (builtin spring-green8)
    (functions   builtin)
-   (const       builtin)
-   (var         builtin)
-   (type        spring-green7)
+   (const       teal4)
+   (var         teal4)
+   (type        aquamarine1)
 
    (comment "#41544B")
    ;; TODO:
@@ -101,22 +103,18 @@
    (default             (:background bg1 :foreground fg3))
    (minibuffer-prompt   (:foreground prep :bold bold))
 
-   (link                (:foreground prep :underline underline))
-   (show-paren-mismatch (:background bg2 :foreground red0))
-
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
-   (org-level-1         (:foreground teal1 :bold bold :height 1.1))
+   (org-level-1         (:foreground teal4 :bold bold :height 1.1))
    (org-level-2         (:foreground keyword :bold nil))
    (org-level-3         (:foreground spring-green3 :bold nil))
    (org-level-4         (:foreground aquamarine1 :bold nil))
-   (org-document-title  (:foreground cerulean7 :bold bold))
-   (org-document-info   (:foreground cerulean7))
-   (org-date            (:foreground spring-green3 :underline underline))
-   (org-code            (:foreground vermilion4))
+   (org-document-title  (:foreground aquamarine1 :bold bold))
+   (org-date            (:foreground warning :underline underline))
+   ;; (org-code            (:foreground warning))
    (org-verbatim        (:foreground orange1))
-   (org-quote           (:foreground blue4)))
+   (org-quote           (:foreground fg4)))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
