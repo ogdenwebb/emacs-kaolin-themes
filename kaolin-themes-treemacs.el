@@ -102,6 +102,25 @@
                                              :face 'font-lock-type-face))
          :extensions (tag-leaf))
 
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "error"
+                                             :height 0.9
+                                             :face 'error))
+                              :extensions (error)
+                              :fallback (propertize "• " 'face 'font-lock-warning-face))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "warning"
+                                                     :height 0.9
+                                                     :face 'error))
+         :extensions (warning)
+         :fallback (propertize "• " 'face 'font-lock-string-face))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "info"
+                                                     :height 0.9
+                                                     :face 'font-lock-string-face))
+         :extensions (info)
+         :fallback (propertize "• " 'face 'font-lock-string-face))
+
         ;; Icons for filetypes
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "csharp-line"))
                               :extensions ("cs"))
