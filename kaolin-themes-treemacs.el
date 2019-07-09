@@ -96,20 +96,6 @@
                                              :face 'font-lock-keyword-face))
          :extensions (tag-closed))
 
-        ;; (treemacs-create-icon
-        ;;  :icon (concat (all-the-icons-faicon "chevron-down"
-        ;;                                      :height 0.9
-        ;;                                      :face 'font-lock-keyword-face)
-        ;;                " ")
-        ;;  :extensions (tag-node-open))
-
-        ;; (treemacs-create-icon
-        ;;  :icon (concat (all-the-icons-faicon "location-arrow"
-        ;;                                      :height 0.9
-        ;;                                      :face 'font-lock-keyword-face)
-        ;;                " ")
-        ;;  :extensions (tag-node-closed))
-
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-faicon "tag"
                                              :height 0.9
@@ -123,12 +109,11 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git")) :extensions ("gitignore" "git" "gitconfig" "gitmodules"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "html5")) :extensions ("html" "htm"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "java")) :extensions ("java"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge")) :extensions ("js"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "python")) :extensions ("py"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "rust")) :extensions ("rs"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "haskell")) :extensions ("hs"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "c")) :extensions ("c"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "cplusplus")) :extensions ("cpp"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "c")) :extensions ("c" "h"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "cplusplus")) :extensions ("cpp" "cxx" "hpp" "tpp" "cc" "hh"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "ruby-alt")) :extensions ("rb"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "scala")) :extensions ("scala"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "elixir")) :extensions ("ex" "exs"))
@@ -141,6 +126,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "julia")) :extensions ("jl"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "kotlin")) :extensions ("kt" "kts"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "hy")) :extensions ("hy"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge")) :extensions ("js"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jsx2-alt")) :extensions ("jsx"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "ocaml")) :extensions ("ml" "mli"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "org")) :extensions ("org"))
