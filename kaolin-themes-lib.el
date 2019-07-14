@@ -1332,8 +1332,8 @@
     (org-document-info-keyword     (:foreground metakey))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
     ;; TODO: org-src-fontify-natively doesn't change fg to default
-    (org-block                     (:foreground fg3))
-    (org-block-begin-line          (:foreground metakey))
+    (org-block                     (:background bg2))
+    (org-block-begin-line          (:background comment :foreground bg4 :distant-foreground fg4))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
     (org-document-title            (:foreground builtin :bold bold))
