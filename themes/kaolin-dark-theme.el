@@ -11,6 +11,8 @@
    (white3          "#babac4")
    (white4          "#adadb9")
 
+   (selection spring-green6)
+
    (spring-green3 "#6fb593"))
 
 
@@ -37,7 +39,6 @@
    (org-tag                       (:foreground orange1 :bold bold))
    (org-checkbox                  (:foreground teal1 :bold bold))
    ;; TODO: refact
-   (org-headline-done             (:foreground capri4  :bold nil))
    (org-checkbox-statistics-todo  (:foreground var :bold bold))
    (org-checkbox-statistics-done  (:foreground spring-green3 :bold bold))
 
