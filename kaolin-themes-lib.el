@@ -195,7 +195,8 @@
     (pink4 "#c791aa")
     ;; (pink5 "#210F17")
     (pink5 "#1e1419")
-    (pink6 "#402E35")
+    ;; (pink6 "#402E35")
+    (pink6 "#513C44")
     (pink7 "#846874")
     (pink8 "#CAB2BD")
     (pink9 "#EED3DF")
@@ -230,6 +231,7 @@
     ;; Purple #BF00FF
     (purple0 "#ab33eb")
     (purple1 "#A34BD2")
+    ;; TODO: change
     (purple2 "#73229E")
     (purple3 "#bc90d4")
     (purple4 "#ab98b5")
@@ -1331,7 +1333,6 @@
 
     (org-document-info-keyword     (:foreground metakey))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
-    ;; TODO: org-src-fontify-natively doesn't change fg to default
     (org-block                     (:background bg2))
     (org-block-begin-line          (:background comment :foreground bg4 :distant-foreground fg4))
     (org-block-end-line            (:inherit 'org-block-begin-line))
