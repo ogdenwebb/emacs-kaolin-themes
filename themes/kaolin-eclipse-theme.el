@@ -25,7 +25,8 @@
    (bool        num)
    (prep        vermilion4)
 
-   (comment     gray0)
+   ;; (comment     gray2)
+   (comment     pink6)
    (comment-alt "#663E66")
    (str         teal4)
    (str-alt     blue4)
@@ -73,7 +74,8 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   (line-num-fg   magenta2 black4)
+   ;; (line-num-fg   magenta2 black4)
+   (line-num-fg   pink6 black4)
    ;; TOOD: or hl
    (line-num-hl   magenta3 gray9)
    (cursor        "#e0c3c8"))
