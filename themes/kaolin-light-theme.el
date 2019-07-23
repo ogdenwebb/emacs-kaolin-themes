@@ -126,12 +126,12 @@
    (highlight-quoted-symbol (:foreground const))
 
    (org-level-1             (:foreground spring-green2 :bold bold :height 1.1))
-   (org-level-2             (:foreground ultramarine4 :bold nil))
-   (org-level-3             (:foreground vermilion4 :bold nil))
+   (org-level-2             (:foreground functions :bold nil))
+   (org-level-3             (:foreground vermilion3 :bold nil))
    (org-level-4             (:foreground cerise4 :bold nil))
-   (org-code                (:foreground teal1))
-   (org-date                (:foreground vermilion3))
-   (org-verbatim            (:foreground orange2))
+   (org-code                (:foreground orange0))
+   (org-date                (:foreground azure4))
+   (org-verbatim            (:foreground azure1))
 
    (js2-object-property     (:foreground brown1))
    (evil-ex-info            (:foreground crimson4)))
