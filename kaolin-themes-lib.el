@@ -1520,6 +1520,9 @@
     (ivy-minibuffer-match-face-3 (:background nil :foreground search2 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground search3 :bold bold))
 
+    ;; Counsel
+    (counsel-key-binding (:foreground prep))
+
     ;; Swiper
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground search1 :bold bold))
