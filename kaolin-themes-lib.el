@@ -521,6 +521,7 @@
     (bool        num)
     (prep        violet4)
     (link        prep)
+    ;; MAYBE: add orange/yellow background?
     (warning     orange1)
     (err         red1)
 
@@ -1504,14 +1505,16 @@
     (avy-lead-face-2     (:background capri2 :foreground adaptive-fg :weight 'bold))
 
     ;; Ivy
-    (ivy-current-match           (:background hl-line :foreground hl :bold t))
-    (ivy-match-required-face     (:background nil :foreground err :bold nil))
-    (ivy-subdir                  (:foreground keyword :bold bold))
-    (ivy-cursor                  (:background bg3 :foreground fg1))
     (ivy-confirm-face            (:inherit 'success))
+    (ivy-current-match           (:background hl-line :foreground hl :bold t))
+    (ivy-cursor                  (:background bg3 :foreground fg1))
+    (ivy-grep-info               (:foreground header))
+    (ivy-highlight-face          (:background nil :foreground functions))
+    (ivy-match-required-face     (:background nil :foreground err :bold nil))
     (ivy-modified-buffer         (:foreground diff-mod))
     (ivy-remote                  (:foreground prep))
-    (ivy-grep-info               (:foreground header))
+    (ivy-subdir                  (:foreground keyword :bold bold))
+    (ivy-virtual                 (:foreground doc))
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground search1 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground search2 :bold bold))
