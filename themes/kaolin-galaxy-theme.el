@@ -36,8 +36,8 @@
    (var         amber3)
    (const       orange3)
    (type        crimson3)
-   (prep        capri3)
-   ;; TODO: change to type or str color
+   ;; (prep        capri3)
+   (prep        teal0)
    (num         capri3)
    (bool        num)
 
@@ -56,9 +56,7 @@
    ;; TODO: (??) change
    (hl         vermilion3)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
-   ; (hl-indent bg4)
-   ;; TODO: (??) less bright
-   (selection  bg4)
+   (selection  crimson6)
    (pulse      ultramarine6)
 
    (todo crimson1)
