@@ -127,7 +127,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "css3")) :extensions ("css"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git")) :extensions ("gitignore" "git" "gitconfig" "gitmodules"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "html5")) :extensions ("html" "htm"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "java")) :extensions ("java"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "java")) :extensions ("java" "jar"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "python")) :extensions ("py"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "rust")) :extensions ("rs"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "haskell")) :extensions ("hs"))
