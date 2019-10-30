@@ -1,4 +1,4 @@
-;;; kaolin-themes-treemacs.el --- treemacs customization for Kaolin themes -*- lexical-binding: t; -*-
+;;; kaolin-themes-treemacs.el --- treemacs customization for Kaolin themes -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;; Commentary:
 
 ;;; Code:
