@@ -731,6 +731,7 @@
     (highlight-numbers-number (:foreground num))
     (highlight-quoted-quote   (:inherit 'font-lock-builtin-face))
     (highlight-quoted-symbol  (:inherit 'font-lock-keyword-face))
+    (highlight-symbol-face    (:background bg4))
 
     ;; Highlight indent guides
     (highlight-indent-guides-odd-face        (:background hl-indent))
