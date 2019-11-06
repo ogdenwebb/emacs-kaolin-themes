@@ -61,7 +61,11 @@
       :config
       (progn
         ;; Set fallback icon
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "file-text-o")) :extensions (fallback))
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "file-text"
+                                                    :height 1.15
+                                                    :v-adjust 0.1))
+         :extensions (fallback))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "subject"
@@ -159,7 +163,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tex")) :extensions ("tex"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "rst")) :extensions ("rst"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vue")) :extensions ("vue"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "markdown")) :extensions ("md" "markdown"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "markdown" :v-adjust 0.05)) :extensions ("md" "markdown"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "file-pdf")) :extensions ("pdf"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "database")) :extensions ("sql"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-material "style")) :extensions ("styles"))
@@ -182,7 +186,9 @@
                       "mkv" "wav" "mp3" "ogg" "midi"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "file-text-o"))
+         :icon (format " %s " (all-the-icons-octicon "file-text"
+                       :height 1.15
+                       :v-adjust 0.05))
          :extensions ("rst" "log" "txt" "contribute" "license" "readme" "changelog"))
 
         (treemacs-create-icon
