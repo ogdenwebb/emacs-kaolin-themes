@@ -89,13 +89,15 @@
          :extensions (dir-closed))
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-faicon "chevron-down"
-                                             :v-adjust 0.1
+         :icon (format "%s " (all-the-icons-material "close"
+                                             :size 1.0
+                                             ;; :v-adjust 0.1
                                              :face 'font-lock-keyword-face))
          :extensions (tag-open))
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-faicon "location-arrow"
+         :icon (format "%s " (all-the-icons-faicon "chevron-down"
+                                             :size 0.9
                                              :v-adjust 0.1
                                              :face 'font-lock-keyword-face))
          :extensions (tag-closed))
