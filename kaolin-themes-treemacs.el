@@ -63,28 +63,28 @@
         ;; Set fallback icon
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "file-text"
-                                                    :height 1.15
+                                                    :height 1.10
                                                     :v-adjust 0.1))
          :extensions (fallback))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "subject"
                                                    :v-adjust -0.2
-                                                   :height 1.4
+                                                   :height 1.3
                                                    :face 'font-lock-variable-name-face))
          :extensions (root))
 
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "folder_open"
-                                               :v-adjust -0.2
-                                               :height 1.15))
+                                               ;; :v-adjust 0.05
+                                               :height 1.1))
          ;; :face 'font-lock-doc-face))
          :extensions (dir-open))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "folder"
-                                                   :v-adjust -0.2
-                                                   :height 1.15))
+                                                   ;; :v-adjust 0.05
+                                                   :height 1.1))
 
          :extensions (dir-closed))
 
@@ -147,7 +147,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "cabal")) :extensions ("cabal"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "clisp")) :extensions ("lisp"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "go")) :extensions ("go"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "elisp")) :extensions ("el" "elc"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "elisp" :v-adjust -0.15)) :extensions ("el" "elc"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "julia")) :extensions ("jl"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "kotlin")) :extensions ("kt" "kts"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "hy")) :extensions ("hy"))
@@ -182,14 +182,14 @@
 
         ;; Media files icon
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "file-media"))
+         :icon (format " %s " (all-the-icons-octicon "file-media" :v-adjust 0.1))
          :extensions ("jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
                       "psd" "ai" "eps" "indd" "mov" "avi" "mp4" "webm" "webp"
                       "mkv" "wav" "mp3" "ogg" "midi"))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "file-text"
-                       :height 1.15
+                       :height 1.1
                        :v-adjust 0.05))
          :extensions ("rst" "log" "txt" "contribute" "license" "readme" "changelog"))
 
