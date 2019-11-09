@@ -1533,6 +1533,10 @@
     (swiper-match-face-2 (:background bg2 :foreground search1 :bold bold))
     (swiper-match-face-3 (:background bg2 :foreground search2 :bold bold))
     (swiper-match-face-4 (:background bg2 :foreground search3 :bold bold))
+    (swiper-background-match-face-1 (:inherit 'swiper-match-face-1 :bold nil :background bg1))
+    (swiper-background-match-face-2 (:inherit 'swiper-match-face-2 :bold nil :background bg1))
+    (swiper-background-match-face-3 (:inherit 'swiper-match-face-3 :bold nil :background bg1))
+    (swiper-background-match-face-4 (:inherit 'swiper-match-face-4 :bold nil :background bg1))
     (swiper-line-face    (:inherit 'hl-line))
 
     ;; Awesome-tabs
