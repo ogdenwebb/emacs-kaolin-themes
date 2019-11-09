@@ -1335,8 +1335,8 @@
 
     (org-document-info-keyword     (:foreground metakey))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
-    (org-block                     (:background bg2))
-    (org-block-begin-line          (:background comment :foreground bg4 :distant-foreground fg4))
+    (org-block                     (:background bg3 :foreground fg2))
+    (org-block-begin-line          (:background bg2 :foreground comment))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
     (org-document-title            (:foreground builtin :bold bold))
