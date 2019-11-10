@@ -122,7 +122,7 @@
     (amber4 "#c5b378")
     (amber5 "#1e1c14")
     (amber6 "#403B2E")
-    (amber7 "#847C68")
+    (amber7 "#6E6653")
     (amber8 "#c7c2af")
     (amber9 "#eee6d3")
 
