@@ -32,7 +32,6 @@
    (fg4 gray4)
 
    (keyword     blue4)
-   (metakey     keyword)
    (builtin     cerulean4)
 
    (var         crimson3)

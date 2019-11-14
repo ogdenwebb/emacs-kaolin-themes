@@ -34,7 +34,6 @@
    (fg1 orange9)
 
    (keyword     cyan1)
-   (metakey     keyword)
    (builtin     capri4)
    (functions   capri4)
 

@@ -39,7 +39,6 @@
    (fg1 amber9)
 
    (keyword     teal0)
-   (metakey     keyword)
    (builtin     aquamarine1)
    (header      orange3)
 

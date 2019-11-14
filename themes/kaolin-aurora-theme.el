@@ -21,9 +21,11 @@
    ;; TODO: mb yellow3
    (hl magenta3)
 
+   (comment     "#454459")
+   (comment-alt teal2)
    (keyword     violet4)
    (builtin     violet4)
-   (metakey     teal0)
+   (metakey     (if kaolin-themes-distinct-metakeys teal0 comment))
 
    (functions   cyan0)
    (const       teal0)
@@ -31,8 +33,6 @@
    (type        cyan3)
 
 
-   (comment     "#454459")
-   (comment-alt teal2)
    (warning     orange1)
    (err         crimson1)
 

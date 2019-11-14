@@ -14,7 +14,7 @@
    (azure2 "#325074")
 
    (keyword     cerise4)
-   (metakey  magenta2 cerise4)
+   (metakey     (if kaolin-themes-distinct-metakeys magenta2 cerise4) comment)
    (builtin     magenta3)
    (functions   builtin)
    ;; TODO:

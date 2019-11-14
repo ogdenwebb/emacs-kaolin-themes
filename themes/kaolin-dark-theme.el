@@ -11,7 +11,7 @@
    (white3          "#babac4")
    (white4          "#adadb9")
 
-   (selection spring-green6)
+   (selection aquamarine6)
 
    (spring-green3 "#6fb593"))
 

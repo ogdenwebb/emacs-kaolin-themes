@@ -507,7 +507,7 @@
     (diff-bg-rem crimson4)
 
     (keyword     teal1)
-    (metakey     comment)
+    (metakey     (if kaolin-themes-distinct-metakeys keyword comment))
     (builtin     teal4)
     (header      builtin)
     (functions   builtin)

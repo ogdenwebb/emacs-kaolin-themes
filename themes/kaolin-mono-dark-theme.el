@@ -25,15 +25,15 @@
    ;; (keyword spring-green8)
    (keyword     aquamarine2)
 
-   (metakey     spring-green4)
+   (comment     "#41544B")
+   (metakey     (if kaolin-themes-distinct-metakeys spring-green4 comment))
    ;; (builtin     aquamarine2)
-   (builtin spring-green8)
+   (builtin     spring-green8)
    (functions   builtin)
    (const       teal4)
    (var         teal4)
    (type        aquamarine1)
 
-   (comment "#41544B")
    ;; TODO:
    (comment-alt gray6)
    (warning     orange1)
@@ -75,7 +75,7 @@
    (rb9 gray9)
 
    (diff-add teal3)
-   (diff-mod amber3)
+   (diff-mod vermilion4)
    (diff-rem red1)
 
    (diff-bg-add spring-green4)

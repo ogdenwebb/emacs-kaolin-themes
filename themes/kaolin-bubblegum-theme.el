@@ -25,7 +25,6 @@
 
    (keyword     ultramarine3)
    (builtin     aquamarine3)
-   (metakey     keyword)
 
    (functions   magenta3)
    (const       capri3)

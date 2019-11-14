@@ -30,7 +30,6 @@
    ;; (fg1 blue9)
 
    (keyword     cyan3)
-   (metakey     keyword)
    (builtin     teal3)
    (functions   magenta3)
    (var         amber3)

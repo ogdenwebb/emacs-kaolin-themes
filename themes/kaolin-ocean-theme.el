@@ -22,8 +22,11 @@
    (bg3 (if kaolin-ocean-alt-bg black4 "#28283a") black4)
    (bg4 (if kaolin-ocean-alt-bg gray0 "#32324a") gray0)
 
+   (comment     gray3)
+   ;; (comment     blue7)
+   (comment-alt "#43436E")
    (keyword     cerulean4)
-   (metakey     ultramarine3) ; todo
+   (metakey     (if kaolin-themes-distinct-metakeys ultramarine3 comment)) ; todo
    (builtin     azure3)
    ;; (functions   builtin)
    (functions   cyan3)
@@ -36,9 +39,6 @@
 
    (keysym amber3)
 
-   (comment     gray3)
-   ;; (comment     blue7)
-   (comment-alt "#43436E")
    (str         green3)
    (str-alt     spring-green4)
    (doc         str-alt)
@@ -92,6 +92,7 @@
    (highlight-quoted-quote   (:foreground functions))
    (highlight-quoted-symbol  (:foreground amber3))
 
+   (org-document-title  (:foreground str))
    (org-code            (:foreground pink1))
    (org-verbatim        (:foreground spring-green1))
    (org-level-2         (:foreground functions))

@@ -54,7 +54,6 @@
    (fg4 "#867e78")
 
    (keyword     teal0)
-   (metakey     keyword)
    (builtin     erin2)
 
    (var         crimson0)

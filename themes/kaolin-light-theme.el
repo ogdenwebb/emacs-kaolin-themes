@@ -48,15 +48,14 @@
    (fg3 gray3)
    (fg4 gray4)
 
-
+   (comment     gray7)
+   (comment-alt lime7)
    (keyword     teal2)
-   (metakey     teal2)
+   (metakey     (if kaolin-themes-distinct-metakeys teal2 comment))
    (var         magenta4)
    (const       magenta4)
    (builtin     azure4)
    (functions   azure4)
-   (comment     gray7)
-   (comment-alt lime7)
    ;; (str         brown1)
    (str         erin2)
    (str-alt     brown3)
@@ -69,7 +68,6 @@
    (err         crimson3)
 
    (dim-buffer white0)
-   ;; TODO:
    (hl         green2)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))

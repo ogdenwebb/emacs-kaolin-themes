@@ -139,6 +139,11 @@
   "If not-nil, enable distinct border in mode-line."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-distinct-metakeys t
+  "If not-nil, enable distinct color for metadata key (e.g. metakeys in org-mode).
+Otherwise inherit from comments."
+  :group 'kaolin-themes)
+
 (defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)
