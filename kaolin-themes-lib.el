@@ -1304,13 +1304,13 @@
 
     ;; Whitespace mode
     (whitespace-empty            (:background bg4))
-    (whitespace-line             (:background bg1 :foreground err))
-    (whitespace-newline          (:foreground bg2 :foreground num))
+    (whitespace-line             (:background bg1 :foreground num))
     (whitespace-indentation      (:background hl-indent :foreground hl-indent))
     (whitespace-tab              (:background bg2 :foreground comment))
     (whitespace-space            (:background bg2 :foreground comment))
-    (whitespace-space-before-tab (:background diff-add :foreground bg2))
-    (whitespace-space-after-tab  (:background diff-add :foreground bg2))
+    (whitespace-newline          (:inherit 'whitespace-space))
+    (whitespace-space-before-tab (:background diff-mod :foreground bg2))
+    (whitespace-space-after-tab  (:background diff-mod :foreground bg2))
     ;; (whitespace-hspace           (:foreground num))
     (whitespace-trailing         (:inherit 'trailing-whitespace :foreground bg2))
     (whitespace-big-indent       (:background red0 :foreground bg2))
