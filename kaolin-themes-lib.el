@@ -503,7 +503,7 @@
     (diff-rem    red1)
 
     (diff-bg-add spring-green2)
-    (diff-bg-mod purple3)
+    (diff-bg-mod vermilion4)
     (diff-bg-rem crimson4)
 
     (keyword     teal1)
