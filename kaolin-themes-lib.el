@@ -1507,6 +1507,13 @@
     (helm-time-zone-home                      (:foreground type))
     (helm-source-go-package-godoc-description (:foreground str))
 
+    ;; helm-swoop
+    (helm-swoop-line-number-face       (:background nil :foreground line-num-fg))
+    (helm-swoop-target-line-face       (:inherit 'isearch))
+    (helm-swoop-target-line-block-face (:inherit 'isearch))
+    (helm-swoop-target-word-face       (:background num :foreground bg1 :bold bold))
+
+
     ;; Wgrep
     (wgrep-face        (:background bg2 :foreground diff-mod))
     (wgrep-delete-face (:background diff-bg-rem :foreground bg2))
