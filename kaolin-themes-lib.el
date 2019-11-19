@@ -1452,12 +1452,11 @@
     ;; Helm
     (helm-M-x-key                             (:foreground keysym))
     (helm-action                              (:foreground fg1 :underline underline))
-    (helm-header                              (:foreground type :underline nil :box nil))
-    ;; TODO:
-    (helm-helper                              (:foreground type))
-    (helm-source-header                       (:background bg2 :foreground header :underline nil :bold bold))
-    (helm-match                               (:foreground search1 :bold bold))
+    (helm-header                              (:inherit 'header-line))
     (helm-header-line-left-margin             (:inherit 'header-line))
+    (helm-helper                              (:foreground keysym))
+    (helm-source-header                       (:background bg2 :foreground num :underline nil :bold bold))
+    (helm-match                               (:foreground search1 :bold bold))
     (helm-selection                           (:background bg3 :foreground hl :bold bold))
     (helm-selection-line                      (:inherit 'helm-selection))
     (helm-visible-mark                        (:background diff-bg-add :foreground bg1))
