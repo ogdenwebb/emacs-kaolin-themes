@@ -43,9 +43,9 @@
    ;; (type        orange3)
    (type        lime4)
 
-   ;; (comment     gray5)
-   (comment     cerulean7)
-   (comment-alt vermilion7)
+   (comment     gray5)
+   ;; (comment     orange7)
+   (comment-alt orange7)
 
    (str         pink3)
    (str-alt     crimson7)
@@ -104,20 +104,21 @@
 
    (win-border    bg3)
    (line-num-fg   comment)
-   (line-num-hl   hl)
+   (line-num-hl   teal3)
 
    (cursor        fg1)
 
    (ivy1          gray9)
-   (search1       cerulean3)
+   ;; (search1       cerulean3)
+   (search1       capri0)
    (search2       yellow0)
-   (search3       green3))
+   (search3       spring-green0))
 
   (
    (highlight-quoted-quote   (:foreground orange3))
    (highlight-quoted-symbol  (:foreground amber3))
 
-   (org-document-title     (:foreground orange3 :bold bold))
+   (org-document-title     (:foreground orange3 :bold bold :height 1.3))
    (org-verbatim     (:foreground cyan1 :bold bold))
 
    (org-level-1            (:foreground var :bold bold :height 1.1))
