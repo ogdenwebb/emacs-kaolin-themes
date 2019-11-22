@@ -1052,6 +1052,10 @@
     (hydra-face-pink     (:foreground pink1))
     (hydra-face-amaranth (:foreground magenta4))
 
+    ;; Hydra-posframe
+    (hydra-posframe-face (:background bg2 :foreground fg1))
+    (hydra-posframe-border-face (:background bg2))
+
     ;; Ido
     (ido-indicator   (:foreground num))
     (ido-first-match (:foreground hl :bold bold))
