@@ -1046,11 +1046,12 @@
     (flyspell-incorrect (:underline (:style underline-style :color err)))
 
     ;; Hydra
-    (hydra-face-red      (:foreground red1))
-    (hydra-face-teal     (:foreground teal0))
+    ;; (hydra-face-red      (:foreground red1))
+    (hydra-face-red      (:foreground err))
+    (hydra-face-teal     (:foreground teal3))
     (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
-    (hydra-face-amaranth (:foreground magenta4))
+    (hydra-face-amaranth (:foreground purple3))
 
     ;; Hydra-posframe
     (hydra-posframe-face (:background bg2 :foreground fg1))
