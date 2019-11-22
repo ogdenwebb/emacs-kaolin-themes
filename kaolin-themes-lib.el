@@ -1229,7 +1229,7 @@
     ;; Imenu list
     ;; (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
     (imenu-list-entry-face   (:inherit 'font-lock-keyword-name-face))
-    (imenu-list-entry-face-0 (:inherit 'font-lock-keyword-face :height 1.1))
+    (imenu-list-entry-face-0 (:inherit 'font-lock-keyword-face :height 1.0))
     (imenu-list-entry-face-1 (:inherit 'font-lock-function-name-face))
     (imenu-list-entry-face-2 (:inherit 'font-lock-string-face))
     (imenu-list-entry-face-3 (:inherit 'font-lock-type-face))
@@ -1339,7 +1339,7 @@
 
     (org-document-info-keyword     (:foreground metakey))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
-    (org-block                     (:background bg3 :foreground fg2))
+    (org-block                     (:background bg2 :foreground fg2))
     (org-block-begin-line          (:background bg2 :foreground comment :height 0.9))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
@@ -1461,7 +1461,7 @@
     (helm-header                              (:inherit 'header-line))
     (helm-header-line-left-margin             (:inherit 'header-line))
     (helm-helper                              (:foreground keysym))
-    (helm-source-header                       (:background bg2 :foreground num :underline nil :bold bold))
+    (helm-source-header                       (:background bg2 :foreground str :underline nil :bold bold))
     (helm-match                               (:foreground search1 :bold bold))
     (helm-selection                           (:background bg3 :foreground hl :bold bold))
     (helm-selection-line                      (:inherit 'helm-selection))
