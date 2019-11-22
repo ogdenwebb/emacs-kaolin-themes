@@ -1417,8 +1417,10 @@
     (beacon-fallback-background (:background pulse))
 
     ;; Solaire mode
-    (solaire-default-face       (:background pane))
-    (solaire-hl-line-face  (:inherit 'hl-line :background bg3))
+    (solaire-default-face    (:inherit 'default :background pane))
+    (solaire-minibuffer-face (:inherit 'solaire-default-face))
+    (solaire-hl-line-face    (:inherit 'hl-line :background bg3))
+    (solaire-org-hide-face   (:inherit 'org-hide))
 
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face            (:foreground warning))
