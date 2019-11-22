@@ -26,6 +26,9 @@
    (orange9       "#EEDCC1")
 
    ;; Color vars
+   ;; (bg0 black2)
+   ;; (bg0 "#262628")
+   (bg0 "#262628")
    (bg1 black3)
    (bg2 black4)
    (bg3 gray0)
@@ -56,6 +59,7 @@
    (num         crimson3)
    (bool        num)
    (warning     amber0)
+   ;; (warning     orange1)
    (err         red3)
 
    (dim-buffer white0)
@@ -70,6 +74,7 @@
    (pulse bg4)
 
    (todo red1)
+   ;; (todo vermilion0)
    (done aquamarine1)
 
    (tooltip-hl-bg bg3)
@@ -89,6 +94,8 @@
    (diff-add teal1)
    (diff-mod vermilion4)
    (diff-rem red1)
+
+   (evil-normal       functions)
 
     ;; Mode-line
    (line-fg           fg4)
@@ -111,15 +118,15 @@
    (ivy1          gray9)
    ;; (search1       cerulean3)
    (search1       capri0)
-   (search2       yellow0)
+   (search2       vermilion3)
    (search3       spring-green0))
 
   (
    (highlight-quoted-quote   (:foreground orange3))
    (highlight-quoted-symbol  (:foreground amber3))
 
-   (org-document-title     (:foreground orange3 :bold bold :height 1.3))
-   (org-verbatim     (:foreground cyan1 :bold bold))
+   (org-document-title (:foreground orange3 :bold bold :height 1.3))
+   (org-verbatim       (:foreground cyan1 :bold bold))
 
    (org-level-1            (:foreground var :bold bold :height 1.1))
    (org-level-2            (:foreground functions  :bold nil))
