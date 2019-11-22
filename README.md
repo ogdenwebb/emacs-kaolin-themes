@@ -22,6 +22,7 @@ All screenshots are available in the wiki on the following pages:
 * [kaolin-ocean](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-ocean-theme) - a dark blue variant.
 * [kaolin-galaxy](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-galaxy-theme) - bright theme based on one of the Sebastian Andaur arts.
 * [kaolin-valley-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-valley-dark-theme) - colorful Kaolin theme with brown background.
+* [kaolin-temple](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-temple-theme) - dark background with syntax highlighting focus on blue, green and pink shades
 
 ### Further themes
 
@@ -32,7 +33,6 @@ These themes might be changed in the future.
 * **kaolin-valley-light** - light variant of kaolin-valley theme.
 * **kaolin-bubblegum** - colorful theme with dark blue background.
 * **kaolin-mono-dark** - almost monochrome dark green Kaolin theme.
-* **kaolin-temple** - dark background with syntax highlighting focus on blue, green and pink shades.
 * **kaolin-breeze** - Light Kaolin theme with soft colors.
 
 ### Planned
