@@ -66,7 +66,7 @@
    ;; TODO:
    (pulse bg4)
 
-   (todo red1)
+   (todo red3)
    (done aquamarine1)
 
    (tooltip-hl-bg bg3)
