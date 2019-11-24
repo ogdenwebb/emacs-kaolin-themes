@@ -11,9 +11,7 @@
   (
    ;; Colors
    (spring-green6 "#3e594e")
-   ;; (aquamarine1   "#47BF9D")
-   ;; (aquamarine4   "#518270")
-   (aquamarine4   "#729C8C")
+   (aquamarine4   "#74A895")
    (teal1         "#4FA19C")
    (orange3       "#f5c791")
    (crimson0      "#DC4473")
@@ -26,8 +24,6 @@
    (orange9       "#EEDCC1")
 
    ;; Color vars
-   ;; (bg0 black2)
-   ;; (bg0 "#262628")
    (bg0 "#262628")
    (bg1 black3)
    (bg2 black4)
@@ -41,7 +37,6 @@
    (functions   capri4)
 
    (var         aquamarine4)
-   ;; (const       cyan1)
    (const       teal1)
    ;; (type        orange3)
    (type        lime4)
@@ -67,14 +62,11 @@
    ;; TODO: add colored
    (hl-line    bg2)
    ;; (hl-indent  cerulean7)
-   ;; TODO:
    (selection crimson6)
-   ;; (selection ultramarine6)
    ;; TODO:
    (pulse bg4)
 
    (todo red1)
-   ;; (todo vermilion0)
    (done aquamarine1)
 
    (tooltip-hl-bg bg3)
