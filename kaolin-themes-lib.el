@@ -1467,7 +1467,7 @@
     (helm-selection                           (:background bg3 :foreground hl :bold bold))
     (helm-selection-line                      (:inherit 'helm-selection))
     (helm-visible-mark                        (:background diff-bg-add :foreground bg1))
-    (helm-candidate-number                    (:foreground num))
+    (helm-candidate-number                    (:foreground str))
     (helm-separator                           (:foreground type))
 
     (helm-bookmark-addressbook                (:foreground prep))
