@@ -106,6 +106,9 @@
    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground azure8))
    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground gray9))
 
+   (highlight-quoted-quote   (:foreground functions))
+   (highlight-quoted-symbol  (:foreground num))
+
    (org-level-1         (:foreground teal4 :bold bold :height 1.1))
    (org-level-2         (:foreground keyword :bold nil))
    (org-level-3         (:foreground spring-green3 :bold nil))
