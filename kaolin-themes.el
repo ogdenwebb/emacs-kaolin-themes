@@ -162,7 +162,7 @@ Otherwise inherit from comments."
   (intern (format "kaolin-%s" (symbol-name sym))))
 
 (defun kaolin-themes--merge-alist (base-alist add-alist)
-  "Add elements to BASE-LIST from ADD-LIST without dublicates."
+  "Add elements to BASE-LIST from ADD-LIST without dublicates. Returns a new list as result."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
              do (map-put res (car el) (cdr el)))
