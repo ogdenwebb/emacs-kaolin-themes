@@ -1480,12 +1480,13 @@
     (helm-bookmark-man                        (:foreground doc))
     (helm-bookmark-w3m                        (:foreground search1))
 
-    (helm-buffer-not-saved                    (:foreground diff-add))
     (helm-buffer-process                      (:foreground str))
     (helm-buffer-saved-out                    (:background diff-bg-mod :foreground bg1))
     (helm-buffer-size                         (:foreground fg1))
     (helm-buffer-directory                    (:foreground keyword))
     (helm-buffer-archive                      (:foreground const))
+    (helm-buffer-not-saved                    (:foreground diff-mod))
+    (helm-buffer-modified                     (:foreground warning))
 
     (helm-etags-file                          (:foreground str))
     (helm-ff-directory                        (:foreground keyword :bold bold))
