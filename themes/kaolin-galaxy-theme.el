@@ -19,12 +19,12 @@
    (azure1        "#2a57cc")
    (spring-green1 "#6dd797")
    (ultramarine7  "#615B75")
-                               ;; dark      bright   terminal
+
    (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
-   (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
-   (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
-   (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#31303A") black3)
-   (bg4 (if kaolin-galaxy-alt-bg "#393741" "#3d3b46") black4)
+   (bg1 (if kaolin-galaxy-alt-bg "#2A252B" "#212026") black1)
+   (bg2 (if kaolin-galaxy-alt-bg "#342D35" "#2a2931") black2)
+   (bg3 (if kaolin-galaxy-alt-bg "#3C343D" "#31303A") black3)
+   (bg4 (if kaolin-galaxy-alt-bg "#403742" "#3d3b46") black4)
 
    ;; TODO: add other fg vars
    ;; (fg1 blue9)
