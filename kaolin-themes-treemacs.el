@@ -138,6 +138,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "rust")) :extensions ("rs"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "haskell")) :extensions ("hs"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "c")) :extensions ("c" "h"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "crystal")) :extensions ("cr"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "cplusplus")) :extensions ("cpp" "cxx" "hpp" "tpp" "cc" "hh"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "ruby-alt")) :extensions ("rb"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "scala")) :extensions ("scala"))
