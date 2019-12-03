@@ -11,13 +11,15 @@
   (
    ;; Colors
    (spring-green6 "#3e594e")
-   (aquamarine4   "#74A895")
-   (teal1         "#4FA19C")
+   ;; (aquamarine4   "#74A895")
+   (aquamarine4   "#74B09A")
+   (teal1         "#4FA8A3")
    (orange3       "#f5c791")
    (crimson0      "#DC4473")
    (crimson7      "#BA667D")
    (vermilion4    "#D7936D")
-   (cyan1         "#57B2C2")
+   ;; (cyan1         "#57B2C2")
+   (cyan1         "#4EB8CA")
    (cyan3         "#68DFE8")
    (red1          "#C74A4D")
    ;; (orange9       "#EEDEC6")
@@ -36,9 +38,8 @@
    (builtin     capri4)
    (functions   capri4)
 
-   (var         aquamarine4)
+   (var         aquamarine1)
    (const       teal1)
-   ;; (type        orange3)
    (type        lime4)
 
    (comment     gray5)
@@ -46,6 +47,7 @@
    (comment-alt orange7)
 
    (str         pink3)
+   ;; (str         "#F8C08F")
    (str-alt     crimson7)
    (doc         str-alt)
 
