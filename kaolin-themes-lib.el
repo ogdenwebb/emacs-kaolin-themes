@@ -531,7 +531,7 @@
     (button-hl amber3)
 
     ;; Mode-line
-    (line-fg           fg4)
+    (line-fg           fg3)
     (line-inactive     comment)
     (line-bg1          bg2)
     (line-bg2          bg4)
