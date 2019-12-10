@@ -34,7 +34,7 @@
    (azure4        "#4C7A90")
    ;; TODO: less contrast
    (ultramarine1  "#6D46E3")
-   (orange1 "#DBA451")
+   (orange1       "#C5882C")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -107,7 +107,7 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   (line-num-fg   azure8)
+   (line-num-fg   comment)
    (line-num-hl   hl)
 
    (cursor        gray3)
