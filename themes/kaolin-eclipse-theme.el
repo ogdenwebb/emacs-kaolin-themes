@@ -4,51 +4,84 @@
 ;;; Code:
 (require 'kaolin-themes)
 
+(defgroup kaolin-eclipse nil
+  "Kaolin eclipse theme options."
+  :group 'kaolin-themes)
+
+(defcustom kaolin-eclipse-alt-bg nil
+  "Use alternative darker background color."
+  :type 'boolean
+  :group 'kaolin-eclipse)
+
+
 (define-kaolin-theme eclipse "Dark purple Kaolin theme variant."
   ;; Palette modification
-  ((bg1  magenta5 black1)
-   (bg2       "#261a26" black2)
-   (bg3       "#312231" black3)
-   (bg4       "#3d2a3d" black4)
+  (
+   (bg0 (if kaolin-eclipse-alt-bg "#1E151E" "#261926") black0)
+   ;; (bg1 (if kaolin-eclipse-alt-bg "#231923" "#2B1D2B") black1)
+   ;; (bg2 (if kaolin-eclipse-alt-bg "#2B1F2B" "#261A26") black2)
+   ;; (bg3 (if kaolin-eclipse-alt-bg "#332333" "#2B202B") black3)
+   ;; (bg4 (if kaolin-eclipse-alt-bg "#3d2a3d" "#3d2a3d") black4)
+   (bg1 (if kaolin-eclipse-alt-bg "#231923" "#2B1D2B") black1)
+   (bg2 (if kaolin-eclipse-alt-bg "#2B1F2B" "#332433") black2)
+   (bg3 (if kaolin-eclipse-alt-bg "#332333" "#3D293D") black3)
+   (bg4 (if kaolin-eclipse-alt-bg "#3d2a3d" "#452F45") black4)
+
+   (fg1 "#F0EBE7")
 
    (azure2 "#325074")
+   (purple3 "#C68EDE")
+   ;; (violet3 "#BA8DF0")
 
-   (keyword     cerise4)
+   ;; (keyword     cerise4)
+   (keyword     purple3)
    (metakey     (if kaolin-themes-distinct-metakeys magenta2 cerise4) comment)
-   (builtin     magenta3)
+   ;; TODO: fix treemacs level1-2 and etc
+   (builtin     purple3)
    (functions   builtin)
    ;; TODO:
-   (var         violet4)
-   (const       violet4)
-   (type        aquamarine4)
-   (num         amber3)
+   (var         ultramarine3)
+   (const       ultramarine3)
+   ;; (type        crimson3)
+   (type        cyan3)
+   ;; (num         spring-green3)
+   ;; (num         capri3)
+   (num         cerise3)
    (bool        num)
-   (prep        vermilion4)
+   ;; (prep        vermilion4)
+   ;; (prep        spring-green3)
+   ;; (prep        cerise3)
+   ;; (prep        capri3)
+   (prep        yellow4)
 
    ;; (comment     gray2)
-   (comment     pink6)
+   (comment     purple7)
    (comment-alt "#663E66")
-   (str         teal4)
+   ;; (str         spring-green3)
+   ;; (str         capri3)
+   (str         cerise3)
+   ;; (str         "#8ee6d6")
    (str-alt     blue4)
    (doc         str-alt)
-   (warning     orange3)
+   (warning     vermilion4)
    (err         red1)
 
    (dim-buffer "#140E14")
    (hl         pink1)
-   (hl-line    (if kaolin-themes-hl-line-colored cerise6 bg3))
+   ;; TODO: fix contrast in minibuffer
+   (hl-line    violet6)
    ; (hl-indent bg4)
-   (selection  bg4)
+   (selection  capri6)
    (pulse      magenta2)
 
    (todo pink1)
 
-   (tooltip-hl-bg magenta2)
+   (tooltip-hl-bg cerulean6)
    (tooltip-hl-fg amber3)
 
    (search1 capri0)
    (search2 spring-green1)
-   (search3 ultramarine1)
+   (search3 amber3)
 
    (rb1 crimson4)
    (rb2 violet4)
@@ -61,7 +94,7 @@
    (rb9 pink3)
 
    (diff-add teal3)
-   (diff-mod violet3)
+   (diff-mod orange3)
    (diff-rem crimson3)
 
    ;; Mode-line
@@ -74,15 +107,22 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   ;; (line-num-fg   magenta2 black4)
-   (line-num-fg   pink6 black4)
-   ;; TOOD: or hl
-   (line-num-hl   magenta3 gray9)
-   (cursor        "#e0c3c8"))
+   (line-num-fg   comment)
+   (line-num-hl   hl gray9)
+   (cursor        ultramarine3))
 
   ;; Custom theme set faces
   (
-   (link                (:foreground aquamarine4 :underline underline))
+   ;; TODO: rework
+   ;; Magit
+   ;; (magit-item-highlight         (:background bg4))
+   ;; (magit-blame-heading          (:background bg4 :foreground var))
+   ;; (magit-hunk-heading           (:background bg4))
+   ;; (magit-hunk-heading-highlight (:background bg4))
+   ;; (magit-diff-hunk-heading      (:background bg4))
+   ;; (magit-diff-file-heading-highlight (:background bg4 :bold bold))
+
+
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    ;; TODO: change

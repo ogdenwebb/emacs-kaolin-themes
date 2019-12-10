@@ -511,7 +511,7 @@
     (str-alt     spring-green4)
     (doc         str-alt)
     (type        vermilion4)
-    (var         blue4)
+    (var         ultramarine4)
     (const       purple4)
     (num         red1)
     (bool        num)
