@@ -1548,7 +1548,7 @@
     (ivy-modified-buffer         (:foreground diff-mod))
     (ivy-remote                  (:foreground prep))
     (ivy-subdir                  (:foreground keyword :bold bold))
-    (ivy-virtual                 (:foreground doc))
+    (ivy-virtual                 (:foreground ivy1))
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground search1 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground search2 :bold bold))
