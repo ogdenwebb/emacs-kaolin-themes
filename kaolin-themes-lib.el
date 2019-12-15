@@ -1572,6 +1572,17 @@
     (swiper-background-match-face-4 (:inherit 'swiper-match-face-4 :bold nil :background bg1))
     (swiper-line-face    (:inherit 'hl-line))
 
+    ;; tabbar
+    (tabbar-default             (:background bg1 :foreground bg1 :height 1.0))
+    (tabbar-highlight           (:background hl-bg :foreground fg1 :distant-foreground bg1))
+    (tabbar-button              (:foreground fg1 :background bg1))
+    (tabbar-button-highlight    (:foreground bg1 :background fg4 ))
+    (tabbar-modified            (:inherit 'tabbar-default :foreground diff-mod :weight 'bold))
+    (tabbar-unselected          (:inherit 'tabbar-default :foreground comment))
+    (tabbar-unselected-modified (:inherit 'tabbar-modified))
+    (tabbar-selected            (:inherit 'tabbar-default :foreground fg1 :background bg2 :weight 'bold))
+    (tabbar-selected-modified   (:inherit 'tabbar-selected :foreground diff-add))
+
     ;; Awesome-tabs
     (awesome-tab-default    (:background bg1 :foreground bg1))
     (awesome-tab-unselected (:background bg2 :foreground comment))
