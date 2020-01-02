@@ -797,11 +797,17 @@
     (ruler-mode-tab-stop       (:foreground purple4))
     (ruler-mode-goal-column    (:foreground red0))
 
-    ;; TODO: Message faces
-    (message-header-name    (:foreground teal2))
-    (message-header-subject (:foreground spring-green3))
-    (message-header-to      (:foreground spring-green3))
-    (message-header-other   (:foreground cyan3))
+    ;; Message faces
+    (message-cited-text           (:foreground comment))
+    (message-header-cc            (:inherit 'message-header-to))
+    (message-header-name          (:foreground header))
+    (message-header-newsgroups    (:foreground cyan0  :slant 'normal))
+    (message-header-other         (:foreground fg0 :background nil :weight 'normal))
+    (message-header-subject       (:inherit 'message-header-other :weight 'bold :foreground keyword))
+    (message-header-to            (:inherit 'message-header-other :weight 'bold :foreground const))
+    (message-mml                  (:foreground bg4 :background bg3))
+    (message-separator            (:foreground comment))
+
 
     ;; TODO: Elfeed
     (elfeed-search-tag-face          (:foreground amber3))
