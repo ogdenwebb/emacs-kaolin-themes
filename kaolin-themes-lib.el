@@ -1538,6 +1538,11 @@
     (avy-lead-face-1     (:background magenta2 :foreground adaptive-fg :weight 'bold))
     (avy-lead-face-2     (:background capri2 :foreground adaptive-fg :weight 'bold))
 
+    ;; Ace-window
+    (aw-leading-char-face (:background nil :foreground hl :bold bold :height 1.4))
+    (aw-background-face   (:foreground comment :bold bold))
+    (aw-key-face          (:foreground keysym :bold bold))
+
     ;; Ivy
     (ivy-confirm-face            (:inherit 'success))
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
