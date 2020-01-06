@@ -726,6 +726,24 @@
     (diredfl-tagged-autofile-name   (:foreground num :underline underline))
     (diredfl-write-priv             (:foreground diff-mod))
 
+    ;; Jabber
+    (jabber-activity-face          (:foreground red   :weight 'bold))
+    (jabber-activity-personal-face (:foreground blue  :weight 'bold))
+    (jabber-chat-error             (:foreground red   :weight 'bold))
+    (jabber-chat-prompt-foreign    (:foreground red   :weight 'bold))
+    (jabber-chat-prompt-local      (:foreground blue  :weight 'bold))
+    (jabber-chat-prompt-system     (:foreground green :weight 'bold))
+    (jabber-chat-text-foreign      (:foreground fg))
+    (jabber-chat-text-local        (:foreground fg))
+    (jabber-rare-time-face         (:foreground green))
+    (jabber-roster-user-away       (:foreground yellow))
+    (jabber-roster-user-chatty     (:foreground green :weight 'bold))
+    (jabber-roster-user-dnd        (:foreground red))
+    (jabber-roster-user-error      (:foreground red))
+    (jabber-roster-user-offline    (:foreground fg))
+    (jabber-roster-user-online     (:foreground green :weight 'bold))
+    (jabber-roster-user-xa         (:foreground cyan))
+    
     ;; Highlighting
     (highlight                (:background hl-bg :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
