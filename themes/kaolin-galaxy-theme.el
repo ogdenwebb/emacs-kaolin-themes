@@ -19,25 +19,24 @@
    (azure1        "#2a57cc")
    (spring-green1 "#6dd797")
    (ultramarine7  "#615B75")
-                               ;; dark      bright   terminal
+
    (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
-   (bg1 (if kaolin-galaxy-alt-bg "#1d1c21" "#212026") black1)
-   (bg2 (if kaolin-galaxy-alt-bg "#26252c" "#2a2931") black2)
-   (bg3 (if kaolin-galaxy-alt-bg "#302e36" "#31303A") black3)
-   (bg4 (if kaolin-galaxy-alt-bg "#393741" "#3d3b46") black4)
+   (bg1 (if kaolin-galaxy-alt-bg "#2A252B" "#212026") black1)
+   (bg2 (if kaolin-galaxy-alt-bg "#342D35" "#2a2931") black2)
+   (bg3 (if kaolin-galaxy-alt-bg "#3C343D" "#31303A") black3)
+   (bg4 (if kaolin-galaxy-alt-bg "#403742" "#3d3b46") black4)
 
    ;; TODO: add other fg vars
    ;; (fg1 blue9)
 
    (keyword     cyan3)
-   (metakey     keyword)
    (builtin     teal3)
    (functions   magenta3)
    (var         amber3)
    (const       orange3)
    (type        crimson3)
-   (prep        capri3)
-   ;; TODO: change to type or str color
+   ;; (prep        capri3)
+   (prep        teal0)
    (num         capri3)
    (bool        num)
 
@@ -56,9 +55,7 @@
    ;; TODO: (??) change
    (hl         vermilion3)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
-   ; (hl-indent bg4)
-   ;; TODO: (??) less bright
-   (selection  bg4)
+   (selection  crimson6)
    (pulse      ultramarine6)
 
    (todo crimson1)

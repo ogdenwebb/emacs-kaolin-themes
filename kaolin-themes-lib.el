@@ -122,7 +122,7 @@
     (amber4 "#c5b378")
     (amber5 "#1e1c14")
     (amber6 "#403B2E")
-    (amber7 "#847C68")
+    (amber7 "#6E6653")
     (amber8 "#c7c2af")
     (amber9 "#eee6d3")
 
@@ -195,7 +195,8 @@
     (pink4 "#c791aa")
     ;; (pink5 "#210F17")
     (pink5 "#1e1419")
-    (pink6 "#402E35")
+    ;; (pink6 "#402E35")
+    (pink6 "#513C44")
     (pink7 "#846874")
     (pink8 "#CAB2BD")
     (pink9 "#EED3DF")
@@ -230,6 +231,7 @@
     ;; Purple #BF00FF
     (purple0 "#ab33eb")
     (purple1 "#A34BD2")
+    ;; TODO: change
     (purple2 "#73229E")
     (purple3 "#bc90d4")
     (purple4 "#ab98b5")
@@ -474,10 +476,6 @@
     (todo red1)
     (done spring-green3)
 
-    (button amber6)
-    (button-border (if (color-dark-p bg1) gray3 white4))
-    (button-hl amber3)
-
     (adaptive-fg (if (color-dark-p bg1) white0 bg1))
     ;; TODO: add pos-tip in custom-theme-set-variables
     (tooltip-bg bg2)
@@ -501,11 +499,11 @@
     (diff-rem    red1)
 
     (diff-bg-add spring-green2)
-    (diff-bg-mod purple3)
+    (diff-bg-mod vermilion4)
     (diff-bg-rem crimson4)
 
     (keyword     teal1)
-    (metakey     comment)
+    (metakey     (if kaolin-themes-distinct-metakeys keyword comment))
     (builtin     teal4)
     (header      builtin)
     (functions   builtin)
@@ -519,14 +517,21 @@
     (bool        num)
     (prep        violet4)
     (link        prep)
+    ;; MAYBE: add orange/yellow background?
     (warning     orange1)
     (err         red1)
 
     (keysym      prep)
     (prompt      keyword)
 
+    ;; Custom buttons
+    (button amber6)
+    (button-bg doc)
+    (button-border (if (color-dark-p bg1) gray3 white4))
+    (button-hl amber3)
+
     ;; Mode-line
-    (line-fg           fg4)
+    (line-fg           fg3)
     (line-inactive     comment)
     (line-bg1          bg2)
     (line-bg2          bg4)
@@ -619,9 +624,9 @@
     ;; Interface
     (package-name                   (:inherit 'link :underline nil))
     (button                         (:inherit 'link))
-    (custom-button                  (:background bg4 :foreground fg3 :box (:line-width 2 :color button-border :style nil)))
-    (custom-button-mouse            (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-hl :style 'released-button)))
-    (custom-button-pressed          (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-border :style 'pressed-button)))
+    (custom-button                  (:background button-bg :foreground adaptive-fg :box (:line-width 2 :color button-bg :style 'none) :height 0.9))
+    (custom-button-mouse            (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-hl :style 'none)))
+    (custom-button-pressed          (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-border :style 'none)))
     (custom-button-unraised         (:inherit 'custom-button))
     (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
     (custom-group-tag               (:foreground header :height 1.2 :weight 'bold))
@@ -639,10 +644,15 @@
     (custom-variable-tag            (:foreground var))
     (custom-variable-obsolete       (:inherit 'shadow))
     (widget-documentation           (:background nil :foreground var))
-    (widget-button                  (:background nil :foreground keyword))
+    ;; (widget-button                  (:background nil :foreground keyword))
     (widget-button-pressed          (:background nil :foreground builtin))
-    (widget-field                   (:background bg2 :foreground fg2 :box (:line-width 2 :color bg3 :style nil)))
+    (widget-field                   (:background bg2 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
+
+    ;; Dashboard
+    (dashboard-heading   (:foreground header))
+    (dashboard-navigator (:foreground prep))
+    (dashboard-footer    (:foreground str))
 
     ;; Compilation
     (compilation-column-number  (:foreground fg2))
@@ -689,6 +699,33 @@
     (diredp-deletion-file-name     (:background nil :foreground err :underline underline))
     (diredp-autofile-name          (:foreground num :underline underline))
 
+    ;; diredfl
+    (diredfl-autofile-name          (:foreground num :underline underline))
+    (diredfl-compressed-file-name   (:foreground comment))
+    (diredfl-compressed-file-suffix (:foreground comment))
+    (diredfl-date-time              (:foreground prep))
+    (diredfl-deletion               (:background nil :foreground err :underline underline))
+    (diredfl-deletion-file-name     (:background nil :foreground err :underline underline))
+    (diredfl-dir-heading            (:foreground header :weight 'bold :strike-through nil))
+    (diredfl-dir-name               (:foreground keyword :weight 'bold :strike-through nil))
+    (diredfl-dir-priv               (:foreground keyword :weight 'bold))
+    (diredfl-exec-priv              (:foreground diff-rem))
+    (diredfl-executable-tag         (:foreground diff-rem))
+    (diredfl-file-name              (:foreground fg1 :strike-through nil))
+    (diredfl-file-suffix            (:foreground const))
+    (diredfl-flag-mark              (:background selection :foreground diff-mod))
+    (diredfl-flag-mark-line         (:background selection))
+    (diredfl-ignored-file-name      (:inherit 'shadow))
+    (diredfl-link-priv              (:foreground functions))
+    (diredfl-no-priv                (:foreground comment))
+    (diredfl-number                 (:foreground num))
+    (diredfl-other-priv             (:foreground warning))
+    (diredfl-rare-priv              (:foreground err :weight 'bold))
+    (diredfl-read-priv              (:foreground diff-add))
+    (diredfl-symlink                (:foreground functions))
+    (diredfl-tagged-autofile-name   (:foreground num :underline underline))
+    (diredfl-write-priv             (:foreground diff-mod))
+
     ;; Highlighting
     (highlight                (:background hl-bg :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
@@ -696,6 +733,7 @@
     (highlight-numbers-number (:foreground num))
     (highlight-quoted-quote   (:inherit 'font-lock-builtin-face))
     (highlight-quoted-symbol  (:inherit 'font-lock-keyword-face))
+    (highlight-symbol-face    (:background bg4))
 
     ;; Highlight indent guides
     (highlight-indent-guides-odd-face        (:background hl-indent))
@@ -1010,11 +1048,16 @@
     (flyspell-incorrect (:underline (:style underline-style :color err)))
 
     ;; Hydra
-    (hydra-face-red      (:foreground red1))
-    (hydra-face-teal     (:foreground teal0))
+    ;; (hydra-face-red      (:foreground red1))
+    (hydra-face-red      (:foreground err))
+    (hydra-face-teal     (:foreground teal3))
     (hydra-face-blue     (:foreground azure3))
     (hydra-face-pink     (:foreground pink1))
-    (hydra-face-amaranth (:foreground magenta4))
+    (hydra-face-amaranth (:foreground purple3))
+
+    ;; Hydra-posframe
+    (hydra-posframe-face (:background bg2 :foreground fg1))
+    (hydra-posframe-border-face (:background bg2))
 
     ;; Ido
     (ido-indicator   (:foreground num))
@@ -1189,7 +1232,7 @@
     ;; Imenu list
     ;; (imenu-list-entry-subalist-face-0 (:inherit 'font-lock-keyword-face))
     (imenu-list-entry-face   (:inherit 'font-lock-keyword-name-face))
-    (imenu-list-entry-face-0 (:inherit 'font-lock-keyword-face :height 1.1))
+    (imenu-list-entry-face-0 (:inherit 'font-lock-keyword-face :height 1.0))
     (imenu-list-entry-face-1 (:inherit 'font-lock-function-name-face))
     (imenu-list-entry-face-2 (:inherit 'font-lock-string-face))
     (imenu-list-entry-face-3 (:inherit 'font-lock-type-face))
@@ -1268,13 +1311,13 @@
 
     ;; Whitespace mode
     (whitespace-empty            (:background bg4))
-    (whitespace-line             (:background bg1 :foreground err))
-    (whitespace-newline          (:foreground bg2 :foreground num))
+    (whitespace-line             (:background bg1 :foreground num))
     (whitespace-indentation      (:background hl-indent :foreground hl-indent))
     (whitespace-tab              (:background bg2 :foreground comment))
     (whitespace-space            (:background bg2 :foreground comment))
-    (whitespace-space-before-tab (:background diff-add :foreground bg2))
-    (whitespace-space-after-tab  (:background diff-add :foreground bg2))
+    (whitespace-newline          (:inherit 'whitespace-space))
+    (whitespace-space-before-tab (:background diff-mod :foreground bg2))
+    (whitespace-space-after-tab  (:background diff-mod :foreground bg2))
     ;; (whitespace-hspace           (:foreground num))
     (whitespace-trailing         (:inherit 'trailing-whitespace :foreground bg2))
     (whitespace-big-indent       (:background red0 :foreground bg2))
@@ -1299,15 +1342,14 @@
 
     (org-document-info-keyword     (:foreground metakey))
     (org-meta-line                 (:inherit 'org-document-info-keyword))
-    ;; TODO: org-src-fontify-natively doesn't change fg to default
-    (org-block                     (:foreground fg3))
-    (org-block-begin-line          (:foreground metakey))
+    (org-block                     (:background bg2 :foreground fg2))
+    (org-block-begin-line          (:background bg2 :foreground comment :height 0.9))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
-    (org-document-title            (:foreground builtin :bold bold))
+    (org-document-title            (:foreground builtin :bold bold :height 1.2))
     (org-document-info             (:foreground builtin))
     (org-footnote                  (:foreground fg4 :underline underline))
-    (org-quote                     (:foreground fg3 :italic italic))
+    (org-quote                     (:background bg2 :foreground fg2 :italic italic))
     (org-verse                     (:foreground fg3 :italic italic))
 
     (org-level-1            (:foreground keyword :bold bold :height 1.1))
@@ -1378,7 +1420,10 @@
     (beacon-fallback-background (:background pulse))
 
     ;; Solaire mode
-    (solaire-default-face       (:background pane))
+    (solaire-default-face    (:inherit 'default :background pane))
+    (solaire-minibuffer-face (:inherit 'solaire-default-face))
+    (solaire-hl-line-face    (:inherit 'hl-line :background bg3))
+    (solaire-org-hide-face   (:inherit 'org-hide))
 
     ;; Tuareg/OCaml
     (tuareg-font-double-colon-face            (:foreground warning))
@@ -1414,46 +1459,70 @@
     (markdown-html-attr-value-face    (:inherit 'font-lock-string-face))
 
     ;; Helm
-    ;; TODO: rework
-    ;; TODO: (!!) find helm status line color that based on var face
-    ;; TODO: update faces
-    ;; TODO: light theme: helm-find-files header
-    ;; TODO: add helm-locate-finish and helm-prefarg
-    ;; TODO: customize '[?]' write something like fsfasfsa in helm
-    (helm-header                              (:foreground fg2 :underline nil :box nil))
-    (helm-source-header                       (:background bg2 :foreground header :underline nil :bold bold))
-    (helm-match                               (:foreground type :bold bold))
-    (helm-header-line-left-margin             (:background azure1 :foreground bg1))
-    (helm-selection                           (:background bg2 :foreground type :bold bold))
-    (helm-selection-line                      (:background bg2 :foreground type :bold bold))
-    (helm-visible-mark                        (:foreground azure1))
-    (helm-candidate-number                    (:foreground aquamarine4))
+    (helm-M-x-key                             (:foreground keysym))
+    (helm-action                              (:foreground fg1 :underline underline))
+    (helm-header                              (:inherit 'header-line))
+    (helm-header-line-left-margin             (:inherit 'header-line))
+    (helm-helper                              (:foreground keysym))
+    (helm-source-header                       (:background bg2 :foreground str :underline nil :bold bold))
+    (helm-match                               (:foreground search1 :bold bold))
+    (helm-selection                           (:background bg3 :foreground hl :bold bold))
+    (helm-selection-line                      (:inherit 'helm-selection))
+    (helm-visible-mark                        (:background diff-bg-add :foreground bg1))
+    (helm-candidate-number                    (:foreground str))
     (helm-separator                           (:foreground type))
+
+    (helm-bookmark-addressbook                (:foreground prep))
+    (helm-bookmark-directory                  (:foreground keyword))
+    (helm-bookmark-file                       (:foreground fg1))
+    (helm-bookmark-gnus                       (:foreground search2))
+    (helm-bookmark-info                       (:foreground str))
+    (helm-bookmark-man                        (:foreground doc))
+    (helm-bookmark-w3m                        (:foreground search1))
+
+    (helm-buffer-process                      (:foreground str))
+    (helm-buffer-saved-out                    (:background diff-bg-mod :foreground bg1))
+    (helm-buffer-size                         (:foreground fg1))
+    (helm-buffer-directory                    (:foreground keyword))
+    (helm-buffer-archive                      (:foreground const))
+    (helm-buffer-not-saved                    (:foreground diff-mod))
+    (helm-buffer-modified                     (:foreground warning))
+
+    (helm-etags-file                          (:foreground str))
+    (helm-ff-directory                        (:foreground keyword :bold bold))
+    (helm-ff-dotted-directory                 (:inherit 'helm-ff-directory))
+    (helm-ff-symlink                          (:foreground functions :bold bold))
+    (helm-ff-dotted-symlink-directory         (:inherit 'helm-ff-symlink))
+    (helm-ff-file                             (:foreground fg1 :weight 'normal))
+    (helm-ff-executable                       (:foreground num :weight 'normal))
+    (helm-ff-invalid-symlink                  (:inherit 'error))
+    (helm-ff-prefix                           (:foreground keyword))
+    (helm-ff-denied                           (:inherit 'error :underline underline))
+
+    (helm-grep-cmd-line                       (:foreground fg1))
+    (helm-grep-file                           (:foreground str))
+    (helm-grep-finish                         (:foreground done))
+    (helm-grep-lineno                         (:foreground line-num-fg))
+    (helm-grep-match                          (:inherit 'helm-match))
+    (helm-grep-running                        (:foreground functions))
+    (helm-locate-finish                       (:foreground done))
+    (helm-moccur-buffer                       (:foreground functions))
+    (helm-resume-need-update                  (:background err :foreground nil))
+    (helm-lisp-completion-info                (:foreground doc))
+    (helm-lisp-show-completion                (:background selection :foreground fg4 :underline t))
+    (helm-prefarg                             (:foreground prep))
+    (helm-mode-prefix                         (:background err :foreground bg1))
+
     (helm-time-zone-current                   (:foreground builtin))
     (helm-time-zone-home                      (:foreground type))
-    (helm-buffer-not-saved                    (:foreground type))
-    (helm-buffer-process                      (:foreground builtin))
-    (helm-buffer-saved-out                    (:foreground fg1))
-    (helm-buffer-size                         (:foreground fg1))
-    (helm-ff-directory                        (:foreground functions :bold bold))
-    (helm-buffer-directory                    (:foreground magenta4))
-    (helm-ff-dotted-directory                 (:foreground functions :bold bold))
-    (helm-ff-dotted-symlink-directory         (:foreground azure1 :bold bold))
-    (helm-ff-file                             (:foreground fg1 :weight 'normal))
-    (helm-ff-executable                       (:foreground keyword :weight 'normal))
-    (helm-ff-invalid-symlink                  (:foreground warning :bold bold))
-    (helm-resume-need-update                  (:background red0 :foreground nil))
-    (helm-ff-symlink                          (:foreground keyword :bold bold))
-    (helm-ff-prefix                           (:background keyword :foreground bg1 :weight 'normal))
-    (helm-grep-cmd-line                       (:foreground fg1))
-    (helm-grep-file                           (:foreground fg1))
-    (helm-grep-finish                         (:foreground fg2))
-    (helm-grep-lineno                         (:foreground fg1))
-    (helm-grep-match                          (:inherit 'helm-match :background nil :foreground nil))
-    (helm-grep-running                        (:foreground functions))
-    (helm-moccur-buffer                       (:foreground functions))
     (helm-source-go-package-godoc-description (:foreground str))
-    (helm-bookmark-w3m                        (:foreground type))
+
+    ;; helm-swoop
+    (helm-swoop-line-number-face       (:background nil :foreground line-num-fg))
+    (helm-swoop-target-line-face       (:inherit 'isearch))
+    (helm-swoop-target-line-block-face (:inherit 'isearch))
+    (helm-swoop-target-word-face       (:background num :foreground bg1 :bold bold))
+
 
     ;; Wgrep
     (wgrep-face        (:background bg2 :foreground diff-mod))
@@ -1469,32 +1538,70 @@
     (avy-lead-face-1     (:background magenta2 :foreground adaptive-fg :weight 'bold))
     (avy-lead-face-2     (:background capri2 :foreground adaptive-fg :weight 'bold))
 
+    ;; Ace-window
+    (aw-leading-char-face (:background nil :foreground hl :bold bold :height 1.4))
+    (aw-background-face   (:foreground comment :bold bold))
+    (aw-key-face          (:foreground keysym :bold bold))
+
     ;; Ivy
-    (ivy-current-match           (:background hl-line :foreground hl :bold t))
-    (ivy-match-required-face     (:background nil :foreground err :bold nil))
-    (ivy-subdir                  (:foreground keyword :bold bold))
-    (ivy-cursor                  (:background bg3 :foreground fg1))
     (ivy-confirm-face            (:inherit 'success))
+    (ivy-current-match           (:background hl-line :foreground hl :bold t))
+    (ivy-cursor                  (:background bg3 :foreground fg1))
+    (ivy-grep-info               (:foreground header))
+    (ivy-highlight-face          (:background nil :foreground functions))
+    (ivy-match-required-face     (:background nil :foreground err :bold nil))
     (ivy-modified-buffer         (:foreground diff-mod))
     (ivy-remote                  (:foreground prep))
-    (ivy-grep-info               (:foreground header))
+    (ivy-subdir                  (:foreground keyword :bold bold))
+    (ivy-virtual                 (:foreground ivy1))
     (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
     (ivy-minibuffer-match-face-2 (:background nil :foreground search1 :bold bold))
     (ivy-minibuffer-match-face-3 (:background nil :foreground search2 :bold bold))
     (ivy-minibuffer-match-face-4 (:background nil :foreground search3 :bold bold))
+
+    ;; Ivy posframe
+    (ivy-posframe (:background tooltip-bg))
+    (ivy-posframe-border (:background bg4))
+
+    ;; Counsel
+    (counsel-key-binding (:foreground keysym))
 
     ;; Swiper
     (swiper-match-face-1 (:background bg2 :foreground ivy1))
     (swiper-match-face-2 (:background bg2 :foreground search1 :bold bold))
     (swiper-match-face-3 (:background bg2 :foreground search2 :bold bold))
     (swiper-match-face-4 (:background bg2 :foreground search3 :bold bold))
+    (swiper-background-match-face-1 (:inherit 'swiper-match-face-1 :bold nil :background bg1))
+    (swiper-background-match-face-2 (:inherit 'swiper-match-face-2 :bold nil :background bg1))
+    (swiper-background-match-face-3 (:inherit 'swiper-match-face-3 :bold nil :background bg1))
+    (swiper-background-match-face-4 (:inherit 'swiper-match-face-4 :bold nil :background bg1))
     (swiper-line-face    (:inherit 'hl-line))
+
+    ;; tabbar
+    (tabbar-default             (:background bg1 :foreground bg1 :height 1.0))
+    (tabbar-highlight           (:background hl-bg :foreground fg1 :distant-foreground bg1))
+    (tabbar-button              (:foreground fg1 :background bg1))
+    (tabbar-button-highlight    (:foreground bg1 :background fg4 ))
+    (tabbar-modified            (:inherit 'tabbar-default :foreground diff-mod :weight 'bold))
+    (tabbar-unselected          (:inherit 'tabbar-default :foreground comment))
+    (tabbar-unselected-modified (:inherit 'tabbar-modified))
+    (tabbar-selected            (:inherit 'tabbar-default :foreground fg1 :background bg2 :weight 'bold))
+    (tabbar-selected-modified   (:inherit 'tabbar-selected :foreground diff-add))
 
     ;; Awesome-tabs
     (awesome-tab-default    (:background bg1 :foreground bg1))
     (awesome-tab-unselected (:background bg2 :foreground comment))
     (awesome-tab-selected   (:background bg3 :foreground hl))
-    ))
+
+    ;; Centaur-tabs
+    (centaur-tabs-default    (:background bg0 :foreground bg0))
+    (centaur-tabs-selected   (:background bg1 :foreground fg1))
+    (centaur-tabs-unselected (:background bg0 :foreground comment))
+    (centaur-tabs-selected-modified   (:background bg1 :foreground todo))
+    (centaur-tabs-unselected-modified (:background bg0 :foreground todo))
+    (centaur-tabs-active-bar-face (:background keyword))
+    (centaur-tabs-modified-marker-selected (:inherit 'centaur-tabs-selected :foreground keyword))
+    (centaur-tabs-modified-marker-unselected (:inherit 'centaur-tabs-unselected :foreground keyword))))
 
 (provide 'kaolin-themes-lib)
 

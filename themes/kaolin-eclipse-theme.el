@@ -14,7 +14,7 @@
    (azure2 "#325074")
 
    (keyword     cerise4)
-   (metakey  magenta2 cerise4)
+   (metakey     (if kaolin-themes-distinct-metakeys magenta2 cerise4) comment)
    (builtin     magenta3)
    (functions   builtin)
    ;; TODO:
@@ -25,7 +25,8 @@
    (bool        num)
    (prep        vermilion4)
 
-   (comment     gray0)
+   ;; (comment     gray2)
+   (comment     pink6)
    (comment-alt "#663E66")
    (str         teal4)
    (str-alt     blue4)
@@ -35,7 +36,7 @@
 
    (dim-buffer "#140E14")
    (hl         pink1)
-   (hl-line    (if kaolin-themes-hl-line-colored bg2 black1))
+   (hl-line    (if kaolin-themes-hl-line-colored cerise6 bg3))
    ; (hl-indent bg4)
    (selection  bg4)
    (pulse      magenta2)
@@ -73,7 +74,8 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   (line-num-fg   magenta2 black4)
+   ;; (line-num-fg   magenta2 black4)
+   (line-num-fg   pink6 black4)
    ;; TOOD: or hl
    (line-num-hl   magenta3 gray9)
    (cursor        "#e0c3c8"))

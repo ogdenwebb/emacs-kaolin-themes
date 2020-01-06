@@ -25,16 +25,20 @@
    ;; Color vars
    ;;                                  bright    dark      terminal
    (bg0 "#1C1616")
-   (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#211F1D") black1)
-   (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#282423") black2)
-   (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#2E2828") black3)
-   (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#352D2D") black4)
+   ;; (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#211F1D") black1)
+   ;; (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#282423") black2)
+   ;; (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#2E2828") black3)
+   ;; (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#352D2D") black4)
+   (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#262221") black1)
+   (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#2E2A29") black2)
+   (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#332E2E") black3)
+   (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#383030") black4)
+
    ;; (pane "#262122")
 
    (fg1 amber9)
 
    (keyword     teal0)
-   (metakey     keyword)
    (builtin     aquamarine1)
    (header      orange3)
 
@@ -43,7 +47,8 @@
    (functions   cyan3)
    (type        amber3)
 
-   (comment     brown2)
+   ;; (comment     brown2)
+   (comment "#635C4A")
    ;; TODO:
    ;; (comment     "#553a41")
    ;; TODO:
@@ -103,8 +108,8 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   (line-num-fg   brown2)
-   (line-num-hl   amber3)
+   (line-num-fg   amber7)
+   (line-num-hl   amber1)
 
    (cursor        fg1)
 

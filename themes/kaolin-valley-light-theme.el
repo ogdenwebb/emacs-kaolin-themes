@@ -39,10 +39,13 @@
    (lime2      "#5B7709")
 
    ;; Color vars
+   (bg0 "#FDF7EE")
    (bg1 (if kaolin-valley-light-alt-bg "#FBFBFB" "#FAF2E9"))
    (bg2 (if kaolin-valley-light-alt-bg white0 "#F3E7D3"))
    (bg3 (if kaolin-valley-light-alt-bg white1 "#F0DFCA"))
    (bg4 (if kaolin-valley-light-alt-bg white2 "#EBD7BE"))
+
+   (pane orange9)
 
    ;; TODO
    (fg1 "#5E5854")
@@ -51,7 +54,6 @@
    (fg4 "#867e78")
 
    (keyword     teal0)
-   (metakey     keyword)
    (builtin     erin2)
 
    (var         crimson0)
@@ -74,10 +76,9 @@
 
    (dim-buffer white0)
    (hl         azure1)
-   ;; TODO: add colored
-   (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
+   (hl-line    (if kaolin-themes-hl-line-colored green9 bg3))
    (hl-indent  white4)
-   (selection vermilion4)
+   (selection green9)
    (pulse bg4)
 
    (todo red3)

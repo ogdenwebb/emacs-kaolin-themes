@@ -5,7 +5,7 @@
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
 ;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
-;; Version: 1.5.1
+;; Version: 1.5.4
 ;; Keywords: dark light teal blue violet purple brown theme faces
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -139,6 +139,11 @@
   "If not-nil, enable distinct border in mode-line."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-distinct-metakeys t
+  "If not-nil, enable distinct color for metadata key (e.g. metakeys in org-mode).
+Otherwise inherit from comments."
+  :group 'kaolin-themes)
+
 (defface kaolin-themes-boolean nil
   "Face to highlight boolean values"
   :group 'kaolin-themes)
@@ -157,7 +162,7 @@
   (intern (format "kaolin-%s" (symbol-name sym))))
 
 (defun kaolin-themes--merge-alist (base-alist add-alist)
-  "Add elements to BASE-LIST from ADD-LIST without dublicates."
+  "Add elements to BASE-LIST from ADD-LIST without dublicates. Returns a new list as result."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
              do (map-put res (car el) (cdr el)))

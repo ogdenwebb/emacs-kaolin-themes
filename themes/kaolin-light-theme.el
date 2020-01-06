@@ -34,7 +34,7 @@
    (azure4        "#4C7A90")
    ;; TODO: less contrast
    (ultramarine1  "#6D46E3")
-   (orange1 "#DBA451")
+   (orange1       "#C5882C")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -48,15 +48,14 @@
    (fg3 gray3)
    (fg4 gray4)
 
-
+   (comment     gray7)
+   (comment-alt lime7)
    (keyword     teal2)
-   (metakey     teal2)
+   (metakey     (if kaolin-themes-distinct-metakeys teal2 comment))
    (var         magenta4)
    (const       magenta4)
    (builtin     azure4)
    (functions   azure4)
-   (comment     gray7)
-   (comment-alt lime7)
    ;; (str         brown1)
    (str         erin2)
    (str-alt     brown3)
@@ -69,7 +68,6 @@
    (err         crimson3)
 
    (dim-buffer white0)
-   ;; TODO:
    (hl         green2)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
@@ -109,7 +107,7 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
-   (line-num-fg   azure8)
+   (line-num-fg   comment)
    (line-num-hl   hl)
 
    (cursor        gray3)
@@ -126,12 +124,12 @@
    (highlight-quoted-symbol (:foreground const))
 
    (org-level-1             (:foreground spring-green2 :bold bold :height 1.1))
-   (org-level-2             (:foreground ultramarine4 :bold nil))
-   (org-level-3             (:foreground vermilion4 :bold nil))
+   (org-level-2             (:foreground functions :bold nil))
+   (org-level-3             (:foreground vermilion3 :bold nil))
    (org-level-4             (:foreground cerise4 :bold nil))
-   (org-code                (:foreground teal1))
-   (org-date                (:foreground vermilion3))
-   (org-verbatim            (:foreground orange2))
+   (org-code                (:foreground orange0))
+   (org-date                (:foreground azure4))
+   (org-verbatim            (:foreground azure1))
 
    (js2-object-property     (:foreground brown1))
    (evil-ex-info            (:foreground crimson4)))

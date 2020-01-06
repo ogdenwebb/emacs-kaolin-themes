@@ -15,17 +15,17 @@
 
    (bg0 "#0C0D12" black0)
    (bg1 cerulean5 black1)
-   ;; TODO:
-   ;; (bg1 "#151A28")
    (bg2 "#191D26" black2)
    (bg3 "#202430" black3)
    (bg4 "#272C3A" black4)
+   ;; TODO: alt-bg
+   ;; (bg1 "#151A28")
+   ;; (bg1 "#131B28")
 
    (hl amber0)
 
    (keyword     ultramarine3)
    (builtin     aquamarine3)
-   (metakey     keyword)
 
    (functions   magenta3)
    (const       capri3)

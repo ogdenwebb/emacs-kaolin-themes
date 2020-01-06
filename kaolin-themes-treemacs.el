@@ -1,4 +1,4 @@
-;;; kaolin-themes-treemacs.el --- treemacs customization for Kaolin themes -*- lexical-binding: t; -*-
+;;; kaolin-themes-treemacs.el --- treemacs customization for Kaolin themes -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;; Commentary:
 
 ;;; Code:
@@ -9,7 +9,7 @@
   "Settings for Kaolin's treemacs theme."
   :group 'kaolin-themes)
 
-(defcustom kaolin-themes-treemacs-hl-line t
+(defcustom kaolin-themes-treemacs-hl-line nil
   "Remap hl-line face for treemacs, uses distinct foreground and default background."
   :type 'boolean
   :group 'kaolin-treemacs)
@@ -55,94 +55,159 @@
   (setq treemacs-indentation 1
         treemacs-indentation-string "  ")
 
-
   (when kaolin-themes-treemacs-icons
-    (setq treemacs-icons-hash (make-hash-table :size 200 :test #'equal)
-          treemacs-icon-fallback (format "%s " (all-the-icons-faicon "file-text-o"))
-          treemacs-icon-text treemacs-icon-fallback)
 
-    (setq treemacs-icon-root-png
-          (format " %s " (all-the-icons-material "subject" :v-adjust -0.2 :height 1.4
-                                                 :face 'font-lock-variable-name-face))
+    (treemacs-create-theme "kaolin"
+      :config
+      (progn
+        ;; Set fallback icon
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "file-text"
+                                                    :height 1.10
+                                                    :v-adjust 0.1))
+         :extensions (fallback))
 
-          treemacs-icon-open-png
-          (format "%s " (all-the-icons-material "folder_open" :v-adjust -0.2 :height 1.15 'font-lock-doc-face))
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-material "subject"
+                                                   :v-adjust -0.2
+                                                   :height 1.3
+                                                   :face 'font-lock-variable-name-face))
+         :extensions (root))
 
-          treemacs-icon-closed-png
-          (format "%s " (all-the-icons-material "folder" :v-adjust -0.2 :height 1.15))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "folder_open"
+                                               ;; :v-adjust 0.05
+                                               :height 1.1))
+         ;; :face 'font-lock-doc-face))
+         :extensions (dir-open))
 
-          treemacs-icon-tag-open-png
-          (all-the-icons-faicon "chevron-down" :v-adjust 0.1)
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-material "folder"
+                                                   ;; :v-adjust 0.05
+                                                   :height 1.1))
 
-          treemacs-icon-tag-closed-png
-          (all-the-icons-faicon "location-arrow" :v-adjust 0.1)
+         :extensions (dir-closed))
 
-          treemacs-icon-tag-node-open-png
-          (format "%s " (all-the-icons-faicon "chevron-down"  :height 0.75 :face 'font-lock-keyword-face))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "close"
+                                             :size 1.0
+                                             ;; :v-adjust 0.1
+                                             :face 'font-lock-keyword-face))
+         :extensions (tag-open))
 
-          treemacs-icon-tag-node-closed-png
-          (format "%s " (all-the-icons-faicon "location-arrow" :height 0.9  :face 'font-lock-keyword-face))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-faicon "chevron-down"
+                                             :size 0.9
+                                             :v-adjust 0.1
+                                             :face 'font-lock-keyword-face))
+         :extensions (tag-closed))
 
-          treemacs-icon-tag-leaf-png
-          (format "%s " (all-the-icons-faicon "tag" :height 0.9 :face 'font-lock-type-face))
-          )
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-faicon "tag"
+                                             :height 0.9
+                                             :face 'font-lock-type-face))
+         :extensions (tag-leaf))
 
-    ;; Icons for filetypes
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "csharp-line") "cs")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "css3") "css")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "git") "gitignore")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "html5") "html" "htm")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "java") "java")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "javascript-badge") "js")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "python") "py")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "rust") "rs")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "haskell") "hs")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "c") "c")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "cplusplus") "cpp")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "ruby-alt") "rb")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "scala") "scala")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "elixir") "ex" "exs")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "erlang") "erl" "hrl")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "clojure") "clj" "cljs")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "cabal") "cabal")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "clisp") "lisp")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "go") "go")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "elisp") "el" "elc")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "julia") "jl")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "kotlin") "kt" "kts")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "hy") "hy")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "jsx2-alt") "jsx")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "ocaml") "ml" "mli")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "org") "org")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "php") "php")
-    (treemacs-define-custom-icon (all-the-icons-alltheicon "terminal") "sh" "zsh")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "typescript") "ts")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "nimrod") "nim" "nims")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "perl6") "pm6")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "tex") "tex")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "rst") "rst")
-    (treemacs-define-custom-icon (all-the-icons-fileicon "vue") "vue")
-    (treemacs-define-custom-icon (all-the-icons-octicon "markdown") "md" "markdown")
-    (treemacs-define-custom-icon (all-the-icons-octicon "file-pdf") "pdf")
-    (treemacs-define-custom-icon (all-the-icons-octicon "database") "sql")
-    (treemacs-define-custom-icon (all-the-icons-material "style") "styles")
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "error"
+                                             :height 0.9
+                                             :face 'error))
+                              :extensions (error)
+                              :fallback (propertize "• " 'face 'font-lock-warning-face))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "warning"
+                                                     :height 0.9
+                                                     :face 'error))
+         :extensions (warning)
+         :fallback (propertize "• " 'face 'font-lock-string-face))
+        (treemacs-create-icon
+         :icon (format "%s " (all-the-icons-material "info"
+                                                     :height 0.9
+                                                     :face 'font-lock-string-face))
+         :extensions (info)
+         :fallback (propertize "• " 'face 'font-lock-string-face))
 
-    (treemacs-define-custom-icon (all-the-icons-octicon "file-media")
-                                 "jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
-                                 "psd" "ai" "eps" "indd" "mov" "avi" "mp4" "webm" "mkv"
-                                 "wav" "mp3" "ogg" "midi")
+        ;; Icons for filetypes
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "csharp-line"))
+                              :extensions ("cs"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "css3")) :extensions ("css"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git")) :extensions ("gitignore" "git" "gitconfig" "gitmodules"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "html5")) :extensions ("html" "htm"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "java")) :extensions ("java" "jar"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "python")) :extensions ("py"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "rust")) :extensions ("rs"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "haskell")) :extensions ("hs"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "c")) :extensions ("c" "h"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "crystal")) :extensions ("cr"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "cplusplus")) :extensions ("cpp" "cxx" "hpp" "tpp" "cc" "hh"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "ruby-alt")) :extensions ("rb"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "scala")) :extensions ("scala"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "elixir")) :extensions ("ex" "exs"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "erlang")) :extensions ("erl" "hrl"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "clojure")) :extensions ("clj" "cljs" "cljc"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "cabal")) :extensions ("cabal"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "clisp")) :extensions ("lisp"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "go")) :extensions ("go"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "elisp" :v-adjust -0.15)) :extensions ("el" "elc"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "julia")) :extensions ("jl"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "kotlin")) :extensions ("kt" "kts"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "hy")) :extensions ("hy"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge")) :extensions ("js"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jsx2-alt")) :extensions ("jsx"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "ocaml")) :extensions ("ml" "mli"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "org")) :extensions ("org"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "php")) :extensions ("php"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "terminal")) :extensions ("sh" "zsh" "fish"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "typescript")) :extensions ("ts"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nimrod")) :extensions ("nim" "nims"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "pm" "perl"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "perl6")) :extensions ("pm6"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "R")) :extensions ("r"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tex")) :extensions ("tex"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "rst")) :extensions ("rst"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vue")) :extensions ("vue"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "markdown" :v-adjust 0.05)) :extensions ("md" "markdown"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "file-pdf")) :extensions ("pdf"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "database")) :extensions ("sql"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "style")) :extensions ("styles"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "lua")) :extensions ("lua"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "asciidoc")) :extensions ("adoc" "asciidoc"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "sbt")) :extensions ("sbt"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "puppet")) :extensions ("pp"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jinja")) :extensions ("j2" "jinja2"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "dockerfile")) :extensions ("dockerfile"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vagrant")) :extensions ("vagrantfile"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "racket")) :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "reason")) :extensions ("re" "rei"))
 
-    (treemacs-define-custom-icon (all-the-icons-faicon "file-text-o")
-                                 "rst" "log" "txt" "CONTRIBUTE" "LICENSE" "README" "CHANGELOG")
 
-    (treemacs-define-custom-icon (all-the-icons-faicon "cogs")
-                                 "conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini")
+        ;; Media files icon
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "file-media" :v-adjust 0.1))
+         :extensions ("jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
+                      "psd" "ai" "eps" "indd" "mov" "avi" "mp4" "webm" "webp"
+                      "mkv" "wav" "mp3" "ogg" "midi"))
 
-    (treemacs-define-custom-icon (all-the-icons-octicon "code")
-                                 "tpl" "erb" "mustache" "twig" "ejs" "mk" "haml" "pug" "jade")
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "file-text"
+                       :height 1.1
+                       :v-adjust 0.05))
+         :extensions ("rst" "log" "txt" "contribute" "license" "readme" "changelog"))
 
-    (treemacs-define-custom-icon (all-the-icons-octicon "file-zip")
-                                 "zip" "xz" "tar" "7z" "rar"))
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "cogs"))
+         :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini"))
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "code"))
+         :extensions ("tpl" "erb" "mustache" "twig" "ejs" "mk" "haml" "pug" "jade"))
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "file-zip"))
+         :extensions ("zip" "xz" "tar" "gz" "7z" "rar"))
+        ))
+
+    (treemacs-load-theme "kaolin"))
   )
 
 
