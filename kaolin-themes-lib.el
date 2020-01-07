@@ -612,7 +612,7 @@
 
     (menu        (:background bg2 :foreground fg2))
     ;; TODO: default bg
-    (header-line (:background nil :foreground var))
+    (header-line (:background nil :foreground num))
     (tool-bar    (:inherit 'header-line))
 
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
