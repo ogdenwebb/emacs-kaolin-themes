@@ -18,6 +18,7 @@
   (
    ;; Colors
    (spring-green6 "#3e594e")
+   (aquamarine3   "#53E6B5")
    (aquamarine4   "#518270")
    ;; (cerulean4     "#536a9d")
    (cerulean4     "#47629E")
@@ -38,13 +39,15 @@
 
    (fg1 amber9)
 
-   (keyword     teal0)
-   (builtin     aquamarine1)
+   ;; (keyword     teal0)
+   (keyword     teal3)
+   (builtin     aquamarine3)
    (header      orange3)
 
    (var         crimson3)
    (const       crimson3)
-   (functions   cyan3)
+   ;; (functions   cyan3)
+   (functions   "#7ED7E6")
    (type        amber3)
 
    ;; (comment     brown2)
