@@ -1476,6 +1476,11 @@
     (markdown-html-attr-name-face     (:inherit 'font-lock-function-name-face))
     (markdown-html-attr-value-face    (:inherit 'font-lock-string-face))
 
+    ;; Shell script
+    (sh-escaped-newline (:inherit 'font-lock-string-face))
+    (sh-heredoc         (:foreground doc))
+    (sh-quoted-exec     (:foreground num))
+
     ;; Helm
     (helm-M-x-key                             (:foreground keysym))
     (helm-action                              (:foreground fg1 :underline underline))
