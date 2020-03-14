@@ -65,6 +65,7 @@
    (num         harlequin3)
    (bool        num)
    (warning     amber0)
+   ;; (warning     yellow3)
    (err         red3)
 
    (dim-buffer white0)
@@ -111,6 +112,7 @@
    (segment-inactive  gray2)
 
    (win-border    bg3)
+   (evil-normal   amber3)
    (line-num-fg   amber7)
    (line-num-hl   amber1)
 
