@@ -75,14 +75,14 @@
          :extensions (root))
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-material "folder_open"
+         :icon (format " %s " (all-the-icons-material "folder_open"
                                                ;; :v-adjust 0.05
                                                :height 1.1))
          ;; :face 'font-lock-doc-face))
          :extensions (dir-open))
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-material "folder"
+         :icon (format " %s " (all-the-icons-material "folder"
                                                    ;; :v-adjust 0.05
                                                    :height 1.1))
 
