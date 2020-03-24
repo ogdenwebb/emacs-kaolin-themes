@@ -82,7 +82,7 @@
          :extensions (dir-open))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-material "folder"
+         :icon (format "%s " (all-the-icons-material "folder"
                                                    ;; :v-adjust 0.05
                                                    :height 1.1))
 
