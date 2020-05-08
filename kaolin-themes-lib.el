@@ -1150,6 +1150,8 @@
     (js2-object-property          (:foreground num))
     (js2-jsdoc-value              (:foreground str))
     (js2-private-member           (:foreground fg3))
+
+    ;; JS3
     (js3-function-param-face      (:foreground keyword))
     (js3-instance-member-face     (:foreground const))
     (js3-external-variable-face   (:foreground var))
@@ -1265,6 +1267,9 @@
    (ediff-odd-diff-A (:background bg4))
    (ediff-odd-diff-B (:background bg4))
    (ediff-odd-diff-C (:background bg4))
+
+   ;; calendar.el
+   (calendar-today (:background bg4 :foreground keyword))
 
    ;; calfw
    (cfw:face-grid (:foreground comment))
