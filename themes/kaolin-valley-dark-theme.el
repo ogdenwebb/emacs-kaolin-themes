@@ -26,13 +26,14 @@
    ;; Color vars
    ;;                                  bright    dark      terminal
    (bg0 "#1C1616")
+   ;; bg1 #28211E
    ;; (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#211F1D") black1)
    ;; (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#282423") black2)
    ;; (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#2E2828") black3)
    ;; (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#352D2D") black4)
-   (bg1 (if kaolin-valley-dark-alt-bg "#28211E" "#262221") black1)
-   (bg2 (if kaolin-valley-dark-alt-bg "#332a25" "#2E2A29") black2)
-   (bg3 (if kaolin-valley-dark-alt-bg "#372d28" "#332E2E") black3)
+   (bg1 (if kaolin-valley-dark-alt-bg "#2B2320" "#262221") black1)
+   (bg2 (if kaolin-valley-dark-alt-bg "#352C27" "#2E2A29") black2)
+   (bg3 (if kaolin-valley-dark-alt-bg "#3D322B" "#332E2E") black3)
    (bg4 (if kaolin-valley-dark-alt-bg "#3f342d" "#383030") black4)
 
    ;; (pane "#262122")
