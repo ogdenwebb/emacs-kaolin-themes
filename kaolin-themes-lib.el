@@ -1394,6 +1394,7 @@
     (org-code                      (:foreground amber3))
     (org-verbatim                  (:foreground azure3))
     (org-hide                      (:foreground bg1))
+    (org-drawer                    (:foreground functions))
     (org-special-keyword           (:foreground prep))
     (org-table                     (:background bg2 :foreground fg3))
     (org-formula                   (:background nil :foreground type))
