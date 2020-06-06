@@ -31,36 +31,23 @@
 
    (azure2 "#325074")
    (purple3 "#C68EDE")
-   ;; (violet3 "#BA8DF0")
 
-   ;; (keyword     cerise4)
    (keyword     purple3)
    (metakey     (if kaolin-themes-distinct-metakeys magenta2 cerise4) comment)
-   ;; TODO: fix treemacs level1-2 and etc
+   ;; TODO: fix treemacs, imenu-list level1-2 and etc
    (builtin     purple3)
    (functions   builtin)
    ;; TODO:
    (var         ultramarine3)
    (const       ultramarine3)
-   ;; (type        crimson3)
    (type        cyan3)
-   ;; (num         spring-green3)
-   ;; (num         capri3)
    (num         cerise3)
    (bool        num)
-   ;; (prep        vermilion4)
-   ;; (prep        spring-green3)
-   ;; (prep        cerise3)
-   ;; (prep        capri3)
    (prep        yellow4)
 
-   ;; (comment     gray2)
    (comment     purple7)
    (comment-alt "#663E66")
-   ;; (str         spring-green3)
-   ;; (str         capri3)
    (str         cerise3)
-   ;; (str         "#8ee6d6")
    (str-alt     blue4)
    (doc         str-alt)
    (warning     vermilion4)
@@ -113,16 +100,6 @@
 
   ;; Custom theme set faces
   (
-   ;; TODO: rework
-   ;; Magit
-   ;; (magit-item-highlight         (:background bg4))
-   ;; (magit-blame-heading          (:background bg4 :foreground var))
-   ;; (magit-hunk-heading           (:background bg4))
-   ;; (magit-hunk-heading-highlight (:background bg4))
-   ;; (magit-diff-hunk-heading      (:background bg4))
-   ;; (magit-diff-file-heading-highlight (:background bg4 :bold bold))
-
-
    (show-paren-mismatch (:background bg2 :foreground red0))
 
    ;; TODO: change
