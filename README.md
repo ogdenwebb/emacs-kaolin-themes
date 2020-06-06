@@ -34,10 +34,12 @@ These themes might be changed in the future.
 * **kaolin-bubblegum** - colorful theme with dark blue background.
 * **kaolin-mono-dark** - almost monochrome dark green Kaolin theme.
 * **kaolin-breeze** - Light Kaolin theme with soft colors.
+* **kaolin-blossom** - theme focus on orange and purple with dark background.
+* **kaolin-mono-light** - light variant of monochrome theme.
 
 ### Planned
 
-* kaolin-mono-light - light variant of monochrome theme.
+TBD
 
 ###### p.s. Bold means that a theme was added to master.
 
