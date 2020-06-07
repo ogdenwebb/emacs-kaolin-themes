@@ -123,14 +123,24 @@
 
    ;; Terminal
    (term-color-black   (:foreground fg1))
-   (term-color-blue    (:foreground capri1))
    (term-color-red     (:foreground red1))
    (term-color-green   (:foreground spring-green2))
    (term-color-yellow  (:foreground orange2))
+   (term-color-blue    (:foreground capri1))
    (term-color-magenta (:foreground magenta4))
    (term-color-cyan    (:foreground cyan1))
    (term-color-white   (:foreground bg1))
    )
+
+  (custom-theme-set-variables 'kaolin-breeze
+      `(ansi-color-names-vector [,fg1
+                                 ,red1
+                                 ,spring-green2
+                                 ,orange2
+                                 ,capri1
+                                 ,magenta4
+                                 ,cyan1
+                                 ,bg1]))
 
 
   (when kaolin-git-gutter-solid

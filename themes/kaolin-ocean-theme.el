@@ -103,14 +103,24 @@
 
    ;; Terminal
    (term-color-black   (:foreground bg1))
-   (term-color-blue    (:foreground azure3))
    (term-color-red     (:foreground red3))
    (term-color-green   (:foreground spring-green1))
    (term-color-yellow  (:foreground orange1))
+   (term-color-blue    (:foreground azure3))
    (term-color-magenta (:foreground violet3))
    (term-color-cyan    (:foreground cyan3))
    (term-color-white   (:foreground fg1))
    )
+
+  (custom-theme-set-variables 'kaolin-ocean
+      `(ansi-color-names-vector [,bg1
+                                 ,red3
+                                 ,spring-green1
+                                 ,orange3
+                                 ,azure3
+                                 ,violet3
+                                 ,cyan3
+                                 ,fg1]))
 
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid

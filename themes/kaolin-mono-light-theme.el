@@ -158,14 +158,24 @@
 
    ;; Terminal
    (term-color-black   (:foreground fg1))
-   (term-color-blue    (:foreground azure1))
    (term-color-red     (:foreground red1))
    (term-color-green   (:foreground spring-green2))
    (term-color-yellow  (:foreground orange0))
+   (term-color-blue    (:foreground azure1))
    (term-color-magenta (:foreground magenta1))
    (term-color-cyan    (:foreground cyan1))
    (term-color-white   (:foreground bg1))
    )
+
+  (custom-theme-set-variables 'kaolin-mono-light
+      `(ansi-color-names-vector [,fg1
+                                 ,red1
+                                 ,spring-green2
+                                 ,orange0
+                                 ,azure1
+                                 ,magenta1
+                                 ,cyan1
+                                 ,bg1]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

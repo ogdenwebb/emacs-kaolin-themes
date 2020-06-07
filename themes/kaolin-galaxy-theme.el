@@ -117,16 +117,26 @@
 
    ;; Terminal
    (term-color-black   (:foreground bg1))
-   (term-color-blue    (:foreground capri3))
    (term-color-red     (:foreground crimson3))
    (term-color-green   (:foreground teal3))
    (term-color-yellow  (:foreground amber3))
+   (term-color-blue    (:foreground capri3))
    (term-color-magenta (:foreground magenta3))
    (term-color-cyan    (:foreground cyan3))
    (term-color-white   (:foreground fg1))
    )
 
   ;; Set custom vars
+  (custom-theme-set-variables 'kaolin-galaxy
+      `(ansi-color-names-vector [,bg1
+                                 ,crimson3
+                                 ,teal3
+                                 ,amber3
+                                 ,capri3
+                                 ,magenta3
+                                 ,cyan3
+                                 ,fg1]))
+
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-galaxy

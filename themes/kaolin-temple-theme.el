@@ -130,14 +130,25 @@
 
    ;; Terminal
    (term-color-black   (:foreground bg1))
-   (term-color-blue    (:foreground cyan1))
    (term-color-red     (:foreground crimson3))
    (term-color-green   (:foreground aquamarine1))
    (term-color-yellow  (:foreground amber3))
+   (term-color-blue    (:foreground cyan1))
    (term-color-magenta (:foreground pink3))
    (term-color-cyan    (:foreground teal3))
    (term-color-white   (:foreground fg1))
    )
+
+  (custom-theme-set-variables 'kaolin-temple
+      `(ansi-color-names-vector [,bg1
+                                 ,crimson1
+                                 ,aquamarine1
+                                 ,amber3
+                                 ,cyan1
+                                 ,pink3
+                                 ,teal3
+                                 ,fg1]))
+
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

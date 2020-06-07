@@ -110,15 +110,24 @@
 
    ;; Terminal
    (term-color-black   (:foreground bg1))
-   (term-color-blue    (:foreground cerulean4))
    (term-color-red     (:foreground red3))
    (term-color-green   (:foreground teal0))
    (term-color-yellow  (:foreground orange3))
+   (term-color-blue    (:foreground cerulean4))
    (term-color-magenta (:foreground purple3))
    (term-color-cyan    (:foreground cyan3))
    (term-color-white   (:foreground fg1))
    )
 
+  (custom-theme-set-variables 'kaolin-eclipse
+      `(ansi-color-names-vector [,bg1
+                                 ,red3
+                                 ,teal0
+                                 ,orange3
+                                 ,cerulean4
+                                 ,purple3
+                                 ,cyan3
+                                 ,fg1]))
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
