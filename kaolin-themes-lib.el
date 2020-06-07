@@ -566,6 +566,7 @@
     (search3  violet3)
 
     ;; Easy to use colors
+    (kaolin-navy    blue3)
     (kaolin-black   bg1)
     (kaolin-red     err)
     (kaolin-green   done)
@@ -573,7 +574,8 @@
     (kaolin-blue    capri3)
     (kaolin-magenta magenta3)
     (kaolin-cyan    cyan3)
-    (kaolin-white   fg1)))
+    (kaolin-white   fg1))
+  )
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
@@ -1366,18 +1368,19 @@
     (term-underline     (:inherit 'underline))
 
     ;; EShell
-    (eshell-prompt        (:foreground teal0 :bold bold))
-    (eshell-ls-directory  (:foreground blue1 :bold bold))
-    (eshell-ls-symlink    (:foreground azure3 :bold bold))
-    (eshell-ls-executable (:foreground chartreuse1 :bold bold))
-    (eshell-ls-archive    (:foreground red3))
-    (eshell-ls-backup     (:foreground magenta3))
-    (eshell-ls-clutter    (:foreground pink1))
-    (eshell-ls-missing    (:background bg3 :foreground red3))
-    (eshell-ls-product    (:foreground yellow3))
-    (eshell-ls-readonly   (:foreground fg2))
-    (eshell-ls-special    (:foreground spring-green3))
-    (eshell-ls-unreadable (:foreground var))
+    (eshell-prompt        (:foreground prompt :bold bold))
+    (eshell-ls-directory  (:foreground kaolin-blue :bold bold))
+    (eshell-ls-symlink    (:foreground kaolin-cyan :bold bold))
+    ;; (eshell-ls-executable (:foreground chartreuse1 :bold bold))
+    (eshell-ls-executable (:foreground kaolin-green :bold bold))
+    (eshell-ls-archive    (:foreground prep))
+    (eshell-ls-backup     (:foreground kaolin-magenta))
+    (eshell-ls-clutter    (:foreground doc))
+    (eshell-ls-missing    (:background bg3 :foreground kaolin-red))
+    (eshell-ls-product    (:foreground kaolin-yellow))
+    (eshell-ls-readonly   (:foreground vermilion3))
+    (eshell-ls-special    (:foreground kaolin-navy))
+    (eshell-ls-unreadable (:inherit' shadow))
 
     ;; Whitespace mode
     (whitespace-empty            (:background bg4))
