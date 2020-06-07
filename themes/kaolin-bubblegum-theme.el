@@ -22,6 +22,15 @@
    ;; (bg1 "#151A28")
    ;; (bg1 "#131B28")
 
+   (kaolin-black   bg1)
+   (kaolin-red     red3)
+   (kaolin-green   aquamarine3)
+   (kaolin-yellow  amber3)
+   (kaolin-blue    capri3)
+   (kaolin-magenta violet3)
+   (kaolin-cyan    cyan3)
+   (kaolin-white   fg1)
+
    (hl amber0)
 
    (keyword     ultramarine3)
@@ -124,27 +133,7 @@
    (org-code            (:foreground yellow3))
    (org-verbatim        (:inherit    'org-code))
    (org-quote           (:foreground blue4))
-
-   ;; Terminal
-   (term-color-black   (:foreground bg1))
-   (term-color-red     (:foreground red3))
-   (term-color-green   (:foreground aquamarine3))
-   (term-color-yellow  (:foreground amber3))
-   (term-color-blue    (:foreground capri3))
-   (term-color-magenta (:foreground violet3))
-   (term-color-cyan    (:foreground cyan3))
-   (term-color-white   (:foreground fg1))
    )
-
-  (custom-theme-set-variables 'kaolin-bubblegum
-      `(ansi-color-names-vector [,bg1
-                                 ,red3
-                                 ,aquamarine3
-                                 ,amber3
-                                 ,capri3
-                                 ,violet3
-                                 ,cyan3
-                                 ,fg1]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

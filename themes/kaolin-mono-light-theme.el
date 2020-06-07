@@ -52,6 +52,16 @@
    (fg3 gray3)
    (fg4 gray4)
 
+   ;; Root colors
+   (kaolin-black   fg1)
+   (kaolin-red     red1)
+   (kaolin-green   spring-green2)
+   (kaolin-yellow  orange0)
+   (kaolin-blue    azure1)
+   (kaolin-magenta magenta1)
+   (kaolin-cyan    cyan1)
+   (kaolin-white   bg4)
+
    (comment     lime7)
    (comment-alt gray7)
 
@@ -155,27 +165,7 @@
 
    (js2-object-property     (:foreground brown1))
    (evil-ex-info            (:foreground crimson4))
-
-   ;; Terminal
-   (term-color-black   (:foreground fg1))
-   (term-color-red     (:foreground red1))
-   (term-color-green   (:foreground spring-green2))
-   (term-color-yellow  (:foreground orange0))
-   (term-color-blue    (:foreground azure1))
-   (term-color-magenta (:foreground magenta1))
-   (term-color-cyan    (:foreground cyan1))
-   (term-color-white   (:foreground bg4))
    )
-
-  (custom-theme-set-variables 'kaolin-mono-light
-      `(ansi-color-names-vector [,fg1
-                                 ,red1
-                                 ,spring-green2
-                                 ,orange0
-                                 ,azure1
-                                 ,magenta1
-                                 ,cyan1
-                                 ,bg4]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

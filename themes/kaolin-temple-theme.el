@@ -34,6 +34,16 @@
 
    (fg1 orange9)
 
+   ;; Root faces
+   (kaolin-black   bg1)
+   (kaolin-red     crimson3)
+   (kaolin-green   aquamarine1)
+   (kaolin-yellow  amber3)
+   (kaolin-blue    cyan1)
+   (kaolin-magenta pink3)
+   (kaolin-cyan    teal3)
+   (kaolin-white   fg1)
+
    (keyword     cyan1)
    (builtin     capri4)
    (functions   capri4)
@@ -128,27 +138,7 @@
    (org-level-4            (:foreground keyword :bold nil))
    (org-level-5            (:foreground prep :bold nil))
 
-   ;; Terminal
-   (term-color-black   (:foreground bg1))
-   (term-color-red     (:foreground crimson3))
-   (term-color-green   (:foreground aquamarine1))
-   (term-color-yellow  (:foreground amber3))
-   (term-color-blue    (:foreground cyan1))
-   (term-color-magenta (:foreground pink3))
-   (term-color-cyan    (:foreground teal3))
-   (term-color-white   (:foreground fg1))
    )
-
-  (custom-theme-set-variables 'kaolin-temple
-      `(ansi-color-names-vector [,bg1
-                                 ,crimson1
-                                 ,aquamarine1
-                                 ,amber3
-                                 ,cyan1
-                                 ,pink3
-                                 ,teal3
-                                 ,fg1]))
-
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

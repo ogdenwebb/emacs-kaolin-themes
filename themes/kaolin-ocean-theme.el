@@ -22,6 +22,15 @@
    (bg3 (if kaolin-ocean-alt-bg black4 "#28283a") black4)
    (bg4 (if kaolin-ocean-alt-bg gray0 "#32324a") gray0)
 
+   (kaolin-black   bg1)
+   (kaolin-red     red3)
+   (kaolin-green   spring-green1)
+   (kaolin-yellow  orange1)
+   (kaolin-blue    azure3)
+   (kaolin-magenta violet3)
+   (kaolin-cyan    cyan3)
+   (kaolin-white   fg1)
+
    (comment     gray3)
    ;; (comment     blue7)
    (comment-alt "#43436E")
@@ -100,27 +109,7 @@
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-mod :foreground diff-mod))
    (git-gutter:deleted  (:background diff-rem :foreground diff-rem))
-
-   ;; Terminal
-   (term-color-black   (:foreground bg1))
-   (term-color-red     (:foreground red3))
-   (term-color-green   (:foreground spring-green1))
-   (term-color-yellow  (:foreground orange1))
-   (term-color-blue    (:foreground azure3))
-   (term-color-magenta (:foreground violet3))
-   (term-color-cyan    (:foreground cyan3))
-   (term-color-white   (:foreground fg1))
    )
-
-  (custom-theme-set-variables 'kaolin-ocean
-      `(ansi-color-names-vector [,bg1
-                                 ,red3
-                                 ,spring-green1
-                                 ,orange3
-                                 ,azure3
-                                 ,violet3
-                                 ,cyan3
-                                 ,fg1]))
 
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid

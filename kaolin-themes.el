@@ -219,6 +219,17 @@ Use kaolin-valley-dark-theme.el as example."
                            ;; (custom-theme-set-faces ',kaolin-theme-name
                            ;;                         ,@kaolin-common-vars)
 
+
+                           (custom-theme-set-variables ',kaolin-theme-name
+                              `(ansi-color-names-vector [,kaolin-black
+                                                         ,kaolin-red
+                                                         ,kaolin-green
+                                                         ,kaolin-yellow
+                                                         ,kaolin-blue
+                                                         ,kaolin-magenta
+                                                         ,kaolin-cyan
+                                                         ,kaolin-white]))
+
                            ;; Provide theme
                            (provide-theme ',kaolin-theme-name)
                            )))

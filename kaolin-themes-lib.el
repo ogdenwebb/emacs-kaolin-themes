@@ -455,7 +455,7 @@
     (bg4  black4)
     (pane bg0)
 
-    (dim-buffer bg0)
+    (dim-buffer  bg0)
     (comment     gray3)
     (comment-alt teal2)
 
@@ -563,7 +563,17 @@
     (ivy1     fg1)
     (search1  azure3)
     (search2  amber3)
-    (search3  violet3)))
+    (search3  violet3)
+
+    ;; Easy to use colors
+    (kaolin-black   bg1)
+    (kaolin-red     err)
+    (kaolin-green   done)
+    (kaolin-yellow  warning)
+    (kaolin-blue    capri3)
+    (kaolin-magenta magenta3)
+    (kaolin-cyan    cyan3)
+    (kaolin-white   fg1)))
 
 ;; Predefined Kaolin face specifications
 (defconst kaolin-faces
@@ -1345,14 +1355,14 @@
 
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
-    (term-color-black   (:foreground bg1))
-    (term-color-red     (:foreground err))
-    (term-color-green   (:foreground done))
-    (term-color-yellow  (:foreground warning))
-    (term-color-blue    (:foreground azure3))
-    (term-color-magenta (:foreground magenta3))
-    (term-color-cyan    (:foreground cyan3))
-    (term-color-white   (:foreground fg1))
+    (term-color-black   (:foreground kaolin-black))
+    (term-color-red     (:foreground kaolin-red))
+    (term-color-green   (:foreground kaolin-green))
+    (term-color-yellow  (:foreground kaolin-yellow))
+    (term-color-blue    (:foreground kaolin-blue))
+    (term-color-magenta (:foreground kaolin-magenta))
+    (term-color-cyan    (:foreground kaolin-cyan))
+    (term-color-white   (:foreground kaolin-white))
     (term-underline     (:inherit 'underline))
 
     ;; EShell

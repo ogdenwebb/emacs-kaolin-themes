@@ -18,6 +18,16 @@
    (bg3 "#1F272E" black3)
    (bg4 "#252D35" black4)
 
+   ;; Root colors
+   (kaolin-black   bg1)
+   (kaolin-red     crimson1)
+   (kaolin-green   spring-green0)
+   (kaolin-yellow  orange3)
+   (kaolin-blue    azure3)
+   (kaolin-magenta violet4)
+   (kaolin-cyan    teal3)
+   (kaolin-white   fg1)
+
    ;; TODO: mb yellow3
    (hl magenta3)
 
@@ -121,27 +131,7 @@
    (org-code            (:foreground yellow3))
    (org-verbatim        (:inherit    'org-code))
    (org-quote           (:foreground blue4))
-
-   ;; Terminal
-   (term-color-black   (:foreground bg1))
-   (term-color-red     (:foreground crimson1))
-   (term-color-green   (:foreground spring-green0))
-   (term-color-yellow  (:foreground orange3))
-   (term-color-blue    (:foreground azure3))
-   (term-color-magenta (:foreground violet4))
-   (term-color-cyan    (:foreground teal3))
-   (term-color-white   (:foreground fg1))
    )
-
-  (custom-theme-set-variables 'kaolin-aurora
-        `(ansi-color-names-vector [,bg1
-                                   ,crimson1
-                                   ,spring-green0
-                                   ,orange3
-                                   ,azure3
-                                   ,violet4
-                                   ,cyan3
-                                   ,fg1]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

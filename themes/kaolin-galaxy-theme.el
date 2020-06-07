@@ -29,6 +29,16 @@
    ;; TODO: add other fg vars
    ;; (fg1 blue9)
 
+   ;; Root colors
+   (kaolin-black   bg1)
+   (kaolin-red     crimson3)
+   (kaolin-green   teal3)
+   (kaolin-yellow  amber3)
+   (kaolin-blue    capri3)
+   (kaolin-magenta magenta3)
+   (kaolin-cyan    cyan3)
+   (kaolin-white   fg1)
+
    (keyword     cyan3)
    (builtin     teal3)
    (functions   magenta3)
@@ -114,29 +124,9 @@
    (org-code            (:foreground erin3))
    (org-verbatim        (:foreground aquamarine3))
    (org-quote           (:foreground blue9))
-
-   ;; Terminal
-   (term-color-black   (:foreground bg1))
-   (term-color-red     (:foreground crimson3))
-   (term-color-green   (:foreground teal3))
-   (term-color-yellow  (:foreground amber3))
-   (term-color-blue    (:foreground capri3))
-   (term-color-magenta (:foreground magenta3))
-   (term-color-cyan    (:foreground cyan3))
-   (term-color-white   (:foreground fg1))
    )
 
   ;; Set custom vars
-  (custom-theme-set-variables 'kaolin-galaxy
-      `(ansi-color-names-vector [,bg1
-                                 ,crimson3
-                                 ,teal3
-                                 ,amber3
-                                 ,capri3
-                                 ,magenta3
-                                 ,cyan3
-                                 ,fg1]))
-
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-galaxy

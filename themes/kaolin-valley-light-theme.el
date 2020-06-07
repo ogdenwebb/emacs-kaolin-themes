@@ -53,6 +53,17 @@
    (fg3 "#79716c")
    (fg4 "#867e78")
 
+   ;; Root colors
+   (kaolin-black   fg1)
+   (kaolin-red     crimson0)
+   (kaolin-green   teal0)
+   (kaolin-yellow  orange0)
+   (kaolin-blue    blue3)
+   (kaolin-magenta cerise1)
+   (kaolin-cyan    cyan0)
+   (kaolin-white   bg4)
+
+
    (keyword     teal0)
    (builtin     erin2)
 
@@ -138,27 +149,7 @@
    (org-code               (:foreground keyword))
    (org-verbatim           (:foreground orange2))
    (org-date               (:foreground erin2 :underline kaolin-themes-underline))
-
-   ;; Terminal
-   (term-color-black   (:foreground fg1))
-   (term-color-red     (:foreground crimson0))
-   (term-color-green   (:foreground teal0))
-   (term-color-yellow  (:foreground orange0))
-   (term-color-blue    (:foreground blue3))
-   (term-color-magenta (:foreground cerise1))
-   (term-color-cyan    (:foreground cyan0))
-   (term-color-white   (:foreground bg4))
    )
-
-  (custom-theme-set-variables 'kaolin-valley-light
-      `(ansi-color-names-vector [,fg1
-                                 ,crimson0
-                                 ,teal0
-                                 ,orange0
-                                 ,blue3
-                                 ,cerise3
-                                 ,cyan0
-                                 ,bg4]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

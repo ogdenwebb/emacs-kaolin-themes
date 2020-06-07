@@ -17,6 +17,9 @@
 (define-kaolin-theme eclipse "Dark purple Kaolin theme variant."
   ;; Palette modification
   (
+   (azure2 "#325074")
+   (purple3 "#C68EDE")
+
    (bg0 (if kaolin-eclipse-alt-bg "#1E151E" "#261926") black0)
    ;; (bg1 (if kaolin-eclipse-alt-bg "#231923" "#2B1D2B") black1)
    ;; (bg2 (if kaolin-eclipse-alt-bg "#2B1F2B" "#261A26") black2)
@@ -29,8 +32,14 @@
 
    (fg1 "#F0EBE7")
 
-   (azure2 "#325074")
-   (purple3 "#C68EDE")
+   (kaolin-black   bg1)
+   (kaolin-red     red3)
+   (kaolin-green   teal0)
+   (kaolin-yellow  orange3)
+   (kaolin-blue    cerulean4)
+   (kaolin-magenta purple3)
+   (kaolin-cyan    cyan3)
+   (kaolin-white   fg1)
 
    (keyword     purple3)
    (metakey     (if kaolin-themes-distinct-metakeys magenta2 cerise4) comment)
@@ -107,27 +116,8 @@
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground amber3))
    (org-quote           (:foreground magenta3))
-
-   ;; Terminal
-   (term-color-black   (:foreground bg1))
-   (term-color-red     (:foreground red3))
-   (term-color-green   (:foreground teal0))
-   (term-color-yellow  (:foreground orange3))
-   (term-color-blue    (:foreground cerulean4))
-   (term-color-magenta (:foreground purple3))
-   (term-color-cyan    (:foreground cyan3))
-   (term-color-white   (:foreground fg1))
    )
 
-  (custom-theme-set-variables 'kaolin-eclipse
-      `(ansi-color-names-vector [,bg1
-                                 ,red3
-                                 ,teal0
-                                 ,orange3
-                                 ,cerulean4
-                                 ,purple3
-                                 ,cyan3
-                                 ,fg1]))
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

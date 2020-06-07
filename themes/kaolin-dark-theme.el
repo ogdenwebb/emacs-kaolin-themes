@@ -86,16 +86,6 @@
    (ivy-confirm-face        (:background nil :foreground amber3)))
 
 
-  (custom-theme-set-variables 'kaolin-dark
-      `(ansi-color-names-vector [,bg1
-                                 ,red1
-                                 ,spring-green3
-                                 ,orange1
-                                 ,blue4
-                                 ,magenta4
-                                 ,cyan3
-                                 ,fg1]))
-
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-dark
