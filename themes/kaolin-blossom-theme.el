@@ -124,7 +124,18 @@
    (org-level-4            (:foreground builtin :bold nil))
    (org-code               (:foreground functions))
    (org-verbatim           (:foreground str))
-   (org-list-dt            (:foreground str)))
+   (org-list-dt            (:foreground str))
+
+    ;; Terminal
+    (term-color-black   (:foreground bg2))
+    (term-color-blue    (:foreground azure3))
+    (term-color-red     (:foreground red3))
+    (term-color-green   (:foreground spring-green3))
+    (term-color-yellow  (:foreground yellow3))
+    (term-color-magenta (:foreground magenta3))
+    (term-color-cyan    (:foreground cyan3))
+    (term-color-white   (:foreground fg1))
+    )
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

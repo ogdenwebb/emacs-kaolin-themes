@@ -113,7 +113,18 @@
    (org-date            (:foreground spring-green3 :underline underline))
    (org-code            (:foreground erin3))
    (org-verbatim        (:foreground aquamarine3))
-   (org-quote           (:foreground blue9)))
+   (org-quote           (:foreground blue9))
+
+   ;; Terminal
+   (term-color-black   (:foreground bg1))
+   (term-color-blue    (:foreground capri3))
+   (term-color-red     (:foreground crimson3))
+   (term-color-green   (:foreground teal3))
+   (term-color-yellow  (:foreground amber3))
+   (term-color-magenta (:foreground magenta3))
+   (term-color-cyan    (:foreground cyan3))
+   (term-color-white   (:foreground fg1))
+   )
 
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid

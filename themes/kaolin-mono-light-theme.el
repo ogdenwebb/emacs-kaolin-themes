@@ -154,7 +154,18 @@
    (org-verbatim            (:foreground azure1))
 
    (js2-object-property     (:foreground brown1))
-   (evil-ex-info            (:foreground crimson4)))
+   (evil-ex-info            (:foreground crimson4))
+
+   ;; Terminal
+   (term-color-black   (:foreground fg1))
+   (term-color-blue    (:foreground azure1))
+   (term-color-red     (:foreground red1))
+   (term-color-green   (:foreground spring-green2))
+   (term-color-yellow  (:foreground orange0))
+   (term-color-magenta (:foreground magenta1))
+   (term-color-cyan    (:foreground cyan1))
+   (term-color-white   (:foreground bg1))
+   )
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

@@ -99,7 +99,18 @@
 
    (git-gutter:added    (:background diff-add :foreground diff-add))
    (git-gutter:modified (:background diff-mod :foreground diff-mod))
-   (git-gutter:deleted  (:background diff-rem :foreground diff-rem)))
+   (git-gutter:deleted  (:background diff-rem :foreground diff-rem))
+
+   ;; Terminal
+   (term-color-black   (:foreground bg1))
+   (term-color-blue    (:foreground azure3))
+   (term-color-red     (:foreground red3))
+   (term-color-green   (:foreground spring-green1))
+   (term-color-yellow  (:foreground orange1))
+   (term-color-magenta (:foreground violet3))
+   (term-color-cyan    (:foreground cyan3))
+   (term-color-white   (:foreground fg1))
+   )
 
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid

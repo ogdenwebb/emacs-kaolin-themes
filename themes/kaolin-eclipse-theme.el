@@ -50,6 +50,7 @@
    (str         cerise3)
    (str-alt     blue4)
    (doc         str-alt)
+   ;; TODO: change
    (warning     vermilion4)
    (err         red1)
 
@@ -105,7 +106,18 @@
    ;; TODO: change
    (org-code            (:foreground teal1))
    (org-verbatim        (:foreground amber3))
-   (org-quote           (:foreground magenta3)))
+   (org-quote           (:foreground magenta3))
+
+   ;; Terminal
+   (term-color-black   (:foreground bg1))
+   (term-color-blue    (:foreground cerulean4))
+   (term-color-red     (:foreground red3))
+   (term-color-green   (:foreground teal0))
+   (term-color-yellow  (:foreground orange3))
+   (term-color-magenta (:foreground purple3))
+   (term-color-cyan    (:foreground cyan3))
+   (term-color-white   (:foreground fg1))
+   )
 
   ;; Set custom vars
   (when kaolin-themes-git-gutter-solid

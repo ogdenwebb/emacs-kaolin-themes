@@ -120,7 +120,18 @@
    (org-table           (:foreground capri4))
    (org-code            (:foreground yellow3))
    (org-verbatim        (:inherit    'org-code))
-   (org-quote           (:foreground blue4)))
+   (org-quote           (:foreground blue4))
+
+   ;; Terminal
+   (term-color-black   (:foreground bg1))
+   (term-color-blue    (:foreground azure3))
+   (term-color-red     (:foreground crimson1))
+   (term-color-green   (:foreground spring-green0))
+   (term-color-yellow  (:foreground orange3))
+   (term-color-magenta (:foreground violet4))
+   (term-color-cyan    (:foreground teal3))
+   (term-color-white   (:foreground fg1))
+   )
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

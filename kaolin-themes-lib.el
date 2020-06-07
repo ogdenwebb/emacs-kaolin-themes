@@ -743,7 +743,7 @@
     (jabber-roster-user-offline    (:foreground comment))
     (jabber-roster-user-online     (:foreground done :weight 'bold))
     (jabber-roster-user-xa         (:foreground num))
-        
+
     ;; Highlighting
     (highlight                (:background hl-bg :foreground fg1))
     (lazy-highlight           (:background bg4 :foreground hl))
@@ -1343,7 +1343,18 @@
     (popup-menu-selection-face (:background tooltip-hl-bg :foreground tooltip-hl-fg :bold bold))
     (popup-tip-face            (:background tooltip-hl-bg :foreground fg1 :bold bold))
 
-    ;; TODO: mb add term0-16 vars
+    ;; Terminal
+    (term               (:background bg1 :foreground fg1))
+    (term-color-black   (:foreground bg1))
+    (term-color-blue    (:foreground azure3))
+    (term-color-red     (:foreground err))
+    (term-color-green   (:foreground success))
+    (term-color-yellow  (:foreground warning))
+    (term-color-magenta (:foreground magenta3))
+    (term-color-cyan    (:foreground cyan3))
+    (term-color-white   (:foreground fg1))
+    (term-underline     (:inherit 'underline))
+
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground black1))
@@ -1353,8 +1364,7 @@
     (term-color-yellow  (:foreground yellow3))
     (term-color-magenta (:foreground magenta3))
     (term-color-cyan    (:foreground cyan3))
-    (term-color-white   (:foreground white2))
-    (term-underline     (:inherit 'underline))
+    (term-color-white   (:foreground white1))
 
     ;; EShell
     (eshell-prompt        (:foreground teal0 :bold bold))

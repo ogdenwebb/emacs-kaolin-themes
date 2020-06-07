@@ -137,7 +137,18 @@
    (org-level-4            (:foreground builtin :bold nil))
    (org-date               (:foreground aquamarine3 :underline underline))
    (org-code               (:foreground num))
-   (org-verbatim           (:foreground orange3)))
+   (org-verbatim           (:foreground orange3))
+
+   ;; Terminal
+   (term-color-black   (:foreground bg1))
+   (term-color-blue    (:foreground capri3))
+   (term-color-red     (:foreground red3))
+   (term-color-green   (:foreground harlequin3))
+   (term-color-yellow  (:foreground amber3))
+   (term-color-magenta (:foreground magenta3))
+   (term-color-cyan    (:foreground cyan3))
+   (term-color-white   (:foreground fg1))
+   )
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

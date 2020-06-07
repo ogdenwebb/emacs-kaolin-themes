@@ -117,7 +117,18 @@
    (org-date            (:foreground warning :underline underline))
    ;; (org-code            (:foreground warning))
    (org-verbatim        (:foreground orange1))
-   (org-quote           (:foreground fg4)))
+   (org-quote           (:foreground fg4))
+
+   ;; Terminal
+   (term-color-black   (:foreground bg1))
+   (term-color-blue    (:foreground azure4))
+   (term-color-red     (:foreground red3))
+   (term-color-green   (:foreground aquamarine2))
+   (term-color-yellow  (:foreground orange1))
+   (term-color-magenta (:foreground purple4))
+   (term-color-cyan    (:foreground teal4))
+   (term-color-white   (:foreground fg1))
+   )
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

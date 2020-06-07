@@ -119,7 +119,18 @@
    (org-date               (:foreground vermilion3))
 
    (js2-object-property          (:foreground functions))
-   (evil-ex-info                 (:foreground crimson4)))
+   (evil-ex-info                 (:foreground crimson4))
+
+   ;; Terminal
+   (term-color-black   (:foreground fg1))
+   (term-color-blue    (:foreground capri1))
+   (term-color-red     (:foreground red1))
+   (term-color-green   (:foreground spring-green2))
+   (term-color-yellow  (:foreground orange2))
+   (term-color-magenta (:foreground magenta4))
+   (term-color-cyan    (:foreground cyan1))
+   (term-color-white   (:foreground bg1))
+   )
 
 
   (when kaolin-git-gutter-solid
