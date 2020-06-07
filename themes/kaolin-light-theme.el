@@ -142,7 +142,7 @@
    (term-color-blue    (:foreground azure1))
    (term-color-magenta (:foreground cerise4))
    (term-color-cyan    (:foreground cyan3))
-   (term-color-white   (:foreground bg1))
+   (term-color-white   (:foreground bg4))
    )
 
   (custom-theme-set-variables 'kaolin-light
@@ -153,7 +153,7 @@
                                  ,azure1
                                  ,cerise4
                                  ,cyan3
-                                 ,bg1]))
+                                 ,bg4]))
 
 
   (when kaolin-themes-git-gutter-solid

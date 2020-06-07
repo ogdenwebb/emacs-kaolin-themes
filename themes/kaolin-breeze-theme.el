@@ -129,7 +129,7 @@
    (term-color-blue    (:foreground capri1))
    (term-color-magenta (:foreground magenta4))
    (term-color-cyan    (:foreground cyan1))
-   (term-color-white   (:foreground bg1))
+   (term-color-white   (:foreground bg4))
    )
 
   (custom-theme-set-variables 'kaolin-breeze
@@ -140,7 +140,7 @@
                                  ,capri1
                                  ,magenta4
                                  ,cyan1
-                                 ,bg1]))
+                                 ,bg4]))
 
 
   (when kaolin-git-gutter-solid

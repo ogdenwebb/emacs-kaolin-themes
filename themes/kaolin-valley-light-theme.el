@@ -147,7 +147,7 @@
    (term-color-blue    (:foreground blue3))
    (term-color-magenta (:foreground cerise1))
    (term-color-cyan    (:foreground cyan0))
-   (term-color-white   (:foreground bg1))
+   (term-color-white   (:foreground bg4))
    )
 
   (custom-theme-set-variables 'kaolin-valley-light
@@ -158,7 +158,7 @@
                                  ,blue3
                                  ,cerise3
                                  ,cyan0
-                                 ,bg1]))
+                                 ,bg4]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces

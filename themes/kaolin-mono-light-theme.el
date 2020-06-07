@@ -164,7 +164,7 @@
    (term-color-blue    (:foreground azure1))
    (term-color-magenta (:foreground magenta1))
    (term-color-cyan    (:foreground cyan1))
-   (term-color-white   (:foreground bg1))
+   (term-color-white   (:foreground bg4))
    )
 
   (custom-theme-set-variables 'kaolin-mono-light
@@ -175,7 +175,7 @@
                                  ,azure1
                                  ,magenta1
                                  ,cyan1
-                                 ,bg1]))
+                                 ,bg4]))
 
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
