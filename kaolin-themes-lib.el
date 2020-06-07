@@ -1346,25 +1346,14 @@
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground bg1))
-    (term-color-blue    (:foreground azure3))
     (term-color-red     (:foreground err))
-    (term-color-green   (:foreground success))
+    (term-color-green   (:foreground done))
     (term-color-yellow  (:foreground warning))
+    (term-color-blue    (:foreground azure3))
     (term-color-magenta (:foreground magenta3))
     (term-color-cyan    (:foreground cyan3))
     (term-color-white   (:foreground fg1))
     (term-underline     (:inherit 'underline))
-
-    ;; Terminal
-    (term               (:background bg1 :foreground fg1))
-    (term-color-black   (:foreground black1))
-    (term-color-blue    (:foreground azure3))
-    (term-color-red     (:foreground red3))
-    (term-color-green   (:foreground teal0))
-    (term-color-yellow  (:foreground yellow3))
-    (term-color-magenta (:foreground magenta3))
-    (term-color-cyan    (:foreground cyan3))
-    (term-color-white   (:foreground white1))
 
     ;; EShell
     (eshell-prompt        (:foreground teal0 :bold bold))
