@@ -538,8 +538,7 @@
     (line-border       (if kaolin-themes-modeline-border bg4 line-bg1))
     (line-color1       fg1)
     (line-color2       builtin)
-    ; TODO:
-    (segment-active    gray3)
+    (segment-active    gray8)
     (segment-inactive  gray3)
 
     (evil-normal       keyword)
@@ -871,13 +870,21 @@
     (notmuch-wash-cited-text             (:foreground comment))
     (notmuch-wash-toggle-button          (:background bg2))
 
-    ;; TODO: Elfeed
-    (elfeed-search-tag-face          (:foreground amber3))
-    (elfeed-search-feed-face         (:foreground teal1))
+    ;; Elfeed
+    (elfeed-search-tag-face          (:foreground type))
+    (elfeed-search-feed-face         (:foreground builtin))
     (elfeed-search-date-face         (:foreground var))
+    (elfeed-search-filter-face       (:foreground keyword))
     (elfeed-search-unread-title-face (:foreground fg1))
-    (elfeed-search-unread-count-face (:foreground orange1))
+    (elfeed-search-unread-count-face (:foreground str))
+    ;; (elfeed-search-last-update-face  (:foreground num))
     (elfeed-search-title-face        (:foreground comment))
+    (elfeed-log-date-face            (:foreground num))
+    (elfeed-log-date-fil             (:foreground num))
+    (elfeed-log-info-level-face      (:foreground functions))
+    (elfeed-log-warn-level-face      (:foreground warning))
+    (elfeed-log-debug-level-face     (:foreground kaolin-blue))
+    (elfeed-log-error-level-face     (:foreground err))
 
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-fg :bold nil
