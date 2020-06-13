@@ -1178,13 +1178,6 @@
     (js3-warning-face             (:underline keyword))
     (js3-error-face               (:underline err))
 
-    ;; Latex
-    (font-latex-bold-face                (:foreground type))
-    (font-latex-italic-face              (:foreground keyword :italic italic))
-    (font-latex-string-face              (:foreground str))
-    (font-latex-match-reference-keywords (:foreground const))
-    (font-latex-match-variable-keywords  (:foreground var))
-
     ;; Rst-mode
     (rst-adornment (:foreground comment))
     (rst-block     (:foreground functions))
@@ -1196,18 +1189,28 @@
     (rst-level-6   (:foreground keyword))
 
     ;; Latex/Auctex
-    (font-latex-warning-face      (:inherit 'warning))
-    (font-latex-string-face       (:inherit 'font-lock-string-face))
-    ;; TODO: change colors to vars
-    (font-latex-math-face         (:foreground purple4))
-    (font-latex-sedate-face       (:foreground capri4))
-    (font-latex-script-char-face  (:foreground purple4))
-    (font-latex-sectioning-0-face (:foreground amber3 :bold bold))
-    (font-latex-sectioning-1-face (:inherit 'font-latex-sectioning-0-face))
-    (font-latex-sectioning-2-face (:inherit 'font-latex-sectioning-0-face))
-    (font-latex-sectioning-3-face (:inherit 'font-latex-sectioning-0-face))
-    (font-latex-sectioning-4-face (:inherit 'font-latex-sectioning-0-face))
-    (font-latex-sectioning-5-face (:inherit 'font-latex-sectioning-0-face))
+    (font-latex-bold-face                (:inherit 'bold))
+    (font-latex-italic-face              (:inherit 'italic))
+    (font-latex-string-face              (:inherit 'font-lock-string-face))
+    (font-latex-match-reference-keywords (:foreground const))
+    (font-latex-match-variable-keywords  (:foreground var))
+
+    (font-latex-warning-face             (:inherit 'warning))
+    (font-latex-string-face              (:inherit 'font-lock-string-face))
+    (font-latex-math-face                (:foreground functions))
+    (font-latex-sedate-face              (:foreground comment))
+    (font-latex-script-char-face         (:foreground builtin))
+    (font-latex-sectioning-0-face        (:foreground header :bold bold))
+    (font-latex-sectioning-1-face        (:foreground keyword))
+    (font-latex-sectioning-2-face        (:foreground builtin))
+    (font-latex-sectioning-3-face        (:foreground str))
+    (font-latex-sectioning-4-face        (:foreground const))
+    (font-latex-sectioning-5-face        (:foreground var))
+    (font-latex-verbatim-face         (:inherit 'fixed-pitch :foreground kaolin-blue))
+
+    (TeX-error-description-tex-said (:inherit 'success :weight 'bold))
+    (TeX-error-description-warning  (:inherit 'warning :weight 'bold))
+    (TeX-error-description-error    (:inherit 'error   :weight 'bold))
 
     ;; Undo-tree
     (undo-tree-visualizer-active-branch-face (:foreground functions :bold bold))
@@ -1411,7 +1414,7 @@
     (org-date-selected             (:background bg4 :foreground hl :weight 'bold))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground amber3))
-    (org-verbatim                  (:foreground azure3))
+    (org-verbatim                  (:foreground kaolin-blue))
     (org-hide                      (:foreground bg1))
     (org-drawer                    (:foreground functions))
     (org-special-keyword           (:foreground prep))
