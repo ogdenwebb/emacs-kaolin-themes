@@ -161,8 +161,8 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "terminal")) :extensions ("sh" "zsh" "fish"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "typescript")) :extensions ("ts" "tsx"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nimrod")) :extensions ("nim" "nims"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "pm" "perl"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "perl6")) :extensions ("pm6"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "plx" "pm" "perl"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "perl6")) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "R")) :extensions ("r"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tex")) :extensions ("tex"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "rst")) :extensions ("rst"))
@@ -201,7 +201,7 @@
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "code"))
-         :extensions ("tpl" "erb" "mustache" "twig" "ejs" "mk" "haml" "pug" "jade"))
+         :extensions ("a.out" "tpl" "erb" "mustache" "twig" "ejs" "mk" "haml" "pug" "jade"))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "file-zip"))
