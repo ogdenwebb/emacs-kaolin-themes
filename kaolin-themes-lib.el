@@ -296,10 +296,7 @@
     (azure0 "#0e70d1")
     ;; (azure1 "#3f7dba") ; old blue
     (azure1 "#3B84CC") ; old blue
-    ;; (azure2 "#2a4661")
-    (azure2 "#3B6F87")
-    ;; TODO:
-    ;; (azure2 "#325074")
+    (azure2 "#385A82")
     (azure3 "#4ca6e8") ; old soft-blue
     (azure4 "#53859d") ; old moderate-blue
     (azure5 "#14191e")
@@ -886,6 +883,8 @@
     (elfeed-log-debug-level-face     (:foreground kaolin-blue))
     (elfeed-log-error-level-face     (:foreground err))
 
+    ;; TODO: Newsticker faces
+
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-fg :bold nil
                                       :box (:line-width 2 :color line-border)))
@@ -1323,6 +1322,10 @@
     (imenu-list-entry-subalist-face-1 (:inherit 'imenu-list-entry-face-1 :bold bold))
     (imenu-list-entry-subalist-face-2 (:inherit 'imenu-list-entry-face-2 :bold bold))
     (imenu-list-entry-subalist-face-3 (:inherit 'imenu-list-entry-face-3 :bold bold))
+
+    ;; lsp-mode
+    ;; TODO:
+
 
     ;; Treemacs
     (treemacs-root-face             (:foreground keyword :height 1.2 :underline nil))
