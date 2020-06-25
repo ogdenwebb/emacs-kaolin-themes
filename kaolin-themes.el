@@ -228,7 +228,9 @@ Use kaolin-valley-dark-theme.el as example."
                                                          ,kaolin-blue
                                                          ,kaolin-magenta
                                                          ,kaolin-cyan
-                                                         ,kaolin-white]))
+                                                         ,kaolin-white])
+                               `(pos-tip-background-color ,tooltip-bg)
+                               `(pos-tip-foreground-color ,tooltip-fg))
 
                            ;; Provide theme
                            (provide-theme ',kaolin-theme-name)
