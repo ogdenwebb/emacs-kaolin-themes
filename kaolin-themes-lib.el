@@ -1615,6 +1615,12 @@
     (helm-swoop-target-line-block-face (:inherit 'isearch))
     (helm-swoop-target-word-face       (:background num :foreground bg1 :bold bold))
 
+    ;; Explain-pause-mode
+    (explain-pause-top-slow-heading         (:foreground kaolin-yellow))
+    (explain-pause-top-profile-heading      (:foreground kaolin-yellow))
+    (explain-pause-top-slow                 (:foreground err))
+    (explain-pause-top-changed              (:foreground diff-add))
+    (explain-pause-top-active-column-header (:background hl-line :foreground hl))
 
     ;; Wgrep
     (wgrep-face        (:background bg2 :foreground diff-mod))
