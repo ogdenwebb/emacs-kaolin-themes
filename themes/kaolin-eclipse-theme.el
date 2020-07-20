@@ -42,39 +42,34 @@
    (kaolin-white   fg1)
 
    (keyword     purple3)
-   (metakey     (if kaolin-themes-distinct-metakeys magenta2 cerise4) comment)
    ;; TODO: fix treemacs, imenu-list level1-2 and etc
    (builtin     purple3)
    (functions   builtin)
-   ;; TODO:
    (var         ultramarine3)
-   (const       ultramarine3)
+   (const       cerulean4)
    (type        cyan3)
    (num         cerise3)
    (bool        num)
-   (prep        yellow4)
+   (prep        amber3)
 
    (comment     purple7)
    (comment-alt "#663E66")
    (str         cerise3)
    (str-alt     blue4)
    (doc         str-alt)
-   ;; TODO: change
-   (warning     vermilion4)
+   (warning     orange3)
    (err         red1)
 
-   (dim-buffer "#140E14")
    (hl         pink1)
-   ;; TODO: fix contrast in minibuffer
    (hl-line    violet6)
    ; (hl-indent bg4)
    (selection  capri6)
    (pulse      magenta2)
 
-   (todo pink1)
+   (todo red3)
 
-   (tooltip-hl-bg cerulean6)
-   (tooltip-hl-fg amber3)
+   (tooltip-hl-bg bg4)
+   (tooltip-hl-fg orange3)
 
    (search1 capri0)
    (search2 spring-green1)
@@ -82,13 +77,13 @@
 
    (rb1 crimson4)
    (rb2 violet4)
-   (rb3 teal4)
-   (rb4 blue4)
-   (rb5 violet4)
-   (rb6 violet3)
-   (rb7 orange8)
-   (rb8 azure2)
-   (rb9 pink3)
+   (rb3 ultramarine3)
+   (rb4 purple3)
+   (rb5 teal4)
+   (rb6 cerulean4)
+   (rb7 teal1)
+   (rb8 azure4)
+   (rb9 vermilion4)
 
    (diff-add teal3)
    (diff-mod orange3)
@@ -112,9 +107,8 @@
   (
    (show-paren-mismatch (:background bg2 :foreground red0))
 
-   ;; TODO: change
-   (org-code            (:foreground teal1))
-   (org-verbatim        (:foreground amber3))
+   (org-code            (:foreground teal3))
+   (org-verbatim        (:foreground capri3))
    (org-quote           (:foreground magenta3))
    )
 
