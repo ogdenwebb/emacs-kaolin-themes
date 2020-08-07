@@ -28,18 +28,20 @@
    (kaolin-cyan    teal3)
    (kaolin-white   fg1)
 
-   ;; TODO: mb yellow3
-   (hl magenta3)
+   ;; (hl magenta3)
+   (hl yellow3)
 
    (comment     "#454459")
    (comment-alt teal2)
    (keyword     violet4)
    (builtin     violet4)
+   ;; (keyword     ultramarine3)
+   ;; (builtin     ultramarine3)
    (metakey     (if kaolin-themes-distinct-metakeys teal0 comment))
 
    (functions   cyan0)
    (const       teal0)
-   (var         spring-green0)
+   (var         green3)
    (type        cyan3)
 
 
@@ -87,9 +89,9 @@
    (diff-mod orange3)
    (diff-rem crimson1)
 
-   (diff-bg-add aquamarine6)
-   (diff-bg-mod vermilion6)
-   (diff-bg-rem red6)
+   (diff-bg-add teal2)
+   (diff-bg-mod vermilion4)
+   (diff-bg-rem red1)
 
    ;; Mode-line
    (line-fg           fg4)
@@ -102,7 +104,7 @@
    (segment-inactive  gray3)
 
    (win-border   bg3)
-   (line-num-fg  azure6 black4)
+   (line-num-fg  comment)
    (line-num-hl  teal0)
 
    (cursor       white0))
@@ -128,9 +130,9 @@
    (org-document-info   (:foreground cyan3))
    (org-date            (:foreground teal0 :underline underline))
    (org-table           (:foreground capri4))
-   (org-code            (:foreground yellow3))
-   (org-verbatim        (:inherit    'org-code))
-   (org-quote           (:foreground blue4))
+   (org-code            (:foreground vermilion4))
+   (org-verbatim        (:foreground azure3))
+   ;; (org-quote           (:foreground blue4))
    )
 
   (when kaolin-themes-git-gutter-solid
