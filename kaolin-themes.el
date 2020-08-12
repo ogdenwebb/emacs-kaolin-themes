@@ -165,7 +165,7 @@ Otherwise inherit from comments."
   "Add elements to BASE-LIST from ADD-LIST without dublicates. Returns a new list as result."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
-             do (map-put res (car el) (cdr el)))
+             do (map-put! res (car el) (cdr el)))
     res))
 
 ;; (defun kaolin-themes-palette-get (name)
