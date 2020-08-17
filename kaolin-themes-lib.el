@@ -474,7 +474,6 @@
     (done spring-green3)
 
     (adaptive-fg (if (color-dark-p bg1) white0 bg1))
-    ;; TODO: add pos-tip in custom-theme-set-variables
     (tooltip-bg bg2)
     (tooltip-fg fg2)
     (tooltip-hl-bg brown2)
@@ -619,7 +618,6 @@
     (trailing-whitespace (:background err))
 
     (menu        (:background bg2 :foreground fg2))
-    ;; TODO: default bg
     (header-line (:background nil :foreground num))
     (tool-bar    (:inherit 'header-line))
 
@@ -1674,6 +1672,11 @@
     (swiper-background-match-face-3 (:inherit 'swiper-match-face-3 :bold nil :background bg1))
     (swiper-background-match-face-4 (:inherit 'swiper-match-face-4 :bold nil :background bg1))
     (swiper-line-face    (:inherit 'hl-line))
+
+    ;; Selectrum
+    (selectrum-current-candidate   (:background hl-line :foreground hl :bold t))
+    (selectrum-primary-highlight   (:foreground search1))
+    (selectrum-secondary-highlight (:foreground search2))
 
     ;; tabbar
     (tabbar-default             (:background bg1 :foreground bg1 :height 1.0))
