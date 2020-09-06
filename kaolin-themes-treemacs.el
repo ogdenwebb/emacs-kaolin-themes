@@ -180,6 +180,10 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vagrant")) :extensions ("vagrantfile"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "racket")) :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "reason")) :extensions ("re" "rei"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "sass")) :extensions ("scss" "sass"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "stylus")) :extensions ("styl"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "less")) :extensions ("less"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "style")) :extensions ("styles"))
 
 
         ;; Media files icon
