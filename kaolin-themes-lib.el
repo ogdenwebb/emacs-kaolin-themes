@@ -1695,9 +1695,10 @@
     (tabbar-selected-modified   (:inherit 'tabbar-selected :foreground diff-add))
 
     ;; built-in tab-bar mode
-    (tab-bar (:background bg1 :foreground fg1))
-    (tab-bar-tab (:background bg2 :foreground fg1))
-    (tab-bar-tab-inactive (:background bg2 :foreground comment))
+    (tab-bar (:background bg0 :foreground fg1))
+    (tab-line (:background bg0 :foreground fg1))
+    (tab-bar-tab (:background bg1 :foreground fg1))
+    (tab-bar-tab-inactive (:background bg1 :foreground comment))
 
     ;; Awesome-tabs
     (awesome-tab-default    (:background bg1 :foreground bg1))
