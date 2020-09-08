@@ -1673,6 +1673,11 @@
     (swiper-background-match-face-4 (:inherit 'swiper-match-face-4 :bold nil :background bg1))
     (swiper-line-face    (:inherit 'hl-line))
 
+
+    ;; Default completion
+    (completions-common-part (:foreground functions))
+    (completions-annotations (:foreground doc))
+
     ;; Selectrum
     (selectrum-current-candidate   (:background hl-line :foreground hl :bold t))
     (selectrum-primary-highlight   (:foreground search1))
@@ -1688,6 +1693,11 @@
     (tabbar-unselected-modified (:inherit 'tabbar-modified))
     (tabbar-selected            (:inherit 'tabbar-default :foreground fg1 :background bg2 :weight 'bold))
     (tabbar-selected-modified   (:inherit 'tabbar-selected :foreground diff-add))
+
+    ;; built-in tab-bar mode
+    (tab-bar (:background bg1 :foreground fg1))
+    (tab-bar-tab (:background bg2 :foreground fg1))
+    (tab-bar-tab-inactive (:background bg2 :foreground comment))
 
     ;; Awesome-tabs
     (awesome-tab-default    (:background bg1 :foreground bg1))
