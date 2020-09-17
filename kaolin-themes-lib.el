@@ -463,6 +463,8 @@
         ('color  comment-alt)
         ('bright comment)))
 
+    (kaolin-org-height (if kaolin-themes-org-scale-headings 1.1 1.0))
+
     (hl         aquamarine3)
     (hl-bg      comment)
     (hl-line    (if kaolin-themes-hl-line-colored capri5 bg2))
@@ -1431,13 +1433,13 @@
     (org-block-begin-line          (:background bg2 :foreground comment :height 0.9))
     (org-block-end-line            (:inherit 'org-block-begin-line))
     (org-list-dt                   (:inherit 'org-checkbox))
-    (org-document-title            (:foreground builtin :bold bold :height 1.2))
+    (org-document-title            (:foreground builtin :bold bold :height 1.1))
     (org-document-info             (:foreground builtin))
     (org-footnote                  (:foreground fg4 :underline underline))
     (org-quote                     (:background bg2 :foreground fg2 :italic italic))
     (org-verse                     (:foreground fg3 :italic italic))
 
-    (org-level-1            (:foreground keyword :bold bold :height 1.1))
+    (org-level-1            (:foreground keyword :bold bold :height kaolin-org-height))
     (org-level-2            (:foreground builtin  :bold nil))
     (org-level-3            (:foreground num :bold nil))
     (org-level-4            (:foreground const :bold nil))
