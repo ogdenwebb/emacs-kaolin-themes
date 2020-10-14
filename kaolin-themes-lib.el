@@ -463,7 +463,7 @@
         ('color  comment-alt)
         ('bright comment)))
 
-    (kaolin-org-height (if kaolin-themes-org-scale-headings 1.1 1.0))
+    (kaolin-org-heading-size (if kaolin-themes-org-scale-headings 1.1 1.0))
 
     (hl         aquamarine3)
     (hl-bg      comment)
@@ -475,7 +475,7 @@
     (todo red1)
     (done spring-green3)
 
-    (adaptive-fg (if (color-dark-p bg1) white0 bg1))
+    (adaptive-fg (if (color-dark-p bg1) fg1 bg1))
     (tooltip-bg bg2)
     (tooltip-fg fg2)
     (tooltip-hl-bg brown2)
@@ -1439,7 +1439,7 @@
     (org-quote                     (:background bg2 :foreground fg2 :italic italic))
     (org-verse                     (:foreground fg3 :italic italic))
 
-    (org-level-1            (:foreground keyword :bold bold :height kaolin-org-height))
+    (org-level-1            (:foreground keyword :bold bold :height kaolin-org-heading-size))
     (org-level-2            (:foreground builtin  :bold nil))
     (org-level-3            (:foreground num :bold nil))
     (org-level-4            (:foreground const :bold nil))
@@ -1457,6 +1457,17 @@
     (org-scheduled-today         (:foreground functions :bold bold))
     (org-sexp-date               (:foreground fg4))
     (org-time-grid               (:foreground comment))
+
+    ;; org-habit
+    (org-habit-clear-face (:background kaolin-blue))
+    (org-habit-clear-future-face (:background bg4))
+    (org-habit-ready-face (:background diff-add))
+    (org-habit-ready-future-face (:background diff-bg-add))
+    (org-habit-alert-face (:background diff-mod))
+    (org-habit-alert-future-face (:background diff-bg-mod))
+    (org-habit-overdue-face (:background diff-rem))
+    (org-habit-overdue-future-face (:background diff-bg-rem))
+
 
     ;; Emmet
     (emmet-preview-input   (:foreground nil :background nil))
