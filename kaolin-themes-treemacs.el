@@ -201,7 +201,7 @@
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-faicon "cogs"))
-         :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini"))
+         :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini" "iml"))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "code"))
