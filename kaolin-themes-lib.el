@@ -1,57 +1,6 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package.  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;
-;;; Color order
-;; TODO: add color close to color5 but satured
-;;
-;; color0 - almost pure/contrast >= 70 sat & > 70 val
-;; color1 - regular
-;; color2 - dark
-;; color3 - light/soft
-;; color4 - desaturated/faded/muted
-;;
-;; color5 - midnight <= 50 sat & < 30 value
-;; color6 - very dark color 20-30 sat & val; see spring-green
-;; color7 - dark grayish sat ~20 & val 50+; adjust with gray3; see erin7
-;; color8 - light grayish; sat ~10-15 & val ~ 65+
-;; color9 - very light color hue 8-17 value ~90-95
-;;
-;;; Color list
-;;
-;; Color name - color hex - Kaolin hue
-;;
-;; Black #020203 - 240
-;; Gray #CED8D9 - 189
-;; White #FDFDFF - 240
-;;
-;; Colors:
-;; Red #FF0000 - 358-360
-;; Brown #A33C28 - 6
-;; Vermilion #FF3F00 - 17
-;; Orange #FF7F00 - 36
-;; Amber #FFBF00 - 43
-;; Yellow #FFFF00 - 60
-;; Lime #BFFF00 - 75
-;; Chartreuse #7FFF00 - 86
-;; Harlequin #3FFF00 - 104
-;; Green #00FF00 - 120
-;; Erin #00FF3F - 135
-;; Spring-green #00FF7F - 150
-;; Aquamarine #00FFBF - 163
-;; Teal #00A89D - 178
-;; Cyan #00FFFF - 182
-;; Capri/Deep Sky Blue #00BFFF - 201
-;; Azure/Sky Blue #007FFF - 210
-;; Cerulean #003FFF - 221
-;; Blue #0000FF - 238
-;; Ultramarine #3F00FF - 254
-;; Violet #7F00FF - 270
-;; Purple #BF00FF - 279
-;; Magenta/Fuchsia #FF00FF - 300
-;; Cerise #FF00BF - 315
-;; Pink/rose #FF007F - 335
-;; Crimson #FF003F - 347
-;;
 
 (defun color-lab-luminance (color)
   "Return the luminance through LAB color space of a color string (e.g. \"#ffaa00\", \"blue\")."
