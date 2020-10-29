@@ -132,7 +132,7 @@
    (org-document-title (:foreground orange3 :bold bold :height 1.3))
    (org-verbatim       (:foreground cyan1 :bold bold))
 
-   (org-level-1            (:foreground var :bold bold :height 1.1))
+   (org-level-1            (:foreground var :bold bold :height kaolin-org-heading-size))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground keyword :bold nil))

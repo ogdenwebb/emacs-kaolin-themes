@@ -142,7 +142,7 @@
    ;; TODO:
    (highlight-quoted-symbol  (:foreground builtin))
 
-   ;; (org-level-1            (:foreground teal0 :bold bold :height 1.1))
+   ;; (org-level-1            (:foreground teal0 :bold bold :height kaolin-org-heading-size))
    ;; (org-level-2            (:foreground violet4  :bold nil))
    ;; (org-level-3            (:foreground harlequin3 :bold nil))
    ;; (org-level-4            (:foreground vermilion4 :bold nil))

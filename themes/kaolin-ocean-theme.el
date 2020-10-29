@@ -18,6 +18,7 @@
   (
    (bg0 (if kaolin-ocean-alt-bg black1 "#111119") black1)
    (bg1 (if kaolin-ocean-alt-bg black2 blue5) black2)
+   ;; (bg1 "#20262C")
    (bg2 (if kaolin-ocean-alt-bg black3 "#1d1d2b") black3)
    (bg3 (if kaolin-ocean-alt-bg black4 "#28283a") black4)
    (bg4 (if kaolin-ocean-alt-bg gray0 "#32324a") gray0)

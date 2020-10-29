@@ -122,7 +122,7 @@
    (highlight-quoted-quote   (:foreground type))
    (highlight-quoted-symbol  (:foreground teal0))
 
-   (org-level-1         (:foreground teal0 :bold bold :height 1.1))
+   (org-level-1         (:foreground teal0 :bold bold :height kaolin-org-heading-size))
    (org-level-2         (:foreground aquamarine3 :bold nil))
    (org-level-3         (:foreground violet3 :bold nil))
    (org-level-4         (:foreground orange3 :bold nil))

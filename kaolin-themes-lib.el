@@ -1,4 +1,4 @@
-;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package  -*- lexical-binding: t; -*-
+;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package.  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;
 ;;; Color order
@@ -1459,6 +1459,7 @@
     (org-time-grid               (:foreground comment))
 
     ;; org-habit
+    ;; TODO: bg blend
     (org-habit-clear-face (:background kaolin-blue))
     (org-habit-clear-future-face (:background bg4))
     (org-habit-ready-face (:background diff-add))

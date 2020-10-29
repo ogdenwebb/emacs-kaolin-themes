@@ -117,7 +117,7 @@
 
   ((link                   (:foreground capri1 :underline underline))
 
-   (org-level-1           (:foreground keyword :bold bold :height 1.1))
+   (org-level-1           (:foreground keyword :bold bold :height kaolin-org-heading-size))
    (org-level-2            (:foreground str :bold nil))
    (org-level-3            (:foreground builtin :bold nil))
    (org-level-4            (:foreground functions :bold nil))

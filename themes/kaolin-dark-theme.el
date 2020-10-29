@@ -32,7 +32,7 @@
 
    ;; Org-mode
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
-   (org-level-1                   (:foreground teal1 :bold bold :height 1.1))
+   (org-level-1                   (:foreground teal1 :bold bold :height kaolin-org-heading-size))
    (org-level-2                   (:foreground capri4 :bold nil))
    (org-level-3                   (:foreground aquamarine4 :bold nil))
    (org-level-4                   (:foreground amber3 :bold nil))

@@ -133,7 +133,7 @@
    (highlight-quoted-quote  (:foreground keyword))
    (highlight-quoted-symbol (:foreground const))
 
-   (org-level-1             (:foreground spring-green2 :bold bold :height 1.1))
+   (org-level-1             (:foreground spring-green2 :bold bold :height kaolin-org-heading-size))
    (org-level-2             (:foreground functions :bold nil))
    (org-level-3             (:foreground vermilion3 :bold nil))
    (org-level-4             (:foreground cerise4 :bold nil))

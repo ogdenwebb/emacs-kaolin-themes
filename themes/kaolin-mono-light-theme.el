@@ -113,7 +113,7 @@
    (tooltip-hl-bg bg3)
    (tooltip-hl-fg hl)
 
-    ;; TODO:
+    ;; TODO: change
    (rb1 teal1)
    (rb2 cerise4)
    (rb3 azure4)
@@ -155,7 +155,7 @@
    (highlight-quoted-quote  (:foreground keyword))
    (highlight-quoted-symbol (:foreground const))
 
-   (org-level-1             (:foreground spring-green2 :bold bold :height 1.1))
+   (org-level-1             (:foreground spring-green2 :bold bold :height kaolin-org-heading-size))
    (org-level-2             (:foreground functions :bold nil))
    (org-level-3             (:foreground keyword :bold nil))
    (org-level-4             (:foreground warning :bold nil))
