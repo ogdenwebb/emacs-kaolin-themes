@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;
 
+;; TODO: change :bold and :italic to :weight and :slant
+
 (defun color-lab-luminance (color)
   "Return the luminance through LAB color space of a color string (e.g. \"#ffaa00\", \"blue\")."
   (nth 0 (apply #'color-srgb-to-lab (color-name-to-rgb color))))
@@ -473,7 +475,7 @@
 
     ;; Custom buttons
     (button amber6)
-    (button-bg doc)
+    (button-color keyword)
     (button-border (if (color-dark-p bg1) gray3 white4))
     (button-hl amber3)
 
@@ -581,9 +583,9 @@
     ;; Interface
     (package-name                   (:inherit 'link :underline nil))
     (button                         (:inherit 'link))
-    (custom-button                  (:background button-bg :foreground adaptive-fg :box (:line-width 2 :color button-bg :style 'none) :height 0.9))
-    (custom-button-mouse            (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-hl :style 'none)))
-    (custom-button-pressed          (:inherit 'custom-button :foreground button-hl :box (:line-width 2 :color button-border :style 'none)))
+    (custom-button                  (:background nil :foreground button-color :box (:line-width 1 :color button-color :style 'none) :height 0.9))
+    (custom-button-mouse            (:inherit 'custom-button :foreground button-hl :box (:line-width 1 :color button-hl :style 'none)))
+    (custom-button-pressed          (:inherit 'custom-button :foreground button-hl :box (:line-width 1 :color button-border :style 'none)))
     (custom-button-unraised         (:inherit 'custom-button))
     (custom-button-pressed-unraised (:inherit 'custom-button-pressed))
     (custom-group-tag               (:foreground header :height 1.2 :weight 'bold))
@@ -592,7 +594,7 @@
     (custom-comment                 (:background hl-bg :foreground fg1))
     (custom-comment-tag             (:foreground comment))
     (custom-documentation           (:foreground fg1))
-    (custom-visibility              (:background nil :foreground cyan1 :height 0.9 :underline underline))
+    (custom-visibility              (:background nil :foreground functions :underline underline))
     (custom-state                   (:background nil :foreground str))
     (custom-changed                 (:background nil :foreground diff-mod))
     (custom-set                     (:background nil :foreground done))
@@ -603,7 +605,7 @@
     (widget-documentation           (:background nil :foreground var))
     ;; (widget-button                  (:background nil :foreground keyword))
     (widget-button-pressed          (:background nil :foreground builtin))
-    (widget-field                   (:background bg2 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
+    (widget-field                   (:background bg3 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
 
     ;; Dashboard
