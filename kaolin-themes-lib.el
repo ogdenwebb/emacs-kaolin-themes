@@ -1331,6 +1331,18 @@
     (term-color-white   (:foreground kaolin-white))
     (term-underline     (:inherit 'underline))
 
+    ;; vterm
+    ;; TODO: add support for all 16 colors, use functions for background
+    (vterm               (:foreground fg1))
+    (vterm-color-black   (:background kaolin-black :foreground kaolin-black))
+    (vterm-color-red     (:background kaolin-red :foreground kaolin-red))
+    (vterm-color-green   (:background kaolin-green :foreground kaolin-green))
+    (vterm-color-yellow  (:background kaolin-yellow :foreground kaolin-yellow))
+    (vterm-color-blue    (:background kaolin-blue :foreground kaolin-blue))
+    (vterm-color-magenta (:background kaolin-magenta :foreground kaolin-magenta))
+    (vterm-color-cyan    (:background kaolin-cyan :foreground kaolin-cyan))
+    (vterm-color-white   (:background kaolin-white :foreground kaolin-white))
+
     ;; EShell
     (eshell-prompt        (:foreground prompt :bold bold))
     (eshell-ls-directory  (:foreground kaolin-blue :bold bold))
