@@ -27,7 +27,8 @@
    (cyan1         "#48a9a9")
    (cyan2         "#008b8b")
    (cyan3         "#6facb3")
-   (teal2         "#1D6B69")
+   ;; (teal2         "#1D6B69")
+   (teal2         "#13665F")
    (spring-green2 "#317A56")
    (vermilion3    "#E36B3F")
    (aquamarine1   "#47ba99")
@@ -35,6 +36,7 @@
    ;; TODO: less contrast
    (ultramarine1  "#6D46E3")
    (orange1       "#C5882C")
+   (purple1       "#AD55DC")
 
    ;; Color vars
    (bg0 "#f5f6f5")
@@ -102,9 +104,10 @@
    (rb8 spring-green4)
    (rb9 violet4)
 
-   (diff-add aquamarine4)
-   (diff-mod vermilion4)
-   (diff-rem red4)
+   (diff-add aquamarine2)
+   ;; (diff-mod vermilion4)
+   (diff-mod purple1)
+   (diff-rem red1)
 
     ;; Mode-line
    (line-fg           fg4)
