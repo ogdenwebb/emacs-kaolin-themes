@@ -13,6 +13,11 @@
   :type 'boolean
   :group 'kaolin-valley-dark)
 
+(defcustom kaolin-valley-dark-alt-syntax nil
+  "Change keyword and builtin colors. Number/quoted parts will display as amber."
+  :type 'boolean
+  :group 'kaolin-valley-dark)
+
 (define-kaolin-theme valley-dark  "Colorful Kaolin theme with dark brown background."
   ;; Palette modification
   (
@@ -51,8 +56,8 @@
 
 
    ;; (keyword     teal0)
-   (keyword     teal3)
-   (builtin     aquamarine3)
+   (keyword     (if kaolin-valley-dark-alt-syntax green3 teal3))
+   (builtin     (if kaolin-valley-dark-alt-syntax chartreuse3 aquamarine3))
    (header      orange3)
 
    (var         crimson3)
@@ -73,7 +78,7 @@
    (doc         str-alt)
 
    (prep        ultramarine3)
-   (num         harlequin3)
+   (num         (if kaolin-valley-dark-alt-syntax amber3 harlequin3))
    (bool        num)
    (warning     amber0)
    ;; (warning     yellow3)
