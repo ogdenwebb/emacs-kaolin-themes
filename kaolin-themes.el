@@ -131,6 +131,10 @@
   "Enable distinct colors for company popup scrollbar."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-distinct-parentheses nil
+  "Enable distinct colors for parentheses (i.e. rainbow delimiters package)."
+  :group 'kaolin-themes)
+
 (defcustom kaolin-themes-org-scale-headings t
   "If not-nil, scale heading size in org-mode."
   :group 'kaolin-themes)
