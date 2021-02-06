@@ -50,17 +50,21 @@
    (type        cyan3)
    (num         cerise3)
    (bool        num)
-   (prep        amber3)
+   ;; (prep        amber3)
+   (prep        capri3)
+   ;; (prep        aquamarine3
 
    (comment     purple7)
    (comment-alt "#663E66")
    (str         cerise3)
    (str-alt     blue4)
    (doc         str-alt)
-   (warning     orange3)
-   (err         red1)
+   ;; (warning     orange3)
+   (warning     amber0)
+   (err         red3)
 
-   (hl         pink1)
+   ;; (hl         pink1)
+   (hl         yellow3)
    (hl-line    violet6)
    ; (hl-indent bg4)
    (selection  capri6)
@@ -75,6 +79,7 @@
    (search2 spring-green1)
    (search3 amber3)
 
+   ;; TODO revisit
    (rb1 crimson4)
    (rb2 violet4)
    (rb3 ultramarine3)
@@ -100,15 +105,15 @@
 
    (win-border    bg3)
    (line-num-fg   comment)
-   (line-num-hl   hl gray9)
+   (line-num-hl   purple3)
    (cursor        ultramarine3))
 
   ;; Custom theme set faces
   (
-   (show-paren-mismatch (:background bg2 :foreground red0))
+   ;; (show-paren-mismatch (:background bg2 :foreground red0))
 
-   (org-code            (:foreground teal3))
-   (org-verbatim        (:foreground capri3))
+   ;; (org-code            (:foreground teal3))
+   ;; (org-verbatim        (:foreground capri3))
    (org-quote           (:foreground magenta3))
    )
 
