@@ -19,6 +19,11 @@
   :type 'boolean
   :group 'kaolin-treemacs)
 
+(defcustom kaolin-themes-treemacs-modeline nil
+  "Whether display mode-line in treemacs buffer, by default is nil."
+  :type 'boolean
+  :group 'kaolin-treemacs)
+
 (defcustom kaolin-themes-treemacs-line-spacing 1
   "Line-spacing for treemacs buffer."
   :type 'number
@@ -47,7 +52,8 @@
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--hook)
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remove-fringes)
   (advice-add 'treemacs-select-window :after #'kaolin-treemacs--remove-fringes)
-  (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remove-modeline)
+  (unless kaolin-themes-treemacs-modeline
+    (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remove-modeline))
 
   (when kaolin-themes-treemacs-hl-line
     (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remap-hl-line))
