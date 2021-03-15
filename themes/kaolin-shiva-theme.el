@@ -54,7 +54,6 @@
    (kaolin-cyan    cyan3)
    (kaolin-white   fg1)
 
-
    (keyword     red4)
    ;; (builtin     orange3)
    (builtin     "#feb193")
@@ -74,10 +73,6 @@
    ;; TODO:
    (comment-alt teal2)
 
-   ;; (str         shiva-cyan)
-   ;; (str         vermilion4)
-   ;; (str         purple3)
-   ;; (str         ultramarine3)
    (str         blue8)
    (str-alt     ultramarine4)
    (doc         str-alt)
@@ -90,6 +85,7 @@
    (err         red3)
 
    (dim-buffer white0)
+   ;; TODO: find a better color
    (hl         aquamarine0)
    ;; TODO: add colored
    (hl-line    (if kaolin-themes-hl-line-colored bg3 bg3))
