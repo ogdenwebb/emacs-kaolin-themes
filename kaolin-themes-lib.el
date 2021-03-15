@@ -1604,6 +1604,13 @@
     (wgrep-file-face   (:foreground comment))
     (wgrep-reject-face (:inherit 'error))
 
+    ;; tldr
+    (tldr-title          (:foreground header :weight 'bold))
+    (tldr-introduction   (:foreground comment))
+    (tldr-description    (:foreground str))
+    (tldr-command-itself (:background functions :foreground bg1))
+    (tldr-code-block     (:background bg2 :foreground functions))
+
      ;; Avy
     (avy-background-face (:inherit 'font-lock-comment-face))
     (avy-lead-face       (:background spring-green2 :foreground adaptive-fg :weight 'bold))
