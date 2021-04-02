@@ -16,7 +16,6 @@ All screenshots are available in the wiki on the following pages:
 
 * [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - a dark jade variant inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
 * [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin-dark.
-
 * [kaolin-aurora](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-aurora-theme) - Kaolin meets polar lights.
 * [kaolin-bubblegum](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-bubblegum-theme) - Kaolin colorful theme with dark blue background.
 * [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant
