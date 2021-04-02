@@ -15,14 +15,16 @@ Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large nu
 All screenshots are available in the wiki on the following pages:
 
 * [kaolin-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-dark-theme) - a dark jade variant inspired by [Sierra.vim](https://github.com/AlessandroYorba/Sierra)
+* [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin-dark.
+
 * [kaolin-aurora](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-aurora-theme) - Kaolin meets polar lights.
 * [kaolin-bubblegum](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-bubblegum-theme) - Kaolin colorful theme with dark blue background.
-* [kaolin-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-light-theme) - light variant of the original kaolin-dark.
 * [kaolin-eclipse](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-eclipse-theme) - a dark purple variant
-* [kaolin-ocean](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-ocean-theme) - a dark blue variant.
 * [kaolin-galaxy](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-galaxy-theme) - bright theme based on one of the Sebastian Andaur arts.
-* [kaolin-valley-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-valley-dark-theme) - colorful Kaolin theme with brown background.
+* [kaolin-ocean](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-ocean-theme) - a dark blue variant.
 * [kaolin-temple](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-temple-theme) - dark background with syntax highlighting focus on blue, green and pink shades
+* [kaolin-valley-dark](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-valley-dark-theme) - colorful Kaolin theme with brown background.
+* [kaolin-valley-light](https://github.com/ogdenwebb/emacs-kaolin-themes/wiki/Kaolin-valley-light-theme) - light variant of kaolin-valley theme.
 
 ### Further themes
 
@@ -30,12 +32,11 @@ All screenshots are available in the wiki on the following pages:
 
 These themes might be changed in the future.
 
-* **kaolin-valley-light** - light variant of kaolin-valley theme.
-* **kaolin-bubblegum** - colorful theme with dark blue background.
-* **kaolin-mono-dark** - almost monochrome dark green Kaolin theme.
-* **kaolin-breeze** - Light Kaolin theme with soft colors.
 * **kaolin-blossom** - theme focus on orange and purple with dark background.
+* **kaolin-breeze** - Light Kaolin theme with soft colors.
+* **kaolin-mono-dark** - almost monochrome dark green Kaolin theme.
 * **kaolin-mono-light** - light variant of monochrome theme.
+* **kaolin-shiva** - Kaolin theme with autumn colors and melanzane background.
 
 ### Planned
 
