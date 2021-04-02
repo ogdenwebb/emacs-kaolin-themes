@@ -1,4 +1,4 @@
-;;; kaolin-shiva-theme.el --- TODO
+;;; kaolin-shiva-theme.el --- Kaolin theme with autumn colors and melanzane background
 ;;; Commentary:
 
 ;;; Code:
@@ -18,7 +18,7 @@
   :type 'boolean
   :group 'kaolin-shiva)
 
-(define-kaolin-theme shiva "TODO"
+(define-kaolin-theme shiva "Kaolin theme with autumn colors and melanzane background"
   ;; Palette modification
   (
    ;; Colors
