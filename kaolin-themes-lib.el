@@ -1461,6 +1461,18 @@
     (web-mode-string-face           (:inherit 'font-lock-string-face))
     (web-mode-warning-face          (:inherit 'font-lock-warning-face))
 
+    ;; Alert
+    (alert-high-face (:inherit 'bold :foreground kaolin-red))
+    (alert-low-face (:inherit 'bold :foreground fg2))
+    (alert-moderate-face (:inherit 'bold :foreground warning))
+    (alert-trivial-face (:inherit 'bold :foreground fg2))
+    (alert-urgent-face (:inherit 'bold :foreground kaolin-red))
+
+    ;; ert
+    (ert-test-result-expected (:background done :foreground bg1))
+    (ert-test-result-unexpected (:background err :foreground bg1))
+
+
     ;; Nim
     (nim-font-lock-export-face (:inherit 'font-lock-function-name-face :italic nil))
 
