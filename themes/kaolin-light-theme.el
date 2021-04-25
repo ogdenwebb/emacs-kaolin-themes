@@ -62,6 +62,8 @@
 
    (comment     gray7)
    (comment-alt lime7)
+   (comment-contrast gray4)
+
    (keyword     teal2)
    (metakey     (if kaolin-themes-distinct-metakeys teal2 comment))
    (var         magenta4)

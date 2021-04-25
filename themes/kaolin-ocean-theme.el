@@ -33,8 +33,9 @@
    (kaolin-white   fg1)
 
    (comment     gray3)
-   ;; (comment     blue7)
-   (comment-alt "#43436E")
+   (comment-alt azure4)
+   (comment-contrast cerulean7)
+
    (keyword     cerulean4)
    (metakey     (if kaolin-themes-distinct-metakeys ultramarine3 comment)) ; todo
    (builtin     azure3)

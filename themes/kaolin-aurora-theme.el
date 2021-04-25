@@ -33,6 +33,8 @@
 
    (comment     "#454459")
    (comment-alt teal2)
+   (comment-contrast ultramarine7)
+
    (keyword     violet4)
    (builtin     violet4)
    ;; (keyword     ultramarine3)

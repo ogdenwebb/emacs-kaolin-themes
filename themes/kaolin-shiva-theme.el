@@ -64,14 +64,9 @@
    (functions   shiva-cyan)
    (type        amber3)
 
-   ;; (comment    "#947793")
-   ;; (comment    "#916C69")
    (comment    crimson7)
-   ;; (comment "#635C4A")
-   ;; TODO:
-   ;; (comment     "#553a41")
-   ;; TODO:
-   (comment-alt teal2)
+   (comment-alt lime7)
+   (comment-contrast orange7)
 
    (str         blue8)
    (str-alt     ultramarine4)

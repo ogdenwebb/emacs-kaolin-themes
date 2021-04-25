@@ -35,6 +35,9 @@
    (keyword     aquamarine2)
 
    (comment     "#41544B")
+   (comment-alt     lime4)
+   (comment-contrast "#587567")
+
    (metakey     (if kaolin-themes-distinct-metakeys spring-green4 comment))
    ;; (builtin     aquamarine2)
    (builtin     spring-green8)
@@ -43,8 +46,6 @@
    (var         teal4)
    (type        aquamarine1)
 
-   ;; TODO:
-   (comment-alt gray6)
    (warning     orange1)
    (err         red1)
 

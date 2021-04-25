@@ -73,7 +73,8 @@
    (type        orange0)
 
    (comment     brown8)
-   (comment-alt teal7)
+   (comment-alt capri7)
+   (comment-contrast brown7)
 
    (str         ultramarine1)
    (str-alt     ultramarine4)

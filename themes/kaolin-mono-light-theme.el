@@ -63,7 +63,8 @@
    (kaolin-white   bg4)
 
    (comment     lime7)
-   (comment-alt gray7)
+   (comment-alt orange2)
+   (comment-contrast lime6)
 
    ;; (keyword     aquamarine2)
    ;; (keyword     spring-green2)

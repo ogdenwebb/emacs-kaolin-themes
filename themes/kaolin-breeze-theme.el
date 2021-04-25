@@ -50,7 +50,8 @@
    (type        spring-green2)
 
    (comment     lime7)
-   ;; (alt-comment "#ffaaaa")
+   (comment-alt pink7)
+   (comment-contrast teal2)
 
    (str         magenta4)
    (str-alt     magenta2)

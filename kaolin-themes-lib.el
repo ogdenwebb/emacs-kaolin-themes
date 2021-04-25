@@ -404,15 +404,17 @@
     (pane bg0)
 
     (dim-buffer  bg0)
+
     (comment     gray3)
     (comment-alt teal2)
+    (comment-contrast gray5)
 
     ;; TODO:
     (kaolin-comment
       (pcase kaolin-themes-comments-style
         ('normal comment)
-        ('color  comment-alt)
-        ('bright comment)))
+        ('alt  comment-alt)
+        ('contrast comment-contrast)))
 
     (kaolin-org-heading-size (if kaolin-themes-org-scale-headings 1.1 1.0))
 

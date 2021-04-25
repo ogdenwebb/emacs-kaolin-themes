@@ -45,7 +45,9 @@
 
 
    (comment     "#454459")
-   (comment-alt vermilion7)
+   (comment-alt teal7)
+   (comment-contrast "#575673")
+
    (warning     orange1)
    (err         crimson1)
 

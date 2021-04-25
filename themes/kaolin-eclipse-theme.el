@@ -55,7 +55,9 @@
    ;; (prep        aquamarine3
 
    (comment     purple7)
-   (comment-alt "#663E66")
+   (comment-alt capri4)
+   (comment-contrast purple8)
+
    (str         cerise3)
    (str-alt     blue4)
    (doc         str-alt)

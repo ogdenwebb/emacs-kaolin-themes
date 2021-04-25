@@ -50,10 +50,10 @@
    (num         capri3)
    (bool        num)
 
-   ;; TODO: a bit more darken
    (comment     ultramarine7)
-   ;; (comment-alt vermilion7)
-   (comment-alt azure4)
+   (comment-alt cerulean4)
+   (comment-contrast ultramarine8)
+
    (str         spring-green3)
    ;; TODO:
    (str-alt     harlequin3)

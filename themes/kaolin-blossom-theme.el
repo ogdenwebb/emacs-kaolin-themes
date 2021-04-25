@@ -58,8 +58,8 @@
    ;; (comment "#635C4A")
    ;; (comment brown7)
    (comment     "#6B4B53")
-   ;; TODO:
-   (comment-alt teal2)
+   (comment-alt green7)
+   (comment-contrast "#8A636D")
 
    (str         new-cyan)
    (str-alt     cyan4)

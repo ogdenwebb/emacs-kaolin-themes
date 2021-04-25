@@ -53,8 +53,8 @@
    (type        lime4)
 
    (comment     gray5)
-   ;; (comment     orange7)
    (comment-alt orange7)
+   (comment-contrast gray7)
 
    (str         pink3)
    ;; (str         "#F8C08F")
