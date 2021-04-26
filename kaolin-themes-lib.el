@@ -3,18 +3,19 @@
 ;;
 
 ;; TODO: change :bold and :italic to :weight and :slant
+;; NOTE: Emacs in 28 has a built-in versin of color-dark-p
 
-(defun color-lab-luminance (color)
+(defun kaolin-themes--color-lab-luminance (color)
   "Return the luminance through LAB color space of a color string (e.g. \"#ffaa00\", \"blue\")."
   (nth 0 (apply #'color-srgb-to-lab (color-name-to-rgb color))))
 
-(defun color-dark-p (color)
+(defun kaolin-themes--color-dark-p (color)
   "Return t if COLOR (e.g. hex string or name) is dark."
-  (< (color-lab-luminance color) 50))
+  (< (kaolin-themes--color-lab-luminance color) 50))
 
-(defun color-light-p (color)
+(defun kaolin-thems--color-light-p (color)
   "Return t if COLOR (e.g. hex string or name) is light."
-  (>= (color-lab-luminance color) 50))
+  (>= (kaolin-themes--color-lab-luminance color) 50))
 
 ;;; Code:
 (defconst kaolin-palette
@@ -428,7 +429,8 @@
     (todo red1)
     (done spring-green3)
 
-    (adaptive-fg (if (color-dark-p bg1) fg1 bg1))
+    (adaptive-fg (if (kaolin-themes--color-dark-p bg1) fg1 bg1))
+
     (tooltip-bg bg2)
     (tooltip-fg fg2)
     (tooltip-hl-bg brown2)
@@ -478,7 +480,7 @@
     ;; Custom buttons
     (button amber6)
     (button-color keyword)
-    (button-border (if (color-dark-p bg1) gray3 white4))
+    (button-border (if (kaolin-themes--color-dark-p bg1) gray3 white4))
     (button-hl amber3)
 
     ;; Mode-line
