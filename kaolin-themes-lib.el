@@ -1712,9 +1712,9 @@
     (completions-annotations (:foreground doc))
 
     ;; Selectrum
-    (selectrum-current-candidate   (:background hl-line :foreground hl :bold t))
-    (selectrum-primary-highlight   (:foreground search1))
-    (selectrum-secondary-highlight (:foreground search2))
+    (selectrum-current-candidate             (:background hl-line :foreground hl :bold t))
+    (selectrum-prescient-primary-highlight   (:foreground search1))
+    (selectrum-prescient-secondary-highlight (:foreground search2))
 
     ;; tabbar
     (tabbar-default             (:background bg1 :foreground bg1 :height 1.0))
