@@ -8,10 +8,10 @@
   "Kaolin shiva theme options."
   :group 'kaolin-themes)
 
-;; (defcustom kaolin-shiva-alt-bg nil
-;;   "Use alternative brighter background."
-;;   :type 'boolean
-;;   :group 'kaolin-shiva)
+(defcustom kaolin-shiva-alt-bg nil
+  "Use alternative brighter background."
+  :type 'boolean
+  :group 'kaolin-shiva)
 
 (defcustom kaolin-shiva-distinct-prep t
   "Use distinct preprocessor face."
@@ -37,7 +37,7 @@
    ;; bg1 #28211E
    ;; MAYBE: more brown bg (at least as alt-bg)?
    ;; (bg1 "#2a2028")
-   (bg1 "#2a2028")
+   (bg1 (if kaolin-shiva-alt-bg "#33242F" "#2a2028"))
    (bg2 "#382b36")
    (bg3 "#473644")
    (bg4 "#554151")
