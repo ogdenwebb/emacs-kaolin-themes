@@ -68,7 +68,7 @@
       (progn
         ;; Set fallback icon
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "file-text"
+         :icon (format " %s " (all-the-icons-octicon "book"
                                                     :height 1.10
                                                     :v-adjust 0.1))
          :extensions (fallback))
@@ -202,7 +202,7 @@
                       "mkv" "wav" "mp3" "ogg" "midi"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "file-text"
+         :icon (format " %s " (all-the-icons-octicon "book"
                        :height 1.1
                        :v-adjust 0.05))
          :extensions ("rst" "log" "txt" "contribute" "license" "readme" "changelog"))
