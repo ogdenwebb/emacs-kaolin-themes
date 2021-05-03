@@ -70,7 +70,7 @@
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "book"
                                                     :height 1.10
-                                                    :v-adjust 0.1))
+                                                    :v-adjust 0.0))
          :extensions (fallback))
 
         (treemacs-create-icon
@@ -115,11 +115,16 @@
          :extensions (tag-leaf))
 
         (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "book"))
+         :extensions (license))
+
+        (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "error"
                                              :height 0.9
                                              :face 'error))
-                              :extensions (error)
-                              :fallback (propertize "• " 'face 'font-lock-warning-face))
+         :extensions (error)
+         :fallback (propertize "• " 'face 'font-lock-warning-face))
+
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "warning"
                                                      :height 0.9
@@ -239,61 +244,68 @@
 
         ;; Media files icon
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "file-media" :v-adjust 0.1))
+         :icon (format " %s " (all-the-icons-faicon "camera" :v-adjust 0.05))
          :extensions ("jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
                       "psd" "ai" "eps" "indd" "webp"))
 
         ;; Font files
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "font" :v-adjust 0.1))
+         :icon (format " %s " (all-the-icons-faicon "font" :v-adjust 0.05))
          :extensions ("ttf" "otf" "woff2?"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "video-camera" :v-adjust 0.1))
+         :icon (format " %s " (all-the-icons-faicon "film" :height 0.95 :v-adjust 0.05))
          :extensions ("mkv" "avi" "mov" "mp4" "webm"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "music" :v-adjust 0.1))
+         :icon (format " %s " (all-the-icons-faicon "headphones" :v-adjust 0.05))
          :extensions ("mp3" "flac" "opus" "au" "aac" "ogg" "wav" "m4a" "midi"))
 
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "list" :v-adjust 0.02))
+         :extensions ("log" "zsh_history" "bash_history"))
 
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "checklist")) :extensions ("TODO"))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "book"
                        :height 1.1
-                       :v-adjust 0.05))
-         :extensions ("rst" "log" "txt" "contribute" "license" "readme" "changelog"))
+                       :v-adjust 0.0))
+         :extensions ("rst" "txt" "contribute" "license" "readme" "changelog"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "cogs"))
-         :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini" "iml" "dll" "DS_STORE"))
+         :icon (format " %s " (all-the-icons-faicon "cogs" :v-adjust 0.05))
+         :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini" "iml" "dll" "DS_STORE"
+                      ;; *nix related stuff
+                      "xprofile" "dircolors" "Xresources" "config"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "package"))
+         :icon (format " %s " (all-the-icons-octicon "package" :v-adjust 0.05))
          :extensions ("deb" "pkg" "rpm"))
 
         ;; Tag files
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-alltheicon "script"))
-         :extensions ("bashrc" "zshrc" "zshenv"))
+         :icon (format " %s " (all-the-icons-alltheicon "script" :v-adjust 0.05))
+         :extensions ("bashrc" "bash_profile" "profile" "zshrc" "zshenv" "zpofile" "zlogin" "zlogout"))
 
         ;; Tag files
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "tags"))
+         :icon (format " %s " (all-the-icons-fileicon "tag" :v-adjust 0.02))
          :extensions ("tags" "TAGS"))
 
+        ;; TODO use it for binary files?
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "code"))
-         :extensions ("a.out" "tpl" "erb" "mustache" "twig" "ejs" "mk"))
+         :icon (format " %s " (all-the-icons-octicon "code" :v-adjust 0.05))
+         :extensions ("a.out" "tpl" "erb" "twig" "ejs" "mk"))
 
         ;; Keys
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "key"))
+         :icon (format " %s " (all-the-icons-octicon "key" :v-adjust 0.05))
          :extensions ("key" "pem" "p12" "crt" "pub" "gpg"))
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-octicon "file-zip"))
+         :icon (format " %s " (all-the-icons-faicon "server" :v-adjust 0.0))
          :extensions ("zip" "xz" "tar" "gz" "7z" "rar"))
         ))
 
