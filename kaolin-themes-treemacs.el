@@ -146,7 +146,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "bar-chart")) :extensions ("dat"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "csharp-line")) :extensions ("cs" "csx"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "css3")) :extensions ("css"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "fsharp")) :extensions ("fs[ix]?"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "fsharp")) :extensions ("fs" "fsi" "fsx" "fsscript"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git")) :extensions ("gitignore" "git" "gitattributes" "gitconfig" "gitmodules"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "git-merge")) :extensions ("MERGE_"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "git-commit")) :extensions ("COMMIT_EDITMSG"))
@@ -192,7 +192,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "pony")) :extensions ("pony"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "powershell")) :extensions ("ps1"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tcl")) :extensions ("tcl"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "terraform")) :extensions ("\\.tf\\(vars\\|state\\)?$"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "terraform")) :extensions ("tf" "tfvars" "tfstate"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "terminal" :v-adjust 0.05)) :extensions ("sh" "zsh" "fish"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "nginx" :v-adjust 0.05)) :extensions ("nginx"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nimrod")) :extensions ("nim" "nims" "nimble"))
@@ -232,7 +232,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "ejs")) :extensions ("ejs"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "gulp")) :extensions ("gulpfile"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "grunt")) :extensions ("gruntfile"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge" :v-adjust 0.05)) :extensions ("js" "es[0-9]"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge" :v-adjust 0.05)) :extensions ("js" "es0" "es1" "es2" "es3" "es4" "es5" "es6" "es7" "es8" "es9"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jsx2-alt")) :extensions ("jsx"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "nodejs")) :extensions ("node"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "npm")) :extensions ("npmignore" "package.json" "package-lock.json"))
@@ -251,7 +251,7 @@
         ;; Font files
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-faicon "font" :v-adjust 0.05))
-         :extensions ("ttf" "otf" "woff2?"))
+         :extensions ("ttf" "otf" "woff2"))
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-faicon "film" :height 0.95 :v-adjust 0.05))
