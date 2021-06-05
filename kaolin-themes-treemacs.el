@@ -216,7 +216,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jinja")) :extensions ("j2" "jinja2"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "dockerfile")) :extensions ("dockerfile" "dockerignore"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "racket")) :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt"))
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "reason")) :extensions ("re" "rei"))
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "reason" :v-adjust -0.15)) :extensions ("re" "rei"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "sass" :v-adjust 0.02)) :extensions ("scss" "sass"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "stylus")) :extensions ("styl"))
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "less")) :extensions ("less"))
@@ -244,7 +244,7 @@
 
         ;; Media files icon
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "camera" :v-adjust 0.05))
+         :icon (format " %s " (all-the-icons-faicon "paint-brush" :v-adjust 0.05))
          :extensions ("jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
                       "psd" "ai" "eps" "indd" "webp"))
 
