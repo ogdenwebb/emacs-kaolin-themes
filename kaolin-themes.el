@@ -145,6 +145,11 @@
   "If not-nil, enable distinct border in mode-line."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-modeline-padded nil
+  "Add extra padding for mode-line. Should be either nil/t or desired integer value. It has prior over `kaolin-themes-modeline-border'."
+  :group 'kaolin-themes
+  :type '(choice integer boolean))
+
 (defcustom kaolin-themes-distinct-metakeys t
   "If not-nil, enable distinct color for metadata key (e.g. metakeys in org-mode).
 Otherwise inherit from comments."

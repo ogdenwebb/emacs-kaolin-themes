@@ -488,7 +488,8 @@
     (line-inactive     comment)
     (line-bg1          bg2)
     (line-bg2          bg4)
-    (line-border       (if kaolin-themes-modeline-border bg4 line-bg1))
+    (line-border       (if (and (not kaolin-themes-modeline-padded) kaolin-themes-modeline-border) bg4 line-bg1))
+    (line-box-size     (if kaolin-themes-modeline-padded (if (integerp kaolin-themes-modeline-padded) kaolin-themes-modeline-padded 4) 2))
     (line-color1       fg1)
     (line-color2       builtin)
     (segment-active    gray8)
@@ -842,9 +843,9 @@
 
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-fg :bold nil
-                                      :box (:line-width 2 :color line-border)))
+                                      :box (:line-width line-box-size :color line-border)))
     (mode-line-inactive  (:background line-bg1 :foreground line-inactive :bold nil
-                                      :box (:line-width 2 :color line-border)))
+                                      :box (:line-width line-box-size :color line-border)))
     (mode-line-buffer-id (:background nil :foreground line-color2 :bold nil))
     (mode-line-highlight (:foreground hl :box nil :bold nil))
     (mode-line-emphasis  (:foreground hl))
@@ -1712,6 +1713,8 @@
     (completions-annotations (:foreground doc))
 
     ;; Selectrum
+    ;; (selectrum-quick-keys-match       (:background keysym :foreground bg1 :underline underline))
+    ;; (selectrum-quick-keys-highlight   (:background keysym :foreground bg1))
     (selectrum-current-candidate             (:background hl-line :foreground hl :bold t))
     (selectrum-prescient-primary-highlight   (:foreground search1))
     (selectrum-prescient-secondary-highlight (:foreground search2))
