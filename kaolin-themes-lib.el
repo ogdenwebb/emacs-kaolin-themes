@@ -1324,6 +1324,12 @@
     (popup-menu-selection-face (:background tooltip-hl-bg :foreground tooltip-hl-fg :bold bold))
     (popup-tip-face            (:background tooltip-hl-bg :foreground fg1 :bold bold))
 
+    ;; from-menu
+    (frog-menu-posframe-background-face (:background tooltip-bg))
+    (frog-menu-border                   (:background bg4))
+    (frog-menu-prompt-face              (:foreground prompt))
+    (frog-menu-action-keybinding-face   (:foreground keysym :bold bold))
+
     ;; Terminal
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground kaolin-black))
