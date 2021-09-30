@@ -1502,6 +1502,12 @@
     (evil-snipe-first-match-face (:foreground search1))
     (evil-snipe-matches-face     (:foreground search2))
 
+    ;; evil-mc
+    (evil-mc-cursor-default-face (:background kaolin-cyan :foreground bg1 :inverse-video nil))
+    (evil-mc-region-face         (:inherit 'region))
+    (evil-mc-cursor-bar-face      (:background kaolin-cyan :foreground bg1 :height 1))
+    (evil-mc-cursor-hbar-face    (:underline (:color hl)))
+
     ;; Beacon-mode
     (beacon-fallback-background (:background pulse))
 
@@ -1679,6 +1685,25 @@
     (aw-leading-char-face (:background nil :foreground hl :bold bold :height 1.4))
     (aw-background-face   (:foreground comment :bold bold))
     (aw-key-face          (:foreground keysym :bold bold))
+
+    ;; Marginalia
+    (marginalia-documentation (:inherit 'font-lock-doc-face))
+    (marginalia-key           (:foreground keysym))
+    (marginalia-mode          (:foreground str))
+    (marginalia-number        (:foreground num))
+    (marginalia-size          (:foreground num))
+    (marginalia-type          (:foreground type))
+    (marginalia-date          (:foreground str))
+    (marginalia-value         (:foreground var))
+    (marginalia-char          (:foreground hl))
+    (marginalia-on            (:inherit 'success))
+    (marginalia-file-owner    (:foreground prep))
+
+    (marginalia-file-name       (:foreground str))
+    (marginalia-file-priv-dir   (:foreground keyword))
+    (marginalia-file-priv-read  (:foreground diff-add))
+    (marginalia-file-priv-write (:foreground diff-mod))
+    (marginalia-file-priv-exec  (:foreground diff-rem))
 
     ;; Ivy
     (ivy-confirm-face            (:inherit 'success))
