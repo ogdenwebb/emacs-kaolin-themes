@@ -42,13 +42,14 @@
    (kaolin-white   fg1)
 
    (keyword     purple3)
-   ;; TODO: fix treemacs, imenu-list level1-2 and etc
-   (builtin     purple3)
+   ;; (builtin     purple3)
+   (builtin     pink3)
    (functions   builtin)
    (var         ultramarine3)
    (const       cerulean4)
    (type        cyan3)
-   (num         cerise3)
+   ;; (num         cerise3)
+   (num         orange3)
    (bool        num)
    ;; (prep        amber3)
    (prep        capri3)
