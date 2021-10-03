@@ -1507,9 +1507,9 @@
     (ert-test-result-expected (:background done :foreground bg1))
     (ert-test-result-unexpected (:background err :foreground bg1))
 
-
     ;; Nim
     (nim-font-lock-export-face (:inherit 'font-lock-function-name-face :italic nil))
+    (nim-font-lock-number-face (:foreground num))
 
     ;; Evil ex
     (evil-ex-info                   (:foreground orange1))
@@ -1582,6 +1582,11 @@
     (cider-test-success-face                 (:background done :foreground bg1))
     (cider-traced-face                       (:background bg2 :foreground fg2 :box (:color comment :line-width -1)))
     (cider-warning-highlight-face            (:foreground fg2 :underline (:style underline-style :color warning)))
+
+    ;; kaocha-runner
+    (kaocha-runner-error-face (:foreground err))
+    (kaocha-runner-success-face (:foreground done))
+    (kaocha-runner-warning-face (:inherit warning))
 
     ;; Markdown
     (markdown-bold-face               (:inherit 'bold))
@@ -1791,6 +1796,12 @@
     (selectrum-current-candidate             (:background hl-line :foreground hl :bold t))
     (selectrum-prescient-primary-highlight   (:foreground search1))
     (selectrum-prescient-secondary-highlight (:foreground search2))
+
+    ;; Orderless
+    (orderless-match-face-0 (:foreground hl))
+    (orderless-match-face-1 (:foreground search1))
+    (orderless-match-face-2 (:foreground search2))
+    (orderless-match-face-3 (:foreground search3))
 
     ;; tabbar
     (tabbar-default             (:background bg1 :foreground bg1 :height 1.0))
