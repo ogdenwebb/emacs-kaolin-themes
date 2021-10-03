@@ -549,31 +549,35 @@
     (font-lock-variable-name-face     (:foreground var))
     (font-lock-warning-face           (:background nil :foreground warning))
 
+    (font-lock-regexp-grouping-construct (:foreground num))
+    (font-lock-regexp-grouping-backslash (:foreground num))
+
     ;; Kaolin faces
     (kaolin-themes-boolean (:foreground bool))
 
     ;; General
-    (default             (:background bg1 :foreground fg1))
-    (warning             (:foreground warning))
-    (error               (:foreground err))
-    (shadow              (:foreground comment))
-    (file-name-shadow    (:inherit 'shadow))
-    (region              (:background selection :foreground fg4))
-    (secondary-selection (:background hl-bg :foreground adaptive-fg))
-    (fringe              (:background fringe :foreground fg1))
-    (cursor              (:background cursor))
-    (vertical-border     (:foreground win-border))
-    (window-divider      (:foreground win-border))
-    (minibuffer-prompt   (:background nil :foreground prompt :bold bold))
-    (bold                (:bold bold))
-    (italic              (:italic italic))
-    (default-italic      (:italic italic))
-    (bold-italic         (:bold bold :italic italic))
-    (link                (:foreground link :underline underline))
-    (link-visited        (:inherit 'link :underline nil))
-    (success             (:background nil :foreground done))
-    (escape-glyph        (:background nil :foreground cyan3))
-    (trailing-whitespace (:background err))
+    (default               (:background bg1 :foreground fg1))
+    (warning               (:foreground warning))
+    (error                 (:foreground err))
+    (shadow                (:foreground comment))
+    (file-name-shadow      (:inherit 'shadow))
+    (region                (:background selection :foreground fg4))
+    (secondary-selection   (:background hl-bg :foreground adaptive-fg))
+    (fringe                (:background fringe :foreground fg1))
+    (cursor                (:background cursor))
+    (vertical-border       (:foreground win-border))
+    (window-divider        (:foreground win-border))
+    (minibuffer-prompt     (:background nil :foreground prompt :bold bold))
+    (bold                  (:bold bold))
+    (italic                (:italic italic))
+    (default-italic        (:italic italic))
+    (bold-italic           (:bold bold :italic italic))
+    (link                  (:foreground link :underline underline))
+    (link-visited          (:inherit 'link :underline nil))
+    (success               (:background nil :foreground done))
+    (escape-glyph          (:background nil :foreground cyan3))
+    (trailing-whitespace   (:background err))
+    (fill-column-indicator (:foreground bg4))
 
     (menu        (:background bg2 :foreground fg2))
     (header-line (:background nil :foreground num))
@@ -585,7 +589,7 @@
     (isearch      (:background nil :foreground hl :bold bold :underline underline))
     (isearch-fail (:background nil :foreground err))
 
-    ;; Interface
+    ;; Emacs UI
     (package-name                   (:inherit 'link :underline nil))
     (button                         (:inherit 'link))
     (custom-button                  (:background nil :foreground button-color :box (:line-width 1 :color button-color :style 'none) :height 0.9))
@@ -1246,6 +1250,8 @@
    (ediff-odd-diff-C (:background bg4))
 
    ;; calendar.el
+   (diary (:foreground kaolin-yellow))
+   (holiday (:foreground bg1 :background kaolin-red))
    (calendar-today (:background bg4 :foreground keyword))
 
    ;; calfw
@@ -1674,6 +1680,15 @@
     (tldr-command-itself (:background functions :foreground bg1))
     (tldr-code-block     (:background bg2 :foreground functions))
 
+    ;; antlr-mode
+    (antlr-keyword  (:inherit 'font-lock-keyword-face))
+    (antlr-syntax   (:inherit 'font-lock-constant-face))
+    (antlr-ruledef  (:inherit 'font-lock-function-name-face))
+    (antlr-ruleref  (:inherit 'font-lock-type-face))
+    (antlr-tokendef (:inherit 'font-lock-function-name-face))
+    (antlr-tokenref (:inherit 'font-lock-type-face))
+    (antlr-literal  (:inherit 'font-lock-string-face))
+
      ;; Avy
     (avy-background-face (:inherit 'font-lock-comment-face))
     (avy-lead-face       (:background spring-green2 :foreground adaptive-fg :weight 'bold))
@@ -1751,6 +1766,7 @@
     ;; Default completion
     (completions-common-part (:foreground functions))
     (completions-annotations (:foreground doc))
+    ;; (completions-first-difference (:foreground diff-mod))
 
     ;; Selectrum
     ;; (selectrum-quick-keys-match       (:background keysym :foreground bg1 :underline underline))
