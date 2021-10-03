@@ -1716,6 +1716,15 @@
     (antlr-tokenref (:inherit 'font-lock-type-face))
     (antlr-literal  (:inherit 'font-lock-string-face))
 
+    ;; Anzu mode
+    (anzu-mode-line (:foreground num))
+    (anzu-mode-line-no-match (:foreground err))
+    (anzu-replace-highlight (:inherit 'lazy-highlight))
+    (anzu-replace-to (:inherit 'isearch))
+    (anzu-match-1 (:foreground search1))
+    (anzu-match-2 (:foreground search2))
+    (anzu-match-3 (:foreground search3))
+
      ;; Avy
     (avy-background-face (:inherit 'font-lock-comment-face))
     (avy-lead-face       (:background spring-green2 :foreground adaptive-fg :weight 'bold))
