@@ -1820,10 +1820,16 @@
     (tabbar-selected-modified   (:inherit 'tabbar-selected :foreground diff-add))
 
     ;; built-in tab-bar mode
-    (tab-bar (:background bg0 :foreground fg1))
-    (tab-line (:background bg0 :foreground fg1))
-    (tab-bar-tab (:background bg1 :foreground fg1))
-    (tab-bar-tab-inactive (:background bg1 :foreground comment))
+    (tab-bar                  (:background bg0 :foreground fg1))
+    (tab-bar-tab              (:background bg1 :foreground fg1))
+    (tab-bar-tab-inactive     (:background bg1 :foreground comment))
+
+    ;; built-in tab-line
+    (tab-line                 (:background bg0 :foreground fg1))
+    (tab-line-tab             (:background bg1 :foreground fg1))
+    (tab-line-tab-inactive    (:background bg1 :foreground comment))
+    (tab-line-close-highlight (:foreground kaolin-red))
+
 
     ;; Awesome-tabs
     (awesome-tab-default    (:background bg1 :foreground bg1))
