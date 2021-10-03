@@ -694,6 +694,10 @@
     (diredfl-tagged-autofile-name   (:foreground num :underline underline))
     (diredfl-write-priv             (:foreground diff-mod))
 
+    ;; TODO: ERC - IRC client for Emacs
+    (erc-timestamp-face (:foreground num))
+    (erc-error-face     (:inherit 'font-lock-error-face))
+
     ;; Jabber
     (jabber-activity-face          (:foreground todo   :weight 'bold))
     (jabber-activity-personal-face (:foreground str  :weight 'bold))
@@ -720,6 +724,18 @@
     (highlight-quoted-quote   (:inherit 'font-lock-builtin-face))
     (highlight-quoted-symbol  (:inherit 'font-lock-keyword-face))
     (highlight-symbol-face    (:background bg4))
+
+    ;; hi-lock
+    (hi-black-hb (:inherit 'bold))
+    (hi-aquamarine (:foreground bg1 :background kaolin-cyan))
+    (hi-blue (:foreground bg1 :background kaolin-blue))
+    (hi-blue-b (:foreground kaolin-blue :inherit 'bold))
+    (hi-green (:foreground bg1 :background kaolin-green))
+    (hi-green-b (:foreground kaolin-green :weight 'bold))
+    (hi-pink (:foreground bg1 :background kaolin-magenta))
+    (hi-red-b (:foreground kaolin-red :weight 'bold))
+    (hi-yellow (:foreground bg1 :background kaolin-yellow))
+    (hi-salmon (:foreground bg1 :background diff-bg-mod))
 
     ;; Highlight indent guides
     (highlight-indent-guides-odd-face        (:background hl-indent))
@@ -912,6 +928,7 @@
 
     ;; Additional completion
     (ac-completion-face    (:foreground keyword :underline underline))
+    (icomplete-first-match (:inherit 'match))
     (icompletep-determined (:foreground builtin))
 
     ;; info faces
