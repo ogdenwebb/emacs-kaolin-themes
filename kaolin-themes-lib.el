@@ -1467,6 +1467,11 @@
     (org-habit-overdue-face (:background diff-rem))
     (org-habit-overdue-future-face (:background diff-bg-rem))
 
+    ;; Re-builder
+    (reb-match-0 (:foreground bg1 :background hl))
+    (reb-match-1 (:foreground bg1 :background search1))
+    (reb-match-2 (:foreground bg1 :background search2))
+    (reb-match-3 (:foreground bg1 :background search3))
 
     ;; Emmet
     (emmet-preview-input   (:foreground nil :background nil))
