@@ -1588,6 +1588,11 @@
     (cider-traced-face                       (:background bg2 :foreground fg2 :box (:color comment :line-width -1)))
     (cider-warning-highlight-face            (:foreground fg2 :underline (:style underline-style :color warning)))
 
+    ;; Clojure test
+    (clojure-test-failure-face (:background nil :inherit 'flymake-warning))
+    (clojure-test-error-face   (:background nil :inherit 'flymake-error))
+    (clojure-test-success-face (:background nil :inherit 'flymake-note))
+
     ;; kaocha-runner
     (kaocha-runner-error-face (:foreground err))
     (kaocha-runner-success-face (:foreground done))
