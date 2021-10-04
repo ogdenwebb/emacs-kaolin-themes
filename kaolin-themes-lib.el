@@ -964,6 +964,12 @@
     (company-preview-common           (:background bg2 :foreground diff-mod))
     (company-preview-search           (:inherit 'company-tooltip-search))
 
+    ;; corfu
+    (corfu-background (:background tooltip-bg))
+    (corfu-echo       (:foreground doc))
+    (corfu-current    (:background tooltip-hl-bg :foreground tooltip-hl-fg))
+    (corfu-border     (:background bg4))
+
     ;; all-the-icons
     (all-the-icons-red      (:foreground red1))
     (all-the-icons-red-alt  (:foreground red0))
