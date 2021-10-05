@@ -1711,6 +1711,11 @@
     (wgrep-file-face   (:foreground comment))
     (wgrep-reject-face (:inherit 'error))
 
+    ;; xref
+    (xref-file-header (:foreground header))
+    (xref-line-number (:inherit 'compilation-line-number))
+    (xref-match       (:foreground hl :underline underline))
+
     ;; tldr
     (tldr-title          (:foreground header :weight 'bold))
     (tldr-introduction   (:foreground comment))
@@ -1821,6 +1826,12 @@
     (selectrum-current-candidate             (:background hl-line :foreground hl :bold t))
     (selectrum-prescient-primary-highlight   (:foreground search1))
     (selectrum-prescient-secondary-highlight (:foreground search2))
+
+    ;; Vertico
+    (vertico-current (:background hl-line :foreground hl :bold t))
+    (vertico-multiline (:inherit 'shadow))
+    (vertico-group-title (:inherit 'shadow))
+    (vertico-group-separator (:inherit 'shadow :strike-through t))
 
     ;; Orderless
     (orderless-match-face-0 (:foreground hl))
