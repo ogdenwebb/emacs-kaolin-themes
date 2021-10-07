@@ -859,6 +859,19 @@
     (elfeed-log-debug-level-face     (:foreground kaolin-blue))
     (elfeed-log-error-level-face     (:foreground err))
 
+    ;; debbugs
+    (debbugs-gnu-done      (:foreground comment))
+    (debbugs-gnu-forwarded (:foreground kaolin-yellow))
+    (debbugs-gnu-handled   (:foreground done))
+    (debbugs-gnu-new       (:foreground todo))
+    (debbugs-gnu-pending   (:foreground kaolin-cyan))
+    (debbugs-gnu-stale-1   (:foreground rb1))
+    (debbugs-gnu-stale-2   (:foreground rb2))
+    (debbugs-gnu-stale-3   (:foreground rb3))
+    (debbugs-gnu-stale-4   (:foreground rb4))
+    (debbugs-gnu-stale-5   (:foreground rb5))
+    (debbugs-gnu-tagged    (:foreground prep))
+
     ;; TODO: Newsticker faces
 
     ;; Modeline
