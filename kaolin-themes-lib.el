@@ -1852,6 +1852,9 @@
     (vertico-multiline (:inherit 'shadow))
     (vertico-group-title (:inherit 'shadow))
     (vertico-group-separator (:inherit 'shadow :strike-through t))
+    ;; Vertico-quick
+    (vertico-quick1 (:background bg2 :foreground search1 :weight 'bold))
+    (vertico-quick2 (:background bg2 :foreground search2 :weight 'bold))
 
     ;; Orderless
     (orderless-match-face-0 (:foreground hl))
