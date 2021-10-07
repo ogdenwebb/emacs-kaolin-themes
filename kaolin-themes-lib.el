@@ -1617,6 +1617,13 @@
     (kaocha-runner-success-face (:foreground done))
     (kaocha-runner-warning-face (:inherit warning))
 
+    ;; erlang
+    ;; EDTS errors
+    (edts-face-warning-line (:inherit 'flymake-warning))
+    (edts-face-warning-mode-line (:foreground warning :weight 'bold))
+    (edts-face-error-line (:inherit 'flymake-error))
+    (edts-face-error-mode-line (:foreground err :weight 'bold))
+
     ;; Markdown
     (markdown-bold-face               (:inherit 'bold))
     (markdown-italic-face             (:inherit 'italic))
