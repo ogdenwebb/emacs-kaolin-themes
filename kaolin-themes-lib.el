@@ -1903,7 +1903,10 @@
     (centaur-tabs-unselected-modified        (:background bg0 :foreground todo))
     (centaur-tabs-active-bar-face            (:background keyword))
     (centaur-tabs-modified-marker-selected   (:inherit 'centaur-tabs-selected :foreground keyword))
-    (centaur-tabs-modified-marker-unselected (:inherit 'centaur-tabs-unselected :foreground keyword))))
+    (centaur-tabs-modified-marker-unselected (:inherit 'centaur-tabs-unselected :foreground keyword))
+
+    ;; perspective.el
+    (persp-selected-face (:foreground kaolin-blue :weight 'bold))))
 
 (provide 'kaolin-themes-lib)
 
