@@ -278,9 +278,9 @@
          :extensions ("log" "zsh_history" "bash_history")
          :fallback 'same-as-icon)
 
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "checklist")) :extensions ("TODO")
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "checklist" :v-adjust 0.05))
+         :extensions ("TODO")
          :fallback 'same-as-icon)
-                              
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "book"
