@@ -206,7 +206,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nix")) :extensions ("nix") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nvidia")) :extensions ("cu" "cuh") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "plx" "pm" "perl") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "perl6" :v-adjust 0.01)) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "raku" :v-adjust 0.01)) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "pug-alt")) :extensions ("pug") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "R")) :extensions ("r" "rdata" "rds" "rda") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tex")) :extensions ("tex") :fallback 'same-as-icon)
