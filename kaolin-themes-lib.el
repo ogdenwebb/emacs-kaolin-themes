@@ -5,6 +5,11 @@
 ;; TODO: change :bold and :italic to :weight and :slant
 ;; NOTE: Emacs in 28 has a built-in versin of color-dark-p
 
+;; TODO: replace all colors with variables
+;; TODO: add :extend t to some faces like hl-line
+
+;; TODO: allow modify colors on user side? Using extra map (such as kaolin-themes-user-colors, kaolin-themes-user-faces) to merge
+
 (defun kaolin-themes--color-lab-luminance (color)
   "Return the luminance through LAB color space of a color string (e.g. \"#ffaa00\", \"blue\")."
   (nth 0 (apply #'color-srgb-to-lab (color-name-to-rgb color))))
@@ -806,7 +811,7 @@
     (message-header-cc            (:inherit 'message-header-to))
     (message-header-name          (:foreground header))
     (message-header-newsgroups    (:foreground type  :slant 'normal))
-    (message-header-other         (:foreground fg0 :background nil :weight 'normal))
+    (message-header-other         (:foreground fg1 :background nil :weight 'normal))
     (message-mml                  (:foreground comment))
     (message-separator            (:foreground comment))
 
@@ -1044,9 +1049,9 @@
     (magit-diff-context           (:background bg1 :foreground fg3))
     (magit-diff-context-highlight (:background bg2 :foreground fg2))
     (magit-diff-added             (:background bg1 :foreground diff-bg-add))
-    (magit-diff-added-highlight   (:background diff-bg-add :foreground fg0))
+    (magit-diff-added-highlight   (:background diff-bg-add :foreground fg1))
     (magit-diff-removed           (:background bg1 :foreground diff-bg-rem))
-    (magit-diff-removed-highlight (:background diff-bg-rem :foreground fg0))
+    (magit-diff-removed-highlight (:background diff-bg-rem :foreground fg1))
     (magit-diffstat-added         (:foreground diff-add))
     (magit-diffstat-removed       (:foreground diff-rem))
     (magit-tag                    (:foreground orange1))
