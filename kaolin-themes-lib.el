@@ -1224,6 +1224,10 @@
     (undo-tree-visualizer-unmodified-face    (:foreground done))
     (undo-tree-visualizer-register-face      (:foreground type))
 
+    ;; Vundo
+    (vundo-default (:foreground fg1))
+    (vundo-highlight (:foreground hl :weight 'bold))
+
     ;; Rainbow delimeters
     ;; TODO: light themes
     (show-paren-match (:background bg2 :foreground rb-match :bold bold))
