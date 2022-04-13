@@ -1389,6 +1389,25 @@
     (frog-menu-action-keybinding-face   (:foreground keysym :bold bold))
 
     ;; Terminal
+
+    ;; Ansi-color faces (built-in Emacs 28.1+)
+    (ansi-color-black          (:foreground kaolin-black :background kaolin-black))
+    (ansi-color-red            (:foreground kaolin-red :background kaolin-red))
+    (ansi-color-green          (:foreground kaolin-green :background kaolin-green))
+    (ansi-color-yellow         (:foreground kaolin-yellow :background kaolin-yellow))
+    (ansi-color-blue           (:foreground kaolin-blue :background kaolin-blue))
+    (ansi-color-magenta        (:foreground kaolin-magenta :background kaolin-magenta))
+    (ansi-color-cyan           (:foreground kaolin-cyan :background kaolin-cyan))
+    (ansi-color-white          (:foreground kaolin-white :background kaolin-white))
+    ;; (ansi-color-bright-black   (:inherit ansi-color-bright-black :weight bold))
+    ;; (ansi-color-bright-red     (:inherit ansi-color-bright-red :weight bold))
+    ;; (ansi-color-bright-green   (:inherit ansi-color-bright-green :weight bold))
+    ;; (ansi-color-bright-yellow  (:inherit ansi-color-bright-yellow :weight bold))
+    ;; (ansi-color-bright-blue    (:inherit ansi-color-bright-blue :weight bold))
+    ;; (ansi-color-bright-magenta (:inherit ansi-color-bright-magenta :weight bold))
+    ;; (ansi-color-bright-cyan    (:inherit ansi-color-bright-cyan :weight bold))
+    ;; (ansi-color-bright-white   (:inherit ansi-color-bright-white :weight bold))
+
     (term               (:background bg1 :foreground fg1))
     (term-color-black   (:foreground kaolin-black))
     (term-color-red     (:foreground kaolin-red))
