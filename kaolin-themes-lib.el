@@ -903,6 +903,17 @@
     (telephone-line-evil-emacs      (:inherit 'telephone-line-evil :background line-bg2 :foreground evil-emacs))
     (telephone-line-projectile      (:foreground var))
 
+    ;; N Λ N O Modeline
+    (nano-modeline-active           (:inherit 'mode-line))
+    (nano-modeline-active-name      (:background line-bg1 :foreground functions))
+    (nano-modeline-active-primary   (:background line-bg1 :foreground str))
+    (nano-modeline-active-secondary (:background line-bg1 :foreground var))
+    (nano-modeline-active-status-** (:background line-bg2 :foreground warning))
+    (nano-modeline-active-status-RO (:background line-bg2 :foreground err))
+    (nano-modeline-active-status-RW (:background line-bg2 :foreground line-fg))
+    (nano-modeline-inactive         (:inherit 'mode-line-inactive))
+
+
     ;; Doom-modeline
     (doom-modeline-bar                 (:background keyword))
     (doom-modeline-inactive-bar        (:background line-bg1))
