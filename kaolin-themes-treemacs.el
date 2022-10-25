@@ -2,9 +2,6 @@
 ;;; Commentary:
 
 ;;; Code:
-(unless (require 'all-the-icons nil t)
-  (error "Kaolin treemacs theme requires the all-the-icons package."))
-
 (defgroup kaolin-treemacs nil
   "Settings for Kaolin's treemacs theme."
   :group 'kaolin-themes)
@@ -49,6 +46,9 @@
         tab-width 1))
 
 (with-eval-after-load 'treemacs
+  (unless (require 'all-the-icons nil t)
+    (error "Kaolin treemacs theme requires the all-the-icons package."))
+
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--hook)
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remove-fringes)
   (advice-add 'treemacs-select-window :after #'kaolin-treemacs--remove-fringes)
