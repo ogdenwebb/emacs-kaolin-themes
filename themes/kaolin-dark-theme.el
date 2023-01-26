@@ -10,6 +10,7 @@
    (white2          "#c8c8d0")
    (white3          "#babac4")
    (white4          "#adadb9")
+   (ultramarine4    "#968cc7")
 
    (selection aquamarine6)
 
