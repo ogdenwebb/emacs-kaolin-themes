@@ -585,7 +585,7 @@
     (fill-column-indicator (:foreground bg4))
 
     (menu        (:background bg2 :foreground fg2))
-    (header-line (:background nil :foreground num))
+    (header-line (:background bg1 :foreground num))
     (tool-bar    (:inherit 'header-line))
 
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
