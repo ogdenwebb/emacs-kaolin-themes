@@ -622,6 +622,13 @@
     (widget-field                   (:background bg3 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
 
+    ;; Elpaca package manager
+    (elpaca-blocked           (:foreground warning :weight 'bold))
+    (elpaca-busy              (:foreground functions :weight 'bold))
+    (elpaca-failed            (:foreground err :weight 'bold))
+    (elpaca-finished          (:foreground done :weight 'bold))
+    (elpaca-ui-marked-package (:foreground str :weight 'bold))
+
     ;; Dashboard
     (dashboard-heading   (:foreground header))
     (dashboard-navigator (:foreground prep))
