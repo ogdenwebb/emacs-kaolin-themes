@@ -26,12 +26,27 @@
   :type 'number
   :group 'kaolin-treemacs)
 
-(defun kaolin-treemacs--remove-fringes ()
-  "Remove fringes in treemacs window."
-  (when (display-graphic-p)
-    (setq left-fringe-width 0)
-    (setq right-fringe-width 0)))
+;; Fringes
+;; Taken from doom-themes package
+(defcustom kaolin-themes-treemacs-indicator-width 3
+  "Treemacs bitmap indicators width."
+  :type 'integer
+  :group 'kaolin-treemacs)
 
+(defun kaolin-themes-treemacs-fringe-indicator ()
+  "Defines `treemacs--fringe-indicator-bitmap'"
+  (if (fboundp 'define-fringe-bitmap)
+      (define-fringe-bitmap 'treemacs--fringe-indicator-bitmap
+        (make-vector 26 #b111) nil kaolin-themes-treemacs-indicator-width)))
+
+(defun kaolin-themes-treemacs-hide-fringes-maybe (&rest _)
+  "Remove fringes in current window if `treemacs-fringe-indicator-mode' is nil"
+  (when (display-graphic-p)
+    (if treemacs-fringe-indicator-mode
+        (set-window-fringes nil kaolin-themes-treemacs-indicator-width 0)
+      (set-window-fringes nil 0 0))))
+
+;; Modeline
 (defun kaolin-treemacs--remove-modeline ()
   "Disable mode-line in treemacs buffer "
   (setq mode-line-format nil))
@@ -50,8 +65,8 @@
     (error "Kaolin treemacs theme requires the all-the-icons package."))
 
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--hook)
-  (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remove-fringes)
-  (advice-add 'treemacs-select-window :after #'kaolin-treemacs--remove-fringes)
+  (add-hook 'treemacs-mode-hook #'kaolin-themes-treemacs-hide-fringes-maybe)
+  (advice-add 'treemacs-select-window :after #'kaolin-themes-treemacs-hide-fringes-maybe)
   (unless kaolin-themes-treemacs-modeline
     (add-hook 'treemacs-mode-hook #'kaolin-treemacs--remove-modeline))
 
