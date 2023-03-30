@@ -33,7 +33,7 @@
   :type 'integer
   :group 'kaolin-treemacs)
 
-(defun kaolin-themes-treemacs-fringe-indicator ()
+(defun kaolin-themes-treemacs-setup-fringe-indicator ()
   "Defines `treemacs--fringe-indicator-bitmap'"
   (if (fboundp 'define-fringe-bitmap)
       (define-fringe-bitmap 'treemacs--fringe-indicator-bitmap
@@ -65,6 +65,8 @@
     (error "Kaolin treemacs theme requires the all-the-icons package."))
 
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--hook)
+  (add-hook 'treemacs-mode-hook #'kaolin-themes-treemacs-setup-fringe-indicator)
+
   (add-hook 'treemacs-mode-hook #'kaolin-themes-treemacs-hide-fringes-maybe)
   (advice-add 'treemacs-select-window :after #'kaolin-themes-treemacs-hide-fringes-maybe)
   (unless kaolin-themes-treemacs-modeline
