@@ -1506,7 +1506,7 @@
     (org-document-title            (:foreground builtin :bold bold :height 1.1))
     (org-document-info             (:foreground builtin))
     (org-footnote                  (:foreground fg4 :underline underline))
-    (org-quote                     (:background bg2 :foreground fg2 :italic italic))
+    (org-quote                     (:background bg2 :foreground fg2 :italic italic :extend t))
     (org-verse                     (:foreground fg3 :italic italic))
 
     (org-level-1            (:foreground keyword :bold bold :height kaolin-org-heading-size))
