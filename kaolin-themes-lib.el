@@ -540,8 +540,8 @@
   `(
     ;; Font-lock
     (font-lock-builtin-face           (:foreground builtin))
-    (font-lock-comment-delimiter-face (:background nil :foreground kaolin-comment :italic kaolin-themes-italic-comments))
-    (font-lock-comment-face           (:background nil :foreground kaolin-comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-delimiter-face (:background "unspecified" :foreground kaolin-comment :italic kaolin-themes-italic-comments))
+    (font-lock-comment-face           (:background "unspecified" :foreground kaolin-comment :italic kaolin-themes-italic-comments))
     (font-lock-constant-face          (:foreground const))
     (font-lock-doc-face               (:foreground doc))
     (font-lock-function-name-face     (:foreground functions))
@@ -552,7 +552,7 @@
     (font-lock-string-face            (:foreground str))
     (font-lock-type-face              (:foreground type))
     (font-lock-variable-name-face     (:foreground var))
-    (font-lock-warning-face           (:background nil :foreground warning))
+    (font-lock-warning-face           (:background "unspecified" :foreground warning))
 
     (font-lock-regexp-grouping-construct (:foreground num))
     (font-lock-regexp-grouping-backslash (:foreground num))
@@ -572,15 +572,15 @@
     (cursor                (:background cursor))
     (vertical-border       (:foreground win-border))
     (window-divider        (:foreground win-border))
-    (minibuffer-prompt     (:background nil :foreground prompt :bold bold))
+    (minibuffer-prompt     (:background "unspecified" :foreground prompt :bold bold))
     (bold                  (:bold bold))
     (italic                (:italic italic))
     (default-italic        (:italic italic))
     (bold-italic           (:bold bold :italic italic))
     (link                  (:foreground link :underline underline))
     (link-visited          (:inherit 'link :underline nil))
-    (success               (:background nil :foreground done))
-    (escape-glyph          (:background nil :foreground cyan3))
+    (success               (:background "unspecified" :foreground done))
+    (escape-glyph          (:background "unspecified" :foreground cyan3))
     (trailing-whitespace   (:background err))
     (fill-column-indicator (:foreground bg4))
 
@@ -591,8 +591,8 @@
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
 
     (match        (:background nil :foreground hl))
-    (isearch      (:background nil :foreground hl :bold bold :underline underline))
-    (isearch-fail (:background nil :foreground err))
+    (isearch      (:background "unspecified" :foreground hl :bold bold :underline underline))
+    (isearch-fail (:background "unspecified" :foreground err))
 
     ;; Emacs UI
     (package-name                   (:inherit 'link :underline nil))
@@ -616,9 +616,9 @@
     (custom-invalid                 (:background nil :foreground err))
     (custom-variable-tag            (:foreground var))
     (custom-variable-obsolete       (:inherit 'shadow))
-    (widget-documentation           (:background nil :foreground var))
+    (widget-documentation           (:background "unspecified" :foreground var))
     ;; (widget-button                  (:background nil :foreground keyword))
-    (widget-button-pressed          (:background nil :foreground builtin))
+    (widget-button-pressed          (:background "unspecified" :foreground builtin))
     (widget-field                   (:background bg3 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
 
@@ -818,7 +818,7 @@
     (message-header-cc            (:inherit 'message-header-to))
     (message-header-name          (:foreground header))
     (message-header-newsgroups    (:foreground type  :slant 'normal))
-    (message-header-other         (:foreground fg1 :background nil :weight 'normal))
+    (message-header-other         (:foreground fg1 :background "unspecified" :weight 'normal))
     (message-mml                  (:foreground comment))
     (message-separator            (:foreground comment))
 
@@ -893,7 +893,7 @@
                                       :box (:line-width line-box-size :color line-border)))
     (mode-line-inactive  (:background line-bg1 :foreground line-inactive :bold nil
                                       :box (:line-width line-box-size :color line-border)))
-    (mode-line-buffer-id (:background nil :foreground line-color2 :bold nil))
+    (mode-line-buffer-id (:background "unspecified" :foreground line-color2 :bold nil))
     (mode-line-highlight (:foreground hl :box nil :bold nil))
     (mode-line-emphasis  (:foreground hl))
 
@@ -998,7 +998,7 @@
     (company-tooltip-scrollbar-thumb  (:background company-scroll-fg))
     (company-template-field           (:foreground comment :underline t))
     (company-echo-common              (:background bg1 :foreground diff-mod))
-    (company-preview                  (:background nil :foreground keyword))
+    (company-preview                  (:background "unspecified" :foreground keyword))
     (company-preview-common           (:background bg2 :foreground diff-mod))
     (company-preview-search           (:inherit 'company-tooltip-search))
 
@@ -1270,7 +1270,7 @@
     (diff-function          (:background bg4 :foreground functions))
     (diff-nonexistent       (:foreground err))
     (diff-hunk-header       (:background bg4))
-    (diff-file-header       (:background nil :foreground keyword))
+    (diff-file-header       (:background "unspecified" :foreground keyword))
     (diff-added             (:background diff-bg-add :foreground adaptive-fg))
     (diff-changed           (:background diff-bg-mod :foreground adaptive-fg))
     (diff-removed           (:background diff-bg-rem :foreground adaptive-fg))
@@ -1554,7 +1554,7 @@
 
     ;; Smartparens
     ;; TODO:
-    (sp-pair-overlay-face (:foreground nil))
+    (sp-pair-overlay-face (:foreground "unspecified"))
 
     ;; Web-mode
     (css-selector                   (:inherit 'font-lock-builtin-face))
@@ -1822,7 +1822,7 @@
     (avy-lead-face-2     (:background capri2 :foreground adaptive-fg :weight 'bold))
 
     ;; Ace-window
-    (aw-leading-char-face (:background nil :foreground hl :bold bold :height 1.4))
+    (aw-leading-char-face (:background "unspecified" :foreground hl :bold bold :height 1.4))
     (aw-background-face   (:foreground comment :bold bold))
     (aw-key-face          (:foreground keysym :bold bold))
 
