@@ -590,14 +590,14 @@
 
     (tooltip      (:background tooltip-bg :foreground tooltip-fg))
 
-    (match        (:background nil :foreground hl))
+    (match        (:background "unspecified" :foreground hl))
     (isearch      (:background "unspecified" :foreground hl :bold bold :underline underline))
     (isearch-fail (:background "unspecified" :foreground err))
 
     ;; Emacs UI
     (package-name                   (:inherit 'link :underline nil))
     (button                         (:inherit 'link))
-    (custom-button                  (:background nil :foreground button-color :box (:line-width 1 :color button-color :style 'none) :height 0.9))
+    (custom-button                  (:background "unspecified" :foreground button-color :box (:line-width 1 :color button-color :style 'none) :height 0.9))
     (custom-button-mouse            (:inherit 'custom-button :foreground button-hl :box (:line-width 1 :color button-hl :style 'none)))
     (custom-button-pressed          (:inherit 'custom-button :foreground button-hl :box (:line-width 1 :color button-border :style 'none)))
     (custom-button-unraised         (:inherit 'custom-button))
@@ -608,16 +608,16 @@
     (custom-comment                 (:background hl-bg :foreground fg1))
     (custom-comment-tag             (:foreground comment))
     (custom-documentation           (:foreground fg1))
-    (custom-visibility              (:background nil :foreground functions :underline underline))
-    (custom-state                   (:background nil :foreground str))
-    (custom-changed                 (:background nil :foreground diff-mod))
-    (custom-set                     (:background nil :foreground done))
-    (custom-themed                  (:background nil :foreground done))
-    (custom-invalid                 (:background nil :foreground err))
+    (custom-visibility              (:background "unspecified" :foreground functions :underline underline))
+    (custom-state                   (:background "unspecified" :foreground str))
+    (custom-changed                 (:background "unspecified" :foreground diff-mod))
+    (custom-set                     (:background "unspecified" :foreground done))
+    (custom-themed                  (:background "unspecified" :foreground done))
+    (custom-invalid                 (:background "unspecified" :foreground err))
     (custom-variable-tag            (:foreground var))
     (custom-variable-obsolete       (:inherit 'shadow))
     (widget-documentation           (:background "unspecified" :foreground var))
-    ;; (widget-button                  (:background nil :foreground keyword))
+    ;; (widget-button                  (:background "unspecified" :foreground keyword))
     (widget-button-pressed          (:background "unspecified" :foreground builtin))
     (widget-field                   (:background bg3 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))
@@ -675,8 +675,8 @@
     (diredp-date-time              (:foreground prep))
     (diredp-flag-mark              (:background hl-bg :foreground diff-mod))
     (diredp-flag-mark-line         (:background hl-bg))
-    (diredp-deletion               (:background nil :foreground err :underline underline))
-    (diredp-deletion-file-name     (:background nil :foreground err :underline underline))
+    (diredp-deletion               (:background "unspecified" :foreground err :underline underline))
+    (diredp-deletion-file-name     (:background "unspecified" :foreground err :underline underline))
     (diredp-autofile-name          (:foreground num :underline underline))
 
     ;; diredfl
@@ -684,8 +684,8 @@
     (diredfl-compressed-file-name   (:foreground comment))
     (diredfl-compressed-file-suffix (:foreground comment))
     (diredfl-date-time              (:foreground prep))
-    (diredfl-deletion               (:background nil :foreground err :underline underline))
-    (diredfl-deletion-file-name     (:background nil :foreground err :underline underline))
+    (diredfl-deletion               (:background "unspecified" :foreground err :underline underline))
+    (diredfl-deletion-file-name     (:background "unspecified" :foreground err :underline underline))
     (diredfl-dir-heading            (:foreground header :weight 'bold :strike-through nil))
     (diredfl-dir-name               (:foreground keyword :weight 'bold :strike-through nil))
     (diredfl-dir-priv               (:foreground keyword :weight 'bold))
@@ -960,9 +960,9 @@
     (sml/read-only        (:foreground orange1))
 
     ;; Highlight TODOs
-    (fic-face         (:background nil :foreground todo :bold bold))
-    (fic-author-face  (:background nil :foreground todo :bold bold))
-    (hl-todo          (:background nil :foreground todo :bold bold))
+    (fic-face         (:background "unspecified" :foreground todo :bold bold))
+    (fic-author-face  (:background "unspecified" :foreground todo :bold bold))
+    (hl-todo          (:background "unspecified" :foreground todo :bold bold))
 
     ;; Additional completion
     (ac-completion-face    (:foreground keyword :underline underline))
@@ -1336,8 +1336,8 @@
     (cfw:face-header             (:background bg3 :foreground str))
     (cfw:face-annotation         (:foreground doc))
     (cfw:face-select             (:background hl :foreground bg1))
-    (cfw:face-toolbar            (:background nil :foreground nil))
-    (cfw:face-toolbar-button-on  (:background nil :foreground hl))
+    (cfw:face-toolbar            (:background "unspecified" :foreground "unspecified"))
+    (cfw:face-toolbar-button-on  (:background "unspecified" :foreground hl))
     (cfw:face-toolbar-button-off (:foreground fg4))
     (cfw:face-disable            (:background bg3 :foreground comment))
 
@@ -1382,7 +1382,7 @@
     (neo-vc-ignored-face  (:foreground comment))
 
     ;; Git gutter
-    (git-gutter:unchanged (:background bg1 :foreground nil))
+    (git-gutter:unchanged (:background bg1 :foreground "unspecified"))
     (git-gutter:added     (:background bg1 :foreground diff-add :bold bold))
     (git-gutter:modified  (:background bg1 :foreground diff-mod :bold bold))
     (git-gutter:deleted   (:background bg1 :foreground diff-rem :bold bold))
@@ -1491,7 +1491,7 @@
     (org-drawer                    (:foreground functions))
     (org-special-keyword           (:foreground prep))
     (org-table                     (:background bg2 :foreground fg3))
-    (org-formula                   (:background nil :foreground type))
+    (org-formula                   (:background "unspecified" :foreground type))
     (org-warning                   (:foreground warning :underline underline))
     (org-tag                       (:foreground prep))
     (org-checkbox                  (:foreground functions))
@@ -1546,8 +1546,8 @@
     (reb-match-3 (:foreground bg1 :background search3))
 
     ;; Emmet
-    (emmet-preview-input   (:foreground nil :background nil))
-    (emmet-preview-output  (:foreground nil :background nil))
+    (emmet-preview-input   (:foreground "unspecified" :background "unspecified"))
+    (emmet-preview-output  (:foreground "unspecified" :background "unspecified"))
 
     ;; Flx
     (flx-highlight-face (:foreground hl :underline underline))
@@ -1590,8 +1590,8 @@
 
     ;; Evil ex
     (evil-ex-info                   (:foreground orange1))
-    (evil-ex-substitute-matches     (:background nil :foreground err :underline underline))
-    (evil-ex-substitute-replacement (:background nil :foreground spring-green1))
+    (evil-ex-substitute-matches     (:background "unspecified" :foreground err :underline underline))
+    (evil-ex-substitute-replacement (:background "unspecified" :foreground spring-green1))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
 
     ;; Evil-goggles
@@ -1636,7 +1636,7 @@
     (cider-enlightened-face                  (:background bg2 :foreground fg2 :box (:color kaolin-yellow :line-width -1)))
     (cider-enlightened-local-face            (:foreground diff-mod))
     (cider-error-highlight-face              (:foreground err :underline (:style underline-style :color err)))
-    (cider-fragile-button-face               (:background nil :foreground kaolin-yellow :box (:line-width 1 :color button-color :style 'none)))
+    (cider-fragile-button-face               (:background "unspecified" :foreground kaolin-yellow :box (:line-width 1 :color button-color :style 'none)))
     (cider-fringe-good-face                  (:foreground done))
     (cider-instrumented-face                 (:background bg2 :foreground fg2 :box (:color kaolin-red :line-width -1)))
     (cider-reader-conditional-face           (:foreground fg2))
@@ -1652,8 +1652,8 @@
     (cider-stacktrace-filter-inactive-face   (:foreground num))
     (cider-stacktrace-fn-face                (:foreground fg1 :inherit 'bold))
     (cider-stacktrace-ns-face                (:foreground fg2 :inherit 'italic))
-    (cider-stacktrace-promoted-button-face   (:background nil :foreground kaolin-red :box (:line-width 1 :color comment :style 'none)))
-    (cider-stacktrace-suppressed-button-face (:background nil :foreground fg3 :box (:line-width 1 :color comment :style 'none)))
+    (cider-stacktrace-promoted-button-face   (:background "unspecified" :foreground kaolin-red :box (:line-width 1 :color comment :style 'none)))
+    (cider-stacktrace-suppressed-button-face (:background "unspecified" :foreground fg3 :box (:line-width 1 :color comment :style 'none)))
     (cider-test-error-face                   (:background warning :foreground bg1))
     (cider-test-failure-face                 (:background err :foreground bg1))
     (cider-test-success-face                 (:background done :foreground bg1))
@@ -1661,9 +1661,9 @@
     (cider-warning-highlight-face            (:foreground fg2 :underline (:style underline-style :color warning)))
 
     ;; Clojure test
-    (clojure-test-failure-face (:background nil :inherit 'flymake-warning))
-    (clojure-test-error-face   (:background nil :inherit 'flymake-error))
-    (clojure-test-success-face (:background nil :inherit 'flymake-note))
+    (clojure-test-failure-face (:background "unspecified" :inherit 'flymake-warning))
+    (clojure-test-error-face   (:background "unspecified" :inherit 'flymake-error))
+    (clojure-test-success-face (:background "unspecified" :inherit 'flymake-note))
 
     ;; kaocha-runner
     (kaocha-runner-error-face   (:foreground err))
@@ -1754,7 +1754,7 @@
     (helm-grep-running                        (:foreground functions))
     (helm-locate-finish                       (:foreground done))
     (helm-moccur-buffer                       (:foreground functions))
-    (helm-resume-need-update                  (:background err :foreground nil))
+    (helm-resume-need-update                  (:background err :foreground "unspecified"))
     (helm-lisp-completion-info                (:foreground doc))
     (helm-lisp-show-completion                (:background selection :foreground fg4 :underline t))
     (helm-prefarg                             (:foreground prep))
@@ -1765,7 +1765,7 @@
     (helm-source-go-package-godoc-description (:foreground str))
 
     ;; helm-swoop
-    (helm-swoop-line-number-face       (:background nil :foreground line-num-fg))
+    (helm-swoop-line-number-face       (:background "unspecified" :foreground line-num-fg))
     (helm-swoop-target-line-face       (:inherit 'isearch))
     (helm-swoop-target-line-block-face (:inherit 'isearch))
     (helm-swoop-target-word-face       (:background num :foreground bg1 :bold bold))
@@ -1850,16 +1850,16 @@
     (ivy-current-match           (:background hl-line :foreground hl :bold t))
     (ivy-cursor                  (:background bg3 :foreground fg1))
     (ivy-grep-info               (:foreground header))
-    (ivy-highlight-face          (:background nil :foreground functions))
-    (ivy-match-required-face     (:background nil :foreground err :bold nil))
+    (ivy-highlight-face          (:background "unspecified" :foreground functions))
+    (ivy-match-required-face     (:background "unspecified" :foreground err :bold nil))
     (ivy-modified-buffer         (:foreground diff-mod))
     (ivy-remote                  (:foreground prep))
     (ivy-subdir                  (:foreground keyword :bold bold))
     (ivy-virtual                 (:foreground ivy1))
-    (ivy-minibuffer-match-face-1 (:background nil :foreground ivy1))
-    (ivy-minibuffer-match-face-2 (:background nil :foreground search1 :bold bold))
-    (ivy-minibuffer-match-face-3 (:background nil :foreground search2 :bold bold))
-    (ivy-minibuffer-match-face-4 (:background nil :foreground search3 :bold bold))
+    (ivy-minibuffer-match-face-1 (:background "unspecified" :foreground ivy1))
+    (ivy-minibuffer-match-face-2 (:background "unspecified" :foreground search1 :bold bold))
+    (ivy-minibuffer-match-face-3 (:background "unspecified" :foreground search2 :bold bold))
+    (ivy-minibuffer-match-face-4 (:background "unspecified" :foreground search3 :bold bold))
 
     ;; Ivy posframe
     (ivy-posframe        (:background tooltip-bg))
