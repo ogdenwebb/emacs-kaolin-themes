@@ -8,9 +8,12 @@
   ;; Palette modification
   (
    (aquamarine3 "#63E8C1")
+   ;; (teal0 "#0fb49d")
+   (teal0 "#11ccb2")
    (cyan3 "#62D2DB")
    (spring-green0 "#31E183")
-   (magenta3 "#CE8EC8")
+   ;; (magenta3 "#CE8EC8")
+   (magenta3 "#D6A0D1")
    (capri5 "#181F23")
 
    (bg0 "#0C0D12" black0)
