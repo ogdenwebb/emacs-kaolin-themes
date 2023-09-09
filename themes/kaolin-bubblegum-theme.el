@@ -55,7 +55,7 @@
    (err         crimson1)
 
    (prep        violet3)
-   (num         violet3)
+   (num         cerise3)
    (bool        num)
 
    (str         cyan3)
