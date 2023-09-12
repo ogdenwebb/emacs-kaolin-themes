@@ -45,8 +45,9 @@
    (var         amber3)
    (const       orange3)
    (type        crimson3)
-   ;; (prep        capri3)
-   (prep        teal0)
+   ;; (prep        teal0)
+   (prep        ultramarine1)
+
    (num         capri3)
    (bool        num)
 
