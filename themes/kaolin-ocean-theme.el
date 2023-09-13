@@ -16,7 +16,8 @@
 (define-kaolin-theme ocean "Dark blue Kaolin theme variant."
   ;; Palette modification
   (
-   (bg0 (if kaolin-ocean-alt-bg black1 "#111119") black1)
+   ;; (bg0 (if kaolin-ocean-alt-bg black1 "#111119") black1)
+   (bg0 (if kaolin-ocean-alt-bg "#1e1e23" "#111119") black1)
    (bg1 (if kaolin-ocean-alt-bg black2 blue5) black2)
    ;; (bg1 "#20262C")
    (bg2 (if kaolin-ocean-alt-bg black3 "#1d1d2b") black3)
