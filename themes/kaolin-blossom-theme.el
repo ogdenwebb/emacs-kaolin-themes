@@ -29,7 +29,9 @@
    (crimson4      "#BA5B75")
 
    ;; Color vars
-   (bg0 "#1C1616" black0)
+   ;; (bg0 "#1C1616" black0)
+   ;; (bg0 "#241d1d" black0)
+   (bg0 "#271f1f" black0)
    (bg1 "#2E2025" black1)
    (bg2 "#33242A" black2)
    (bg3 "#3A2930" black3)
