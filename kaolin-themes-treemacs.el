@@ -115,7 +115,7 @@
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-material "close"
+         :icon (format "%s " (all-the-icons-material "remove"
                                              :size 1.0
                                              ;; :v-adjust 0.1
                                              :face 'font-lock-keyword-face))
@@ -123,15 +123,16 @@
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-faicon "chevron-down"
-                                             :size 0.9
-                                             :v-adjust 0.1
+         :icon (format "%s " (all-the-icons-material "add"
+                                             :size 1.0
+                                             ;; :v-adjust 0.1
                                              :face 'font-lock-keyword-face))
          :extensions (tag-closed)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-faicon "tag"
+         ;; :icon (format "%s " (all-the-icons-faicon "tag"
+         :icon (format "%s " (all-the-icons-material "label"
                                              :height 0.9
                                              :face 'font-lock-type-face))
          :extensions (tag-leaf)
