@@ -547,6 +547,7 @@
     (font-lock-function-name-face     (:foreground functions))
     (font-lock-keyword-face           (:foreground keyword))
     (font-lock-negation-char-face     (:foreground err))
+    (font-lock-number-face            (:foreground num))
     (font-lock-preprocessor-face      (:foreground prep))
     (font-lock-reference-face         (:foreground const))
     (font-lock-string-face            (:foreground str))
