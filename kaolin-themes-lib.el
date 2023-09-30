@@ -539,6 +539,7 @@
 (defconst kaolin-faces
   `(
     ;; Font-lock
+    (font-lock-bracket-face           (:foreground rb1))
     (font-lock-builtin-face           (:foreground builtin))
     (font-lock-comment-delimiter-face (:background 'unspecified :foreground kaolin-comment :italic kaolin-themes-italic-comments))
     (font-lock-comment-face           (:background 'unspecified :foreground kaolin-comment :italic kaolin-themes-italic-comments))
@@ -548,6 +549,7 @@
     (font-lock-keyword-face           (:foreground keyword))
     (font-lock-negation-char-face     (:foreground err))
     (font-lock-number-face            (:foreground num))
+    (font-lock-operator-face          (:foreground functions))
     (font-lock-preprocessor-face      (:foreground prep))
     (font-lock-reference-face         (:foreground const))
     (font-lock-string-face            (:foreground str))
