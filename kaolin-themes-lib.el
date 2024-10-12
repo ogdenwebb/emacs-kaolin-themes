@@ -894,6 +894,8 @@
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-fg :bold nil
                                       :box (:line-width line-box-size :color line-border)))
+
+    (mode-line-active           (:inherit 'mode-line))
     (mode-line-inactive  (:background line-bg1 :foreground line-inactive :bold nil
                                       :box (:line-width line-box-size :color line-border)))
     (mode-line-buffer-id (:background 'unspecified :foreground line-color2 :bold nil))
