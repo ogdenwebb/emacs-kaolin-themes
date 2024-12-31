@@ -16,6 +16,11 @@
   :type 'boolean
   :group 'kaolin-treemacs)
 
+(defcustom kaolin-themes-lsp-treemacs-icons t
+  "Use predefined Kaolin icons for lsp-treemacs using the all-the-icons package."
+  :type 'boolean
+  :group 'kaolin-treemacs)
+
 (defcustom kaolin-themes-treemacs-modeline nil
   "Whether display mode-line in treemacs buffer, by default is nil."
   :type 'boolean
@@ -61,9 +66,6 @@
         tab-width 1))
 
 (with-eval-after-load 'treemacs
-  (unless (require 'all-the-icons nil t)
-    (error "Kaolin treemacs theme requires the all-the-icons package."))
-
   (add-hook 'treemacs-mode-hook #'kaolin-treemacs--hook)
   (add-hook 'treemacs-mode-hook #'kaolin-themes-treemacs-setup-fringe-indicator)
 
@@ -79,8 +81,10 @@
         treemacs-indentation-string "  ")
 
   (when kaolin-themes-treemacs-icons
+    (unless (require 'all-the-icons nil t)
+      (error "Kaolin treemacs theme requires the all-the-icons package."))
 
-    (treemacs-create-theme "kaolin"
+    (treemacs-create-theme "Kaolin"
       :config
       (progn
         ;; Set fallback icon
@@ -347,9 +351,119 @@
          :icon (format " %s " (all-the-icons-faicon "server" :v-adjust 0.0))
          :extensions ("zip" "xz" "tar" "gz" "7z" "rar")
          :fallback 'same-as-icon)
+        )
+
+      )
+    (treemacs-load-theme "Kaolin"))
+
+  ;; lsp-treemacs-support
+  ;; NOTE: see `lsp-treemacs-symbol-kind->icon' for new extensions
+  ;; NOTE: extra useful icons from all-the-icons:
+  ;; sitemap
+  (when kaolin-themes-lsp-treemacs-icons
+    (treemacs-modify-theme "Kaolin"
+      :config
+      (progn
+        (treemacs-create-icon
+         ;; NOTE: we can use cog or scheme (lambda)
+         :icon (format " %s " (all-the-icons-fileicon "frege" :height 0.98 :v-adjust 0.05))
+         :extensions (method function)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         ;; NOTE: alt pie-chart
+         :icon (format " %s " (all-the-icons-faicon "pie-chart" :height 0.9 :v-adjust 0.01))
+         :extensions (class)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "repo"))
+         :extensions (project)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "package"))
+         :extensions (package)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "file-code"))
+         :extensions (document)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         ;; :icon (format " %s " (all-the-icons-material "label" :height 0.8))
+         :icon (format " %s " (all-the-icons-faicon "cog" :height 0.8 :v-adjust 0.02))
+         :extensions (field property)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "tags" :height 0.8 :v-adjust 0.05))
+         :extensions (constant)
+         :fallback 'same-as-icon)
+
+
+        (treemacs-create-icon
+         ;; NOTE; local_activity
+         :icon (format " %s " (all-the-icons-fileicon "codekit" :v-adjust 0.055 :height 0.9))
+         :extensions (namespace)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         ;; :icon (format " %s " (all-the-icons-octicon "circuit-board" :v-adjust 0.055))
+         ;; :icon (format " %s " (all-the-icons-fileicon "api-blueprint" :v-adjust 0.055))
+         :icon (format " %s " (all-the-icons-faicon "sitemap" :v-adjust 0.055))
+         :extensions (structure)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-material "text_fields" :height 0.8))
+         :extensions (string)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "check-square-o" :height 0.8 :v-adjust 0.05))
+         :extensions (boolean-data)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         ;; :icon (format " %s " (all-the-icons-faicon "sliders"  :height 0.8 :v-adjust 0.07))
+         ;; :icon (format " %s " (all-the-icons-faicon "list-ol"))
+         ;; :icon (format " %s " (all-the-icons-material "looks-one"))
+         :icon (format " %s " (all-the-icons-faicon "sort-numeric-asc"))
+         :extensions (numeric)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "cubes" :height 0.8 :v-adjust 0.05))
+         :extensions (enumerator enum)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "cube" :height 0.8 :v-adjust 0.05))
+         :extensions (enumMember enum-member enumitem)
+         :fallback 'same-as-icon)
+
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-octicon "zap" :v-adjust 0.055 :height 0.9))
+         :extensions (event)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         ;; content_copy
+         ;; :icon (format " %s " (all-the-icons-faicon "clipboard" :v-adjust 0.055 :height 0.9))
+         :icon (format " %s " (all-the-icons-faicon "file-text" :v-adjust 0.055 :height 0.9))
+         ;; :icon (format " %s " (all-the-icons-octicon "circuit-board" :v-adjust 0.055))
+         ;; :icon (format " %s " (all-the-icons-material "pages" :v-adjust 0.055 :height 0.9))
+         :extensions (template)
+         :fallback 'same-as-icon)
         ))
 
-    (treemacs-load-theme "kaolin")))
+
+    (with-eval-after-load 'lsp-treemacs
+      (setq lsp-treemacs-theme "Kaolin")
+      )))
 
 
 (provide 'kaolin-themes-treemacs)
