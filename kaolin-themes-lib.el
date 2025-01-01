@@ -709,9 +709,19 @@
     (diredfl-tagged-autofile-name   (:foreground num :underline underline))
     (diredfl-write-priv             (:foreground diff-mod))
 
-    ;; TODO: ERC - IRC client for Emacs
-    (erc-timestamp-face (:foreground num))
-    (erc-error-face     (:inherit 'font-lock-error-face))
+    ;; ERC - IRC client for Emacs (builtin)
+    (erc-default-face        (:inherit 'default))
+    (erc-direct-msg-face     (:foreground functions))
+    (erc-error-face          (:inherit 'error))
+    (erc-header-line         (:inherit 'header-line))
+    (erc-input-face          (:foreground str))
+    (erc-my-nick-face        (:foreground str))
+    (erc-my-nick-prefix-face (:inherit 'erc-my-nick-face))
+    (erc-nick-msg-face       (:foreground prep))
+    (erc-nick-prefix-face    (:inherit 'erc-nick-msg-face))
+    (erc-notice-face         (:foreground comment))
+    (erc-prompt-face         (:foreground prompt :weight 'bold))
+    (erc-timestamp-face      (:foreground num))
 
     ;; Jabber
     (jabber-activity-face          (:foreground todo   :weight 'bold))
