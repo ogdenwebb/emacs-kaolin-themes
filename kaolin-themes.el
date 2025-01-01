@@ -1,6 +1,6 @@
 ;;; kaolin-themes.el --- A set of eye pleasing themes  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2017-2023 ogdenwebb
+;; Copyright (C) 2017-2025 ogdenwebb
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
