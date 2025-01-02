@@ -108,14 +108,14 @@
                                                ;; :v-adjust 0.05
                                                :height 1.1))
          ;; :face 'font-lock-doc-face))
-         :extensions (dir-open)
+         :extensions (dir-open "temp-open")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "folder"
                                                    ;; :v-adjust 0.05
                                                    :height 1.1))
-         :extensions (dir-closed)
+         :extensions (dir-closed "temp-closed")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
@@ -160,12 +160,30 @@
                                                      :face 'error))
          :extensions (warning)
          :fallback (propertize "• " 'face 'font-lock-string-face))
+
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "info"
                                                      :height 0.9
                                                      :face 'font-lock-string-face))
          :extensions (info)
          :fallback (propertize "• " 'face 'font-lock-string-face))
+
+        ;; Custom directory icons
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "github" :height 1.1 :v-adjust 0.03)) :extensions ("github-closed" "github-open") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "cog" :v-adjust 0.005)) :extensions ("bin-closed" "bin-open")       :fallback 'same-as-icon)
+
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git"))    :extensions ("git-closed" "git-open")     :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "codekit"))  :extensions ("src-closed" "src-open")     :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "test-dir")) :extensions ("test-closed" "test-open")   :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "assembly"))     :extensions ("build-closed" "build-open") :fallback 'same-as-icon)
+
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_shared"  :height 1.1)) :extensions ("public-closed" "public-open")   :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_special" :height 1.1)) :extensions ("private-closed" "private-open") :fallback 'same-as-icon)
+        ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_special" :height 1.1)) :extensions ("temp-closed" "temp-open")       :fallback 'same-as-icon)
+
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "picture-o" :v-adjust 0.01))
+                              :extensions ("screenshots-closed" "screenshots-open" "icons-closed" "icons-open")
+                              :fallback 'same-as-icon)
 
         ;; Icons for filetypes
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "assembly")) :extensions ("asm") :fallback 'same-as-icon)
@@ -187,6 +205,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "python" :v-adjust 0.02)) :extensions ("py") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "prolog")) :extensions ("prol" "prolog") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "rust" :v-adjust 0.02)) :extensions ("rs" "rlib") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "config-rust" :v-adjust 0.02)) :extensions ("cargo.toml" "cargo.lock") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "haskell" :v-adjust 0.05)) :extensions ("hs" "chs" "lhs" "hsc") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "c" :v-adjust 0.02)) :extensions ("c" "h") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "cmake")) :extensions ("cmake" "CMakeCache.txt" "CMakeLists.txt") :fallback 'same-as-icon)
@@ -228,7 +247,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nix")) :extensions ("nix") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nvidia")) :extensions ("cu" "cuh") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "plx" "pm" "perl") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "raku" :v-adjust 0.01)) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "raku")) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "pug-alt")) :extensions ("pug") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "R")) :extensions ("r" "rdata" "rds" "rda") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tex")) :extensions ("tex") :fallback 'same-as-icon)
@@ -308,7 +327,7 @@
          :icon (format " %s " (all-the-icons-octicon "book"
                        :height 1.1
                        :v-adjust 0.0))
-         :extensions ("rst" "txt" "contribute" "license" "readme" "changelog")
+         :extensions ("rst" "txt" "contribute" "license" "readme" "readme-open" "readme-closed" "docs-open" "docs-closed" "changelog")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
