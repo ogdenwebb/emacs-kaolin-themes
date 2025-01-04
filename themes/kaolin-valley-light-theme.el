@@ -92,6 +92,7 @@
    (hl-indent  white4)
    (selection green9)
    (pulse bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim adaptive-fg orange2))
 
    (todo red3)
    (done erin2)
@@ -148,7 +149,6 @@
    ;; (org-level-3            (:foreground harlequin3 :bold nil))
    ;; (org-level-4            (:foreground vermilion4 :bold nil))
    (org-code               (:foreground keyword))
-   (org-verbatim           (:foreground orange2))
    (org-date               (:foreground erin2 :underline kaolin-themes-underline))
    )
 

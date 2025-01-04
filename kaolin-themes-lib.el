@@ -532,7 +532,10 @@
     (kaolin-blue    capri3)
     (kaolin-magenta magenta3)
     (kaolin-cyan    cyan3)
-    (kaolin-white   fg1))
+    (kaolin-white   fg1)
+
+    (verbatim-fg   (if kaolin-themes-distinct-verbatim adaptive-fg kaolin-blue))
+    (verbatim-bg   (if kaolin-themes-distinct-verbatim hl-bg nil)))
   )
 
 ;; Predefined Kaolin face specifications
@@ -1244,7 +1247,7 @@
     (font-latex-sectioning-3-face        (:foreground str))
     (font-latex-sectioning-4-face        (:foreground const))
     (font-latex-sectioning-5-face        (:foreground var))
-    (font-latex-verbatim-face         (:inherit 'fixed-pitch :foreground kaolin-blue))
+    (font-latex-verbatim-face            (:background verbatim-bg :foreground verbatim-fg))
 
     (TeX-error-description-tex-said (:inherit 'success :weight 'bold))
     (TeX-error-description-warning  (:inherit 'warning :weight 'bold))
@@ -1501,7 +1504,7 @@
     (org-date-selected             (:background bg4 :foreground hl :weight 'bold))
     (org-link                      (:inherit 'link))
     (org-code                      (:foreground amber3))
-    (org-verbatim                  (:foreground kaolin-blue))
+    (org-verbatim                  (:background verbatim-bg :foreground verbatim-fg))
     (org-hide                      (:foreground bg1))
     (org-drawer                    (:foreground functions))
     (org-special-keyword           (:foreground prep))

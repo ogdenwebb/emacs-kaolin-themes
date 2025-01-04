@@ -80,6 +80,7 @@
    (hl-indent  "#453947")
    (selection bg4)
    (pulse bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil str))
 
    (todo red3)
 
@@ -135,7 +136,6 @@
    (org-level-3            (:foreground str :bold nil))
    (org-level-4            (:foreground builtin :bold nil))
    (org-code               (:foreground functions))
-   (org-verbatim           (:foreground str))
    (org-list-dt            (:foreground str)))
 
   (when kaolin-themes-git-gutter-solid

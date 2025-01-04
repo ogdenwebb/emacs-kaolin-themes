@@ -62,6 +62,7 @@
    ; (hl-indent bg4)
    (selection  bg4)
    (pulse      bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil orange1))
 
    (todo red1)
 
@@ -126,7 +127,6 @@
    (org-document-title  (:foreground aquamarine1 :bold bold))
    (org-date            (:foreground warning :underline underline))
    ;; (org-code            (:foreground warning))
-   (org-verbatim        (:foreground orange1))
    (org-quote           (:foreground fg4))
    )
 

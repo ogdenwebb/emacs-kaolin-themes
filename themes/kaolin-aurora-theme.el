@@ -65,6 +65,7 @@
    ; (hl-indent bg4)
    (selection  bg4)
    (pulse      bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil azure3))
 
    (todo crimson1)
 
@@ -133,7 +134,6 @@
    (org-date            (:foreground teal0 :underline underline))
    (org-table           (:foreground capri4))
    (org-code            (:foreground vermilion4))
-   (org-verbatim        (:foreground azure3))
    ;; (org-quote           (:foreground blue4))
    )
 

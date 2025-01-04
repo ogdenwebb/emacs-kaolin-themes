@@ -107,6 +107,7 @@
    (hl-indent  gray9)
    (selection  teal9)
    (pulse      teal8)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim adaptive-fg azure1))
 
    (done erin2)
    (todo crimson0)
@@ -162,7 +163,6 @@
    (org-level-4             (:foreground warning :bold nil))
    (org-code                (:foreground orange0))
    (org-date                (:foreground azure4))
-   (org-verbatim            (:foreground azure1))
 
    (js2-object-property     (:foreground brown1))
    (evil-ex-info            (:foreground crimson4))

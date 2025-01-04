@@ -72,6 +72,7 @@
    (selection bg4)
    ;; TODO:
    (pulse cyan3)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim adaptive-fg orange2))
 
    (todo red3)
    (done erin2)
@@ -123,7 +124,6 @@
    (org-level-3            (:foreground builtin :bold nil))
    (org-level-4            (:foreground functions :bold nil))
    (org-code               (:foreground keyword))
-   (org-verbatim           (:foreground orange2))
    (org-list-dt            (:foreground str))
    (org-checkbox           (:foreground str))
    (org-table              (:foreground ultramarine2))

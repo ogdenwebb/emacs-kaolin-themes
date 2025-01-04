@@ -92,6 +92,7 @@
    (selection red6)
    ;; TODO:
    (pulse bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil orange3))
 
    (todo red3)
 
@@ -150,8 +151,6 @@
    (org-level-4            (:foreground builtin :bold nil))
    (org-date               (:foreground aquamarine3 :underline underline))
    (org-code               (:foreground num))
-   (org-verbatim           (:foreground orange3))
-
    ;; Terminal
    )
 

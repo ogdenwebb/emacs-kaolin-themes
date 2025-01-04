@@ -63,6 +63,7 @@
    ;; (selection  bg4)
    (selection  aquamarine6)
    (pulse      bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil spring-green1))
 
    (todo pink1)
 
@@ -105,7 +106,6 @@
 
    (org-document-title  (:foreground str))
    (org-code            (:foreground pink1))
-   (org-verbatim        (:foreground spring-green1))
    (org-level-2         (:foreground functions))
 
    (git-gutter:added    (:background diff-add :foreground diff-add))

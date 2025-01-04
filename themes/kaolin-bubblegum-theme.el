@@ -67,6 +67,7 @@
    ; (hl-indent bg4)
    (selection  bg4)
    (pulse      bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil yellow3))
 
    (todo crimson1)
 
@@ -136,7 +137,6 @@
    (org-date            (:foreground teal0 :underline underline))
    (org-table           (:background bg2 :foreground blue4))
    (org-code            (:foreground yellow3))
-   (org-verbatim        (:inherit    'org-code))
    (org-quote           (:foreground blue4))
    )
 

@@ -77,6 +77,7 @@
    (selection crimson6)
    ;; TODO:
    (pulse bg4)
+   (verbatim-fg (if kaolin-themes-distinct-verbatim nil cyan1))
 
    (todo red3)
    (done aquamarine1)
@@ -130,8 +131,6 @@
    (highlight-quoted-symbol  (:foreground amber3))
 
    (org-document-title (:foreground orange3 :bold bold :height 1.3))
-   (org-verbatim       (:foreground cyan1 :bold bold))
-
    (org-level-1            (:foreground var :bold bold :height kaolin-org-heading-size))
    (org-level-2            (:foreground functions  :bold nil))
    (org-level-3            (:foreground str :bold nil))

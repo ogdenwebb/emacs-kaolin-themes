@@ -116,7 +116,6 @@
    ;; (show-paren-mismatch (:background bg2 :foreground red0))
 
    ;; (org-code            (:foreground teal3))
-   ;; (org-verbatim        (:foreground capri3))
    (org-quote           (:foreground magenta3))
    )
 

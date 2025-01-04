@@ -139,6 +139,10 @@
   "Enable distinct colors for parentheses (i.e. rainbow delimiters package)."
   :group 'kaolin-themes)
 
+(defcustom kaolin-themes-distinct-verbatim nil
+  "Use distinct background color for verbatim face (org-mode) instead of colorful text."
+  :group 'kaolin-themes)
+
 (defcustom kaolin-themes-org-scale-headings t
   "If not-nil, scale heading size in org-mode."
   :group 'kaolin-themes)
