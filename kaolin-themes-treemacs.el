@@ -108,14 +108,14 @@
                                                ;; :v-adjust 0.05
                                                :height 1.1))
          ;; :face 'font-lock-doc-face))
-         :extensions (dir-open "temp-open")
+         :extensions (dir-open "temp-open" "bin-open")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "folder"
                                                    ;; :v-adjust 0.05
                                                    :height 1.1))
-         :extensions (dir-closed "temp-closed")
+         :extensions (dir-closed "temp-closed" "bin-closed")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
@@ -148,16 +148,18 @@
          :fallback'same-as-icon)
 
         (treemacs-create-icon
-         :icon (format "%s " (all-the-icons-material "error"
-                                             :height 0.9
-                                             :face 'error))
+         ;; :icon (format "%s " (all-the-icons-material "error"
+         :icon (format "%s " (all-the-icons-faicon "bug"
+                                                   :height 0.9
+                                                   :v-adjust 0.02
+                                                   :face 'error))
          :extensions (error)
          :fallback (propertize "• " 'face 'font-lock-warning-face))
 
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "warning"
                                                      :height 0.9
-                                                     :face 'error))
+                                                     :face 'warning))
          :extensions (warning)
          :fallback (propertize "• " 'face 'font-lock-string-face))
 
@@ -170,7 +172,7 @@
 
         ;; Custom directory icons
         (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "github" :height 1.1 :v-adjust 0.03)) :extensions ("github-closed" "github-open") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "cog" :v-adjust 0.005)) :extensions ("bin-closed" "bin-open")       :fallback 'same-as-icon)
+        ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "cog" :v-adjust 0.005)) :extensions ("bin-closed" "bin-open")       :fallback 'same-as-icon)
 
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git"))    :extensions ("git-closed" "git-open")     :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "codekit"))  :extensions ("src-closed" "src-open")     :fallback 'same-as-icon)
@@ -377,8 +379,9 @@
 
   ;; lsp-treemacs-support
   ;; NOTE: see `lsp-treemacs-symbol-kind->icon' for new extensions
-  ;; NOTE: extra useful icons from all-the-icons:
-  ;; sitemap
+  ;; interface variable indexer operator (+/-/%/x)
+  ;; t -> misc (figures)
+  ;; array (stucture)
   (when kaolin-themes-lsp-treemacs-icons
     (treemacs-modify-theme "Kaolin"
       :config
@@ -391,7 +394,7 @@
 
         (treemacs-create-icon
          ;; NOTE: alt pie-chart
-         :icon (format " %s " (all-the-icons-faicon "pie-chart" :height 0.9 :v-adjust 0.01))
+         :icon (format " %s " (all-the-icons-faicon "tags" :height 0.9 :v-adjust 0.01))
          :extensions (class)
          :fallback 'same-as-icon)
 
@@ -411,29 +414,31 @@
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         ;; :icon (format " %s " (all-the-icons-material "label" :height 0.8))
-         :icon (format " %s " (all-the-icons-faicon "cog" :height 0.8 :v-adjust 0.02))
+         :icon (format " %s " (all-the-icons-fileicon "api-blueprint" :height 0.9 :v-adjust 0.055))
+         :extensions (structure)
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-material "streetview" :height 0.8 :v-adjust 0.02))
          :extensions (field property)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "tags" :height 0.8 :v-adjust 0.05))
+         :icon (format " %s " (all-the-icons-faicon "cog" :height 0.8 :v-adjust 0.03))
          :extensions (constant)
          :fallback 'same-as-icon)
 
 
         (treemacs-create-icon
-         ;; NOTE; local_activity
          :icon (format " %s " (all-the-icons-fileicon "codekit" :v-adjust 0.055 :height 0.9))
          :extensions (namespace)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         ;; :icon (format " %s " (all-the-icons-octicon "circuit-board" :v-adjust 0.055))
-         ;; :icon (format " %s " (all-the-icons-fileicon "api-blueprint" :v-adjust 0.055))
-         :icon (format " %s " (all-the-icons-faicon "sitemap" :v-adjust 0.055))
-         :extensions (structure)
+         :icon (format " %s " (all-the-icons-faicon "plug" :height 0.8 :v-adjust 0.02))
+         :extensions (interface)
          :fallback 'same-as-icon)
+
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "text_fields" :height 0.8))
@@ -446,9 +451,6 @@
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         ;; :icon (format " %s " (all-the-icons-faicon "sliders"  :height 0.8 :v-adjust 0.07))
-         ;; :icon (format " %s " (all-the-icons-faicon "list-ol"))
-         ;; :icon (format " %s " (all-the-icons-material "looks-one"))
          :icon (format " %s " (all-the-icons-faicon "sort-numeric-asc"))
          :extensions (numeric)
          :fallback 'same-as-icon)
@@ -470,11 +472,7 @@
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         ;; content_copy
-         ;; :icon (format " %s " (all-the-icons-faicon "clipboard" :v-adjust 0.055 :height 0.9))
-         :icon (format " %s " (all-the-icons-faicon "file-text" :v-adjust 0.055 :height 0.9))
-         ;; :icon (format " %s " (all-the-icons-octicon "circuit-board" :v-adjust 0.055))
-         ;; :icon (format " %s " (all-the-icons-material "pages" :v-adjust 0.055 :height 0.9))
+         :icon (format " %s " (all-the-icons-faicon "text-width" :v-adjust 0.055 :height 0.9))
          :extensions (template)
          :fallback 'same-as-icon)
         ))
