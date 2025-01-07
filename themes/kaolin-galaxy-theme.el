@@ -44,11 +44,12 @@
    (keyword     cyan3)
    (builtin     teal3)
    (functions   magenta3)
+   ;; (functions   pink3)
    (var         amber3)
    (const       orange3)
    (type        crimson3)
-   ;; (prep        teal0)
-   (prep        ultramarine1)
+   ;; (prep        capri3)
+   (prep        ultramarine3)
 
    (num         capri3)
    (bool        num)
@@ -58,8 +59,10 @@
    (comment-contrast ultramarine8)
 
    (str         spring-green3)
-   ;; TODO:
-   (str-alt     harlequin3)
+   ;; (str-alt     harlequin3)
+   ;; (str-alt     azure4)
+   ;; (str-alt     teal7)
+   (str-alt     aquamarine4)
    (doc         str-alt)
    (warning     orange3)
    (err         crimson0)
