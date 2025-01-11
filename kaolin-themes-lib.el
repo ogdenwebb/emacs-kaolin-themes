@@ -535,7 +535,7 @@
     (kaolin-white   fg1)
 
     (verbatim-fg   (if kaolin-themes-distinct-verbatim adaptive-fg kaolin-blue))
-    (verbatim-bg   (if kaolin-themes-distinct-verbatim hl-bg nil)))
+    (verbatim-bg   (if kaolin-themes-distinct-verbatim hl-bg 'unspecified)))
   )
 
 ;; Predefined Kaolin face specifications
@@ -623,7 +623,7 @@
     (custom-variable-tag            (:foreground var))
     (custom-variable-obsolete       (:inherit 'shadow))
     (widget-documentation           (:background 'unspecified :foreground var))
-    ;; (widget-button                  (:background nil :foreground keyword))
+    ;; (widget-button                  (:background 'unspecified :foreground keyword))
     (widget-button-pressed          (:background 'unspecified :foreground builtin))
     (widget-field                   (:background bg3 :foreground fg2 :box (:line-width 2 :color bg4 :style nil)))
     (widget-single-line-field       (:inherit 'widget-field))

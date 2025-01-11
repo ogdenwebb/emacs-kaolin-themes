@@ -22,14 +22,14 @@
    (header-line (:background capri5 :foreground var))
    ;; Interface
    ;; TODO:
-   (custom-visibility     (:background nil :foreground cyan1 :height 0.9 :underline underline))
-   (custom-set            (:background nil :foreground spring-green3))
-   (custom-face-tag       (:background nil :foreground magenta4 :bold bold))
-   (custom-link           (:background nil :foreground cyan3 :bold bold))
-   (widget-button         (:background nil :foreground teal1 :bold bold))
-   (widget-button-pressed (:background nil :foreground spring-green4))
-   (widget-field          (:background bg3 :foreground fg1 :box (:line-width 1 :color bg2 :style nil)))
-   (widget-documentation  (:background nil :foreground var))
+   (custom-visibility     (:background 'unspecified :foreground cyan1 :height 0.9 :underline underline))
+   (custom-set            (:background 'unspecified :foreground spring-green3))
+   (custom-face-tag       (:background 'unspecified :foreground magenta4 :bold bold))
+   (custom-link           (:background 'unspecified :foreground cyan3 :bold bold))
+   (widget-button         (:background 'unspecified :foreground teal1 :bold bold))
+   (widget-button-pressed (:background 'unspecified :foreground spring-green4))
+   (widget-field          (:background bg3 :foreground fg1 :box (:line-width 1 :color bg2 :style 'nil)))
+   (widget-documentation  (:background 'unspecified :foreground var))
 
    ;; Org-mode
    ;; Pay attention org-level-4 uses to diplay names in ivy-switch-buffer
@@ -77,14 +77,14 @@
 
    ;; Vimish-fold
    (vimish-fold-overlay (:background bg2 :foreground comment))
-   (vimish-fold-fringe  (:background nil :foreground spring-green4))
+   (vimish-fold-fringe  (:background 'unspecified :foreground spring-green4))
 
    ;; Ivy & Swiper
    (ivy-modified-buffer     (:foreground violet4))
-   (ivy-action              (:background nil :foreground spring-green1 :bold bold))
+   (ivy-action              (:background 'unspecified :foreground spring-green1 :bold bold))
    (ivy-virtual             (:foreground amber3))
    (ivy-remote              (:foreground red1))
-   (ivy-confirm-face        (:background nil :foreground amber3)))
+   (ivy-confirm-face        (:background 'unspecified :foreground amber3)))
 
 
   (when kaolin-themes-git-gutter-solid
