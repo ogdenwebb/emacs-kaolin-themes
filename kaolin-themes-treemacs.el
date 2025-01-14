@@ -26,6 +26,14 @@
   :type 'boolean
   :group 'kaolin-treemacs)
 
+(defcustom kaolin-themes-treemacs-custom-dirs t
+  "Whether enable special icons for directories such as build, src, private and etc in treemacs.
+
+If nil, use default folder icons instead."
+  :type 'boolean
+  :group 'kaolin-treemacs)
+
+
 (defcustom kaolin-themes-treemacs-line-spacing 1
   "Line-spacing for treemacs buffer."
   :type 'number
@@ -171,21 +179,38 @@
          :fallback (propertize "• " 'face 'font-lock-string-face))
 
         ;; Custom directory icons
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "github" :height 1.1 :v-adjust 0.03)) :extensions ("github-closed" "github-open") :fallback 'same-as-icon)
-        ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "cog" :v-adjust 0.005)) :extensions ("bin-closed" "bin-open")       :fallback 'same-as-icon)
+        (if kaolin-themes-treemacs-custom-dirs
+            (progn
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "github" :height 1.1 :v-adjust 0.03)) :extensions ("github-closed" "github-open") :fallback 'same-as-icon)
+              ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "cog" :v-adjust 0.005)) :extensions ("bin-closed" "bin-open")       :fallback 'same-as-icon)
 
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git"))    :extensions ("git-closed" "git-open")     :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "codekit"))  :extensions ("src-closed" "src-open")     :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "test-dir")) :extensions ("test-closed" "test-open")   :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "assembly"))     :extensions ("build-closed" "build-open") :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git"))    :extensions ("git-closed" "git-open")     :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "codekit"))  :extensions ("src-closed" "src-open")     :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "test-dir")) :extensions ("test-closed" "test-open")   :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "assembly"))     :extensions ("build-closed" "build-open") :fallback 'same-as-icon)
 
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_shared"  :height 1.1)) :extensions ("public-closed" "public-open")   :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_special" :height 1.1)) :extensions ("private-closed" "private-open") :fallback 'same-as-icon)
-        ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_special" :height 1.1)) :extensions ("temp-closed" "temp-open")       :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_shared"  :height 1.1)) :extensions ("public-closed" "public-open")   :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_special" :height 1.1)) :extensions ("private-closed" "private-open") :fallback 'same-as-icon)
+              ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-material "folder_special" :height 1.1)) :extensions ("temp-closed" "temp-open")       :fallback 'same-as-icon)
 
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "picture-o" :v-adjust 0.01))
-                              :extensions ("screenshots-closed" "screenshots-open" "icons-closed" "icons-open")
-                              :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "picture-o" :v-adjust 0.01))
+                                    :extensions ("screenshots-closed" "screenshots-open" "icons-closed" "icons-open")
+                                    :fallback 'same-as-icon))
+          (progn
+            (treemacs-create-icon
+             :icon (format " %s " (all-the-icons-material "folder_open"
+                                                          ;; :v-adjust 0.05
+                                                          :height 1.1))
+             ;; :face 'font-lock-doc-face))
+             :extensions ("git-open" "src-open" "test-open" "build-open" "public-open" "private-open")
+             :fallback 'same-as-icon)
+
+            (treemacs-create-icon
+             :icon (format " %s " (all-the-icons-material "folder"
+                                                          ;; :v-adjust 0.05
+                                                          :height 1.1))
+             :extensions ("git-closed" "src-closed" "test-closed" "build-closed" "public-closed" "private-closed")
+             :fallback 'same-as-icon)))
 
         ;; Icons for filetypes
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "assembly")) :extensions ("asm") :fallback 'same-as-icon)
