@@ -246,7 +246,7 @@
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "terminal" :v-adjust 0.05)) :extensions ("sh" "zsh" "fish") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "nginx" :v-adjust 0.05)) :extensions ("nginx") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nimrod")) :extensions ("nim" "nims" "nimble") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nix")) :extensions ("nix") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nix" :v-adjust -0.09)) :extensions ("nix") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nvidia")) :extensions ("cu" "cuh") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "plx" "pm" "perl") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "raku")) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest") :fallback 'same-as-icon)
