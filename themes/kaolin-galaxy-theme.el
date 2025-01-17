@@ -65,10 +65,9 @@
    (str-alt     aquamarine4)
    (doc         str-alt)
    (warning     orange3)
-   (err         crimson0)
+   (err         red3)
 
    (dim-buffer "#140E14")
-   ;; TODO: (??) change
    (hl         vermilion3)
    (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
    (selection  crimson6)
