@@ -34,7 +34,7 @@
    ;; Root colors
    (kaolin-black   bg1)
    (kaolin-red     crimson3)
-   (kaolin-green   teal3)
+   (kaolin-green   spring-green3)
    (kaolin-yellow  amber3)
    (kaolin-blue    capri3)
    (kaolin-magenta magenta3)
