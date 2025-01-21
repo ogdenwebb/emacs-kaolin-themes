@@ -171,7 +171,7 @@
   (when kaolin-themes-git-gutter-solid
     (custom-theme-set-faces
      'kaolin-mono-light
-     `(show-paren-match     ((t (:background 'unspecified :foreground ,red0 :bold bold))))
+     `(show-paren-match     ((t (:background unspecified :foreground ,red0 :bold bold))))
      `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
      `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
      `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
