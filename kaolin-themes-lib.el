@@ -798,19 +798,19 @@
 
 
     ;; Linum & nlinum
-    (linum                        (:background line-num-bg :foreground line-num-fg :bold nil
+    (linum                        (:inherit 'default :background line-num-bg :foreground line-num-fg :bold nil
                                                :italic nil :underline nil :strike-through nil))
-    (linum-highlight-face          (:background line-num-bg :foreground line-num-hl :bold bold
+    (linum-highlight-face          (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
                                                 :italic nil :underline nil :strike-through nil))
-    (nlinum-current-line          (:background line-num-bg :foreground line-num-hl :bold bold
+    (nlinum-current-line          (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
                                                :italic nil :underline nil :strike-through nil))
     (linum-relative-current-line  (:inherit 'linum-highlight-face))
     (nlinum-relative-current-face (:inherit 'nlinum-current-line))
 
     ;; Native line numbers
-    (line-number                  (:background line-num-bg :foreground line-num-fg :bold nil
+    (line-number                  (:inherit 'default :background line-num-bg :foreground line-num-fg :bold nil
                                                :italic nil :underline nil :strike-through nil))
-    (line-number-current-line     (:background line-num-bg :foreground line-num-hl :bold bold
+    (line-number-current-line     (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
                                                :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
