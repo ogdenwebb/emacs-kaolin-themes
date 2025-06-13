@@ -116,6 +116,7 @@
   "If t, enable italic style in comments."
   :group 'kaolin-themes)
 
+
 (defcustom kaolin-themes-comments-style 'normal
   "Sets the style of commentaries: normal which is used by default, alt to use colored commentary or contrast to make them more distinguished."
   :type '(choice (const :tag "Normal" normal)
@@ -130,6 +131,11 @@
 (defcustom kaolin-themes-distinct-fringe nil
   "Enable distinct background for fringe and line numbers."
   :group 'kaolin-themes)
+
+(defcustom kaolin-themes-distinct-tab-line nil
+  "Enable distinct foreground for current tab in `tab-line-mode'."
+  :group 'kaolin-themes)
+
 
 (defcustom kaolin-themes-distinct-company-scrollbar nil
   "Enable distinct colors for company popup scrollbar."

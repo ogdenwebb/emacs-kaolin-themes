@@ -514,6 +514,7 @@
     (line-num-fg   gray3)
     (line-num-hl   gray9)
     (cursor        white0)
+    (tab-current  (if kaolin-themes-distinct-tab-line hl fg1))
 
     (company-scroll-bg (if kaolin-themes-distinct-company-scrollbar bg4 bg2))
     (company-scroll-fg (if kaolin-themes-distinct-company-scrollbar line-num-hl bg4))
@@ -1956,10 +1957,13 @@
     (tab-bar-tab-inactive     (:background bg1 :foreground comment))
 
     ;; built-in tab-line
-    (tab-line                 (:background bg0 :foreground fg1))
-    (tab-line-tab             (:background bg1 :foreground fg1))
-    (tab-line-tab-inactive    (:background bg1 :foreground comment))
-    (tab-line-close-highlight (:foreground kaolin-red))
+    (tab-line                        (:background bg0 :foreground fg1))
+    (tab-line-tab                    (:background bg1 :foreground fg1))
+    (tab-line-tab-current            (:background bg1 :foreground tab-current))
+    (tab-line-tab-inactive           (:background bg1 :foreground comment))
+    (tab-line-tab-inactive-alternate (:inherit 'tab-line-tab-inactive))
+    (tab-line-highlight              (:inherit 'tab-line-tab-current))
+    (tab-line-close-highlight        (:foreground kaolin-red))
 
 
     ;; Awesome-tabs
