@@ -1321,7 +1321,7 @@
 
     ;; Ediff
     ;; TODO: rework
-    (ediff-current-diff-Ancestor (:background  :foreground fg2))
+    (ediff-current-diff-Ancestor (:background bg2 :foreground fg2))
     (ediff-current-diff-A (:background red2 :foreground fg2))
     (ediff-current-diff-B (:background spring-green2 :foreground fg2))
     (ediff-current-diff-C (:background cyan2 :foreground fg2))
