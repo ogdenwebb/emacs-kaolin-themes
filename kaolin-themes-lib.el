@@ -1957,10 +1957,10 @@
 
     ;; Avy
     (avy-background-face (:inherit 'font-lock-comment-face))
-    (avy-lead-face       (:background spring-green2 :foreground adaptive-fg :weight 'bold))
-    (avy-lead-face-0     (:background red2 :foreground adaptive-fg :weight 'bold))
-    (avy-lead-face-1     (:background magenta2 :foreground adaptive-fg :weight 'bold))
-    (avy-lead-face-2     (:background capri2 :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face       (:background hl :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face-0     (:background search1 :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face-1     (:background search2 :foreground adaptive-fg :weight 'bold))
+    (avy-lead-face-2     (:background search3 :foreground adaptive-fg :weight 'bold))
 
     ;; Ace-window
     (aw-leading-char-face (:background 'unspecified :foreground hl :bold bold :height 1.4))
