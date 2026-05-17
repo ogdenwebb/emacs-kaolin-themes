@@ -4,7 +4,7 @@
 
 ;; Author: Ogden Webb <ogdenwebb@gmail.com>
 ;; URL: https://github.com/ogdenwebb/emacs-kaolin-themes
-;; Package-Requires: ((emacs "25.1") (autothemer "0.2.2") (cl-lib "0.6"))
+;; Package-Requires: ((emacs "26.1") (autothemer "0.2.2") (cl-lib "0.6"))
 ;; Version: 1.7.5
 ;; Keywords: dark light teal blue violet purple brown theme faces
 
