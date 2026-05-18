@@ -1462,8 +1462,25 @@
     (lsp-installation-finished-buffer-face     (:foreground diff-mod))
     (lsp-signature-highlight-function-argument (:foreground hl))
     (lsp-signature-posframe                    (:inherit 'tooltip))
-    ;; lsp-headerline TODO:
-    (lsp-headerline-breadcrumb-separator-face (:inherit 'shadow))
+    (lsp-lens-mouse-face (:inherit 'link :height 0.9))
+    (lsp-modeline-code-actions-face           (:foreground functions))
+    (lsp-modeline-code-actions-preferred-face (:foreground functions))
+
+    ;; lsp-headerline
+    (lsp-headerline-breadcrumb-path-error-face             (:underline (:style 'wave :color err)))
+    (lsp-headerline-breadcrumb-path-face                   (:foreground comment))
+    (lsp-headerline-breadcrumb-path-hint-face              (:underline (:style 'wave :color builtin)))
+    (lsp-headerline-breadcrumb-path-info-face              (:underline (:style 'wave :color builtin)))
+    (lsp-headerline-breadcrumb-path-warning-face           (:underline (:style 'wave :color warning)))
+    (lsp-headerline-breadcrumb-project-prefix-face         (:foreground comment))
+    (lsp-headerline-breadcrumb-separator-face              (:inherit 'shadow))
+    (lsp-headerline-breadcrumb-symbol-hint-face            (:underline (:style 'wave :color builtin)))
+    (lsp-headerline-breadcrumb-symbol-info-face            (:underline (:style 'wave :color builtin)))
+    (lsp-headerline-breadcrumb-symbols-error-face          (:underline (:style 'wave :color err)))
+    (lsp-headerline-breadcrumb-symbols-face                (:foreground filename))
+    (lsp-headerline-breadcrumb-symbols-warning-face        (:underline (:style 'wave :color warning)))
+    (lsp-headerline-breadcrumb-unknown-project-prefix-face (:inherit 'shadow))
+
     ;; lsp-ui
     (lsp-ui-doc-background          (:background tooltip-bg))
     (lsp-ui-doc-header              (:background header :foreground bg1))
