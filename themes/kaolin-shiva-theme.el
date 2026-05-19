@@ -1,4 +1,4 @@
-;;; kaolin-shiva-theme.el --- Kaolin theme with autumn colors and melanzane background
+;;; kaolin-shiva-theme.el --- Kaolin theme with autumn colors and melanzane background -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

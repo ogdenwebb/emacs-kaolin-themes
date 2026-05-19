@@ -1,4 +1,4 @@
-;;; kaolin-valley-dark-theme.el --- Colorful Kaolin theme with brown background.
+;;; kaolin-valley-dark-theme.el --- Colorful Kaolin theme with brown background. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

@@ -1,4 +1,4 @@
-;;; kaolin-ocean-theme.el --- Dark blue Kaolin theme
+;;; kaolin-ocean-theme.el --- Dark blue Kaolin theme -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

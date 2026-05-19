@@ -1,4 +1,4 @@
-;;; kaolin-breeze-theme.el --- Light Kaolin theme with soft colors.
+;;; kaolin-breeze-theme.el --- Light Kaolin theme with soft colors. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

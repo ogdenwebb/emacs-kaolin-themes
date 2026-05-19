@@ -1,4 +1,4 @@
-;;; kaolin-aurora-theme.el --- Kaolin meets polar lights.
+;;; kaolin-aurora-theme.el --- Kaolin meets polar lights. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

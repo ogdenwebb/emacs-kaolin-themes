@@ -1,4 +1,4 @@
-;;; kaolin-temple-theme.el --- The terrestrial sphere imbues my spirit.
+;;; kaolin-temple-theme.el --- The terrestrial sphere imbues my spirit. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:
