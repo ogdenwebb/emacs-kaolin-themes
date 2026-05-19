@@ -1,4 +1,4 @@
-;;; kaolin-dark-theme.el --- A dark jade theme inspired by Sierra.vim
+;;; kaolin-dark-theme.el --- A dark jade theme inspired by Sierra.vim -*- lexical-binding: t; -*-
 
 (require 'kaolin-themes)
 

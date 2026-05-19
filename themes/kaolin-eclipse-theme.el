@@ -1,4 +1,4 @@
-;;; kaolin-eclipse-theme.el --- Dark purple Kaolin theme variant
+;;; kaolin-eclipse-theme.el --- Dark purple Kaolin theme variant -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

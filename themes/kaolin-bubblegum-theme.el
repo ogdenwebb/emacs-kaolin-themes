@@ -1,4 +1,4 @@
-;;; kaolin-bubblegum-theme.el --- Kaolin colorful theme with dark blue background.
+;;; kaolin-bubblegum-theme.el --- Kaolin colorful theme with dark blue background. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

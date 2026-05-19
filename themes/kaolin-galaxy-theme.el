@@ -1,4 +1,4 @@
-;;; kaolin-galaxy-theme.el --- Bright theme based on one of the Sebastian Andaur arts.
+;;; kaolin-galaxy-theme.el --- Bright theme based on one of the Sebastian Andaur arts. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

@@ -1,4 +1,4 @@
-;;; kaolin-valley-light-theme.el --- light variant of Kaolin-valley-dark theme.
+;;; kaolin-valley-light-theme.el --- light variant of Kaolin-valley-dark theme. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

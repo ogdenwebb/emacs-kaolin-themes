@@ -1,4 +1,4 @@
-;;; kaolin-mono-light-theme.el --- almost monochrome light Kaolin theme
+;;; kaolin-mono-light-theme.el --- almost monochrome light Kaolin theme -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

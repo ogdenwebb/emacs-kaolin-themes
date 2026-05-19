@@ -1,4 +1,4 @@
-;;; kaolin-blossom-theme.el --- Kaolin theme based on orange and purple shades with dark pink background.
+;;; kaolin-blossom-theme.el --- Kaolin theme based on orange and purple shades with dark pink background. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

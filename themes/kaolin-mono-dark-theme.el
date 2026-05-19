@@ -1,4 +1,4 @@
-;;; kaolin-mono-dark-theme.el --- Almost monochrome dark green Kaolin theme.
+;;; kaolin-mono-dark-theme.el --- Almost monochrome dark green Kaolin theme. -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:

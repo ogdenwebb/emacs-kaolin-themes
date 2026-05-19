@@ -1,4 +1,4 @@
-;;; kaolin-light-theme.el --- Light Kaolin theme variant
+;;; kaolin-light-theme.el --- Light Kaolin theme variant -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:
