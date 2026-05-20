@@ -221,7 +221,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "audacity")) :extensions ("aup" "aup3") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "bar-chart")) :extensions ("dat") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "csharp-line")) :extensions ("cs" "csx") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "css3")) :extensions ("css") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "css3" :v-adjust 0.025)) :extensions ("css") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "fsharp")) :extensions ("fs" "fsi" "fsx" "fsscript") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git")) :extensions ("gitignore" "git" "gitattributes" "gitconfig" "gitmodules") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "git-merge")) :extensions ("MERGE_") :fallback 'same-as-icon)
