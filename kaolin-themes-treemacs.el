@@ -270,7 +270,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "pony")) :extensions ("pony") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "powershell")) :extensions ("ps1") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tcl")) :extensions ("tcl") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "terraform")) :extensions ("tf" "tfvars" "tfstate") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "terraform")) :extensions ("tf" "tfvars" "tfstate" ".tftest.hcl") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "terminal" :v-adjust 0.05)) :extensions ("sh" "zsh" "fish") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "nginx" :v-adjust 0.05)) :extensions ("nginx") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nimrod")) :extensions ("nim" "nims" "nimble") :fallback 'same-as-icon)
@@ -365,7 +365,7 @@ If nil, use default folder icons instead."
          :icon (format " %s " (all-the-icons-faicon "cogs" :v-adjust 0.05))
          :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini" "iml" "dll" "DS_STORE"
                       ;; *nix related stuff
-                      "xprofile" "dircolors" "Xresources" "config")
+                      "xprofile" "dircolors" "Xresources" "config" "hcl")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
