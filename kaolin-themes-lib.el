@@ -803,6 +803,9 @@
     ;; Auto-dim-other-buffers
     (auto-dim-other-buffers-face  (:background dim-buffer))
 
+    ;; Langtool
+    (langtool-errline         (:foreground bg1 :background err))
+    (langtool-correction-face (:foreground warning))
 
     ;; Linum & nlinum
     (linum                        (:inherit 'default :background line-num-bg :foreground line-num-fg :bold nil
