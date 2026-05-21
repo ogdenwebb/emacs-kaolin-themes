@@ -282,7 +282,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "R")) :extensions ("r" "rdata" "rds" "rda") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "tex")) :extensions ("tex") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "rst")) :extensions ("rst") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "markdown" :v-adjust 0.05)) :extensions ("md" "markdown") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "markdown" :v-adjust 0.08)) :extensions ("md" "markdown") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "file-pdf")) :extensions ("pdf") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "database" :v-adjust 0.02)) :extensions ("sql") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "tools")) :extensions ("dmg") :fallback 'same-as-icon)
