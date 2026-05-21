@@ -1244,20 +1244,23 @@
     (flyspell-duplicate (:underline (:style underline-style :color warning)))
     (flyspell-incorrect (:underline (:style underline-style :color err)))
 
-
     ;; Hydra
-    ;; (hydra-face-red      (:foreground red1))
     (hydra-face-red      (:foreground err))
-    (hydra-face-teal     (:foreground teal3))
-    (hydra-face-blue     (:foreground azure3))
-    (hydra-face-pink     (:foreground pink1))
-    (hydra-face-amaranth (:foreground purple3))
+    (hydra-face-teal     (:foreground kaolin-cyan))
+    (hydra-face-blue     (:foreground kaolin-blue))
+    (hydra-face-pink     (:foreground crimson3))
+    (hydra-face-amaranth (:foreground kaolin-magenta))
 
     ;; Hydra-posframe
-    (hydra-posframe-face (:background bg2 :foreground fg1))
-    (hydra-posframe-border-face (:background bg2))
+    (hydra-posframe-face        (:background bg2 :foreground fg1))
+    (hydra-posframe-border-face (:background win-border))
+
+    ;; Pretty Hydra
+    (pretty-hydra-toggle-on-face  (:foreground header :bold kaolin-themes-bold))
+    (pretty-hydra-toggle-off-face (:foreground comment))
 
     ;; Ido
+    ;; TODO: outdated colors
     (ido-indicator   (:foreground num))
     (ido-first-match (:foreground hl :bold bold))
     (ido-only-match  (:foreground cyan1))
