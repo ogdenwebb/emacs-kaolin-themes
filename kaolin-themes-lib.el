@@ -1356,8 +1356,10 @@
     (undo-tree-visualizer-register-face      (:foreground type))
 
     ;; Vundo
-    (vundo-default (:foreground fg1))
-    (vundo-highlight (:foreground hl :weight 'bold))
+    (vundo-default    (:foreground comment))
+    (vundo-highlight  (:foreground hl :weight 'bold))
+    (vundo-last-saved (:foreground done :weight 'bold))
+    (vundo-saved      (:foreground done))
 
     ;; Rainbow delimeters
     ;; TODO: light themes
