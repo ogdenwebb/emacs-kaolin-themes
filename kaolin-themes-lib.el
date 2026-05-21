@@ -828,15 +828,20 @@
                                             :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
-    (which-func (:foreground orange1))
+    (which-func (:foreground prep))
 
     ;; Which-key
+    (which-key-command-description-face   (:foreground fg1))
+    (which-key-group-description-face     (:foreground kaolin-cyan))
+    (which-key-highlighted-command-face   (:foreground warning :underline t))
     (which-key-key-face                   (:foreground keysym :bold bold))
-    (which-key-group-description-face     (:foreground violet4))
-    (which-key-local-map-description-face (:foreground azure3))
-    (which-key-command-description-face   (:foreground cyan3))
+    (which-key-local-map-description-face (:foreground fg1))
+    (which-key-note-face                  (:foreground comment))
+    (which-key-separator-face             (:foreground comment))
+    (which-key-special-key-face           (:inherit 'which-key-key-face))
 
     ;; Ruler-mode
+    ;; TODO: outdated colors
     (ruler-mode-default        (:background bg2 :foreground gray3))
     (ruler-mode-column-number  (:foreground var))
     (ruler-mode-current-column (:foreground orange1))
