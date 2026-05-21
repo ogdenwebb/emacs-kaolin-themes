@@ -2081,6 +2081,12 @@
     (vertico-quick1          (:background bg2 :foreground search1 :weight 'bold))
     (vertico-quick2          (:background bg2 :foreground search2 :weight 'bold))
 
+    (vertico-posframe-border   (:inherit 'default :background bg2))
+    (vertico-posframe-border-2 (:inherit 'default :background bg3))
+    (vertico-posframe-border-3 (:inherit 'default :background bg4))
+    (vertico-posframe-border-4 (:inherit 'vertico-posframe-border-3))
+    (vertico-posframe-border-fallback (:inherit 'default warning))
+
     ;; Orderless
     (orderless-match-face-0 (:foreground hl))
     (orderless-match-face-1 (:foreground search1))
