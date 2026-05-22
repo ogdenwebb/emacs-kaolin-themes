@@ -183,7 +183,7 @@ If nil, use default folder icons instead."
         ;; Custom directory icons
         (if kaolin-themes-treemacs-custom-dirs
             (progn
-              (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "github" :height 1.1 :v-adjust 0.03)) :extensions ("github-closed" "github-open") :fallback 'same-as-icon)
+              (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "github" :height 1.1 :v-adjust 0.01)) :extensions ("github-closed" "github-open") :fallback 'same-as-icon)
               ;; (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "cog" :v-adjust 0.005)) :extensions ("bin-closed" "bin-open")       :fallback 'same-as-icon)
 
               (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "git"))    :extensions ("git-closed" "git-open")     :fallback 'same-as-icon)
@@ -259,7 +259,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "config-go")) :extensions ("go.mod") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "graphql")) :extensions ("graphql" "gql") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "graphviz")) :extensions ("dot" "gv") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "elisp" :v-adjust -0.15)) :extensions ("el" "elc" "eln") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "elisp" :v-adjust -0.09)) :extensions ("el" "elc" "eln") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "julia")) :extensions ("jl") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jupyter")) :extensions ("ipynb") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "kotlin")) :extensions ("kt" "kts") :fallback 'same-as-icon)
