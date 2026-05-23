@@ -1364,7 +1364,7 @@
     ;; Rainbow delimeters
     ;; TODO: light themes
     (show-paren-match (:background bg2 :foreground rb-match :bold bold))
-    (show-paren-mismatch (:background red2 :foreground bg2))
+    (show-paren-mismatch (:background bg2 :foreground err :invert-video t))
 
     (rainbow-delimiters-unmatched-face (:background red2 :foreground err))
     (rainbow-delimiters-mismatched-face (:inherit 'rainbow-delimiters-unmatched-face))

@@ -13,130 +13,129 @@
   :type 'boolean
   :group 'kaolin-galaxy)
 
-(define-kaolin-theme galaxy "Bright theme based on one of the Sebastian Andaur arts."
-  ;; Palette modification
-  (
-   (azure1        "#2a57cc")
-   (spring-green1 "#6dd797")
-   (ultramarine7  "#615B75")
+(define-kaolin-theme
+ galaxy
+ "Bright theme based on one of the Sebastian Andaur arts."
+ ;; Palette modification
+ (
+  (azure1        "#2a57cc")
+  (spring-green1 "#6dd797")
+  (ultramarine7  "#615B75")
 
-   (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
-   (bg1 (if kaolin-galaxy-alt-bg "#2A252B" "#212026") black1)
-   (bg2 (if kaolin-galaxy-alt-bg "#342D35" "#2a2931") black2)
-   (bg3 (if kaolin-galaxy-alt-bg "#3C343D" "#31303A") black3)
-   (bg4 (if kaolin-galaxy-alt-bg "#403742" "#3d3b46") black4)
+  (bg0 (if kaolin-galaxy-alt-bg "#19181C" "#1C1B21") black0)
+  (bg1 (if kaolin-galaxy-alt-bg "#2A252B" "#212026") black1)
+  (bg2 (if kaolin-galaxy-alt-bg "#342D35" "#2a2931") black2)
+  (bg3 (if kaolin-galaxy-alt-bg "#3C343D" "#31303A") black3)
+  (bg4 (if kaolin-galaxy-alt-bg "#403742" "#3d3b46") black4)
 
-   ;; TODO: add other fg vars
-   ;; (fg1 blue9)
+  ;; TODO: add other fg vars
+  ;; (fg1 blue9)
 
-   (verbatim-fg   (if kaolin-themes-distinct-verbatim adaptive-fg aquamarine3))
+  (verbatim-fg   (if kaolin-themes-distinct-verbatim adaptive-fg aquamarine3))
 
-   ;; Root colors
-   (kaolin-black   bg1)
-   (kaolin-red     crimson3)
-   (kaolin-green   spring-green3)
-   (kaolin-yellow  amber3)
-   (kaolin-blue    capri3)
-   (kaolin-magenta magenta3)
-   (kaolin-cyan    cyan3)
-   (kaolin-white   fg1)
+  ;; Root colors
+  (kaolin-black   bg1)
+  (kaolin-red     crimson3)
+  (kaolin-green   spring-green3)
+  (kaolin-yellow  amber3)
+  (kaolin-blue    capri3)
+  (kaolin-magenta magenta3)
+  (kaolin-cyan    cyan3)
+  (kaolin-white   fg1)
 
-   (keyword     cyan3)
-   (builtin     teal3)
-   (functions   magenta3)
-   ;; (functions   pink3)
-   (var         amber3)
-   (const       orange3)
-   (type        crimson3)
-   ;; (prep        capri3)
-   (prep        ultramarine3)
+  (keyword     cyan3)
+  (builtin     teal3)
+  (functions   magenta3)
+  ;; (functions   pink3)
+  (var         amber3)
+  (const       orange3)
+  (type        crimson3)
+  ;; (prep        capri3)
+  (prep        ultramarine3)
 
-   (num         capri3)
-   (bool        num)
+  (num         capri3)
+  (bool        num)
 
-   (comment     ultramarine7)
-   (comment-alt cerulean4)
-   (comment-contrast ultramarine8)
+  (comment     ultramarine7)
+  (comment-alt cerulean4)
+  (comment-contrast ultramarine8)
 
-   (str         spring-green3)
-   ;; (str-alt     harlequin3)
-   ;; (str-alt     azure4)
-   ;; (str-alt     teal7)
-   (str-alt     aquamarine4)
-   (doc         str-alt)
-   (warning     orange3)
-   (err         red3)
+  (str         spring-green3)
+  ;; (str-alt     harlequin3)
+  ;; (str-alt     azure4)
+  ;; (str-alt     teal7)
+  (str-alt     aquamarine4)
+  (doc         str-alt)
+  (warning     orange3)
+  (err         red3)
 
-   (dim-buffer "#140E14")
-   (hl         vermilion3)
-   (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
-   (selection  crimson6)
-   (pulse      ultramarine6)
+  (dim-buffer "#140E14")
+  (hl         vermilion3)
+  (hl-line    (if kaolin-themes-hl-line-colored bg2 bg2))
+  (selection  crimson6)
+  (pulse      ultramarine6)
 
-   (todo crimson1)
-   (done spring-green1)
+  (todo crimson1)
+  (done spring-green1)
 
-   ;; Tooltip
-   (tooltip-hl-bg bg4)
-   (tooltip-hl-fg cyan0)
+  ;; Tooltip
+  (tooltip-hl-bg bg4)
+  (tooltip-hl-fg cyan0)
 
-   (search1 cerulean3)
-   (search2 red3)
-   (search3 violet1)
+  (search1 cerulean3)
+  (search2 red3)
+  (search3 violet1)
 
-   (rb1 violet4)
-   (rb2 teal4)
-   (rb3 violet3)
-   (rb4 blue4)
-   (rb5 capri4)
-   (rb6 cerulean7)
-   (rb7 orange8)
-   (rb8 magenta4)
-   (rb9 crimson3)
+  (rb1 violet4)
+  (rb2 teal4)
+  (rb3 violet3)
+  (rb4 blue4)
+  (rb5 capri4)
+  (rb6 cerulean7)
+  (rb7 orange8)
+  (rb8 magenta4)
+  (rb9 crimson3)
 
-   (diff-add spring-green1)
-   (diff-mod yellow3)
-   (diff-rem red3)
+  (diff-add spring-green1)
+  (diff-mod yellow3)
+  (diff-rem red3)
 
-   ;; Mode-line
-   (line-fg     fg4)
-   (line-bg1    bg2)
-   (line-bg2    bg3)
-   (line-color2 keyword)
-   (line-border (if kaolin-themes-modeline-border bg3 line-bg1))
+  ;; Mode-line
+  (line-fg     fg4)
+  (line-bg1    bg2)
+  (line-bg2    bg3)
+  (line-color2 keyword)
+  (line-border (if kaolin-themes-modeline-border bg3 line-bg1))
 
-   (segment-active    gray3)
-   (segment-inactive  gray3)
+  (segment-active    gray3)
+  (segment-inactive  gray3)
 
-   (win-border    bg3)
-   (line-num-fg   ultramarine7 black4)
-   (line-num-hl   capri3)
+  (win-border    bg3)
+  (line-num-fg   ultramarine7 black4)
+  (line-num-hl   capri3)
 
-   (cursor        "#c3c8e0"))
+  (cursor        "#c3c8e0"))
 
-  (
-   ;; Custom theme set faces
-   (show-paren-mismatch (:background bg2 :foreground red0))
+ (
+  (org-level-3         (:foreground magenta3))
 
-   (org-level-3         (:foreground magenta3))
+  (highlight-quoted-quote   (:foreground functions))
+  (highlight-quoted-symbol  (:foreground type))
 
-   (highlight-quoted-quote   (:foreground functions))
-   (highlight-quoted-symbol  (:foreground type))
+  (org-document-title  (:foreground amber3 :bold bold))
+  (org-document-info   (:foreground type))
+  (org-date            (:foreground spring-green3 :underline underline))
+  (org-code            (:foreground erin3))
+  (org-quote           (:foreground blue9))
+  )
 
-   (org-document-title  (:foreground amber3 :bold bold))
-   (org-document-info   (:foreground type))
-   (org-date            (:foreground spring-green3 :underline underline))
-   (org-code            (:foreground erin3))
-   (org-quote           (:foreground blue9))
-   )
-
-  ;; Set custom vars
-  (when kaolin-themes-git-gutter-solid
-    (custom-theme-set-faces
-     'kaolin-galaxy
-     `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
-     `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
-     `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
+ ;; Set custom vars
+ (when kaolin-themes-git-gutter-solid
+   (custom-theme-set-faces
+    'kaolin-galaxy
+    `(git-gutter:added     ((t (:background ,diff-add :foreground ,diff-add))))
+    `(git-gutter:modified  ((t (:background ,diff-mod :foreground ,diff-mod))))
+    `(git-gutter:deleted   ((t (:background ,diff-rem :foreground ,diff-rem)))))))
 
 
 ;;; kaolin-galaxy-theme.el ends here
