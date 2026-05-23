@@ -284,7 +284,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "rst")) :extensions ("rst") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "markdown" :v-adjust 0.08)) :extensions ("md" "markdown") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "file-pdf")) :extensions ("pdf") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "database" :v-adjust 0.02)) :extensions ("sql") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "database" :v-adjust 0.02)) :extensions ("sql" "odb" "accdb" "mdb") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "tools")) :extensions ("dmg") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-material "style")) :extensions ("styles") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "lua")) :extensions ("lua") :fallback 'same-as-icon)
@@ -302,7 +302,10 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vagrant")) :extensions ("vagrantfile") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "verilog")) :extensions ("v" "vams" "sv" "sva" "svh" "svams") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vertex-shader")) :extensions ("glsl" "vert" "tesc" "tese" "geom" "frag" "comp") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "zig")) :extensions ("zig" "zir") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "zig"))    :extensions ("zig" "zir") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "patch" :height 0.9 :v-adjust 0.03))  :extensions ("patch") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-faicon "paint-brush" :height 0.9 :v-adjust 0.0)) :extensions ("af" "afphoto" "afdesigner" "afpub" "psd") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "diff" :height 0.9 :v-adjust -0.02))   :extensions ("diff") :fallback 'same-as-icon)
 
         ;; Javascript related
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "babel")) :extensions ("babelrc") :fallback 'same-as-icon)
@@ -323,7 +326,7 @@ If nil, use default folder icons instead."
 
         ;; Media files icon
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "picture-o" :v-adjust 0.05))
+         :icon (format " %s " (all-the-icons-faicon "picture-o" :height 0.95 :v-adjust 0.03))
          :extensions ("jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
                       "psd" "ai" "eps" "indd" "webp")
          :fallback 'same-as-icon)
@@ -354,18 +357,20 @@ If nil, use default folder icons instead."
                               :extensions ("TODO")
                               :fallback 'same-as-icon)
 
+        ;; Text file format
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "book"
                                                      :height 1.1
                                                      :v-adjust 0.0))
-         :extensions ("rst" "txt" "contribute" "license" "readme" "readme-open" "readme-closed" "docs-open" "docs-closed" "changelog")
+         :extensions ("rst" "txt" "contribute" "license" "readme" "readme-open" "readme-closed" "docs-open" "docs-closed" "changelog"
+                      "rtf")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "cogs" :v-adjust 0.05))
+         :icon (format " %s " (all-the-icons-faicon "cogs" :v-adjust 0.03))
          :extensions ("conf" "cfg" "yaml" "yml" "json" "xml" "toml" "cson" "ini" "iml" "dll" "DS_STORE"
                       ;; *nix related stuff
-                      "xprofile" "dircolors" "Xresources" "config" "hcl")
+                      "xprofile" "dircolors" "Xresources" "config" "hcl" "csv")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
@@ -401,9 +406,53 @@ If nil, use default folder icons instead."
          :icon (format " %s " (all-the-icons-faicon "server" :v-adjust 0.0))
          :extensions ("zip" "xz" "tar" "gz" "7z" "rar")
          :fallback 'same-as-icon)
-        )
 
-      )
+        ;; System related & executables
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "windows" :height 0.9 :v-adjust 0.0))
+         :extensions ("exe" "msi")
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "android" :v-adjust 0.0))
+         :extensions ("apk")
+         :fallback 'same-as-icon)
+
+        ;; Disk images
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-material "album" :v-adjust -0.2))
+         :extensions ("iso" "dmg")
+         :fallback 'same-as-icon)
+
+        ;; Office document formats
+        ;; (treemacs-create-icon
+        ;;  :icon (format " %s " (all-the-icons-fileicon "word" :v-adjust -0.01))
+        ;;  :extensions ("docx" "doc")
+        ;;  :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "pencil-square" :v-adjust -0.01))
+         :extensions ("odt" "docx" "doc")
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "bar-chart" :height 0.85 :v-adjust -0.01))
+         :extensions ("odp" "ppt" "pptx" "ppsx")
+         :fallback 'same-as-icon)
+
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-fileicon "openoffice" :height 0.9 :v-adjust -0.01))
+         :extensions ("odg")
+         :fallback 'same-as-icon)
+
+        ;; Spreadsheet
+        (treemacs-create-icon
+         :icon (format " %s " (all-the-icons-faicon "table" :v-adjust 0.0))
+         :extensions ("ods" "xlsx" "xls" "xlsm")
+         :fallback 'same-as-icon)
+
+
+        ))
     (treemacs-load-theme "Kaolin"))
 
   ;; lsp-treemacs-support
