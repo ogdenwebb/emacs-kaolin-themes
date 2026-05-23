@@ -323,7 +323,7 @@ If nil, use default folder icons instead."
 
         ;; Media files icon
         (treemacs-create-icon
-         :icon (format " %s " (all-the-icons-faicon "paint-brush" :v-adjust 0.05))
+         :icon (format " %s " (all-the-icons-faicon "picture-o" :v-adjust 0.05))
          :extensions ("jpg" "jpeg" "png" "gif" "ico" "tif" "tiff" "svg" "bmp"
                       "psd" "ai" "eps" "indd" "webp")
          :fallback 'same-as-icon)
