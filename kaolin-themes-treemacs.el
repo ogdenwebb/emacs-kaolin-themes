@@ -292,7 +292,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "sbt")) :extensions ("sbt") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "puppet")) :extensions ("pp") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jinja")) :extensions ("j2" "jinja2") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "dockerfile")) :extensions ("dockerfile" "dockerignore") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "dockerfile" :v-adjust 0.01)) :extensions ("dockerfile" "dockerignore") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "racket")) :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "reason" :v-adjust -0.15)) :extensions ("re" "rei") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "sass" :v-adjust 0.02)) :extensions ("scss" "sass") :fallback 'same-as-icon)
