@@ -656,15 +656,16 @@
     (compilation-mode-line-fail (:inherit 'compilation-error))
 
     ;; Dired
-    (dired-header     (:foreground header :weight 'bold))
-    (dired-directory  (:foreground keyword))
-    (dired-ignored    (:foreground comment))
-    (dired-flagged    (:foreground err))
-    (dired-mark       (:foreground num :weight 'bold))
-    (dired-marked     (:foreground hl :weight 'bold))
-    (dired-perm-write (:foreground fg1 :underline t))
-    (dired-symlink    (:foreground functions))
-    (dired-warning    (:inherit 'font-lock-warning-face))
+    (dired-header         (:foreground header :weight 'bold))
+    (dired-directory      (:foreground keyword))
+    (dired-ignored        (:foreground comment))
+    (dired-flagged        (:foreground err))
+    (dired-mark           (:foreground num :weight 'bold))
+    (dired-marked         (:foreground hl :weight 'bold))
+    (dired-perm-write     (:foreground fg1 :underline t))
+    (dired-symlink        (:foreground functions))
+    (dired-broken-symlink (:background err :foreground bg1))
+    (dired-warning        (:inherit 'font-lock-warning-face))
 
     ;; dired-plus
     (diredp-dir-name               (:foreground keyword :weight 'bold :strike-through nil))
