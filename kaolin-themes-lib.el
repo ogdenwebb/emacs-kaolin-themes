@@ -592,9 +592,13 @@
     (link                  (:foreground link :underline underline))
     (link-visited          (:inherit 'link :underline nil))
     (success               (:background 'unspecified :foreground done))
-    (escape-glyph          (:background 'unspecified :foreground cyan3))
     (trailing-whitespace   (:background err))
     (fill-column-indicator (:foreground bg4))
+
+    ;; Escape characters
+    (escape-glyph               (:background 'unspecified :foreground doc :weight 'bold))
+    (easy-escape-face           (:background 'unspecified :foreground err :weight 'bold))
+    (easy-escape-delimiter-face (:background 'unspecified :foreground warning :weight 'bold))
 
     (menu        (:background bg2 :foreground fg2))
     (header-line (:background bg1 :foreground num))
