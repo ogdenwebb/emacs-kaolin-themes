@@ -478,6 +478,7 @@
     (bool        num)
     (prep        violet4)
     (link        prep)
+    (operator    prep)
     (filepath    keyword) ;; MAYBE find a better color
     (filename    str)
     ;; MAYBE: add orange/yellow background?
@@ -558,7 +559,7 @@
     (font-lock-keyword-face           (:foreground keyword))
     (font-lock-negation-char-face     (:foreground err))
     (font-lock-number-face            (:foreground num))
-    (font-lock-operator-face          (:foreground functions))
+    (font-lock-operator-face          (:foreground operator))
     (font-lock-preprocessor-face      (:foreground prep))
     (font-lock-reference-face         (:foreground const))
     (font-lock-string-face            (:foreground str))
