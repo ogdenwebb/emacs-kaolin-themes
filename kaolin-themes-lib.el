@@ -1008,6 +1008,15 @@
     (nano-modeline-active-status-RW (:background line-bg2 :foreground line-fg))
     (nano-modeline-inactive         (:inherit 'mode-line-inactive))
 
+    ;; lambda-line
+    (lambda-line          (:inherit 'mode-line))
+    (lambda-line-active   (:inherit 'lambda-line))
+    (lambda-line-visual-bell   (:background err))
+    (lambda-line-active-status-MD (:inherit 'lambda-line :foreground warning))
+    (lambda-line-active-status-RO (:inherit 'lambda-line :foreground comment))
+    (lambda-line-active-status-RW (:inherit 'lambda-line :foreground done))
+    (lambda-line-inactive   (:inherit 'mode-line-inactive))
+
 
     ;; Doom-modeline
     (doom-modeline-bar                 (:background keyword))
