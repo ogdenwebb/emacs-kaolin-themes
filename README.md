@@ -8,7 +8,7 @@
 
 I chose a few organisation that focused on humanitarian aids and animal rescue. All these organisations are publishing frequent reports about their impact. 
 
-If you are willing and able to help, please consider making a donation to those projects: 
+If you are willing and able to help, please consider making a donation to these projects:
 
 - [Nova Ukraine](https://novaukraine.org/) — nonprofit organization dedicated to providing humanitarian aid to the people of Ukraine and raising awareness about Ukraine in the United States and throughout the world.
 - [Leleka Foundation](https://leleka.care/en/) — focusing on the urgent supply of critical medical supplies and protective gear to Ukraine’s defenders and civilians.
@@ -16,6 +16,8 @@ If you are willing and able to help, please consider making a donation to those 
 - [Razom for Ukraine](https://www.razomforukraine.org/) — Razom for Ukraine is a leading advocacy and humanitarian organization with 4-star Charity Navigator rating.
 - [Hospitallers](https://www.hospitallers.org.uk/) — focus on sourcing and delivering medical supplies for paramedics who save human lives in Ukraine.​
 - [help us help](https://helpushelp.charity/) — a federally registered Canadian charitable organization, focused on humanitarian aid and educational projects in Ukraine and in Canada.
+
+Many other organizations which funding Ukraine and supporting Ukrainians you can find on [this page](https://standforukraine.com/).
 
 
 # Description
