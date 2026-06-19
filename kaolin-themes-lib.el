@@ -991,10 +991,6 @@
     (maple-modeline-secondary-active   (:inherit 'mode-line :background line-bg2 :foreground line-fg))
     (maple-modeline-secondary-inactive (:inherit 'mode-line :background line-bg2 :foreground line-inactive))
 
-    (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground line-fg))
-    (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground line-inactive))
-
-
     ;; Telephone-line
     (telephone-line-accent-active   (:inherit 'mode-line :background line-bg2 :foreground line-fg))
     (telephone-line-accent-inactive (:inherit 'mode-line-inactive :background line-bg1 :foreground line-inactive))
